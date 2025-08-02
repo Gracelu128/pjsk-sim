@@ -1,40 +1,29 @@
-import cardData from "@/data/card_metadata.json";
 import Image from "next/image";
 
 export default function Home() {
-  const cards = Object.values(cardData);
-
   return (
-    <main className="p-6">
+    <main className="w-screen h-screen flex flex-col items-center justify-center bg-white">
       <h1 className="text-2xl font-bold mb-4">Card Gallery</h1>
-
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-        {cards.map((card) => {
-          const imgSrc = `/cards/${card.id}/card_normal.webp`; // correct path
-          return (
-            <div
-              key={card.id}
-              className="border rounded-lg p-3 shadow bg-white"
-            >
-              <Image
-                src={imgSrc}
-                alt={card["english name"]}
-                width={200}
-                height={300}
-                className="rounded"
-              />
-              <h2 className="mt-2 text-center font-semibold">
-                {card["english name"]}
-              </h2>
-              <p className="text-center text-sm text-gray-600">
-                {card.character} ({card.unit})
-              </p>
-              <p className="text-center text-xs text-gray-500">
-                Rarity: {card.rarity} ★ | Attribute: {card.attribute}
-              </p>
-            </div>
-          );
-        })}
+      <div className="flex flex-col items-center">
+        <div className="border rounded-lg p-3 shadow bg-white flex flex-col items-center">
+          <Image
+            src="/cards/1/card_normal.webp"
+            alt="Card 1"
+            width={0}
+            height={0}
+            sizes="100vw"
+            style={{ width: "auto", height: "auto", maxWidth: "100%", maxHeight: "80vh" }}
+            className="rounded"
+            priority
+          />
+          <h2 className="mt-2 text-center font-semibold">Card 1</h2>
+          <p className="text-center text-sm text-gray-600">
+            Character Name (Unit)
+          </p>
+          <p className="text-center text-xs text-gray-500">
+            Rarity: ★ | Attribute: Attribute
+          </p>
+        </div>
       </div>
     </main>
   );
