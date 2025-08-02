@@ -18,7 +18,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 def scrape_card_images(start_num=1, end_num=1212):
     """Scrape card images using Selenium with automatic driver management"""
     # Configuration
-    asset_path = "/Users/gracelu/Desktop/pjsk sim/src/assets/cards"
+    asset_path = "/Users/gracelu/Desktop/pjsk sim/my-app/public/cards"
     os.makedirs(asset_path, exist_ok=True)
     
     # Set up Chrome options
@@ -106,8 +106,8 @@ def scrape_card_images(start_num=1, end_num=1212):
 def scrape_card_info(start_num=1, end_num=1212):
     """Scrape card images using Selenium with automatic driver management"""
     # Configuration
-    json_path = "/Users/gracelu/Desktop/pjsk sim/src/data/card_metadata.json"
-    icons_path = "/Users/gracelu/Desktop/pjsk sim/src/assets/icons"
+    json_path = "/Users/gracelu/Desktop/pjsk sim/my-app/src/data/card_metadata.json"
+    icons_path = "/Users/gracelu/Desktop/pjsk sim/my-app/public/icons"
     os.makedirs(icons_path, exist_ok=True)
     data = None
     if os.path.exists(json_path):
@@ -158,58 +158,53 @@ def scrape_card_info(start_num=1, end_num=1212):
                 # Extract card ID from first column
                 card_id = row.find_element(By.CSS_SELECTOR, "td:nth-child(1)").text.strip()
                 
-                # Skip if we already have this card
-                if card_id in data:
-                    print(f"[{index}] Skipping card {card_id} (already in database)")
-                    continue
-                    
-                # Extract icon from second column
-                icon_img = row.find_element(By.CSS_SELECTOR, "td:nth-child(2) img")
-                icon_url = icon_img.get_attribute("src")
-                if icon_url.startswith("//"):
-                    icon_url = "https:" + icon_url
-                # Remove the last segment (e.g., '64px-Saki_1_thumbnail.png')
-                parsed = urlparse(icon_url)
-                path_parts = parsed.path.split("/")
-                if "thumb" in path_parts:
-                    thumb_index = path_parts.index("thumb")
-                    full_path_parts = path_parts[:thumb_index] + path_parts[thumb_index + 1:thumb_index + 4]  # Skip "thumb" and keep the 3 parts after
-                    full_path = "/".join(full_path_parts)
-                    full_url = f"{parsed.scheme}://{parsed.netloc}{full_path}"
-                print(f"Icon url: {icon_url}")
-                print(f"Full url: {full_url}")
+                # # Extract icon from second column
+                # icon_img = row.find_element(By.CSS_SELECTOR, "td:nth-child(2) img")
+                # icon_url = icon_img.get_attribute("src")
+                # if icon_url.startswith("//"):
+                #     icon_url = "https:" + icon_url
+                # # Remove the last segment (e.g., '64px-Saki_1_thumbnail.png')
+                # parsed = urlparse(icon_url)
+                # path_parts = parsed.path.split("/")
+                # if "thumb" in path_parts:
+                #     thumb_index = path_parts.index("thumb")
+                #     full_path_parts = path_parts[:thumb_index] + path_parts[thumb_index + 1:thumb_index + 4]  # Skip "thumb" and keep the 3 parts after
+                #     full_path = "/".join(full_path_parts)
+                #     full_url = f"{parsed.scheme}://{parsed.netloc}{full_path}"
+                # print(f"Icon url: {icon_url}")
+                # print(f"Full url: {full_url}")
                 
-                # Download both 64px and full-size icon
-                sizes = {
-                    "thumb": icon_url,  # e.g. the 64px URL
-                    "full": full_url  # strip the "64px-" prefix to get full-size
-                }
+                # # Download both 64px and full-size icon
+                # sizes = {
+                #     "thumb": icon_url,  # e.g. the 64px URL
+                #     "full": full_url  # strip the "64px-" prefix to get full-size
+                # }
 
-                card_icon_dir = os.path.join(icons_path, str(card_id))
-                os.makedirs(card_icon_dir, exist_ok=True)
+                # card_icon_dir = os.path.join(icons_path, str(card_id))
+                # os.makedirs(card_icon_dir, exist_ok=True)
 
-                for size_label, url in sizes.items():
-                    png_filename = f"{card_id}_{size_label}.png"
-                    png_filepath = os.path.join(icons_path, png_filename)
+                # for size_label, url in sizes.items():
+                #     png_filename = f"{card_id}_{size_label}.png"
+                #     png_filepath = os.path.join(icons_path, png_filename)
 
-                    headers = {
-                        "User-Agent": "Mozilla/5.0"
-                    }
-                    response = requests.get(url, timeout=10, headers=headers)
-                    if response.status_code == 200:
-                        with open(png_filepath, "wb") as f:
-                            f.write(response.content)
-                        print(f"Saved {size_label} PNG")
+                #     headers = {
+                #         "User-Agent": "Mozilla/5.0"
+                #     }
+                #     response = requests.get(url, timeout=10, headers=headers)
+                #     if response.status_code == 200:
+                #         with open(png_filepath, "wb") as f:
+                #             f.write(response.content)
+                #         print(f"Saved {size_label} PNG")
 
-                        # Convert to WebP
-                        webp_filename = f"{card_id}_{size_label}.webp"
-                        webp_filepath = os.path.join(card_icon_dir, webp_filename)
-                        with Image.open(png_filepath) as img:
-                            img.save(webp_filepath, "webp")
+                #         # Convert to WebP
+                #         webp_filename = f"{card_id}_{size_label}.webp"
+                #         webp_filepath = os.path.join(card_icon_dir, webp_filename)
+                #         with Image.open(png_filepath) as img:
+                #             img.save(webp_filepath, "webp")
 
-                        os.remove(png_filepath)
-                    else:
-                        print(f"Failed to retrieve {size_label} icon for card {card_id}")
+                #         os.remove(png_filepath)
+                #     else:
+                #         print(f"Failed to retrieve {size_label} icon for card {card_id}")
 
 
                 # Extract card title from third column
@@ -237,7 +232,7 @@ def scrape_card_info(start_num=1, end_num=1212):
                 rarity = len(stars)
                 
                 # Extract status from seventh column
-                status = row.find_element(By.CSS_SELECTOR, "td:nth-child(7)").text.strip()
+                status = row.find_element(By.CSS_SELECTOR, "td:nth-child(9)").text.strip()
 
                 if (status == "Birthday limited"):
                     rarity = "Birthday"
