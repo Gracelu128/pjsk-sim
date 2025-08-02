@@ -7,13 +7,17 @@ Credits to data and image assets from [sekai.best](https://sekai.best) and [seka
 ## Directory Structure
 
 ```plaintext
-src/
-├── assets/                # Static assets used in the app
-│   ├── cards/             # Card images (.webp), both trained and untrained
-│   └── icons/             # Card icons (.webp), including thumbnails and full-size
-├── components/            # Reusable UI components (React or JSX)
-├── data/                  # Fetched static data files (JSON, CSV, etc.)
-│   └── card_metadata.json # Maps card IDs to metadata and display info
-├── logic/                 # Utility functions and business logic
-├── style/                 # Global/shared stylesheets (.css)
-└── pages/                 # Full page components (e.g., home, result, simulator)
+my-app/
+├── public/
+│   ├── cards/      # put card images here
+│   ├── icons/      # put icons here
+├── src/
+│   ├── data/
+│   │   └── card_metadata.json
+│   └── app/page.js  # (default Next.js page)
+asset_scraper.py
+
+In Next.js, any file in /public/ is automatically served as a static asset.
+So an image at public/cards/001.webp is available at:
+
+http://localhost:3000/cards/001.webp
