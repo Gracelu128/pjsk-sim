@@ -11,9 +11,11 @@ my-app/
 ├── public/
 │   ├── cards/      # put card images here
 │   ├── icons/      # put icons here
+|   ├── card_audio  # card card audio here
 ├── src/
 │   ├── data/
 │   │   └── card_metadata.json
+│   │   └── gacha_metadata.json
 │   └── app/page.js  # (default Next.js page)
 asset_scraper.py
 
