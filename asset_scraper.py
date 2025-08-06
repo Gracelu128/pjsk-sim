@@ -15,7 +15,11 @@ from selenium.webdriver.support import expected_conditions as EC
 from urllib.parse import urlparse, unquote
 from webdriver_manager.chrome import ChromeDriverManager
 
-def scrape_card_images(start_num=1, end_num=1212):
+# Global var to store start and end card ID
+start_id = 1
+end_id = 1217
+
+def scrape_card_images(start_num=start_id, end_num=end_id):
     """Scrape card images using Selenium with automatic driver management"""
     # Configuration
     asset_path = "/Users/gracelu/Desktop/pjsk sim/my-app/public/cards"
@@ -103,7 +107,7 @@ def scrape_card_images(start_num=1, end_num=1212):
     driver.quit()
     print("Scraping completed!")
 
-def sekaipedia_scrape_card_info(start_num=1, end_num=1212):
+def sekaipedia_scrape_card_info(start_num=start_id, end_num=end_id):
     """Scrape card images using Selenium with automatic driver management"""
     # Configuration
     json_path = "/Users/gracelu/Desktop/pjsk sim/my-app/src/data/card_metadata.json"
@@ -268,11 +272,13 @@ def sekaipedia_scrape_card_info(start_num=1, end_num=1212):
     with open(json_path, 'w') as f:
         json.dump(data, f, indent=2)
 
-def sekaibest_scrape_card_info(start_num=1, end_num=1212):
+def sekaibest_scrape_card_info(start_num=start_id, end_num=end_id):
     """Scrape card images using Selenium with automatic driver management"""
     # Configuration
     json_path = "/Users/gracelu/Desktop/pjsk sim/my-app/src/data/card_metadata.json"
     audio_path = "/Users/gracelu/Desktop/pjsk sim/my-app/public/card_audio"
+    costume_path = "/Users/gracelu/Desktop/pjsk sim/my-app/public/costumes"
+
     os.makedirs(audio_path, exist_ok=True)
     data = None
     if os.path.exists(json_path):
@@ -303,85 +309,160 @@ def sekaibest_scrape_card_info(start_num=1, end_num=1212):
             
             # Wait for the card element to be present
             wait = WebDriverWait(driver, 15)
-            card_container = wait.until(
-                EC.presence_of_element_located((By.CSS_SELECTOR, "div.MuiGrid-container.MuiGrid-direction-xs-column"))
-            )
+            # card_container = wait.until(
+            #     EC.presence_of_element_located((By.CSS_SELECTOR, "div.MuiGrid-container.MuiGrid-direction-xs-column"))
+            # )
 
-            # Find the Title section
-            title_section = driver.find_element(By.XPATH, 
-                "//div[contains(@class, 'MuiGrid-container') and .//h6[contains(text(), 'Title')]]")
+            # # Find the Title section
+            # title_section = driver.find_element(By.XPATH, 
+            #     "//div[contains(@class, 'MuiGrid-container') and .//h6[contains(text(), 'Title')]]")
 
-            # Get the container that holds both title paragraphs
-            title_container = title_section.find_element(By.CSS_SELECTOR, "div.MuiGrid-container.MuiGrid-direction-xs-column")
+            # # Get the container that holds both title paragraphs
+            # title_container = title_section.find_element(By.CSS_SELECTOR, "div.MuiGrid-container.MuiGrid-direction-xs-column")
 
-            # Get both title paragraphs
-            title_paragraphs = title_container.find_elements(By.CSS_SELECTOR, "p.MuiTypography-body1")
+            # # Get both title paragraphs
+            # title_paragraphs = title_container.find_elements(By.CSS_SELECTOR, "p.MuiTypography-body1")
 
-            if len(title_paragraphs) >= 2:
-                # First paragraph is Japanese title
-                jp_title = title_paragraphs[0].text.strip()
-                print(f"  Japanese Title: {jp_title}")
-                data[str(card_id)]["japanese name"] = jp_title
-            else:
-                print("  ! Couldn't find both title paragraphs")
+            # if len(title_paragraphs) >= 2:
+            #     # First paragraph is Japanese title
+            #     jp_title = title_paragraphs[0].text.strip()
+            #     print(f"  Japanese Title: {jp_title}")
+            #     data[str(card_id)]["japanese name"] = jp_title
+            # else:
+            #     print("  ! Couldn't find both title paragraphs")
 
-            try:
-                # Find the Gacha Phrase section
-                gacha_section = card_container.find_element(
-                    By.XPATH, 
-                    ".//div[contains(@class, 'MuiGrid-container') and .//h6[contains(., 'Gacha Phrase')]]"
-                )
+            # try:
+            #     # Find the Gacha Phrase section
+            #     gacha_section = card_container.find_element(
+            #         By.XPATH, 
+            #         ".//div[contains(@class, 'MuiGrid-container') and .//h6[contains(., 'Gacha Phrase')]]"
+            #     )
                 
-                # Get Japanese gacha phrase (first paragraph in the gacha container)
-                jp_gacha_phrase = gacha_section.find_element(
-                    By.XPATH, 
-                    ".//div[contains(@class, 'MuiGrid-direction-xs-column')]//p[contains(@class, 'MuiTypography-body1')][1]"
-                ).text.strip()
+            #     # Get Japanese gacha phrase (first paragraph in the gacha container)
+            #     jp_gacha_phrase = gacha_section.find_element(
+            #         By.XPATH, 
+            #         ".//div[contains(@class, 'MuiGrid-direction-xs-column')]//p[contains(@class, 'MuiTypography-body1')][1]"
+            #     ).text.strip()
                 
-                print(f"  Japanese Gacha Phrase: {jp_gacha_phrase}")
-                data[str(card_id)]["gacha phrase"] = jp_gacha_phrase
+            #     print(f"  Japanese Gacha Phrase: {jp_gacha_phrase}")
+            #     data[str(card_id)]["gacha phrase"] = jp_gacha_phrase
 
-                # Get audio URL
-                audio_link = gacha_section.find_element(
-                    By.XPATH, 
-                    ".//a[contains(@href, '.mp3')]"
-                )
-                audio_url = audio_link.get_attribute("href")
-                print(f"  Audio URL: {audio_url}")
+            #     # Get audio URL
+            #     audio_link = gacha_section.find_element(
+            #         By.XPATH, 
+            #         ".//a[contains(@href, '.mp3')]"
+            #     )
+            #     audio_url = audio_link.get_attribute("href")
+            #     print(f"  Audio URL: {audio_url}")
                 
-                # Download audio file
-                if audio_url:
-                    response = requests.get(audio_url)
-                    if response.status_code == 200:
-                        audio_file = os.path.join(audio_path, f"{card_id}.mp3")
-                        with open(audio_file, "wb") as f:
-                            f.write(response.content)
-                        print(f"  ✓ Downloaded audio: {audio_file}")
+            #     # Download audio file
+            #     if audio_url:
+            #         response = requests.get(audio_url)
+            #         if response.status_code == 200:
+            #             audio_file = os.path.join(audio_path, f"{card_id}.mp3")
+            #             with open(audio_file, "wb") as f:
+            #                 f.write(response.content)
+            #             print(f"  ✓ Downloaded audio: {audio_file}")
+            #         else:
+            #             print(f"  ! Failed to download audio: HTTP {response.status_code}")
+            # except Exception as e:
+            #     print(f"  ! No gacha phrase {card_id}: {str(e)}")
+
+            # # Find the Character section
+            # character_section = card_container.find_element(
+            #     By.XPATH, 
+            #     ".//div[contains(@class, 'MuiGrid-container') and .//h6[contains(., 'Character')]]"
+            # )
+            
+            # # Get Japanese character name (first paragraph in the character container)
+            # jp_character = character_section.find_element(
+            #     By.XPATH, 
+            #     ".//div[contains(@class, 'MuiGrid-direction-xs-column')]//p[contains(@class, 'MuiTypography-body1')][1]"
+            # ).text.strip()
+            
+            # print(f"  Character (JP): {jp_character}")
+            # data[str(card_id)]["character (japanese)"] = jp_character
+
+            # card_container = wait.until(EC.presence_of_element_located((
+            #     By.XPATH,
+            #     "//div[contains(@class, 'MuiGrid-direction-xs-column') and contains(@class, 'css-fkg94b')][.//h6[contains(., 'Skill Name')] and .//h6[contains(., 'Skill Effect') or contains(., 'Skill Effect (Normal)')]]"
+            # )))
+
+            # # Extract skill name section
+            # skill_name_section = card_container.find_element(
+            #     By.XPATH, ".//h6[contains(., 'Skill Name')]/ancestor::div[contains(@class, 'MuiGrid-wrap-xs-nowrap')]"
+            # )
+
+            # # Extract 
+            # name_paragraphs = skill_name_section.find_elements(
+            #     By.CSS_SELECTOR, "div.MuiGrid-direction-xs-column > p"
+            # )
+            # jp_skill_name = name_paragraphs[0].text
+
+            # # Extract skill effect section
+            # skill_effect_section = card_container.find_element(
+            #     By.XPATH, ".//h6[contains(., 'Skill Effect')]/ancestor::div[contains(@class, 'MuiGrid-wrap-xs-nowrap')]"
+            # )
+
+            # # Extract
+            # effect_paragraphs = skill_effect_section.find_elements(
+            #     By.CSS_SELECTOR, "div.MuiGrid-direction-xs-column > p"
+            # )
+            # jp_skill_effect = effect_paragraphs[0].text
+
+            # print("Japanese Skill Name:", jp_skill_name)
+            # print("Japanese Skill Effect:", jp_skill_effect)
+
+            # data[str(card_id)]["skill name (japanese)"] = jp_skill_name
+            # data[str(card_id)]["skill effect (japanese)"] = jp_skill_effect
+
+            # Try to scrape for costume for if card is 4 star
+            if data[str(card_id)]["rarity"] == 4:
+                try:
+                    # Try to find the rewards section
+                    rewards_section = WebDriverWait(driver, 3).until(
+                        EC.presence_of_element_located((By.XPATH, "//h6[contains(., 'Rewards')]/ancestor::div[contains(@class, 'MuiGrid-wrap-xs-nowrap')]"))
+                    )
+                    
+                    # Find all costume images in the rewards section
+                    costume_images = rewards_section.find_elements(By.CSS_SELECTOR, "img[src*='.webp']")
+                    image_urls = [img.get_attribute('src') for img in costume_images]
+                    
+                    if image_urls:
+                        # Create directory for this card's costumes
+                        costume_dir = f"/Users/gracelu/Desktop/pjsk sim/my-app/public/costumes/{card_id}"
+                        os.makedirs(costume_dir, exist_ok=True)
+                        
+                        # Download and save each costume image
+                        downloaded_files = []
+                        for url in image_urls:
+                            try:
+                                filename = url.split('/')[-1]
+                                filepath = os.path.join(costume_dir, filename)
+                                
+                                # Download only if file doesn't exist
+                                if not os.path.exists(filepath):
+                                    response = requests.get(url)
+                                    with open(filepath, 'wb') as f:
+                                        f.write(response.content)
+                                
+                                downloaded_files.append(filename)
+                            except Exception as e:
+                                print(f"  ! Error downloading costume image: {str(e)}")
+                        
+                        # Store filenames in card data
+                        print(f"  Downloaded {len(downloaded_files)} costume images")
                     else:
-                        print(f"  ! Failed to download audio: HTTP {response.status_code}")
-            except Exception as e:
-                print(f"  ! No gacha phrase {card_id}: {str(e)}")
-
-            # Find the Character section
-            character_section = card_container.find_element(
-                By.XPATH, 
-                ".//div[contains(@class, 'MuiGrid-container') and .//h6[contains(., 'Character')]]"
-            )
-            
-            # Get Japanese character name (first paragraph in the character container)
-            jp_character = character_section.find_element(
-                By.XPATH, 
-                ".//div[contains(@class, 'MuiGrid-direction-xs-column')]//p[contains(@class, 'MuiTypography-body1')][1]"
-            ).text.strip()
-            
-            print(f"  Character (JP): {jp_character}")
-            data[str(card_id)]["character (japanese)"] = jp_character
+                        print("  No costume images found in rewards section")
+                        
+                except Exception as e:
+                    print("  No rewards section found for this card")
 
             # Save progress periodically
-            if card_id % 10 == 0:
-                with open(json_path, 'w') as f:
-                    json.dump(data, f, indent=2)
-            
+            # if card_id % 10 == 0:
+            #     with open(json_path, 'w') as f:
+            #         json.dump(data, f, indent=2)
+
         except Exception as e:
             print(f"  ! Error processing card {card_id}: {str(e)}")
         
@@ -409,7 +490,8 @@ def json_reorder(json_path, key_order):
         json.dump(formatted_data, f, indent=2, ensure_ascii=False)
 
 def asset_check():
-    for i in range(1, 1213):
+    global start_id, end_id
+    for i in range(start_id, end_id + 1):
         path_check = Path(f"/Users/gracelu/Desktop/pjsk sim/src/assets/cards/{i}")
 
         if not path_check.is_dir():
@@ -418,29 +500,26 @@ def asset_check():
 def main():
     """Main function to execute scraping"""
     # print("Starting PJSK card image scraper with Selenium...")
-    # print("This will automatically download ChromeDriver if needed...")
-    # scrape_card_images(start_num=1213, end_num=1217)
-    # print("Task completed. Check the output directory for results.")
-    # asset_check()
-    # print("Starting PJSK card information scraper with Selenium...")
-    # print("This will automatically download ChromeDriver if needed...")
+    # scrape_card_images(start_num=1 , end_num=1217)
     # sekaipedia_scrape_card_info(start_num=1213, end_num=1217)
-    # print("Task completed. Check the json for results.")
-    sekaibest_scrape_card_info(start_num=1, end_num=1217)
-    desired_card_metadata_order = [
-        "id",
-        "character",
-        "character (japanese)",
-        "english name",
-        "japanese name",
-        "gacha phrase",
-        "unit",
-        "support unit",
-        "attribute",
-        "rarity",
-        "status"
-    ]
-    json_reorder("/Users/gracelu/Desktop/pjsk sim/my-app/src/data/card_metadata.json", desired_card_metadata_order)
+    sekaibest_scrape_card_info(start_num=1091, end_num=1217)
+    # desired_card_metadata_order = [
+    #     "id",
+    #     "character",
+    #     "character (japanese)",
+    #     "english name",
+    #     "japanese name",
+    #     "skill name (japanese)",
+    #     "skill effect (japanese)",
+    #     "gacha phrase",
+    #     "unit",
+    #     "support unit",
+    #     "attribute",
+    #     "rarity",
+    #     "status"
+    # ]
+    # json_reorder("/Users/gracelu/Desktop/pjsk sim/my-app/src/data/card_metadata.json", desired_card_metadata_order)
+    # asset_check()
 
 if __name__ == "__main__":
     main()
