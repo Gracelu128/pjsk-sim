@@ -418,25 +418,30 @@ def sekaibest_scrape_card_info(start_num=start_id, end_num=end_id):
 
             # Try to scrape for costume for if card is 4 star
             if data[str(card_id)]["rarity"] == 4:
+                # Try to find the costume rewards section
                 try:
-                    # Try to find the rewards section
-                    rewards_section = WebDriverWait(driver, 3).until(
-                        EC.presence_of_element_located((By.XPATH, "//h6[contains(., 'Rewards')]/ancestor::div[contains(@class, 'MuiGrid-wrap-xs-nowrap')]"))
+                    # Use a more specific XPath to target only costume rewards
+                    rewards_container = WebDriverWait(driver, 5).until(
+                        EC.presence_of_element_located((By.XPATH,
+                            "//div[contains(@class, 'MuiGrid-wrap-xs-nowrap') and .//h6[contains(., 'Rewards')] and .//img[contains(@src, 'costume/')]]"
+                        ))
                     )
                     
-                    # Find all costume images in the rewards section
-                    costume_images = rewards_section.find_elements(By.CSS_SELECTOR, "img[src*='.webp']")
-                    image_urls = [img.get_attribute('src') for img in costume_images]
+                    # Find all costume images within this specific container
+                    costume_images = rewards_container.find_elements(
+                        By.CSS_SELECTOR, "img[src*='costume/']"
+                    )
                     
-                    if image_urls:
+                    if costume_images:
                         # Create directory for this card's costumes
                         costume_dir = f"/Users/gracelu/Desktop/pjsk sim/my-app/public/costumes/{card_id}"
                         os.makedirs(costume_dir, exist_ok=True)
                         
                         # Download and save each costume image
                         downloaded_files = []
-                        for url in image_urls:
+                        for img in costume_images:
                             try:
+                                url = img.get_attribute('src')
                                 filename = url.split('/')[-1]
                                 filepath = os.path.join(costume_dir, filename)
                                 
@@ -450,13 +455,12 @@ def sekaibest_scrape_card_info(start_num=start_id, end_num=end_id):
                             except Exception as e:
                                 print(f"  ! Error downloading costume image: {str(e)}")
                         
-                        # Store filenames in card data
                         print(f"  Downloaded {len(downloaded_files)} costume images")
                     else:
                         print("  No costume images found in rewards section")
                         
                 except Exception as e:
-                    print("  No rewards section found for this card")
+                    print("  No costume rewards section found for this card")
 
             # Save progress periodically
             # if card_id % 10 == 0:
@@ -502,7 +506,7 @@ def main():
     # print("Starting PJSK card image scraper with Selenium...")
     # scrape_card_images(start_num=1 , end_num=1217)
     # sekaipedia_scrape_card_info(start_num=1213, end_num=1217)
-    sekaibest_scrape_card_info(start_num=1091, end_num=1217)
+    sekaibest_scrape_card_info(start_num=1, end_num=1217)
     # desired_card_metadata_order = [
     #     "id",
     #     "character",
