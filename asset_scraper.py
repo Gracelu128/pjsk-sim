@@ -142,6 +142,8 @@ def sekaipedia_scrape_card_info(start_num=start_id, end_num=end_id):
         wait = WebDriverWait(driver, 15)
         rows = driver.find_elements(By.CSS_SELECTOR, "table.wikitable.sortable.jquery-tablesorter tbody tr")
 
+        card_hrefs = []
+
         # Loop through every single card entry, open up webpage and extract info about card
         for index, row in enumerate(rows):
             try:
@@ -149,103 +151,117 @@ def sekaipedia_scrape_card_info(start_num=start_id, end_num=end_id):
                 # Extract desired card info here
                 # Extract card ID from first column
                 card_id = row.find_element(By.CSS_SELECTOR, "td:nth-child(1)").text.strip()
+                print(f"Working on {card_id}")
                 
                 # Skip cards outside the specified range
                 card_id_int = int(card_id)
-                if card_id_int < start_num or card_id_int > end_num:
+                if card_id_int < start_num:
                     print(f"Skipping {card_id}")
                     continue
-                # Extract icon from second column
-                icon_img = row.find_element(By.CSS_SELECTOR, "td:nth-child(2) img")
-                icon_url = icon_img.get_attribute("src")
-                if icon_url.startswith("//"):
-                    icon_url = "https:" + icon_url
-                # Remove the last segment (e.g., '64px-Saki_1_thumbnail.png')
-                parsed = urlparse(icon_url)
-                path_parts = parsed.path.split("/")
-                if "thumb" in path_parts:
-                    thumb_index = path_parts.index("thumb")
-                    full_path_parts = path_parts[:thumb_index] + path_parts[thumb_index + 1:thumb_index + 4]  # Skip "thumb" and keep the 3 parts after
-                    full_path = "/".join(full_path_parts)
-                    full_url = f"{parsed.scheme}://{parsed.netloc}{full_path}"
-                print(f"Icon url: {icon_url}")
-                print(f"Full url: {full_url}")
+                if card_id_int > end_num:
+                    break
+                # # Extract icon from second column
+                # icon_img = row.find_element(By.CSS_SELECTOR, "td:nth-child(2) img")
+                # icon_url = icon_img.get_attribute("src")
+                # if icon_url.startswith("//"):
+                #     icon_url = "https:" + icon_url
+                # # Remove the last segment (e.g., '64px-Saki_1_thumbnail.png')
+                # parsed = urlparse(icon_url)
+                # path_parts = parsed.path.split("/")
+                # if "thumb" in path_parts:
+                #     thumb_index = path_parts.index("thumb")
+                #     full_path_parts = path_parts[:thumb_index] + path_parts[thumb_index + 1:thumb_index + 4]  # Skip "thumb" and keep the 3 parts after
+                #     full_path = "/".join(full_path_parts)
+                #     full_url = f"{parsed.scheme}://{parsed.netloc}{full_path}"
+                # print(f"Icon url: {icon_url}")
+                # print(f"Full url: {full_url}")
                 
-                # Download both 64px and full-size icon
-                sizes = {
-                    "thumb": icon_url,  # e.g. the 64px URL
-                    "full": full_url  # strip the "64px-" prefix to get full-size
-                }
+                # # Download both 64px and full-size icon
+                # sizes = {
+                #     "thumb": icon_url,  # e.g. the 64px URL
+                #     "full": full_url  # strip the "64px-" prefix to get full-size
+                # }
 
-                card_icon_dir = os.path.join(icons_path, str(card_id))
-                os.makedirs(card_icon_dir, exist_ok=True)
+                # card_icon_dir = os.path.join(icons_path, str(card_id))
+                # os.makedirs(card_icon_dir, exist_ok=True)
 
-                for size_label, url in sizes.items():
-                    png_filename = f"{card_id}_{size_label}.png"
-                    png_filepath = os.path.join(icons_path, png_filename)
+                # for size_label, url in sizes.items():
+                #     png_filename = f"{card_id}_{size_label}.png"
+                #     png_filepath = os.path.join(icons_path, png_filename)
 
-                    headers = {
-                        "User-Agent": "Mozilla/5.0"
-                    }
-                    response = requests.get(url, timeout=10, headers=headers)
-                    if response.status_code == 200:
-                        with open(png_filepath, "wb") as f:
-                            f.write(response.content)
-                        print(f"Saved {size_label} PNG")
+                #     headers = {
+                #         "User-Agent": "Mozilla/5.0"
+                #     }
+                #     response = requests.get(url, timeout=10, headers=headers)
+                #     if response.status_code == 200:
+                #         with open(png_filepath, "wb") as f:
+                #             f.write(response.content)
+                #         print(f"Saved {size_label} PNG")
 
-                        # Convert to WebP
-                        webp_filename = f"{card_id}_{size_label}.webp"
-                        webp_filepath = os.path.join(card_icon_dir, webp_filename)
-                        with Image.open(png_filepath) as img:
-                            img.save(webp_filepath, "webp")
+                #         # Convert to WebP
+                #         webp_filename = f"{card_id}_{size_label}.webp"
+                #         webp_filepath = os.path.join(card_icon_dir, webp_filename)
+                #         with Image.open(png_filepath) as img:
+                #             img.save(webp_filepath, "webp")
 
-                        os.remove(png_filepath)
-                    else:
-                        print(f"Failed to retrieve {size_label} icon for card {card_id}")
+                #         os.remove(png_filepath)
+                #     else:
+                #         print(f"Failed to retrieve {size_label} icon for card {card_id}")
 
 
                 # Extract card title from third column
                 character_link = row.find_element(By.CSS_SELECTOR, "td:nth-child(3) a")
-                card_title = character_link.get_attribute("title").strip()
+                # Store character link in card_hrefs
+                relative_url = character_link.get_attribute("href")
+                # OR if the href is relative (e.g., "/wiki/Hatsune_Miku"), construct the full URL:
+                if relative_url.startswith("/"):
+                    full_url = "https://www.sekaipedia.org" + relative_url
+                else:
+                    full_url = relative_url  # Already absolute
 
-                # Extract character from fourth column
-                character = row.find_element(By.CSS_SELECTOR, "td:nth-child(4)").text.strip()
+                card_hrefs.append((card_id, full_url))
 
-                # Extract unit from fifth column
-                unit = row.find_element(By.CSS_SELECTOR, "td:nth-child(5)").text.strip()
+                # card_title = character_link.get_attribute("title").strip()
+
+                # # Extract character from fourth column
+                # character = row.find_element(By.CSS_SELECTOR, "td:nth-child(4)").text.strip()
+
+                # # Extract unit from fifth column
+                # unit = row.find_element(By.CSS_SELECTOR, "td:nth-child(5)").text.strip()
                 
-                # Extract support unit from fourth column
-                support_unit = row.find_element(By.CSS_SELECTOR, "td:nth-child(6)").text.strip()
-                if not support_unit:
-                    support_unit = None
+                # # Extract support unit from fourth column
+                # support_unit = row.find_element(By.CSS_SELECTOR, "td:nth-child(6)").text.strip()
+                # if not support_unit:
+                #     support_unit = None
                 
-                # Extract attribute from fifth column
-                attribute = row.find_element(By.CSS_SELECTOR, "td:nth-child(7)").text.strip()
+                # # Extract attribute from fifth column
+                # attribute = row.find_element(By.CSS_SELECTOR, "td:nth-child(7)").text.strip()
                 
-                # Extract rarity from sixth column
-                rarity_td = row.find_element(By.CSS_SELECTOR, "td:nth-child(8)")
-                # Count star images to determine rarity
-                stars = rarity_td.find_elements(By.CSS_SELECTOR, "img[src*='Gold_star']")
-                rarity = len(stars)
+                # # Extract rarity from sixth column
+                # rarity_td = row.find_element(By.CSS_SELECTOR, "td:nth-child(8)")
+                # # Count star images to determine rarity
+                # stars = rarity_td.find_elements(By.CSS_SELECTOR, "img[src*='Gold_star']")
+                # rarity = len(stars)
                 
-                # Extract status from seventh column
-                status = row.find_element(By.CSS_SELECTOR, "td:nth-child(9)").text.strip()
+                # # Extract status from seventh column
+                # status = row.find_element(By.CSS_SELECTOR, "td:nth-child(9)").text.strip()
 
-                if (status == "Birthday limited"):
-                    rarity = "Birthday"
+                # if (status == "Birthday limited"):
+                #     rarity = "Birthday"
 
-                data[card_id] = {
-                    "id" : card_id,
-                    "character" : character,
-                    "english name" : card_title,
-                    "unit" : unit,
-                    "support unit" : support_unit,
-                    "attribute" : attribute,
-                    "rarity" : rarity,
-                    "status" : status,
-                }
+                # data[card_id] = {}
+                # data[card_id]["id"] = card_id
+                # data[card_id]["character"] = character
+                # data[card_id]["english name"] = card_title
+                # data[card_id]["unit"] = unit
+                # data[card_id]["support unit"] = support_unit
+                # data[card_id]["attribute"] = attribute
+                # data[card_id]["rarity"] = rarity
+                # data[card_id]["status"] = status
 
-                print(f"[{index}] Processed card {card_id}: {card_title}")
+                # print(f"[{index}] Processed card {card_id}: {card_title}")
+
+                # Extract Talent (maxxed)
                 
                 # Save progress periodically
                 if index % 10 == 0:
@@ -256,6 +272,73 @@ def sekaipedia_scrape_card_info(start_num=start_id, end_num=end_id):
                 time.sleep(1)
             except Exception as e:
                 print(f"Error on row {index}: {e}")
+
+        # Loop over hrefs, open individual card pages to extract more information
+        for index, (card_id, full_url) in enumerate(card_hrefs):
+            print(f"[{index}] Card {card_id}")
+            # Navigate to the page
+            driver.get(full_url)
+            print(full_url)
+
+            wait = WebDriverWait(driver, 15)
+            # Flexible section detection using case-insensitive ID matching
+            section = wait.until(
+                EC.presence_of_element_located((
+                    By.XPATH, 
+                    "//section[.//*[translate(@id, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz') = 'skill_name']]"
+                ))
+            )
+            # print(section.get_attribute("outerHTML"))
+
+            en_skill_name = None
+            name_uls = section.find_elements(By.XPATH, ".//h3[.//*[contains(translate(@id, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'skill_name')]]/following-sibling::ul")
+            if name_uls:
+                name_ul = name_uls[0]
+                try:
+                    en_li = name_ul.find_element(By.XPATH, ".//li[contains(., 'English:')]")
+                    en_skill_name = en_li.text.split("English:")[1].strip()
+                except:
+                    pass
+
+            print(f"  Skill Name: {en_skill_name}")
+
+            # Robust extraction for skill effect
+            en_skill_effect = None
+            effect_uls = section.find_elements(By.XPATH, ".//h3[.//*[contains(translate(@id, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'skill_effect')]]/following-sibling::ul")
+            if effect_uls:
+                effect_ul = effect_uls[0]
+                try:
+                    level4_li = effect_ul.find_element(By.XPATH, ".//li[contains(., 'Level 4:')]")
+                    en_skill_effect = level4_li.text.split("Level 4:")[1].strip().replace(";", " and")
+                except:
+                    pass
+
+            print(f"  Skill Effect: {en_skill_effect}")
+
+            # Load the Main Stats section (for Power)
+            try:
+                # Fallback: find section after h2#Stats
+                stats_heading = wait.until(
+                    EC.presence_of_element_located((By.XPATH, "//h2[.//span[@id='Stats']]"))
+                )
+                stats_section = stats_heading.find_element(By.XPATH, "following-sibling::section[1]")
+            except Exception as e:
+                print("Fallback: Try to look for 'Main_stats' section.")
+                stats_section = wait.until(
+                    EC.presence_of_element_located((By.XPATH, "//section[.//span[@id='Main_stats']]"))
+                )
+
+            power_val = stats_section.find_element(By.XPATH, ".//tr[th[contains(., 'Power')]]/td[2]").text
+            print(f"  Power (max): {power_val}")
+
+            data[str(card_id)]["skill name (english)"] = en_skill_name
+            data[str(card_id)]["skill effect (english)"] = en_skill_effect
+            data[str(card_id)]["talent (max)"] = int(power_val)
+
+            # Save progress periodically
+            if index % 10 == 0:
+                with open(json_path, 'w') as f:
+                    json.dump(data, f, indent=2)
     except Exception as e:
         print(f"  ! Error processing card info")
 
@@ -309,112 +392,112 @@ def sekaibest_scrape_card_info(start_num=start_id, end_num=end_id):
             
             # Wait for the card element to be present
             wait = WebDriverWait(driver, 15)
-            # card_container = wait.until(
-            #     EC.presence_of_element_located((By.CSS_SELECTOR, "div.MuiGrid-container.MuiGrid-direction-xs-column"))
-            # )
+            card_container = wait.until(
+                EC.presence_of_element_located((By.CSS_SELECTOR, "div.MuiGrid-container.MuiGrid-direction-xs-column"))
+            )
 
-            # # Find the Title section
-            # title_section = driver.find_element(By.XPATH, 
-            #     "//div[contains(@class, 'MuiGrid-container') and .//h6[contains(text(), 'Title')]]")
+            # Find the Title section
+            title_section = driver.find_element(By.XPATH, 
+                "//div[contains(@class, 'MuiGrid-container') and .//h6[contains(text(), 'Title')]]")
 
-            # # Get the container that holds both title paragraphs
-            # title_container = title_section.find_element(By.CSS_SELECTOR, "div.MuiGrid-container.MuiGrid-direction-xs-column")
+            # Get the container that holds both title paragraphs
+            title_container = title_section.find_element(By.CSS_SELECTOR, "div.MuiGrid-container.MuiGrid-direction-xs-column")
 
-            # # Get both title paragraphs
-            # title_paragraphs = title_container.find_elements(By.CSS_SELECTOR, "p.MuiTypography-body1")
+            # Get both title paragraphs
+            title_paragraphs = title_container.find_elements(By.CSS_SELECTOR, "p.MuiTypography-body1")
 
-            # if len(title_paragraphs) >= 2:
-            #     # First paragraph is Japanese title
-            #     jp_title = title_paragraphs[0].text.strip()
-            #     print(f"  Japanese Title: {jp_title}")
-            #     data[str(card_id)]["japanese name"] = jp_title
-            # else:
-            #     print("  ! Couldn't find both title paragraphs")
+            if len(title_paragraphs) >= 2:
+                # First paragraph is Japanese title
+                jp_title = title_paragraphs[0].text.strip()
+                print(f"  Japanese Title: {jp_title}")
+                data[str(card_id)]["japanese name"] = jp_title
+            else:
+                print("  ! Couldn't find both title paragraphs")
 
-            # try:
-            #     # Find the Gacha Phrase section
-            #     gacha_section = card_container.find_element(
-            #         By.XPATH, 
-            #         ".//div[contains(@class, 'MuiGrid-container') and .//h6[contains(., 'Gacha Phrase')]]"
-            #     )
+            try:
+                # Find the Gacha Phrase section
+                gacha_section = card_container.find_element(
+                    By.XPATH, 
+                    ".//div[contains(@class, 'MuiGrid-container') and .//h6[contains(., 'Gacha Phrase')]]"
+                )
                 
-            #     # Get Japanese gacha phrase (first paragraph in the gacha container)
-            #     jp_gacha_phrase = gacha_section.find_element(
-            #         By.XPATH, 
-            #         ".//div[contains(@class, 'MuiGrid-direction-xs-column')]//p[contains(@class, 'MuiTypography-body1')][1]"
-            #     ).text.strip()
+                # Get Japanese gacha phrase (first paragraph in the gacha container)
+                jp_gacha_phrase = gacha_section.find_element(
+                    By.XPATH, 
+                    ".//div[contains(@class, 'MuiGrid-direction-xs-column')]//p[contains(@class, 'MuiTypography-body1')][1]"
+                ).text.strip()
                 
-            #     print(f"  Japanese Gacha Phrase: {jp_gacha_phrase}")
-            #     data[str(card_id)]["gacha phrase"] = jp_gacha_phrase
+                print(f"  Japanese Gacha Phrase: {jp_gacha_phrase}")
+                data[str(card_id)]["gacha phrase"] = jp_gacha_phrase
 
-            #     # Get audio URL
-            #     audio_link = gacha_section.find_element(
-            #         By.XPATH, 
-            #         ".//a[contains(@href, '.mp3')]"
-            #     )
-            #     audio_url = audio_link.get_attribute("href")
-            #     print(f"  Audio URL: {audio_url}")
+                # Get audio URL
+                audio_link = gacha_section.find_element(
+                    By.XPATH, 
+                    ".//a[contains(@href, '.mp3')]"
+                )
+                audio_url = audio_link.get_attribute("href")
+                print(f"  Audio URL: {audio_url}")
                 
-            #     # Download audio file
-            #     if audio_url:
-            #         response = requests.get(audio_url)
-            #         if response.status_code == 200:
-            #             audio_file = os.path.join(audio_path, f"{card_id}.mp3")
-            #             with open(audio_file, "wb") as f:
-            #                 f.write(response.content)
-            #             print(f"  ✓ Downloaded audio: {audio_file}")
-            #         else:
-            #             print(f"  ! Failed to download audio: HTTP {response.status_code}")
-            # except Exception as e:
-            #     print(f"  ! No gacha phrase {card_id}: {str(e)}")
+                # Download audio file
+                if audio_url:
+                    response = requests.get(audio_url)
+                    if response.status_code == 200:
+                        audio_file = os.path.join(audio_path, f"{card_id}.mp3")
+                        with open(audio_file, "wb") as f:
+                            f.write(response.content)
+                        print(f"  ✓ Downloaded audio: {audio_file}")
+                    else:
+                        print(f"  ! Failed to download audio: HTTP {response.status_code}")
+            except Exception as e:
+                print(f"  ! No gacha phrase {card_id}: {str(e)}")
 
-            # # Find the Character section
-            # character_section = card_container.find_element(
-            #     By.XPATH, 
-            #     ".//div[contains(@class, 'MuiGrid-container') and .//h6[contains(., 'Character')]]"
-            # )
+            # Find the Character section
+            character_section = card_container.find_element(
+                By.XPATH, 
+                ".//div[contains(@class, 'MuiGrid-container') and .//h6[contains(., 'Character')]]"
+            )
             
-            # # Get Japanese character name (first paragraph in the character container)
-            # jp_character = character_section.find_element(
-            #     By.XPATH, 
-            #     ".//div[contains(@class, 'MuiGrid-direction-xs-column')]//p[contains(@class, 'MuiTypography-body1')][1]"
-            # ).text.strip()
+            # Get Japanese character name (first paragraph in the character container)
+            jp_character = character_section.find_element(
+                By.XPATH, 
+                ".//div[contains(@class, 'MuiGrid-direction-xs-column')]//p[contains(@class, 'MuiTypography-body1')][1]"
+            ).text.strip()
             
-            # print(f"  Character (JP): {jp_character}")
-            # data[str(card_id)]["character (japanese)"] = jp_character
+            print(f"  Character (JP): {jp_character}")
+            data[str(card_id)]["character (japanese)"] = jp_character
 
-            # card_container = wait.until(EC.presence_of_element_located((
-            #     By.XPATH,
-            #     "//div[contains(@class, 'MuiGrid-direction-xs-column') and contains(@class, 'css-fkg94b')][.//h6[contains(., 'Skill Name')] and .//h6[contains(., 'Skill Effect') or contains(., 'Skill Effect (Normal)')]]"
-            # )))
+            card_container = wait.until(EC.presence_of_element_located((
+                By.XPATH,
+                "//div[contains(@class, 'MuiGrid-direction-xs-column') and contains(@class, 'css-fkg94b')][.//h6[contains(., 'Skill Name')] and .//h6[contains(., 'Skill Effect') or contains(., 'Skill Effect (Normal)')]]"
+            )))
 
-            # # Extract skill name section
-            # skill_name_section = card_container.find_element(
-            #     By.XPATH, ".//h6[contains(., 'Skill Name')]/ancestor::div[contains(@class, 'MuiGrid-wrap-xs-nowrap')]"
-            # )
+            # Extract skill name section
+            skill_name_section = card_container.find_element(
+                By.XPATH, ".//h6[contains(., 'Skill Name')]/ancestor::div[contains(@class, 'MuiGrid-wrap-xs-nowrap')]"
+            )
 
-            # # Extract 
-            # name_paragraphs = skill_name_section.find_elements(
-            #     By.CSS_SELECTOR, "div.MuiGrid-direction-xs-column > p"
-            # )
-            # jp_skill_name = name_paragraphs[0].text
+            # Extract 
+            name_paragraphs = skill_name_section.find_elements(
+                By.CSS_SELECTOR, "div.MuiGrid-direction-xs-column > p"
+            )
+            jp_skill_name = name_paragraphs[0].text
 
-            # # Extract skill effect section
-            # skill_effect_section = card_container.find_element(
-            #     By.XPATH, ".//h6[contains(., 'Skill Effect')]/ancestor::div[contains(@class, 'MuiGrid-wrap-xs-nowrap')]"
-            # )
+            # Extract skill effect section
+            skill_effect_section = card_container.find_element(
+                By.XPATH, ".//h6[contains(., 'Skill Effect')]/ancestor::div[contains(@class, 'MuiGrid-wrap-xs-nowrap')]"
+            )
 
-            # # Extract
-            # effect_paragraphs = skill_effect_section.find_elements(
-            #     By.CSS_SELECTOR, "div.MuiGrid-direction-xs-column > p"
-            # )
-            # jp_skill_effect = effect_paragraphs[0].text
+            # Extract
+            effect_paragraphs = skill_effect_section.find_elements(
+                By.CSS_SELECTOR, "div.MuiGrid-direction-xs-column > p"
+            )
+            jp_skill_effect = effect_paragraphs[0].text
 
-            # print("Japanese Skill Name:", jp_skill_name)
-            # print("Japanese Skill Effect:", jp_skill_effect)
+            print("Japanese Skill Name:", jp_skill_name)
+            print("Japanese Skill Effect:", jp_skill_effect)
 
-            # data[str(card_id)]["skill name (japanese)"] = jp_skill_name
-            # data[str(card_id)]["skill effect (japanese)"] = jp_skill_effect
+            data[str(card_id)]["skill name (japanese)"] = jp_skill_name
+            data[str(card_id)]["skill effect (japanese)"] = jp_skill_effect
 
             # Try to scrape for costume for if card is 4 star
             if data[str(card_id)]["rarity"] == 4:
@@ -463,9 +546,9 @@ def sekaibest_scrape_card_info(start_num=start_id, end_num=end_id):
                     print("  No costume rewards section found for this card")
 
             # Save progress periodically
-            # if card_id % 10 == 0:
-            #     with open(json_path, 'w') as f:
-            #         json.dump(data, f, indent=2)
+            if card_id % 10 == 0:
+                with open(json_path, 'w') as f:
+                    json.dump(data, f, indent=2)
 
         except Exception as e:
             print(f"  ! Error processing card {card_id}: {str(e)}")
@@ -505,24 +588,27 @@ def main():
     """Main function to execute scraping"""
     # print("Starting PJSK card image scraper with Selenium...")
     # scrape_card_images(start_num=1 , end_num=1217)
-    # sekaipedia_scrape_card_info(start_num=1213, end_num=1217)
-    sekaibest_scrape_card_info(start_num=1, end_num=1217)
-    # desired_card_metadata_order = [
-    #     "id",
-    #     "character",
-    #     "character (japanese)",
-    #     "english name",
-    #     "japanese name",
-    #     "skill name (japanese)",
-    #     "skill effect (japanese)",
-    #     "gacha phrase",
-    #     "unit",
-    #     "support unit",
-    #     "attribute",
-    #     "rarity",
-    #     "status"
-    # ]
-    # json_reorder("/Users/gracelu/Desktop/pjsk sim/my-app/src/data/card_metadata.json", desired_card_metadata_order)
+    # sekaipedia_scrape_card_info(start_num=1001, end_num=1217)
+    # sekaibest_scrape_card_info(start_num=1, end_num=1217)
+    desired_card_metadata_order = [
+        "id",
+        "character",
+        "character (japanese)",
+        "english name",
+        "japanese name",
+        "skill name (japanese)",
+        "skill name (english)",
+        "skill effect (japanese)",
+        "skill effect (english)",
+        "talent (max)",
+        "gacha phrase",
+        "unit",
+        "support unit",
+        "attribute",
+        "rarity",
+        "status"
+    ]
+    json_reorder("/Users/gracelu/Desktop/pjsk sim/my-app/src/data/card_metadata.json", desired_card_metadata_order)
     # asset_check()
 
 if __name__ == "__main__":
