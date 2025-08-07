@@ -1,0 +1,18 @@
+{
+  "id": "457",
+  "character": "Hinomori Shiho",
+  "character (japanese)": "日野森 志歩",
+  "english name": "The Correct Path for Me",
+  "japanese name": "私にとって正しい道",
+  "skill name (japanese)": "あの日の覚悟",
+  "skill name (english)": "Our Resolve on That Day",
+  "skill effect (japanese)": "5秒間 発動時ライフが800未満ならスコアが90%UP、 800以上ならスコアが120%UP、更にライフが10増加毎に+1%UPする（最大140%)",
+  "skill effect (english)": "For 5 seconds, 90% score boost if life is less than 800 or 120% score boost if life is 800. For every +10 life above 800, score boost increased by +1% (up to 140%).",
+  "talent (max)": 31740,
+  "gacha phrase": "何も、知らないくせに……！",
+  "unit": "Leo/need",
+  "support unit": null,
+  "attribute": "Mysterious",
+  "rarity": 4,
+  "status": "Colorful Festival limited"
+}

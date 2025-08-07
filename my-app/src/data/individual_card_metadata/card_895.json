@@ -1,0 +1,18 @@
+{
+  "id": "895",
+  "character": "Tenma Saki",
+  "character (japanese)": "天馬 咲希",
+  "english name": "Prayers Soaring Into the Sky",
+  "japanese name": "空へはばたく祈り",
+  "skill name (japanese)": "自由の庭",
+  "skill name (english)": "The Garden of Freedom",
+  "skill effect (japanese)": "5秒間 発動時ライフが800未満ならスコアが90%UP、 800以上ならスコアが120%UP、更にライフが10増加毎に+1%UPする（最大140%)",
+  "skill effect (english)": "For 5 seconds, 90% score boost if life is less than 800 or 120% score boost if life is 800. For every +10 life above 800, score boost increased by +1% (up to 140%).",
+  "talent (max)": 31742,
+  "gacha phrase": "この想いが、届きますように……！",
+  "unit": "Leo/need",
+  "support unit": null,
+  "attribute": "Cute",
+  "rarity": 4,
+  "status": "Colorful Festival limited"
+}

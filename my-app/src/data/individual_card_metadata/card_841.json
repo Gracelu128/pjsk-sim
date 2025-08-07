@@ -1,0 +1,18 @@
+{
+  "id": "841",
+  "character": "Hinomori Shizuku",
+  "character (japanese)": "日野森 雫",
+  "english name": "Butterflies From Long, Yet Never Forgotten Days",
+  "japanese name": "忘るまじ昔日の蝶",
+  "skill name (japanese)": "ひと欠片も失くさぬように",
+  "skill name (english)": "So That Not a Single Piece Will Ever Be Lost",
+  "skill effect (japanese)": "5秒間 発動時ライフが800未満ならスコアが90%UP、 800以上ならスコアが120%UP、更にライフが10増加毎に+1%UPする（最大140%)",
+  "skill effect (english)": "For 5 seconds, 90% score boost if life is less than 800 or 120% score boost if life is 800. For every +10 life above 800, score boost increased by +1% (up to 140%).",
+  "talent (max)": 31744,
+  "gacha phrase": "最後まで、見届けてくれたのね",
+  "unit": "MORE MORE JUMP!",
+  "support unit": null,
+  "attribute": "Mysterious",
+  "rarity": 4,
+  "status": "Colorful Festival limited"
+}

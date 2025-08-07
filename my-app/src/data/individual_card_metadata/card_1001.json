@@ -1,0 +1,18 @@
+{
+  "id": "1001",
+  "character": "Mochizuki Honami",
+  "character (japanese)": "望月 穂波",
+  "english name": "Experiencing the Joy of Drumming",
+  "japanese name": "ドラムの楽しさに触れて",
+  "skill name (japanese)": "リーダーの役目",
+  "skill name (english)": "A Leader's Role",
+  "skill effect (japanese)": "ライフが400回復し、5秒間 スコアが60%UPする",
+  "skill effect (english)": "Recover 400 life and 60% score boost for 5 seconds.",
+  "talent (max)": 28434,
+  "gacha phrase": "これが、ドラムなんだ……！",
+  "unit": "Leo/need",
+  "support unit": null,
+  "attribute": "Cool",
+  "rarity": 3,
+  "status": "Permanent"
+}

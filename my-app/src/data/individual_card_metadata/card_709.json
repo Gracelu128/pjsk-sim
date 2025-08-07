@@ -1,0 +1,18 @@
+{
+  "id": "709",
+  "character": "Kagamine Len",
+  "character (japanese)": "鏡音 レン",
+  "english name": "Performing With All My Heart and Soul",
+  "japanese name": "想いをこめた演奏で",
+  "skill name (japanese)": "プロとして進むみんなのために",
+  "skill name (english)": "For Everyone Who's Moving Forward to Become Professionals",
+  "skill effect (japanese)": "5秒間 スコアが100%UPする 自身を除き「Leo/need」メンバーを1人編成する毎にスコアが10%UPし、全員一致で更に10%UPする（最大150%)",
+  "skill effect (english)": "100% score boost for 5 seconds. Gain additional +10% boost for every [Leo/need] card (except for themselves), and another +10% boost if all card are from the same unit (up to 150%).",
+  "talent (max)": 31742,
+  "gacha phrase": "みんなの背中を押せるように……！",
+  "unit": "VIRTUAL SINGER",
+  "support unit": "Leo/need",
+  "attribute": "Cute",
+  "rarity": 4,
+  "status": "Limited"
+}

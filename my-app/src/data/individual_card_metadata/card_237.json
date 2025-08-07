@@ -1,0 +1,18 @@
+{
+  "id": "237",
+  "character": "Yoisaki Kanade",
+  "character (japanese)": "宵崎 奏",
+  "english name": "Flowerbed of Memories",
+  "japanese name": "思い出の花壇",
+  "skill name (japanese)": "フラワーセラピー",
+  "skill name (english)": "Flower Therapy",
+  "skill effect (japanese)": "7秒間 BAD以上がPERFECTになり、5秒間 スコアが100％UPする",
+  "skill effect (english)": "All BADs and higher will become PERFECTs for 7.0 seconds and 100% score boost for 5 seconds.",
+  "talent (max)": 32045,
+  "gacha phrase": "あの花壇、もしかして——",
+  "unit": "25-ji, Nightcord de.",
+  "support unit": null,
+  "attribute": "Mysterious",
+  "rarity": 4,
+  "status": "Permanent"
+}

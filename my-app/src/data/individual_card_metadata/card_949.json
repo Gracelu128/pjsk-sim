@@ -1,0 +1,18 @@
+{
+  "id": "949",
+  "character": "Yoisaki Kanade",
+  "character (japanese)": "宵崎 奏",
+  "english name": "Recovering Your Memories",
+  "japanese name": "思い出を取り戻して",
+  "skill name (japanese)": "たとえ砕けていても",
+  "skill name (english)": "Even if They Were Shattered",
+  "skill effect (japanese)": "5秒間 スコアが80%UP、更に編成からランダムに選んだ他メンバー1人が持つスキルのスコアUP最大値の50%をUP（最大で合計130%）",
+  "skill effect (english)": "80% score boost for 5 seconds. A random card in your team gain additional score boost by half of current selected card's skill (up to 150% in total).",
+  "talent (max)": 31742,
+  "gacha phrase": "もう、忘れないでね",
+  "unit": "25-ji, Nightcord de.",
+  "support unit": null,
+  "attribute": "Cute",
+  "rarity": 4,
+  "status": "Bloom Festival limited"
+}

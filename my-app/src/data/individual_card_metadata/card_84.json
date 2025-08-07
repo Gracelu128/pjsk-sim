@@ -1,0 +1,18 @@
+{
+  "id": "84",
+  "character": "Hatsune Miku",
+  "character (japanese)": "初音 ミク",
+  "english name": "Street Sekai (Miku 2☆)",
+  "japanese name": "ストリートのセカイ",
+  "skill name (japanese)": "私達にも大切だから",
+  "skill name (english)": "Because It's Important to Us As Well",
+  "skill effect (japanese)": "ライフが300回復し、5秒間 スコアが30%UPする",
+  "skill effect (english)": "Recover 300 life and 30% score boost for 5 seconds.",
+  "talent (max)": 16965,
+  "gacha phrase": null,
+  "unit": "VIRTUAL SINGER",
+  "support unit": "Vivid BAD SQUAD",
+  "attribute": "Pure",
+  "rarity": 2,
+  "status": "Permanent"
+}

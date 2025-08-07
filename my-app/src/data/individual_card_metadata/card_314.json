@@ -1,0 +1,18 @@
+{
+  "id": "314",
+  "character": "Hinomori Shiho",
+  "character (japanese)": "日野森 志歩",
+  "english name": "Hurtful Words",
+  "japanese name": "痛い言葉",
+  "skill name (japanese)": "噂の真相",
+  "skill name (english)": "The Truth of the Rumor",
+  "skill effect (japanese)": "7秒間 BAD以上がPERFECTになり、5秒間 スコアが100％UPする",
+  "skill effect (english)": "All BADs and higher will become PERFECTs for 7.0 seconds and 100% score boost for 5 seconds.",
+  "talent (max)": 32041,
+  "gacha phrase": "お気遣い、ありがとうございます",
+  "unit": "Leo/need",
+  "support unit": null,
+  "attribute": "Cool",
+  "rarity": 4,
+  "status": "Permanent"
+}

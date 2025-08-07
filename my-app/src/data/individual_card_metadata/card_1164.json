@@ -1,0 +1,18 @@
+{
+  "id": "1164",
+  "character": "Kagamine Len",
+  "character (japanese)": "鏡音 レン",
+  "english name": "Leaning in Close to the Pain",
+  "japanese name": "苦しさに寄り添って",
+  "skill name (japanese)": "セカイで見守る者達",
+  "skill name (english)": "Those Watching Over You in the SEKAI",
+  "skill effect (japanese)": "5秒間 スコアが100%UPする 自身を除き「25時、ナイトコードで。」メンバーを1人編成する毎にスコアが10%UPし、全員一致で更に10%UPする（最大150%)",
+  "skill effect (english)": "100% score boost for 5 seconds. Gain additional +10% boost for every [25-ji, Nightcord de.] card (except for themselves), and another +10% boost if all cards are from the same unit (up to 150%).",
+  "talent (max)": 31742,
+  "gacha phrase": "ぼくは、ここにいるから……",
+  "unit": "VIRTUAL SINGER",
+  "support unit": "25-ji, Nightcord de.",
+  "attribute": "Mysterious",
+  "rarity": 4,
+  "status": "Limited"
+}

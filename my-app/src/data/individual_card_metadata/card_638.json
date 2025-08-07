@@ -1,0 +1,18 @@
+{
+  "id": "638",
+  "character": "Megurine Luka",
+  "character (japanese)": "巡音 ルカ",
+  "english name": "Change the Way You Think",
+  "japanese name": "考えかたを変えて",
+  "skill name (japanese)": "心を揺らす囁き",
+  "skill name (english)": "Whispers That Can Move Your Heart",
+  "skill effect (japanese)": "5秒間 スコアが100%UPする 自身を除き「25時、ナイトコードで。」メンバーを1人編成する毎にスコアが10%UPし、全員一致で更に10%UPする（最大150%)",
+  "skill effect (english)": "100% score boost for 5 seconds. Gain additional +10% boost for every [25-ji, Nightcord de.] card (except for themselves), and another +10% boost if all cards are from the same unit (up to 150%).",
+  "talent (max)": 31740,
+  "gacha phrase": "あなたはどんな方法で、心を守ったの？",
+  "unit": "VIRTUAL SINGER",
+  "support unit": "25-ji, Nightcord de.",
+  "attribute": "Cool",
+  "rarity": 4,
+  "status": "Limited"
+}

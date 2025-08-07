@@ -1,0 +1,18 @@
+{
+  "id": "493",
+  "character": "Hinomori Shiho",
+  "character (japanese)": "日野森 志歩",
+  "english name": "An All-Out Stage",
+  "japanese name": "全力のステージ",
+  "skill name (japanese)": "鼓舞の言葉",
+  "skill name (english)": "Words of Encouragement",
+  "skill effect (japanese)": "ライフが500回復し、5秒間 スコアが100%UPする",
+  "skill effect (english)": "Recover 500 life and 100% score boost for 5 seconds.",
+  "talent (max)": 32048,
+  "gacha phrase": "この曲で、証明してみせる",
+  "unit": "Leo/need",
+  "support unit": null,
+  "attribute": "Pure",
+  "rarity": 4,
+  "status": "Limited"
+}

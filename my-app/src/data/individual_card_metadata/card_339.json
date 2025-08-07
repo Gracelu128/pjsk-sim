@@ -1,0 +1,18 @@
+{
+  "id": "339",
+  "character": "KAITO",
+  "character (japanese)": "KAITO",
+  "english name": "The Greedy Judge",
+  "japanese name": "強欲な裁判官",
+  "skill name (japanese)": "地獄の沙汰も金次第",
+  "skill name (english)": "Even in Hell, the Verdict Is Determined by Money",
+  "skill effect (japanese)": "7秒間 BAD以上がPERFECTになり、5秒間 スコアが100％UPする",
+  "skill effect (english)": "All BADs and higher will become PERFECTs for 7.0 seconds and 100% score boost for 5 seconds.",
+  "talent (max)": 32042,
+  "gacha phrase": "さあ、開廷の時間だ",
+  "unit": "VIRTUAL SINGER",
+  "support unit": null,
+  "attribute": "Cool",
+  "rarity": 4,
+  "status": "Collaboration limited"
+}

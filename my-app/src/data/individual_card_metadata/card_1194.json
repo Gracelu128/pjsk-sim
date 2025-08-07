@@ -1,0 +1,18 @@
+{
+  "id": "1194",
+  "character": "Shinonome Ena",
+  "character (japanese)": "東雲 絵名",
+  "english name": "Together With That Drawing",
+  "japanese name": "あの絵を一緒に",
+  "skill name (japanese)": "『私』達の絵",
+  "skill name (english)": "\"Our\" Art",
+  "skill effect (japanese)": "5秒間 スコアが80%UP、更に編成からランダムに選んだ他メンバー1人が持つスキルのスコアUP最大値の50%をUP（最大で合計130%）",
+  "skill effect (english)": "80% score boost for 5 seconds. A random card in your team gains an additional score boost equal to half of the currently selected card's skill (up to 150% in total).",
+  "talent (max)": 31742,
+  "gacha phrase": "さすが私、やるじゃん",
+  "unit": "25-ji, Nightcord de.",
+  "support unit": null,
+  "attribute": "Pure",
+  "rarity": 4,
+  "status": "Bloom Festival limited"
+}

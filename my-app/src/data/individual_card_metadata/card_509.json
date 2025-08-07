@@ -1,0 +1,18 @@
+{
+  "id": "509",
+  "character": "Hatsune Miku",
+  "character (japanese)": "初音 ミク",
+  "english name": "At the Very Least, to Me",
+  "japanese name": "せめて、わたしに",
+  "skill name (japanese)": "わたしが、そばにいるよ",
+  "skill name (english)": "I'll Be Right Here By Your Side",
+  "skill effect (japanese)": "5秒間 スコアが90％UP、 GOOD以下を出すまではスコアが140％UPする",
+  "skill effect (english)": "140% score boost for 5 seconds. If you hit GOOD or lower, score boost will be reduced to 90%.",
+  "talent (max)": 31747,
+  "gacha phrase": "どうして、ふたをしてしまったの……？",
+  "unit": "VIRTUAL SINGER",
+  "support unit": null,
+  "attribute": "Pure",
+  "rarity": 4,
+  "status": "Colorful Festival limited"
+}

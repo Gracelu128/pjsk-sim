@@ -1,0 +1,18 @@
+{
+  "id": "211",
+  "character": "MEIKO",
+  "character (japanese)": "MEIKO",
+  "english name": "Looking for Answers",
+  "japanese name": "答えを探して",
+  "skill name (japanese)": "先輩のひとりとして",
+  "skill name (english)": "As One of Your Seniors",
+  "skill effect (japanese)": "ライフが300回復し、5秒間 スコアが30%UPする",
+  "skill effect (english)": "Recover 300 life and 30% score boost for 5 seconds.",
+  "talent (max)": 17132,
+  "gacha phrase": null,
+  "unit": "VIRTUAL SINGER",
+  "support unit": "Leo/need",
+  "attribute": "Pure",
+  "rarity": 2,
+  "status": "Permanent"
+}

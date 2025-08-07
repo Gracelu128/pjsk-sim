@@ -1,0 +1,18 @@
+{
+  "id": "603",
+  "character": "Hatsune Miku",
+  "character (japanese)": "初音 ミク",
+  "english name": "Good at Cooking?",
+  "japanese name": "料理は得意？",
+  "skill name (japanese)": "ハラハラクッキング！？",
+  "skill name (english)": "Suspenseful Cooking!?",
+  "skill effect (japanese)": "ライフが400回復し、5秒間 スコアが60%UPする",
+  "skill effect (english)": "Recover 400 life and 60% score boost for 5 seconds.",
+  "talent (max)": 28436,
+  "gacha phrase": "うん……いい感じに煮込めてる……",
+  "unit": "VIRTUAL SINGER",
+  "support unit": "Vivid BAD SQUAD",
+  "attribute": "Happy",
+  "rarity": 3,
+  "status": "Permanent"
+}

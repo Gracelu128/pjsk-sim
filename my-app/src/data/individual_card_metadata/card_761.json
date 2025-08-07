@@ -1,0 +1,18 @@
+{
+  "id": "761",
+  "character": "KAITO",
+  "character (japanese)": "KAITO",
+  "english name": "A Song That Soothes Your Frustration",
+  "japanese name": "焦燥にそそぐ歌",
+  "skill name (japanese)": "闘う君と歌う僕",
+  "skill name (english)": "You, the One Who Fights and Me, the One Who Sings",
+  "skill effect (japanese)": "5秒間 スコアが90％UP、 GOOD以下を出すまではスコアが140％UPする",
+  "skill effect (english)": "140% score boost for 5 seconds. If you hit GOOD or lower, score boost will be reduced to 90%.",
+  "talent (max)": 31742,
+  "gacha phrase": "いい歌もたくさん知っているし歌えるよ",
+  "unit": "VIRTUAL SINGER",
+  "support unit": null,
+  "attribute": "Cute",
+  "rarity": 4,
+  "status": "Colorful Festival limited"
+}

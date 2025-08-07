@@ -1,0 +1,18 @@
+{
+  "id": "1057",
+  "character": "Kiritani Haruka",
+  "character (japanese)": "桐谷 遥",
+  "english name": "To Become an Idol That They Can Be Proud Of",
+  "japanese name": "誇りに思えるようなアイドルに",
+  "skill name (japanese)": "アイドルだからできること",
+  "skill name (english)": "The Things I Can Do Because I’m an Idol",
+  "skill effect (japanese)": "5秒間 スコアが80%UP、更に編成からランダムに選んだ他メンバー1人が持つスキルのスコアUP最大値の50%をUP（最大で合計130%）",
+  "skill effect (english)": "80% score boost for 5 seconds. A random card in your team gain additional score boost by half of current selected card's skill (up to 150% in total).",
+  "talent (max)": 31742,
+  "gacha phrase": "私も大好きだよ、『アイドル』",
+  "unit": "MORE MORE JUMP!",
+  "support unit": null,
+  "attribute": "Happy",
+  "rarity": 4,
+  "status": "Bloom Festival limited"
+}

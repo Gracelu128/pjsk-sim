@@ -1,0 +1,18 @@
+{
+  "id": "112",
+  "character": "Mochizuki Honami",
+  "character (japanese)": "望月 穂波",
+  "english name": "Rest Well",
+  "japanese name": "ゆっくり休んで",
+  "skill name (japanese)": "窓辺のエトワール",
+  "skill name (english)": "Étoile by the Window",
+  "skill effect (japanese)": "ライフが400回復し、5秒間 スコアが60%UPする",
+  "skill effect (english)": "Recover 400 life and 60% score boost for 5 seconds.",
+  "talent (max)": 28174,
+  "gacha phrase": "早くよくなってね、咲希ちゃん",
+  "unit": "Leo/need",
+  "support unit": null,
+  "attribute": "Pure",
+  "rarity": 3,
+  "status": "Permanent"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "1144",
+  "character": "Mochizuki Honami",
+  "character (japanese)": "望月 穂波",
+  "english name": "The Us From ”Those Days”",
+  "japanese name": "あの頃の『わたし』達",
+  "skill name (japanese)": "怖いわたし",
+  "skill name (english)": "A Scary Me",
+  "skill effect (japanese)": "5秒間 スコアが80%UP、更に編成からランダムに選んだ他メンバー1人が持つスキルのスコアUP最大値の50%をUP（最大で合計130%）",
+  "skill effect (english)": "80% score boost for 5 seconds. A random card in your team gain additional score boost by half of current selected card's skill (up to 150% in total).",
+  "talent (max)": 30542,
+  "gacha phrase": "これからは、みんな一緒だよ",
+  "unit": "Leo/need",
+  "support unit": null,
+  "attribute": "Mysterious",
+  "rarity": 4,
+  "status": "Bloom Festival limited"
+}

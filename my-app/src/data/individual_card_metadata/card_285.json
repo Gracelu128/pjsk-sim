@@ -1,0 +1,18 @@
+{
+  "id": "285",
+  "character": "Akiyama Mizuki",
+  "character (japanese)": "暁山 瑞希",
+  "english name": "A Moment's Rest",
+  "japanese name": "ひとときの安息",
+  "skill name (japanese)": "進むことへの怖さ",
+  "skill name (english)": "The Fear to Move Forward",
+  "skill effect (japanese)": "7秒間 BAD以上がPERFECTになり、5秒間 スコアが100％UPする",
+  "skill effect (english)": "All BADs and higher will become PERFECTs for 7.0 seconds and 100% score boost for 5 seconds.",
+  "talent (max)": 32044,
+  "gacha phrase": "これ、リンに合うと思ったんだ♪",
+  "unit": "25-ji, Nightcord de.",
+  "support unit": null,
+  "attribute": "Happy",
+  "rarity": 4,
+  "status": "Permanent"
+}

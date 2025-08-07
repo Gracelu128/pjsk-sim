@@ -1,0 +1,18 @@
+{
+  "id": "618",
+  "character": "Kagamine Len",
+  "character (japanese)": "鏡音 レン",
+  "english name": "Cheering for You",
+  "japanese name": "キミのためのエール",
+  "skill name (japanese)": "勇気のプレゼント",
+  "skill name (english)": "A Gift of Courage",
+  "skill effect (japanese)": "5秒間 スコアが90％UP、 GOOD以下を出すまではスコアが140％UPする",
+  "skill effect (english)": "140% score boost for 5 seconds. If you hit GOOD or lower, score boost will be reduced to 90%.",
+  "talent (max)": 31738,
+  "gacha phrase": "キミの想いの強さはオレが保証するよ！",
+  "unit": "VIRTUAL SINGER",
+  "support unit": null,
+  "attribute": "Cute",
+  "rarity": 4,
+  "status": "Colorful Festival limited"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "195",
+  "character": "Yoisaki Kanade",
+  "character (japanese)": "宵崎 奏",
+  "english name": "One Day, the Dream That I Saw Will...",
+  "japanese name": "いつか見た夢を",
+  "skill name (japanese)": "闇を照らす光",
+  "skill name (english)": "The Light That Illuminates the Darkness",
+  "skill effect (japanese)": "5秒間 発動時ライフが800未満ならスコアが90%UP、 800以上ならスコアが120%UP、更にライフが10増加毎に+1%UPする（最大140%)",
+  "skill effect (english)": "For 5 seconds, 90% score boost if life is less than 800 or 120% score boost if life is 800. For every +10 life above 800, score boost increased by +1% (up to 140%).",
+  "talent (max)": 31736,
+  "gacha phrase": "いつか、あの空に届く曲を——",
+  "unit": "25-ji, Nightcord de.",
+  "support unit": null,
+  "attribute": "Mysterious",
+  "rarity": 4,
+  "status": "Colorful Festival limited"
+}

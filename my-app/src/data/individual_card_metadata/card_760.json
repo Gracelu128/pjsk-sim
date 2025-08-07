@@ -1,0 +1,18 @@
+{
+  "id": "760",
+  "character": "MEIKO",
+  "character (japanese)": "MEIKO",
+  "english name": "With That Name in My Heart",
+  "japanese name": "その名を胸に",
+  "skill name (japanese)": "たったひとりの主人公",
+  "skill name (english)": "The One and Only Protagonist",
+  "skill effect (japanese)": "5秒間 発動時ライフが800未満ならスコアが90%UP、 800以上ならスコアが120%UP、更にライフが10増加毎に+1%UPする（最大140%)",
+  "skill effect (english)": "For 5 seconds, 90% score boost if life is less than 800 or 120% score boost if life is 800. For every +10 life above 800, score boost increased by +1% (up to 140%).",
+  "talent (max)": 31745,
+  "gacha phrase": "とっても誇らしい、自慢の名前なの",
+  "unit": "VIRTUAL SINGER",
+  "support unit": null,
+  "attribute": "Mysterious",
+  "rarity": 4,
+  "status": "Colorful Festival limited"
+}

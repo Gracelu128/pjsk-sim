@@ -1,0 +1,18 @@
+{
+  "id": "81",
+  "character": "Hatsune Miku",
+  "character (japanese)": "初音 ミク",
+  "english name": "The Songstress Everyone Knows",
+  "japanese name": "誰もが知る歌姫",
+  "skill name (japanese)": "一緒に楽しもうね！",
+  "skill name (english)": "Let's All Have Fun!",
+  "skill effect (japanese)": "5秒間 スコアが40%UPする",
+  "skill effect (english)": "40% score boost for 5 seconds.",
+  "talent (max)": 7576,
+  "gacha phrase": null,
+  "unit": "VIRTUAL SINGER",
+  "support unit": null,
+  "attribute": "Cute",
+  "rarity": 1,
+  "status": "Permanent"
+}

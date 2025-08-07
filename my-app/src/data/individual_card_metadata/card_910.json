@@ -1,0 +1,18 @@
+{
+  "id": "910",
+  "character": "Hinomori Shiho",
+  "character (japanese)": "日野森 志歩",
+  "english name": "Bringing a Supply of Refreshments",
+  "japanese name": "差し入れを持って",
+  "skill name (japanese)": "私は、私の役目を",
+  "skill name (english)": "My Duty",
+  "skill effect (japanese)": "ライフが500回復し、5秒間 スコアが100%UPする",
+  "skill effect (english)": "Recover 500 life and 100% score boost for 5 seconds.",
+  "talent (max)": 32052,
+  "gacha phrase": "もう、これしかないなって",
+  "unit": "Leo/need",
+  "support unit": null,
+  "attribute": "Happy",
+  "rarity": 4,
+  "status": "Permanent"
+}

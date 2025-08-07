@@ -1,0 +1,18 @@
+{
+  "id": "537",
+  "character": "Hatsune Miku",
+  "character (japanese)": "初音 ミク",
+  "english name": "Overlapping Singing Voices",
+  "japanese name": "重なる歌声",
+  "skill name (japanese)": "この歌が届きますように",
+  "skill name (english)": "Hoping This Song Will Reach Everyone",
+  "skill effect (japanese)": "7秒間 BAD以上がPERFECTになり、5秒間 スコアが100％UPする",
+  "skill effect (english)": "All BADs and higher will become PERFECTs for 7.0 seconds and 100% score boost for 5 seconds.",
+  "talent (max)": 32047,
+  "gacha phrase": "私も、一歌の曲を歌いたいから",
+  "unit": "VIRTUAL SINGER",
+  "support unit": "Leo/need",
+  "attribute": "Happy",
+  "rarity": 4,
+  "status": "Permanent"
+}

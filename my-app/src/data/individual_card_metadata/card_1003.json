@@ -1,0 +1,18 @@
+{
+  "id": "1003",
+  "character": "Kamishiro Rui",
+  "character (japanese)": "神代 類",
+  "english name": "Gazing at One’s Treasure",
+  "japanese name": "宝物を見つめて",
+  "skill name (japanese)": "あの日々があったから",
+  "skill name (english)": "Because of Those Days",
+  "skill effect (japanese)": "5秒間 スコアが80%UP、更に編成からランダムに選んだ他メンバー1人が持つスキルのスコアUP最大値の50%をUP（最大で合計130%）",
+  "skill effect (english)": "80% score boost for 5 seconds. A random card in your team gains additional score boost by half of current selected card's skill (up to 150% in total).",
+  "talent (max)": 31742,
+  "gacha phrase": "素敵な宝物を、見つけたんだね",
+  "unit": "Wonderlands×Showtime",
+  "support unit": null,
+  "attribute": "Cute",
+  "rarity": 4,
+  "status": "Bloom Festival limited"
+}

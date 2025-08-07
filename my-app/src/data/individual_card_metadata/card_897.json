@@ -1,0 +1,18 @@
+{
+  "id": "897",
+  "character": "Otori Emu",
+  "character (japanese)": "鳳 えむ",
+  "english name": "A Fleeting Reunion",
+  "japanese name": "うたかたの再会",
+  "skill name (japanese)": "夢の種をまく人",
+  "skill name (english)": "Someone Who Sows the Seeds of Dreams",
+  "skill effect (japanese)": "5秒間 発動時ライフが800未満ならスコアが90%UP、 800以上ならスコアが120%UP、更にライフが10増加毎に+1%UPする（最大140%)",
+  "skill effect (english)": "For 5 seconds, 90% score boost if life is less than 800 or 120% score boost if life is 800. For every +10 life above 800, score boost increased by +1% (up to 140%).",
+  "talent (max)": 31742,
+  "gacha phrase": "おじいちゃんのノートに書いてあったな",
+  "unit": "Wonderlands×Showtime",
+  "support unit": null,
+  "attribute": "Mysterious",
+  "rarity": 4,
+  "status": "Colorful Festival limited"
+}

@@ -558,6 +558,10 @@ def sekaibest_scrape_card_info(start_num=start_id, end_num=end_id):
     driver.quit()
     print("Scraping completed!")
 
+    # Write back to json
+    with open(json_path, 'w') as f:
+        json.dump(data, f, indent=2)
+
 def json_reorder(json_path, key_order):
     def reorder_dict(d, key_order):
         return OrderedDict((key, d.get(key, None)) for key in key_order)
@@ -584,31 +588,55 @@ def asset_check():
         if not path_check.is_dir():
             print(f"Card with id {i} does not exist.")
 
+def split_card_metadata(
+    input_path="/Users/gracelu/Desktop/pjsk sim/my-app/src/data/card_metadata.json",
+    output_dir="/Users/gracelu/Desktop/pjsk sim/my-app/src/data/individual_card_metadata"
+):
+    # Make sure output directory exists
+    os.makedirs(output_dir, exist_ok=True)
+
+    # Load big JSON file
+    with open(input_path, "r", encoding="utf-8") as infile:
+        metadata = json.load(infile)
+
+    count = 0
+
+    # Save each card to its own JSON file
+    for card_id, card_data in metadata.items():
+        filename = f"card_{card_id}.json"
+        filepath = os.path.join(output_dir, filename)
+        with open(filepath, "w", encoding="utf-8") as outfile:
+            json.dump(card_data, outfile, ensure_ascii=False, indent=2)
+        count += 1
+
+    print(f"Done! Exported {count} cards to: {output_dir}")
+
 def main():
     """Main function to execute scraping"""
     # print("Starting PJSK card image scraper with Selenium...")
     # scrape_card_images(start_num=1 , end_num=1217)
-    # sekaipedia_scrape_card_info(start_num=1001, end_num=1217)
-    # sekaibest_scrape_card_info(start_num=1, end_num=1217)
-    desired_card_metadata_order = [
-        "id",
-        "character",
-        "character (japanese)",
-        "english name",
-        "japanese name",
-        "skill name (japanese)",
-        "skill name (english)",
-        "skill effect (japanese)",
-        "skill effect (english)",
-        "talent (max)",
-        "gacha phrase",
-        "unit",
-        "support unit",
-        "attribute",
-        "rarity",
-        "status"
-    ]
-    json_reorder("/Users/gracelu/Desktop/pjsk sim/my-app/src/data/card_metadata.json", desired_card_metadata_order)
+    # sekaipedia_scrape_card_info(start_num=1211, end_num=1217)
+    # sekaibest_scrape_card_info(start_num=1211, end_num=1217)
+    # desired_card_metadata_order = [
+    #     "id",
+    #     "character",
+    #     "character (japanese)",
+    #     "english name",
+    #     "japanese name",
+    #     "skill name (japanese)",
+    #     "skill name (english)",
+    #     "skill effect (japanese)",
+    #     "skill effect (english)",
+    #     "talent (max)",
+    #     "gacha phrase",
+    #     "unit",
+    #     "support unit",
+    #     "attribute",
+    #     "rarity",
+    #     "status"
+    # ]
+    # json_reorder("/Users/gracelu/Desktop/pjsk sim/my-app/src/data/card_metadata.json", desired_card_metadata_order)
+    # split_card_metadata()
     # asset_check()
 
 if __name__ == "__main__":
