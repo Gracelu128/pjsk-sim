@@ -18,7 +18,10 @@ from bs4 import BeautifulSoup
 
 # Global var to store start and end card ID
 start_id = 1
-end_id = 1217
+end_id = 1222
+# Global var to store start and end gacha ID
+start_gacha = 1
+end_gacha = 783
 
 def scrape_card_images(start_num=start_id, end_num=end_id):
     """Scrape card images using Selenium with automatic driver management"""
@@ -161,53 +164,54 @@ def sekaipedia_scrape_card_info(start_num=start_id, end_num=end_id):
                     continue
                 if card_id_int > end_num:
                     break
-                # # Extract icon from second column
-                # icon_img = row.find_element(By.CSS_SELECTOR, "td:nth-child(2) img")
-                # icon_url = icon_img.get_attribute("src")
-                # if icon_url.startswith("//"):
-                #     icon_url = "https:" + icon_url
-                # # Remove the last segment (e.g., '64px-Saki_1_thumbnail.png')
-                # parsed = urlparse(icon_url)
-                # path_parts = parsed.path.split("/")
-                # if "thumb" in path_parts:
-                #     thumb_index = path_parts.index("thumb")
-                #     full_path_parts = path_parts[:thumb_index] + path_parts[thumb_index + 1:thumb_index + 4]  # Skip "thumb" and keep the 3 parts after
-                #     full_path = "/".join(full_path_parts)
-                #     full_url = f"{parsed.scheme}://{parsed.netloc}{full_path}"
-                # print(f"Icon url: {icon_url}")
-                # print(f"Full url: {full_url}")
+
+                # Extract icon from second column
+                icon_img = row.find_element(By.CSS_SELECTOR, "td:nth-child(2) img")
+                icon_url = icon_img.get_attribute("src")
+                if icon_url.startswith("//"):
+                    icon_url = "https:" + icon_url
+                # Remove the last segment (e.g., '64px-Saki_1_thumbnail.png')
+                parsed = urlparse(icon_url)
+                path_parts = parsed.path.split("/")
+                if "thumb" in path_parts:
+                    thumb_index = path_parts.index("thumb")
+                    full_path_parts = path_parts[:thumb_index] + path_parts[thumb_index + 1:thumb_index + 4]  # Skip "thumb" and keep the 3 parts after
+                    full_path = "/".join(full_path_parts)
+                    full_url = f"{parsed.scheme}://{parsed.netloc}{full_path}"
+                print(f"Icon url: {icon_url}")
+                print(f"Full url: {full_url}")
                 
-                # # Download both 64px and full-size icon
-                # sizes = {
-                #     "thumb": icon_url,  # e.g. the 64px URL
-                #     "full": full_url  # strip the "64px-" prefix to get full-size
-                # }
+                # Download both 64px and full-size icon
+                sizes = {
+                    "thumb": icon_url,  # e.g. the 64px URL
+                    "full": full_url  # strip the "64px-" prefix to get full-size
+                }
 
-                # card_icon_dir = os.path.join(icons_path, str(card_id))
-                # os.makedirs(card_icon_dir, exist_ok=True)
+                card_icon_dir = os.path.join(icons_path, str(card_id))
+                os.makedirs(card_icon_dir, exist_ok=True)
 
-                # for size_label, url in sizes.items():
-                #     png_filename = f"{card_id}_{size_label}.png"
-                #     png_filepath = os.path.join(icons_path, png_filename)
+                for size_label, url in sizes.items():
+                    png_filename = f"{card_id}_{size_label}.png"
+                    png_filepath = os.path.join(icons_path, png_filename)
 
-                #     headers = {
-                #         "User-Agent": "Mozilla/5.0"
-                #     }
-                #     response = requests.get(url, timeout=10, headers=headers)
-                #     if response.status_code == 200:
-                #         with open(png_filepath, "wb") as f:
-                #             f.write(response.content)
-                #         print(f"Saved {size_label} PNG")
+                    headers = {
+                        "User-Agent": "Mozilla/5.0"
+                    }
+                    response = requests.get(url, timeout=10, headers=headers)
+                    if response.status_code == 200:
+                        with open(png_filepath, "wb") as f:
+                            f.write(response.content)
+                        print(f"Saved {size_label} PNG")
 
-                #         # Convert to WebP
-                #         webp_filename = f"{card_id}_{size_label}.webp"
-                #         webp_filepath = os.path.join(card_icon_dir, webp_filename)
-                #         with Image.open(png_filepath) as img:
-                #             img.save(webp_filepath, "webp")
+                        # Convert to WebP
+                        webp_filename = f"{card_id}_{size_label}.webp"
+                        webp_filepath = os.path.join(card_icon_dir, webp_filename)
+                        with Image.open(png_filepath) as img:
+                            img.save(webp_filepath, "webp")
 
-                #         os.remove(png_filepath)
-                #     else:
-                #         print(f"Failed to retrieve {size_label} icon for card {card_id}")
+                        os.remove(png_filepath)
+                    else:
+                        print(f"Failed to retrieve {size_label} icon for card {card_id}")
 
 
                 # Extract card title from third column
@@ -222,47 +226,45 @@ def sekaipedia_scrape_card_info(start_num=start_id, end_num=end_id):
 
                 card_hrefs.append((card_id, full_url))
 
-                # card_title = character_link.get_attribute("title").strip()
+                card_title = character_link.get_attribute("title").strip()
 
-                # # Extract character from fourth column
-                # character = row.find_element(By.CSS_SELECTOR, "td:nth-child(4)").text.strip()
+                # Extract character from fourth column
+                character = row.find_element(By.CSS_SELECTOR, "td:nth-child(4)").text.strip()
 
-                # # Extract unit from fifth column
-                # unit = row.find_element(By.CSS_SELECTOR, "td:nth-child(5)").text.strip()
+                # Extract unit from fifth column
+                unit = row.find_element(By.CSS_SELECTOR, "td:nth-child(5)").text.strip()
                 
-                # # Extract support unit from fourth column
-                # support_unit = row.find_element(By.CSS_SELECTOR, "td:nth-child(6)").text.strip()
-                # if not support_unit:
-                #     support_unit = None
+                # Extract support unit from fourth column
+                support_unit = row.find_element(By.CSS_SELECTOR, "td:nth-child(6)").text.strip()
+                if not support_unit:
+                    support_unit = None
                 
-                # # Extract attribute from fifth column
-                # attribute = row.find_element(By.CSS_SELECTOR, "td:nth-child(7)").text.strip()
+                # Extract attribute from fifth column
+                attribute = row.find_element(By.CSS_SELECTOR, "td:nth-child(7)").text.strip()
                 
-                # # Extract rarity from sixth column
-                # rarity_td = row.find_element(By.CSS_SELECTOR, "td:nth-child(8)")
-                # # Count star images to determine rarity
-                # stars = rarity_td.find_elements(By.CSS_SELECTOR, "img[src*='Gold_star']")
-                # rarity = len(stars)
+                # Extract rarity from sixth column
+                rarity_td = row.find_element(By.CSS_SELECTOR, "td:nth-child(8)")
+                # Count star images to determine rarity
+                stars = rarity_td.find_elements(By.CSS_SELECTOR, "img[src*='Gold_star']")
+                rarity = len(stars)
                 
-                # # Extract status from seventh column
-                # status = row.find_element(By.CSS_SELECTOR, "td:nth-child(9)").text.strip()
+                # Extract status from seventh column
+                status = row.find_element(By.CSS_SELECTOR, "td:nth-child(9)").text.strip()
 
-                # if (status == "Birthday limited"):
-                #     rarity = "Birthday"
+                if (status == "Birthday limited"):
+                    rarity = "Birthday"
 
-                # data[card_id] = {}
-                # data[card_id]["id"] = card_id
-                # data[card_id]["character"] = character
-                # data[card_id]["english name"] = card_title
-                # data[card_id]["unit"] = unit
-                # data[card_id]["support unit"] = support_unit
-                # data[card_id]["attribute"] = attribute
-                # data[card_id]["rarity"] = rarity
-                # data[card_id]["status"] = status
+                data[card_id] = {}
+                data[card_id]["id"] = card_id
+                data[card_id]["character"] = character
+                data[card_id]["english name"] = card_title
+                data[card_id]["unit"] = unit
+                data[card_id]["support unit"] = support_unit
+                data[card_id]["attribute"] = attribute
+                data[card_id]["rarity"] = rarity
+                data[card_id]["status"] = status
 
-                # print(f"[{index}] Processed card {card_id}: {card_title}")
-
-                # Extract Talent (maxxed)
+                print(f"[{index}] Processed card {card_id}: {card_title}")
                 
                 # Save progress periodically
                 if index % 10 == 0:
@@ -355,6 +357,9 @@ def sekaipedia_scrape_card_info(start_num=start_id, end_num=end_id):
     # Write back to json
     with open(json_path, 'w') as f:
         json.dump(data, f, indent=2)
+
+def sekaibest_scrape_gacha_info(start_gacha=start_gacha, end_gacha=end_gacha):
+    pass
 
 def sekaibest_scrape_card_info(start_num=start_id, end_num=end_id):
     """Scrape card images using Selenium with automatic driver management"""
@@ -581,14 +586,6 @@ def json_reorder(json_path, key_order):
     with open(json_path, "w", encoding="utf-8") as f:
         json.dump(formatted_data, f, indent=2, ensure_ascii=False)
 
-def asset_check():
-    global start_id, end_id
-    for i in range(start_id, end_id + 1):
-        path_check = Path(f"/Users/gracelu/Desktop/pjsk sim/src/assets/cards/{i}")
-
-        if not path_check.is_dir():
-            print(f"Card with id {i} does not exist.")
-
 def split_card_metadata(
     input_path="/Users/gracelu/Desktop/pjsk sim/my-app/src/data/card_metadata.json",
     output_dir="/Users/gracelu/Desktop/pjsk sim/my-app/src/data/individual_card_metadata"
@@ -615,31 +612,30 @@ def split_card_metadata(
 def main():
     scrape_gacha_assets()
     """Main function to execute scraping"""
-    # print("Starting PJSK card image scraper with Selenium...")
-    # scrape_card_images(start_num=1 , end_num=1217)
-    # sekaipedia_scrape_card_info(start_num=1211, end_num=1217)
-    # sekaibest_scrape_card_info(start_num=1211, end_num=1217)
-    # desired_card_metadata_order = [
-    #     "id",
-    #     "character",
-    #     "character (japanese)",
-    #     "english name",
-    #     "japanese name",
-    #     "skill name (japanese)",
-    #     "skill name (english)",
-    #     "skill effect (japanese)",
-    #     "skill effect (english)",
-    #     "talent (max)",
-    #     "gacha phrase",
-    #     "unit",
-    #     "support unit",
-    #     "attribute",
-    #     "rarity",
-    #     "status"
-    # ]
-    # json_reorder("/Users/gracelu/Desktop/pjsk sim/my-app/src/data/card_metadata.json", desired_card_metadata_order)
-    # split_card_metadata()
-    # asset_check()
+    print("Starting PJSK card image scraper with Selenium...")
+    scrape_card_images(start_num=1218 , end_num=1222)
+    sekaipedia_scrape_card_info(start_num=1218, end_num=1222)
+    sekaibest_scrape_card_info(start_num=1218, end_num=1222)
+    desired_card_metadata_order = [
+        "id",
+        "character",
+        "character (japanese)",
+        "english name",
+        "japanese name",
+        "skill name (japanese)",
+        "skill name (english)",
+        "skill effect (japanese)",
+        "skill effect (english)",
+        "talent (max)",
+        "gacha phrase",
+        "unit",
+        "support unit",
+        "attribute",
+        "rarity",
+        "status"
+    ]
+    json_reorder("/Users/gracelu/Desktop/pjsk sim/my-app/src/data/card_metadata.json", desired_card_metadata_order)
+    split_card_metadata()
 
 BASE_URL = "https://sekai.best/asset_viewer/gacha"
 
