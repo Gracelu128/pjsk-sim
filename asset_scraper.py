@@ -14,6 +14,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from urllib.parse import urlparse, unquote
 from webdriver_manager.chrome import ChromeDriverManager
+from bs4 import BeautifulSoup
 
 # Global var to store start and end card ID
 start_id = 1
@@ -612,6 +613,7 @@ def split_card_metadata(
     print(f"Done! Exported {count} cards to: {output_dir}")
 
 def main():
+    scrape_gacha_assets()
     """Main function to execute scraping"""
     # print("Starting PJSK card image scraper with Selenium...")
     # scrape_card_images(start_num=1 , end_num=1217)
@@ -638,6 +640,114 @@ def main():
     # json_reorder("/Users/gracelu/Desktop/pjsk sim/my-app/src/data/card_metadata.json", desired_card_metadata_order)
     # split_card_metadata()
     # asset_check()
+
+BASE_URL = "https://sekai.best/asset_viewer/gacha"
+
+def get_gacha_folders():
+    chrome_options = Options()
+    chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--disable-gpu")
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument("--disable-dev-shm-usage")
+    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
+    driver.set_window_size(1200, 40000)
+    driver.get(BASE_URL)
+    wait = WebDriverWait(driver, 15)
+    wait.until(
+        EC.presence_of_element_located(
+            (By.CSS_SELECTOR, "a.MuiButtonBase-root.MuiListItemButton-root.MuiListItemButton-gutters.MuiListItemButton-root.MuiListItemButton-gutters.css-32zsw6")
+        )
+    )
+
+    # Infinite scroll: keep scrolling until no new folders appear
+    last_count = 0
+    while True:
+        driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+        time.sleep(1.5)  # Wait for new items to load
+        soup = BeautifulSoup(driver.page_source, "html.parser")
+        folders = soup.find_all("a", class_="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters css-32zsw6")
+        print(f"Scrolling... found {len(folders)} folders")
+        if len(folders) == last_count:
+            break
+        last_count = len(folders)
+
+    # Now extract folder info
+    folder_list = []
+    for a in folders:
+        span = a.find("span", class_="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-vb35nm")
+        if span and a.has_attr("href"):
+            display_name = span.text.strip()
+            href = a["href"]
+            if href.startswith("/"):
+                href = "https://sekai.best" + href
+            folder_list.append((display_name, href))
+
+    print(f"Total folders found: {len(folder_list)}")
+    driver.quit()
+    return folder_list
+
+def get_screen_texture_webps(display_name):
+    url = f"https://sekai.best/asset_viewer/gacha/{display_name}/screen/texture/"
+    chrome_options = Options()
+    chrome_options.add_argument("--headless")
+    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
+    driver.get(url)
+    time.sleep(2)
+    soup = BeautifulSoup(driver.page_source, "html.parser")
+    webps = []
+    for a in soup.find_all("a", href=True):
+        href = a["href"]
+        if href.endswith(".webp") and "stripeanimation" not in href and "tex_common_white_gachatop" not in href:
+            webps.append(href)
+    driver.quit()
+    return webps
+
+def get_webp_links(folder_url):
+    """Scrape all .webp file links from a given sekai.best asset_viewer folder URL."""
+    resp = requests.get(folder_url)
+    soup = BeautifulSoup(resp.text, "html.parser")
+    links = []
+    for a in soup.find_all("a", href=True):
+        href = a["href"]
+        if href.endswith(".webp"):
+            # Make absolute URL if needed
+            if href.startswith("/"):
+                links.append("https://sekai.best" + href)
+            else:
+                links.append(folder_url.rstrip("/") + "/" + href)
+    return links
+
+def download_and_save(url, save_path):
+    dir_path = os.path.dirname(save_path)
+    print(f"Ensuring directory exists: {dir_path}")
+    os.makedirs(dir_path, exist_ok=True)
+    print(f"Downloading {url} -> {save_path}")
+    resp = requests.get(url)
+    if resp.status_code == 200:
+        with open(save_path, "wb") as f:
+            f.write(resp.content)
+        print(f"Saved {save_path}")
+    else:
+        print(f"Failed to download {url} (status {resp.status_code})")
+
+def scrape_gacha_assets():
+    folders = get_gacha_folders()
+    for display_name, _ in folders:
+        # Download logo
+        logo_url = f"https://storage.sekai.best/sekai-jp-assets/gacha/{display_name}/logo/logo.webp"
+        save_path = os.path.join("my-app/public/gacha", display_name, "logo", "logo.webp")
+        print(f"Downloading logo: {logo_url} -> {save_path}")
+        download_and_save(logo_url, save_path)
+
+        # Download screen/texture webps
+        webp_files = get_screen_texture_webps(display_name)
+        print(f"  Found {len(webp_files)} screen/texture webp files")
+        for webp in webp_files:
+            filename = webp.split("/")[-1]
+            webp_url = f"https://storage.sekai.best/sekai-jp-assets/gacha/{display_name}/screen/texture/{filename}"
+            save_path = os.path.join("my-app/public/gacha", display_name, "screen_texture", filename)
+            print(f"Downloading {webp_url} -> {save_path}")
+            download_and_save(webp_url, save_path)
 
 if __name__ == "__main__":
     main()
