@@ -610,35 +610,92 @@ def split_card_metadata(
     print(f"Done! Exported {count} cards to: {output_dir}")
 
 def main():
-    scrape_gacha_assets()
-    """Main function to execute scraping"""
-    print("Starting PJSK card image scraper with Selenium...")
-    scrape_card_images(start_num=1218 , end_num=1222)
-    sekaipedia_scrape_card_info(start_num=1218, end_num=1222)
-    sekaibest_scrape_card_info(start_num=1218, end_num=1222)
-    desired_card_metadata_order = [
-        "id",
-        "character",
-        "character (japanese)",
-        "english name",
-        "japanese name",
-        "skill name (japanese)",
-        "skill name (english)",
-        "skill effect (japanese)",
-        "skill effect (english)",
-        "talent (max)",
-        "gacha phrase",
-        "unit",
-        "support unit",
-        "attribute",
-        "rarity",
-        "status"
-    ]
-    json_reorder("/Users/gracelu/Desktop/pjsk sim/my-app/src/data/card_metadata.json", desired_card_metadata_order)
-    split_card_metadata()
+    # scrape_gacha_assets()
+    # """Main function to execute scraping"""
+    # print("Starting PJSK card image scraper with Selenium...")
+    # scrape_card_images(start_num=1218 , end_num=1222)
+    # sekaipedia_scrape_card_info(start_num=1218, end_num=1222)
+    # sekaibest_scrape_card_info(start_num=1218, end_num=1222)
+    # desired_card_metadata_order = [
+    #     "id",
+    #     "character",
+    #     "character (japanese)",
+    #     "english name",
+    #     "japanese name",
+    #     "skill name (japanese)",
+    #     "skill name (english)",
+    #     "skill effect (japanese)",
+    #     "skill effect (english)",
+    #     "talent (max)",
+    #     "gacha phrase",
+    #     "unit",
+    #     "support unit",
+    #     "attribute",
+    #     "rarity",
+    #     "status"
+    # ]
+    # json_reorder("/Users/gracelu/Desktop/pjsk sim/my-app/src/data/card_metadata.json", desired_card_metadata_order)
+    # split_card_metadata()
+    scrape_screen_texture_assets()
 
+def scrape_screen_texture_assets():
+    base_local = "my-app/public/gacha"
+    chrome_options = Options()
+    chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--disable-gpu")
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument("--disable-dev-shm-usage")
+
+    for display_name in os.listdir(base_local):
+        gacha_path = os.path.join(base_local, display_name)
+        if not os.path.isdir(gacha_path):
+            continue
+
+        # Only process if screen/texture does NOT exist
+        texture_dir = os.path.join(gacha_path, "screen", "texture")
+        if os.path.exists(texture_dir):
+            print(f"Already has {texture_dir}, skipping {display_name}")
+            continue
+
+        os.makedirs(texture_dir, exist_ok=True)
+        print(f"Created {texture_dir}")
+
+        url = f"https://sekai.best/asset_viewer/gacha/{display_name}/screen/texture/"
+        driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
+        driver.set_window_size(1200, 10000)
+        driver.get(url)
+        time.sleep(4)  # Wait for the page and lazy-loaded elements
+
+        # Scroll to bottom to trigger lazy loading
+        driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+        time.sleep(2)  # Wait for any additional elements to load
+
+        soup = BeautifulSoup(driver.page_source, "html.parser")
+        driver.quit()
+
+        # Only get .webp files, skip those with "stripeanimation"
+        spans = soup.find_all("span", class_="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-vb35nm")
+        filenames = [
+            span.text.strip()
+            for span in spans
+            if span.text.strip().endswith(".webp") and "stripeanimation" not in span.text.strip()
+        ]
+
+        print(f"{display_name}: Found {len(filenames)} remote webp files")
+
+        for filename in filenames:
+            asset_url = f"https://storage.sekai.best/sekai-jp-assets/gacha/{display_name}/screen/texture/{filename}"
+            save_path = os.path.join(texture_dir, filename)
+            print(f"Downloading {asset_url} -> {save_path}")
+            resp = requests.get(asset_url)
+            if resp.status_code == 200:
+                with open(save_path, "wb") as f:
+                    f.write(resp.content)
+                print(f"Saved {save_path}")
+            else:
+                print(f"Failed to download {asset_url} (status {resp.status_code})")
+                
 BASE_URL = "https://sekai.best/asset_viewer/gacha"
-
 def get_gacha_folders():
     chrome_options = Options()
     chrome_options.add_argument("--headless")
@@ -682,22 +739,6 @@ def get_gacha_folders():
     driver.quit()
     return folder_list
 
-def get_screen_texture_webps(display_name):
-    url = f"https://sekai.best/asset_viewer/gacha/{display_name}/screen/texture/"
-    chrome_options = Options()
-    chrome_options.add_argument("--headless")
-    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
-    driver.get(url)
-    time.sleep(2)
-    soup = BeautifulSoup(driver.page_source, "html.parser")
-    webps = []
-    for a in soup.find_all("a", href=True):
-        href = a["href"]
-        if href.endswith(".webp") and "stripeanimation" not in href and "tex_common_white_gachatop" not in href:
-            webps.append(href)
-    driver.quit()
-    return webps
-
 def get_webp_links(folder_url):
     """Scrape all .webp file links from a given sekai.best asset_viewer folder URL."""
     resp = requests.get(folder_url)
@@ -726,24 +767,15 @@ def download_and_save(url, save_path):
     else:
         print(f"Failed to download {url} (status {resp.status_code})")
 
-def scrape_gacha_assets():
-    folders = get_gacha_folders()
-    for display_name, _ in folders:
-        # Download logo
-        logo_url = f"https://storage.sekai.best/sekai-jp-assets/gacha/{display_name}/logo/logo.webp"
-        save_path = os.path.join("my-app/public/gacha", display_name, "logo", "logo.webp")
-        print(f"Downloading logo: {logo_url} -> {save_path}")
-        download_and_save(logo_url, save_path)
+# def scrape_gacha_assets():
+#     folders = get_gacha_folders()
+#     for display_name, _ in folders:
+#         # Download logo
+#         logo_url = f"https://storage.sekai.best/sekai-jp-assets/gacha/{display_name}/logo/logo.webp"
+#         save_path = os.path.join("my-app/public/gacha", display_name, "logo", "logo.webp")
+#         print(f"Downloading logo: {logo_url} -> {save_path}")
+#         download_and_save(logo_url, save_path)
 
-        # Download screen/texture webps
-        webp_files = get_screen_texture_webps(display_name)
-        print(f"  Found {len(webp_files)} screen/texture webp files")
-        for webp in webp_files:
-            filename = webp.split("/")[-1]
-            webp_url = f"https://storage.sekai.best/sekai-jp-assets/gacha/{display_name}/screen/texture/{filename}"
-            save_path = os.path.join("my-app/public/gacha", display_name, "screen_texture", filename)
-            print(f"Downloading {webp_url} -> {save_path}")
-            download_and_save(webp_url, save_path)
 
 if __name__ == "__main__":
     main()
