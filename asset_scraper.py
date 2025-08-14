@@ -12,6 +12,8 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.common.keys import Keys
 from urllib.parse import urlparse, unquote
 from webdriver_manager.chrome import ChromeDriverManager
 from bs4 import BeautifulSoup
@@ -480,22 +482,26 @@ def sekaibest_scrape_gacha_info(start_gacha=start_gacha, end_gacha=end_gacha):
 
             # data[id]['type'] = gacha_type
 
-            # Scrape Gacha Rates
-            # Store unique normal and guaranteed gacha rate pairs to rate_data
-            rates = extract_rates(driver)
+            # # Scrape Gacha Rates
+            # # Store unique normal and guaranteed gacha rate pairs to rate_data
+            # rates = extract_rates(driver)
             
-            # Create or find rate index
-            rate_index = None
-            for idx, rate_struct in enumerate(rate_data):
-                if rate_struct == rates:
-                    rate_index = idx
-                    break
+            # # Create or find rate index
+            # rate_index = None
+            # for idx, rate_struct in enumerate(rate_data):
+            #     if rate_struct == rates:
+            #         rate_index = idx
+            #         break
             
-            if rate_index is None:
-                rate_data.append(rates)
-                rate_index = len(rate_data) - 1
+            # if rate_index is None:
+            #     rate_data.append(rates)
+            #     rate_index = len(rate_data) - 1
             
-            data[id]['gacha_rate_index'] = rate_index
+            # data[id]['gacha_rate_index'] = rate_index
+
+            # Extract featured_cards
+            featured_cards = extract_featured_cards(driver, gacha_id)
+            data[id]['featured_cards'] = featured_cards
             
             # Periodically save progress
             if gacha_id % 10 == 0:
@@ -518,6 +524,59 @@ def sekaibest_scrape_gacha_info(start_gacha=start_gacha, end_gacha=end_gacha):
         json.dump(rate_data, f, indent=2)
 
     print("Scraping completed!")
+
+def extract_featured_cards(driver, gacha_id):
+    featured_cards = []
+    
+    try:
+        # Click the button to open the modal
+        gacha_cards_button = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable(
+                (By.XPATH, '//h6[contains(text(), "Pick-up Member")]/following-sibling::button')
+            )
+        )
+        gacha_cards_button.click()
+        
+        # Wait for modal to appear
+        WebDriverWait(driver, 10).until(
+            EC.visibility_of_element_located((By.XPATH, '//h2[contains(text(), "Gacha Cards")]'))
+        )
+        
+        # Extract all card elements
+        card_elements = driver.find_elements(
+            By.XPATH, 
+            '//div[contains(@class, "css-tuxzvu")]//div[contains(@class, "css-1ecxf4")]'
+        )
+        
+        for card in card_elements:
+            try:
+                # Extract card ID from href attribute
+                card_link = card.find_element(By.TAG_NAME, 'a')
+                href = card_link.get_attribute('href')
+                card_id = href.split('/')[-1]
+                
+                # Extract rate percentage
+                rate_text = card.find_element(
+                    By.XPATH, 
+                    './/p[contains(@class, "css-khp380")]'
+                ).text.split()[0]  # Get first percentage value
+                rate = float(rate_text.replace('%', ''))
+                
+                featured_cards.append({
+                    "card_id": card_id,
+                    # "rate": rate
+                })
+            except Exception as e:
+                print(f"  Error processing card in gacha {gacha_id}: {str(e)}")
+                continue
+        
+        # Close the modal by pressing Escape
+        ActionChains(driver).send_keys(Keys.ESCAPE).perform()
+        
+    except Exception as e:
+        print(f"  Couldn't extract featured cards for gacha {gacha_id}: {str(e)}")
+    
+    return featured_cards
 
 def extract_rates(driver):
     """Extract gacha rates from the page"""
@@ -853,7 +912,25 @@ def main():
     # json_reorder("/Users/gracelu/Desktop/pjsk sim/my-app/src/data/card_metadata.json", desired_card_metadata_order)
     # split_card_metadata()
     # scrape_screen_texture_assets()
-    sekaibest_scrape_gacha_info(start_gacha=783, end_gacha=783)
+
+    sekaibest_scrape_gacha_info(start_gacha=134, end_gacha=783)
+    # json_path = "/Users/gracelu/Desktop/pjsk sim/my-app/src/data/gacha_metadata.json"
+
+    # data = None
+    # if os.path.exists(json_path):
+    #     with open(json_path, 'r') as f:
+    #         data = json.load(f)
+    # else:
+    #     data = {}
+
+    # for gacha in data.values():
+    #     for card in gacha.get("featured_cards", []):
+    #         # Temporarily remove 'rate'
+    #         if "rate" in card:
+    #             del card["rate"]
+
+    # with open(json_path, 'w', encoding='utf-8') as f:
+    #     json.dump(data, f, ensure_ascii=False, indent=2)
 
 def scrape_screen_texture_assets():
     base_local = "my-app/public/gacha"
