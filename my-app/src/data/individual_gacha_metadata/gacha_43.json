@@ -1,0 +1,24 @@
+{
+  "id": 43,
+  "title (japanese)": "[1回限定]雨降って、虹煌めくガチャ",
+  "release_date": "1/20/2021, 10:00:00 PM",
+  "type": "normal",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "160",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "161",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "162",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    }
+  ]
+}

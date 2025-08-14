@@ -1,0 +1,39 @@
+{
+  "id": 706,
+  "title (japanese)": "[4.5周年記念]★4メンバー確定ガチャ",
+  "release_date": "3/29/2025, 8:00:00 PM",
+  "type": "normal",
+  "gacha_rate_index": 5,
+  "featured_cards": [
+    {
+      "card_id": "1047",
+      "normal_rate": 0.314,
+      "guaranteed_rate": 0.314
+    },
+    {
+      "card_id": "867",
+      "normal_rate": 0.314,
+      "guaranteed_rate": 0.314
+    },
+    {
+      "card_id": "665",
+      "normal_rate": 0.314,
+      "guaranteed_rate": 0.314
+    },
+    {
+      "card_id": "1051",
+      "normal_rate": 0.314,
+      "guaranteed_rate": 0.314
+    },
+    {
+      "card_id": "995",
+      "normal_rate": 0.314,
+      "guaranteed_rate": 0.314
+    },
+    {
+      "card_id": "613",
+      "normal_rate": 0.314,
+      "guaranteed_rate": 0.314
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": 764,
+  "title (japanese)": "[復刻]The Party Of Blast!!ガチャ",
+  "release_date": "7/12/2025, 8:00:00 PM",
+  "type": "limited",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "951",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "952",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "953",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    }
+  ]
+}

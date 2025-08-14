@@ -1,0 +1,39 @@
+{
+  "id": 686,
+  "title (japanese)": "[プロセカ×あんさんぶるスターズ！！コラボ記念]プレミアムプレゼントガチャ",
+  "release_date": "2/14/2025, 10:00:00 PM",
+  "type": "normal",
+  "gacha_rate_index": 2,
+  "featured_cards": [
+    {
+      "card_id": "994",
+      "normal_rate": 0.01,
+      "guaranteed_rate": 0.324
+    },
+    {
+      "card_id": "973",
+      "normal_rate": 0.01,
+      "guaranteed_rate": 0.324
+    },
+    {
+      "card_id": "928",
+      "normal_rate": 0.01,
+      "guaranteed_rate": 0.324
+    },
+    {
+      "card_id": "957",
+      "normal_rate": 0.01,
+      "guaranteed_rate": 0.324
+    },
+    {
+      "card_id": "1000",
+      "normal_rate": 0.01,
+      "guaranteed_rate": 0.324
+    },
+    {
+      "card_id": "869",
+      "normal_rate": 0.01,
+      "guaranteed_rate": 0.324
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": 306,
+  "title (japanese)": "[桃井愛莉]HAPPY BIRTHDAY2023ガチャ",
+  "release_date": "3/18/2023, 8:00:00 AM",
+  "type": "birthday",
+  "gacha_rate_index": 4,
+  "featured_cards": [
+    {
+      "card_id": "611",
+      "normal_rate": 3.0,
+      "guaranteed_rate": null
+    }
+  ]
+}

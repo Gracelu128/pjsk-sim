@@ -1,0 +1,39 @@
+{
+  "id": 313,
+  "title (japanese)": "[友達招待]★4メンバー確定ガチャ",
+  "release_date": "3/29/2023, 8:00:00 PM",
+  "type": "normal",
+  "gacha_rate_index": 5,
+  "featured_cards": [
+    {
+      "card_id": "280",
+      "normal_rate": 0.725,
+      "guaranteed_rate": 0.725
+    },
+    {
+      "card_id": "315",
+      "normal_rate": 0.725,
+      "guaranteed_rate": 0.725
+    },
+    {
+      "card_id": "264",
+      "normal_rate": 0.725,
+      "guaranteed_rate": 0.725
+    },
+    {
+      "card_id": "341",
+      "normal_rate": 0.725,
+      "guaranteed_rate": 0.725
+    },
+    {
+      "card_id": "356",
+      "normal_rate": 0.725,
+      "guaranteed_rate": 0.725
+    },
+    {
+      "card_id": "363",
+      "normal_rate": 0.725,
+      "guaranteed_rate": 0.725
+    }
+  ]
+}

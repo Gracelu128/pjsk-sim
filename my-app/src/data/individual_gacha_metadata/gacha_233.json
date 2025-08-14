@@ -1,0 +1,14 @@
+{
+  "id": 233,
+  "title (japanese)": "[初音ミク]HAPPY ANNIVERSARYガチャ",
+  "release_date": "8/30/2022, 8:00:00 AM",
+  "type": "birthday",
+  "gacha_rate_index": 4,
+  "featured_cards": [
+    {
+      "card_id": "492",
+      "normal_rate": 3.0,
+      "guaranteed_rate": null
+    }
+  ]
+}

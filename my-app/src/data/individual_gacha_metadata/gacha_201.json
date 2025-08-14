@@ -1,0 +1,24 @@
+{
+  "id": 201,
+  "title (japanese)": "とびだせ絵本の役者達ガチャ",
+  "release_date": "4/10/2022, 8:00:00 PM",
+  "type": "normal",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "410",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "411",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "412",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    }
+  ]
+}

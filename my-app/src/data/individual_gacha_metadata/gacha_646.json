@@ -1,0 +1,24 @@
+{
+  "id": 646,
+  "title (japanese)": "[2025新春]初夢お年玉ガチャ",
+  "release_date": "12/31/2024, 7:00:00 AM",
+  "type": "normal",
+  "gacha_rate_index": 3,
+  "featured_cards": [
+    {
+      "card_id": "856",
+      "normal_rate": 0.02,
+      "guaranteed_rate": 0.02
+    },
+    {
+      "card_id": "714",
+      "normal_rate": 0.02,
+      "guaranteed_rate": 0.02
+    },
+    {
+      "card_id": "993",
+      "normal_rate": 0.02,
+      "guaranteed_rate": 0.02
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": 138,
+  "title (japanese)": "初心者応援スタートダッシュガチャ",
+  "release_date": "10/10/2021, 11:00:00 PM",
+  "type": "beginner",
+  "gacha_rate_index": 2,
+  "featured_cards": [
+    {
+      "card_id": "88",
+      "normal_rate": 0.036,
+      "guaranteed_rate": 1.205
+    },
+    {
+      "card_id": "92",
+      "normal_rate": 0.036,
+      "guaranteed_rate": 1.205
+    },
+    {
+      "card_id": "96",
+      "normal_rate": 0.036,
+      "guaranteed_rate": 1.205
+    },
+    {
+      "card_id": "109",
+      "normal_rate": 0.036,
+      "guaranteed_rate": 1.205
+    },
+    {
+      "card_id": "114",
+      "normal_rate": 0.036,
+      "guaranteed_rate": 1.205
+    },
+    {
+      "card_id": "119",
+      "normal_rate": 0.036,
+      "guaranteed_rate": 1.205
+    }
+  ]
+}

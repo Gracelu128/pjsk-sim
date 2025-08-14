@@ -1,0 +1,14 @@
+{
+  "id": 722,
+  "title (japanese)": "[復刻][東雲絵名]HAPPY BIRTHDAY2024ガチャ",
+  "release_date": "4/29/2025, 8:00:00 AM",
+  "type": "birthday",
+  "gacha_rate_index": 4,
+  "featured_cards": [
+    {
+      "card_id": "914",
+      "normal_rate": 3.0,
+      "guaranteed_rate": null
+    }
+  ]
+}

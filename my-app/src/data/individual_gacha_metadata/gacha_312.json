@@ -1,0 +1,39 @@
+{
+  "id": 312,
+  "title (japanese)": "[2.5周年記念]10連無料ガチャ",
+  "release_date": "3/29/2023, 8:00:00 PM",
+  "type": "normal",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "483",
+      "normal_rate": 0.016,
+      "guaranteed_rate": 0.016
+    },
+    {
+      "card_id": "536",
+      "normal_rate": 0.016,
+      "guaranteed_rate": 0.016
+    },
+    {
+      "card_id": "518",
+      "normal_rate": 0.016,
+      "guaranteed_rate": 0.016
+    },
+    {
+      "card_id": "552",
+      "normal_rate": 0.016,
+      "guaranteed_rate": 0.016
+    },
+    {
+      "card_id": "523",
+      "normal_rate": 0.016,
+      "guaranteed_rate": 0.016
+    },
+    {
+      "card_id": "542",
+      "normal_rate": 0.016,
+      "guaranteed_rate": 0.016
+    }
+  ]
+}

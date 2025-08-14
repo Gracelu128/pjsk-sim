@@ -1,0 +1,14 @@
+{
+  "id": 770,
+  "title (japanese)": "[復刻][草薙寧々]HAPPY BIRTHDAYガチャ",
+  "release_date": "7/19/2025, 8:00:00 AM",
+  "type": "birthday",
+  "gacha_rate_index": 4,
+  "featured_cards": [
+    {
+      "card_id": "468",
+      "normal_rate": 3.0,
+      "guaranteed_rate": null
+    }
+  ]
+}

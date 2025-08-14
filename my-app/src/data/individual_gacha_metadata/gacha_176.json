@@ -1,0 +1,14 @@
+{
+  "id": 176,
+  "title (japanese)": "[巡音ルカ]HAPPY ANNIVERSARYガチャ",
+  "release_date": "1/29/2022, 7:00:00 AM",
+  "type": "birthday",
+  "gacha_rate_index": 4,
+  "featured_cards": [
+    {
+      "card_id": "367",
+      "normal_rate": 3.0,
+      "guaranteed_rate": null
+    }
+  ]
+}

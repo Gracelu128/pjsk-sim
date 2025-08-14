@@ -1,0 +1,29 @@
+{
+  "id": 380,
+  "title (japanese)": "[3周年記念][Leo/need]プレミアムプレゼントガチャ",
+  "release_date": "9/29/2023, 8:00:00 AM",
+  "type": "normal",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "643",
+      "normal_rate": 0.086,
+      "guaranteed_rate": 0.086
+    },
+    {
+      "card_id": "624",
+      "normal_rate": 0.086,
+      "guaranteed_rate": 0.086
+    },
+    {
+      "card_id": "536",
+      "normal_rate": 0.086,
+      "guaranteed_rate": 0.086
+    },
+    {
+      "card_id": "578",
+      "normal_rate": 0.086,
+      "guaranteed_rate": 0.086
+    }
+  ]
+}

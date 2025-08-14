@@ -1,0 +1,24 @@
+{
+  "id": 454,
+  "title (japanese)": "フォトジェニック♡バレンタインガチャ",
+  "release_date": "1/30/2024, 7:00:00 PM",
+  "type": "limited",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "861",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "862",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "863",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    }
+  ]
+}

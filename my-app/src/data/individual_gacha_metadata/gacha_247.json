@@ -1,0 +1,39 @@
+{
+  "id": 247,
+  "title (japanese)": "[2周年記念]10連無料ガチャ",
+  "release_date": "9/29/2022, 8:00:00 PM",
+  "type": "normal",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "198",
+      "normal_rate": 0.019,
+      "guaranteed_rate": 0.019
+    },
+    {
+      "card_id": "381",
+      "normal_rate": 0.019,
+      "guaranteed_rate": 0.019
+    },
+    {
+      "card_id": "224",
+      "normal_rate": 0.019,
+      "guaranteed_rate": 0.019
+    },
+    {
+      "card_id": "319",
+      "normal_rate": 0.019,
+      "guaranteed_rate": 0.019
+    },
+    {
+      "card_id": "451",
+      "normal_rate": 0.019,
+      "guaranteed_rate": 0.019
+    },
+    {
+      "card_id": "115",
+      "normal_rate": 0.019,
+      "guaranteed_rate": 0.019
+    }
+  ]
+}

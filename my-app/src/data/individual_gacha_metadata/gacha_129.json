@@ -1,0 +1,29 @@
+{
+  "id": 129,
+  "title (japanese)": "[Vivid BAD SQUAD]プレミアムプレゼントガチャ",
+  "release_date": "10/3/2021, 11:00:00 PM",
+  "type": "normal",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "249",
+      "normal_rate": 0.273,
+      "guaranteed_rate": 0.273
+    },
+    {
+      "card_id": "134",
+      "normal_rate": 0.273,
+      "guaranteed_rate": 0.273
+    },
+    {
+      "card_id": "254",
+      "normal_rate": 0.273,
+      "guaranteed_rate": 0.273
+    },
+    {
+      "card_id": "165",
+      "normal_rate": 0.273,
+      "guaranteed_rate": 0.273
+    }
+  ]
+}

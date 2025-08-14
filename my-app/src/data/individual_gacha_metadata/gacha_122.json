@@ -1,0 +1,34 @@
+{
+  "id": 122,
+  "title (japanese)": "★3以上確定チケットガチャ",
+  "release_date": "9/29/2021, 8:00:00 AM",
+  "type": "normal",
+  "gacha_rate_index": 1,
+  "featured_cards": [
+    {
+      "card_id": "3",
+      "normal_rate": 2.256,
+      "guaranteed_rate": null
+    },
+    {
+      "card_id": "19",
+      "normal_rate": 2.256,
+      "guaranteed_rate": null
+    },
+    {
+      "card_id": "35",
+      "normal_rate": 2.256,
+      "guaranteed_rate": null
+    },
+    {
+      "card_id": "51",
+      "normal_rate": 2.256,
+      "guaranteed_rate": null
+    },
+    {
+      "card_id": "67",
+      "normal_rate": 2.256,
+      "guaranteed_rate": null
+    }
+  ]
+}

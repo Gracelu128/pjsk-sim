@@ -1,0 +1,39 @@
+{
+  "id": 548,
+  "title (japanese)": "ハピネスパッケージガチャ",
+  "release_date": "7/25/2024, 8:00:00 PM",
+  "type": "gift",
+  "gacha_rate_index": 2,
+  "featured_cards": [
+    {
+      "card_id": "625",
+      "normal_rate": 0.011,
+      "guaranteed_rate": 0.358
+    },
+    {
+      "card_id": "589",
+      "normal_rate": 0.011,
+      "guaranteed_rate": 0.358
+    },
+    {
+      "card_id": "660",
+      "normal_rate": 0.011,
+      "guaranteed_rate": 0.358
+    },
+    {
+      "card_id": "607",
+      "normal_rate": 0.011,
+      "guaranteed_rate": 0.358
+    },
+    {
+      "card_id": "677",
+      "normal_rate": 0.011,
+      "guaranteed_rate": 0.358
+    },
+    {
+      "card_id": "835",
+      "normal_rate": 0.011,
+      "guaranteed_rate": 0.358
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": 620,
+  "title (japanese)": "[復刻][東雲彰人]HAPPY BIRTHDAY2022ガチャ",
+  "release_date": "11/11/2024, 7:00:00 AM",
+  "type": "birthday",
+  "gacha_rate_index": 4,
+  "featured_cards": [
+    {
+      "card_id": "534",
+      "normal_rate": 3.0,
+      "guaranteed_rate": null
+    }
+  ]
+}

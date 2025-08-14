@@ -1,0 +1,39 @@
+{
+  "id": 483,
+  "title (japanese)": "3900's前夜祭ハピネスパッケージガチャ",
+  "release_date": "3/27/2024, 8:00:00 PM",
+  "type": "gift",
+  "gacha_rate_index": 2,
+  "featured_cards": [
+    {
+      "card_id": "643",
+      "normal_rate": 0.011,
+      "guaranteed_rate": 0.383
+    },
+    {
+      "card_id": "589",
+      "normal_rate": 0.011,
+      "guaranteed_rate": 0.383
+    },
+    {
+      "card_id": "769",
+      "normal_rate": 0.011,
+      "guaranteed_rate": 0.383
+    },
+    {
+      "card_id": "701",
+      "normal_rate": 0.011,
+      "guaranteed_rate": 0.383
+    },
+    {
+      "card_id": "499",
+      "normal_rate": 0.011,
+      "guaranteed_rate": 0.383
+    },
+    {
+      "card_id": "775",
+      "normal_rate": 0.011,
+      "guaranteed_rate": 0.383
+    }
+  ]
+}

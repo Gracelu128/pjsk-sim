@@ -1,0 +1,14 @@
+{
+  "id": 493,
+  "title (japanese)": "[花里みのり]HAPPY BIRTHDAY2024ガチャ",
+  "release_date": "4/13/2024, 8:00:00 AM",
+  "type": "birthday",
+  "gacha_rate_index": 4,
+  "featured_cards": [
+    {
+      "card_id": "908",
+      "normal_rate": 3.0,
+      "guaranteed_rate": null
+    }
+  ]
+}

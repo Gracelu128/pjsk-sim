@@ -1,0 +1,59 @@
+{
+  "id": 415,
+  "title (japanese)": "セレクトリストガチャ",
+  "release_date": "11/24/2023, 7:00:00 PM",
+  "type": "normal",
+  "gacha_rate_index": 2,
+  "featured_cards": [
+    {
+      "card_id": "684",
+      "normal_rate": 0.013,
+      "guaranteed_rate": 0.417
+    },
+    {
+      "card_id": "664",
+      "normal_rate": 0.013,
+      "guaranteed_rate": 0.417
+    },
+    {
+      "card_id": "642",
+      "normal_rate": 0.013,
+      "guaranteed_rate": 0.417
+    },
+    {
+      "card_id": "505",
+      "normal_rate": 0.013,
+      "guaranteed_rate": 0.417
+    },
+    {
+      "card_id": "134",
+      "normal_rate": 0.013,
+      "guaranteed_rate": 0.417
+    },
+    {
+      "card_id": "701",
+      "normal_rate": 0.013,
+      "guaranteed_rate": 0.417
+    },
+    {
+      "card_id": "540",
+      "normal_rate": 0.013,
+      "guaranteed_rate": 0.417
+    },
+    {
+      "card_id": "446",
+      "normal_rate": 0.013,
+      "guaranteed_rate": 0.417
+    },
+    {
+      "card_id": "245",
+      "normal_rate": 0.013,
+      "guaranteed_rate": 0.417
+    },
+    {
+      "card_id": "280",
+      "normal_rate": 0.013,
+      "guaranteed_rate": 0.417
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": 584,
+  "title (japanese)": "[4周年記念][MORE MORE JUMP！]プレミアムプレゼントガチャ",
+  "release_date": "9/29/2024, 8:00:00 AM",
+  "type": "normal",
+  "gacha_rate_index": 2,
+  "featured_cards": [
+    {
+      "card_id": "873",
+      "normal_rate": 0.073,
+      "guaranteed_rate": 2.439
+    },
+    {
+      "card_id": "938",
+      "normal_rate": 0.073,
+      "guaranteed_rate": 2.439
+    },
+    {
+      "card_id": "665",
+      "normal_rate": 0.073,
+      "guaranteed_rate": 2.439
+    },
+    {
+      "card_id": "939",
+      "normal_rate": 0.073,
+      "guaranteed_rate": 2.439
+    }
+  ]
+}

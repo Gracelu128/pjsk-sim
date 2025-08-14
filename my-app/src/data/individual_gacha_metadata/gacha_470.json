@@ -1,0 +1,14 @@
+{
+  "id": 470,
+  "title (japanese)": "[小豆沢こはね]HAPPY BIRTHDAY2024ガチャ",
+  "release_date": "3/1/2024, 7:00:00 AM",
+  "type": "birthday",
+  "gacha_rate_index": 4,
+  "featured_cards": [
+    {
+      "card_id": "883",
+      "normal_rate": 3.0,
+      "guaranteed_rate": null
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": 386,
+  "title (japanese)": "[3周年記念]カラフルフェスティバルガチャ ドリームピック",
+  "release_date": "9/29/2023, 8:00:00 PM",
+  "type": "limited",
+  "gacha_rate_index": 3,
+  "featured_cards": [
+    {
+      "card_id": "760",
+      "normal_rate": 0.012,
+      "guaranteed_rate": 0.012
+    },
+    {
+      "card_id": "761",
+      "normal_rate": 0.012,
+      "guaranteed_rate": 0.012
+    },
+    {
+      "card_id": "762",
+      "normal_rate": 0.012,
+      "guaranteed_rate": 0.012
+    },
+    {
+      "card_id": "763",
+      "normal_rate": 0.012,
+      "guaranteed_rate": 0.012
+    },
+    {
+      "card_id": "764",
+      "normal_rate": 0.012,
+      "guaranteed_rate": 0.012
+    },
+    {
+      "card_id": "765",
+      "normal_rate": 0.012,
+      "guaranteed_rate": 0.012
+    }
+  ]
+}

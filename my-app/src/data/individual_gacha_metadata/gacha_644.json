@@ -1,0 +1,39 @@
+{
+  "id": 644,
+  "title (japanese)": "[2025新春]プレミアムプレゼントガチャ",
+  "release_date": "12/30/2024, 7:00:00 PM",
+  "type": "normal",
+  "gacha_rate_index": 2,
+  "featured_cards": [
+    {
+      "card_id": "775",
+      "normal_rate": 0.01,
+      "guaranteed_rate": 0.333
+    },
+    {
+      "card_id": "909",
+      "normal_rate": 0.01,
+      "guaranteed_rate": 0.333
+    },
+    {
+      "card_id": "939",
+      "normal_rate": 0.01,
+      "guaranteed_rate": 0.333
+    },
+    {
+      "card_id": "769",
+      "normal_rate": 0.01,
+      "guaranteed_rate": 0.333
+    },
+    {
+      "card_id": "792",
+      "normal_rate": 0.01,
+      "guaranteed_rate": 0.333
+    },
+    {
+      "card_id": "944",
+      "normal_rate": 0.01,
+      "guaranteed_rate": 0.333
+    }
+  ]
+}

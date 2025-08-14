@@ -1,0 +1,14 @@
+{
+  "id": 289,
+  "title (japanese)": "[巡音ルカ]HAPPY ANNIVERSARY2023ガチャ",
+  "release_date": "1/29/2023, 7:00:00 AM",
+  "type": "birthday",
+  "gacha_rate_index": 4,
+  "featured_cards": [
+    {
+      "card_id": "582",
+      "normal_rate": 3.0,
+      "guaranteed_rate": null
+    }
+  ]
+}

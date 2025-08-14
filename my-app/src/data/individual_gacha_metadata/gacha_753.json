@@ -1,0 +1,14 @@
+{
+  "id": 753,
+  "title (japanese)": "[神代類]HAPPY BIRTHDAY2025ガチャ",
+  "release_date": "6/23/2025, 8:00:00 AM",
+  "type": "birthday",
+  "gacha_rate_index": 4,
+  "featured_cards": [
+    {
+      "card_id": "1193",
+      "normal_rate": 3.0,
+      "guaranteed_rate": null
+    }
+  ]
+}

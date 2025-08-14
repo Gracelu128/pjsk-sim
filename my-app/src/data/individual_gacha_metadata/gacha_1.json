@@ -1,0 +1,29 @@
+{
+  "id": 1,
+  "title (japanese)": "リリース記念ガチャ",
+  "release_date": "4/30/2019, 8:00:00 PM",
+  "type": "normal",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "88",
+      "normal_rate": 0.75,
+      "guaranteed_rate": 0.75
+    },
+    {
+      "card_id": "92",
+      "normal_rate": 0.75,
+      "guaranteed_rate": 0.75
+    },
+    {
+      "card_id": "96",
+      "normal_rate": 0.75,
+      "guaranteed_rate": 0.75
+    },
+    {
+      "card_id": "4",
+      "normal_rate": 0.75,
+      "guaranteed_rate": 0.75
+    }
+  ]
+}

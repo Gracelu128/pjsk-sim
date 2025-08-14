@@ -1,0 +1,29 @@
+{
+  "id": 130,
+  "title (japanese)": "[ワンダーランズ×ショウタイム]プレミアムプレゼントガチャ",
+  "release_date": "10/4/2021, 11:00:00 PM",
+  "type": "normal",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "232",
+      "normal_rate": 0.231,
+      "guaranteed_rate": 0.231
+    },
+    {
+      "card_id": "233",
+      "normal_rate": 0.231,
+      "guaranteed_rate": 0.231
+    },
+    {
+      "card_id": "144",
+      "normal_rate": 0.231,
+      "guaranteed_rate": 0.231
+    },
+    {
+      "card_id": "119",
+      "normal_rate": 0.231,
+      "guaranteed_rate": 0.231
+    }
+  ]
+}

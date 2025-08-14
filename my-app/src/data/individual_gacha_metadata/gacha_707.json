@@ -1,0 +1,39 @@
+{
+  "id": 707,
+  "title (japanese)": "[4.5周年記念]無料ガチャ",
+  "release_date": "3/29/2025, 8:00:00 PM",
+  "type": "normal",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "940",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.009
+    },
+    {
+      "card_id": "998",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.009
+    },
+    {
+      "card_id": "874",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.009
+    },
+    {
+      "card_id": "1016",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.009
+    },
+    {
+      "card_id": "957",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.009
+    },
+    {
+      "card_id": "943",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.009
+    }
+  ]
+}

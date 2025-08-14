@@ -1,0 +1,44 @@
+{
+  "id": 649,
+  "title (japanese)": "カラフルパスガチャ",
+  "release_date": "1/5/2025, 11:00:00 AM",
+  "type": "normal",
+  "gacha_rate_index": 1,
+  "featured_cards": [
+    {
+      "card_id": "383",
+      "normal_rate": 0.678,
+      "guaranteed_rate": null
+    },
+    {
+      "card_id": "267",
+      "normal_rate": 0.678,
+      "guaranteed_rate": null
+    },
+    {
+      "card_id": "376",
+      "normal_rate": 0.678,
+      "guaranteed_rate": null
+    },
+    {
+      "card_id": "359",
+      "normal_rate": 0.678,
+      "guaranteed_rate": null
+    },
+    {
+      "card_id": "364",
+      "normal_rate": 0.678,
+      "guaranteed_rate": null
+    },
+    {
+      "card_id": "353",
+      "normal_rate": 0.678,
+      "guaranteed_rate": null
+    },
+    {
+      "card_id": "272",
+      "normal_rate": 0.678,
+      "guaranteed_rate": null
+    }
+  ]
+}

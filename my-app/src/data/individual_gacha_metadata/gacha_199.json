@@ -1,0 +1,39 @@
+{
+  "id": 199,
+  "title (japanese)": "ミクの日お祝いキャンペーンガチャ",
+  "release_date": "3/29/2022, 11:00:00 PM",
+  "type": "normal",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "298",
+      "normal_rate": 0.025,
+      "guaranteed_rate": 0.025
+    },
+    {
+      "card_id": "197",
+      "normal_rate": 0.025,
+      "guaranteed_rate": 0.025
+    },
+    {
+      "card_id": "264",
+      "normal_rate": 0.025,
+      "guaranteed_rate": 0.025
+    },
+    {
+      "card_id": "341",
+      "normal_rate": 0.025,
+      "guaranteed_rate": 0.025
+    },
+    {
+      "card_id": "234",
+      "normal_rate": 0.025,
+      "guaranteed_rate": 0.025
+    },
+    {
+      "card_id": "237",
+      "normal_rate": 0.025,
+      "guaranteed_rate": 0.025
+    }
+  ]
+}

@@ -887,6 +887,29 @@ def split_card_metadata(
 
     print(f"Done! Exported {count} cards to: {output_dir}")
 
+def split_gacha_metadata(
+    input_path="/Users/gracelu/Desktop/pjsk sim/my-app/src/data/gacha_metadata.json",
+    output_dir="/Users/gracelu/Desktop/pjsk sim/my-app/src/data/individual_gacha_metadata"
+):
+    # Make sure output directory exists
+    os.makedirs(output_dir, exist_ok=True)
+
+    # Load big JSON file
+    with open(input_path, "r", encoding="utf-8") as infile:
+        metadata = json.load(infile)
+
+    count = 0
+
+    # Save each card to its own JSON file
+    for gacha_id, gacha_data in metadata.items():
+        filename = f"gacha_{gacha_id}.json"
+        filepath = os.path.join(output_dir, filename)
+        with open(filepath, "w", encoding="utf-8") as outfile:
+            json.dump(gacha_data, outfile, ensure_ascii=False, indent=2)
+        count += 1
+
+    print(f"Done! Exported {count} cards to: {output_dir}")
+
 def main():
     # scrape_gacha_assets()
     # """Main function to execute scraping"""
@@ -915,25 +938,9 @@ def main():
     # json_reorder("/Users/gracelu/Desktop/pjsk sim/my-app/src/data/card_metadata.json", desired_card_metadata_order)
     # split_card_metadata()
     # scrape_screen_texture_assets()
+    split_gacha_metadata()
 
-    sekaibest_scrape_gacha_info(start_gacha=1, end_gacha=783)
-    # json_path = "/Users/gracelu/Desktop/pjsk sim/my-app/src/data/gacha_metadata.json"
-
-    # data = None
-    # if os.path.exists(json_path):
-    #     with open(json_path, 'r') as f:
-    #         data = json.load(f)
-    # else:
-    #     data = {}
-
-    # for gacha in data.values():
-    #     for card in gacha.get("featured_cards", []):
-    #         # Temporarily remove 'rate'
-    #         if "rate" in card:
-    #             del card["rate"]
-
-    # with open(json_path, 'w', encoding='utf-8') as f:
-    #     json.dump(data, f, ensure_ascii=False, indent=2)
+    # sekaibest_scrape_gacha_info(start_gacha=1, end_gacha=783)
 
 def scrape_screen_texture_assets():
     base_local = "my-app/public/gacha"

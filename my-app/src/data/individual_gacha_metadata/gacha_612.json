@@ -1,0 +1,14 @@
+{
+  "id": 612,
+  "title (japanese)": "[復刻][MEIKO]HAPPY ANNIVERSARY2023ガチャ",
+  "release_date": "11/4/2024, 7:00:00 AM",
+  "type": "birthday",
+  "gacha_rate_index": 4,
+  "featured_cards": [
+    {
+      "card_id": "784",
+      "normal_rate": 3.0,
+      "guaranteed_rate": null
+    }
+  ]
+}

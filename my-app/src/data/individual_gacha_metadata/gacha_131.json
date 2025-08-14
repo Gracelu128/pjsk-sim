@@ -1,0 +1,29 @@
+{
+  "id": 131,
+  "title (japanese)": "[25時、ナイトコードで。]プレミアムプレゼントガチャ",
+  "release_date": "10/5/2021, 11:00:00 PM",
+  "type": "normal",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "237",
+      "normal_rate": 0.214,
+      "guaranteed_rate": 0.214
+    },
+    {
+      "card_id": "114",
+      "normal_rate": 0.214,
+      "guaranteed_rate": 0.214
+    },
+    {
+      "card_id": "175",
+      "normal_rate": 0.214,
+      "guaranteed_rate": 0.214
+    },
+    {
+      "card_id": "202",
+      "normal_rate": 0.214,
+      "guaranteed_rate": 0.214
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": 126,
+  "title (japanese)": "[バーチャル・シンガー]プレミアムプレゼントガチャ",
+  "release_date": "9/30/2021, 11:00:00 PM",
+  "type": "normal",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "149",
+      "normal_rate": 0.107,
+      "guaranteed_rate": 0.107
+    },
+    {
+      "card_id": "131",
+      "normal_rate": 0.107,
+      "guaranteed_rate": 0.107
+    },
+    {
+      "card_id": "229",
+      "normal_rate": 0.107,
+      "guaranteed_rate": 0.107
+    },
+    {
+      "card_id": "110",
+      "normal_rate": 0.107,
+      "guaranteed_rate": 0.107
+    },
+    {
+      "card_id": "251",
+      "normal_rate": 0.107,
+      "guaranteed_rate": 0.107
+    },
+    {
+      "card_id": "121",
+      "normal_rate": 0.107,
+      "guaranteed_rate": 0.107
+    }
+  ]
+}

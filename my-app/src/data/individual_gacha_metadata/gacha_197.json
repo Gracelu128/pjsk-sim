@@ -1,0 +1,39 @@
+{
+  "id": 197,
+  "title (japanese)": "[1.5周年記念]★4メンバー1人確定プレミアムプレゼントガチャ",
+  "release_date": "3/29/2022, 11:00:00 PM",
+  "type": "normal",
+  "gacha_rate_index": 2,
+  "featured_cards": [
+    {
+      "card_id": "314",
+      "normal_rate": 0.025,
+      "guaranteed_rate": 0.833
+    },
+    {
+      "card_id": "330",
+      "normal_rate": 0.025,
+      "guaranteed_rate": 0.833
+    },
+    {
+      "card_id": "341",
+      "normal_rate": 0.025,
+      "guaranteed_rate": 0.833
+    },
+    {
+      "card_id": "302",
+      "normal_rate": 0.025,
+      "guaranteed_rate": 0.833
+    },
+    {
+      "card_id": "309",
+      "normal_rate": 0.025,
+      "guaranteed_rate": 0.833
+    },
+    {
+      "card_id": "320",
+      "normal_rate": 0.025,
+      "guaranteed_rate": 0.833
+    }
+  ]
+}

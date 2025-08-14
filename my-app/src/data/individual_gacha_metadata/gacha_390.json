@@ -1,0 +1,14 @@
+{
+  "id": 390,
+  "title (japanese)": "[復刻][桐谷遥]HAPPY BIRTHDAY2022ガチャ",
+  "release_date": "10/4/2023, 8:00:00 AM",
+  "type": "birthday",
+  "gacha_rate_index": 4,
+  "featured_cards": [
+    {
+      "card_id": "516",
+      "normal_rate": 3.0,
+      "guaranteed_rate": null
+    }
+  ]
+}

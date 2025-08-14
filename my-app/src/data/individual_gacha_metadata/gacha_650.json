@@ -1,0 +1,14 @@
+{
+  "id": 650,
+  "title (japanese)": "[日野森志歩]HAPPY BIRTHDAY2025ガチャ",
+  "release_date": "1/7/2025, 7:00:00 AM",
+  "type": "birthday",
+  "gacha_rate_index": 4,
+  "featured_cards": [
+    {
+      "card_id": "1064",
+      "normal_rate": 3.0,
+      "guaranteed_rate": null
+    }
+  ]
+}

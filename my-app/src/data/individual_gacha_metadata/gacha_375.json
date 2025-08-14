@@ -1,0 +1,39 @@
+{
+  "id": 375,
+  "title (japanese)": "[3周年直前生放送配信記念]10連無料ガチャ",
+  "release_date": "9/26/2023, 8:00:00 AM",
+  "type": "normal",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "666",
+      "normal_rate": 0.013,
+      "guaranteed_rate": 0.013
+    },
+    {
+      "card_id": "578",
+      "normal_rate": 0.013,
+      "guaranteed_rate": 0.013
+    },
+    {
+      "card_id": "642",
+      "normal_rate": 0.013,
+      "guaranteed_rate": 0.013
+    },
+    {
+      "card_id": "551",
+      "normal_rate": 0.013,
+      "guaranteed_rate": 0.013
+    },
+    {
+      "card_id": "571",
+      "normal_rate": 0.013,
+      "guaranteed_rate": 0.013
+    },
+    {
+      "card_id": "614",
+      "normal_rate": 0.013,
+      "guaranteed_rate": 0.013
+    }
+  ]
+}

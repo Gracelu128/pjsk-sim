@@ -1,0 +1,39 @@
+{
+  "id": 781,
+  "title (japanese)": "[ペルソナ５ ザ・ロイヤルタイアップ記念]プレミアムプレゼントガチャ",
+  "release_date": "8/3/2025, 8:00:00 PM",
+  "type": "normal",
+  "gacha_rate_index": 2,
+  "featured_cards": [
+    {
+      "card_id": "537",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.295
+    },
+    {
+      "card_id": "1099",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.295
+    },
+    {
+      "card_id": "1067",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.295
+    },
+    {
+      "card_id": "1112",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.295
+    },
+    {
+      "card_id": "1124",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.295
+    },
+    {
+      "card_id": "1158",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.295
+    }
+  ]
+}

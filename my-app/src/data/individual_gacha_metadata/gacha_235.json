@@ -1,0 +1,14 @@
+{
+  "id": 235,
+  "title (japanese)": "[鳳えむ]HAPPY BIRTHDAYガチャ",
+  "release_date": "9/8/2022, 8:00:00 AM",
+  "type": "birthday",
+  "gacha_rate_index": 4,
+  "featured_cards": [
+    {
+      "card_id": "498",
+      "normal_rate": 3.0,
+      "guaranteed_rate": null
+    }
+  ]
+}

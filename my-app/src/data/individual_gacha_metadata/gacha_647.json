@@ -1,0 +1,39 @@
+{
+  "id": 647,
+  "title (japanese)": "[2025新春]お正月無料ガチャ",
+  "release_date": "12/30/2024, 7:00:00 PM",
+  "type": "normal",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "1000",
+      "normal_rate": 0.01,
+      "guaranteed_rate": 0.01
+    },
+    {
+      "card_id": "715",
+      "normal_rate": 0.01,
+      "guaranteed_rate": 0.01
+    },
+    {
+      "card_id": "873",
+      "normal_rate": 0.01,
+      "guaranteed_rate": 0.01
+    },
+    {
+      "card_id": "973",
+      "normal_rate": 0.01,
+      "guaranteed_rate": 0.01
+    },
+    {
+      "card_id": "927",
+      "normal_rate": 0.01,
+      "guaranteed_rate": 0.01
+    },
+    {
+      "card_id": "974",
+      "normal_rate": 0.01,
+      "guaranteed_rate": 0.01
+    }
+  ]
+}

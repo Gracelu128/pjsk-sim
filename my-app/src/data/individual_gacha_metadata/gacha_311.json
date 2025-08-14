@@ -1,0 +1,39 @@
+{
+  "id": 311,
+  "title (japanese)": "[2.5周年記念]★4メンバー1人確定プレミアムプレゼントガチャ",
+  "release_date": "3/29/2023, 8:00:00 PM",
+  "type": "normal",
+  "gacha_rate_index": 2,
+  "featured_cards": [
+    {
+      "card_id": "558",
+      "normal_rate": 0.016,
+      "guaranteed_rate": 0.521
+    },
+    {
+      "card_id": "535",
+      "normal_rate": 0.016,
+      "guaranteed_rate": 0.521
+    },
+    {
+      "card_id": "556",
+      "normal_rate": 0.016,
+      "guaranteed_rate": 0.521
+    },
+    {
+      "card_id": "551",
+      "normal_rate": 0.016,
+      "guaranteed_rate": 0.521
+    },
+    {
+      "card_id": "522",
+      "normal_rate": 0.016,
+      "guaranteed_rate": 0.521
+    },
+    {
+      "card_id": "541",
+      "normal_rate": 0.016,
+      "guaranteed_rate": 0.521
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": 579,
+  "title (japanese)": "ミッションガチャ",
+  "release_date": "9/27/2024, 7:00:00 PM",
+  "type": "normal",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "535",
+      "normal_rate": 0.01,
+      "guaranteed_rate": 0.01
+    },
+    {
+      "card_id": "519",
+      "normal_rate": 0.01,
+      "guaranteed_rate": 0.01
+    },
+    {
+      "card_id": "552",
+      "normal_rate": 0.01,
+      "guaranteed_rate": 0.01
+    },
+    {
+      "card_id": "608",
+      "normal_rate": 0.01,
+      "guaranteed_rate": 0.01
+    },
+    {
+      "card_id": "541",
+      "normal_rate": 0.01,
+      "guaranteed_rate": 0.01
+    },
+    {
+      "card_id": "644",
+      "normal_rate": 0.01,
+      "guaranteed_rate": 0.01
+    }
+  ]
+}

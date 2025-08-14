@@ -1,0 +1,14 @@
+{
+  "id": 508,
+  "title (japanese)": "[復刻][天馬咲希]HAPPY BIRTHDAYガチャ",
+  "release_date": "5/8/2024, 8:00:00 AM",
+  "type": "birthday",
+  "gacha_rate_index": 4,
+  "featured_cards": [
+    {
+      "card_id": "427",
+      "normal_rate": 3.0,
+      "guaranteed_rate": null
+    }
+  ]
+}

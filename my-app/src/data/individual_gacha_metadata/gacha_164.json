@@ -1,0 +1,34 @@
+{
+  "id": 164,
+  "title (japanese)": "[2022新春]カラフルフェスティバルガチャ",
+  "release_date": "12/30/2021, 10:00:00 PM",
+  "type": "limited",
+  "gacha_rate_index": 3,
+  "featured_cards": [
+    {
+      "card_id": "348",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "349",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "350",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "351",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "352",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    }
+  ]
+}

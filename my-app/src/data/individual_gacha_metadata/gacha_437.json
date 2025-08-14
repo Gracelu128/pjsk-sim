@@ -1,0 +1,34 @@
+{
+  "id": 437,
+  "title (japanese)": "[Vivid BAD SQUAD] ワールドリンクイベントサポートガチャ",
+  "release_date": "1/1/2024, 7:00:00 PM",
+  "type": "normal",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "694",
+      "normal_rate": 0.058,
+      "guaranteed_rate": 0.058
+    },
+    {
+      "card_id": "659",
+      "normal_rate": 0.058,
+      "guaranteed_rate": 0.058
+    },
+    {
+      "card_id": "768",
+      "normal_rate": 0.058,
+      "guaranteed_rate": 0.058
+    },
+    {
+      "card_id": "504",
+      "normal_rate": 0.058,
+      "guaranteed_rate": 0.058
+    },
+    {
+      "card_id": "298",
+      "normal_rate": 0.058,
+      "guaranteed_rate": 0.058
+    }
+  ]
+}

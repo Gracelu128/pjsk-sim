@@ -1,0 +1,39 @@
+{
+  "id": 492,
+  "title (japanese)": "3900'sプレミアムプレゼントガチャ WCS 2024 EDITION",
+  "release_date": "4/12/2024, 8:00:00 PM",
+  "type": "normal",
+  "gacha_rate_index": 2,
+  "featured_cards": [
+    {
+      "card_id": "537",
+      "normal_rate": 0.011,
+      "guaranteed_rate": 0.383
+    },
+    {
+      "card_id": "661",
+      "normal_rate": 0.011,
+      "guaranteed_rate": 0.383
+    },
+    {
+      "card_id": "447",
+      "normal_rate": 0.011,
+      "guaranteed_rate": 0.383
+    },
+    {
+      "card_id": "770",
+      "normal_rate": 0.011,
+      "guaranteed_rate": 0.383
+    },
+    {
+      "card_id": "793",
+      "normal_rate": 0.011,
+      "guaranteed_rate": 0.383
+    },
+    {
+      "card_id": "558",
+      "normal_rate": 0.011,
+      "guaranteed_rate": 0.383
+    }
+  ]
+}

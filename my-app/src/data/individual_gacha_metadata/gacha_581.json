@@ -1,0 +1,39 @@
+{
+  "id": 581,
+  "title (japanese)": "[4周年記念]ブルームフェスティバルガチャ ドリームピック",
+  "release_date": "9/29/2024, 8:00:00 PM",
+  "type": "limited",
+  "gacha_rate_index": 7,
+  "featured_cards": [
+    {
+      "card_id": "1003",
+      "normal_rate": 0.01,
+      "guaranteed_rate": 0.01
+    },
+    {
+      "card_id": "1004",
+      "normal_rate": 0.01,
+      "guaranteed_rate": 0.01
+    },
+    {
+      "card_id": "1005",
+      "normal_rate": 0.01,
+      "guaranteed_rate": 0.01
+    },
+    {
+      "card_id": "1006",
+      "normal_rate": 0.01,
+      "guaranteed_rate": 0.01
+    },
+    {
+      "card_id": "1007",
+      "normal_rate": 0.01,
+      "guaranteed_rate": 0.01
+    },
+    {
+      "card_id": "1008",
+      "normal_rate": 0.01,
+      "guaranteed_rate": 0.01
+    }
+  ]
+}

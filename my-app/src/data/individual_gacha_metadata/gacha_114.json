@@ -1,0 +1,39 @@
+{
+  "id": 114,
+  "title (japanese)": "★4メンバー1人確定ガチャ",
+  "release_date": "8/25/2021, 11:00:00 PM",
+  "type": "normal",
+  "gacha_rate_index": 2,
+  "featured_cards": [
+    {
+      "card_id": "251",
+      "normal_rate": 0.034,
+      "guaranteed_rate": 1.149
+    },
+    {
+      "card_id": "207",
+      "normal_rate": 0.034,
+      "guaranteed_rate": 1.149
+    },
+    {
+      "card_id": "222",
+      "normal_rate": 0.034,
+      "guaranteed_rate": 1.149
+    },
+    {
+      "card_id": "254",
+      "normal_rate": 0.034,
+      "guaranteed_rate": 1.149
+    },
+    {
+      "card_id": "232",
+      "normal_rate": 0.034,
+      "guaranteed_rate": 1.149
+    },
+    {
+      "card_id": "237",
+      "normal_rate": 0.034,
+      "guaranteed_rate": 1.149
+    }
+  ]
+}

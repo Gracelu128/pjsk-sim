@@ -1,0 +1,139 @@
+{
+  "id": 378,
+  "title (japanese)": "[3周年記念]メモリアルセレクトガチャ",
+  "release_date": "9/29/2023, 8:00:00 AM",
+  "type": "normal",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "279",
+      "normal_rate": 0.013,
+      "guaranteed_rate": 0.013
+    },
+    {
+      "card_id": "109",
+      "normal_rate": 0.013,
+      "guaranteed_rate": 0.013
+    },
+    {
+      "card_id": "155",
+      "normal_rate": 0.013,
+      "guaranteed_rate": 0.013
+    },
+    {
+      "card_id": "207",
+      "normal_rate": 0.013,
+      "guaranteed_rate": 0.013
+    },
+    {
+      "card_id": "517",
+      "normal_rate": 0.013,
+      "guaranteed_rate": 0.013
+    },
+    {
+      "card_id": "222",
+      "normal_rate": 0.013,
+      "guaranteed_rate": 0.013
+    },
+    {
+      "card_id": "630",
+      "normal_rate": 0.013,
+      "guaranteed_rate": 0.013
+    },
+    {
+      "card_id": "556",
+      "normal_rate": 0.013,
+      "guaranteed_rate": 0.013
+    },
+    {
+      "card_id": "595",
+      "normal_rate": 0.013,
+      "guaranteed_rate": 0.013
+    },
+    {
+      "card_id": "296",
+      "normal_rate": 0.013,
+      "guaranteed_rate": 0.013
+    },
+    {
+      "card_id": "254",
+      "normal_rate": 0.013,
+      "guaranteed_rate": 0.013
+    },
+    {
+      "card_id": "165",
+      "normal_rate": 0.013,
+      "guaranteed_rate": 0.013
+    },
+    {
+      "card_id": "606",
+      "normal_rate": 0.013,
+      "guaranteed_rate": 0.013
+    },
+    {
+      "card_id": "124",
+      "normal_rate": 0.013,
+      "guaranteed_rate": 0.013
+    },
+    {
+      "card_id": "648",
+      "normal_rate": 0.013,
+      "guaranteed_rate": 0.013
+    },
+    {
+      "card_id": "301",
+      "normal_rate": 0.013,
+      "guaranteed_rate": 0.013
+    },
+    {
+      "card_id": "237",
+      "normal_rate": 0.013,
+      "guaranteed_rate": 0.013
+    },
+    {
+      "card_id": "114",
+      "normal_rate": 0.013,
+      "guaranteed_rate": 0.013
+    },
+    {
+      "card_id": "397",
+      "normal_rate": 0.013,
+      "guaranteed_rate": 0.013
+    },
+    {
+      "card_id": "202",
+      "normal_rate": 0.013,
+      "guaranteed_rate": 0.013
+    },
+    {
+      "card_id": "537",
+      "normal_rate": 0.013,
+      "guaranteed_rate": 0.013
+    },
+    {
+      "card_id": "131",
+      "normal_rate": 0.013,
+      "guaranteed_rate": 0.013
+    },
+    {
+      "card_id": "573",
+      "normal_rate": 0.013,
+      "guaranteed_rate": 0.013
+    },
+    {
+      "card_id": "238",
+      "normal_rate": 0.013,
+      "guaranteed_rate": 0.013
+    },
+    {
+      "card_id": "626",
+      "normal_rate": 0.013,
+      "guaranteed_rate": 0.013
+    },
+    {
+      "card_id": "506",
+      "normal_rate": 0.013,
+      "guaranteed_rate": 0.013
+    }
+  ]
+}

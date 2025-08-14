@@ -1,0 +1,24 @@
+{
+  "id": 4,
+  "title (japanese)": "星降る夜空の思い出ガチャ",
+  "release_date": "10/8/2020, 11:00:00 PM",
+  "type": "normal",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "109",
+      "normal_rate": 0.429,
+      "guaranteed_rate": 0.429
+    },
+    {
+      "card_id": "110",
+      "normal_rate": 0.429,
+      "guaranteed_rate": 0.429
+    },
+    {
+      "card_id": "111",
+      "normal_rate": 0.429,
+      "guaranteed_rate": 0.429
+    }
+  ]
+}

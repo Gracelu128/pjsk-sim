@@ -1,0 +1,39 @@
+{
+  "id": 392,
+  "title (japanese)": "[初心者応援]★4メンバー1人確定10連チケットガチャ",
+  "release_date": "9/29/2023, 8:00:00 AM",
+  "type": "normal",
+  "gacha_rate_index": 2,
+  "featured_cards": [
+    {
+      "card_id": "92",
+      "normal_rate": 0.017,
+      "guaranteed_rate": 0.575
+    },
+    {
+      "card_id": "380",
+      "normal_rate": 0.017,
+      "guaranteed_rate": 0.575
+    },
+    {
+      "card_id": "391",
+      "normal_rate": 0.017,
+      "guaranteed_rate": 0.575
+    },
+    {
+      "card_id": "463",
+      "normal_rate": 0.017,
+      "guaranteed_rate": 0.575
+    },
+    {
+      "card_id": "270",
+      "normal_rate": 0.017,
+      "guaranteed_rate": 0.575
+    },
+    {
+      "card_id": "255",
+      "normal_rate": 0.017,
+      "guaranteed_rate": 0.575
+    }
+  ]
+}

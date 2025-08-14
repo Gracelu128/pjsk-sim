@@ -1,0 +1,29 @@
+{
+  "id": 127,
+  "title (japanese)": "[Leo/need]プレミアムプレゼントガチャ",
+  "release_date": "10/1/2021, 11:00:00 PM",
+  "type": "normal",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "197",
+      "normal_rate": 0.214,
+      "guaranteed_rate": 0.214
+    },
+    {
+      "card_id": "244",
+      "normal_rate": 0.214,
+      "guaranteed_rate": 0.214
+    },
+    {
+      "card_id": "155",
+      "normal_rate": 0.214,
+      "guaranteed_rate": 0.214
+    },
+    {
+      "card_id": "207",
+      "normal_rate": 0.214,
+      "guaranteed_rate": 0.214
+    }
+  ]
+}

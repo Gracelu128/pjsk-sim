@@ -1,0 +1,39 @@
+{
+  "id": 124,
+  "title (japanese)": "[1周年記念]メモリアルセレクトガチャ",
+  "release_date": "9/29/2021, 8:00:00 AM",
+  "type": "normal",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "4",
+      "normal_rate": 0.032,
+      "guaranteed_rate": 0.032
+    },
+    {
+      "card_id": "224",
+      "normal_rate": 0.032,
+      "guaranteed_rate": 0.032
+    },
+    {
+      "card_id": "135",
+      "normal_rate": 0.032,
+      "guaranteed_rate": 0.032
+    },
+    {
+      "card_id": "120",
+      "normal_rate": 0.032,
+      "guaranteed_rate": 0.032
+    },
+    {
+      "card_id": "177",
+      "normal_rate": 0.032,
+      "guaranteed_rate": 0.032
+    },
+    {
+      "card_id": "116",
+      "normal_rate": 0.032,
+      "guaranteed_rate": 0.032
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": 377,
+  "title (japanese)": "[3周年記念]セレクトリストガチャ LIMITED EDITION",
+  "release_date": "9/29/2023, 8:00:00 AM",
+  "type": "normal",
+  "gacha_rate_index": 2,
+  "featured_cards": [
+    {
+      "card_id": "180",
+      "normal_rate": 0.083,
+      "guaranteed_rate": 2.778
+    },
+    {
+      "card_id": "228",
+      "normal_rate": 0.083,
+      "guaranteed_rate": 2.778
+    },
+    {
+      "card_id": "259",
+      "normal_rate": 0.083,
+      "guaranteed_rate": 2.778
+    },
+    {
+      "card_id": "307",
+      "normal_rate": 0.083,
+      "guaranteed_rate": 2.778
+    },
+    {
+      "card_id": "369",
+      "normal_rate": 0.083,
+      "guaranteed_rate": 2.778
+    },
+    {
+      "card_id": "368",
+      "normal_rate": 0.083,
+      "guaranteed_rate": 2.778
+    },
+    {
+      "card_id": "386",
+      "normal_rate": 0.083,
+      "guaranteed_rate": 2.778
+    },
+    {
+      "card_id": "404",
+      "normal_rate": 0.083,
+      "guaranteed_rate": 2.778
+    },
+    {
+      "card_id": "422",
+      "normal_rate": 0.083,
+      "guaranteed_rate": 2.778
+    },
+    {
+      "card_id": "440",
+      "normal_rate": 0.083,
+      "guaranteed_rate": 2.778
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": 194,
+  "title (japanese)": "[桃井愛莉]HAPPY BIRTHDAYガチャ",
+  "release_date": "3/18/2022, 8:00:00 AM",
+  "type": "birthday",
+  "gacha_rate_index": 4,
+  "featured_cards": [
+    {
+      "card_id": "396",
+      "normal_rate": 3.0,
+      "guaranteed_rate": null
+    }
+  ]
+}

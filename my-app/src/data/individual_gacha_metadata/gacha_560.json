@@ -1,0 +1,14 @@
+{
+  "id": 560,
+  "title (japanese)": "[暁山瑞希]HAPPY BIRTHDAY2024ガチャ",
+  "release_date": "8/26/2024, 8:00:00 AM",
+  "type": "birthday",
+  "gacha_rate_index": 4,
+  "featured_cards": [
+    {
+      "card_id": "985",
+      "normal_rate": 3.0,
+      "guaranteed_rate": null
+    }
+  ]
+}

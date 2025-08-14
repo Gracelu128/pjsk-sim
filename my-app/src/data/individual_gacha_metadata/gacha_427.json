@@ -1,0 +1,14 @@
+{
+  "id": 427,
+  "title (japanese)": "[鏡音リン]HAPPY ANNIVERSARY2023ガチャ",
+  "release_date": "12/26/2023, 7:00:00 AM",
+  "type": "birthday",
+  "gacha_rate_index": 4,
+  "featured_cards": [
+    {
+      "card_id": "838",
+      "normal_rate": 3.0,
+      "guaranteed_rate": null
+    }
+  ]
+}

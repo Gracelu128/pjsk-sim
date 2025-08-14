@@ -1,0 +1,39 @@
+{
+  "id": 759,
+  "title (japanese)": "ワールドコスチュームガチャ vol.1",
+  "release_date": "6/29/2025, 8:00:00 PM",
+  "type": "normal",
+  "gacha_rate_index": 2,
+  "featured_cards": [
+    {
+      "card_id": "685",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.298
+    },
+    {
+      "card_id": "1122",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.298
+    },
+    {
+      "card_id": "1045",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.298
+    },
+    {
+      "card_id": "1018",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.298
+    },
+    {
+      "card_id": "1133",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.298
+    },
+    {
+      "card_id": "943",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.298
+    }
+  ]
+}

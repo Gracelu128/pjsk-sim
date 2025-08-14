@@ -1,0 +1,14 @@
+{
+  "id": 553,
+  "title (japanese)": "[星乃一歌]HAPPY BIRTHDAY2024ガチャ",
+  "release_date": "8/10/2024, 8:00:00 AM",
+  "type": "birthday",
+  "gacha_rate_index": 4,
+  "featured_cards": [
+    {
+      "card_id": "978",
+      "normal_rate": 3.0,
+      "guaranteed_rate": null
+    }
+  ]
+}

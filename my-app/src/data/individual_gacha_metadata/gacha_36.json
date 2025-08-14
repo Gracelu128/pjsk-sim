@@ -1,0 +1,39 @@
+{
+  "id": 36,
+  "title (japanese)": "新春1日1回限定！10連無料ガチャ",
+  "release_date": "1/6/2021, 7:00:00 AM",
+  "type": "normal",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "88",
+      "normal_rate": 0.136,
+      "guaranteed_rate": 0.136
+    },
+    {
+      "card_id": "4",
+      "normal_rate": 0.136,
+      "guaranteed_rate": 0.136
+    },
+    {
+      "card_id": "130",
+      "normal_rate": 0.136,
+      "guaranteed_rate": 0.136
+    },
+    {
+      "card_id": "135",
+      "normal_rate": 0.136,
+      "guaranteed_rate": 0.136
+    },
+    {
+      "card_id": "120",
+      "normal_rate": 0.136,
+      "guaranteed_rate": 0.136
+    },
+    {
+      "card_id": "115",
+      "normal_rate": 0.136,
+      "guaranteed_rate": 0.136
+    }
+  ]
+}

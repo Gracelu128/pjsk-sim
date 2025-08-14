@@ -1,0 +1,34 @@
+{
+  "id": 695,
+  "title (japanese)": "[ミクの日記念]プレミアムプレゼントガチャ",
+  "release_date": "3/8/2025, 7:00:00 AM",
+  "type": "normal",
+  "gacha_rate_index": 2,
+  "featured_cards": [
+    {
+      "card_id": "537",
+      "normal_rate": 0.01,
+      "guaranteed_rate": 0.321
+    },
+    {
+      "card_id": "644",
+      "normal_rate": 0.01,
+      "guaranteed_rate": 0.321
+    },
+    {
+      "card_id": "149",
+      "normal_rate": 0.01,
+      "guaranteed_rate": 0.321
+    },
+    {
+      "card_id": "145",
+      "normal_rate": 0.01,
+      "guaranteed_rate": 0.321
+    },
+    {
+      "card_id": "326",
+      "normal_rate": 0.01,
+      "guaranteed_rate": 0.321
+    }
+  ]
+}

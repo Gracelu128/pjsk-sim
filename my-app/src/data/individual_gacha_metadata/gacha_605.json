@@ -1,0 +1,14 @@
+{
+  "id": 605,
+  "title (japanese)": "[復刻][望月穂波]HAPPY BIRTHDAY2023ガチャ",
+  "release_date": "10/26/2024, 8:00:00 AM",
+  "type": "birthday",
+  "gacha_rate_index": 4,
+  "featured_cards": [
+    {
+      "card_id": "778",
+      "normal_rate": 3.0,
+      "guaranteed_rate": null
+    }
+  ]
+}

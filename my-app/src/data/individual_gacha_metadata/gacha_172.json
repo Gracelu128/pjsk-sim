@@ -1,0 +1,34 @@
+{
+  "id": 172,
+  "title (japanese)": "イベントメンバーガチャ",
+  "release_date": "1/14/2022, 10:00:00 PM",
+  "type": "normal",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "356",
+      "normal_rate": 0.061,
+      "guaranteed_rate": 0.061
+    },
+    {
+      "card_id": "357",
+      "normal_rate": 0.061,
+      "guaranteed_rate": 0.061
+    },
+    {
+      "card_id": "358",
+      "normal_rate": 0.061,
+      "guaranteed_rate": 0.061
+    },
+    {
+      "card_id": "59",
+      "normal_rate": 0.405,
+      "guaranteed_rate": 4.619
+    },
+    {
+      "card_id": "63",
+      "normal_rate": 0.405,
+      "guaranteed_rate": 4.619
+    }
+  ]
+}

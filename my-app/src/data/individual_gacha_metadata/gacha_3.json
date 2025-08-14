@@ -1,0 +1,39 @@
+{
+  "id": 3,
+  "title (japanese)": "バーチャル・シンガー限定ガチャ",
+  "release_date": "4/30/2019, 8:00:00 PM",
+  "type": "normal",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "88",
+      "normal_rate": 1.0,
+      "guaranteed_rate": 1.0
+    },
+    {
+      "card_id": "92",
+      "normal_rate": 1.0,
+      "guaranteed_rate": 1.0
+    },
+    {
+      "card_id": "96",
+      "normal_rate": 1.0,
+      "guaranteed_rate": 1.0
+    },
+    {
+      "card_id": "99",
+      "normal_rate": 1.417,
+      "guaranteed_rate": 16.167
+    },
+    {
+      "card_id": "103",
+      "normal_rate": 1.417,
+      "guaranteed_rate": 16.167
+    },
+    {
+      "card_id": "107",
+      "normal_rate": 1.417,
+      "guaranteed_rate": 16.167
+    }
+  ]
+}

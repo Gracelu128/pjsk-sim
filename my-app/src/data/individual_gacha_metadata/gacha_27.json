@@ -1,0 +1,29 @@
+{
+  "id": 27,
+  "title (japanese)": "[行く年2020]カラフルフェスティバルガチャ",
+  "release_date": "12/30/2020, 10:00:00 PM",
+  "type": "normal",
+  "gacha_rate_index": 3,
+  "featured_cards": [
+    {
+      "card_id": "109",
+      "normal_rate": 0.214,
+      "guaranteed_rate": 0.214
+    },
+    {
+      "card_id": "119",
+      "normal_rate": 0.214,
+      "guaranteed_rate": 0.214
+    },
+    {
+      "card_id": "134",
+      "normal_rate": 0.214,
+      "guaranteed_rate": 0.214
+    },
+    {
+      "card_id": "139",
+      "normal_rate": 0.214,
+      "guaranteed_rate": 0.214
+    }
+  ]
+}

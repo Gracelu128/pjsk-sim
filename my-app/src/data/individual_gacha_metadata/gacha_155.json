@@ -1,0 +1,14 @@
+{
+  "id": 155,
+  "title (japanese)": "[日野森雫]HAPPY BIRTHDAYガチャ",
+  "release_date": "12/5/2021, 7:00:00 AM",
+  "type": "birthday",
+  "gacha_rate_index": 4,
+  "featured_cards": [
+    {
+      "card_id": "329",
+      "normal_rate": 3.0,
+      "guaranteed_rate": null
+    }
+  ]
+}

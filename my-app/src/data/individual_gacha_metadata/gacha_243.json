@@ -1,0 +1,29 @@
+{
+  "id": 243,
+  "title (japanese)": "[2周年記念][Vivid BAD SQUAD]プレミアムプレゼントガチャ",
+  "release_date": "9/29/2022, 8:00:00 AM",
+  "type": "normal",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "373",
+      "normal_rate": 0.143,
+      "guaranteed_rate": 0.143
+    },
+    {
+      "card_id": "343",
+      "normal_rate": 0.143,
+      "guaranteed_rate": 0.143
+    },
+    {
+      "card_id": "434",
+      "normal_rate": 0.143,
+      "guaranteed_rate": 0.143
+    },
+    {
+      "card_id": "341",
+      "normal_rate": 0.143,
+      "guaranteed_rate": 0.143
+    }
+  ]
+}

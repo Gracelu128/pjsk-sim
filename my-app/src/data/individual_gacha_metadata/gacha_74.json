@@ -1,0 +1,34 @@
+{
+  "id": 74,
+  "title (japanese)": "イベントメンバー出現率UPガチャ",
+  "release_date": "4/13/2021, 11:00:00 PM",
+  "type": "normal",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "202",
+      "normal_rate": 0.074,
+      "guaranteed_rate": 0.074
+    },
+    {
+      "card_id": "203",
+      "normal_rate": 0.074,
+      "guaranteed_rate": 0.074
+    },
+    {
+      "card_id": "204",
+      "normal_rate": 0.074,
+      "guaranteed_rate": 0.074
+    },
+    {
+      "card_id": "67",
+      "normal_rate": 1.063,
+      "guaranteed_rate": 12.125
+    },
+    {
+      "card_id": "71",
+      "normal_rate": 1.063,
+      "guaranteed_rate": 12.125
+    }
+  ]
+}

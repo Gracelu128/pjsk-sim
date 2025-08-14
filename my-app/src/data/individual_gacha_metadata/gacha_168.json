@@ -1,0 +1,39 @@
+{
+  "id": 168,
+  "title (japanese)": "[2022新春]10連無料ガチャ",
+  "release_date": "12/31/2021, 11:00:00 AM",
+  "type": "normal",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "149",
+      "normal_rate": 0.03,
+      "guaranteed_rate": 0.03
+    },
+    {
+      "card_id": "279",
+      "normal_rate": 0.03,
+      "guaranteed_rate": 0.03
+    },
+    {
+      "card_id": "224",
+      "normal_rate": 0.03,
+      "guaranteed_rate": 0.03
+    },
+    {
+      "card_id": "250",
+      "normal_rate": 0.03,
+      "guaranteed_rate": 0.03
+    },
+    {
+      "card_id": "270",
+      "normal_rate": 0.03,
+      "guaranteed_rate": 0.03
+    },
+    {
+      "card_id": "202",
+      "normal_rate": 0.03,
+      "guaranteed_rate": 0.03
+    }
+  ]
+}

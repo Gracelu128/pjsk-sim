@@ -1,0 +1,14 @@
+{
+  "id": 450,
+  "title (japanese)": "[復刻][朝比奈まふゆ]HAPPY BIRTHDAYガチャ",
+  "release_date": "1/26/2024, 7:00:00 AM",
+  "type": "birthday",
+  "gacha_rate_index": 4,
+  "featured_cards": [
+    {
+      "card_id": "366",
+      "normal_rate": 3.0,
+      "guaranteed_rate": null
+    }
+  ]
+}

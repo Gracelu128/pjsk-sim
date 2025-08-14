@@ -1,0 +1,29 @@
+{
+  "id": 148,
+  "title (japanese)": "イベントメンバーガチャ",
+  "release_date": "11/12/2021, 10:00:00 PM",
+  "type": "normal",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "313",
+      "normal_rate": 0.068,
+      "guaranteed_rate": 0.068
+    },
+    {
+      "card_id": "314",
+      "normal_rate": 0.068,
+      "guaranteed_rate": 0.068
+    },
+    {
+      "card_id": "315",
+      "normal_rate": 0.068,
+      "guaranteed_rate": 0.068
+    },
+    {
+      "card_id": "3",
+      "normal_rate": 0.531,
+      "guaranteed_rate": 6.063
+    }
+  ]
+}

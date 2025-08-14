@@ -1,0 +1,29 @@
+{
+  "id": 587,
+  "title (japanese)": "[4周年記念][25時、ナイトコードで。]プレミアムプレゼントガチャ",
+  "release_date": "9/29/2024, 8:00:00 AM",
+  "type": "normal",
+  "gacha_rate_index": 2,
+  "featured_cards": [
+    {
+      "card_id": "833",
+      "normal_rate": 0.065,
+      "guaranteed_rate": 2.174
+    },
+    {
+      "card_id": "943",
+      "normal_rate": 0.065,
+      "guaranteed_rate": 2.174
+    },
+    {
+      "card_id": "903",
+      "normal_rate": 0.065,
+      "guaranteed_rate": 2.174
+    },
+    {
+      "card_id": "944",
+      "normal_rate": 0.065,
+      "guaranteed_rate": 2.174
+    }
+  ]
+}

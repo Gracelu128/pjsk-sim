@@ -1,0 +1,14 @@
+{
+  "id": 565,
+  "title (japanese)": "[初音ミク]HAPPY ANNIVERSARY2024ガチャ",
+  "release_date": "8/30/2024, 8:00:00 AM",
+  "type": "birthday",
+  "gacha_rate_index": 4,
+  "featured_cards": [
+    {
+      "card_id": "986",
+      "normal_rate": 3.0,
+      "guaranteed_rate": null
+    }
+  ]
+}

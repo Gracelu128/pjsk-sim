@@ -1,0 +1,14 @@
+{
+  "id": 690,
+  "title (japanese)": "[小豆沢こはね]HAPPY BIRTHDAY2025ガチャ",
+  "release_date": "3/1/2025, 7:00:00 AM",
+  "type": "birthday",
+  "gacha_rate_index": 4,
+  "featured_cards": [
+    {
+      "card_id": "1132",
+      "normal_rate": 3.0,
+      "guaranteed_rate": null
+    }
+  ]
+}

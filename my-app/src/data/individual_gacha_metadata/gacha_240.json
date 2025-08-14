@@ -1,0 +1,39 @@
+{
+  "id": 240,
+  "title (japanese)": "[2周年記念][バーチャル・シンガー]プレミアムプレゼントガチャ",
+  "release_date": "9/29/2022, 8:00:00 AM",
+  "type": "normal",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "393",
+      "normal_rate": 0.073,
+      "guaranteed_rate": 0.073
+    },
+    {
+      "card_id": "399",
+      "normal_rate": 0.073,
+      "guaranteed_rate": 0.073
+    },
+    {
+      "card_id": "447",
+      "normal_rate": 0.073,
+      "guaranteed_rate": 0.073
+    },
+    {
+      "card_id": "430",
+      "normal_rate": 0.073,
+      "guaranteed_rate": 0.073
+    },
+    {
+      "card_id": "358",
+      "normal_rate": 0.073,
+      "guaranteed_rate": 0.073
+    },
+    {
+      "card_id": "436",
+      "normal_rate": 0.073,
+      "guaranteed_rate": 0.073
+    }
+  ]
+}

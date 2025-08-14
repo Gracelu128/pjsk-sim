@@ -1,0 +1,14 @@
+{
+  "id": 513,
+  "title (japanese)": "[天馬司]HAPPY BIRTHDAY2024ガチャ",
+  "release_date": "5/16/2024, 8:00:00 AM",
+  "type": "birthday",
+  "gacha_rate_index": 4,
+  "featured_cards": [
+    {
+      "card_id": "926",
+      "normal_rate": 3.0,
+      "guaranteed_rate": null
+    }
+  ]
+}

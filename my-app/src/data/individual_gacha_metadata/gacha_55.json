@@ -1,0 +1,39 @@
+{
+  "id": 55,
+  "title (japanese)": "セレクトリストガチャ",
+  "release_date": "2/24/2021, 10:00:00 PM",
+  "type": "normal",
+  "gacha_rate_index": 2,
+  "featured_cards": [
+    {
+      "card_id": "149",
+      "normal_rate": 0.073,
+      "guaranteed_rate": 2.439
+    },
+    {
+      "card_id": "155",
+      "normal_rate": 0.073,
+      "guaranteed_rate": 2.439
+    },
+    {
+      "card_id": "160",
+      "normal_rate": 0.073,
+      "guaranteed_rate": 2.439
+    },
+    {
+      "card_id": "165",
+      "normal_rate": 0.073,
+      "guaranteed_rate": 2.439
+    },
+    {
+      "card_id": "141",
+      "normal_rate": 0.073,
+      "guaranteed_rate": 2.439
+    },
+    {
+      "card_id": "139",
+      "normal_rate": 0.073,
+      "guaranteed_rate": 2.439
+    }
+  ]
+}

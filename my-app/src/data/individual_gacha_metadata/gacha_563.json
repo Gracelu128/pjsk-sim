@@ -1,0 +1,24 @@
+{
+  "id": 563,
+  "title (japanese)": "リコレクションフェスティバルガチャ",
+  "release_date": "8/27/2024, 8:00:00 PM",
+  "type": "limited",
+  "gacha_rate_index": 3,
+  "featured_cards": [
+    {
+      "card_id": "289",
+      "normal_rate": 0.021,
+      "guaranteed_rate": 0.021
+    },
+    {
+      "card_id": "385",
+      "normal_rate": 0.021,
+      "guaranteed_rate": 0.021
+    },
+    {
+      "card_id": "330",
+      "normal_rate": 0.021,
+      "guaranteed_rate": 0.021
+    }
+  ]
+}

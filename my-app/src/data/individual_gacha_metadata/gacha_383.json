@@ -1,0 +1,29 @@
+{
+  "id": 383,
+  "title (japanese)": "[3周年記念][ワンダーランズ×ショウタイム]プレミアムプレゼントガチャ",
+  "release_date": "9/29/2023, 8:00:00 AM",
+  "type": "normal",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "523",
+      "normal_rate": 0.083,
+      "guaranteed_rate": 0.083
+    },
+    {
+      "card_id": "607",
+      "normal_rate": 0.083,
+      "guaranteed_rate": 0.083
+    },
+    {
+      "card_id": "648",
+      "normal_rate": 0.083,
+      "guaranteed_rate": 0.083
+    },
+    {
+      "card_id": "572",
+      "normal_rate": 0.083,
+      "guaranteed_rate": 0.083
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": 732,
+  "title (japanese)": "[東方Projectコラボ記念] コラボ限定★4メンバー確定 幻想郷コレクションガチャ",
+  "release_date": "5/2/2025, 8:00:00 PM",
+  "type": "normal",
+  "gacha_rate_index": 2,
+  "featured_cards": [
+    {
+      "card_id": "1167",
+      "normal_rate": 3.0,
+      "guaranteed_rate": 100.0
+    }
+  ]
+}

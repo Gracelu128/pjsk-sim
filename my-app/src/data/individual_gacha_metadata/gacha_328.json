@@ -1,0 +1,14 @@
+{
+  "id": 328,
+  "title (japanese)": "[天馬咲希]HAPPY BIRTHDAY2023ガチャ",
+  "release_date": "5/8/2023, 8:00:00 AM",
+  "type": "birthday",
+  "gacha_rate_index": 4,
+  "featured_cards": [
+    {
+      "card_id": "641",
+      "normal_rate": 3.0,
+      "guaranteed_rate": null
+    }
+  ]
+}

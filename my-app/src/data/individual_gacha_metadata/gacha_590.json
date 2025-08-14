@@ -1,0 +1,39 @@
+{
+  "id": 590,
+  "title (japanese)": "[4周年記念]10連無料ガチャ",
+  "release_date": "9/29/2024, 8:00:00 PM",
+  "type": "normal",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "830",
+      "normal_rate": 0.01,
+      "guaranteed_rate": 0.01
+    },
+    {
+      "card_id": "577",
+      "normal_rate": 0.01,
+      "guaranteed_rate": 0.01
+    },
+    {
+      "card_id": "632",
+      "normal_rate": 0.01,
+      "guaranteed_rate": 0.01
+    },
+    {
+      "card_id": "659",
+      "normal_rate": 0.01,
+      "guaranteed_rate": 0.01
+    },
+    {
+      "card_id": "606",
+      "normal_rate": 0.01,
+      "guaranteed_rate": 0.01
+    },
+    {
+      "card_id": "614",
+      "normal_rate": 0.01,
+      "guaranteed_rate": 0.01
+    }
+  ]
+}

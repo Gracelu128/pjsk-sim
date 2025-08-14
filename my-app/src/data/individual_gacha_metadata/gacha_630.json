@@ -1,0 +1,39 @@
+{
+  "id": 630,
+  "title (japanese)": "[CS 2024 Autumn 開催記念]プレミアムプレゼントガチャ",
+  "release_date": "12/7/2024, 7:00:00 PM",
+  "type": "normal",
+  "gacha_rate_index": 2,
+  "featured_cards": [
+    {
+      "card_id": "875",
+      "normal_rate": 0.01,
+      "guaranteed_rate": 0.34
+    },
+    {
+      "card_id": "945",
+      "normal_rate": 0.01,
+      "guaranteed_rate": 0.34
+    },
+    {
+      "card_id": "929",
+      "normal_rate": 0.01,
+      "guaranteed_rate": 0.34
+    },
+    {
+      "card_id": "958",
+      "normal_rate": 0.01,
+      "guaranteed_rate": 0.34
+    },
+    {
+      "card_id": "892",
+      "normal_rate": 0.01,
+      "guaranteed_rate": 0.34
+    },
+    {
+      "card_id": "869",
+      "normal_rate": 0.01,
+      "guaranteed_rate": 0.34
+    }
+  ]
+}

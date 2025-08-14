@@ -1,0 +1,14 @@
+{
+  "id": 461,
+  "title (japanese)": "[KAITO]HAPPY ANNIVERSARY2024ガチャ",
+  "release_date": "2/16/2024, 7:00:00 AM",
+  "type": "birthday",
+  "gacha_rate_index": 4,
+  "featured_cards": [
+    {
+      "card_id": "872",
+      "normal_rate": 3.0,
+      "guaranteed_rate": null
+    }
+  ]
+}

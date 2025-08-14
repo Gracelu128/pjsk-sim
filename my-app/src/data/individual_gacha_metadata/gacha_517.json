@@ -1,0 +1,14 @@
+{
+  "id": 517,
+  "title (japanese)": "[青柳冬弥]HAPPY BIRTHDAY2024ガチャ",
+  "release_date": "5/24/2024, 8:00:00 AM",
+  "type": "birthday",
+  "gacha_rate_index": 4,
+  "featured_cards": [
+    {
+      "card_id": "932",
+      "normal_rate": 3.0,
+      "guaranteed_rate": null
+    }
+  ]
+}

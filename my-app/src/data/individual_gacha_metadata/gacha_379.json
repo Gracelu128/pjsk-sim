@@ -1,0 +1,39 @@
+{
+  "id": 379,
+  "title (japanese)": "[3周年記念][バーチャル・シンガー]プレミアムプレゼントガチャ",
+  "release_date": "9/29/2023, 8:00:00 AM",
+  "type": "normal",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "644",
+      "normal_rate": 0.056,
+      "guaranteed_rate": 0.056
+    },
+    {
+      "card_id": "661",
+      "normal_rate": 0.056,
+      "guaranteed_rate": 0.056
+    },
+    {
+      "card_id": "573",
+      "normal_rate": 0.056,
+      "guaranteed_rate": 0.056
+    },
+    {
+      "card_id": "553",
+      "normal_rate": 0.056,
+      "guaranteed_rate": 0.056
+    },
+    {
+      "card_id": "483",
+      "normal_rate": 0.056,
+      "guaranteed_rate": 0.056
+    },
+    {
+      "card_id": "506",
+      "normal_rate": 0.056,
+      "guaranteed_rate": 0.056
+    }
+  ]
+}

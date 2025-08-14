@@ -1,0 +1,29 @@
+{
+  "id": 245,
+  "title (japanese)": "[2周年記念][25時、ナイトコードで。]プレミアムプレゼントガチャ",
+  "release_date": "9/29/2022, 8:00:00 AM",
+  "type": "normal",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "361",
+      "normal_rate": 0.12,
+      "guaranteed_rate": 0.12
+    },
+    {
+      "card_id": "445",
+      "normal_rate": 0.12,
+      "guaranteed_rate": 0.12
+    },
+    {
+      "card_id": "255",
+      "normal_rate": 0.12,
+      "guaranteed_rate": 0.12
+    },
+    {
+      "card_id": "429",
+      "normal_rate": 0.12,
+      "guaranteed_rate": 0.12
+    }
+  ]
+}

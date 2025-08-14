@@ -1,0 +1,39 @@
+{
+  "id": 435,
+  "title (japanese)": "[2024新春]10連無料ガチャ",
+  "release_date": "12/30/2023, 7:00:00 PM",
+  "type": "normal",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "149",
+      "normal_rate": 0.012,
+      "guaranteed_rate": 0.012
+    },
+    {
+      "card_id": "683",
+      "normal_rate": 0.012,
+      "guaranteed_rate": 0.012
+    },
+    {
+      "card_id": "664",
+      "normal_rate": 0.012,
+      "guaranteed_rate": 0.012
+    },
+    {
+      "card_id": "319",
+      "normal_rate": 0.012,
+      "guaranteed_rate": 0.012
+    },
+    {
+      "card_id": "523",
+      "normal_rate": 0.012,
+      "guaranteed_rate": 0.012
+    },
+    {
+      "card_id": "309",
+      "normal_rate": 0.012,
+      "guaranteed_rate": 0.012
+    }
+  ]
+}

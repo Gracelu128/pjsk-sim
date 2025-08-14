@@ -1,0 +1,29 @@
+{
+  "id": 384,
+  "title (japanese)": "[3周年記念][25時、ナイトコードで。]プレミアムプレゼントガチャ",
+  "release_date": "9/29/2023, 8:00:00 AM",
+  "type": "normal",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "612",
+      "normal_rate": 0.083,
+      "guaranteed_rate": 0.083
+    },
+    {
+      "card_id": "557",
+      "normal_rate": 0.083,
+      "guaranteed_rate": 0.083
+    },
+    {
+      "card_id": "540",
+      "normal_rate": 0.083,
+      "guaranteed_rate": 0.083
+    },
+    {
+      "card_id": "486",
+      "normal_rate": 0.083,
+      "guaranteed_rate": 0.083
+    }
+  ]
+}

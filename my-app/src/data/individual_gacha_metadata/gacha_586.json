@@ -1,0 +1,29 @@
+{
+  "id": 586,
+  "title (japanese)": "[4周年記念][ワンダーランズ×ショウタイム]プレミアムプレゼントガチャ",
+  "release_date": "9/29/2024, 8:00:00 AM",
+  "type": "normal",
+  "gacha_rate_index": 2,
+  "featured_cards": [
+    {
+      "card_id": "928",
+      "normal_rate": 0.067,
+      "guaranteed_rate": 2.222
+    },
+    {
+      "card_id": "927",
+      "normal_rate": 0.067,
+      "guaranteed_rate": 2.222
+    },
+    {
+      "card_id": "855",
+      "normal_rate": 0.067,
+      "guaranteed_rate": 2.222
+    },
+    {
+      "card_id": "854",
+      "normal_rate": 0.067,
+      "guaranteed_rate": 2.222
+    }
+  ]
+}
