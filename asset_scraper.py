@@ -359,7 +359,134 @@ def sekaipedia_scrape_card_info(start_num=start_id, end_num=end_id):
         json.dump(data, f, indent=2)
 
 def sekaibest_scrape_gacha_info(start_gacha=start_gacha, end_gacha=end_gacha):
-    pass
+    # Configuration
+    json_path = "/Users/gracelu/Desktop/pjsk sim/my-app/src/data/gacha_metadata.json"
+
+    data = None
+    if os.path.exists(json_path):
+        with open(json_path, 'r') as f:
+            data = json.load(f)
+    else:
+        data = {}
+
+    # Set up Chrome options
+    chrome_options = Options()
+    chrome_options.add_argument("--headless")  # Run in background
+    chrome_options.add_argument("--disable-gpu")
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument("--disable-dev-shm-usage")
+    chrome_options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36")
+    
+    # Set up Chrome driver with WebDriver Manager
+    service = Service(ChromeDriverManager().install())
+    driver = webdriver.Chrome(service=service, options=chrome_options)
+
+    for gacha_id in range(start_gacha, end_gacha + 1):
+        url = f"https://sekai.best/gacha/{gacha_id}"
+        print(f"Processing gacha #{gacha_id}...")
+        
+        try:
+            # Load url
+            driver.get(url)
+            WebDriverWait(driver, 15).until(
+                EC.presence_of_element_located((By.XPATH, '//h6[contains(., "ID")]'))
+            )
+            
+            # Get ID
+            id_element = driver.find_element(By.XPATH, '//h6[contains(., "ID")]/following-sibling::p')
+            id = id_element.text.strip()
+            
+            if id not in data:
+                data[id] = {}
+            data[id]['id'] = gacha_id
+
+            # Get jp and en title
+            combined_title = driver.find_element(
+                By.XPATH,
+                '//h6[@class="MuiTypography-root MuiTypography-h6 css-1u18iur"]'
+            ).text
+            jp_title, en_title = [t.strip() for t in combined_title.split('|', 1)]
+            data[id]['title (japanese)'] = jp_title
+            
+            # Get Release Date
+            release_date = driver.find_element(
+                By.XPATH, 
+                '//h6[contains(., "Available From")]/following-sibling::p'
+            ).text
+            data[id]['release_date'] = release_date
+
+            # Determine gacha type
+            gacha_type = "unknown"  # Default value
+            
+            # First try: Check for Exchange Item image
+            try:
+                exchange_img = driver.find_element(
+                    By.XPATH, 
+                    '//h6[contains(., "Exchange Item")]/following-sibling::img'
+                )
+                img_src = exchange_img.get_attribute('src')
+                
+                if 'ceil_item.webp' in img_src:
+                    gacha_type = 'normal'
+                elif 'ceil_item_limited.webp' in img_src:
+                    gacha_type = 'limited'
+                elif 'ceil_item_birthday.webp' in img_src:
+                    gacha_type = 'birthday'
+                else:
+                    # Handle unexpected image names
+                    if 'limited' in img_src.lower():
+                        gacha_type = 'limited'
+                    elif 'birthday' in img_src.lower():
+                        gacha_type = 'birthday'
+                    else:
+                        gacha_type = 'normal'
+            
+            except:
+                # Fallback: Check for explicit Type text
+                try:
+                    type_text = driver.find_element(
+                        By.XPATH, 
+                        '//h6[contains(., "Type")]/following-sibling::p'
+                    ).text.lower()
+                    
+                    if 'normal' in type_text:
+                        gacha_type = 'normal'
+                    elif 'limited' in type_text:
+                        gacha_type = 'limited'
+                    elif 'birthday' in type_text:
+                        gacha_type = 'birthday'
+                    else:
+                        # Handle other type texts
+                        if '限定' in type_text:  # Japanese for "limited"
+                            gacha_type = 'limited'
+                        elif 'バースデー' in type_text:  # Japanese for "birthday"
+                            gacha_type = 'birthday'
+                        elif 'beginner' in type_text:
+                            gacha_type = 'beginner'
+                        elif 'gift' in type_text:
+                            gacha_type = 'gift'
+                        else:
+                            gacha_type = type_text
+                except:
+                    print("Did not found gacha type")
+
+            data[id]['type'] = gacha_type
+            
+            # Periodically save progress
+            if gacha_id % 10 == 0:
+                with open(json_path, 'w') as f:
+                    json.dump(data, f, indent=2)
+
+        except Exception as e:
+            print(f"Issue processing gacha {gacha_id}")
+
+    driver.quit()
+    print("Scraping completed!")
+
+    # Write back to json
+    with open(json_path, 'w') as f:
+        json.dump(data, f, indent=2)
+
 
 def sekaibest_scrape_card_info(start_num=start_id, end_num=end_id):
     """Scrape card images using Selenium with automatic driver management"""
@@ -610,32 +737,33 @@ def split_card_metadata(
     print(f"Done! Exported {count} cards to: {output_dir}")
 
 def main():
-    scrape_gacha_assets()
+    # scrape_gacha_assets()
     """Main function to execute scraping"""
-    print("Starting PJSK card image scraper with Selenium...")
-    scrape_card_images(start_num=1218 , end_num=1222)
-    sekaipedia_scrape_card_info(start_num=1218, end_num=1222)
-    sekaibest_scrape_card_info(start_num=1218, end_num=1222)
-    desired_card_metadata_order = [
-        "id",
-        "character",
-        "character (japanese)",
-        "english name",
-        "japanese name",
-        "skill name (japanese)",
-        "skill name (english)",
-        "skill effect (japanese)",
-        "skill effect (english)",
-        "talent (max)",
-        "gacha phrase",
-        "unit",
-        "support unit",
-        "attribute",
-        "rarity",
-        "status"
-    ]
-    json_reorder("/Users/gracelu/Desktop/pjsk sim/my-app/src/data/card_metadata.json", desired_card_metadata_order)
-    split_card_metadata()
+    # print("Starting PJSK card image scraper with Selenium...")
+    # scrape_card_images(start_num=1218 , end_num=1222)
+    # sekaipedia_scrape_card_info(start_num=1218, end_num=1222)
+    # sekaibest_scrape_card_info(start_num=1218, end_num=1222)
+    # desired_card_metadata_order = [
+    #     "id",
+    #     "character",
+    #     "character (japanese)",
+    #     "english name",
+    #     "japanese name",
+    #     "skill name (japanese)",
+    #     "skill name (english)",
+    #     "skill effect (japanese)",
+    #     "skill effect (english)",
+    #     "talent (max)",
+    #     "gacha phrase",
+    #     "unit",
+    #     "support unit",
+    #     "attribute",
+    #     "rarity",
+    #     "status"
+    # ]
+    # json_reorder("/Users/gracelu/Desktop/pjsk sim/my-app/src/data/card_metadata.json", desired_card_metadata_order)
+    # split_card_metadata()
+    sekaibest_scrape_gacha_info(start_gacha=225, end_gacha=225)
 
 BASE_URL = "https://sekai.best/asset_viewer/gacha"
 
