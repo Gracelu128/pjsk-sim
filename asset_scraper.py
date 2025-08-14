@@ -361,6 +361,7 @@ def sekaipedia_scrape_card_info(start_num=start_id, end_num=end_id):
 def sekaibest_scrape_gacha_info(start_gacha=start_gacha, end_gacha=end_gacha):
     # Configuration
     json_path = "/Users/gracelu/Desktop/pjsk sim/my-app/src/data/gacha_metadata.json"
+    rate_json_path = "/Users/gracelu/Desktop/pjsk sim/my-app/src/data/gacha_rates.json"
 
     data = None
     if os.path.exists(json_path):
@@ -368,6 +369,13 @@ def sekaibest_scrape_gacha_info(start_gacha=start_gacha, end_gacha=end_gacha):
             data = json.load(f)
     else:
         data = {}
+
+    rate_data = None
+    if os.path.exists(rate_json_path):
+        with open(rate_json_path, 'r') as f:
+            rate_data = json.load(f)
+    else:
+        rate_data = []
 
     # Set up Chrome options
     chrome_options = Options()
@@ -396,97 +404,178 @@ def sekaibest_scrape_gacha_info(start_gacha=start_gacha, end_gacha=end_gacha):
             id_element = driver.find_element(By.XPATH, '//h6[contains(., "ID")]/following-sibling::p')
             id = id_element.text.strip()
             
-            if id not in data:
-                data[id] = {}
-            data[id]['id'] = gacha_id
+            # if id not in data:
+            #     data[id] = {}
+            # data[id]['id'] = gacha_id
 
-            # Get jp and en title
-            combined_title = driver.find_element(
-                By.XPATH,
-                '//h6[@class="MuiTypography-root MuiTypography-h6 css-1u18iur"]'
-            ).text
-            jp_title, en_title = [t.strip() for t in combined_title.split('|', 1)]
-            data[id]['title (japanese)'] = jp_title
+            # # Get jp and en title
+            # combined_title = driver.find_element(
+            #     By.XPATH,
+            #     '//h6[@class="MuiTypography-root MuiTypography-h6 css-1u18iur"]'
+            # ).text
+            # jp_title, en_title = [t.strip() for t in combined_title.split('|', 1)]
+            # data[id]['title (japanese)'] = jp_title
             
-            # Get Release Date
-            release_date = driver.find_element(
-                By.XPATH, 
-                '//h6[contains(., "Available From")]/following-sibling::p'
-            ).text
-            data[id]['release_date'] = release_date
+            # # Get Release Date
+            # release_date = driver.find_element(
+            #     By.XPATH, 
+            #     '//h6[contains(., "Available From")]/following-sibling::p'
+            # ).text
+            # data[id]['release_date'] = release_date
 
-            # Determine gacha type
-            gacha_type = "unknown"  # Default value
+            # # Determine gacha type
+            # gacha_type = "unknown"  # Default value
             
-            # First try: Check for Exchange Item image
-            try:
-                exchange_img = driver.find_element(
-                    By.XPATH, 
-                    '//h6[contains(., "Exchange Item")]/following-sibling::img'
-                )
-                img_src = exchange_img.get_attribute('src')
+            # # First try: Check for Exchange Item image
+            # try:
+            #     exchange_img = driver.find_element(
+            #         By.XPATH, 
+            #         '//h6[contains(., "Exchange Item")]/following-sibling::img'
+            #     )
+            #     img_src = exchange_img.get_attribute('src')
                 
-                if 'ceil_item.webp' in img_src:
-                    gacha_type = 'normal'
-                elif 'ceil_item_limited.webp' in img_src:
-                    gacha_type = 'limited'
-                elif 'ceil_item_birthday.webp' in img_src:
-                    gacha_type = 'birthday'
-                else:
-                    # Handle unexpected image names
-                    if 'limited' in img_src.lower():
-                        gacha_type = 'limited'
-                    elif 'birthday' in img_src.lower():
-                        gacha_type = 'birthday'
-                    else:
-                        gacha_type = 'normal'
+            #     if 'ceil_item.webp' in img_src:
+            #         gacha_type = 'normal'
+            #     elif 'ceil_item_limited.webp' in img_src:
+            #         gacha_type = 'limited'
+            #     elif 'ceil_item_birthday.webp' in img_src:
+            #         gacha_type = 'birthday'
+            #     else:
+            #         # Handle unexpected image names
+            #         if 'limited' in img_src.lower():
+            #             gacha_type = 'limited'
+            #         elif 'birthday' in img_src.lower():
+            #             gacha_type = 'birthday'
+            #         else:
+            #             gacha_type = 'normal'
             
-            except:
-                # Fallback: Check for explicit Type text
-                try:
-                    type_text = driver.find_element(
-                        By.XPATH, 
-                        '//h6[contains(., "Type")]/following-sibling::p'
-                    ).text.lower()
+            # except:
+            #     # Fallback: Check for explicit Type text
+            #     try:
+            #         type_text = driver.find_element(
+            #             By.XPATH, 
+            #             '//h6[contains(., "Type")]/following-sibling::p'
+            #         ).text.lower()
                     
-                    if 'normal' in type_text:
-                        gacha_type = 'normal'
-                    elif 'limited' in type_text:
-                        gacha_type = 'limited'
-                    elif 'birthday' in type_text:
-                        gacha_type = 'birthday'
-                    else:
-                        # Handle other type texts
-                        if '限定' in type_text:  # Japanese for "limited"
-                            gacha_type = 'limited'
-                        elif 'バースデー' in type_text:  # Japanese for "birthday"
-                            gacha_type = 'birthday'
-                        elif 'beginner' in type_text:
-                            gacha_type = 'beginner'
-                        elif 'gift' in type_text:
-                            gacha_type = 'gift'
-                        else:
-                            gacha_type = type_text
-                except:
-                    print("Did not found gacha type")
+            #         if 'normal' in type_text:
+            #             gacha_type = 'normal'
+            #         elif 'limited' in type_text:
+            #             gacha_type = 'limited'
+            #         elif 'birthday' in type_text:
+            #             gacha_type = 'birthday'
+            #         else:
+            #             # Handle other type texts
+            #             if '限定' in type_text:  # Japanese for "limited"
+            #                 gacha_type = 'limited'
+            #             elif 'バースデー' in type_text:  # Japanese for "birthday"
+            #                 gacha_type = 'birthday'
+            #             elif 'beginner' in type_text:
+            #                 gacha_type = 'beginner'
+            #             elif 'gift' in type_text:
+            #                 gacha_type = 'gift'
+            #             else:
+            #                 gacha_type = type_text
+            #     except:
+            #         print("Did not found gacha type")
 
-            data[id]['type'] = gacha_type
+            # data[id]['type'] = gacha_type
+
+            # Scrape Gacha Rates
+            # Store unique normal and guaranteed gacha rate pairs to rate_data
+            rates = extract_rates(driver)
+            
+            # Create or find rate index
+            rate_index = None
+            for idx, rate_struct in enumerate(rate_data):
+                if rate_struct == rates:
+                    rate_index = idx
+                    break
+            
+            if rate_index is None:
+                rate_data.append(rates)
+                rate_index = len(rate_data) - 1
+            
+            data[id]['gacha_rate_index'] = rate_index
             
             # Periodically save progress
             if gacha_id % 10 == 0:
                 with open(json_path, 'w') as f:
                     json.dump(data, f, indent=2)
+                with open(rate_json_path, 'w') as f:
+                    json.dump(rate_data, f, indent=2)
 
         except Exception as e:
             print(f"Issue processing gacha {gacha_id}")
+            print(e)
 
     driver.quit()
-    print("Scraping completed!")
 
     # Write back to json
     with open(json_path, 'w') as f:
         json.dump(data, f, indent=2)
+    # Write gacha rate back to json
+    with open(rate_json_path, 'w') as f:
+        json.dump(rate_data, f, indent=2)
 
+    print("Scraping completed!")
+
+def extract_rates(driver):
+    """Extract gacha rates from the page"""
+    rates = {"normal": {}, "guaranteed": {}}
+    
+    try:
+        # Extract normal roll rates
+        normal_header = driver.find_element(By.XPATH, '//h6[contains(., "Normal Roll Rate")]')
+        normal_section = normal_header.find_element(By.XPATH, './ancestor::div[contains(@class, "MuiGrid-container")][1]')
+        
+        # Process each rate row
+        rows = normal_section.find_elements(By.XPATH, './/div[contains(@class, "MuiGrid-grid-xs-12")]')
+        for row in rows:
+            try:
+                # Count stars to determine rarity
+                stars = row.find_elements(By.XPATH, './/img')
+                rarity = len(stars)
+
+                # Map "1" rarity to "birthday"
+                rarity_key = "birthday" if rarity == 1 else str(rarity)
+                
+                # Extract percentage value
+                perc_text = row.find_element(By.XPATH, './/div[contains(@class, "css-1wxaqej") and not(./img)]').text
+                perc_value = float(perc_text.replace('%', '').strip())
+                
+                rates["normal"][rarity_key] = perc_value
+            except:
+                continue
+    except:
+        pass
+    
+    try:
+        # Extract guaranteed roll rates
+        guar_header = driver.find_element(By.XPATH, '//h6[contains(., "Guaranteed Roll Rate")]')
+        guar_section = guar_header.find_element(By.XPATH, './ancestor::div[contains(@class, "MuiGrid-container")][1]')
+        
+        # Process each rate row
+        rows = guar_section.find_elements(By.XPATH, './/div[contains(@class, "MuiGrid-grid-xs-12")]')
+        for row in rows:
+            try:
+                # Count stars to determine rarity
+                stars = row.find_elements(By.XPATH, './/img')
+                rarity = len(stars)
+
+                # Map "1" rarity to "birthday"
+                rarity_key = "birthday" if rarity == 1 else str(rarity)
+                
+                # Extract percentage value
+                perc_text = row.find_element(By.XPATH, './/div[contains(@class, "css-1wxaqej") and not(./img)]').text
+                perc_value = float(perc_text.replace('%', '').strip())
+                
+                rates["guaranteed"][rarity_key] = perc_value
+            except:
+                continue
+    except:
+        pass
+    
+    return rates
 
 def sekaibest_scrape_card_info(start_num=start_id, end_num=end_id):
     """Scrape card images using Selenium with automatic driver management"""
@@ -763,7 +852,8 @@ def main():
     # ]
     # json_reorder("/Users/gracelu/Desktop/pjsk sim/my-app/src/data/card_metadata.json", desired_card_metadata_order)
     # split_card_metadata()
-    scrape_screen_texture_assets()
+    # scrape_screen_texture_assets()
+    sekaibest_scrape_gacha_info(start_gacha=783, end_gacha=783)
 
 def scrape_screen_texture_assets():
     base_local = "my-app/public/gacha"
