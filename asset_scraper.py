@@ -939,12 +939,12 @@ def main():
     # split_card_metadata()
     # scrape_screen_texture_assets()
     # split_gacha_metadata()
-    sekaipedia_scrape_gacha_banner(start_num=319, end_num=647)
+    sekaipedia_scrape_gacha_banner(start_num=1, end_num=999)
     # sekaibest_scrape_gacha_info(start_gacha=1, end_gacha=783)
 
 
-GACHA_BASE_URL="https://www.sekaipedia.org/wiki/Category:Gacha_banners?filefrom=Gacha319+banner.png#mw-category-media"
-def sekaipedia_scrape_gacha_banner(start_num=319, end_num=647):
+GACHA_BASE_URL="https://www.sekaipedia.org/wiki/Category:Gacha_banners?filefrom=Gacha65+banner.png#mw-category-media"
+def sekaipedia_scrape_gacha_banner(start_num=1, end_num=999):
     """Scrape gacha banners from Sekaipedia and save as WebP."""
     banners_path = "my-app/public/gacha"
     os.makedirs(banners_path, exist_ok=True)
