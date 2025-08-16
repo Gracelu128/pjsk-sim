@@ -943,6 +943,8 @@ def main():
     # sekaipedia_scrape_gacha_banner(start_num=1, end_num=999)
     # sekaibest_scrape_gacha_info(start_gacha=1, end_gacha=783)
 
+import collections
+
 def generate_gacha_manifest(
     gacha_base="my-app/public/gacha",
     manifest_path="my-app/public/gacha/manifest.json"
@@ -959,9 +961,9 @@ def generate_gacha_manifest(
         img_files = []
         if os.path.isdir(texture_dir):
             for fname in os.listdir(texture_dir):
-                if fname.startswith("bg_gacha") and fname.endswith(".webp"):
+                if fname.startswith("bg_") and fname.endswith(".webp"):
                     bg_files.append(fname)
-                elif fname.startswith("img_gacha") and fname.endswith(".webp"):
+                elif fname.startswith("img_") and fname.endswith(".webp"):
                     img_files.append(fname)
 
         # Find logo file
@@ -992,9 +994,14 @@ def generate_gacha_manifest(
                 "banner": sorted(banner_files)
             }
 
+    # Sort manifest by integer gacha ID
+    sorted_manifest = collections.OrderedDict(
+        sorted(manifest.items(), key=lambda x: int(x[0]) if x[0].isdigit() else float('inf'))
+    )
+
     # Save manifest
     with open(manifest_path, "w", encoding="utf-8") as f:
-        json.dump(manifest, f, indent=2, ensure_ascii=False)
+        json.dump(sorted_manifest, f, indent=2, ensure_ascii=False)
     print(f"Manifest written to {manifest_path}")
 
 # To run this, add to main():

@@ -1,53 +1,129 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
-import cardData from "@/data/card_metadata.json";
 
-function display_gacha(gachaId) {
-  const bgSrc = `/gacha/gacha_${gachaId}/screen/texture/bg_gacha${gachaId}.webp`;
-  const logoSrc = `/gacha/gacha_${gachaId}/logo/logo.webp`;
+function useCountdown(length, interval = 3000) {
+  const [index, setIndex] = useState(0);
+  useEffect(() => {
+    if (length <= 1) return;
+    const timer = setInterval(() => {
+      setIndex(i => (i + 1) % length);
+    }, interval);
+    return () => clearInterval(timer);
+  }, [length, interval]);
+  return index;
+}
+
+function DisplayGacha({ gachaId, manifest }) {
+  const assets = manifest[gachaId];
+  if (!assets) return <div>No assets found for this gacha.</div>;
+
+  const bgIndex = useCountdown(assets.bg?.length || 0);
+  const imgIndex = useCountdown(assets.img?.length || 0);
 
   return (
     <div style={{ position: "relative", width: "100vw", height: "100vh" }}>
-      <Image
-        src={bgSrc}
-        alt={`Gacha ${gachaId} Background`}
-        unoptimized
-        width={0}
-        height={0}
-        sizes="100vw"
-        style={{ width: "100%", height: "auto" }}
-      />
-      <div
-        style={{
-          position: "absolute",
-          bottom: "3%",
-          right: "3%",
-          width: "10vw",
-          minWidth: "120px",
-          maxWidth: "200px",
-        }}
-      >
+      {/* Backgrounds */}
+      {assets.bg && assets.bg.length > 0 && (
         <Image
-          src={logoSrc}
-          alt={`Gacha ${gachaId} Logo`}
+          src={`/gacha/gacha_${gachaId}/screen/texture/${assets.bg[bgIndex]}`}
+          alt={`Gacha ${gachaId} Background`}
           unoptimized
           width={0}
           height={0}
-          sizes="10vw"
-          style={{ width: "100%", height: "auto" }}
+          sizes="100vw"
+          style={{ width: "auto", height: "100%" }}
         />
-      </div>
+      )}
+      {/* Overlays */}
+      {assets.img && assets.img.length > 0 && (
+        <Image
+          src={`/gacha/gacha_${gachaId}/screen/texture/${assets.img[imgIndex]}`}
+          alt={`Gacha ${gachaId} Overlay`}
+          unoptimized
+          width={0}
+          height={0}
+          sizes="100vw"
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "auto",
+            height: "100%",
+            pointerEvents: "none",
+          }}
+        />
+      )}
+      {/* Logo */}
+      {assets.logo && (
+        <div
+          style={{
+            position: "absolute",
+            bottom: "20%",
+            left: "13%",
+            width: "10vw",
+            minWidth: "400px",
+            maxWidth: "500px",
+          }}
+        >
+          <Image
+            src={`/gacha/gacha_${gachaId}/${assets.logo}`}
+            alt={`Gacha ${gachaId} Logo`}
+            unoptimized
+            width={0}
+            height={0}
+            sizes="10vw"
+            style={{ width: "100%", height: "auto" }}
+          />
+        </div>
+      )}
+      {/* Banner (show first banner if exists) */}
+      {assets.banner && assets.banner.length > 0 && (
+        <div
+          style={{
+            position: "absolute",
+            top: "5%",
+            right: "2%",
+            width: "40vw",
+            minWidth: "100px",
+            maxWidth: "200px",
+            zIndex: 5,
+          }}
+        >
+          <Image
+            src={`/gacha/gacha_${gachaId}/banner/${assets.banner[0]}`}
+            alt={`Gacha ${gachaId} Banner`}
+            unoptimized
+            width={0}
+            height={0}
+            sizes="40vw"
+            style={{ width: "100%", height: "auto" }}
+          />
+        </div>
+      )}
     </div>
   );
 }
 
 export default function Home() {
-  const [gachaIdInput, setGachaIdInput] = useState(377);
-  const [gachaId, setGachaId] = useState(377);
+  const [manifest, setManifest] = useState({});
+  const [gachaIdInput, setGachaIdInput] = useState("");
+  const [gachaId, setGachaId] = useState("");
 
-  const gachaIds = [377, 378, 379, 380, 381, 382]; // Add more as needed
+  useEffect(() => {
+    fetch("/gacha/manifest.json")
+      .then(res => res.json())
+      .then(data => {
+        setManifest(data);
+        // Set default gachaId to first available
+        const firstId = Object.keys(data)[0] || "";
+        setGachaIdInput(firstId);
+        setGachaId(firstId);
+      });
+  }, []);
+
+  const gachaIds = Object.keys(manifest);
 
   return (
     <main className="mainBody">
@@ -56,7 +132,7 @@ export default function Home() {
         <select
           id="gacha-select"
           value={gachaIdInput}
-          onChange={e => setGachaIdInput(Number(e.target.value))}
+          onChange={e => setGachaIdInput(e.target.value)}
         >
           {gachaIds.map(id => (
             <option key={id} value={id}>{id}</option>
@@ -69,7 +145,7 @@ export default function Home() {
           Load Gacha
         </button>
       </div>
-      {display_gacha(gachaId)}
+      {gachaId && <DisplayGacha gachaId={gachaId} manifest={manifest} />}
     </main>
   );
 }
