@@ -8,15 +8,26 @@ Credits to data and image assets from [sekai.best](https://sekai.best) and [seka
 
 ```plaintext
 my-app/
+├── .next/
+├── node_modules/
+├── README.md
 ├── public/
-│   ├── cards/      # put card images here
-│   ├── icons/      # put icons here
-|   ├── card_audio  # card card audio here
+│   ├── card_audio/
+│   ├── cards/
+│   ├── costumes/
+│   ├── gacha/
+│   ├── icons/
 ├── src/
+│   ├── app/
+│   │   ├── layout.js
+│   │   ├── page.js
+│   │   ├── style.css
 │   ├── data/
-│   │   └── card_metadata.json
-│   │   └── gacha_metadata.json
-│   └── app/page.js  # (default Next.js page)
+│   │   ├── individual_card_metadata/
+│   │   ├── individual_gacha_metadata/
+│   │   ├── card_metadata.json
+│   │   ├── gacha_metadata.json
+│   │   ├── gacha_rates.json
 asset_scraper.py
 
 In Next.js, any file in /public/ is automatically served as a static asset.
