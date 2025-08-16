@@ -16,11 +16,15 @@ function useCountdown(length, interval = 3000) {
 }
 
 function DisplayGacha({ gachaId, manifest }) {
-  const assets = manifest[gachaId];
-  if (!assets) return <div>No assets found for this gacha.</div>;
-
+  const assets = manifest[gachaId] || {};
+  // Always call hooks, even if arrays are empty
   const bgIndex = useCountdown(assets.bg?.length || 0);
   const imgIndex = useCountdown(assets.img?.length || 0);
+
+  // Early return if no assets
+  if (!assets.bg && !assets.img && !assets.logo && !assets.banner) {
+    return <div>No assets found for this gacha.</div>;
+  }
 
   return (
     <div style={{ position: "relative", width: "100vw", height: "100vh" }}>
