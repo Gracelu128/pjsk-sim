@@ -1,32 +1,75 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import cardData from "@/data/card_metadata.json";
 
-export default function Home() {
-  const card = cardData["1"];
+function display_gacha(gachaId) {
+  const bgSrc = `/gacha/gacha_${gachaId}/screen/texture/bg_gacha${gachaId}.webp`;
+  const logoSrc = `/gacha/gacha_${gachaId}/logo/logo.webp`;
 
   return (
-    <main className="w-screen h-screen flex flex-col items-center justify-center bg-white">
-      <h1 className="text-2xl font-bold mb-4">Card Gallery</h1>
-      <div className="flex flex-col items-center">
-        <div className="border rounded-lg p-3 shadow bg-white flex flex-col items-center">
-          <Image
-            src="/cards/1/card_normal.webp"
-            alt={card["english name"]}
-            unoptimized
-            width={0}
-            height={0}
-            sizes="100vw"
-            style={{ width: "60%", height: "auto" }}
-          />
-          <h2 className="mt-2 text-center font-semibold">{card["english name"]}</h2>
-          <p className="text-center text-sm text-gray-600">
-            {card.character} ({card.unit})
-          </p>
-          <p className="text-center text-xs text-gray-500">
-            Rarity: {card.rarity} ★ | Attribute: {card.attribute}
-          </p>
-        </div>
+    <div style={{ position: "relative", width: "100vw", height: "100vh" }}>
+      <Image
+        src={bgSrc}
+        alt={`Gacha ${gachaId} Background`}
+        unoptimized
+        width={0}
+        height={0}
+        sizes="100vw"
+        style={{ width: "100%", height: "auto" }}
+      />
+      <div
+        style={{
+          position: "absolute",
+          bottom: "3%",
+          right: "3%",
+          width: "10vw",
+          minWidth: "120px",
+          maxWidth: "200px",
+        }}
+      >
+        <Image
+          src={logoSrc}
+          alt={`Gacha ${gachaId} Logo`}
+          unoptimized
+          width={0}
+          height={0}
+          sizes="10vw"
+          style={{ width: "100%", height: "auto" }}
+        />
       </div>
+    </div>
+  );
+}
+
+export default function Home() {
+  const [gachaIdInput, setGachaIdInput] = useState(377);
+  const [gachaId, setGachaId] = useState(377);
+
+  const gachaIds = [377, 378, 379, 380, 381, 382]; // Add more as needed
+
+  return (
+    <main className="mainBody">
+      <div style={{ position: "absolute", top: 20, left: 20, zIndex: 10 }}>
+        <label htmlFor="gacha-select" style={{ marginRight: 8 }}>Select Gacha ID:</label>
+        <select
+          id="gacha-select"
+          value={gachaIdInput}
+          onChange={e => setGachaIdInput(Number(e.target.value))}
+        >
+          {gachaIds.map(id => (
+            <option key={id} value={id}>{id}</option>
+          ))}
+        </select>
+        <button
+          style={{ marginLeft: 8, padding: "4px 12px" }}
+          onClick={() => setGachaId(gachaIdInput)}
+        >
+          Load Gacha
+        </button>
+      </div>
+      {display_gacha(gachaId)}
     </main>
   );
 }

@@ -939,9 +939,66 @@ def main():
     # split_card_metadata()
     # scrape_screen_texture_assets()
     # split_gacha_metadata()
-    sekaipedia_scrape_gacha_banner(start_num=1, end_num=999)
+    generate_gacha_manifest()
+    # sekaipedia_scrape_gacha_banner(start_num=1, end_num=999)
     # sekaibest_scrape_gacha_info(start_gacha=1, end_gacha=783)
 
+def generate_gacha_manifest(
+    gacha_base="my-app/public/gacha",
+    manifest_path="my-app/public/gacha/manifest.json"
+):
+    manifest = {}
+    for folder in os.listdir(gacha_base):
+        gacha_dir = os.path.join(gacha_base, folder)
+        if not os.path.isdir(gacha_dir):
+            continue
+
+        # Find backgrounds and overlays in screen/texture
+        texture_dir = os.path.join(gacha_dir, "screen", "texture")
+        bg_files = []
+        img_files = []
+        if os.path.isdir(texture_dir):
+            for fname in os.listdir(texture_dir):
+                if fname.startswith("bg_gacha") and fname.endswith(".webp"):
+                    bg_files.append(fname)
+                elif fname.startswith("img_gacha") and fname.endswith(".webp"):
+                    img_files.append(fname)
+
+        # Find logo file
+        logo_dir = os.path.join(gacha_dir, "logo")
+        logo_file = None
+        if os.path.isdir(logo_dir):
+            for fname in os.listdir(logo_dir):
+                if fname == "logo.webp":
+                    logo_file = "logo/logo.webp"
+                    break
+
+        # Find banner files
+        banner_dir = os.path.join(gacha_dir, "banner")
+        banner_files = []
+        if os.path.isdir(banner_dir):
+            for fname in os.listdir(banner_dir):
+                if fname.endswith(".webp") or fname.endswith(".png") or fname.endswith(".jpg"):
+                    banner_files.append(fname)
+
+        # Only add if at least one asset exists
+        if bg_files or img_files or logo_file or banner_files:
+            # Extract gacha ID from folder name (e.g., gacha_377)
+            gacha_id = folder.replace("gacha_", "")
+            manifest[gacha_id] = {
+                "bg": sorted(bg_files),
+                "img": sorted(img_files),
+                "logo": logo_file if logo_file else "",
+                "banner": sorted(banner_files)
+            }
+
+    # Save manifest
+    with open(manifest_path, "w", encoding="utf-8") as f:
+        json.dump(manifest, f, indent=2, ensure_ascii=False)
+    print(f"Manifest written to {manifest_path}")
+
+# To run this, add to main():
+# generate_gacha_manifest()
 
 GACHA_BASE_URL="https://www.sekaipedia.org/wiki/Category:Gacha_banners?filefrom=Gacha65+banner.png#mw-category-media"
 def sekaipedia_scrape_gacha_banner(start_num=1, end_num=999):
