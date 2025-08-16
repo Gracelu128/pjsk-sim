@@ -938,9 +938,243 @@ def main():
     # json_reorder("/Users/gracelu/Desktop/pjsk sim/my-app/src/data/card_metadata.json", desired_card_metadata_order)
     # split_card_metadata()
     # scrape_screen_texture_assets()
-    split_gacha_metadata()
-
+    # split_gacha_metadata()
+    sekaipedia_scrape_gacha_banner(start_num=1, end_num=318)
     # sekaibest_scrape_gacha_info(start_gacha=1, end_gacha=783)
+
+
+GACHA_BASE_URL="https://www.sekaipedia.org/wiki/Category:Gacha_banners"
+def sekaipedia_scrape_gacha_banner(start_num=start_id, end_num=end_id):
+    """Scrape card images using Selenium with automatic driver management"""
+    # Configuration
+    banners_path = "/Users/songchuanhua/Documents/GitHub/pjsk-sim/my-app/public/gacha"
+    os.makedirs(banners_path, exist_ok=True)
+    data = None
+    
+    # Set up Chrome options
+    chrome_options = Options()
+    chrome_options.add_argument("--headless")  # Run in background
+    chrome_options.add_argument("--disable-gpu")
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument("--disable-dev-shm-usage")
+    chrome_options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36")
+    
+    # Set up Chrome driver with WebDriver Manager
+    service = Service(ChromeDriverManager().install())
+    driver = webdriver.Chrome(service=service, options=chrome_options)
+        
+    try:
+        # Load the page with Selenium
+        driver.get(GACHA_BASE_URL)
+
+        # Wait for the card element to be present
+        wait = WebDriverWait(driver, 15)
+        rows = driver.find_elements(By.CSS_SELECTOR, "table.wikitable.sortable.jquery-tablesorter tbody tr")
+
+        card_hrefs = []
+
+        # Loop through every single card entry, open up webpage and extract info about card
+        for index, row in enumerate(rows):
+            try:
+
+                # Extract desired card info here
+                # Extract card ID from first column
+                card_id = row.find_element(By.CSS_SELECTOR, "td:nth-child(1)").text.strip()
+                print(f"Working on {card_id}")
+                
+                # Skip cards outside the specified range
+                card_id_int = int(card_id)
+                if card_id_int < start_num:
+                    print(f"Skipping {card_id}")
+                    continue
+                if card_id_int > end_num:
+                    break
+
+                # Extract icon from second column
+                icon_img = row.find_element(By.CSS_SELECTOR, "td:nth-child(2) img")
+                icon_url = icon_img.get_attribute("src")
+                if icon_url.startswith("//"):
+                    icon_url = "https:" + icon_url
+                # Remove the last segment (e.g., '64px-Saki_1_thumbnail.png')
+                parsed = urlparse(icon_url)
+                path_parts = parsed.path.split("/")
+                if "thumb" in path_parts:
+                    path_parts.remove("thumb")
+                    full_url = urlunparse(parsed._replace(path=("/".join(path_parts))))
+                print(f"Icon url: {icon_url}")
+                print(f"Full url: {full_url}")
+                
+
+                card_icon_dir = os.path.join(icons_path, str(card_id))
+                os.makedirs(card_icon_dir, exist_ok=True)
+
+                for size_label, url in sizes.items():
+                    png_filename = f"{card_id}_{size_label}.png"
+                    png_filepath = os.path.join(icons_path, png_filename)
+
+                    headers = {
+                        "User-Agent": "Mozilla/5.0"
+                    }
+                    response = requests.get(url, timeout=10, headers=headers)
+                    if response.status_code == 200:
+                        with open(png_filepath, "wb") as f:
+                            f.write(response.content)
+                        print(f"Saved {size_label} PNG")
+
+                        # Convert to WebP
+                        webp_filename = f"{card_id}_{size_label}.webp"
+                        webp_filepath = os.path.join(card_icon_dir, webp_filename)
+                        with Image.open(png_filepath) as img:
+                            img.save(webp_filepath, "webp")
+
+                        os.remove(png_filepath)
+                    else:
+                        print(f"Failed to retrieve {size_label} icon for card {card_id}")
+
+
+                # Extract card title from third column
+                character_link = row.find_element(By.CSS_SELECTOR, "td:nth-child(3) a")
+                # Store character link in card_hrefs
+                relative_url = character_link.get_attribute("href")
+                # OR if the href is relative (e.g., "/wiki/Hatsune_Miku"), construct the full URL:
+                if relative_url.startswith("/"):
+                    full_url = "https://www.sekaipedia.org" + relative_url
+                else:
+                    full_url = relative_url  # Already absolute
+
+                card_hrefs.append((card_id, full_url))
+
+                card_title = character_link.get_attribute("title").strip()
+
+                # Extract character from fourth column
+                character = row.find_element(By.CSS_SELECTOR, "td:nth-child(4)").text.strip()
+
+                # Extract unit from fifth column
+                unit = row.find_element(By.CSS_SELECTOR, "td:nth-child(5)").text.strip()
+                
+                # Extract support unit from fourth column
+                support_unit = row.find_element(By.CSS_SELECTOR, "td:nth-child(6)").text.strip()
+                if not support_unit:
+                    support_unit = None
+                
+                # Extract attribute from fifth column
+                attribute = row.find_element(By.CSS_SELECTOR, "td:nth-child(7)").text.strip()
+                
+                # Extract rarity from sixth column
+                rarity_td = row.find_element(By.CSS_SELECTOR, "td:nth-child(8)")
+                # Count star images to determine rarity
+                stars = rarity_td.find_elements(By.CSS_SELECTOR, "img[src*='Gold_star']")
+                rarity = len(stars)
+                
+                # Extract status from seventh column
+                status = row.find_element(By.CSS_SELECTOR, "td:nth-child(9)").text.strip()
+
+                if (status == "Birthday limited"):
+                    rarity = "Birthday"
+
+                data[card_id] = {}
+                data[card_id]["id"] = card_id
+                data[card_id]["character"] = character
+                data[card_id]["english name"] = card_title
+                data[card_id]["unit"] = unit
+                data[card_id]["support unit"] = support_unit
+                data[card_id]["attribute"] = attribute
+                data[card_id]["rarity"] = rarity
+                data[card_id]["status"] = status
+
+                print(f"[{index}] Processed card {card_id}: {card_title}")
+                
+                # Save progress periodically
+                if index % 10 == 0:
+                    with open(json_path, 'w') as f:
+                        json.dump(data, f, indent=2)
+
+                # Optional: short pause to be kind to the server
+                time.sleep(1)
+            except Exception as e:
+                print(f"Error on row {index}: {e}")
+
+        # Loop over hrefs, open individual card pages to extract more information
+        for index, (card_id, full_url) in enumerate(card_hrefs):
+            print(f"[{index}] Card {card_id}")
+            # Navigate to the page
+            driver.get(full_url)
+            print(full_url)
+
+            wait = WebDriverWait(driver, 15)
+            # Flexible section detection using case-insensitive ID matching
+            section = wait.until(
+                EC.presence_of_element_located((
+                    By.XPATH, 
+                    "//section[.//*[translate(@id, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz') = 'skill_name']]"
+                ))
+            )
+            # print(section.get_attribute("outerHTML"))
+
+            en_skill_name = None
+            name_uls = section.find_elements(By.XPATH, ".//h3[.//*[contains(translate(@id, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'skill_name')]]/following-sibling::ul")
+            if name_uls:
+                name_ul = name_uls[0]
+                try:
+                    en_li = name_ul.find_element(By.XPATH, ".//li[contains(., 'English:')]")
+                    en_skill_name = en_li.text.split("English:")[1].strip()
+                except:
+                    pass
+
+            print(f"  Skill Name: {en_skill_name}")
+
+            # Robust extraction for skill effect
+            en_skill_effect = None
+            effect_uls = section.find_elements(By.XPATH, ".//h3[.//*[contains(translate(@id, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'skill_effect')]]/following-sibling::ul")
+            if effect_uls:
+                effect_ul = effect_uls[0]
+                try:
+                    level4_li = effect_ul.find_element(By.XPATH, ".//li[contains(., 'Level 4:')]")
+                    en_skill_effect = level4_li.text.split("Level 4:")[1].strip().replace(";", " and")
+                except:
+                    pass
+
+            print(f"  Skill Effect: {en_skill_effect}")
+
+            # Load the Main Stats section (for Power)
+            try:
+                # Fallback: find section after h2#Stats
+                stats_heading = wait.until(
+                    EC.presence_of_element_located((By.XPATH, "//h2[.//span[@id='Stats']]"))
+                )
+                stats_section = stats_heading.find_element(By.XPATH, "following-sibling::section[1]")
+            except Exception as e:
+                print("Fallback: Try to look for 'Main_stats' section.")
+                stats_section = wait.until(
+                    EC.presence_of_element_located((By.XPATH, "//section[.//span[@id='Main_stats']]"))
+                )
+
+            power_val = stats_section.find_element(By.XPATH, ".//tr[th[contains(., 'Power')]]/td[2]").text
+            print(f"  Power (max): {power_val}")
+
+            data[str(card_id)]["skill name (english)"] = en_skill_name
+            data[str(card_id)]["skill effect (english)"] = en_skill_effect
+            data[str(card_id)]["talent (max)"] = int(power_val)
+
+            # Save progress periodically
+            if index % 10 == 0:
+                with open(json_path, 'w') as f:
+                    json.dump(data, f, indent=2)
+    except Exception as e:
+        print(f"  ! Error processing card info")
+
+    finally:
+        driver.quit()
+        with open(json_path, 'w') as f:
+            json.dump(data, f, indent=2)
+        print("Scraping completed! Data saved to JSON.")
+
+    driver.quit()
+    print("Scraping completed!")
+
+    # Write back to json
+    with open(json_path, 'w') as f:
+        json.dump(data, f, indent=2)
 
 def scrape_screen_texture_assets():
     base_local = "my-app/public/gacha"
