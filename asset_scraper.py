@@ -1000,36 +1000,33 @@ def sekaipedia_scrape_gacha_banner(start_num=start_id, end_num=end_id):
                 path_parts = parsed.path.split("/")
                 if "thumb" in path_parts:
                     path_parts.remove("thumb")
-                    full_url = urlunparse(parsed._replace(path=("/".join(path_parts))))
-                print(f"Icon url: {icon_url}")
-                print(f"Full url: {full_url}")
-                
+                    full_url = "/".join(path_parts)
+                print(f"*** url: {full_url}")
 
-                card_icon_dir = os.path.join(icons_path, str(card_id))
-                os.makedirs(card_icon_dir, exist_ok=True)
+                card_banner_dir = os.path.join(banners_path, str(card_id))
+                os.makedirs(card_banner_dir, exist_ok=True)
 
-                for size_label, url in sizes.items():
-                    png_filename = f"{card_id}_{size_label}.png"
-                    png_filepath = os.path.join(icons_path, png_filename)
+                png_filename = f"Gacha{card_id}_banner.png"
+                png_filepath = os.path.join(banners_path, png_filename)
 
-                    headers = {
-                        "User-Agent": "Mozilla/5.0"
-                    }
-                    response = requests.get(url, timeout=10, headers=headers)
-                    if response.status_code == 200:
-                        with open(png_filepath, "wb") as f:
-                            f.write(response.content)
-                        print(f"Saved {size_label} PNG")
+                headers = {
+                    "User-Agent": "Mozilla/5.0"
+                }
+                response = requests.get(url, timeout=10, headers=headers)
+                if response.status_code == 200:
+                    with open(png_filepath, "wb") as f:
+                        f.write(response.content)
+                    print(f"Saved {size_label} PNG")
 
-                        # Convert to WebP
-                        webp_filename = f"{card_id}_{size_label}.webp"
-                        webp_filepath = os.path.join(card_icon_dir, webp_filename)
-                        with Image.open(png_filepath) as img:
-                            img.save(webp_filepath, "webp")
+                    # Convert to WebP
+                    webp_filename = f"{card_id}_{size_label}.webp"
+                    webp_filepath = os.path.join(card_icon_dir, webp_filename)
+                    with Image.open(png_filepath) as img:
+                        img.save(webp_filepath, "webp")
 
-                        os.remove(png_filepath)
-                    else:
-                        print(f"Failed to retrieve {size_label} icon for card {card_id}")
+                    os.remove(png_filepath)
+                else:
+                    print(f"Failed to retrieve {size_label} icon for card {card_id}")
 
 
                 # Extract card title from third column
@@ -1158,23 +1155,12 @@ def sekaipedia_scrape_gacha_banner(start_num=start_id, end_num=end_id):
 
             # Save progress periodically
             if index % 10 == 0:
-                with open(json_path, 'w') as f:
-                    json.dump(data, f, indent=2)
-    except Exception as e:
-        print(f"  ! Error processing card info")
-
-    finally:
-        driver.quit()
-        with open(json_path, 'w') as f:
-            json.dump(data, f, indent=2)
-        print("Scraping completed! Data saved to JSON.")
+                # Add a placeholder or actual save logic here
+                pass
 
     driver.quit()
     print("Scraping completed!")
 
-    # Write back to json
-    with open(json_path, 'w') as f:
-        json.dump(data, f, indent=2)
 
 def scrape_screen_texture_assets():
     base_local = "my-app/public/gacha"
