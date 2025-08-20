@@ -45,6 +45,11 @@ const nextConfig = {
           destination:
             'https://cdn.jsdelivr.net/gh/Gracelu128/pjsk-sim@main/my-app/public/gacha/:gid/banner/:file*',
         },
+        // shared UI assets
+        {
+          source: '/UI/:file*',
+          destination: 'https://cdn.jsdelivr.net/gh/Gracelu128/pjsk-sim@main/my-app/public/UI/:file*',
+        },
       ];
     }
     return [];

@@ -24,3 +24,29 @@ export const bannerPath = (id, entry, idx = 0) => {
   const f = entry?.banner?.[idx];
   return hasExt(f) ? join("/gacha", `gacha_${id}`, "banner", f) : null;
 };
+
+export const uiPath = (filename) => (
+  hasExt(filename) ? join("/UI", filename) : null
+);
+
+export const UI_FILES = {
+  single_pull_button: "1_pull.webp",
+  ten_pull_button: "10_pull.webp",
+  paid_single_pull_button: "paid_1_pull.webp",
+  paid_ten_pull_button: "paid_10_pull.webp",
+  charatcer_details_button: "character_details.webp",
+  crystal_bar_button: "crystal_bar.webp",
+  exchange_button: "exchange.webp",
+  fake_date_bar: "fake_date_bar.webp",
+  real_date_bar: "real_date_bar.webp",
+  fake_gacha_sticker_bar_normal: "fake_gacha_sticker_bar_normal.webp",
+  fake_gacha_sticker_bar_limited: "fake_gacha_sticker_bar_limited.webp",
+  gacha_details_button: "gacha_details.webp",
+  quote_bar: "quote_bar.webp",
+  return_button: "return.webp",
+  settings_button: "settings.webp",
+  tabs_panel: "tabs_panel.webp",
+  token_bar_birthday: "token_bar_birthday.webp",
+  token_bar_normal: "token_bar_normal.webp",
+  token_bar_limited: "token_bar_limited.webp",
+};
