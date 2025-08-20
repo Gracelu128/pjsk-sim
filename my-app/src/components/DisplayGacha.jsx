@@ -232,7 +232,8 @@ export default function DisplayGacha({ gachaId, manifest }) {
               {ui.exchangeBtn && (
                 <Link
                   href={`/gacha_${gachaId}/exchange`}
-                  prefetch={false}
+                  scroll={false} 
+                  prefetch
                   aria-label="Open exchange"
                   style={{ width: pxW(0.10), display: "block" }}
                 >
@@ -261,7 +262,8 @@ export default function DisplayGacha({ gachaId, manifest }) {
               {ui.settingsBtn && (
                 <Link
                   href={`/gacha_${gachaId}/settings`}
-                  prefetch={false}
+                  scroll={false} 
+                  prefetch
                   aria-label="Open settings"
                   style={{ width: pxW(0.06), display: "block", marginRight: "-4%" }}
                 >
