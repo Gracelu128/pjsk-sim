@@ -7,28 +7,36 @@ Credits to data and image assets from [sekai.best](https://sekai.best) and [seka
 ## Directory Structure
 
 ```plaintext
-my-app/
-├── .next/
-├── node_modules/
-├── README.md
-├── public/
-│   ├── card_audio/
-│   ├── cards/
-│   ├── costumes/
-│   ├── gacha/
-│   ├── icons/
-├── src/
-│   ├── app/
-│   │   ├── layout.js
-│   │   ├── page.js
-│   │   ├── style.css
-│   ├── data/
-│   │   ├── individual_card_metadata/
-│   │   ├── individual_gacha_metadata/
-│   │   ├── card_metadata.json
-│   │   ├── gacha_metadata.json
-│   │   ├── gacha_rates.json
-asset_scraper.py
+pjsk-sim/
+├── asset_scraper.py              # Script for scraping/downloading assets
+├── Icon/                         # App icons / branding assets
+├── my-app/
+│   ├── public/                   # Static assets served directly
+│   │   ├── card_audio/           # Card voice/audio files
+│   │   ├── cards/                # Card images
+│   │   ├── costumes/             # Costume images
+│   │   ├── gacha/                # Gacha images & manifest
+│   │   └── icons/                # Character icons
+│   │
+│   ├── src/                      # Source code (main project logic)
+│   │   ├── app/                  # Next.js app router pages
+│   │   │   ├── gacha/gachaId/
+│   │   │   │       ├── page.js
+│   │   │   │       └── GachaClient.jsx
+│   │   │   ├── layout.js
+│   │   │   ├── page.js
+│   │   │   └── style.css
+│   │   ├── components/           # React components (UI building blocks)
+│   │   │   ├── page.js
+│   │   │   └── DisplayGacha.jsx
+│   │   ├── data/                 # Game metadata (JSON files)
+│   │   ├── hooks/                # Custom React hooks
+│   │   └── utils/                # Helper utilities (e.g. assetPaths)
+│   │
+│   ├── package.json              # Dependencies
+│   ├── next.config.mjs           # Next.js configuration
+│   └── README.md                 # Project readme
+
 
 In Next.js, any file in /public/ is automatically served as a static asset.
 So an image at public/cards/001.webp is available at:
