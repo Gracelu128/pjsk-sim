@@ -54,16 +54,22 @@ export default function DisplayGacha({ gachaId, manifest }) {
 
   const { width: vw, height: vh } = useWindowSize();
   const { w: natW, h: natH } = useNaturalSize(bgSrc || "");
+  //for resizing overlay
+  const { w: ovW, h: ovH } = useNaturalSize(overlaySrc || "");
+
 
   // Stage size that "contains" bg
-  const { stageW, stageH } = useMemo(() => {
+  const { stageW, stageH, scaleFromBg } = useMemo(() => {
     if (bgSrc && natW && natH && vw && vh) {
-      const scale = Math.min(vw / natW, vh / natH);
-      return { stageW: Math.floor(natW * scale), stageH: Math.floor(natH * scale) };
+      const scale = Math.min(vw / natW, vh / natH); // bg → stage scale
+      return {
+        stageW: Math.floor(natW * scale),
+        stageH: Math.floor(natH * scale),
+        scaleFromBg: scale,
+      };
     }
-    return { stageW: Math.max(0, vw), stageH: Math.max(0, vh) };
+    return { stageW: Math.max(0, vw), stageH: Math.max(0, vh), scaleFromBg: 0.3 };
   }, [bgSrc, natW, natH, vw, vh]);
-
   const ready = stageW > 0 && stageH > 0;
 
   // If literally nothing to show
@@ -76,6 +82,9 @@ export default function DisplayGacha({ gachaId, manifest }) {
   ) {
     return <div style={{ padding: 16, color: "#bbb" }}>No assets found for this gacha.</div>;
   }
+
+  // Full overlays: ONLY 2520×1440
+  const overlayIsFull = !!overlaySrc && ovW === 2520 && ovH === 1440;
 
   // Helpers to size with stage-relative px
   const pxW = (p) => Math.round(stageW * p);
@@ -108,15 +117,45 @@ export default function DisplayGacha({ gachaId, manifest }) {
           )}
 
           {/* Overlay */}
-          {overlaySrc && (
+          {overlaySrc && overlayIsFull && (
             <NextImage
               src={overlaySrc}
-              alt={`Gacha ${gachaId} Overlay`}
+              alt={`Gacha ${gachaId} Overlay FULL`}
               fill
               sizes={`${stageW}px`}
               style={{ objectFit: "contain", pointerEvents: "none" }}
             />
           )}
+
+          {/* Sprite/strip overlays (non-full screen) */}
+            {overlaySrc && !overlayIsFull && (
+              <div
+                style={{
+                  position: "absolute",
+                  right: "7%",
+                  top: "48%",
+                  //transform: "translateY(-50%)",
+                  height: "28%",
+                  width: "auto",
+                  pointerEvents: "none",
+                }}
+              >
+                <NextImage
+                  src={overlaySrc}
+                  alt={`Gacha ${gachaId} Overlay (sprite)`}
+                  fill={false}
+                  width={ovW}
+                  height={ovH}
+                  style={{
+                    height: "100%",
+                    width: "auto",
+                    objectFit: "contain",
+                    display: "block",
+                  }}
+                />
+              </div>
+            )}
+
 
           {/* LEFT: Tabs panel (centered vertically) */}
           {ui.tabsPanel && (
