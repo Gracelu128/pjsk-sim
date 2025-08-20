@@ -2441,7 +2441,11 @@
       "bg_gacha394_2.webp",
       "bg_gacha394_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha394_1.webp",
+      "cardname_gacha394_2.webp",
+      "cardname_gacha394_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha394_banner.webp"
@@ -2471,7 +2475,11 @@
       "bg_gacha396_2.webp",
       "bg_gacha396_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha396_1.webp",
+      "cardname_gacha396_2.webp",
+      "cardname_gacha396_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha396_banner.webp"
@@ -2570,7 +2578,12 @@
       "bg_gacha407_3.webp",
       "bg_gacha407_4.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha407_1.webp",
+      "cardname_gacha407_2.webp",
+      "cardname_gacha407_3.webp",
+      "cardname_gacha407_4.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha407_banner.webp"
@@ -2654,7 +2667,11 @@
       "bg_gacha414_2.webp",
       "bg_gacha414_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha414_1.webp",
+      "cardname_gacha414_2.webp",
+      "cardname_gacha414_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha414_banner.webp"
@@ -2740,7 +2757,11 @@
       "bg_gacha422_2.webp",
       "bg_gacha422_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha422_1.webp",
+      "cardname_gacha422_2.webp",
+      "cardname_gacha422_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": []
   },
@@ -2798,7 +2819,11 @@
       "bg_gacha426_2.webp",
       "bg_gacha426_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha426_1.webp",
+      "cardname_gacha426_2.webp",
+      "cardname_gacha426_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha426_banner.webp"
@@ -2883,7 +2908,10 @@
       "bg_gacha434_1.webp",
       "bg_gacha434_2.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha434_1.webp",
+      "cardname_gacha434_2.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha434_banner.webp"
@@ -2958,7 +2986,12 @@
       "bg_gacha442_3.webp",
       "bg_gacha442_4.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha442_1.webp",
+      "cardname_gacha442_2.webp",
+      "cardname_gacha442_3.webp",
+      "cardname_gacha442_4.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha442_banner.webp"
@@ -2970,7 +3003,11 @@
       "bg_gacha443_2.webp",
       "bg_gacha443_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha443_1.webp",
+      "cardname_gacha443_2.webp",
+      "cardname_gacha443_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha443_banner.webp"
@@ -2982,7 +3019,11 @@
       "bg_gacha444_2.webp",
       "bg_gacha444_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha444_1.webp",
+      "cardname_gacha444_2.webp",
+      "cardname_gacha444_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha444_banner.webp"
@@ -2994,7 +3035,11 @@
       "bg_gacha445_2.webp",
       "bg_gacha445_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha445_1.webp",
+      "cardname_gacha445_2.webp",
+      "cardname_gacha445_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha445_banner.webp"
@@ -3006,7 +3051,11 @@
       "bg_gacha446_2.webp",
       "bg_gacha446_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha446_1.webp",
+      "cardname_gacha446_2.webp",
+      "cardname_gacha446_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha446_banner.webp"
@@ -3080,7 +3129,11 @@
       "bg_gacha454_2.webp",
       "bg_gacha454_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha454_1.webp",
+      "cardname_gacha454_2.webp",
+      "cardname_gacha454_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha454_banner.webp"
@@ -3118,7 +3171,11 @@
       "bg_gacha459_2.webp",
       "bg_gacha459_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha459_1.webp",
+      "cardname_gacha459_2.webp",
+      "cardname_gacha459_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha459_banner.webp"
@@ -3130,7 +3187,11 @@
       "bg_gacha460_2.webp",
       "bg_gacha460_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha460_1.webp",
+      "cardname_gacha460_2.webp",
+      "cardname_gacha460_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha460_banner.webp"
@@ -3168,7 +3229,11 @@
       "bg_gacha464_2.webp",
       "bg_gacha464_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha464_1.webp",
+      "cardname_gacha464_2.webp",
+      "cardname_gacha464_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha464_banner.webp"
@@ -3180,7 +3245,11 @@
       "bg_gacha465_2.webp",
       "bg_gacha465_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha465_1.webp",
+      "cardname_gacha465_2.webp",
+      "cardname_gacha465_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha465_banner.webp"
@@ -3192,7 +3261,11 @@
       "bg_gacha466_2.webp",
       "bg_gacha466_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha466_1.webp",
+      "cardname_gacha466_2.webp",
+      "cardname_gacha466_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha466_banner.webp"
@@ -3214,7 +3287,11 @@
       "bg_gacha468_2.webp",
       "bg_gacha468_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha468_1.webp",
+      "cardname_gacha468_2.webp",
+      "cardname_gacha468_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha468_banner.webp"
@@ -3263,7 +3340,12 @@
       "bg_gacha474_3.webp",
       "bg_gacha474_4.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha474_1.webp",
+      "cardname_gacha474_2.webp",
+      "cardname_gacha474_3.webp",
+      "cardname_gacha474_4.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": []
   },
@@ -3273,7 +3355,11 @@
       "bg_gacha476_2.webp",
       "bg_gacha476_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha476_1.webp",
+      "cardname_gacha476_2.webp",
+      "cardname_gacha476_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": []
   },
@@ -3283,7 +3369,11 @@
       "bg_gacha477_2.webp",
       "bg_gacha477_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha477_1.webp",
+      "cardname_gacha477_2.webp",
+      "cardname_gacha477_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": []
   },
@@ -3293,7 +3383,11 @@
       "bg_gacha478_2.webp",
       "bg_gacha478_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha478_1.webp",
+      "cardname_gacha478_2.webp",
+      "cardname_gacha478_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": []
   },
@@ -3329,7 +3423,11 @@
       "bg_gacha482_2.webp",
       "bg_gacha482_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha482_1.webp",
+      "cardname_gacha482_2.webp",
+      "cardname_gacha482_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha482_banner.webp"
@@ -3406,7 +3504,11 @@
       "bg_gacha489_2.webp",
       "bg_gacha489_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha489_1.webp",
+      "cardname_gacha489_2.webp",
+      "cardname_gacha489_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha489_banner.webp"
@@ -3418,7 +3520,11 @@
       "bg_gacha490_2.webp",
       "bg_gacha490_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha490_1.webp",
+      "cardname_gacha490_2.webp",
+      "cardname_gacha490_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha490_banner.webp"
@@ -3431,7 +3537,12 @@
       "bg_gacha491_3.webp",
       "bg_gacha491_4.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha491_1.webp",
+      "cardname_gacha491_2.webp",
+      "cardname_gacha491_3.webp",
+      "cardname_gacha491_4.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha491_banner.webp"
@@ -3483,7 +3594,11 @@
       "bg_gacha496_2.webp",
       "bg_gacha496_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha496_1.webp",
+      "cardname_gacha496_2.webp",
+      "cardname_gacha496_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha496_banner.webp"
@@ -3495,7 +3610,11 @@
       "bg_gacha497_2.webp",
       "bg_gacha497_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha497_1.webp",
+      "cardname_gacha497_2.webp",
+      "cardname_gacha497_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha497_banner.webp"
@@ -3507,7 +3626,11 @@
       "bg_gacha498_2.webp",
       "bg_gacha498_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha498_1.webp",
+      "cardname_gacha498_2.webp",
+      "cardname_gacha498_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha498_banner.webp"
@@ -3517,7 +3640,9 @@
     "bg": [
       "bg_gacha499.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha499.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha499_banner.webp"
@@ -3555,7 +3680,11 @@
       "bg_gacha503_2.webp",
       "bg_gacha503_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha503_1.webp",
+      "cardname_gacha503_2.webp",
+      "cardname_gacha503_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha503_banner.webp"
@@ -3604,7 +3733,12 @@
       "bg_gacha509_3.webp",
       "bg_gacha509_4.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha509_1.webp",
+      "cardname_gacha509_2.webp",
+      "cardname_gacha509_3.webp",
+      "cardname_gacha509_4.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha509_banner.webp"
@@ -3616,7 +3750,11 @@
       "bg_gacha510_2.webp",
       "bg_gacha510_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha510_1.webp",
+      "cardname_gacha510_2.webp",
+      "cardname_gacha510_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha510_banner.webp"
@@ -3628,7 +3766,11 @@
       "bg_gacha511_2.webp",
       "bg_gacha511_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha511_1.webp",
+      "cardname_gacha511_2.webp",
+      "cardname_gacha511_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha511_banner.webp"
@@ -3640,7 +3782,11 @@
       "bg_gacha512_2.webp",
       "bg_gacha512_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha512_1.webp",
+      "cardname_gacha512_2.webp",
+      "cardname_gacha512_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha512_banner.webp"
@@ -3678,7 +3824,11 @@
       "bg_gacha516_2.webp",
       "bg_gacha516_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha516_1.webp",
+      "cardname_gacha516_2.webp",
+      "cardname_gacha516_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha516_banner.webp"
@@ -3726,7 +3876,11 @@
       "bg_gacha521_2.webp",
       "bg_gacha521_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha521_1.webp",
+      "cardname_gacha521_2.webp",
+      "cardname_gacha521_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha521_banner.webp"
@@ -3738,7 +3892,11 @@
       "bg_gacha523_2.webp",
       "bg_gacha523_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha523_1.webp",
+      "cardname_gacha523_2.webp",
+      "cardname_gacha523_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha523_banner.webp"
@@ -3750,7 +3908,11 @@
       "bg_gacha524_2.webp",
       "bg_gacha524_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha524_1.webp",
+      "cardname_gacha524_2.webp",
+      "cardname_gacha524_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": []
   },
@@ -3761,7 +3923,12 @@
       "bg_gacha525_3.webp",
       "bg_gacha525_4.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha525_1.webp",
+      "cardname_gacha525_2.webp",
+      "cardname_gacha525_3.webp",
+      "cardname_gacha525_4.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha525_banner.webp"
@@ -3773,7 +3940,11 @@
       "bg_gacha526_2.webp",
       "bg_gacha526_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha526_1.webp",
+      "cardname_gacha526_2.webp",
+      "cardname_gacha526_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": []
   },
@@ -3809,7 +3980,11 @@
       "bg_gacha529_2.webp",
       "bg_gacha529_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha529_1.webp",
+      "cardname_gacha529_2.webp",
+      "cardname_gacha529_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha529_banner.webp"
@@ -3851,6 +4026,11 @@
       "bg_gacha533.webp"
     ],
     "img": [
+      "cardname_gacha533_1.webp",
+      "cardname_gacha533_2.webp",
+      "cardname_gacha533_3.webp",
+      "cardname_gacha533_4.webp",
+      "cardname_gacha533_5.webp",
       "img_gacha533_1.webp",
       "img_gacha533_2.webp"
     ],
@@ -3865,7 +4045,11 @@
       "bg_gacha535_2.webp",
       "bg_gacha535_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha535_1.webp",
+      "cardname_gacha535_2.webp",
+      "cardname_gacha535_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha535_banner.webp"
@@ -3877,7 +4061,11 @@
       "bg_gacha536_2.webp",
       "bg_gacha536_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha536_1.webp",
+      "cardname_gacha536_2.webp",
+      "cardname_gacha536_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha536_banner.webp"
@@ -3899,7 +4087,11 @@
       "bg_gacha538_2.webp",
       "bg_gacha538_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha538_1.webp",
+      "cardname_gacha538_2.webp",
+      "cardname_gacha538_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": []
   },
@@ -3909,7 +4101,11 @@
       "bg_gacha539_2.webp",
       "bg_gacha539_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha539_1.webp",
+      "cardname_gacha539_2.webp",
+      "cardname_gacha539_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": []
   },
@@ -3919,7 +4115,11 @@
       "bg_gacha540_2.webp",
       "bg_gacha540_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha540_1.webp",
+      "cardname_gacha540_2.webp",
+      "cardname_gacha540_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": []
   },
@@ -3930,7 +4130,12 @@
       "bg_gacha541_3.webp",
       "bg_gacha541_4.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha541_1.webp",
+      "cardname_gacha541_2.webp",
+      "cardname_gacha541_3.webp",
+      "cardname_gacha541_4.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha541_banner.webp"
@@ -4004,7 +4209,11 @@
       "bg_gacha549_2.webp",
       "bg_gacha549_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha549_1.webp",
+      "cardname_gacha549_2.webp",
+      "cardname_gacha549_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": []
   },
@@ -4014,7 +4223,11 @@
       "bg_gacha551_2.webp",
       "bg_gacha551_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha551_1.webp",
+      "cardname_gacha551_2.webp",
+      "cardname_gacha551_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha551_banner.webp"
@@ -4062,7 +4275,11 @@
       "bg_gacha556_2.webp",
       "bg_gacha556_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha556_1.webp",
+      "cardname_gacha556_2.webp",
+      "cardname_gacha556_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": []
   },
@@ -4072,7 +4289,11 @@
       "bg_gacha557_2.webp",
       "bg_gacha557_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha557_1.webp",
+      "cardname_gacha557_2.webp",
+      "cardname_gacha557_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": []
   },
@@ -4082,7 +4303,11 @@
       "bg_gacha558_2.webp",
       "bg_gacha558_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha558_1.webp",
+      "cardname_gacha558_2.webp",
+      "cardname_gacha558_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": []
   },
@@ -4095,7 +4320,14 @@
       "bg_gacha559_5.webp",
       "bg_gacha559_6.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha559_1.webp",
+      "cardname_gacha559_2.webp",
+      "cardname_gacha559_3.webp",
+      "cardname_gacha559_4.webp",
+      "cardname_gacha559_5.webp",
+      "cardname_gacha559_6.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha559_banner.webp"
@@ -4142,7 +4374,9 @@
       "bg_gacha564_1.webp",
       "bg_gacha564_2.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha564.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha564_banner.webp"
@@ -4180,7 +4414,11 @@
       "bg_gacha568_2.webp",
       "bg_gacha568_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha568_1.webp",
+      "cardname_gacha568_2.webp",
+      "cardname_gacha568_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha568_banner.webp"
@@ -4218,7 +4456,11 @@
       "bg_gacha573_2.webp",
       "bg_gacha573_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha573_1.webp",
+      "cardname_gacha573_2.webp",
+      "cardname_gacha573_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha573_banner.webp"
@@ -4231,7 +4473,12 @@
       "bg_gacha574_3.webp",
       "bg_gacha574_4.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha574_1.webp",
+      "cardname_gacha574_2.webp",
+      "cardname_gacha574_3.webp",
+      "cardname_gacha574_4.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha574_banner.webp"
@@ -4243,7 +4490,11 @@
       "bg_gacha575_2.webp",
       "bg_gacha575_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha575_1.webp",
+      "cardname_gacha575_2.webp",
+      "cardname_gacha575_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha575_banner.webp"
@@ -4255,7 +4506,11 @@
       "bg_gacha576_2.webp",
       "bg_gacha576_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha576_1.webp",
+      "cardname_gacha576_2.webp",
+      "cardname_gacha576_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": []
   },
@@ -4265,7 +4520,11 @@
       "bg_gacha577_2.webp",
       "bg_gacha577_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha577_1.webp",
+      "cardname_gacha577_2.webp",
+      "cardname_gacha577_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha577_banner.webp"
@@ -4308,6 +4567,12 @@
       "bg_gacha581.webp"
     ],
     "img": [
+      "cardname_gacha581_1.webp",
+      "cardname_gacha581_2.webp",
+      "cardname_gacha581_3.webp",
+      "cardname_gacha581_4.webp",
+      "cardname_gacha581_5.webp",
+      "cardname_gacha581_6.webp",
       "img_gacha581_1.webp",
       "img_gacha581_2.webp"
     ],
@@ -4331,7 +4596,9 @@
       "bg_gacha583_1.webp",
       "bg_gacha583_2.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha583.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": []
   },
@@ -4340,7 +4607,9 @@
       "bg_gacha584_1.webp",
       "bg_gacha584_2.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha584.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": []
   },
@@ -4349,7 +4618,9 @@
       "bg_gacha585_1.webp",
       "bg_gacha585_2.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha585.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": []
   },
@@ -4358,7 +4629,9 @@
       "bg_gacha586_1.webp",
       "bg_gacha586_2.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha586.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": []
   },
@@ -4367,7 +4640,9 @@
       "bg_gacha587_1.webp",
       "bg_gacha587_2.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha587.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": []
   },
@@ -4406,7 +4681,12 @@
       "bg_gacha591_3.webp",
       "bg_gacha591_4.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha591_1.webp",
+      "cardname_gacha591_2.webp",
+      "cardname_gacha591_3.webp",
+      "cardname_gacha591_4.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha591_banner.webp"
@@ -4460,7 +4740,11 @@
       "bg_gacha598_2.webp",
       "bg_gacha598_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha598_1.webp",
+      "cardname_gacha598_2.webp",
+      "cardname_gacha598_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha598_banner.webp"
@@ -4483,7 +4767,12 @@
       "bg_gacha600_3.webp",
       "bg_gacha600_4.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha600_1.webp",
+      "cardname_gacha600_2.webp",
+      "cardname_gacha600_3.webp",
+      "cardname_gacha600_4.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha600_banner.webp"
@@ -4495,7 +4784,11 @@
       "bg_gacha601_2.webp",
       "bg_gacha601_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha601_1.webp",
+      "cardname_gacha601_2.webp",
+      "cardname_gacha601_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha601_banner.webp"
@@ -4515,7 +4808,11 @@
       "bg_gacha603_2.webp",
       "bg_gacha603_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha603_1.webp",
+      "cardname_gacha603_2.webp",
+      "cardname_gacha603_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha603_banner.webp"
@@ -4571,7 +4868,11 @@
       "bg_gacha609_2.webp",
       "bg_gacha609_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha609_1.webp",
+      "cardname_gacha609_2.webp",
+      "cardname_gacha609_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha609_banner.webp"
@@ -4617,7 +4918,11 @@
       "bg_gacha615_2.webp",
       "bg_gacha615_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha615_1.webp",
+      "cardname_gacha615_2.webp",
+      "cardname_gacha615_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha615_banner.webp"
@@ -4629,7 +4934,11 @@
       "bg_gacha616_2.webp",
       "bg_gacha616_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha616_1.webp",
+      "cardname_gacha616_2.webp",
+      "cardname_gacha616_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha616_banner.webp"
@@ -4642,7 +4951,12 @@
       "bg_gacha617_3.webp",
       "bg_gacha617_4.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha617_1.webp",
+      "cardname_gacha617_2.webp",
+      "cardname_gacha617_3.webp",
+      "cardname_gacha617_4.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": []
   },
@@ -4686,7 +5000,11 @@
       "bg_gacha622_2.webp",
       "bg_gacha622_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha622_1.webp",
+      "cardname_gacha622_2.webp",
+      "cardname_gacha622_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha622_banner.webp"
@@ -4708,7 +5026,11 @@
       "bg_gacha624_2.webp",
       "bg_gacha624_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha624_1.webp",
+      "cardname_gacha624_2.webp",
+      "cardname_gacha624_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha624_banner.webp"
@@ -4768,7 +5090,11 @@
       "bg_gacha631_2.webp",
       "bg_gacha631_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha631_1.webp",
+      "cardname_gacha631_2.webp",
+      "cardname_gacha631_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha631_banner.webp"
@@ -4780,7 +5106,11 @@
       "bg_gacha632_2.webp",
       "bg_gacha632_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha632_1.webp",
+      "cardname_gacha632_2.webp",
+      "cardname_gacha632_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha632_banner.webp"
@@ -4792,7 +5122,11 @@
       "bg_gacha633_2.webp",
       "bg_gacha633_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha633_1.webp",
+      "cardname_gacha633_2.webp",
+      "cardname_gacha633_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha633_banner.webp"
@@ -4804,7 +5138,11 @@
       "bg_gacha634_2.webp",
       "bg_gacha634_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha634_1.webp",
+      "cardname_gacha634_2.webp",
+      "cardname_gacha634_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha634_banner.webp"
@@ -4886,6 +5224,11 @@
       "bg_gacha643_5.webp"
     ],
     "img": [
+      "cardname_gacha643_1.webp",
+      "cardname_gacha643_2.webp",
+      "cardname_gacha643_3.webp",
+      "cardname_gacha643_4.webp",
+      "cardname_gacha643_5.webp",
       "img_gacha643_1.webp",
       "img_gacha643_2.webp"
     ],
@@ -4899,7 +5242,10 @@
       "bg_gacha644_1.webp",
       "bg_gacha644_2.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha644_1.webp",
+      "cardname_gacha644_2.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha644_banner.webp"
@@ -4941,7 +5287,11 @@
       "bg_gacha648_2.webp",
       "bg_gacha648_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha648_1.webp",
+      "cardname_gacha648_2.webp",
+      "cardname_gacha648_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": []
   },
@@ -4985,7 +5335,11 @@
       "bg_gacha654_2.webp",
       "bg_gacha654_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha654_1.webp",
+      "cardname_gacha654_2.webp",
+      "cardname_gacha654_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha654_banner.webp"
@@ -4997,7 +5351,11 @@
       "bg_gacha655_2.webp",
       "bg_gacha655_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha655_1.webp",
+      "cardname_gacha655_2.webp",
+      "cardname_gacha655_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha655_banner.webp"
@@ -5009,7 +5367,11 @@
       "bg_gacha656_2.webp",
       "bg_gacha656_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha656_1.webp",
+      "cardname_gacha656_2.webp",
+      "cardname_gacha656_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha656_banner.webp"
@@ -5071,7 +5433,11 @@
       "bg_gacha662_2.webp",
       "bg_gacha662_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha662_1.webp",
+      "cardname_gacha662_2.webp",
+      "cardname_gacha662_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": []
   },
@@ -5159,7 +5525,11 @@
       "bg_gacha672_2.webp",
       "bg_gacha672_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha672_1.webp",
+      "cardname_gacha672_2.webp",
+      "cardname_gacha672_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha672_banner.webp"
@@ -5205,7 +5575,11 @@
       "bg_gacha678_2.webp",
       "bg_gacha678_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha678_1.webp",
+      "cardname_gacha678_2.webp",
+      "cardname_gacha678_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha678_banner.webp"
@@ -5217,7 +5591,11 @@
       "bg_gacha679_2.webp",
       "bg_gacha679_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha679_1.webp",
+      "cardname_gacha679_2.webp",
+      "cardname_gacha679_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha679_banner.webp"
@@ -5229,7 +5607,11 @@
       "bg_gacha680_2.webp",
       "bg_gacha680_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha680_1.webp",
+      "cardname_gacha680_2.webp",
+      "cardname_gacha680_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha680_banner.webp"
@@ -5281,7 +5663,16 @@
       "bg_gacha685_7.webp",
       "bg_gacha685_8.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha685_1.webp",
+      "cardname_gacha685_2.webp",
+      "cardname_gacha685_3.webp",
+      "cardname_gacha685_4.webp",
+      "cardname_gacha685_5.webp",
+      "cardname_gacha685_6.webp",
+      "cardname_gacha685_7.webp",
+      "cardname_gacha685_8.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha685_banner.webp"
@@ -5291,7 +5682,9 @@
     "bg": [
       "bg_gacha686.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha686.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha686_banner.webp"
@@ -5303,7 +5696,11 @@
       "bg_gacha687_2.webp",
       "bg_gacha687_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha687_1.webp",
+      "cardname_gacha687_2.webp",
+      "cardname_gacha687_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": []
   },
@@ -5323,7 +5720,11 @@
       "bg_gacha689_2.webp",
       "bg_gacha689_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha689_1.webp",
+      "cardname_gacha689_2.webp",
+      "cardname_gacha689_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha689_banner.webp"
@@ -5368,7 +5769,10 @@
       "bg_gacha695_1.webp",
       "bg_gacha695_2.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha695_1.webp",
+      "cardname_gacha695_2.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha695_banner.webp"
@@ -5380,7 +5784,11 @@
       "bg_gacha696_2.webp",
       "bg_gacha696_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha696_1.webp",
+      "cardname_gacha696_2.webp",
+      "cardname_gacha696_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha696_banner.webp"
@@ -5392,7 +5800,11 @@
       "bg_gacha697_2.webp",
       "bg_gacha697_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha697_1.webp",
+      "cardname_gacha697_2.webp",
+      "cardname_gacha697_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha697_banner.webp"
@@ -5405,7 +5817,12 @@
       "bg_gacha698_3.webp",
       "bg_gacha698_4.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha698_1.webp",
+      "cardname_gacha698_2.webp",
+      "cardname_gacha698_3.webp",
+      "cardname_gacha698_4.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": []
   },
@@ -5449,7 +5866,11 @@
       "bg_gacha703_2.webp",
       "bg_gacha703_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha703_1.webp",
+      "cardname_gacha703_2.webp",
+      "cardname_gacha703_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha703_banner.webp"
@@ -5465,6 +5886,11 @@
       "bg_gacha704_5.webp"
     ],
     "img": [
+      "cardname_gacha704_1.webp",
+      "cardname_gacha704_2.webp",
+      "cardname_gacha704_3.webp",
+      "cardname_gacha704_4.webp",
+      "cardname_gacha704_5.webp",
       "img_gacha704_1.webp",
       "img_gacha704_2.webp"
     ],
@@ -5478,7 +5904,9 @@
       "bg_gacha705_1.webp",
       "bg_gacha705_2.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha705.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha705_banner.webp"
@@ -5524,7 +5952,11 @@
       "bg_gacha711_2.webp",
       "bg_gacha711_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha711_1.webp",
+      "cardname_gacha711_2.webp",
+      "cardname_gacha711_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha711_banner.webp"
@@ -5547,7 +5979,12 @@
       "bg_gacha713_3.webp",
       "bg_gacha713_4.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha713_1.webp",
+      "cardname_gacha713_2.webp",
+      "cardname_gacha713_3.webp",
+      "cardname_gacha713_4.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha713_banner.webp"
@@ -5559,7 +5996,11 @@
       "bg_gacha714_2.webp",
       "bg_gacha714_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha714_1.webp",
+      "cardname_gacha714_2.webp",
+      "cardname_gacha714_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha714_banner.webp"
@@ -5571,7 +6012,11 @@
       "bg_gacha715_2.webp",
       "bg_gacha715_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha715_1.webp",
+      "cardname_gacha715_2.webp",
+      "cardname_gacha715_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha715_banner.webp"
@@ -5617,7 +6062,11 @@
       "bg_gacha720_2.webp",
       "bg_gacha720_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha720_1.webp",
+      "cardname_gacha720_2.webp",
+      "cardname_gacha720_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha720_banner.webp"
@@ -5663,7 +6112,11 @@
       "bg_gacha725_2.webp",
       "bg_gacha725_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha725_1.webp",
+      "cardname_gacha725_2.webp",
+      "cardname_gacha725_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha725_banner.webp"
@@ -5730,7 +6183,12 @@
       "bg_gacha733_3.webp",
       "bg_gacha733_4.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha733_1.webp",
+      "cardname_gacha733_2.webp",
+      "cardname_gacha733_3.webp",
+      "cardname_gacha733_4.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": []
   },
@@ -5740,7 +6198,11 @@
       "bg_gacha734_2.webp",
       "bg_gacha734_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha734_1.webp",
+      "cardname_gacha734_2.webp",
+      "cardname_gacha734_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha734_banner.webp"
@@ -5753,7 +6215,12 @@
       "bg_gacha735_3.webp",
       "bg_gacha735_4.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha735_1.webp",
+      "cardname_gacha735_2.webp",
+      "cardname_gacha735_3.webp",
+      "cardname_gacha735_4.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha735_banner.webp"
@@ -5799,7 +6266,11 @@
       "bg_gacha740_2.webp",
       "bg_gacha740_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha740_1.webp",
+      "cardname_gacha740_2.webp",
+      "cardname_gacha740_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha740_banner.webp"
@@ -5853,7 +6324,11 @@
       "bg_gacha746_2.webp",
       "bg_gacha746_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha746_1.webp",
+      "cardname_gacha746_2.webp",
+      "cardname_gacha746_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha746_banner.webp"
@@ -5876,7 +6351,12 @@
       "bg_gacha749_3.webp",
       "bg_gacha749_4.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha749_1.webp",
+      "cardname_gacha749_2.webp",
+      "cardname_gacha749_3.webp",
+      "cardname_gacha749_4.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha749_banner.webp"
@@ -5888,7 +6368,11 @@
       "bg_gacha750_2.webp",
       "bg_gacha750_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha750_1.webp",
+      "cardname_gacha750_2.webp",
+      "cardname_gacha750_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha750_banner.webp"
@@ -5900,7 +6384,11 @@
       "bg_gacha751_2.webp",
       "bg_gacha751_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha751_1.webp",
+      "cardname_gacha751_2.webp",
+      "cardname_gacha751_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": []
   },
@@ -5955,7 +6443,12 @@
       "bg_gacha757_3.webp",
       "bg_gacha757_4.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha757_1.webp",
+      "cardname_gacha757_2.webp",
+      "cardname_gacha757_3.webp",
+      "cardname_gacha757_4.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha757_banner.webp"
@@ -5975,7 +6468,9 @@
     "bg": [
       "bg_gacha759.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha759.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha759_banner.webp"
@@ -5985,7 +6480,9 @@
     "bg": [
       "bg_gacha760.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha760.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha760_banner.webp"
@@ -6001,6 +6498,11 @@
       "bg_gacha762_5.webp"
     ],
     "img": [
+      "cardname_gacha762_1.webp",
+      "cardname_gacha762_2.webp",
+      "cardname_gacha762_3.webp",
+      "cardname_gacha762_4.webp",
+      "cardname_gacha762_5.webp",
       "img_gacha762_1.webp",
       "img_gacha762_2.webp"
     ],
@@ -6015,7 +6517,11 @@
       "bg_gacha763_2.webp",
       "bg_gacha763_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha763_1.webp",
+      "cardname_gacha763_2.webp",
+      "cardname_gacha763_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha763_banner.webp"
@@ -6027,7 +6533,11 @@
       "bg_gacha764_2.webp",
       "bg_gacha764_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha764_1.webp",
+      "cardname_gacha764_2.webp",
+      "cardname_gacha764_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha764_banner.webp"
@@ -6039,7 +6549,11 @@
       "bg_gacha765_2.webp",
       "bg_gacha765_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha765_1.webp",
+      "cardname_gacha765_2.webp",
+      "cardname_gacha765_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": []
   },
@@ -6049,7 +6563,11 @@
       "bg_gacha766_2.webp",
       "bg_gacha766_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha766_1.webp",
+      "cardname_gacha766_2.webp",
+      "cardname_gacha766_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha766_banner.webp"
@@ -6095,7 +6613,11 @@
       "bg_gacha771_2.webp",
       "bg_gacha771_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha771_1.webp",
+      "cardname_gacha771_2.webp",
+      "cardname_gacha771_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha771_banner.webp"
@@ -6167,7 +6689,11 @@
       "bg_gacha778_2.webp",
       "bg_gacha778_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha778_1.webp",
+      "cardname_gacha778_2.webp",
+      "cardname_gacha778_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha778_banner.webp"
@@ -6203,7 +6729,12 @@
       "bg_gacha782_3.webp",
       "bg_gacha782_4.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha782_1.webp",
+      "cardname_gacha782_2.webp",
+      "cardname_gacha782_3.webp",
+      "cardname_gacha782_4.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha782_banner.webp"
@@ -6249,7 +6780,11 @@
       "bg_gacha787_2.webp",
       "bg_gacha787_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha787_1.webp",
+      "cardname_gacha787_2.webp",
+      "cardname_gacha787_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": [
       "Gacha787_banner.webp"
@@ -6261,7 +6796,11 @@
       "bg_gacha788_2.webp",
       "bg_gacha788_3.webp"
     ],
-    "img": [],
+    "img": [
+      "cardname_gacha788_1.webp",
+      "cardname_gacha788_2.webp",
+      "cardname_gacha788_3.webp"
+    ],
     "logo": "logo/logo.webp",
     "banner": []
   },

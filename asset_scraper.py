@@ -963,7 +963,7 @@ def generate_gacha_manifest(
             for fname in os.listdir(texture_dir):
                 if fname.startswith("bg_") and fname.endswith(".webp"):
                     bg_files.append(fname)
-                elif fname.startswith("img_") and fname.endswith(".webp"):
+                elif fname.startswith("img_") or fname.startswith("cardname_") and fname.endswith(".webp"):
                     img_files.append(fname)
 
         # Find logo file
