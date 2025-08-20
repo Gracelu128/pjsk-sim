@@ -3,6 +3,20 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import NextImage from "next/image";
+import { logoPath } from "@/utils/assetPaths";
+
+function sanitizeManifest(m) {
+  const out = {};
+  for (const [id, e] of Object.entries(m || {})) {
+    out[id] = {
+      logo: typeof e.logo === "string" && /\.[a-z0-9]{2,5}$/i.test(e.logo) ? e.logo : null,
+      bg: Array.isArray(e.bg) ? e.bg.filter(f => /\.[a-z0-9]{2,5}$/i.test(f)) : [],
+      img: Array.isArray(e.img) ? e.img.filter(f => /\.[a-z0-9]{2,5}$/i.test(f)) : [],
+      banner: Array.isArray(e.banner) ? e.banner.filter(f => /\.[a-z0-9]{2,5}$/i.test(f)) : [],
+    };
+  }
+  return out;
+}
 
 export default function Home() {
   const [manifest, setManifest] = useState({});
@@ -10,7 +24,7 @@ export default function Home() {
   useEffect(() => {
     fetch("/gacha/manifest.json")
       .then(res => res.json())
-      .then(setManifest);
+      .then(data => setManifest(sanitizeManifest(data)));
   }, []);
 
   const gachaIds = Object.keys(manifest);
@@ -33,11 +47,16 @@ export default function Home() {
         }}
       >
         {gachaIds.map((id) => {
-          const logoPath = `/gacha/gacha_${id}/${manifest[id]?.logo ?? "logo.png"}`;
+          const entry = manifest[id];
+          const src = logoPath(id, entry); // returns string or null
+
+          if (!src) return null; // skip cards without a valid logo file
+
           return (
             <Link
               key={id}
-              href={`/gacha/gacha_${id}`} // URL will be /gacha/gacha_123
+              href={`/gacha/gacha_${id}`}
+              prefetch={false}
               style={{
                 display: "block",
                 border: "1px solid #e2e2e2",
@@ -59,10 +78,9 @@ export default function Home() {
                 }}
               >
                 <NextImage
-                  src={logoPath}
+                  src={src}                 // ✅ use the computed URL
                   alt={`${id} logo`}
                   fill
-                  unoptimized
                   sizes="160px"
                   style={{ objectFit: "contain" }}
                 />
@@ -80,6 +98,7 @@ export default function Home() {
             </Link>
           );
         })}
+
       </div>
     </main>
   );

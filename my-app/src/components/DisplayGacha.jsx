@@ -1,3 +1,4 @@
+// src/components/DisplayGacha.jsx
 "use client";
 
 import { useMemo } from "react";
@@ -5,89 +6,128 @@ import NextImage from "next/image";
 import useCountdown from "@/hooks/useCountdown";
 import useWindowSize from "@/hooks/useWindowSize";
 import useNaturalSize from "@/hooks/useNaturalSize";
-
-const ASSET_BASE = process.env.NEXT_PUBLIC_ASSET_BASE_URL || "";
-
-function asset(path) {
-  return ASSET_BASE ? `${ASSET_BASE}${path}` : path;
-}
+import { bgPath, overlayPath, logoPath, bannerPath } from "@/utils/assetPaths";
 
 export default function DisplayGacha({ gachaId, manifest }) {
-  const assets = manifest[gachaId] || {};
-  const bgIndex = useCountdown(assets.bg?.length || 0, 4000);
-  const imgIndex = useCountdown(assets.img?.length || 0, 4000);
+  const entry = manifest?.[gachaId] || {};
+
+  // Cycle indices (only matter if arrays have length)
+  const bgLen = Array.isArray(entry.bg) ? entry.bg.length : 0;
+  const imgLen = Array.isArray(entry.img) ? entry.img.length : 0;
+  const bgIndex = useCountdown(bgLen, 4000);
+  const imgIndex = useCountdown(imgLen, 4000);
+
+  // Build safe URLs (null if not present / invalid)
+  const bgSrc = bgPath(gachaId, entry, bgIndex);
+  const overlaySrc = overlayPath(gachaId, entry, imgIndex);
+  const logoSrc = logoPath(gachaId, entry);
+  const bannerSrc = bannerPath(gachaId, entry, 0);
+
   const { width: vw, height: vh } = useWindowSize();
 
-  if (!assets.bg && !assets.img && !assets.logo && !assets.banner) {
-    return <div style={{ padding: 16 }}>No assets found for this gacha.</div>;
+  // If we have a background, use its natural size to compute stage; else fall back to viewport
+  const { w: natW, h: natH } = useNaturalSize(bgSrc || "");
+  const { stageW, stageH } = useMemo(() => {
+    if (bgSrc && natW && natH && vw && vh) {
+      const scale = Math.min(vw / natW, vh / natH);
+      return { stageW: Math.floor(natW * scale), stageH: Math.floor(natH * scale) };
+    }
+    // Fallback stage to viewport if no bg (or not yet measured)
+    return { stageW: Math.max(0, vw), stageH: Math.max(0, vh) };
+  }, [bgSrc, natW, natH, vw, vh]);
+
+  const ready = stageW > 0 && stageH > 0;
+
+  // If literally nothing to show, render a small note
+  if (!bgSrc && !overlaySrc && !logoSrc && !bannerSrc) {
+    return <div style={{ padding: 16, color: "#bbb" }}>No assets found for this gacha.</div>;
   }
 
-  const bgSrc =
-    assets.bg?.length
-      ? asset(`/gacha/gacha_${gachaId}/screen/texture/${assets.bg[bgIndex]}`)
-      : null;
-
-  const { w: natW, h: natH } = useNaturalSize(bgSrc);
-
-  const { stageW, stageH } = useMemo(() => {
-    if (!natW || !natH || !vw || !vh) return { stageW: 0, stageH: 0 };
-    const scale = Math.min(vw / natW, vh / natH);
-    return { stageW: Math.floor(natW * scale), stageH: Math.floor(natH * scale) };
-  }, [natW, natH, vw, vh]);
-
-  const ready = !!bgSrc && stageW > 0 && stageH > 0;
-
   return (
-    <div style={{ position: "fixed", inset: 0, background: "black", display: "flex", alignItems: "center", justifyContent: "center", overflow: "hidden" }}>
+    <div
+      style={{
+        position: "fixed",
+        inset: 0,
+        background: "black",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        overflow: "hidden",
+      }}
+    >
       {ready && (
-        <div style={{ position: "relative", width: stageW, height: stageH, overflow: "hidden" }}>
-          {/* Background (give priority so it shows asap) */}
+        <div
+          // THE STAGE: everything inside is clipped to these bounds
+          style={{
+            position: "relative",
+            width: stageW,
+            height: stageH,
+            overflow: "hidden",
+          }}
+        >
+          {/* Background (only if present) */}
           {bgSrc && (
             <NextImage
               src={bgSrc}
               alt={`Gacha ${gachaId} Background`}
               fill
               priority
-              style={{ objectFit: "contain" }}
               sizes={`${stageW}px`}
+              style={{ objectFit: "contain" }}
             />
           )}
 
-          {/* Overlay (lazy) */}
-          {assets.img?.length > 0 && (
+          {/* Overlay (only if present) */}
+          {overlaySrc && (
             <NextImage
-              src={asset(`/gacha/gacha_${gachaId}/screen/texture/${assets.img[imgIndex]}`)}
+              src={overlaySrc}
               alt={`Gacha ${gachaId} Overlay`}
               fill
-              style={{ objectFit: "contain", pointerEvents: "none" }}
               sizes={`${stageW}px`}
+              style={{ objectFit: "contain", pointerEvents: "none" }}
             />
           )}
 
-          {/* Logo (lazy, smaller target size) */}
-          {assets.logo && (
-            <div style={{ position: "absolute", right: "3%", bottom: "3%", width: Math.max(stageW * 0.12, 120), maxWidth: 240 }}>
+          {/* Logo (only if present) */}
+          {logoSrc && (
+            <div
+              style={{
+                position: "absolute",
+                right: "3%",
+                bottom: "3%",
+                width: Math.max(stageW * 0.12, 120),
+                maxWidth: 240,
+              }}
+            >
               <NextImage
-                src={asset(`/gacha/gacha_${gachaId}/${assets.logo}`)}
+                src={logoSrc}
                 alt={`Gacha ${gachaId} Logo`}
                 width={800}
                 height={400}
+                sizes="240px"
                 style={{ width: "100%", height: "auto", display: "block" }}
-                sizes="(max-width: 768px) 25vw, 240px"
               />
             </div>
           )}
 
-          {/* Banner (lazy, capped width) */}
-          {assets.banner?.length > 0 && (
-            <div style={{ position: "absolute", top: "5%", right: "3%", width: Math.min(stageW * 0.4, 380), zIndex: 5 }}>
+          {/* Banner (only if present) */}
+          {bannerSrc && (
+            <div
+              style={{
+                position: "absolute",
+                top: "5%",
+                right: "3%",
+                width: Math.min(stageW * 0.4, 380),
+                zIndex: 5,
+              }}
+            >
               <NextImage
-                src={asset(`/gacha/gacha_${gachaId}/banner/${assets.banner[0]}`)}
+                src={bannerSrc}
                 alt={`Gacha ${gachaId} Banner`}
                 width={1000}
                 height={500}
+                sizes="380px"
                 style={{ width: "100%", height: "auto", display: "block" }}
-                sizes="(max-width: 768px) 40vw, 380px"
               />
             </div>
           )}
