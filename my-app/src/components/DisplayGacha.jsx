@@ -142,14 +142,14 @@ export default function DisplayGacha({ gachaId, manifest }) {
 
           {/* TOP-LEFT: Return button */}
           {ui.returnBtn && (
-            <div style={{ position: "absolute", top: "2%", left: "2%", width: "5%" }}>
+            <div style={{ position: "absolute", top: "4%", left: "4%", width: "5%" }}>
               <NextImage
                 src={ui.returnBtn}
                 alt="Return"
                 width={pxW(0.08)}
                 height={pxH(0.08)}
                 sizes={`${pxW(0.08)}px`}
-                style={{ width: "100%", height: "auto", display: "block" }}
+                style={{ width: "90%", height: "auto", display: "block" }}
               />
             </div>
           )}
@@ -159,8 +159,8 @@ export default function DisplayGacha({ gachaId, manifest }) {
             <div
               style={{
                 position: "absolute",
-                top: "2%",
-                right: "2%",
+                top: "4%",
+                right: "4%",
                 display: "flex",
                 alignItems: "center",
                 gap: pxW(0.01),
@@ -169,7 +169,7 @@ export default function DisplayGacha({ gachaId, manifest }) {
               }}
             >
               {ui.tokenBarNormal && (
-                <div style={{ width: pxW(0.13) }}>
+                <div style={{ width: pxW(0.13), marginTop: "0.5%" }}>
                   <NextImage
                     src={ui.tokenBarNormal}
                     alt="Token bar"
@@ -181,7 +181,7 @@ export default function DisplayGacha({ gachaId, manifest }) {
                 </div>
               )}
               {ui.exchangeBtn && (
-                <div style={{ width: pxW(0.12) }}>
+                <div style={{ width: pxW(0.10) }}>
                   <NextImage
                     src={ui.exchangeBtn}
                     alt="Exchange"
@@ -205,14 +205,14 @@ export default function DisplayGacha({ gachaId, manifest }) {
                 </div>
               )}
               {ui.settingsBtn && (
-                <div style={{ width: pxW(0.06) }}>
+                <div style={{ width: pxW(0.06), marginRight: "-4%" }}>
                   <NextImage
                     src={ui.settingsBtn}
                     alt="Settings"
                     width={pxW(0.06)}
                     height={pxH(0.06)}
                     sizes={`${pxW(0.06)}px`}
-                    style={{ width: "83%", height: "auto", display: "block" }}
+                    style={{ width: "78%", height: "auto", display: "block" }}
                   />
                 </div>
               )}
@@ -225,9 +225,9 @@ export default function DisplayGacha({ gachaId, manifest }) {
               style={{
                 position: "absolute",
                 // a bit to the right of tabs panel
-                left: "18%",
+                left: "16%",
                 bottom: "10%",
-                width: "20%",
+                width: "23%",
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
@@ -313,11 +313,11 @@ export default function DisplayGacha({ gachaId, manifest }) {
               style={{
                 position: "absolute",
                 right: "3%",
-                bottom: "4%",
+                bottom: "10%",
                 width: "60%",
                 display: "flex",
                 justifyContent: "flex-end",
-                gap: pxW(0.012),
+                gap: pxW(0.010),
                 flexWrap: "wrap",
               }}
             >
