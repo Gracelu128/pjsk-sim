@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import NextImage from "next/image";
 import { logoPath } from "@/utils/assetPaths";
+import gachaMeta from "@/data/gacha_metadata.json"; // ✅ static import
 
 function sanitizeManifest(m) {
   const out = {};
@@ -30,13 +31,7 @@ export default function Home() {
   const gachaIds = Object.keys(manifest);
 
   return (
-    <main
-      style={{
-        minHeight: "100vh",
-        padding: "24px",
-        boxSizing: "border-box",
-      }}
-    >
+    <main style={{ minHeight: "100vh", padding: "24px", boxSizing: "border-box" }}>
       <h1 style={{ marginBottom: 16 }}>Card Gallery</h1>
 
       <div
@@ -48,14 +43,17 @@ export default function Home() {
       >
         {gachaIds.map((id) => {
           const entry = manifest[id];
-          const src = logoPath(id, entry); // returns string or null
+          const src = logoPath(id, entry);
+          if (!src) return null;
 
-          if (!src) return null; // skip cards without a valid logo file
+          // title key has spaces/parentheses → bracket syntax
+          const meta = gachaMeta?.[id];
+          const titleJP = meta?.["title (japanese)"] || ""; // fallback below
 
           return (
             <Link
               key={id}
-              href={`/gacha/gacha_${id}`}
+              href={`/gacha_${id}`}
               prefetch={false}
               style={{
                 display: "block",
@@ -78,27 +76,33 @@ export default function Home() {
                 }}
               >
                 <NextImage
-                  src={src}                 // ✅ use the computed URL
+                  src={src}
                   alt={`${id} logo`}
                   fill
                   sizes="160px"
                   style={{ objectFit: "contain" }}
                 />
               </div>
+
               <div
                 style={{
                   marginTop: 8,
-                  fontSize: 14,
+                  fontSize: 13,
+                  lineHeight: 1.2,
                   textAlign: "center",
-                  opacity: 0.9,
+                  opacity: 0.95,
+                  display: "-webkit-box",
+                  WebkitLineClamp: 2,      // clamp long titles to 2 lines
+                  WebkitBoxOrient: "vertical",
+                  overflow: "hidden",
                 }}
+                title={titleJP || `gacha_${id}`} // tooltip fallback
               >
-                {`gacha_${id}`}
+                {titleJP || `gacha_${id}`}
               </div>
             </Link>
           );
         })}
-
       </div>
     </main>
   );

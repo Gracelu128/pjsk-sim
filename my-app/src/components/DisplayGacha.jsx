@@ -3,6 +3,8 @@
 
 import { useMemo } from "react";
 import NextImage from "next/image";
+import FadeImage from "@/components/FadeImage";
+import Link from "next/link";
 import useCountdown from "@/hooks/useCountdown";
 import useWindowSize from "@/hooks/useWindowSize";
 import useNaturalSize from "@/hooks/useNaturalSize";
@@ -106,56 +108,59 @@ export default function DisplayGacha({ gachaId, manifest }) {
         <div style={{ position: "relative", width: stageW, height: stageH, overflow: "hidden" }}>
           {/* Background */}
           {bgSrc && (
-            <NextImage
+            <FadeImage
               src={bgSrc}
               alt={`Gacha ${gachaId} Background`}
               fill
               priority
               sizes={`${stageW}px`}
               style={{ objectFit: "contain" }}
+              duration={400}
             />
           )}
 
           {/* Overlay */}
           {overlaySrc && overlayIsFull && (
-            <NextImage
-              src={overlaySrc}
-              alt={`Gacha ${gachaId} Overlay FULL`}
-              fill
-              sizes={`${stageW}px`}
-              style={{ objectFit: "contain", pointerEvents: "none" }}
-            />
+            <FadeImage
+             src={overlaySrc}
+             alt={`Gacha ${gachaId} Overlay`}
+             fill
+             sizes={`${stageW}px`}
+             style={{ objectFit: "contain", pointerEvents: "none" }}
+             duration={400}
+           />
           )}
 
-          {/* Sprite/strip overlays (non-full screen) */}
-            {overlaySrc && !overlayIsFull && (
+          {/* Sprite/strip overlays (non-full-screen) */}
+          {overlaySrc && ovW > 0 && ovH > 0 && !overlayIsFull && (() => {
+            // stable box: 28% of stage height, preserve aspect from the current sprite
+            const boxH = Math.round(stageH * 0.28);
+            const aspect = ovW / ovH || 2.7; // fallback if something is odd
+            const boxW = Math.round(boxH * aspect);
+
+            return (
               <div
                 style={{
                   position: "absolute",
                   right: "7%",
-                  top: "48%",
-                  //transform: "translateY(-50%)",
-                  height: "28%",
-                  width: "auto",
+                  top: "63%",
+                  transform: "translateY(-50%)",   // keep it vertically centered
+                  width: boxW,
+                  height: boxH,
                   pointerEvents: "none",
                 }}
               >
-                <NextImage
+                <FadeImage
                   src={overlaySrc}
                   alt={`Gacha ${gachaId} Overlay (sprite)`}
-                  fill={false}
-                  width={ovW}
-                  height={ovH}
-                  style={{
-                    height: "100%",
-                    width: "auto",
-                    objectFit: "contain",
-                    display: "block",
-                  }}
+                  fill
+                  sizes={`${boxW}px`}
+                  style={{ objectFit: "contain", display: "block" }}
+                  duration={400}
                 />
               </div>
-            )}
-
+            );
+          })()}
 
           {/* LEFT: Tabs panel (centered vertically) */}
           {ui.tabsPanel && (
@@ -181,16 +186,21 @@ export default function DisplayGacha({ gachaId, manifest }) {
 
           {/* TOP-LEFT: Return button */}
           {ui.returnBtn && (
-            <div style={{ position: "absolute", top: "4%", left: "4%", width: "5%" }}>
+            <Link
+              href="/"
+              prefetch={false}
+              aria-label="Back to home"
+              style={{ position: "absolute", top: "4%", left: "4%", width: "5%", display: "block" }}
+            >
               <NextImage
                 src={ui.returnBtn}
                 alt="Return"
                 width={pxW(0.08)}
                 height={pxH(0.08)}
                 sizes={`${pxW(0.08)}px`}
-                style={{ width: "90%", height: "auto", display: "block" }}
+                style={{ width: "90%", height: "auto", display: "block", cursor: "pointer" }}
               />
-            </div>
+            </Link>
           )}
 
           {/* TOP-RIGHT BAR: tokenBarNormal, exchange, crystal, settings (right-aligned row) */}
@@ -220,16 +230,21 @@ export default function DisplayGacha({ gachaId, manifest }) {
                 </div>
               )}
               {ui.exchangeBtn && (
-                <div style={{ width: pxW(0.10) }}>
+                <Link
+                  href={`/gacha_${gachaId}/exchange`}
+                  prefetch={false}
+                  aria-label="Open exchange"
+                  style={{ width: pxW(0.10), display: "block" }}
+                >
                   <NextImage
                     src={ui.exchangeBtn}
                     alt="Exchange"
                     width={pxW(0.10)}
                     height={pxH(0.08)}
                     sizes={`${pxW(0.10)}px`}
-                    style={{ width: "100%", height: "auto", display: "block" }}
+                    style={{ width: "100%", height: "auto", display: "block", cursor: "pointer" }}
                   />
-                </div>
+                </Link>
               )}
               {ui.crystalBar && (
                 <div style={{ width: pxW(0.14), marginTop: "-2%" }}>
@@ -244,16 +259,21 @@ export default function DisplayGacha({ gachaId, manifest }) {
                 </div>
               )}
               {ui.settingsBtn && (
-                <div style={{ width: pxW(0.06), marginRight: "-4%" }}>
+                <Link
+                  href={`/gacha_${gachaId}/settings`}
+                  prefetch={false}
+                  aria-label="Open settings"
+                  style={{ width: pxW(0.06), display: "block", marginRight: "-4%" }}
+                >
                   <NextImage
                     src={ui.settingsBtn}
                     alt="Settings"
                     width={pxW(0.06)}
                     height={pxH(0.06)}
                     sizes={`${pxW(0.06)}px`}
-                    style={{ width: "78%", height: "auto", display: "block" }}
+                    style={{ width: "78%", height: "auto", display: "block", cursor: "pointer" }}
                   />
-                </div>
+                </Link>
               )}
             </div>
           )}
