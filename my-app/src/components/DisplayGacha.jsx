@@ -16,6 +16,7 @@ import {
   uiPath,
   UI_FILES,
 } from "@/utils/assetPaths";
+import buildLogoNav from "@/utils/buildLogoNav";
 
 export default function DisplayGacha({ gachaId, manifest }) {
   const entry = manifest?.[gachaId] || {};
@@ -107,6 +108,13 @@ export default function DisplayGacha({ gachaId, manifest }) {
   const pxW = (p) => Math.round(stageW * p);
   const pxH = (p) => Math.round(stageH * p);
 
+  //logos for tab panel
+  const navLogos = useMemo(
+    () => buildLogoNav(manifest || {}, gachaId, (id, entry) => logoPath(id, entry), 6, 2),
+    [manifest, gachaId]
+  );
+
+
   // -----------------------------------------------------------------------------------------
   // ---------------------------------------------ACTUAL UI-----------------------------------
   return (
@@ -179,7 +187,7 @@ export default function DisplayGacha({ gachaId, manifest }) {
             );
           })()}
 
-          {/* LEFT: Tabs panel (centered vertically) */}
+          {/* LEFT: Tabs panel with 6-logo navigator inside */}
           {ui.tabsPanel && (
             <div
               style={{
@@ -188,36 +196,77 @@ export default function DisplayGacha({ gachaId, manifest }) {
                 top: "50%",
                 transform: "translateY(-50%)",
                 width: "16%",
+                height: pxH(0.69),
+                zIndex: 6,
+                pointerEvents: "auto",
               }}
             >
-              <NextImage
-                src={ui.tabsPanel}
-                alt="Tabs panel"
-                width={pxW(0.16)}
-                height={pxH(0.6)}
-                sizes={`${pxW(0.16)}px`}
-                style={{ width: "100%", height: "auto", display: "block", pointerEvents: "none" }}
-              />
+              {/* Panel art */}
+              <div style={{ position: "absolute", inset: 0 }}>
+                <NextImage
+                  src={ui.tabsPanel}
+                  alt="Tabs panel"
+                  fill
+                  sizes={`${pxW(0.16)}px`}
+                  style={{ objectFit: "contain", pointerEvents: "none", display: "block" }}
+                />
+              </div>
+
+              {/* 6 logos inside panel bounds */}
+              <div
+                style={{
+                  position: "absolute",
+                  inset: "2% 2% 3% 14%",                 // inner padding
+                  display: "grid",
+                  gridTemplateRows: "repeat(6, 1fr)",     // six rows
+                  gap: "1%",
+                }}
+              >
+                {navLogos.slice(0, 6).map((item) => {
+                  const isCurrent = item.id === String(gachaId);
+                  return (
+                    <Link
+                      key={item.id}
+                      href={`/gacha_${item.id}`}
+                      prefetch
+                      scroll={false}
+                      aria-label={`Open gacha_${item.id}`}
+                      style={{
+                        position: "relative",
+                        width: "100%",
+                        height: "100%",
+                        borderRadius: 5,
+                        overflow: "hidden",
+                        border: isCurrent ? "2px solid #fff" : "none", //"1px solid rgba(255,255,255,0.35)",
+                        boxShadow: isCurrent ? "0 0 0 3px rgba(255,255,255,0.25)" : "none",
+                      }}
+                    >
+                      <NextImage
+                        src={item.src}
+                        alt={`gacha_${item.id} logo`}
+                        fill
+                        sizes="160px"
+                        style={{ objectFit: "contain", display: "block", scale: "85%" }}
+                      />
+                    </Link>
+                  );
+                })}
+              </div>
             </div>
           )}
 
           {/* TOP-LEFT: Return button */}
           {ui.returnBtn && (
-            <Link
-              href="/"
-              prefetch={false}
-              aria-label="Back to home"
-              style={{ position: "absolute", top: "4%", left: "4%", width: "5%", display: "block" }}
-            >
+            <div style={{ position: "absolute", top: "4%", left: "4%", width: "5%" }}>
               <NextImage
                 src={ui.returnBtn}
                 alt="Return"
                 width={pxW(0.08)}
                 height={pxH(0.08)}
                 sizes={`${pxW(0.08)}px`}
-                style={{ width: "90%", height: "auto", display: "block", cursor: "pointer" }}
+                style={{ width: "100%", height: "auto", display: "block" }}
               />
-            </Link>
+            </div>
           )}
 
           {/* TOP-RIGHT BAR: tokenBarNormal, exchange, crystal, settings (right-aligned row) */}
