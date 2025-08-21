@@ -34,7 +34,7 @@ export const UI_FILES = {
   ten_pull_button: "10_pull.webp",
   paid_single_pull_button: "paid_1_pull.webp",
   paid_ten_pull_button: "paid_10_pull.webp",
-  charatcer_details_button: "character_details.webp",
+  character_details_button: "character_details.webp",
   crystal_bar_button: "crystal_bar.webp",
   exchange_button: "exchange.webp",
   fake_date_bar: "fake_date_bar.webp",

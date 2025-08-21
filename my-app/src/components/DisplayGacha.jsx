@@ -25,13 +25,11 @@ export default function DisplayGacha({ gachaId, manifest }) {
   const imgLen = Array.isArray(entry.img) ? entry.img.length : 0;
   const bgIndex = useCountdown(bgLen, 4000);
   const imgIndex = useCountdown(imgLen, 4000);
-
   // Per-gacha assets
   const bgSrc = bgPath(gachaId, entry, bgIndex);
   const overlaySrc = overlayPath(gachaId, entry, imgIndex);
   const logoSrc = logoPath(gachaId, entry);
   const bannerSrc = bannerPath(gachaId, entry, 0);
-
   // Shared UI assets (null if file missing)
   const ui = {
     singlePull: uiPath(UI_FILES.single_pull_button),
@@ -50,15 +48,13 @@ export default function DisplayGacha({ gachaId, manifest }) {
     fakeDateBar: uiPath(UI_FILES.fake_date_bar),
     fakeStickerBarNormal: uiPath(UI_FILES.fake_gacha_sticker_bar_normal),
 
-    charDetails: uiPath(UI_FILES.charatcer_details_button), // (spelling as provided)
+    charDetails: uiPath(UI_FILES.character_details_button), // (spelling as provided)
     gachaDetails: uiPath(UI_FILES.gacha_details_button),
   };
-
   const { width: vw, height: vh } = useWindowSize();
   const { w: natW, h: natH } = useNaturalSize(bgSrc || "");
   //for resizing overlay
   const { w: ovW, h: ovH } = useNaturalSize(overlaySrc || "");
-
 
   // Stage size that "contains" bg
   const { stageW, stageH, scaleFromBg } = useMemo(() => {
@@ -85,13 +81,34 @@ export default function DisplayGacha({ gachaId, manifest }) {
     return <div style={{ padding: 16, color: "#bbb" }}>No assets found for this gacha.</div>;
   }
 
-  // Full overlays: ONLY 2520×1440
-  const overlayIsFull = !!overlaySrc && ovW === 2520 && ovH === 1440;
+  // Full overlays: allow known sizes + tolerant match vs background
+  // adjust AR_TOL, MIN_SIDE, MIN_AREA if needed.
+  // examples like gacha_407 has overlays sized 2048 × 1170
+  // ones like gacha_446, on the other hand, have sprite-sized overlays
+  // gacha_609 is an example of a full overlay sized 2520 × 1440 which is the same as bg
+  const overlayIsFull = (() => {
+    if (!overlaySrc || !ovW || !ovH || !natW || !natH) return false;
+    // 1) Known full-canvas sizes
+    if ((ovW === 2520 && ovH === 1440) || (ovW === 2048 && ovH === 1170)) return true;
+    // 2) Tolerant heuristic vs bg
+    const bgAR = natW / natH;
+    const ovAR = ovW / ovH;
+    const arDiff = Math.abs(ovAR - bgAR) / bgAR;         // relative AR delta
+    const wRatio = ovW / natW;
+    const hRatio = ovH / natH;
+    const areaRatio = (ovW * ovH) / (natW * natH);
+    const AR_TOL = 0.03;     // ≤3% AR difference
+    const MIN_SIDE = 0.85;   // ≥85% of bg width & height
+    const MIN_AREA = 0.70;   // ≥70% of bg area
+    return (arDiff <= AR_TOL && wRatio >= MIN_SIDE && hRatio >= MIN_SIDE) || areaRatio >= MIN_AREA;
+  })();
 
   // Helpers to size with stage-relative px
   const pxW = (p) => Math.round(stageW * p);
   const pxH = (p) => Math.round(stageH * p);
 
+  // -----------------------------------------------------------------------------------------
+  // ---------------------------------------------ACTUAL UI-----------------------------------
   return (
     <div
       style={{

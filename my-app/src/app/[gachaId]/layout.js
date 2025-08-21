@@ -12,7 +12,7 @@ export default function GachaLayout({ children, params }) {
     fetch("/gacha/manifest.json").then(r => r.json()).then(setManifest);
   }, []);
 
-  // Render black background immediately to avoid white paint
+  // Render black background immediately to avoid white flash
   if (!manifest) return <div style={{position:'fixed', inset:0, background:'black'}} />;
 
   return (
