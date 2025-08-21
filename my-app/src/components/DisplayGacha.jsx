@@ -256,18 +256,23 @@ export default function DisplayGacha({ gachaId, manifest }) {
             </div>
           )}
 
-          {/* TOP-LEFT: Return button */}
+          {/* TOP-LEFT: Return button */} 
           {ui.returnBtn && (
-            <div style={{ position: "absolute", top: "4%", left: "4%", width: "5%" }}>
-              <NextImage
-                src={ui.returnBtn}
-                alt="Return"
-                width={pxW(0.08)}
-                height={pxH(0.08)}
-                sizes={`${pxW(0.08)}px`}
-                style={{ width: "100%", height: "auto", display: "block" }}
-              />
-            </div>
+            <Link 
+              href="/" 
+              prefetch={false} 
+              aria-label="Back to home" 
+              style={{ position: "absolute", top: "4%", left: "4%", width: "5%", display: "block" }} 
+            > 
+              <NextImage 
+              src={ui.returnBtn} 
+              alt="Return" 
+              width={pxW(0.08)} 
+              height={pxH(0.08)} 
+              sizes={`${pxW(0.08)}px`} 
+              style={{ width: "90%", height: "auto", display: "block", cursor: "pointer" }} 
+              /> 
+            </Link>
           )}
 
           {/* TOP-RIGHT BAR: tokenBarNormal, exchange, crystal, settings (right-aligned row) */}
