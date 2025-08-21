@@ -216,7 +216,7 @@ export default function DisplayGacha({ gachaId, manifest }) {
               <div
                 style={{
                   position: "absolute",
-                  inset: "2% 2% 3% 14%",                 // inner padding
+                  inset: "2% 1% 3% 14%",                 // inner padding
                   display: "grid",
                   gridTemplateRows: "repeat(6, 1fr)",     // six rows
                   gap: "1%",
@@ -235,10 +235,11 @@ export default function DisplayGacha({ gachaId, manifest }) {
                         position: "relative",
                         width: "100%",
                         height: "100%",
-                        borderRadius: 5,
+                        borderRadius: 2,
                         overflow: "hidden",
-                        border: isCurrent ? "2px solid #fff" : "none", //"1px solid rgba(255,255,255,0.35)",
+                        // border: isCurrent ? "2px solid #fff" : "none", //"1px solid rgba(255,255,255,0.35)",
                         boxShadow: isCurrent ? "0 0 0 3px rgba(255,255,255,0.25)" : "none",
+                        background: isCurrent ? "rgba(33, 255, 251, 0.93)" : "none",
                       }}
                     >
                       <NextImage
