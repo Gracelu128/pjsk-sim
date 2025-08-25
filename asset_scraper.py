@@ -363,6 +363,8 @@ def sekaipedia_scrape_card_info(start_num=start_id, end_num=end_id):
 def sekaibest_scrape_gacha_info(start_gacha=start_gacha, end_gacha=end_gacha):
     # Configuration
     json_path = "/Users/gracelu/Desktop/pjsk sim/my-app/src/data/gacha_metadata.json"
+    ## depends on the metadata, we skip over some birthday gacha downloads!!!
+    ## later if we add automation process, this needs to be fed in to the scrape_gacha function, so it can skip the birthday banners!!!
     rate_json_path = "/Users/gracelu/Desktop/pjsk sim/my-app/src/data/gacha_rates.json"
 
     data = None
