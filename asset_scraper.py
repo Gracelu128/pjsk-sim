@@ -912,39 +912,6 @@ def split_gacha_metadata(
 
     print(f"Done! Exported {count} cards to: {output_dir}")
 
-def main():
-    # scrape_gacha_assets()
-    # """Main function to execute scraping"""
-    # print("Starting PJSK card image scraper with Selenium...")
-    # scrape_card_images(start_num=1218 , end_num=1222)
-    # sekaipedia_scrape_card_info(start_num=1218, end_num=1222)
-    # sekaibest_scrape_card_info(start_num=1218, end_num=1222)
-    # desired_card_metadata_order = [
-    #     "id",
-    #     "character",
-    #     "character (japanese)",
-    #     "english name",
-    #     "japanese name",
-    #     "skill name (japanese)",
-    #     "skill name (english)",
-    #     "skill effect (japanese)",
-    #     "skill effect (english)",
-    #     "talent (max)",
-    #     "gacha phrase",
-    #     "unit",
-    #     "support unit",
-    #     "attribute",
-    #     "rarity",
-    #     "status"
-    # ]
-    # json_reorder("/Users/gracelu/Desktop/pjsk sim/my-app/src/data/card_metadata.json", desired_card_metadata_order)
-    # split_card_metadata()
-    # scrape_screen_texture_assets()
-    # split_gacha_metadata()
-    generate_gacha_manifest()
-    # sekaipedia_scrape_gacha_banner(start_num=1, end_num=999)
-    # sekaibest_scrape_gacha_info(start_gacha=1, end_gacha=783)
-
 import collections
 
 def generate_gacha_manifest(
@@ -1205,6 +1172,89 @@ def download_and_save(url, save_path):
     else:
         print(f"Failed to download {url} (status {resp.status_code})")
 
+import io
+
+def scrape_gacha_logos_1_to_377():
+    """
+    Scrape gacha logos (1–377) from Sekaipedia and save as WebP.
+    Handles multiple category pages since logos are out of order.
+    """
+    base_urls = [
+        "https://www.sekaipedia.org/wiki/Category:Gacha_logos?fileuntil=Gacha295+logo.png#mw-category-media", 
+        "https://www.sekaipedia.org/wiki/Category:Gacha_logos",  
+        "https://www.sekaipedia.org/wiki/Category:Gacha_logos?filefrom=Gacha527+logo.png#mw-category-media",  
+        "https://www.sekaipedia.org/wiki/Category:Gacha_logos?filefrom=Gacha760+logo.png#mw-category-media"
+    ]
+    
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0 Safari/537.36"
+    }
+    
+    all_gallery_boxes = []
+
+    # Load all category pages
+    for url in base_urls:
+        print(f"Fetching {url}")
+        response = requests.get(url, headers=headers, timeout=30)
+        response.raise_for_status()
+        soup = BeautifulSoup(response.text, "html.parser")
+        gallery_boxes = soup.find_all("li", class_="gallerybox")
+        all_gallery_boxes.extend(gallery_boxes)
+        print(f"Found {len(gallery_boxes)} gallery boxes")
+
+    print(f"Total gallery boxes collected: {len(all_gallery_boxes)}")
+
+    for box in all_gallery_boxes:
+        filename_tag = box.find("a", class_="galleryfilename")
+        if not filename_tag:
+            continue
+
+        filename = filename_tag.text.strip().replace(" ", "_")
+        match = re.search(r"Gacha(\d+)_logo\.png", filename)
+        if not match:
+            continue
+
+        gacha_id = int(match.group(1))
+
+        # Only keep 1–377
+        if gacha_id < 1 or gacha_id > 377:
+            continue
+
+        save_dir = os.path.join("my-app", "public", "gacha", f"gacha_{gacha_id}", "logo")
+        webp_path = os.path.join(save_dir, "logo.webp")
+        if os.path.exists(webp_path):
+            print(f"Gacha {gacha_id} already exists, skipping")
+            continue
+
+        # Go to file page
+        file_page_url = "https://www.sekaipedia.org" + filename_tag.get("href")
+        try:
+            file_resp = requests.get(file_page_url, headers=headers, timeout=30)
+            file_resp.raise_for_status()
+            file_soup = BeautifulSoup(file_resp.text, "html.parser")
+            
+            img_link = file_soup.find("a", class_="internal")
+            if not img_link:
+                print(f"Could not find full image link for Gacha {gacha_id}")
+                continue
+            
+            full_image_url = img_link.get("href")
+            if full_image_url.startswith("//"):
+                full_image_url = "https:" + full_image_url
+
+            print(f"Downloading Gacha {gacha_id} from {full_image_url}")
+            img_data = requests.get(full_image_url, headers=headers, timeout=30).content
+            
+            image = Image.open(io.BytesIO(img_data)).convert("RGBA")
+            os.makedirs(save_dir, exist_ok=True)
+            image.save(webp_path, "WEBP", quality=95)
+            print(f"Saved Gacha {gacha_id} → {webp_path}")
+            
+            time.sleep(0.5)
+
+        except Exception as e:
+            print(f"Error processing Gacha {gacha_id}: {str(e)}")
+
 # def scrape_gacha_assets():
 #     folders = get_gacha_folders()
 #     for display_name, _ in folders:
@@ -1214,6 +1264,57 @@ def download_and_save(url, save_path):
 #         print(f"Downloading logo: {logo_url} -> {save_path}")
 #         download_and_save(logo_url, save_path)
 
+def main():
+    # scrape_gacha_assets()
+    # """Main function to execute scraping"""
+    # print("Starting PJSK card image scraper with Selenium...")
+    # scrape_card_images(start_num=1218 , end_num=1222)
+    # sekaipedia_scrape_card_info(start_num=1218, end_num=1222)
+    # sekaibest_scrape_card_info(start_num=1218, end_num=1222)
+    # desired_card_metadata_order = [
+    #     "id",
+    #     "character",
+    #     "character (japanese)",
+    #     "english name",
+    #     "japanese name",
+    #     "skill name (japanese)",
+    #     "skill name (english)",
+    #     "skill effect (japanese)",
+    #     "skill effect (english)",
+    #     "talent (max)",
+    #     "gacha phrase",
+    #     "unit",
+    #     "support unit",
+    #     "attribute",
+    #     "rarity",
+    #     "status"
+    # ]
+    # json_reorder("/Users/gracelu/Desktop/pjsk sim/my-app/src/data/card_metadata.json", desired_card_metadata_order)
+    # split_card_metadata()
+    # scrape_screen_texture_assets()
+    # split_gacha_metadata()
+    # generate_gacha_manifest()
+    # sekaipedia_scrape_gacha_banner(start_num=1, end_num=999)
+    # sekaibest_scrape_gacha_info(start_gacha=1, end_gacha=783)
+    scrape_gacha_logos_1_to_377()
+    import os
+
+    base_path = "my-app/public/gacha"
+    missing = []
+
+    for i in range(1, 378):
+        folder = os.path.join(base_path, f"gacha_{i}")
+        if not os.path.exists(folder):
+            # Skip if it doesn’t exist
+            continue  
+        filepath = os.path.join(folder, "logo/logo.webp")  # adjust name if different
+        if not os.path.exists(filepath):
+            missing.append(f"gacha_{i}")
+
+    if not missing:
+        print("✅ All logos 1–377 are present!")
+    else:
+        print("❌ Missing logos in:", missing)
 
 if __name__ == "__main__":
     main()
