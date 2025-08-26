@@ -7005,12 +7005,13 @@
   },
   "643": {
     "bg": [
-      "bg_gacha643.webp",
       "bg_gacha643_1.webp",
       "bg_gacha643_2.webp",
       "bg_gacha643_3.webp",
       "bg_gacha643_4.webp",
-      "bg_gacha643_5.webp"
+      "bg_gacha643_5.webp",
+      "bg_gacha643_6.webp",
+      "bg_gacha643_7.webp"
     ],
     "img": [
       "cardname_gacha643_1.webp",
