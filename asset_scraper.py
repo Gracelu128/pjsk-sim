@@ -17,6 +17,8 @@ from selenium.webdriver.common.keys import Keys
 from urllib.parse import urlparse, unquote
 from webdriver_manager.chrome import ChromeDriverManager
 from bs4 import BeautifulSoup
+from typing import Dict, Any, List
+
 
 # Global var to store start and end card ID
 start_id = 1
@@ -1380,6 +1382,122 @@ def scrape_gacha_backgrounds_1_to_377():
 #         print(f"Downloading logo: {logo_url} -> {save_path}")
 #         download_and_save(logo_url, save_path)
 
+ROOT = Path(__file__).resolve().parent
+APP_DIR = ROOT / "my-app"
+PUBLIC_DIR = APP_DIR / "public"
+DATA_DIR = APP_DIR / "src" / "data"
+
+MANIFEST_PATH = PUBLIC_DIR / "gacha" / "manifest.json"
+GACHA_META_PATH = DATA_DIR / "gacha_metadata.json"
+CARD_META_PATH = DATA_DIR / "card_metadata.json"
+
+def _read_json(p: Path) -> Dict[str, Any]:
+    with p.open("r", encoding="utf-8") as f:
+        return json.load(f)
+
+def _write_json(p: Path, payload: Dict[str, Any]) -> None:
+    p.parent.mkdir(parents=True, exist_ok=True)
+    tmp = p.with_suffix(".tmp")
+    with tmp.open("w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, indent=2)
+    tmp.replace(p)
+
+def _backup(p: Path) -> Path:
+    ts = time.strftime("%Y%m%d-%H%M%S")
+    bak = p.with_suffix(p.suffix + f".bak.{ts}")
+    bak.write_bytes(p.read_bytes())
+    return bak
+
+def inject_card_backgrounds(
+    start_id: int = 1,
+    end_id: int = 376,
+    only_when_bg_empty: bool = True,
+    verify_files_exist: bool = True,
+) -> None:
+    """
+    For gachas in [start_id, end_id], append featured 4★ card images as rotating backgrounds:
+      /cards/<card_id>/card_after_training.webp
+
+    - only_when_bg_empty=True: only add if manifest[gacha]['bg'] is missing/empty
+    - verify_files_exist=True: only include paths that exist under public/cards/<id>/
+    """
+
+    manifest: Dict[str, Any] = _read_json(MANIFEST_PATH) if MANIFEST_PATH.exists() else {}
+    gacha_meta: Dict[str, Any] = _read_json(GACHA_META_PATH)
+    card_meta: Dict[str, Any] = _read_json(CARD_META_PATH)
+
+    changed = False
+    added_total = 0
+
+    for gid in range(start_id, end_id + 1):
+        gid_str = str(gid)
+        ginfo = gacha_meta.get(gid_str)
+        if not ginfo:
+            continue
+
+        featured = ginfo.get("featured_cards") or []
+        # Collect eligible 4★ card ids
+        four_star_ids: List[str] = []
+        for fc in featured:
+            cid = str(fc.get("card_id"))
+            cinfo = card_meta.get(cid)
+            if not cinfo:
+                continue
+            # rarity = cinfo.get("rarity")
+            # try:
+            #     is_four = int(rarity) == 4
+            # except Exception:
+            #     is_four = str(rarity).strip() == "4"
+            # if is_four:
+            four_star_ids.append(cid)
+
+        if not four_star_ids:
+            continue
+
+        # Prepare manifest bucket
+        entry = manifest.setdefault(gid_str, {})
+        bg_list: List[str] = entry.get("bg") or []
+
+        if only_when_bg_empty and len(bg_list) > 0:
+            # Skip if already has BGs
+            continue
+
+        # Build candidate card paths (absolute-from-public so the app can serve them)
+        # e.g. /cards/198/card_after_training.webp
+        new_paths: List[str] = []
+        for cid in four_star_ids:
+            rel = f"/cards/{cid}/card_after_training.webp"
+            if verify_files_exist:
+                fs_path = PUBLIC_DIR / rel.lstrip("/")
+                if not fs_path.exists():
+                    continue
+            new_paths.append(rel)
+
+        if not new_paths:
+            continue
+
+        # Merge (dedupe, keep order: existing first, then new)
+        existing_set = set(bg_list)
+        appended = [p for p in new_paths if p not in existing_set]
+        if not appended:
+            continue
+
+        entry["bg"] = bg_list + appended
+        # Ensure other keys exist so DisplayGacha doesn't choke
+        entry.setdefault("img", [])
+        entry.setdefault("banner", [])
+        entry.setdefault("logo", entry.get("logo") or None)
+
+        added_total += len(appended)
+        changed = True
+
+    if changed:
+        _backup(MANIFEST_PATH)
+        _write_json(MANIFEST_PATH, manifest)
+        print(f"Updated manifest: added {added_total} card backgrounds.")
+    else:
+        print("No changes made (nothing to add or conditions not met).")
+
 def main():
     # scrape_gacha_assets()
     # """Main function to execute scraping"""
@@ -1413,7 +1531,12 @@ def main():
     # sekaipedia_scrape_gacha_banner(start_num=1, end_num=999)
     # sekaibest_scrape_gacha_info(start_gacha=1, end_gacha=783)
     # scrape_gacha_logos_1_to_377()
-    scrape_gacha_backgrounds_1_to_377()
-
+    # scrape_gacha_backgrounds_1_to_377()
+    inject_card_backgrounds(
+        start_id=1,
+        end_id=376,
+        only_when_bg_empty=False,
+        verify_files_exist=True,
+    )
 if __name__ == "__main__":
     main()

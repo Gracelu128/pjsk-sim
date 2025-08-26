@@ -50,6 +50,12 @@ const nextConfig = {
           source: '/UI/:file*',
           destination: 'https://cdn.jsdelivr.net/gh/Gracelu128/pjsk-sim@main/my-app/public/UI/:file*',
         },
+        // need to add https://cdn.jsdelivr.net/gh/Gracelu128/pjsk-sim@main/my-app/public/cards/1/card_normal.webp
+        {
+          source: '/cards/:cid/:file*',
+          destination:
+            'https://cdn.jsdelivr.net/gh/Gracelu128/pjsk-sim@main/my-app/public/cards/:cid/:file*',
+        },
       ];
     }
     return [];

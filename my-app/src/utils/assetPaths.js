@@ -10,9 +10,32 @@ export const logoPath = (id, entry) => {
   return hasExt(p) ? join("/gacha", `gacha_${id}`, p) : null;
 };
 
+// NEW: normalize a single path coming out of manifest.bg
+const normalizeBgFile = (f) => {
+  if (!hasExt(f)) return null;
+  const s = String(f);
+
+  // absolute or remote → pass through
+  if (s.startsWith("http://") || s.startsWith("https://") || s.startsWith("/")) return s;
+
+  // card paths sometimes appear as "cards/123/..." (no leading slash)
+  if (s.startsWith("cards/") || s.includes("/cards/")) return "/" + s;
+
+  // otherwise it's a plain filename that lives under the gacha texture folder
+  return s;
+};
+
+// UPDATED: bgPath now respects card/absolute paths for gacha 1-377
 export const bgPath = (id, entry, idx = 0) => {
-  const f = entry?.bg?.[idx];            // e.g., "bg_gacha546.webp"
-  return hasExt(f) ? join("/gacha", `gacha_${id}`, "screen/texture", f) : null;
+  const raw = entry?.bg?.[idx];
+  const norm = normalizeBgFile(raw);
+  if (!norm) return null;
+
+  // if it's a card/absolute path, return it
+  if (norm.startsWith("/") || norm.startsWith("http")) return norm;
+
+  // else treat as a texture filename
+  return join("/gacha", `gacha_${id}`, "screen/texture", norm);
 };
 
 export const overlayPath = (id, entry, idx = 0) => {

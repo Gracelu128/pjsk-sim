@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import NextImage from "next/image";
 import { logoPath } from "@/utils/assetPaths";
-import gachaMeta from "@/data/gacha_metadata.json"; // ✅ static import
+import gachaMeta from "@/data/gacha_metadata.json";
 
 function sanitizeManifest(m) {
   const out = {};
@@ -32,7 +32,7 @@ export default function Home() {
 
   return (
     <main style={{ minHeight: "100vh", padding: "24px", boxSizing: "border-box" }}>
-      <h1 style={{ marginBottom: 16 }}>Card Gallery</h1>
+      <h1 style={{ marginBottom: 16 }}>Gacha Gallery</h1>
 
       <div
         style={{

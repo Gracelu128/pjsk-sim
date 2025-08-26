@@ -1,11 +1,7 @@
 {
   "1": {
     "bg": [
-      "bg_gacha1.webp",
-      "/cards/88/card_after_training.webp",
-      "/cards/92/card_after_training.webp",
-      "/cards/96/card_after_training.webp",
-      "/cards/4/card_after_training.webp"
+      "bg_gacha1.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -15,12 +11,7 @@
   },
   "2": {
     "bg": [
-      "bg_gacha2.webp",
-      "/cards/3/card_after_training.webp",
-      "/cards/19/card_after_training.webp",
-      "/cards/35/card_after_training.webp",
-      "/cards/51/card_after_training.webp",
-      "/cards/67/card_after_training.webp"
+      "bg_gacha2.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -30,13 +21,7 @@
   },
   "3": {
     "bg": [
-      "bg_gacha3.webp",
-      "/cards/88/card_after_training.webp",
-      "/cards/92/card_after_training.webp",
-      "/cards/96/card_after_training.webp",
-      "/cards/99/card_after_training.webp",
-      "/cards/103/card_after_training.webp",
-      "/cards/107/card_after_training.webp"
+      "bg_gacha3.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -46,10 +31,7 @@
   },
   "4": {
     "bg": [
-      "bg_gacha4.webp",
-      "/cards/109/card_after_training.webp",
-      "/cards/110/card_after_training.webp",
-      "/cards/111/card_after_training.webp"
+      "bg_gacha4.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -59,10 +41,7 @@
   },
   "5": {
     "bg": [
-      "bg_gacha5.webp",
-      "/cards/114/card_after_training.webp",
-      "/cards/115/card_after_training.webp",
-      "/cards/116/card_after_training.webp"
+      "bg_gacha5.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -72,10 +51,7 @@
   },
   "6": {
     "bg": [
-      "bg_gacha6.webp",
-      "/cards/119/card_after_training.webp",
-      "/cards/120/card_after_training.webp",
-      "/cards/121/card_after_training.webp"
+      "bg_gacha6.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -87,9 +63,7 @@
     "bg": [
       "/cards/119/card_after_training.webp",
       "/cards/120/card_after_training.webp",
-      "/cards/121/card_after_training.webp",
-      "/cards/55/card_after_training.webp",
-      "/cards/59/card_after_training.webp"
+      "/cards/121/card_after_training.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -99,10 +73,7 @@
   },
   "9": {
     "bg": [
-      "bg_gacha9.webp",
-      "/cards/124/card_after_training.webp",
-      "/cards/125/card_after_training.webp",
-      "/cards/126/card_after_training.webp"
+      "bg_gacha9.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -114,9 +85,7 @@
     "bg": [
       "/cards/124/card_after_training.webp",
       "/cards/125/card_after_training.webp",
-      "/cards/126/card_after_training.webp",
-      "/cards/71/card_after_training.webp",
-      "/cards/7/card_after_training.webp"
+      "/cards/126/card_after_training.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -126,10 +95,7 @@
   },
   "12": {
     "bg": [
-      "bg_gacha12.webp",
-      "/cards/129/card_after_training.webp",
-      "/cards/130/card_after_training.webp",
-      "/cards/131/card_after_training.webp"
+      "bg_gacha12.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -141,9 +107,7 @@
     "bg": [
       "/cards/129/card_after_training.webp",
       "/cards/130/card_after_training.webp",
-      "/cards/131/card_after_training.webp",
-      "/cards/31/card_after_training.webp",
-      "/cards/23/card_after_training.webp"
+      "/cards/131/card_after_training.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -153,13 +117,7 @@
   },
   "15": {
     "bg": [
-      "bg_gacha15.webp",
-      "/cards/88/card_after_training.webp",
-      "/cards/92/card_after_training.webp",
-      "/cards/96/card_after_training.webp",
-      "/cards/109/card_after_training.webp",
-      "/cards/114/card_after_training.webp",
-      "/cards/119/card_after_training.webp"
+      "bg_gacha15.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -182,10 +140,7 @@
   },
   "17": {
     "bg": [
-      "bg_gacha17.webp",
-      "/cards/134/card_after_training.webp",
-      "/cards/135/card_after_training.webp",
-      "/cards/136/card_after_training.webp"
+      "bg_gacha17.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -197,9 +152,7 @@
     "bg": [
       "/cards/134/card_after_training.webp",
       "/cards/135/card_after_training.webp",
-      "/cards/136/card_after_training.webp",
-      "/cards/47/card_after_training.webp",
-      "/cards/103/card_after_training.webp"
+      "/cards/136/card_after_training.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -209,10 +162,7 @@
   },
   "20": {
     "bg": [
-      "bg_gacha20.webp",
-      "/cards/139/card_after_training.webp",
-      "/cards/140/card_after_training.webp",
-      "/cards/141/card_after_training.webp"
+      "bg_gacha20.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -224,9 +174,7 @@
     "bg": [
       "/cards/139/card_after_training.webp",
       "/cards/140/card_after_training.webp",
-      "/cards/141/card_after_training.webp",
-      "/cards/59/card_after_training.webp",
-      "/cards/47/card_after_training.webp"
+      "/cards/141/card_after_training.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -236,10 +184,7 @@
   },
   "23": {
     "bg": [
-      "bg_gacha23.webp",
-      "/cards/144/card_after_training.webp",
-      "/cards/145/card_after_training.webp",
-      "/cards/146/card_after_training.webp"
+      "bg_gacha23.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -251,9 +196,7 @@
     "bg": [
       "/cards/144/card_after_training.webp",
       "/cards/145/card_after_training.webp",
-      "/cards/146/card_after_training.webp",
-      "/cards/63/card_after_training.webp",
-      "/cards/55/card_after_training.webp"
+      "/cards/146/card_after_training.webp"
     ],
     "img": [],
     "logo": "",
@@ -263,11 +206,7 @@
   },
   "26": {
     "bg": [
-      "bg_gacha26.webp",
-      "/cards/149/card_after_training.webp",
-      "/cards/150/card_after_training.webp",
-      "/cards/151/card_after_training.webp",
-      "/cards/152/card_after_training.webp"
+      "bg_gacha26.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -277,11 +216,7 @@
   },
   "27": {
     "bg": [
-      "bg_gacha27.webp",
-      "/cards/109/card_after_training.webp",
-      "/cards/119/card_after_training.webp",
-      "/cards/134/card_after_training.webp",
-      "/cards/139/card_after_training.webp"
+      "bg_gacha27.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -289,11 +224,7 @@
   },
   "28": {
     "bg": [
-      "bg_gacha28.webp",
-      "/cards/149/card_after_training.webp",
-      "/cards/150/card_after_training.webp",
-      "/cards/151/card_after_training.webp",
-      "/cards/152/card_after_training.webp"
+      "bg_gacha28.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -333,10 +264,7 @@
   },
   "39": {
     "bg": [
-      "bg_gacha39.webp",
-      "/cards/155/card_after_training.webp",
-      "/cards/156/card_after_training.webp",
-      "/cards/157/card_after_training.webp"
+      "bg_gacha39.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -348,9 +276,7 @@
     "bg": [
       "/cards/155/card_after_training.webp",
       "/cards/156/card_after_training.webp",
-      "/cards/157/card_after_training.webp",
-      "/cards/7/card_after_training.webp",
-      "/cards/15/card_after_training.webp"
+      "/cards/157/card_after_training.webp"
     ],
     "img": [],
     "logo": "",
@@ -360,10 +286,7 @@
   },
   "42": {
     "bg": [
-      "bg_gacha42.webp",
-      "/cards/160/card_after_training.webp",
-      "/cards/161/card_after_training.webp",
-      "/cards/162/card_after_training.webp"
+      "bg_gacha42.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -375,9 +298,7 @@
     "bg": [
       "/cards/160/card_after_training.webp",
       "/cards/161/card_after_training.webp",
-      "/cards/162/card_after_training.webp",
-      "/cards/23/card_after_training.webp",
-      "/cards/19/card_after_training.webp"
+      "/cards/162/card_after_training.webp"
     ],
     "img": [],
     "logo": "",
@@ -387,10 +308,7 @@
   },
   "45": {
     "bg": [
-      "bg_gacha45.webp",
-      "/cards/165/card_after_training.webp",
-      "/cards/166/card_after_training.webp",
-      "/cards/167/card_after_training.webp"
+      "bg_gacha45.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -402,9 +320,7 @@
     "bg": [
       "/cards/165/card_after_training.webp",
       "/cards/166/card_after_training.webp",
-      "/cards/167/card_after_training.webp",
-      "/cards/35/card_after_training.webp",
-      "/cards/95/card_after_training.webp"
+      "/cards/167/card_after_training.webp"
     ],
     "img": [],
     "logo": "",
@@ -414,10 +330,7 @@
   },
   "48": {
     "bg": [
-      "bg_gacha48.webp",
-      "/cards/170/card_after_training.webp",
-      "/cards/171/card_after_training.webp",
-      "/cards/172/card_after_training.webp"
+      "bg_gacha48.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -429,9 +342,7 @@
     "bg": [
       "/cards/170/card_after_training.webp",
       "/cards/171/card_after_training.webp",
-      "/cards/172/card_after_training.webp",
-      "/cards/51/card_after_training.webp",
-      "/cards/63/card_after_training.webp"
+      "/cards/172/card_after_training.webp"
     ],
     "img": [],
     "logo": "",
@@ -441,10 +352,7 @@
   },
   "52": {
     "bg": [
-      "bg_gacha52.webp",
-      "/cards/175/card_after_training.webp",
-      "/cards/176/card_after_training.webp",
-      "/cards/177/card_after_training.webp"
+      "bg_gacha52.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -456,8 +364,7 @@
     "bg": [
       "/cards/175/card_after_training.webp",
       "/cards/176/card_after_training.webp",
-      "/cards/177/card_after_training.webp",
-      "/cards/79/card_after_training.webp"
+      "/cards/177/card_after_training.webp"
     ],
     "img": [],
     "logo": "",
@@ -467,13 +374,7 @@
   },
   "55": {
     "bg": [
-      "bg_gacha55.webp",
-      "/cards/149/card_after_training.webp",
-      "/cards/155/card_after_training.webp",
-      "/cards/160/card_after_training.webp",
-      "/cards/165/card_after_training.webp",
-      "/cards/141/card_after_training.webp",
-      "/cards/139/card_after_training.webp"
+      "bg_gacha55.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -483,10 +384,7 @@
   },
   "56": {
     "bg": [
-      "bg_gacha56.webp",
-      "/cards/180/card_after_training.webp",
-      "/cards/181/card_after_training.webp",
-      "/cards/182/card_after_training.webp"
+      "bg_gacha56.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -499,8 +397,7 @@
       "/cards/180/card_after_training.webp",
       "/cards/181/card_after_training.webp",
       "/cards/182/card_after_training.webp",
-      "/cards/96/card_after_training.webp",
-      "/cards/51/card_after_training.webp"
+      "/cards/96/card_after_training.webp"
     ],
     "img": [],
     "logo": "",
@@ -510,10 +407,7 @@
   },
   "60": {
     "bg": [
-      "bg_gacha60.webp",
-      "/cards/185/card_after_training.webp",
-      "/cards/186/card_after_training.webp",
-      "/cards/187/card_after_training.webp"
+      "bg_gacha60.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -525,8 +419,7 @@
     "bg": [
       "/cards/185/card_after_training.webp",
       "/cards/186/card_after_training.webp",
-      "/cards/187/card_after_training.webp",
-      "/cards/11/card_after_training.webp"
+      "/cards/187/card_after_training.webp"
     ],
     "img": [],
     "logo": "",
@@ -536,10 +429,7 @@
   },
   "63": {
     "bg": [
-      "bg_gacha63.webp",
-      "/cards/190/card_after_training.webp",
-      "/cards/191/card_after_training.webp",
-      "/cards/192/card_after_training.webp"
+      "bg_gacha63.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -552,8 +442,7 @@
       "/cards/190/card_after_training.webp",
       "/cards/191/card_after_training.webp",
       "/cards/192/card_after_training.webp",
-      "/cards/161/card_after_training.webp",
-      "/cards/27/card_after_training.webp"
+      "/cards/161/card_after_training.webp"
     ],
     "img": [],
     "logo": "",
@@ -574,10 +463,7 @@
   },
   "68": {
     "bg": [
-      "bg_gacha68.webp",
-      "/cards/197/card_after_training.webp",
-      "/cards/198/card_after_training.webp",
-      "/cards/199/card_after_training.webp"
+      "bg_gacha68.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -589,9 +475,7 @@
     "bg": [
       "/cards/197/card_after_training.webp",
       "/cards/198/card_after_training.webp",
-      "/cards/199/card_after_training.webp",
-      "/cards/19/card_after_training.webp",
-      "/cards/67/card_after_training.webp"
+      "/cards/199/card_after_training.webp"
     ],
     "img": [],
     "logo": "",
@@ -601,10 +485,7 @@
   },
   "72": {
     "bg": [
-      "bg_gacha72.webp",
-      "/cards/202/card_after_training.webp",
-      "/cards/203/card_after_training.webp",
-      "/cards/204/card_after_training.webp"
+      "bg_gacha72.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -616,9 +497,7 @@
     "bg": [
       "/cards/202/card_after_training.webp",
       "/cards/203/card_after_training.webp",
-      "/cards/204/card_after_training.webp",
-      "/cards/67/card_after_training.webp",
-      "/cards/71/card_after_training.webp"
+      "/cards/204/card_after_training.webp"
     ],
     "img": [],
     "logo": "",
@@ -628,10 +507,7 @@
   },
   "75": {
     "bg": [
-      "bg_gacha75.webp",
-      "/cards/207/card_after_training.webp",
-      "/cards/208/card_after_training.webp",
-      "/cards/209/card_after_training.webp"
+      "bg_gacha75.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -644,8 +520,7 @@
       "/cards/207/card_after_training.webp",
       "/cards/208/card_after_training.webp",
       "/cards/209/card_after_training.webp",
-      "/cards/156/card_after_training.webp",
-      "/cards/3/card_after_training.webp"
+      "/cards/156/card_after_training.webp"
     ],
     "img": [],
     "logo": "",
@@ -655,10 +530,7 @@
   },
   "78": {
     "bg": [
-      "bg_gacha78.webp",
-      "/cards/212/card_after_training.webp",
-      "/cards/213/card_after_training.webp",
-      "/cards/214/card_after_training.webp"
+      "bg_gacha78.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -670,9 +542,7 @@
     "bg": [
       "/cards/212/card_after_training.webp",
       "/cards/213/card_after_training.webp",
-      "/cards/214/card_after_training.webp",
-      "/cards/35/card_after_training.webp",
-      "/cards/47/card_after_training.webp"
+      "/cards/214/card_after_training.webp"
     ],
     "img": [],
     "logo": "",
@@ -682,10 +552,7 @@
   },
   "82": {
     "bg": [
-      "bg_gacha82.webp",
-      "/cards/217/card_after_training.webp",
-      "/cards/218/card_after_training.webp",
-      "/cards/219/card_after_training.webp"
+      "bg_gacha82.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -698,8 +565,7 @@
       "/cards/217/card_after_training.webp",
       "/cards/218/card_after_training.webp",
       "/cards/219/card_after_training.webp",
-      "/cards/161/card_after_training.webp",
-      "/cards/63/card_after_training.webp"
+      "/cards/161/card_after_training.webp"
     ],
     "img": [],
     "logo": "",
@@ -709,10 +575,7 @@
   },
   "85": {
     "bg": [
-      "bg_gacha85.webp",
-      "/cards/222/card_after_training.webp",
-      "/cards/223/card_after_training.webp",
-      "/cards/224/card_after_training.webp"
+      "bg_gacha85.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -724,8 +587,7 @@
     "bg": [
       "/cards/222/card_after_training.webp",
       "/cards/223/card_after_training.webp",
-      "/cards/224/card_after_training.webp",
-      "/cards/27/card_after_training.webp"
+      "/cards/224/card_after_training.webp"
     ],
     "img": [],
     "logo": "",
@@ -750,10 +612,7 @@
   },
   "89": {
     "bg": [
-      "bg_gacha89.webp",
-      "/cards/227/card_after_training.webp",
-      "/cards/228/card_after_training.webp",
-      "/cards/229/card_after_training.webp"
+      "bg_gacha89.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -765,9 +624,7 @@
     "bg": [
       "/cards/227/card_after_training.webp",
       "/cards/228/card_after_training.webp",
-      "/cards/229/card_after_training.webp",
-      "/cards/43/card_after_training.webp",
-      "/cards/39/card_after_training.webp"
+      "/cards/229/card_after_training.webp"
     ],
     "img": [],
     "logo": "",
@@ -777,10 +634,7 @@
   },
   "92": {
     "bg": [
-      "bg_gacha92.webp",
-      "/cards/232/card_after_training.webp",
-      "/cards/233/card_after_training.webp",
-      "/cards/234/card_after_training.webp"
+      "bg_gacha92.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -804,10 +658,7 @@
   },
   "96": {
     "bg": [
-      "bg_gacha96.webp",
-      "/cards/237/card_after_training.webp",
-      "/cards/238/card_after_training.webp",
-      "/cards/239/card_after_training.webp"
+      "bg_gacha96.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -819,9 +670,7 @@
     "bg": [
       "/cards/237/card_after_training.webp",
       "/cards/238/card_after_training.webp",
-      "/cards/239/card_after_training.webp",
-      "/cards/75/card_after_training.webp",
-      "/cards/79/card_after_training.webp"
+      "/cards/239/card_after_training.webp"
     ],
     "img": [],
     "logo": "",
@@ -842,10 +691,7 @@
   },
   "99": {
     "bg": [
-      "bg_gacha99.webp",
-      "/cards/244/card_after_training.webp",
-      "/cards/245/card_after_training.webp",
-      "/cards/246/card_after_training.webp"
+      "bg_gacha99.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -857,9 +703,7 @@
     "bg": [
       "/cards/244/card_after_training.webp",
       "/cards/245/card_after_training.webp",
-      "/cards/246/card_after_training.webp",
-      "/cards/11/card_after_training.webp",
-      "/cards/3/card_after_training.webp"
+      "/cards/246/card_after_training.webp"
     ],
     "img": [],
     "logo": "",
@@ -869,10 +713,7 @@
   },
   "102": {
     "bg": [
-      "bg_gacha102.webp",
-      "/cards/249/card_after_training.webp",
-      "/cards/250/card_after_training.webp",
-      "/cards/251/card_after_training.webp"
+      "bg_gacha102.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -885,8 +726,7 @@
       "/cards/249/card_after_training.webp",
       "/cards/250/card_after_training.webp",
       "/cards/251/card_after_training.webp",
-      "/cards/92/card_after_training.webp",
-      "/cards/47/card_after_training.webp"
+      "/cards/92/card_after_training.webp"
     ],
     "img": [],
     "logo": "",
@@ -896,10 +736,7 @@
   },
   "104": {
     "bg": [
-      "bg_gacha104.webp",
-      "/cards/254/card_after_training.webp",
-      "/cards/255/card_after_training.webp",
-      "/cards/256/card_after_training.webp"
+      "bg_gacha104.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -911,9 +748,7 @@
     "bg": [
       "/cards/254/card_after_training.webp",
       "/cards/255/card_after_training.webp",
-      "/cards/256/card_after_training.webp",
-      "/cards/27/card_after_training.webp",
-      "/cards/79/card_after_training.webp"
+      "/cards/256/card_after_training.webp"
     ],
     "img": [],
     "logo": "",
@@ -923,13 +758,7 @@
   },
   "106": {
     "bg": [
-      "bg_gacha106.webp",
-      "/cards/207/card_after_training.webp",
-      "/cards/190/card_after_training.webp",
-      "/cards/199/card_after_training.webp",
-      "/cards/232/card_after_training.webp",
-      "/cards/202/card_after_training.webp",
-      "/cards/214/card_after_training.webp"
+      "bg_gacha106.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -939,10 +768,7 @@
   },
   "107": {
     "bg": [
-      "bg_gacha107.webp",
-      "/cards/259/card_after_training.webp",
-      "/cards/260/card_after_training.webp",
-      "/cards/261/card_after_training.webp"
+      "bg_gacha107.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -955,8 +781,7 @@
       "/cards/259/card_after_training.webp",
       "/cards/260/card_after_training.webp",
       "/cards/261/card_after_training.webp",
-      "/cards/126/card_after_training.webp",
-      "/cards/35/card_after_training.webp"
+      "/cards/126/card_after_training.webp"
     ],
     "img": [],
     "logo": "",
@@ -966,10 +791,7 @@
   },
   "110": {
     "bg": [
-      "bg_gacha110.webp",
-      "/cards/264/card_after_training.webp",
-      "/cards/265/card_after_training.webp",
-      "/cards/266/card_after_training.webp"
+      "bg_gacha110.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -981,9 +803,7 @@
     "bg": [
       "/cards/264/card_after_training.webp",
       "/cards/265/card_after_training.webp",
-      "/cards/266/card_after_training.webp",
-      "/cards/19/card_after_training.webp",
-      "/cards/31/card_after_training.webp"
+      "/cards/266/card_after_training.webp"
     ],
     "img": [],
     "logo": "",
@@ -993,10 +813,7 @@
   },
   "112": {
     "bg": [
-      "bg_gacha112.webp",
-      "/cards/269/card_after_training.webp",
-      "/cards/270/card_after_training.webp",
-      "/cards/271/card_after_training.webp"
+      "bg_gacha112.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -1008,9 +825,7 @@
     "bg": [
       "/cards/269/card_after_training.webp",
       "/cards/270/card_after_training.webp",
-      "/cards/271/card_after_training.webp",
-      "/cards/107/card_after_training.webp",
-      "/cards/55/card_after_training.webp"
+      "/cards/271/card_after_training.webp"
     ],
     "img": [],
     "logo": "",
@@ -1035,10 +850,7 @@
   },
   "115": {
     "bg": [
-      "bg_gacha115.webp",
-      "/cards/274/card_after_training.webp",
-      "/cards/275/card_after_training.webp",
-      "/cards/276/card_after_training.webp"
+      "bg_gacha115.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -1051,8 +863,7 @@
       "/cards/274/card_after_training.webp",
       "/cards/275/card_after_training.webp",
       "/cards/276/card_after_training.webp",
-      "/cards/198/card_after_training.webp",
-      "/cards/71/card_after_training.webp"
+      "/cards/198/card_after_training.webp"
     ],
     "img": [],
     "logo": "",
@@ -1062,10 +873,7 @@
   },
   "118": {
     "bg": [
-      "bg_gacha118.webp",
-      "/cards/279/card_after_training.webp",
-      "/cards/280/card_after_training.webp",
-      "/cards/281/card_after_training.webp"
+      "bg_gacha118.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -1077,9 +885,7 @@
     "bg": [
       "/cards/279/card_after_training.webp",
       "/cards/280/card_after_training.webp",
-      "/cards/281/card_after_training.webp",
-      "/cards/15/card_after_training.webp",
-      "/cards/7/card_after_training.webp"
+      "/cards/281/card_after_training.webp"
     ],
     "img": [],
     "logo": "",
@@ -1089,10 +895,7 @@
   },
   "120": {
     "bg": [
-      "bg_gacha120.webp",
-      "/cards/284/card_after_training.webp",
-      "/cards/285/card_after_training.webp",
-      "/cards/286/card_after_training.webp"
+      "bg_gacha120.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -1104,9 +907,7 @@
     "bg": [
       "/cards/284/card_after_training.webp",
       "/cards/285/card_after_training.webp",
-      "/cards/286/card_after_training.webp",
-      "/cards/75/card_after_training.webp",
-      "/cards/67/card_after_training.webp"
+      "/cards/286/card_after_training.webp"
     ],
     "img": [],
     "logo": "",
@@ -1131,13 +932,7 @@
   },
   "124": {
     "bg": [
-      "bg_gacha124.webp",
-      "/cards/4/card_after_training.webp",
-      "/cards/224/card_after_training.webp",
-      "/cards/135/card_after_training.webp",
-      "/cards/120/card_after_training.webp",
-      "/cards/177/card_after_training.webp",
-      "/cards/116/card_after_training.webp"
+      "bg_gacha124.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -1147,12 +942,7 @@
   },
   "125": {
     "bg": [
-      "bg_gacha125.webp",
-      "/cards/289/card_after_training.webp",
-      "/cards/290/card_after_training.webp",
-      "/cards/291/card_after_training.webp",
-      "/cards/292/card_after_training.webp",
-      "/cards/293/card_after_training.webp"
+      "bg_gacha125.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -1162,13 +952,7 @@
   },
   "126": {
     "bg": [
-      "bg_gacha126.webp",
-      "/cards/149/card_after_training.webp",
-      "/cards/131/card_after_training.webp",
-      "/cards/229/card_after_training.webp",
-      "/cards/110/card_after_training.webp",
-      "/cards/251/card_after_training.webp",
-      "/cards/121/card_after_training.webp"
+      "bg_gacha126.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -1178,11 +962,7 @@
   },
   "127": {
     "bg": [
-      "bg_gacha127.webp",
-      "/cards/197/card_after_training.webp",
-      "/cards/244/card_after_training.webp",
-      "/cards/155/card_after_training.webp",
-      "/cards/207/card_after_training.webp"
+      "bg_gacha127.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -1192,11 +972,7 @@
   },
   "128": {
     "bg": [
-      "bg_gacha128.webp",
-      "/cards/190/card_after_training.webp",
-      "/cards/222/card_after_training.webp",
-      "/cards/129/card_after_training.webp",
-      "/cards/160/card_after_training.webp"
+      "bg_gacha128.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -1206,11 +982,7 @@
   },
   "129": {
     "bg": [
-      "bg_gacha129.webp",
-      "/cards/249/card_after_training.webp",
-      "/cards/134/card_after_training.webp",
-      "/cards/254/card_after_training.webp",
-      "/cards/165/card_after_training.webp"
+      "bg_gacha129.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -1220,11 +992,7 @@
   },
   "130": {
     "bg": [
-      "bg_gacha130.webp",
-      "/cards/232/card_after_training.webp",
-      "/cards/233/card_after_training.webp",
-      "/cards/144/card_after_training.webp",
-      "/cards/119/card_after_training.webp"
+      "bg_gacha130.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -1234,11 +1002,7 @@
   },
   "131": {
     "bg": [
-      "bg_gacha131.webp",
-      "/cards/237/card_after_training.webp",
-      "/cards/114/card_after_training.webp",
-      "/cards/175/card_after_training.webp",
-      "/cards/202/card_after_training.webp"
+      "bg_gacha131.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -1248,10 +1012,7 @@
   },
   "132": {
     "bg": [
-      "bg_gacha132.webp",
-      "/cards/291/card_after_training.webp",
-      "/cards/292/card_after_training.webp",
-      "/cards/293/card_after_training.webp"
+      "bg_gacha132.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -1263,9 +1024,7 @@
     "bg": [
       "/cards/291/card_after_training.webp",
       "/cards/292/card_after_training.webp",
-      "/cards/293/card_after_training.webp",
-      "/cards/3/card_after_training.webp",
-      "/cards/67/card_after_training.webp"
+      "/cards/293/card_after_training.webp"
     ],
     "img": [],
     "logo": "",
@@ -1285,10 +1044,7 @@
   },
   "136": {
     "bg": [
-      "bg_gacha136.webp",
-      "/cards/296/card_after_training.webp",
-      "/cards/297/card_after_training.webp",
-      "/cards/298/card_after_training.webp"
+      "bg_gacha136.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -1300,9 +1056,7 @@
     "bg": [
       "/cards/296/card_after_training.webp",
       "/cards/297/card_after_training.webp",
-      "/cards/298/card_after_training.webp",
-      "/cards/95/card_after_training.webp",
-      "/cards/43/card_after_training.webp"
+      "/cards/298/card_after_training.webp"
     ],
     "img": [],
     "logo": "",
@@ -1312,10 +1066,7 @@
   },
   "139": {
     "bg": [
-      "bg_gacha139.webp",
-      "/cards/301/card_after_training.webp",
-      "/cards/302/card_after_training.webp",
-      "/cards/303/card_after_training.webp"
+      "bg_gacha139.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -1328,8 +1079,7 @@
       "/cards/301/card_after_training.webp",
       "/cards/302/card_after_training.webp",
       "/cards/303/card_after_training.webp",
-      "/cards/171/card_after_training.webp",
-      "/cards/51/card_after_training.webp"
+      "/cards/171/card_after_training.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -1349,10 +1099,7 @@
   },
   "142": {
     "bg": [
-      "bg_gacha142.webp",
-      "/cards/307/card_after_training.webp",
-      "/cards/308/card_after_training.webp",
-      "/cards/309/card_after_training.webp"
+      "bg_gacha142.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -1365,8 +1112,7 @@
       "/cards/307/card_after_training.webp",
       "/cards/308/card_after_training.webp",
       "/cards/309/card_after_training.webp",
-      "/cards/203/card_after_training.webp",
-      "/cards/71/card_after_training.webp"
+      "/cards/203/card_after_training.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -1399,10 +1145,7 @@
   },
   "147": {
     "bg": [
-      "bg_gacha147.webp",
-      "/cards/313/card_after_training.webp",
-      "/cards/314/card_after_training.webp",
-      "/cards/315/card_after_training.webp"
+      "bg_gacha147.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -1414,8 +1157,7 @@
     "bg": [
       "/cards/313/card_after_training.webp",
       "/cards/314/card_after_training.webp",
-      "/cards/315/card_after_training.webp",
-      "/cards/3/card_after_training.webp"
+      "/cards/315/card_after_training.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -1435,10 +1177,7 @@
   },
   "150": {
     "bg": [
-      "bg_gacha150.webp",
-      "/cards/319/card_after_training.webp",
-      "/cards/320/card_after_training.webp",
-      "/cards/321/card_after_training.webp"
+      "bg_gacha150.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -1450,9 +1189,7 @@
     "bg": [
       "/cards/319/card_after_training.webp",
       "/cards/320/card_after_training.webp",
-      "/cards/321/card_after_training.webp",
-      "/cards/39/card_after_training.webp",
-      "/cards/31/card_after_training.webp"
+      "/cards/321/card_after_training.webp"
     ],
     "img": [],
     "logo": "",
@@ -1462,13 +1199,7 @@
   },
   "152": {
     "bg": [
-      "bg_gacha152.webp",
-      "/cards/209/card_after_training.webp",
-      "/cards/229/card_after_training.webp",
-      "/cards/237/card_after_training.webp",
-      "/cards/254/card_after_training.webp",
-      "/cards/264/card_after_training.webp",
-      "/cards/269/card_after_training.webp"
+      "bg_gacha152.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -1478,10 +1209,7 @@
   },
   "153": {
     "bg": [
-      "bg_gacha153.webp",
-      "/cards/324/card_after_training.webp",
-      "/cards/325/card_after_training.webp",
-      "/cards/326/card_after_training.webp"
+      "bg_gacha153.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -1493,9 +1221,7 @@
     "bg": [
       "/cards/324/card_after_training.webp",
       "/cards/325/card_after_training.webp",
-      "/cards/326/card_after_training.webp",
-      "/cards/67/card_after_training.webp",
-      "/cards/11/card_after_training.webp"
+      "/cards/326/card_after_training.webp"
     ],
     "img": [],
     "logo": "",
@@ -1515,10 +1241,7 @@
   },
   "157": {
     "bg": [
-      "bg_gacha157.webp",
-      "/cards/330/card_after_training.webp",
-      "/cards/331/card_after_training.webp",
-      "/cards/332/card_after_training.webp"
+      "bg_gacha157.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -1530,8 +1253,7 @@
     "bg": [
       "/cards/330/card_after_training.webp",
       "/cards/331/card_after_training.webp",
-      "/cards/332/card_after_training.webp",
-      "/cards/23/card_after_training.webp"
+      "/cards/332/card_after_training.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -1541,12 +1263,7 @@
   },
   "159": {
     "bg": [
-      "bg_gacha159.webp",
-      "/cards/335/card_after_training.webp",
-      "/cards/336/card_after_training.webp",
-      "/cards/337/card_after_training.webp",
-      "/cards/338/card_after_training.webp",
-      "/cards/339/card_after_training.webp"
+      "bg_gacha159.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -1556,10 +1273,7 @@
   },
   "160": {
     "bg": [
-      "bg_gacha160.webp",
-      "/cards/341/card_after_training.webp",
-      "/cards/342/card_after_training.webp",
-      "/cards/343/card_after_training.webp"
+      "bg_gacha160.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -1571,8 +1285,7 @@
     "bg": [
       "/cards/341/card_after_training.webp",
       "/cards/342/card_after_training.webp",
-      "/cards/343/card_after_training.webp",
-      "/cards/35/card_after_training.webp"
+      "/cards/343/card_after_training.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -1602,12 +1315,7 @@
   },
   "164": {
     "bg": [
-      "bg_gacha164.webp",
-      "/cards/348/card_after_training.webp",
-      "/cards/349/card_after_training.webp",
-      "/cards/350/card_after_training.webp",
-      "/cards/351/card_after_training.webp",
-      "/cards/352/card_after_training.webp"
+      "bg_gacha164.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -1617,10 +1325,7 @@
   },
   "165": {
     "bg": [
-      "bg_gacha165.webp",
-      "/cards/350/card_after_training.webp",
-      "/cards/351/card_after_training.webp",
-      "/cards/352/card_after_training.webp"
+      "bg_gacha165.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -1633,8 +1338,7 @@
       "/cards/350/card_after_training.webp",
       "/cards/351/card_after_training.webp",
       "/cards/352/card_after_training.webp",
-      "/cards/88/card_after_training.webp",
-      "/cards/15/card_after_training.webp"
+      "/cards/88/card_after_training.webp"
     ],
     "img": [],
     "logo": "",
@@ -1659,13 +1363,7 @@
   },
   "168": {
     "bg": [
-      "bg_gacha168.webp",
-      "/cards/149/card_after_training.webp",
-      "/cards/279/card_after_training.webp",
-      "/cards/224/card_after_training.webp",
-      "/cards/250/card_after_training.webp",
-      "/cards/270/card_after_training.webp",
-      "/cards/202/card_after_training.webp"
+      "bg_gacha168.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -1685,10 +1383,7 @@
   },
   "171": {
     "bg": [
-      "bg_gacha171.webp",
-      "/cards/356/card_after_training.webp",
-      "/cards/357/card_after_training.webp",
-      "/cards/358/card_after_training.webp"
+      "bg_gacha171.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -1700,9 +1395,7 @@
     "bg": [
       "/cards/356/card_after_training.webp",
       "/cards/357/card_after_training.webp",
-      "/cards/358/card_after_training.webp",
-      "/cards/59/card_after_training.webp",
-      "/cards/63/card_after_training.webp"
+      "/cards/358/card_after_training.webp"
     ],
     "img": [],
     "logo": "",
@@ -1712,10 +1405,7 @@
   },
   "173": {
     "bg": [
-      "bg_gacha173.webp",
-      "/cards/361/card_after_training.webp",
-      "/cards/362/card_after_training.webp",
-      "/cards/363/card_after_training.webp"
+      "bg_gacha173.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -1728,8 +1418,7 @@
       "/cards/361/card_after_training.webp",
       "/cards/362/card_after_training.webp",
       "/cards/363/card_after_training.webp",
-      "/cards/116/card_after_training.webp",
-      "/cards/75/card_after_training.webp"
+      "/cards/116/card_after_training.webp"
     ],
     "img": [],
     "logo": "",
@@ -1759,10 +1448,7 @@
   },
   "177": {
     "bg": [
-      "bg_gacha177.webp",
-      "/cards/368/card_after_training.webp",
-      "/cards/369/card_after_training.webp",
-      "/cards/370/card_after_training.webp"
+      "bg_gacha177.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -1774,9 +1460,7 @@
     "bg": [
       "/cards/368/card_after_training.webp",
       "/cards/369/card_after_training.webp",
-      "/cards/370/card_after_training.webp",
-      "/cards/91/card_after_training.webp",
-      "/cards/31/card_after_training.webp"
+      "/cards/370/card_after_training.webp"
     ],
     "img": [],
     "logo": "",
@@ -1801,10 +1485,7 @@
   },
   "181": {
     "bg": [
-      "bg_gacha181.webp",
-      "/cards/373/card_after_training.webp",
-      "/cards/374/card_after_training.webp",
-      "/cards/375/card_after_training.webp"
+      "bg_gacha181.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -1816,9 +1497,7 @@
     "bg": [
       "/cards/373/card_after_training.webp",
       "/cards/374/card_after_training.webp",
-      "/cards/375/card_after_training.webp",
-      "/cards/39/card_after_training.webp",
-      "/cards/43/card_after_training.webp"
+      "/cards/375/card_after_training.webp"
     ],
     "img": [],
     "logo": "",
@@ -1848,10 +1527,7 @@
   },
   "185": {
     "bg": [
-      "bg_gacha185.webp",
-      "/cards/380/card_after_training.webp",
-      "/cards/381/card_after_training.webp",
-      "/cards/382/card_after_training.webp"
+      "bg_gacha185.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -1863,9 +1539,7 @@
     "bg": [
       "/cards/380/card_after_training.webp",
       "/cards/381/card_after_training.webp",
-      "/cards/382/card_after_training.webp",
-      "/cards/7/card_after_training.webp",
-      "/cards/11/card_after_training.webp"
+      "/cards/382/card_after_training.webp"
     ],
     "img": [],
     "logo": "",
@@ -1875,19 +1549,7 @@
   },
   "187": {
     "bg": [
-      "bg_gacha187.webp",
-      "/cards/279/card_after_training.webp",
-      "/cards/313/card_after_training.webp",
-      "/cards/224/card_after_training.webp",
-      "/cards/266/card_after_training.webp",
-      "/cards/296/card_after_training.webp",
-      "/cards/298/card_after_training.webp",
-      "/cards/232/card_after_training.webp",
-      "/cards/270/card_after_training.webp",
-      "/cards/284/card_after_training.webp",
-      "/cards/202/card_after_training.webp",
-      "/cards/320/card_after_training.webp",
-      "/cards/286/card_after_training.webp"
+      "bg_gacha187.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -1897,10 +1559,7 @@
   },
   "188": {
     "bg": [
-      "bg_gacha188.webp",
-      "/cards/385/card_after_training.webp",
-      "/cards/386/card_after_training.webp",
-      "/cards/387/card_after_training.webp"
+      "bg_gacha188.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -1913,8 +1572,7 @@
       "/cards/385/card_after_training.webp",
       "/cards/386/card_after_training.webp",
       "/cards/387/card_after_training.webp",
-      "/cards/96/card_after_training.webp",
-      "/cards/15/card_after_training.webp"
+      "/cards/96/card_after_training.webp"
     ],
     "img": [],
     "logo": "",
@@ -1934,10 +1592,7 @@
   },
   "192": {
     "bg": [
-      "bg_gacha192.webp",
-      "/cards/391/card_after_training.webp",
-      "/cards/392/card_after_training.webp",
-      "/cards/393/card_after_training.webp"
+      "bg_gacha192.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -1949,9 +1604,7 @@
     "bg": [
       "/cards/391/card_after_training.webp",
       "/cards/392/card_after_training.webp",
-      "/cards/393/card_after_training.webp",
-      "/cards/23/card_after_training.webp",
-      "/cards/27/card_after_training.webp"
+      "/cards/393/card_after_training.webp"
     ],
     "img": [],
     "logo": "",
@@ -1971,10 +1624,7 @@
   },
   "195": {
     "bg": [
-      "bg_gacha195.webp",
-      "/cards/397/card_after_training.webp",
-      "/cards/398/card_after_training.webp",
-      "/cards/399/card_after_training.webp"
+      "bg_gacha195.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -1986,9 +1636,7 @@
     "bg": [
       "/cards/397/card_after_training.webp",
       "/cards/398/card_after_training.webp",
-      "/cards/399/card_after_training.webp",
-      "/cards/71/card_after_training.webp",
-      "/cards/79/card_after_training.webp"
+      "/cards/399/card_after_training.webp"
     ],
     "img": [],
     "logo": "",
@@ -2013,13 +1661,7 @@
   },
   "198": {
     "bg": [
-      "bg_gacha198.webp",
-      "/cards/402/card_after_training.webp",
-      "/cards/403/card_after_training.webp",
-      "/cards/404/card_after_training.webp",
-      "/cards/405/card_after_training.webp",
-      "/cards/406/card_after_training.webp",
-      "/cards/407/card_after_training.webp"
+      "bg_gacha198.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -2029,13 +1671,7 @@
   },
   "199": {
     "bg": [
-      "bg_gacha199.webp",
-      "/cards/298/card_after_training.webp",
-      "/cards/197/card_after_training.webp",
-      "/cards/264/card_after_training.webp",
-      "/cards/341/card_after_training.webp",
-      "/cards/234/card_after_training.webp",
-      "/cards/237/card_after_training.webp"
+      "bg_gacha199.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -2180,19 +1816,7 @@
   },
   "212": {
     "bg": [
-      "bg_gacha212.webp",
-      "/cards/315/card_after_training.webp",
-      "/cards/380/card_after_training.webp",
-      "/cards/330/card_after_training.webp",
-      "/cards/264/card_after_training.webp",
-      "/cards/373/card_after_training.webp",
-      "/cards/341/card_after_training.webp",
-      "/cards/356/card_after_training.webp",
-      "/cards/269/card_after_training.webp",
-      "/cards/361/card_after_training.webp",
-      "/cards/255/card_after_training.webp",
-      "/cards/358/card_after_training.webp",
-      "/cards/382/card_after_training.webp"
+      "bg_gacha212.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -2340,13 +1964,7 @@
   },
   "225": {
     "bg": [
-      "bg_gacha225.webp",
-      "/cards/398/card_after_training.webp",
-      "/cards/374/card_after_training.webp",
-      "/cards/380/card_after_training.webp",
-      "/cards/410/card_after_training.webp",
-      "/cards/392/card_after_training.webp",
-      "/cards/320/card_after_training.webp"
+      "bg_gacha225.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -2513,33 +2131,7 @@
   },
   "239": {
     "bg": [
-      "bg_gacha239.webp",
-      "/cards/416/card_after_training.webp",
-      "/cards/244/card_after_training.webp",
-      "/cards/313/card_after_training.webp",
-      "/cards/380/card_after_training.webp",
-      "/cards/392/card_after_training.webp",
-      "/cards/321/card_after_training.webp",
-      "/cards/331/card_after_training.webp",
-      "/cards/391/card_after_training.webp",
-      "/cards/373/card_after_training.webp",
-      "/cards/343/card_after_training.webp",
-      "/cards/434/card_after_training.webp",
-      "/cards/341/card_after_training.webp",
-      "/cards/410/card_after_training.webp",
-      "/cards/356/card_after_training.webp",
-      "/cards/450/card_after_training.webp",
-      "/cards/428/card_after_training.webp",
-      "/cards/361/card_after_training.webp",
-      "/cards/445/card_after_training.webp",
-      "/cards/255/card_after_training.webp",
-      "/cards/429/card_after_training.webp",
-      "/cards/393/card_after_training.webp",
-      "/cards/399/card_after_training.webp",
-      "/cards/447/card_after_training.webp",
-      "/cards/430/card_after_training.webp",
-      "/cards/358/card_after_training.webp",
-      "/cards/436/card_after_training.webp"
+      "bg_gacha239.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -2549,13 +2141,7 @@
   },
   "240": {
     "bg": [
-      "bg_gacha240.webp",
-      "/cards/393/card_after_training.webp",
-      "/cards/399/card_after_training.webp",
-      "/cards/447/card_after_training.webp",
-      "/cards/430/card_after_training.webp",
-      "/cards/358/card_after_training.webp",
-      "/cards/436/card_after_training.webp"
+      "bg_gacha240.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -2563,11 +2149,7 @@
   },
   "241": {
     "bg": [
-      "bg_gacha241.webp",
-      "/cards/416/card_after_training.webp",
-      "/cards/244/card_after_training.webp",
-      "/cards/313/card_after_training.webp",
-      "/cards/380/card_after_training.webp"
+      "bg_gacha241.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -2575,11 +2157,7 @@
   },
   "242": {
     "bg": [
-      "bg_gacha242.webp",
-      "/cards/392/card_after_training.webp",
-      "/cards/321/card_after_training.webp",
-      "/cards/331/card_after_training.webp",
-      "/cards/391/card_after_training.webp"
+      "bg_gacha242.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -2587,11 +2165,7 @@
   },
   "243": {
     "bg": [
-      "bg_gacha243.webp",
-      "/cards/373/card_after_training.webp",
-      "/cards/343/card_after_training.webp",
-      "/cards/434/card_after_training.webp",
-      "/cards/341/card_after_training.webp"
+      "bg_gacha243.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -2599,11 +2173,7 @@
   },
   "244": {
     "bg": [
-      "bg_gacha244.webp",
-      "/cards/410/card_after_training.webp",
-      "/cards/356/card_after_training.webp",
-      "/cards/450/card_after_training.webp",
-      "/cards/428/card_after_training.webp"
+      "bg_gacha244.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -2611,11 +2181,7 @@
   },
   "245": {
     "bg": [
-      "bg_gacha245.webp",
-      "/cards/361/card_after_training.webp",
-      "/cards/445/card_after_training.webp",
-      "/cards/255/card_after_training.webp",
-      "/cards/429/card_after_training.webp"
+      "bg_gacha245.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -2623,13 +2189,7 @@
   },
   "246": {
     "bg": [
-      "bg_gacha246.webp",
-      "/cards/509/card_after_training.webp",
-      "/cards/510/card_after_training.webp",
-      "/cards/511/card_after_training.webp",
-      "/cards/512/card_after_training.webp",
-      "/cards/513/card_after_training.webp",
-      "/cards/514/card_after_training.webp"
+      "bg_gacha246.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -2639,13 +2199,7 @@
   },
   "247": {
     "bg": [
-      "bg_gacha247.webp",
-      "/cards/198/card_after_training.webp",
-      "/cards/381/card_after_training.webp",
-      "/cards/224/card_after_training.webp",
-      "/cards/319/card_after_training.webp",
-      "/cards/451/card_after_training.webp",
-      "/cards/115/card_after_training.webp"
+      "bg_gacha247.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -2724,13 +2278,7 @@
   },
   "255": {
     "bg": [
-      "bg_gacha255.webp",
-      "/cards/469/card_after_training.webp",
-      "/cards/463/card_after_training.webp",
-      "/cards/445/card_after_training.webp",
-      "/cards/450/card_after_training.webp",
-      "/cards/391/card_after_training.webp",
-      "/cards/447/card_after_training.webp"
+      "bg_gacha255.webp"
     ],
     "img": [],
     "logo": "",
@@ -2842,19 +2390,7 @@
   },
   "266": {
     "bg": [
-      "bg_gacha266.webp",
-      "/cards/469/card_after_training.webp",
-      "/cards/380/card_after_training.webp",
-      "/cards/321/card_after_training.webp",
-      "/cards/482/card_after_training.webp",
-      "/cards/463/card_after_training.webp",
-      "/cards/254/card_after_training.webp",
-      "/cards/410/card_after_training.webp",
-      "/cards/428/card_after_training.webp",
-      "/cards/445/card_after_training.webp",
-      "/cards/486/card_after_training.webp",
-      "/cards/430/card_after_training.webp",
-      "/cards/436/card_after_training.webp"
+      "bg_gacha266.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -2995,13 +2531,7 @@
   },
   "279": {
     "bg": [
-      "bg_gacha279.webp",
-      "/cards/393/card_after_training.webp",
-      "/cards/381/card_after_training.webp",
-      "/cards/330/card_after_training.webp",
-      "/cards/505/card_after_training.webp",
-      "/cards/451/card_after_training.webp",
-      "/cards/398/card_after_training.webp"
+      "bg_gacha279.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -3077,13 +2607,7 @@
   },
   "286": {
     "bg": [
-      "bg_gacha286.webp",
-      "/cards/470/card_after_training.webp",
-      "/cards/505/card_after_training.webp",
-      "/cards/446/card_after_training.webp",
-      "/cards/501/card_after_training.webp",
-      "/cards/481/card_after_training.webp",
-      "/cards/465/card_after_training.webp"
+      "bg_gacha286.webp"
     ],
     "img": [],
     "logo": "",
@@ -3213,19 +2737,7 @@
   },
   "299": {
     "bg": [
-      "bg_gacha299.webp",
-      "/cards/535/card_after_training.webp",
-      "/cards/418/card_after_training.webp",
-      "/cards/517/card_after_training.webp",
-      "/cards/331/card_after_training.webp",
-      "/cards/435/card_after_training.webp",
-      "/cards/504/card_after_training.webp",
-      "/cards/501/card_after_training.webp",
-      "/cards/524/card_after_training.webp",
-      "/cards/540/card_after_training.webp",
-      "/cards/398/card_after_training.webp",
-      "/cards/393/card_after_training.webp",
-      "/cards/447/card_after_training.webp"
+      "bg_gacha299.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -3235,14 +2747,7 @@
   },
   "300": {
     "bg": [
-      "bg_gacha300.webp",
-      "/cards/383/card_after_training.webp",
-      "/cards/267/card_after_training.webp",
-      "/cards/376/card_after_training.webp",
-      "/cards/359/card_after_training.webp",
-      "/cards/364/card_after_training.webp",
-      "/cards/353/card_after_training.webp",
-      "/cards/272/card_after_training.webp"
+      "bg_gacha300.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -3366,13 +2871,7 @@
   },
   "312": {
     "bg": [
-      "bg_gacha312.webp",
-      "/cards/483/card_after_training.webp",
-      "/cards/536/card_after_training.webp",
-      "/cards/518/card_after_training.webp",
-      "/cards/552/card_after_training.webp",
-      "/cards/523/card_after_training.webp",
-      "/cards/542/card_after_training.webp"
+      "bg_gacha312.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -3382,13 +2881,7 @@
   },
   "313": {
     "bg": [
-      "bg_gacha313.webp",
-      "/cards/280/card_after_training.webp",
-      "/cards/315/card_after_training.webp",
-      "/cards/264/card_after_training.webp",
-      "/cards/341/card_after_training.webp",
-      "/cards/356/card_after_training.webp",
-      "/cards/363/card_after_training.webp"
+      "bg_gacha313.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -3495,13 +2988,7 @@
   },
   "322": {
     "bg": [
-      "bg_gacha322.webp",
-      "/cards/418/card_after_training.webp",
-      "/cards/391/card_after_training.webp",
-      "/cards/504/card_after_training.webp",
-      "/cards/572/card_after_training.webp",
-      "/cards/499/card_after_training.webp",
-      "/cards/382/card_after_training.webp"
+      "bg_gacha322.webp"
     ],
     "img": [],
     "logo": "",
@@ -3537,12 +3024,7 @@
   },
   "327": {
     "bg": [
-      "bg_gacha327.webp",
-      "/cards/335/card_after_training.webp",
-      "/cards/336/card_after_training.webp",
-      "/cards/337/card_after_training.webp",
-      "/cards/338/card_after_training.webp",
-      "/cards/339/card_after_training.webp"
+      "bg_gacha327.webp"
     ],
     "img": [],
     "logo": "logo/logo.webp",
@@ -3821,13 +3303,7 @@
   },
   "355": {
     "bg": [
-      "bg_gacha355.webp",
-      "/cards/578/card_after_training.webp",
-      "/cards/631/card_after_training.webp",
-      "/cards/134/card_after_training.webp",
-      "/cards/269/card_after_training.webp",
-      "/cards/429/card_after_training.webp",
-      "/cards/483/card_after_training.webp"
+      "bg_gacha355.webp"
     ],
     "img": [],
     "logo": "",
@@ -3949,15 +3425,7 @@
     ]
   },
   "369": {
-    "bg": [
-      "/cards/383/card_after_training.webp",
-      "/cards/267/card_after_training.webp",
-      "/cards/376/card_after_training.webp",
-      "/cards/359/card_after_training.webp",
-      "/cards/364/card_after_training.webp",
-      "/cards/353/card_after_training.webp",
-      "/cards/272/card_after_training.webp"
-    ],
+    "bg": [],
     "img": [],
     "logo": "logo/logo.webp",
     "banner": []
@@ -9161,282 +8629,6 @@
       "/cards/613/card_after_training.webp",
       "/cards/553/card_after_training.webp",
       "/cards/650/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "38": {
-    "bg": [
-      "/cards/3/card_after_training.webp",
-      "/cards/19/card_after_training.webp",
-      "/cards/35/card_after_training.webp",
-      "/cards/51/card_after_training.webp",
-      "/cards/67/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "51": {
-    "bg": [
-      "/cards/3/card_after_training.webp",
-      "/cards/19/card_after_training.webp",
-      "/cards/35/card_after_training.webp",
-      "/cards/51/card_after_training.webp",
-      "/cards/67/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "59": {
-    "bg": [
-      "/cards/3/card_after_training.webp",
-      "/cards/19/card_after_training.webp",
-      "/cards/35/card_after_training.webp",
-      "/cards/51/card_after_training.webp",
-      "/cards/67/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "71": {
-    "bg": [
-      "/cards/3/card_after_training.webp",
-      "/cards/19/card_after_training.webp",
-      "/cards/35/card_after_training.webp",
-      "/cards/51/card_after_training.webp",
-      "/cards/67/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "81": {
-    "bg": [
-      "/cards/3/card_after_training.webp",
-      "/cards/19/card_after_training.webp",
-      "/cards/35/card_after_training.webp",
-      "/cards/51/card_after_training.webp",
-      "/cards/67/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "95": {
-    "bg": [
-      "/cards/3/card_after_training.webp",
-      "/cards/19/card_after_training.webp",
-      "/cards/35/card_after_training.webp",
-      "/cards/51/card_after_training.webp",
-      "/cards/67/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "101": {
-    "bg": [
-      "/cards/3/card_after_training.webp",
-      "/cards/19/card_after_training.webp",
-      "/cards/35/card_after_training.webp",
-      "/cards/51/card_after_training.webp",
-      "/cards/67/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "109": {
-    "bg": [
-      "/cards/3/card_after_training.webp",
-      "/cards/19/card_after_training.webp",
-      "/cards/35/card_after_training.webp",
-      "/cards/51/card_after_training.webp",
-      "/cards/67/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "117": {
-    "bg": [
-      "/cards/3/card_after_training.webp",
-      "/cards/19/card_after_training.webp",
-      "/cards/35/card_after_training.webp",
-      "/cards/51/card_after_training.webp",
-      "/cards/67/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "122": {
-    "bg": [
-      "/cards/3/card_after_training.webp",
-      "/cards/19/card_after_training.webp",
-      "/cards/35/card_after_training.webp",
-      "/cards/51/card_after_training.webp",
-      "/cards/67/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "135": {
-    "bg": [
-      "/cards/3/card_after_training.webp",
-      "/cards/19/card_after_training.webp",
-      "/cards/35/card_after_training.webp",
-      "/cards/51/card_after_training.webp",
-      "/cards/67/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "146": {
-    "bg": [
-      "/cards/3/card_after_training.webp",
-      "/cards/19/card_after_training.webp",
-      "/cards/35/card_after_training.webp",
-      "/cards/51/card_after_training.webp",
-      "/cards/67/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "156": {
-    "bg": [
-      "/cards/3/card_after_training.webp",
-      "/cards/19/card_after_training.webp",
-      "/cards/35/card_after_training.webp",
-      "/cards/51/card_after_training.webp",
-      "/cards/67/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "170": {
-    "bg": [
-      "/cards/3/card_after_training.webp",
-      "/cards/19/card_after_training.webp",
-      "/cards/35/card_after_training.webp",
-      "/cards/51/card_after_training.webp",
-      "/cards/67/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "180": {
-    "bg": [
-      "/cards/3/card_after_training.webp",
-      "/cards/19/card_after_training.webp",
-      "/cards/35/card_after_training.webp",
-      "/cards/51/card_after_training.webp",
-      "/cards/67/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "191": {
-    "bg": [
-      "/cards/3/card_after_training.webp",
-      "/cards/19/card_after_training.webp",
-      "/cards/35/card_after_training.webp",
-      "/cards/51/card_after_training.webp",
-      "/cards/67/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "308": {
-    "bg": [
-      "/cards/383/card_after_training.webp",
-      "/cards/267/card_after_training.webp",
-      "/cards/376/card_after_training.webp",
-      "/cards/359/card_after_training.webp",
-      "/cards/364/card_after_training.webp",
-      "/cards/353/card_after_training.webp",
-      "/cards/272/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "315": {
-    "bg": [
-      "/cards/383/card_after_training.webp",
-      "/cards/267/card_after_training.webp",
-      "/cards/376/card_after_training.webp",
-      "/cards/359/card_after_training.webp",
-      "/cards/364/card_after_training.webp",
-      "/cards/353/card_after_training.webp",
-      "/cards/272/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "326": {
-    "bg": [
-      "/cards/383/card_after_training.webp",
-      "/cards/267/card_after_training.webp",
-      "/cards/376/card_after_training.webp",
-      "/cards/359/card_after_training.webp",
-      "/cards/364/card_after_training.webp",
-      "/cards/353/card_after_training.webp",
-      "/cards/272/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "339": {
-    "bg": [
-      "/cards/383/card_after_training.webp",
-      "/cards/267/card_after_training.webp",
-      "/cards/376/card_after_training.webp",
-      "/cards/359/card_after_training.webp",
-      "/cards/364/card_after_training.webp",
-      "/cards/353/card_after_training.webp",
-      "/cards/272/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "346": {
-    "bg": [
-      "/cards/383/card_after_training.webp",
-      "/cards/267/card_after_training.webp",
-      "/cards/376/card_after_training.webp",
-      "/cards/359/card_after_training.webp",
-      "/cards/364/card_after_training.webp",
-      "/cards/353/card_after_training.webp",
-      "/cards/272/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "357": {
-    "bg": [
-      "/cards/383/card_after_training.webp",
-      "/cards/267/card_after_training.webp",
-      "/cards/376/card_after_training.webp",
-      "/cards/359/card_after_training.webp",
-      "/cards/364/card_after_training.webp",
-      "/cards/353/card_after_training.webp",
-      "/cards/272/card_after_training.webp"
     ],
     "img": [],
     "banner": [],
