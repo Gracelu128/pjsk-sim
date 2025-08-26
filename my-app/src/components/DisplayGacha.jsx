@@ -22,12 +22,35 @@ export default function DisplayGacha({ gachaId, manifest }) {
   const entry = manifest?.[gachaId] || {};
 
   // Rotators
-  const bgLen = Array.isArray(entry.bg) ? entry.bg.length : 0;
+  //const bgLen = Array.isArray(entry.bg) ? entry.bg.length : 0;
   const imgLen = Array.isArray(entry.img) ? entry.img.length : 0;
-  const bgIndex = useCountdown(bgLen, 4000);
   const imgIndex = useCountdown(imgLen, 4000);
   // Per-gacha assets
-  const bgSrc = bgPath(gachaId, entry, bgIndex);
+  //Below: fix for gachas 1-376
+  // Build the list of bg candidates
+  const allBg = Array.isArray(entry.bg) ? entry.bg : [];
+  const isEarly = Number(gachaId) >= 1 && Number(gachaId) <= 376;
+
+  // keep only card images for early gachas
+  const bgFiles = isEarly
+    ? allBg.filter(p => typeof p === "string" && (p.startsWith("/cards/") || p.startsWith("cards/") || p.includes("/cards/")))
+    : allBg;
+
+  // Use the filtered list length for rotation
+  const bgIndex = useCountdown(bgFiles.length || 0, 4000);
+
+  // Resolve the current bg URL
+  const resolveBg = (file) => {
+    if (!file) return null;
+    // mirror the logic in normalizeBgFile
+    if (file.startsWith("http://") || file.startsWith("https://") || file.startsWith("/")) return file;
+    if (file.startsWith("cards/") || file.includes("/cards/")) return "/" + file;
+    // texture filename
+    return `/gacha/gacha_${gachaId}/screen/texture/${file}`;
+  };
+
+  const bgSrc = resolveBg(bgFiles[bgIndex] || null);
+  //-
   const overlaySrc = overlayPath(gachaId, entry, imgIndex);
   const logoSrc = logoPath(gachaId, entry);
   const bannerSrc = bannerPath(gachaId, entry, 0);
