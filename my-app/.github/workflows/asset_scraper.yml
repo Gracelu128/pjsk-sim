@@ -1,0 +1,4 @@
+name: Asset Scraper
+
+on:
+    workflow_dispatch
