@@ -1,3 +1,4 @@
+import io
 import json
 import os
 import time
@@ -19,19 +20,23 @@ from webdriver_manager.chrome import ChromeDriverManager
 from bs4 import BeautifulSoup
 from typing import Dict, Any, List
 
-
-# Global var to store start and end card ID
-start_id = 1
+# ***GLOBAL VARIABLES HERE***
+start_id = 1 # default start card id
 end_id = 1222
-# Global var to store start and end gacha ID
-start_gacha = 1
+start_gacha = 1 # default start gacha id
 end_gacha = 783
+# ***END OF GLOBAL VARIABLES***
+
+######################################################################
+################# CARD RELATED FUNCTIONS BEGINS HERE #################
 
 def scrape_card_images(start_num=start_id, end_num=end_id):
     """Scrape card images using Selenium with automatic driver management"""
     # Configuration
     asset_path = "/Users/gracelu/Desktop/pjsk sim/my-app/public/cards"
     os.makedirs(asset_path, exist_ok=True)
+
+    print("Scraping card images from sekai.best...")
     
     # Set up Chrome options
     chrome_options = Options()
@@ -63,7 +68,7 @@ def scrape_card_images(start_num=start_id, end_num=end_id):
             # Get the style attribute, where .webp url is
             style_attr = card_div.get_attribute("style")
             if not style_attr:
-                print(f"  ✗ Style attribute missing")
+                print(f"  Style attribute missing, moving onto next card...")
                 continue
                 
             # Extract image URL using regex
@@ -71,15 +76,15 @@ def scrape_card_images(start_num=start_id, end_num=end_id):
             match = pattern.search(style_attr)
 
             if not match:
-                print(f"  ✗ Couldn't extract image URL from style attribute")
-                print(f"  Style content: {style_attr}")
+                print(f"  Couldn't extract image URL from style attribute")
+                print(f"  Style content: {style_attr}, moving onto next card...")
                 continue
 
             normal_url = match.group(1)
             trained_url = normal_url.replace("card_normal.webp", "card_after_training.webp")
 
-            print(f"  ✓ Found normal art URL: {normal_url}")
-            print(f"  ✓ Guessed trained art URL: {trained_url}")
+            print(f"  Found normal art URL: {normal_url}")
+            print(f"  Trained art URL: {trained_url}")
 
             # Create subdirectory for this card
             card_dir = os.path.join(asset_path, str(card_id))
@@ -96,24 +101,24 @@ def scrape_card_images(start_num=start_id, end_num=end_id):
                     img_response.raise_for_status()
 
                     if not img_response.headers.get('Content-Type', '').startswith('image/'):
-                        print(f"  ✗ Unexpected content type for {label}: {img_response.headers.get('Content-Type')}")
+                        print(f"  Unexpected content type for {label}: {img_response.headers.get('Content-Type')}")
                         continue
 
                     save_path = os.path.join(card_dir, label)
                     with open(save_path, "wb") as f:
                         f.write(img_response.content)
 
-                    print(f"    ✓ Saved {label} ({len(img_response.content)//1024} KB)")
+                    print(f"    Saved {label} ({len(img_response.content)//1024} KB)")
                 except Exception as e:
-                    print(f"    ! Failed to save {label}: {e}")
+                    print(f"    Failed to save {label}: {e}")
             
         except Exception as e:
-            print(f"  ! Error processing card {card_id}: {str(e)}")
+            print(f"  Error processing card {card_id}: {str(e)}")
         
         time.sleep(1)  # Be polite to the server
 
     driver.quit()
-    print("Scraping completed!")
+    print("Scraping card images completed!")
 
 def sekaipedia_scrape_card_info(start_num=start_id, end_num=end_id):
     """Scrape card images using Selenium with automatic driver management"""
@@ -141,6 +146,8 @@ def sekaipedia_scrape_card_info(start_num=start_id, end_num=end_id):
     driver = webdriver.Chrome(service=service, options=chrome_options)
 
     base_url = "https://www.sekaipedia.org/wiki/List_of_cards"
+
+    print("Scraping card information from sekaipedia...")
         
     try:
         # Load the page with Selenium
@@ -164,7 +171,7 @@ def sekaipedia_scrape_card_info(start_num=start_id, end_num=end_id):
                 # Skip cards outside the specified range
                 card_id_int = int(card_id)
                 if card_id_int < start_num:
-                    print(f"Skipping {card_id}")
+                    print(f"Skipping {card_id}, outside of specified range of cards")
                     continue
                 if card_id_int > end_num:
                     break
@@ -182,8 +189,6 @@ def sekaipedia_scrape_card_info(start_num=start_id, end_num=end_id):
                     full_path_parts = path_parts[:thumb_index] + path_parts[thumb_index + 1:thumb_index + 4]  # Skip "thumb" and keep the 3 parts after
                     full_path = "/".join(full_path_parts)
                     full_url = f"{parsed.scheme}://{parsed.netloc}{full_path}"
-                print(f"Icon url: {icon_url}")
-                print(f"Full url: {full_url}")
                 
                 # Download both 64px and full-size icon
                 sizes = {
@@ -205,7 +210,6 @@ def sekaipedia_scrape_card_info(start_num=start_id, end_num=end_id):
                     if response.status_code == 200:
                         with open(png_filepath, "wb") as f:
                             f.write(response.content)
-                        print(f"Saved {size_label} PNG")
 
                         # Convert to WebP
                         webp_filename = f"{card_id}_{size_label}.webp"
@@ -278,7 +282,7 @@ def sekaipedia_scrape_card_info(start_num=start_id, end_num=end_id):
                 # Optional: short pause to be kind to the server
                 time.sleep(1)
             except Exception as e:
-                print(f"Error on row {index}: {e}")
+                print(f"Error on card {index}: {e}")
 
         # Loop over hrefs, open individual card pages to extract more information
         for index, (card_id, full_url) in enumerate(card_hrefs):
@@ -305,9 +309,7 @@ def sekaipedia_scrape_card_info(start_num=start_id, end_num=end_id):
                     en_li = name_ul.find_element(By.XPATH, ".//li[contains(., 'English:')]")
                     en_skill_name = en_li.text.split("English:")[1].strip()
                 except:
-                    pass
-
-            print(f"  Skill Name: {en_skill_name}")
+                    print("Issue extracting card skill (english) name")
 
             # Robust extraction for skill effect
             en_skill_effect = None
@@ -318,9 +320,7 @@ def sekaipedia_scrape_card_info(start_num=start_id, end_num=end_id):
                     level4_li = effect_ul.find_element(By.XPATH, ".//li[contains(., 'Level 4:')]")
                     en_skill_effect = level4_li.text.split("Level 4:")[1].strip().replace(";", " and")
                 except:
-                    pass
-
-            print(f"  Skill Effect: {en_skill_effect}")
+                    print("Issue extracting card skill (english) effect")
 
             # Load the Main Stats section (for Power)
             try:
@@ -330,13 +330,12 @@ def sekaipedia_scrape_card_info(start_num=start_id, end_num=end_id):
                 )
                 stats_section = stats_heading.find_element(By.XPATH, "following-sibling::section[1]")
             except Exception as e:
-                print("Fallback: Try to look for 'Main_stats' section.")
                 stats_section = wait.until(
                     EC.presence_of_element_located((By.XPATH, "//section[.//span[@id='Main_stats']]"))
                 )
 
             power_val = stats_section.find_element(By.XPATH, ".//tr[th[contains(., 'Power')]]/td[2]").text
-            print(f"  Power (max): {power_val}")
+            print(f"  Card power (max): {power_val}")
 
             data[str(card_id)]["skill name (english)"] = en_skill_name
             data[str(card_id)]["skill effect (english)"] = en_skill_effect
@@ -356,299 +355,11 @@ def sekaipedia_scrape_card_info(start_num=start_id, end_num=end_id):
         print("Scraping completed! Data saved to JSON.")
 
     driver.quit()
-    print("Scraping completed!")
+    print("Scraping card information from sekaipedia completed!")
 
     # Write back to json
     with open(json_path, 'w') as f:
         json.dump(data, f, indent=2)
-
-def sekaibest_scrape_gacha_info(start_gacha=start_gacha, end_gacha=end_gacha):
-    # Configuration
-    json_path = "/Users/gracelu/Desktop/pjsk sim/my-app/src/data/gacha_metadata.json"
-    ## depends on the metadata, we skip over some birthday gacha downloads!!!
-    ## later if we add automation process, this needs to be fed in to the scrape_gacha function, so it can skip the birthday banners!!!
-    rate_json_path = "/Users/gracelu/Desktop/pjsk sim/my-app/src/data/gacha_rates.json"
-
-    data = None
-    if os.path.exists(json_path):
-        with open(json_path, 'r') as f:
-            data = json.load(f)
-    else:
-        data = {}
-
-    rate_data = None
-    if os.path.exists(rate_json_path):
-        with open(rate_json_path, 'r') as f:
-            rate_data = json.load(f)
-    else:
-        rate_data = []
-
-    # Set up Chrome options
-    chrome_options = Options()
-    chrome_options.add_argument("--headless")  # Run in background
-    chrome_options.add_argument("--disable-gpu")
-    chrome_options.add_argument("--no-sandbox")
-    chrome_options.add_argument("--disable-dev-shm-usage")
-    chrome_options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36")
-    
-    # Set up Chrome driver with WebDriver Manager
-    service = Service(ChromeDriverManager().install())
-    driver = webdriver.Chrome(service=service, options=chrome_options)
-
-    for gacha_id in range(start_gacha, end_gacha + 1):
-        url = f"https://sekai.best/gacha/{gacha_id}"
-        print(f"Processing gacha #{gacha_id}...")
-        
-        try:
-            # Load url
-            driver.get(url)
-            WebDriverWait(driver, 15).until(
-                EC.presence_of_element_located((By.XPATH, '//h6[contains(., "ID")]'))
-            )
-            
-            # Get ID
-            id_element = driver.find_element(By.XPATH, '//h6[contains(., "ID")]/following-sibling::p')
-            id = id_element.text.strip()
-            
-            # if id not in data:
-            #     data[id] = {}
-            # data[id]['id'] = gacha_id
-
-            # # Get jp and en title
-            # combined_title = driver.find_element(
-            #     By.XPATH,
-            #     '//h6[@class="MuiTypography-root MuiTypography-h6 css-1u18iur"]'
-            # ).text
-            # jp_title, en_title = [t.strip() for t in combined_title.split('|', 1)]
-            # data[id]['title (japanese)'] = jp_title
-            
-            # # Get Release Date
-            # release_date = driver.find_element(
-            #     By.XPATH, 
-            #     '//h6[contains(., "Available From")]/following-sibling::p'
-            # ).text
-            # data[id]['release_date'] = release_date
-
-            # TODO: Get End Date
-            end_date = driver.find_element(
-                By.XPATH, 
-                '//h6[contains(., "Available Until")]/following-sibling::p'
-            ).text
-            data[id]['end_date'] = end_date
-
-            # # Determine gacha type
-            # gacha_type = "unknown"  # Default value
-            
-            # # First try: Check for Exchange Item image
-            # try:
-            #     exchange_img = driver.find_element(
-            #         By.XPATH, 
-            #         '//h6[contains(., "Exchange Item")]/following-sibling::img'
-            #     )
-            #     img_src = exchange_img.get_attribute('src')
-                
-            #     if 'ceil_item.webp' in img_src:
-            #         gacha_type = 'normal'
-            #     elif 'ceil_item_limited.webp' in img_src:
-            #         gacha_type = 'limited'
-            #     elif 'ceil_item_birthday.webp' in img_src:
-            #         gacha_type = 'birthday'
-            #     else:
-            #         # Handle unexpected image names
-            #         if 'limited' in img_src.lower():
-            #             gacha_type = 'limited'
-            #         elif 'birthday' in img_src.lower():
-            #             gacha_type = 'birthday'
-            #         else:
-            #             gacha_type = 'normal'
-            
-            # except:
-            #     # Fallback: Check for explicit Type text
-            #     try:
-            #         type_text = driver.find_element(
-            #             By.XPATH, 
-            #             '//h6[contains(., "Type")]/following-sibling::p'
-            #         ).text.lower()
-                    
-            #         if 'normal' in type_text:
-            #             gacha_type = 'normal'
-            #         elif 'limited' in type_text:
-            #             gacha_type = 'limited'
-            #         elif 'birthday' in type_text:
-            #             gacha_type = 'birthday'
-            #         else:
-            #             # Handle other type texts
-            #             if '限定' in type_text:  # Japanese for "limited"
-            #                 gacha_type = 'limited'
-            #             elif 'バースデー' in type_text:  # Japanese for "birthday"
-            #                 gacha_type = 'birthday'
-            #             elif 'beginner' in type_text:
-            #                 gacha_type = 'beginner'
-            #             elif 'gift' in type_text:
-            #                 gacha_type = 'gift'
-            #             else:
-            #                 gacha_type = type_text
-            #     except:
-            #         print("Did not found gacha type")
-
-            # data[id]['type'] = gacha_type
-
-            # # Scrape Gacha Rates
-            # # Store unique normal and guaranteed gacha rate pairs to rate_data
-            # rates = extract_rates(driver)
-            
-            # # Create or find rate index
-            # rate_index = None
-            # for idx, rate_struct in enumerate(rate_data):
-            #     if rate_struct == rates:
-            #         rate_index = idx
-            #         break
-            
-            # if rate_index is None:
-            #     rate_data.append(rates)
-            #     rate_index = len(rate_data) - 1
-            
-            # data[id]['gacha_rate_index'] = rate_index
-
-            # Extract featured_cards
-            # featured_cards = extract_featured_cards(driver, gacha_id)
-            # data[id]['featured_cards'] = featured_cards
-            
-            # Periodically save progress
-            if gacha_id % 10 == 0:
-                with open(json_path, 'w') as f:
-                    json.dump(data, f, indent=2)
-                with open(rate_json_path, 'w') as f:
-                    json.dump(rate_data, f, indent=2)
-
-        except Exception as e:
-            print(f"Issue processing gacha {gacha_id}")
-            print(e)
-
-    driver.quit()
-
-    # Write back to json
-    with open(json_path, 'w') as f:
-        json.dump(data, f, indent=2)
-    # Write gacha rate back to json
-    with open(rate_json_path, 'w') as f:
-        json.dump(rate_data, f, indent=2)
-
-    print("Scraping completed!")
-
-def extract_featured_cards(driver, gacha_id):
-    featured_cards = []
-
-    try:
-        # Click the button to open the modal (works for singular or plural)
-        gacha_cards_button = WebDriverWait(driver, 10).until(
-            EC.element_to_be_clickable(
-                (By.XPATH, '//h6[contains(text(), "Pick-up Member")]/following-sibling::button')
-            )
-        )
-        gacha_cards_button.click()
-
-        # Wait for modal to appear
-        WebDriverWait(driver, 10).until(
-            EC.visibility_of_element_located((By.XPATH, '//h2[contains(text(), "Gacha Cards")]'))
-        )
-
-        # Extract all card elements
-        card_elements = driver.find_elements(
-            By.XPATH,
-            '//div[contains(@class, "css-tuxzvu")]//div[contains(@class, "css-1ecxf4")]'
-        )
-
-        for card in card_elements:
-            try:
-                # Extract card ID from href attribute
-                card_link = card.find_element(By.TAG_NAME, 'a')
-                href = card_link.get_attribute('href')
-                card_id = href.split('/')[-1]
-
-                # Extract rate percentage(s)
-                rate_text = card.find_element(
-                    By.XPATH, './/p[contains(@class, "css-khp380")]'
-                ).text.splitlines()  # splits by newline
-
-                normal_rate = float(rate_text[0].replace('%', '').strip())
-                guaranteed_rate = float(rate_text[1].replace('%', '').strip()) if len(rate_text) > 1 else None
-
-                featured_cards.append({
-                    "card_id": card_id,
-                    "normal_rate": normal_rate,
-                    "guaranteed_rate": guaranteed_rate
-                })
-
-            except Exception as e:
-                print(f"  Error processing card in gacha {gacha_id}: {str(e)}")
-                continue
-
-        # Close the modal by pressing Escape
-        ActionChains(driver).send_keys(Keys.ESCAPE).perform()
-
-    except Exception as e:
-        print(f"  Couldn't extract featured cards for gacha {gacha_id}: {str(e)}")
-
-    return featured_cards
-
-def extract_rates(driver):
-    """Extract gacha rates from the page"""
-    rates = {"normal": {}, "guaranteed": {}}
-    
-    try:
-        # Extract normal roll rates
-        normal_header = driver.find_element(By.XPATH, '//h6[contains(., "Normal Roll Rate")]')
-        normal_section = normal_header.find_element(By.XPATH, './ancestor::div[contains(@class, "MuiGrid-container")][1]')
-        
-        # Process each rate row
-        rows = normal_section.find_elements(By.XPATH, './/div[contains(@class, "MuiGrid-grid-xs-12")]')
-        for row in rows:
-            try:
-                # Count stars to determine rarity
-                stars = row.find_elements(By.XPATH, './/img')
-                rarity = len(stars)
-
-                # Map "1" rarity to "birthday"
-                rarity_key = "birthday" if rarity == 1 else str(rarity)
-                
-                # Extract percentage value
-                perc_text = row.find_element(By.XPATH, './/div[contains(@class, "css-1wxaqej") and not(./img)]').text
-                perc_value = float(perc_text.replace('%', '').strip())
-                
-                rates["normal"][rarity_key] = perc_value
-            except:
-                continue
-    except:
-        pass
-    
-    try:
-        # Extract guaranteed roll rates
-        guar_header = driver.find_element(By.XPATH, '//h6[contains(., "Guaranteed Roll Rate")]')
-        guar_section = guar_header.find_element(By.XPATH, './ancestor::div[contains(@class, "MuiGrid-container")][1]')
-        
-        # Process each rate row
-        rows = guar_section.find_elements(By.XPATH, './/div[contains(@class, "MuiGrid-grid-xs-12")]')
-        for row in rows:
-            try:
-                # Count stars to determine rarity
-                stars = row.find_elements(By.XPATH, './/img')
-                rarity = len(stars)
-
-                # Map "1" rarity to "birthday"
-                rarity_key = "birthday" if rarity == 1 else str(rarity)
-                
-                # Extract percentage value
-                perc_text = row.find_element(By.XPATH, './/div[contains(@class, "css-1wxaqej") and not(./img)]').text
-                perc_value = float(perc_text.replace('%', '').strip())
-                
-                rates["guaranteed"][rarity_key] = perc_value
-            except:
-                continue
-    except:
-        pass
-    
-    return rates
 
 def sekaibest_scrape_card_info(start_num=start_id, end_num=end_id):
     """Scrape card images using Selenium with automatic driver management"""
@@ -676,6 +387,8 @@ def sekaibest_scrape_card_info(start_num=start_id, end_num=end_id):
     # Set up Chrome driver with WebDriver Manager
     service = Service(ChromeDriverManager().install())
     driver = webdriver.Chrome(service=service, options=chrome_options)
+
+    print("Scraping card information from sekai.best...")
 
     for card_id in range(start_num, end_num + 1):
         url = f"https://sekai.best/card/{card_id}"
@@ -740,11 +453,11 @@ def sekaibest_scrape_card_info(start_num=start_id, end_num=end_id):
                         audio_file = os.path.join(audio_path, f"{card_id}.mp3")
                         with open(audio_file, "wb") as f:
                             f.write(response.content)
-                        print(f"  ✓ Downloaded audio: {audio_file}")
+                        print(f"  Downloaded audio: {audio_file}")
                     else:
-                        print(f"  ! Failed to download audio: HTTP {response.status_code}")
+                        print(f"  Failed to download audio: HTTP {response.status_code}")
             except Exception as e:
-                print(f"  ! No gacha phrase {card_id}: {str(e)}")
+                print(f"  No gacha phrase {card_id}: {str(e)}")
 
             # Find the Character section
             character_section = card_container.find_element(
@@ -787,9 +500,6 @@ def sekaibest_scrape_card_info(start_num=start_id, end_num=end_id):
                 By.CSS_SELECTOR, "div.MuiGrid-direction-xs-column > p"
             )
             jp_skill_effect = effect_paragraphs[0].text
-
-            print("Japanese Skill Name:", jp_skill_name)
-            print("Japanese Skill Effect:", jp_skill_effect)
 
             data[str(card_id)]["skill name (japanese)"] = jp_skill_name
             data[str(card_id)]["skill effect (japanese)"] = jp_skill_effect
@@ -851,29 +561,11 @@ def sekaibest_scrape_card_info(start_num=start_id, end_num=end_id):
         time.sleep(1)  # Be polite to the server
 
     driver.quit()
-    print("Scraping completed!")
+    print("Scraping card information from sekai.best completed!")
 
     # Write back to json
     with open(json_path, 'w') as f:
         json.dump(data, f, indent=2)
-
-def json_reorder(json_path, key_order):
-    def reorder_dict(d, key_order):
-        return OrderedDict((key, d.get(key, None)) for key in key_order)
-
-    # Load the JSON file
-    with open(json_path, "r", encoding="utf-8") as f:
-        data = json.load(f)
-
-    # Reorder keys in each entry
-    formatted_data = {
-        card_id: reorder_dict(card_data, key_order)
-        for card_id, card_data in data.items()
-    }
-
-    # Save the result back to the same file (or modify if needed)
-    with open(json_path, "w", encoding="utf-8") as f:
-        json.dump(formatted_data, f, indent=2, ensure_ascii=False)
 
 def split_card_metadata(
     input_path="/Users/gracelu/Desktop/pjsk sim/my-app/src/data/card_metadata.json",
@@ -898,6 +590,308 @@ def split_card_metadata(
 
     print(f"Done! Exported {count} cards to: {output_dir}")
 
+################# CARD RELATED FUNCTIONS ENDS HERE ###################
+######################################################################
+
+
+######################################################################
+################# GACHA RELATED FUNCTIONS BEGINS HERE #################
+
+def sekaibest_scrape_gacha_info(start_gacha=start_gacha, end_gacha=end_gacha):
+    # Configuration
+    json_path = "/Users/gracelu/Desktop/pjsk sim/my-app/src/data/gacha_metadata.json"
+    ## depends on the metadata, we skip over some birthday gacha downloads!!!
+    ## later if we add automation process, this needs to be fed in to the scrape_gacha function, so it can skip the birthday banners!!!
+    rate_json_path = "/Users/gracelu/Desktop/pjsk sim/my-app/src/data/gacha_rates.json"
+
+    data = None
+    if os.path.exists(json_path):
+        with open(json_path, 'r') as f:
+            data = json.load(f)
+    else:
+        data = {}
+
+    rate_data = None
+    if os.path.exists(rate_json_path):
+        with open(rate_json_path, 'r') as f:
+            rate_data = json.load(f)
+    else:
+        rate_data = []
+
+    # Set up Chrome options
+    chrome_options = Options()
+    chrome_options.add_argument("--headless")  # Run in background
+    chrome_options.add_argument("--disable-gpu")
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument("--disable-dev-shm-usage")
+    chrome_options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36")
+    
+    # Set up Chrome driver with WebDriver Manager
+    service = Service(ChromeDriverManager().install())
+    driver = webdriver.Chrome(service=service, options=chrome_options)
+
+    print("Scraping gacha information from sekai.best...")
+
+    for gacha_id in range(start_gacha, end_gacha + 1):
+        url = f"https://sekai.best/gacha/{gacha_id}"
+        print(f"Processing gacha #{gacha_id}...")
+        
+        try:
+            # Load url
+            driver.get(url)
+            WebDriverWait(driver, 15).until(
+                EC.presence_of_element_located((By.XPATH, '//h6[contains(., "ID")]'))
+            )
+            
+            # Get ID
+            id_element = driver.find_element(By.XPATH, '//h6[contains(., "ID")]/following-sibling::p')
+            id = id_element.text.strip()
+            
+            if id not in data:
+                data[id] = {}
+            data[id]['id'] = gacha_id
+
+            # Get jp and en title
+            combined_title = driver.find_element(
+                By.XPATH,
+                '//h6[@class="MuiTypography-root MuiTypography-h6 css-1u18iur"]'
+            ).text
+            jp_title, en_title = [t.strip() for t in combined_title.split('|', 1)]
+            data[id]['title (japanese)'] = jp_title
+            
+            # Get Release Date
+            release_date = driver.find_element(
+                By.XPATH, 
+                '//h6[contains(., "Available From")]/following-sibling::p'
+            ).text
+            data[id]['release_date'] = release_date
+
+            end_date = driver.find_element(
+                By.XPATH, 
+                '//h6[contains(., "Available Until")]/following-sibling::p'
+            ).text
+            data[id]['end_date'] = end_date
+
+            # Determine gacha type
+            gacha_type = "unknown"  # Default value
+            
+            # First try: Check for Exchange Item image
+            try:
+                exchange_img = driver.find_element(
+                    By.XPATH, 
+                    '//h6[contains(., "Exchange Item")]/following-sibling::img'
+                )
+                img_src = exchange_img.get_attribute('src')
+                
+                if 'ceil_item.webp' in img_src:
+                    gacha_type = 'normal'
+                elif 'ceil_item_limited.webp' in img_src:
+                    gacha_type = 'limited'
+                elif 'ceil_item_birthday.webp' in img_src:
+                    gacha_type = 'birthday'
+                else:
+                    # Handle unexpected image names
+                    if 'limited' in img_src.lower():
+                        gacha_type = 'limited'
+                    elif 'birthday' in img_src.lower():
+                        gacha_type = 'birthday'
+                    else:
+                        gacha_type = 'normal'
+            
+            except:
+                # Fallback: Check for explicit Type text
+                try:
+                    type_text = driver.find_element(
+                        By.XPATH, 
+                        '//h6[contains(., "Type")]/following-sibling::p'
+                    ).text.lower()
+                    
+                    if 'normal' in type_text:
+                        gacha_type = 'normal'
+                    elif 'limited' in type_text:
+                        gacha_type = 'limited'
+                    elif 'birthday' in type_text:
+                        gacha_type = 'birthday'
+                    else:
+                        # Handle other type texts
+                        if '限定' in type_text:  # Japanese for "limited"
+                            gacha_type = 'limited'
+                        elif 'バースデー' in type_text:  # Japanese for "birthday"
+                            gacha_type = 'birthday'
+                        elif 'beginner' in type_text:
+                            gacha_type = 'beginner'
+                        elif 'gift' in type_text:
+                            gacha_type = 'gift'
+                        else:
+                            gacha_type = type_text
+                except:
+                    print("Did not found gacha type")
+
+            data[id]['type'] = gacha_type
+
+            # Scrape Gacha Rates
+            # Store unique normal and guaranteed gacha rate pairs to rate_data
+            rates = extract_rates(driver)
+            
+            # Create or find rate index
+            rate_index = None
+            for idx, rate_struct in enumerate(rate_data):
+                if rate_struct == rates:
+                    rate_index = idx
+                    break
+            
+            if rate_index is None:
+                rate_data.append(rates)
+                rate_index = len(rate_data) - 1
+            
+            data[id]['gacha_rate_index'] = rate_index
+
+            # Extract featured_cards
+            featured_cards = extract_featured_cards(driver, gacha_id)
+            data[id]['featured_cards'] = featured_cards
+            
+            # Periodically save progress
+            if gacha_id % 10 == 0:
+                with open(json_path, 'w') as f:
+                    json.dump(data, f, indent=2)
+                with open(rate_json_path, 'w') as f:
+                    json.dump(rate_data, f, indent=2)
+
+        except Exception as e:
+            print(f"Issue processing gacha {gacha_id}")
+            print(e)
+
+    driver.quit()
+
+    # Write back to json
+    with open(json_path, 'w') as f:
+        json.dump(data, f, indent=2)
+    # Write gacha rate back to json
+    with open(rate_json_path, 'w') as f:
+        json.dump(rate_data, f, indent=2)
+
+    print("Scraping completed!")
+
+def extract_featured_cards(driver, gacha_id):
+    """
+    Helper function for sekaibest_scrape_gacha_info to collect
+    featured cards of a gacha.
+    """
+    featured_cards = []
+
+    try:
+        # Click the button to open the modal (works for singular or plural)
+        gacha_cards_button = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable(
+                (By.XPATH, '//h6[contains(text(), "Pick-up Member")]/following-sibling::button')
+            )
+        )
+        gacha_cards_button.click()
+
+        # Wait for modal to appear
+        WebDriverWait(driver, 10).until(
+            EC.visibility_of_element_located((By.XPATH, '//h2[contains(text(), "Gacha Cards")]'))
+        )
+
+        # Extract all card elements
+        card_elements = driver.find_elements(
+            By.XPATH,
+            '//div[contains(@class, "css-tuxzvu")]//div[contains(@class, "css-1ecxf4")]'
+        )
+
+        for card in card_elements:
+            try:
+                # Extract card ID from href attribute
+                card_link = card.find_element(By.TAG_NAME, 'a')
+                href = card_link.get_attribute('href')
+                card_id = href.split('/')[-1]
+
+                # Extract rate percentage(s)
+                rate_text = card.find_element(
+                    By.XPATH, './/p[contains(@class, "css-khp380")]'
+                ).text.splitlines()  # splits by newline
+
+                normal_rate = float(rate_text[0].replace('%', '').strip())
+                guaranteed_rate = float(rate_text[1].replace('%', '').strip()) if len(rate_text) > 1 else None
+
+                featured_cards.append({
+                    "card_id": card_id,
+                    "normal_rate": normal_rate,
+                    "guaranteed_rate": guaranteed_rate
+                })
+
+            except Exception as e:
+                print(f"  Error processing card in gacha {gacha_id}: {str(e)}")
+                continue
+
+        # Close the modal by pressing Escape
+        ActionChains(driver).send_keys(Keys.ESCAPE).perform()
+
+    except Exception as e:
+        print(f"  Couldn't extract featured cards for gacha {gacha_id}: {str(e)}")
+
+    return featured_cards
+
+def extract_rates(driver):
+    """
+    Helper function for sekaibest_scrape_gacha_info to store rates of a gacha.
+    """
+    rates = {"normal": {}, "guaranteed": {}}
+    
+    try:
+        # Extract normal roll rates
+        normal_header = driver.find_element(By.XPATH, '//h6[contains(., "Normal Roll Rate")]')
+        normal_section = normal_header.find_element(By.XPATH, './ancestor::div[contains(@class, "MuiGrid-container")][1]')
+        
+        # Process each rate row
+        rows = normal_section.find_elements(By.XPATH, './/div[contains(@class, "MuiGrid-grid-xs-12")]')
+        for row in rows:
+            try:
+                # Count stars to determine rarity
+                stars = row.find_elements(By.XPATH, './/img')
+                rarity = len(stars)
+
+                # Map "1" rarity to "birthday"
+                rarity_key = "birthday" if rarity == 1 else str(rarity)
+                
+                # Extract percentage value
+                perc_text = row.find_element(By.XPATH, './/div[contains(@class, "css-1wxaqej") and not(./img)]').text
+                perc_value = float(perc_text.replace('%', '').strip())
+                
+                rates["normal"][rarity_key] = perc_value
+            except:
+                continue
+    except:
+        pass
+    
+    try:
+        # Extract guaranteed roll rates
+        guar_header = driver.find_element(By.XPATH, '//h6[contains(., "Guaranteed Roll Rate")]')
+        guar_section = guar_header.find_element(By.XPATH, './ancestor::div[contains(@class, "MuiGrid-container")][1]')
+        
+        # Process each rate row
+        rows = guar_section.find_elements(By.XPATH, './/div[contains(@class, "MuiGrid-grid-xs-12")]')
+        for row in rows:
+            try:
+                # Count stars to determine rarity
+                stars = row.find_elements(By.XPATH, './/img')
+                rarity = len(stars)
+
+                # Map "1" rarity to "birthday"
+                rarity_key = "birthday" if rarity == 1 else str(rarity)
+                
+                # Extract percentage value
+                perc_text = row.find_element(By.XPATH, './/div[contains(@class, "css-1wxaqej") and not(./img)]').text
+                perc_value = float(perc_text.replace('%', '').strip())
+                
+                rates["guaranteed"][rarity_key] = perc_value
+            except:
+                continue
+    except:
+        pass
+    
+    return rates
+
 def split_gacha_metadata(
     input_path="/Users/gracelu/Desktop/pjsk sim/my-app/src/data/gacha_metadata.json",
     output_dir="/Users/gracelu/Desktop/pjsk sim/my-app/src/data/individual_gacha_metadata"
@@ -920,6 +914,231 @@ def split_gacha_metadata(
         count += 1
 
     print(f"Done! Exported {count} cards to: {output_dir}")
+
+def scrape_gacha_logos_1_to_377():
+    """
+    Function to scrape gacha logos (1–377) from Sekaipedia and save as webp.
+    Logos 1-377 not found in asset viewer of sekai.best.
+    Note: Logos are stored out of order on the sekaipedia pages
+    """
+    base_urls = [
+        "https://www.sekaipedia.org/wiki/Category:Gacha_logos?fileuntil=Gacha295+logo.png#mw-category-media", 
+        "https://www.sekaipedia.org/wiki/Category:Gacha_logos",  
+        "https://www.sekaipedia.org/wiki/Category:Gacha_logos?filefrom=Gacha527+logo.png#mw-category-media",  
+        "https://www.sekaipedia.org/wiki/Category:Gacha_logos?filefrom=Gacha760+logo.png#mw-category-media"
+    ]
+    
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0 Safari/537.36"
+    }
+    
+    all_gallery_boxes = []
+
+    # Load all category pages
+    for url in base_urls:
+        print(f"Fetching {url}")
+        response = requests.get(url, headers=headers, timeout=30)
+        response.raise_for_status()
+        soup = BeautifulSoup(response.text, "html.parser")
+        gallery_boxes = soup.find_all("li", class_="gallerybox")
+        all_gallery_boxes.extend(gallery_boxes)
+        print(f"Found {len(gallery_boxes)} gallery boxes")
+
+    print(f"Total gallery boxes collected: {len(all_gallery_boxes)}")
+
+    for box in all_gallery_boxes:
+        filename_tag = box.find("a", class_="galleryfilename")
+        if not filename_tag:
+            continue
+
+        filename = filename_tag.text.strip().replace(" ", "_")
+        match = re.search(r"Gacha(\d+)_logo\.png", filename)
+        if not match:
+            continue
+
+        gacha_id = int(match.group(1))
+
+        # Only keep 1–377
+        if gacha_id < 1 or gacha_id > 377:
+            continue
+
+        save_dir = os.path.join("my-app", "public", "gacha", f"gacha_{gacha_id}", "logo")
+        webp_path = os.path.join(save_dir, "logo.webp")
+        if os.path.exists(webp_path):
+            print(f"Gacha {gacha_id} already exists, skipping")
+            continue
+
+        # Go to file page
+        file_page_url = "https://www.sekaipedia.org" + filename_tag.get("href")
+        try:
+            file_resp = requests.get(file_page_url, headers=headers, timeout=30)
+            file_resp.raise_for_status()
+            file_soup = BeautifulSoup(file_resp.text, "html.parser")
+            
+            img_link = file_soup.find("a", class_="internal")
+            if not img_link:
+                print(f"Could not find full image link for Gacha {gacha_id}")
+                continue
+            
+            full_image_url = img_link.get("href")
+            if full_image_url.startswith("//"):
+                full_image_url = "https:" + full_image_url
+
+            print(f"Downloading Gacha {gacha_id} from {full_image_url}")
+            img_data = requests.get(full_image_url, headers=headers, timeout=30).content
+            
+            image = Image.open(io.BytesIO(img_data)).convert("RGBA")
+            os.makedirs(save_dir, exist_ok=True)
+            image.save(webp_path, "WEBP", quality=95)
+            print(f"Saved Gacha {gacha_id} → {webp_path}")
+            
+            time.sleep(0.5)
+
+        except Exception as e:
+            print(f"Error processing Gacha {gacha_id}: {str(e)}")
+    
+    # Check for missing logos 1-376
+    base_path = "my-app/public/gacha"
+    missing = []
+
+    for i in range(1, 378):
+        folder = os.path.join(base_path, f"gacha_{i}")
+        if not os.path.exists(folder):
+            # Skip if it doesn’t exist
+            continue  
+        filepath = os.path.join(folder, "logo/logo.webp")  # adjust name if different
+        if not os.path.exists(filepath):
+            missing.append(f"gacha_{i}")
+
+    if not missing:
+        print("All logos 1–377 are present!")
+    else:
+        print("Missing logos in:", missing)
+
+def scrape_gacha_backgrounds_1_to_377():
+    """
+    Scrape gacha backgrounds (1–377) from Sekaipedia and save as webp.
+    Backgrounds 1-377 not found in asset viewer of sekai.best.
+    Note: Backgrounds are stored out of order on the sekaipedia pages
+    """
+    base_urls = [
+        "https://www.sekaipedia.org/wiki/Category:Gacha_backgrounds",
+        "https://www.sekaipedia.org/wiki/Category:Gacha_backgrounds?filefrom=Gacha451+background.png#mw-category-media",
+        "https://www.sekaipedia.org/wiki/Category:Gacha_backgrounds?filefrom=Gacha760-1+background.png#mw-category-media"
+    ]
+    
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0 Safari/537.36"
+    }
+    
+    all_gallery_boxes = []
+
+    # Load all category pages
+    for url in base_urls:
+        print(f"Fetching {url}")
+        response = requests.get(url, headers=headers, timeout=30)
+        response.raise_for_status()
+        soup = BeautifulSoup(response.text, "html.parser")
+        gallery_boxes = soup.find_all("li", class_="gallerybox")
+        all_gallery_boxes.extend(gallery_boxes)
+        print(f"Found {len(gallery_boxes)} gallery boxes")
+
+    print(f"Total gallery boxes collected: {len(all_gallery_boxes)}")
+
+    for box in all_gallery_boxes:
+        filename_tag = box.find("a", class_="galleryfilename")
+        if not filename_tag:
+            continue
+
+        filename = filename_tag.text.strip().replace(" ", "_")
+        match = re.search(r"Gacha(\d+)_background\.png", filename)
+        if not match:
+            continue
+
+        gacha_id = int(match.group(1))
+
+        # Only keep 1–377
+        if gacha_id < 1 or gacha_id > 377:
+            continue
+
+        save_dir = os.path.join("my-app", "public", "gacha", f"gacha_{gacha_id}", "screen", "texture")
+        webp_path = os.path.join(save_dir, f"bg_gacha{gacha_id}.webp")
+        if os.path.exists(webp_path):
+            print(f"Gacha {gacha_id} background already exists, skipping")
+            continue
+
+        # Go to file page
+        file_page_url = "https://www.sekaipedia.org" + filename_tag.get("href")
+        try:
+            file_resp = requests.get(file_page_url, headers=headers, timeout=30)
+            file_resp.raise_for_status()
+            file_soup = BeautifulSoup(file_resp.text, "html.parser")
+            
+            img_link = file_soup.find("a", class_="internal")
+            if not img_link:
+                print(f"Could not find full image link for Gacha {gacha_id} background")
+                continue
+            
+            full_image_url = img_link.get("href")
+            if full_image_url.startswith("//"):
+                full_image_url = "https:" + full_image_url
+
+            print(f"Downloading Gacha {gacha_id} background from {full_image_url}")
+            img_data = requests.get(full_image_url, headers=headers, timeout=30).content
+            
+            image = Image.open(io.BytesIO(img_data)).convert("RGBA")
+            os.makedirs(save_dir, exist_ok=True)
+            image.save(webp_path, "WEBP", quality=95)
+            print(f"Saved Gacha {gacha_id} background → {webp_path}")
+            
+            time.sleep(0.5)
+
+        except Exception as e:
+            print(f"Error processing Gacha {gacha_id} background: {str(e)}")
+
+    # Check for missing logos 1-376
+    base_path = "my-app/public/gacha"
+    missing = []
+
+    for i in range(1, 378):
+        folder = os.path.join(base_path, f"gacha_{i}")
+        if not os.path.exists(folder):
+            # Skip if it doesn’t exist
+            continue  
+        filepath = os.path.join(folder, f"screen/texture/bg_gacha{i}.webp")  # adjust name if different
+        if not os.path.exists(filepath):
+            missing.append(f"gacha_{i}")
+
+    if not missing:
+        print("All logos 1–377 are present!")
+    else:
+        print("Missing logos in:", missing)
+
+################# GACHA RELATED FUNCTIONS ENDS HERE ###################
+#######################################################################
+
+################# GENERAL HELPER FUNCTIONS START HERE #################
+
+def json_reorder(json_path, key_order):
+    def reorder_dict(d, key_order):
+        return OrderedDict((key, d.get(key, None)) for key in key_order)
+
+    # Load the JSON file
+    with open(json_path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    # Reorder keys in each entry
+    formatted_data = {
+        card_id: reorder_dict(card_data, key_order)
+        for card_id, card_data in data.items()
+    }
+
+    # Save the result back to the same file (or modify if needed)
+    with open(json_path, "w", encoding="utf-8") as f:
+        json.dump(formatted_data, f, indent=2, ensure_ascii=False)
+
+################# GENERAL HELPER FUNCTIONS END HERE ###################
+#######################################################################
 
 import collections
 
@@ -1181,205 +1400,6 @@ def download_and_save(url, save_path):
     else:
         print(f"Failed to download {url} (status {resp.status_code})")
 
-import io
-
-def scrape_gacha_logos_1_to_377():
-    """
-    Scrape gacha logos (1–377) from Sekaipedia and save as WebP.
-    Handles multiple category pages since logos are out of order.
-    """
-    base_urls = [
-        "https://www.sekaipedia.org/wiki/Category:Gacha_logos?fileuntil=Gacha295+logo.png#mw-category-media", 
-        "https://www.sekaipedia.org/wiki/Category:Gacha_logos",  
-        "https://www.sekaipedia.org/wiki/Category:Gacha_logos?filefrom=Gacha527+logo.png#mw-category-media",  
-        "https://www.sekaipedia.org/wiki/Category:Gacha_logos?filefrom=Gacha760+logo.png#mw-category-media"
-    ]
-    
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0 Safari/537.36"
-    }
-    
-    all_gallery_boxes = []
-
-    # Load all category pages
-    for url in base_urls:
-        print(f"Fetching {url}")
-        response = requests.get(url, headers=headers, timeout=30)
-        response.raise_for_status()
-        soup = BeautifulSoup(response.text, "html.parser")
-        gallery_boxes = soup.find_all("li", class_="gallerybox")
-        all_gallery_boxes.extend(gallery_boxes)
-        print(f"Found {len(gallery_boxes)} gallery boxes")
-
-    print(f"Total gallery boxes collected: {len(all_gallery_boxes)}")
-
-    for box in all_gallery_boxes:
-        filename_tag = box.find("a", class_="galleryfilename")
-        if not filename_tag:
-            continue
-
-        filename = filename_tag.text.strip().replace(" ", "_")
-        match = re.search(r"Gacha(\d+)_logo\.png", filename)
-        if not match:
-            continue
-
-        gacha_id = int(match.group(1))
-
-        # Only keep 1–377
-        if gacha_id < 1 or gacha_id > 377:
-            continue
-
-        save_dir = os.path.join("my-app", "public", "gacha", f"gacha_{gacha_id}", "logo")
-        webp_path = os.path.join(save_dir, "logo.webp")
-        if os.path.exists(webp_path):
-            print(f"Gacha {gacha_id} already exists, skipping")
-            continue
-
-        # Go to file page
-        file_page_url = "https://www.sekaipedia.org" + filename_tag.get("href")
-        try:
-            file_resp = requests.get(file_page_url, headers=headers, timeout=30)
-            file_resp.raise_for_status()
-            file_soup = BeautifulSoup(file_resp.text, "html.parser")
-            
-            img_link = file_soup.find("a", class_="internal")
-            if not img_link:
-                print(f"Could not find full image link for Gacha {gacha_id}")
-                continue
-            
-            full_image_url = img_link.get("href")
-            if full_image_url.startswith("//"):
-                full_image_url = "https:" + full_image_url
-
-            print(f"Downloading Gacha {gacha_id} from {full_image_url}")
-            img_data = requests.get(full_image_url, headers=headers, timeout=30).content
-            
-            image = Image.open(io.BytesIO(img_data)).convert("RGBA")
-            os.makedirs(save_dir, exist_ok=True)
-            image.save(webp_path, "WEBP", quality=95)
-            print(f"Saved Gacha {gacha_id} → {webp_path}")
-            
-            time.sleep(0.5)
-
-        except Exception as e:
-            print(f"Error processing Gacha {gacha_id}: {str(e)}")
-    
-    # Check for missing logos 1-376
-    base_path = "my-app/public/gacha"
-    missing = []
-
-    for i in range(1, 378):
-        folder = os.path.join(base_path, f"gacha_{i}")
-        if not os.path.exists(folder):
-            # Skip if it doesn’t exist
-            continue  
-        filepath = os.path.join(folder, "logo/logo.webp")  # adjust name if different
-        if not os.path.exists(filepath):
-            missing.append(f"gacha_{i}")
-
-    if not missing:
-        print("All logos 1–377 are present!")
-    else:
-        print("Missing logos in:", missing)
-
-def scrape_gacha_backgrounds_1_to_377():
-    """
-    Scrape gacha backgrounds (1–377) from Sekaipedia and save as WebP.
-    Handles multiple category pages since backgrounds can be out of order.
-    """
-    base_urls = [
-        "https://www.sekaipedia.org/wiki/Category:Gacha_backgrounds",
-        "https://www.sekaipedia.org/wiki/Category:Gacha_backgrounds?filefrom=Gacha451+background.png#mw-category-media",
-        "https://www.sekaipedia.org/wiki/Category:Gacha_backgrounds?filefrom=Gacha760-1+background.png#mw-category-media"
-    ]
-    
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0 Safari/537.36"
-    }
-    
-    all_gallery_boxes = []
-
-    # Load all category pages
-    for url in base_urls:
-        print(f"Fetching {url}")
-        response = requests.get(url, headers=headers, timeout=30)
-        response.raise_for_status()
-        soup = BeautifulSoup(response.text, "html.parser")
-        gallery_boxes = soup.find_all("li", class_="gallerybox")
-        all_gallery_boxes.extend(gallery_boxes)
-        print(f"Found {len(gallery_boxes)} gallery boxes")
-
-    print(f"Total gallery boxes collected: {len(all_gallery_boxes)}")
-
-    for box in all_gallery_boxes:
-        filename_tag = box.find("a", class_="galleryfilename")
-        if not filename_tag:
-            continue
-
-        filename = filename_tag.text.strip().replace(" ", "_")
-        match = re.search(r"Gacha(\d+)_background\.png", filename)
-        if not match:
-            continue
-
-        gacha_id = int(match.group(1))
-
-        # Only keep 1–377
-        if gacha_id < 1 or gacha_id > 377:
-            continue
-
-        save_dir = os.path.join("my-app", "public", "gacha", f"gacha_{gacha_id}", "screen", "texture")
-        webp_path = os.path.join(save_dir, f"bg_gacha{gacha_id}.webp")
-        if os.path.exists(webp_path):
-            print(f"Gacha {gacha_id} background already exists, skipping")
-            continue
-
-        # Go to file page
-        file_page_url = "https://www.sekaipedia.org" + filename_tag.get("href")
-        try:
-            file_resp = requests.get(file_page_url, headers=headers, timeout=30)
-            file_resp.raise_for_status()
-            file_soup = BeautifulSoup(file_resp.text, "html.parser")
-            
-            img_link = file_soup.find("a", class_="internal")
-            if not img_link:
-                print(f"Could not find full image link for Gacha {gacha_id} background")
-                continue
-            
-            full_image_url = img_link.get("href")
-            if full_image_url.startswith("//"):
-                full_image_url = "https:" + full_image_url
-
-            print(f"Downloading Gacha {gacha_id} background from {full_image_url}")
-            img_data = requests.get(full_image_url, headers=headers, timeout=30).content
-            
-            image = Image.open(io.BytesIO(img_data)).convert("RGBA")
-            os.makedirs(save_dir, exist_ok=True)
-            image.save(webp_path, "WEBP", quality=95)
-            print(f"Saved Gacha {gacha_id} background → {webp_path}")
-            
-            time.sleep(0.5)
-
-        except Exception as e:
-            print(f"Error processing Gacha {gacha_id} background: {str(e)}")
-
-    # Check for missing logos 1-376
-    base_path = "my-app/public/gacha"
-    missing = []
-
-    for i in range(1, 378):
-        folder = os.path.join(base_path, f"gacha_{i}")
-        if not os.path.exists(folder):
-            # Skip if it doesn’t exist
-            continue  
-        filepath = os.path.join(folder, f"screen/texture/bg_gacha{i}.webp")  # adjust name if different
-        if not os.path.exists(filepath):
-            missing.append(f"gacha_{i}")
-
-    if not missing:
-        print("All logos 1–377 are present!")
-    else:
-        print("Missing logos in:", missing)
-
     # def scrape_gacha_assets():
 #     folders = get_gacha_folders()
 #     for display_name, _ in folders:
@@ -1508,35 +1528,9 @@ def inject_card_backgrounds(
 def main():
     # scrape_gacha_assets()
     # """Main function to execute scraping"""
-    # print("Starting PJSK card image scraper with Selenium...")
-    # scrape_card_images(start_num=1218 , end_num=1222)
-    # sekaipedia_scrape_card_info(start_num=1218, end_num=1222)
-    # sekaibest_scrape_card_info(start_num=1218, end_num=1222)
-    # desired_card_metadata_order = [
-    #     "id",
-    #     "character",
-    #     "character (japanese)",
-    #     "english name",
-    #     "japanese name",
-    #     "skill name (japanese)",
-    #     "skill name (english)",
-    #     "skill effect (japanese)",
-    #     "skill effect (english)",
-    #     "talent (max)",
-    #     "gacha phrase",
-    #     "unit",
-    #     "support unit",
-    #     "attribute",
-    #     "rarity",
-    #     "status"
-    # ]
-    # json_reorder("/Users/gracelu/Desktop/pjsk sim/my-app/src/data/card_metadata.json", desired_card_metadata_order)
-    # split_card_metadata()
     # scrape_screen_texture_assets()
-    # split_gacha_metadata()
     # generate_gacha_manifest()
     # sekaipedia_scrape_gacha_banner(start_num=1, end_num=999)
-    # sekaibest_scrape_gacha_info(start_gacha=1, end_gacha=783)
     # desired_gacha_metadata_order = [
     #     "id",
     #     "title (japanese)",
