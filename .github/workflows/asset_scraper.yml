@@ -15,6 +15,9 @@ on:
             end_gacha:
                 description: "End gacha index"
                 required: true
+permissions:
+  contents: write
+
 jobs:
     scrape_card:
         runs-on: ubuntu-latest
