@@ -1,4 +1,27 @@
 name: Asset Scraper
 
 on:
-    workflow_dispatch
+    workflow_dispatch:
+        inputs:
+            start_card:
+                description: "Start card index:"
+                required: true
+            end_card:
+                description: "End card index"
+                required: true
+            start_gacha:
+                description: "Start gacha index"
+                required: true
+            end_gacha:
+                description: "End gacha index"
+                required: true
+jobs:
+    scrape_card:
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v4
+
+    scrape_gacha:
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v4

@@ -429,6 +429,13 @@ def sekaibest_scrape_gacha_info(start_gacha=start_gacha, end_gacha=end_gacha):
             # ).text
             # data[id]['release_date'] = release_date
 
+            # TODO: Get End Date
+            end_date = driver.find_element(
+                By.XPATH, 
+                '//h6[contains(., "Available Until")]/following-sibling::p'
+            ).text
+            data[id]['end_date'] = end_date
+
             # # Determine gacha type
             # gacha_type = "unknown"  # Default value
             
@@ -504,8 +511,8 @@ def sekaibest_scrape_gacha_info(start_gacha=start_gacha, end_gacha=end_gacha):
             # data[id]['gacha_rate_index'] = rate_index
 
             # Extract featured_cards
-            featured_cards = extract_featured_cards(driver, gacha_id)
-            data[id]['featured_cards'] = featured_cards
+            # featured_cards = extract_featured_cards(driver, gacha_id)
+            # data[id]['featured_cards'] = featured_cards
             
             # Periodically save progress
             if gacha_id % 10 == 0:
@@ -1530,13 +1537,26 @@ def main():
     # generate_gacha_manifest()
     # sekaipedia_scrape_gacha_banner(start_num=1, end_num=999)
     # sekaibest_scrape_gacha_info(start_gacha=1, end_gacha=783)
+    # desired_gacha_metadata_order = [
+    #     "id",
+    #     "title (japanese)",
+    #     "release_date",
+    #     "end_date",
+    #     "type",
+    #     "gacha_rate_index",
+    #     "featured_cards"
+    # ]
+    # json_reorder("/Users/gracelu/Desktop/pjsk sim/my-app/src/data/gacha_metadata.json", desired_gacha_metadata_order)
+    # split_gacha_metadata()
     # scrape_gacha_logos_1_to_377()
     # scrape_gacha_backgrounds_1_to_377()
-    inject_card_backgrounds(
-        start_id=1,
-        end_id=376,
-        only_when_bg_empty=False,
-        verify_files_exist=True,
-    )
+    # inject_card_backgrounds(
+    #     start_id=1,
+    #     end_id=376,
+    #     only_when_bg_empty=False,
+    #     verify_files_exist=True,
+    # )
+    pass
+
 if __name__ == "__main__":
     main()
