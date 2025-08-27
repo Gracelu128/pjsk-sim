@@ -27,26 +27,26 @@ jobs:
               with:
                 python-version: "3.12.5"
 
-            # - name: Install dependencies
-            # run: |
-            #     python -m pip install --upgrade pip
-            #     pip install -r requirements.txt
+            - name: Install dependencies
+              run: |
+                python -m pip install --upgrade pip
+                pip install -r requirements.txt
 
             - name: Scrape card images and information
               run: |
-                  echo "Scraping card images and collecting info from sekai.best and sekaipedia..."
-                  python card_scraper_script.py \
-                    --start_card ${{ github.event.inputs.start_id }} \
-                    --end_card ${{ github.event.inputs.end_id }} \
-                    --task "scrape card info"
+                echo "Scraping card images and collecting info from sekai.best and sekaipedia..."
+                python card_scraper_script.py \
+                --start_card ${{ github.event.inputs.start_id }} \
+                --end_card ${{ github.event.inputs.end_id }} \
+                --task "scrape card info"
 
             - name: Reorder card_metadata.json, generate individual card .json files
               run: |
-                  echo "Reordering card_metadata.json and generating individual card files..."
-                  python card_scraper_script.py \
-                    --start_card ${{ github.event.inputs.start_id }} \
-                    --end_card ${{ github.event.inputs.end_id }} \
-                    --task "reorder card info"
+                echo "Reordering card_metadata.json and generating individual card files..."
+                python card_scraper_script.py \
+                --start_card ${{ github.event.inputs.start_id }} \
+                --end_card ${{ github.event.inputs.end_id }} \
+                --task "reorder card info"
 
     scrape_gacha:
         runs-on: ubuntu-latest
