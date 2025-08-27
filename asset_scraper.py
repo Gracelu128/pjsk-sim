@@ -22,9 +22,9 @@ from typing import Dict, Any, List
 
 # ***GLOBAL VARIABLES HERE***
 start_id = 1 # default start card id
-end_id = 1222
+end_id = 1228
 start_gacha = 1 # default start gacha id
-end_gacha = 783
+end_gacha = 793
 # ***END OF GLOBAL VARIABLES***
 
 ######################################################################
@@ -1531,19 +1531,6 @@ def main():
     # scrape_screen_texture_assets()
     # generate_gacha_manifest()
     # sekaipedia_scrape_gacha_banner(start_num=1, end_num=999)
-    # desired_gacha_metadata_order = [
-    #     "id",
-    #     "title (japanese)",
-    #     "release_date",
-    #     "end_date",
-    #     "type",
-    #     "gacha_rate_index",
-    #     "featured_cards"
-    # ]
-    # json_reorder("/Users/gracelu/Desktop/pjsk sim/my-app/src/data/gacha_metadata.json", desired_gacha_metadata_order)
-    # split_gacha_metadata()
-    # scrape_gacha_logos_1_to_377()
-    # scrape_gacha_backgrounds_1_to_377()
     # inject_card_backgrounds(
     #     start_id=1,
     #     end_id=376,
