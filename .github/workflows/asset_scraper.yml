@@ -48,6 +48,14 @@ jobs:
                 --end_card ${{ github.event.inputs.end_card }} \
                 --task "reorder card info"
 
+            - name: Commit and push results
+              run: |
+                git config user.name "github-actions[bot]"
+                git config user.email "github-actions[bot]@users.noreply.github.com"
+                git add my-app/public/cards card_metadata.json individual_cards/
+                git commit -m "Update scraped assets [skip ci]" || echo "No changes to commit"
+                git push
+
     scrape_gacha:
         runs-on: ubuntu-latest
         steps:
