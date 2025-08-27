@@ -20,7 +20,7 @@ def main():
             "gacha_rate_index",
             "featured_cards"
         ]
-        json_reorder("/Users/gracelu/Desktop/pjsk sim/my-app/src/data/gacha_metadata.json", desired_gacha_metadata_order)
+        json_reorder("my-app/src/data/gacha_metadata.json", desired_gacha_metadata_order)
         split_card_metadata()
     
 if __name__ == "__main__":

@@ -31,7 +31,7 @@ def main():
             "rarity",
             "status"
         ]
-        json_reorder("/Users/gracelu/Desktop/pjsk sim/my-app/src/data/card_metadata.json", desired_card_metadata_order)
+        json_reorder("my-app/src/data/card_metadata.json", desired_card_metadata_order)
         split_card_metadata()
     
 if __name__ == "__main__":
