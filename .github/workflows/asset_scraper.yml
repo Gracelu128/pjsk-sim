@@ -5,16 +5,16 @@ on:
         inputs:
             start_card:
                 description: "Start card index:"
-                required: true
+                required: false
             end_card:
                 description: "End card index"
-                required: true
+                required: false
             start_gacha:
                 description: "Start gacha index"
-                required: true
+                required: false
             end_gacha:
                 description: "End gacha index"
-                required: true
+                required: false
 permissions:
   contents: write
 
@@ -52,6 +52,7 @@ jobs:
                 --task "reorder card info"
 
             - name: Commit and push results
+              if: ${{ github.event.inputs.start_card != '' && github.event.inputs.end_card != '' }}
               run: |
                 git config user.name "github-actions[bot]"
                 git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -67,4 +68,25 @@ jobs:
 
             - name: Scrape gacha information
               run: |
-                    echo "Collecting gacha info from sekai.best and sekaipedia..."
+                echo "Collecting gacha info from sekai.best and sekaipedia..."
+                python gacha_scraper_script.py \
+                --start_gacha ${{ github.event.inputs.start_gacha }} \
+                --end_gacha ${{ github.event.inputs.end_gacha }} \
+                --task "scrape gacha info"
+            
+            - name: Reorder gacha_metadata.json, generate individual gacha .json files
+              run: |
+                echo "Reordering gacha_metadata.json and generating individual gacha files..."
+                python gacha_scraper_script.py \
+                --start_gacha ${{ github.event.inputs.start_gacha }} \
+                --end_gacha ${{ github.event.inputs.end_gacha }} \
+                --task "reorder gacha info"
+
+            - name: Commit and push results
+              if: ${{ github.event.inputs.start_gacha != '' && github.event.inputs.end_gacha != '' }}
+              run: |
+                git config user.name "github-actions[bot]"
+                git config user.email "github-actions[bot]@users.noreply.github.com"
+                git add .
+                git commit -m "Update scraped assets [skip ci]" || echo "No changes to commit"
+                git push
