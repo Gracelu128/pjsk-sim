@@ -33,7 +33,7 @@ end_gacha = 793
 def scrape_card_images(start_num=start_id, end_num=end_id):
     """Scrape card images using Selenium with automatic driver management"""
     # Configuration
-    asset_path = "/Users/gracelu/Desktop/pjsk sim/my-app/public/cards"
+    asset_path = Path("my-app/public/cards")
     os.makedirs(asset_path, exist_ok=True)
 
     print("Scraping card images from sekai.best...")
@@ -123,8 +123,8 @@ def scrape_card_images(start_num=start_id, end_num=end_id):
 def sekaipedia_scrape_card_info(start_num=start_id, end_num=end_id):
     """Scrape card images using Selenium with automatic driver management"""
     # Configuration
-    json_path = "/Users/gracelu/Desktop/pjsk sim/my-app/src/data/card_metadata.json"
-    icons_path = "/Users/gracelu/Desktop/pjsk sim/my-app/public/icons"
+    json_path = Path("my-app/src/data/card_metadata.json")
+    icons_path = Path("my-app/public/icons")
     os.makedirs(icons_path, exist_ok=True)
     data = None
     if os.path.exists(json_path):
@@ -364,9 +364,9 @@ def sekaipedia_scrape_card_info(start_num=start_id, end_num=end_id):
 def sekaibest_scrape_card_info(start_num=start_id, end_num=end_id):
     """Scrape card images using Selenium with automatic driver management"""
     # Configuration
-    json_path = "/Users/gracelu/Desktop/pjsk sim/my-app/src/data/card_metadata.json"
-    audio_path = "/Users/gracelu/Desktop/pjsk sim/my-app/public/card_audio"
-    costume_path = "/Users/gracelu/Desktop/pjsk sim/my-app/public/costumes"
+    json_path = Path("my-app/src/data/card_metadata.json")
+    audio_path = Path("my-app/public/card_audio")
+    costume_path = Path("my-app/public/costumes")
 
     os.makedirs(audio_path, exist_ok=True)
     data = None
@@ -568,8 +568,8 @@ def sekaibest_scrape_card_info(start_num=start_id, end_num=end_id):
         json.dump(data, f, indent=2)
 
 def split_card_metadata(
-    input_path="/Users/gracelu/Desktop/pjsk sim/my-app/src/data/card_metadata.json",
-    output_dir="/Users/gracelu/Desktop/pjsk sim/my-app/src/data/individual_card_metadata"
+    input_path=Path("my-app/src/data/card_metadata.json"),
+    output_dir=Path("my-app/src/data/individual_card_metadata")
 ):
     # Make sure output directory exists
     os.makedirs(output_dir, exist_ok=True)
@@ -599,10 +599,10 @@ def split_card_metadata(
 
 def sekaibest_scrape_gacha_info(start_gacha=start_gacha, end_gacha=end_gacha):
     # Configuration
-    json_path = "/Users/gracelu/Desktop/pjsk sim/my-app/src/data/gacha_metadata.json"
+    json_path = Path("my-app/src/data/gacha_metadata.json")
     ## depends on the metadata, we skip over some birthday gacha downloads!!!
     ## later if we add automation process, this needs to be fed in to the scrape_gacha function, so it can skip the birthday banners!!!
-    rate_json_path = "/Users/gracelu/Desktop/pjsk sim/my-app/src/data/gacha_rates.json"
+    rate_json_path = Path("my-app/src/data/gacha_rates.json")
 
     data = None
     if os.path.exists(json_path):
@@ -893,8 +893,8 @@ def extract_rates(driver):
     return rates
 
 def split_gacha_metadata(
-    input_path="/Users/gracelu/Desktop/pjsk sim/my-app/src/data/gacha_metadata.json",
-    output_dir="/Users/gracelu/Desktop/pjsk sim/my-app/src/data/individual_gacha_metadata"
+    input_path=Path("my-app/src/data/gacha_metadata.json"),
+    output_dir=Path("my-app/src/data/individual_gacha_metadata")
 ):
     # Make sure output directory exists
     os.makedirs(output_dir, exist_ok=True)
