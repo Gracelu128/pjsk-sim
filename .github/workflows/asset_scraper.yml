@@ -36,16 +36,16 @@ jobs:
               run: |
                 echo "Scraping card images and collecting info from sekai.best and sekaipedia..."
                 python card_scraper_script.py \
-                --start_card ${{ github.event.inputs.start_id }} \
-                --end_card ${{ github.event.inputs.end_id }} \
+                --start_card ${{ github.event.inputs.start_card }} \
+                --end_card ${{ github.event.inputs.end_card }} \
                 --task "scrape card info"
 
             - name: Reorder card_metadata.json, generate individual card .json files
               run: |
                 echo "Reordering card_metadata.json and generating individual card files..."
                 python card_scraper_script.py \
-                --start_card ${{ github.event.inputs.start_id }} \
-                --end_card ${{ github.event.inputs.end_id }} \
+                --start_card ${{ github.event.inputs.start_card }} \
+                --end_card ${{ github.event.inputs.end_card }} \
                 --task "reorder card info"
 
     scrape_gacha:
