@@ -96,6 +96,10 @@ jobs:
             - name: Scrape gacha assets
               run: |
                 echo "Scraping gacha assets (logo, background, etc.) ..."
+                python gacha_scraper_script.py \
+                --start_gacha ${{ github.event.inputs.start_gacha }} \
+                --end_gacha ${{ github.event.inputs.end_gacha }} \
+                --task "scrape gacha assets"
 
             - name: Commit and push results
               run: |

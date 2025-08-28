@@ -1,3 +1,4 @@
+import collections
 import io
 import json
 import os
@@ -1140,7 +1141,6 @@ def json_reorder(json_path, key_order):
 ################# GENERAL HELPER FUNCTIONS END HERE ###################
 #######################################################################
 
-import collections
 
 ################################ JOY'S CODE ###################################
 
@@ -1773,13 +1773,7 @@ def inject_card_backgrounds(
 ###############################################################################
 
 def main():
-    # scrape_gacha_assets()
-    # """Main function to execute scraping"""
-    # sekaipedia_scrape_gacha_banners()
-    # sekaibest_scrape_gacha_logos()
-    # sekaibest_scrape_screen_texture_assets()
-    generate_or_update_gacha_manifest()
-    # pass
+    pass
 
 if __name__ == "__main__":
     main()

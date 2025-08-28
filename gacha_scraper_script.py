@@ -5,27 +5,41 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--start_gacha", type=int, required=False)
     parser.add_argument("--end_gacha", type=int, required=False)
-    parser.add_argument("--task", choices=["scrape gacha info", "reorder gacha info"])
+    parser.add_argument("--task", choices=["scrape gacha info", "reorder gacha info", "scrape gacha assets"])
     args = parser.parse_args()
 
     if args.start_gacha is None or args.end_gacha is None:
         print("Skipping gacha scraping: start_gacha or gacha_card not provided.")
         return
+    
+    desired_gacha_metadata_order = [
+        "id",
+        "title (japanese)",
+        "release_date",
+        "end_date",
+        "type",
+        "gacha_rate_index",
+        "featured_cards"
+    ]
 
     if args.task == "scrape gacha info":
         sekaibest_scrape_gacha_info(start_gacha=args.start_gacha, end_gacha=args.end_gacha)
     elif args.task == "reorder gacha info":
-        desired_gacha_metadata_order = [
-            "id",
-            "title (japanese)",
-            "release_date",
-            "end_date",
-            "type",
-            "gacha_rate_index",
-            "featured_cards"
-        ]
         json_reorder("my-app/src/data/gacha_metadata.json", desired_gacha_metadata_order)
         split_gacha_metadata()
+    elif args.task == "scrape gacha assets":
+        pass
+    elif args.task == "all":
+        # First scrape gacha info
+        sekaibest_scrape_gacha_info(start_gacha=args.start_gacha, end_gacha=args.end_gacha)
+        # Second reorder gacha info
+        json_reorder("my-app/src/data/gacha_metadata.json", desired_gacha_metadata_order)
+        split_gacha_metadata()
+        # Third scrape gacha assets
+    else:
+        print("Please enter a valid task as listed below:\n")
+        print("     scrape gacha info, reorder gacha info, scrape gacha assets, all")
+        return
     
 if __name__ == "__main__":
     main()
