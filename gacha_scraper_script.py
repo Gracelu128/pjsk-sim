@@ -3,8 +3,8 @@ import argparse
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--start_gacha", type=int, required=True)
-    parser.add_argument("--end_gacha", type=int, required=True)
+    parser.add_argument("--start_gacha", type=int, required=False)
+    parser.add_argument("--end_gacha", type=int, required=False)
     parser.add_argument("--task", choices=["scrape gacha info", "reorder gacha info"])
     args = parser.parse_args()
 

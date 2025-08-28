@@ -3,8 +3,8 @@ import argparse
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--start_card", type=int, required=True)
-    parser.add_argument("--end_card", type=int, required=True)
+    parser.add_argument("--start_card", type=int, required=False)
+    parser.add_argument("--end_card", type=int, required=False)
     parser.add_argument("--task", choices=["scrape card info", "reorder card info"])
     args = parser.parse_args()
 
