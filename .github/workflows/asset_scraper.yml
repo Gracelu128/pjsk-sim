@@ -92,6 +92,10 @@ jobs:
                 --start_gacha ${{ github.event.inputs.start_gacha }} \
                 --end_gacha ${{ github.event.inputs.end_gacha }} \
                 --task "reorder gacha info"
+            
+            - name: Scrape gacha assets
+              run: |
+                echo "Scraping gacha assets (logo, background, etc.) ..."
 
             - name: Commit and push results
               run: |
