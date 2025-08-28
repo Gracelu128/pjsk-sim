@@ -57,7 +57,7 @@ jobs:
                 git config user.name "github-actions[bot]"
                 git config user.email "github-actions[bot]@users.noreply.github.com"
                 git add .
-                git commit -m "Update scraped assets [skip ci]" || echo "No changes to commit"
+                git commit -m "Update scraped card assets [skip ci]" || echo "No changes to commit"
                 git push
 
     scrape_gacha:
@@ -98,5 +98,5 @@ jobs:
                 git config user.name "github-actions[bot]"
                 git config user.email "github-actions[bot]@users.noreply.github.com"
                 git add .
-                git commit -m "Update scraped assets [skip ci]" || echo "No changes to commit"
+                git commit -m "Update scraped gacha assets [skip ci]" || echo "No changes to commit"
                 git push
