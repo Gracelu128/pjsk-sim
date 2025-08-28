@@ -15,7 +15,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.keys import Keys
-from urllib.parse import urlparse, unquote
+from urllib.parse import urlparse, unquote, urljoin
 from webdriver_manager.chrome import ChromeDriverManager
 from bs4 import BeautifulSoup
 from typing import Dict, Any, List
@@ -1142,192 +1142,107 @@ def json_reorder(json_path, key_order):
 
 import collections
 
-def generate_gacha_manifest(
-    gacha_base="my-app/public/gacha",
-    manifest_path="my-app/public/gacha/manifest.json"
-):
-    manifest = {}
-    for folder in os.listdir(gacha_base):
-        gacha_dir = os.path.join(gacha_base, folder)
-        if not os.path.isdir(gacha_dir):
+################################ JOY'S CODE ###################################
+
+###############################################################################
+############# HELPER FUNCTIONS FOR SEKAIPEDIA SCRAPE GACHA BANNERS ############
+
+SEKAIPEDIA_ROOT = "https://www.sekaipedia.org"
+HEADERS = {"User-Agent": "Mozilla/5.0"}
+def to_original_media_url(thumb_src: str) -> str:
+    """
+    Convert a MediaWiki /thumb/ URL to the original file URL.
+    Example:
+      //static.wikitide.net/projectsekaiwiki/thumb/9/9c/Gacha319_banner.png/300px-Gacha319_banner.png
+    -> //static.wikitide.net/projectsekaiwiki/9/9c/Gacha319_banner.png
+    """
+    # Ensure scheme
+    if thumb_src.startswith("//"):
+        thumb_src = "https:" + thumb_src
+    # Only transform if it contains /thumb/
+    if "/thumb/" not in thumb_src:
+        return thumb_src
+    parts = thumb_src.split("/thumb/", 1)
+    left = parts[0]
+    right = parts[1]
+    # right looks like: "<hashpath>/Gacha319_banner.png/300px-Gacha319_banner.png"
+    # we want: "<hashpath>/Gacha319_banner.png"
+    right_bits = right.split("/")
+    # Find the segment that ends with .png (the filename)
+    filename_idx = None
+    for i, seg in enumerate(right_bits):
+        if seg.lower().endswith(".png"):
+            filename_idx = i
+            break
+    if filename_idx is None:
+        return thumb_src  # fallback
+    original_path = right_bits[:filename_idx + 1]  # up to and including filename
+    return left + "/" + "/".join(original_path)
+
+def find_next_page_url(soup: BeautifulSoup) -> str | None:
+    """
+    Find the 'next page' link on the category page.
+    It usually looks like:
+      <a href="/wiki/Category:Gacha_banners?filefrom=Gacha319+banner.png#mw-category-media" title="Category:Gacha banners">next page</a>
+    """
+    a = soup.find("a", string=re.compile(r"^\s*next page\s*$", re.I))
+    if a and a.get("href"):
+        return urljoin(SEKAIPEDIA_ROOT, a["href"])
+    return None
+
+def extract_banner_items(soup: BeautifulSoup):
+    """
+    Yield (gacha_id:str, original_png_url:str) for each banner found on the page.
+    We target img tags with srcs that contain 'Gacha###_banner.png' and '/thumb/'.
+    """
+    for img in soup.find_all("img", src=True):
+        src = img["src"]
+        # Quick filter
+        if "Gacha" not in src or "banner.png" not in src:
             continue
+        # Pull out the numeric ID
+        m = re.search(r"Gacha(\d+)_banner\.png", src)
+        if not m:
+            continue
+        gacha_id = m.group(1)
+        # Convert thumb URL to original
+        original_url = to_original_media_url(src)
+        yield gacha_id, original_url
 
-        # Find backgrounds and overlays in screen/texture
-        texture_dir = os.path.join(gacha_dir, "screen", "texture")
-        bg_files = []
-        img_files = []
-        if os.path.isdir(texture_dir):
-            for fname in os.listdir(texture_dir):
-                if fname.startswith("bg_") and fname.endswith(".webp"):
-                    bg_files.append(fname)
-                elif fname.startswith("img_") or fname.startswith("cardname_") and fname.endswith(".webp"):
-                    img_files.append(fname)
-
-        # Find logo file
-        logo_dir = os.path.join(gacha_dir, "logo")
-        logo_file = None
-        if os.path.isdir(logo_dir):
-            for fname in os.listdir(logo_dir):
-                if fname == "logo.webp":
-                    logo_file = "logo/logo.webp"
-                    break
-
-        # Find banner files
-        banner_dir = os.path.join(gacha_dir, "banner")
-        banner_files = []
-        if os.path.isdir(banner_dir):
-            for fname in os.listdir(banner_dir):
-                if fname.endswith(".webp") or fname.endswith(".png") or fname.endswith(".jpg"):
-                    banner_files.append(fname)
-
-        # Only add if at least one asset exists
-        if bg_files or img_files or logo_file or banner_files:
-            # Extract gacha ID from folder name (e.g., gacha_377)
-            gacha_id = folder.replace("gacha_", "")
-            manifest[gacha_id] = {
-                "bg": sorted(bg_files),
-                "img": sorted(img_files),
-                "logo": logo_file if logo_file else "",
-                "banner": sorted(banner_files)
-            }
-
-    # Sort manifest by integer gacha ID
-    sorted_manifest = collections.OrderedDict(
-        sorted(manifest.items(), key=lambda x: int(x[0]) if x[0].isdigit() else float('inf'))
-    )
-
-    # Save manifest
-    with open(manifest_path, "w", encoding="utf-8") as f:
-        json.dump(sorted_manifest, f, indent=2, ensure_ascii=False)
-    print(f"Manifest written to {manifest_path}")
-
-# To run this, add to main():
-# generate_gacha_manifest()
-
-GACHA_BASE_URL="https://www.sekaipedia.org/wiki/Category:Gacha_banners?filefrom=Gacha65+banner.png#mw-category-media"
-def sekaipedia_scrape_gacha_banner(start_num=1, end_num=999):
-    """Scrape gacha banners from Sekaipedia and save as WebP."""
-    banners_path = "my-app/public/gacha"
-    os.makedirs(banners_path, exist_ok=True)
-
-    chrome_options = Options()
-    chrome_options.add_argument("--headless")
-    chrome_options.add_argument("--disable-gpu")
-    chrome_options.add_argument("--no-sandbox")
-    chrome_options.add_argument("--disable-dev-shm-usage")
-    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
+def download_png_to_webp(original_png_url: str, out_dir: Path, base_name: str) -> bool:
+    """
+    Download the PNG, convert to WebP, then remove the PNG.
+    Returns True on success.
+    """
+    out_dir.mkdir(parents=True, exist_ok=True)
+    png_path = out_dir / f"{base_name}.png"
+    webp_path = out_dir / f"{base_name}.webp"
 
     try:
-        driver.get(GACHA_BASE_URL)
-        time.sleep(3)
-        soup = BeautifulSoup(driver.page_source, "html.parser")
-        imgs = soup.find_all("img", src=True)
-        count = 0
+        r = requests.get(original_png_url, headers=HEADERS, timeout=20)
+        if r.status_code != 200:
+            print(f"[WARN] {original_png_url} -> HTTP {r.status_code}")
+            return False
+        with open(png_path, "wb") as f:
+            f.write(r.content)
 
-        for img in imgs:
-            src = img["src"]
-            if "Gacha" in src and "banner.png" in src and "/thumb/" in src:
-                # Extract the hash folder and filename
-                match = re.match(r"^(//static\.wikitide\.net/projectsekaiwiki)/thumb(/.+?/Gacha(\d+)_banner\.png)", src)
-                if not match:
-                    continue
-                base_url = match.group(1) + match.group(2)
-                gacha_id = match.group(3)
-                if int(gacha_id) < start_num or int(gacha_id) > end_num:
-                    continue
-                full_url = "https:" + base_url
+        with Image.open(png_path) as im:
+            im.save(webp_path, "webp")
 
-                # Prepare local paths
-                card_banner_dir = os.path.join(banners_path, f"gacha_{gacha_id}", "banner")
-                os.makedirs(card_banner_dir, exist_ok=True)
-                png_filename = f"Gacha{gacha_id}_banner.png"
-                png_filepath = os.path.join(card_banner_dir, png_filename)
-
-                # Download PNG
-                print(f"Downloading {full_url} -> {png_filepath}")
-                headers = {"User-Agent": "Mozilla/5.0"}
-                response = requests.get(full_url, timeout=10, headers=headers)
-                if response.status_code == 200:
-                    with open(png_filepath, "wb") as f:
-                        f.write(response.content)
-                    print(f"Saved {png_filename}")
-
-                    # Convert to WebP
-                    webp_filename = f"Gacha{gacha_id}_banner.webp"
-                    webp_filepath = os.path.join(card_banner_dir, webp_filename)
-                    with Image.open(png_filepath) as img:
-                        img.save(webp_filepath, "webp")
-                    print(f"Converted to WebP: {webp_filename}")
-
-                    os.remove(png_filepath)
-                    count += 1
-                else:
-                    print(f"Failed to download {full_url} (status {response.status_code})")
-
-        print(f"Total banners processed: {count}")
+        png_path.unlink(missing_ok=True)
+        return True
     except Exception as e:
-        print(f"Error during scraping: {str(e)}")
-    finally:
-        driver.quit()
-    print("Scraping completed!")
+        print(f"[ERROR] {original_png_url}: {e}")
+        try:
+            png_path.unlink(missing_ok=True)
+        except Exception:
+            pass
+        return False
 
-def scrape_screen_texture_assets():
-    base_local = "my-app/public/gacha"
-    chrome_options = Options()
-    chrome_options.add_argument("--headless")
-    chrome_options.add_argument("--disable-gpu")
-    chrome_options.add_argument("--no-sandbox")
-    chrome_options.add_argument("--disable-dev-shm-usage")
+def banner_already_present(out_dir: Path) -> bool:
+    """Return True if gacha_xxx/banner/ exists and contains anything."""
+    return out_dir.exists() and any(out_dir.iterdir())
 
-    for display_name in os.listdir(base_local):
-        gacha_path = os.path.join(base_local, display_name)
-        if not os.path.isdir(gacha_path):
-            continue
-
-        # Only process if screen/texture does NOT exist
-        texture_dir = os.path.join(gacha_path, "screen", "texture")
-        if os.path.exists(texture_dir):
-            print(f"Already has {texture_dir}, skipping {display_name}")
-            continue
-
-        os.makedirs(texture_dir, exist_ok=True)
-        print(f"Created {texture_dir}")
-
-        url = f"https://sekai.best/asset_viewer/gacha/{display_name}/screen/texture/"
-        driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
-        driver.set_window_size(1200, 10000)
-        driver.get(url)
-        time.sleep(4)  # Wait for the page and lazy-loaded elements
-
-        # Scroll to bottom to trigger lazy loading
-        driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-        time.sleep(2)  # Wait for any additional elements to load
-
-        soup = BeautifulSoup(driver.page_source, "html.parser")
-        driver.quit()
-
-        # Only get .webp files, skip those with "stripeanimation"
-        spans = soup.find_all("span", class_="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-vb35nm")
-        filenames = [
-            span.text.strip()
-            for span in spans
-            if span.text.strip().endswith(".webp") and "stripeanimation" not in span.text.strip()
-        ]
-
-        print(f"{display_name}: Found {len(filenames)} remote webp files")
-
-        for filename in filenames:
-            asset_url = f"https://storage.sekai.best/sekai-jp-assets/gacha/{display_name}/screen/texture/{filename}"
-            save_path = os.path.join(texture_dir, filename)
-            print(f"Downloading {asset_url} -> {save_path}")
-            resp = requests.get(asset_url)
-            if resp.status_code == 200:
-                with open(save_path, "wb") as f:
-                    f.write(resp.content)
-                print(f"Saved {save_path}")
-            else:
-                print(f"Failed to download {asset_url} (status {resp.status_code})")
-                
 BASE_URL = "https://sekai.best/asset_viewer/gacha"
 def get_gacha_folders():
     chrome_options = Options()
@@ -1400,20 +1315,347 @@ def download_and_save(url, save_path):
     else:
         print(f"Failed to download {url} (status {resp.status_code})")
 
-    # def scrape_gacha_assets():
-#     folders = get_gacha_folders()
-#     for display_name, _ in folders:
-#         # Download logo
-#         logo_url = f"https://storage.sekai.best/sekai-jp-assets/gacha/{display_name}/logo/logo.webp"
-#         save_path = os.path.join("my-app/public/gacha", display_name, "logo", "logo.webp")
-#         print(f"Downloading logo: {logo_url} -> {save_path}")
-#         download_and_save(logo_url, save_path)
+def dir_has_anything(p: Path) -> bool:
+    return p.exists() and any(p.iterdir())
+
+def download_with_retries(url: str, out_path: Path, max_retries: int = 3, backoff: float = 1.0) -> bool:
+    for attempt in range(1, max_retries + 1):
+        try:
+            resp = requests.get(url, headers=HEADERS, timeout=20)
+            if resp.status_code == 200:
+                out_path.parent.mkdir(parents=True, exist_ok=True)
+                with open(out_path, "wb") as f:
+                    f.write(resp.content)
+                return True
+            elif resp.status_code == 404:
+                print(f"[404] Not found: {url}")
+                return False
+            else:
+                print(f"[HTTP {resp.status_code}] {url}")
+        except requests.RequestException as e:
+            print(f"[ERROR attempt {attempt}/{max_retries}] {url}: {e}")
+        time.sleep(backoff * attempt)
+    return False
+
+def _unique_sorted(seq):
+    return sorted(list(dict.fromkeys(seq)))
+
+######################### HELPER FUNCTIONS END HERE ###########################
+###############################################################################
+
+###############################################################################
+########################### SCRAPE GACHA BANNERS ##############################
+
+# this should be available from 1 to whatever number
+def sekaipedia_scrape_gacha_banners(
+    start_urls=None,
+    start_num: int = 1,
+    end_num: int = 999
+):
+    """
+    Crawl Sekaipedia's Gacha banner category, following 'next page' links
+    until none remains. Filters by gacha id range. Saves WebP banners to:
+
+      my-app/public/gacha/gacha_<id>/banner/Gacha<id>_banner.webp
+    """
+    if start_urls is None:
+        start_urls = [
+            "https://www.sekaipedia.org/wiki/Category:Gacha_banners?fileuntil=Gacha319+banner.png#mw-category-media"
+        ]
+
+    root_out = Path("my-app/public/gacha")
+    total_downloaded = 0
+    seen_pages = set()
+
+    for start_url in start_urls:
+        current = start_url
+        while current and current not in seen_pages:
+            print(f"[PAGE] {current}")
+            seen_pages.add(current)
+
+            # Fetch + parse
+            try:
+                resp = requests.get(current, headers=HEADERS, timeout=20)
+                resp.raise_for_status()
+            except Exception as e:
+                print(f"[ERROR] fetching page: {e}")
+                break
+
+            soup = BeautifulSoup(resp.text, "html.parser")
+
+            # Extract banners on this page
+            for gacha_id, original_png_url in extract_banner_items(soup):
+                gid = int(gacha_id)
+                if gid < start_num or gid > end_num:
+                    continue
+
+                out_dir = root_out / f"gacha_{gid}" / "banner"
+
+                # Added skip logic for the banners that already exist
+                if banner_already_present(out_dir):
+                    print(f"[SKIP] gacha {gid}: {out_dir} already has files; not re-downloading.")
+                    continue
+
+                base_name = f"Gacha{gid}_banner"
+                ok = download_png_to_webp(original_png_url, out_dir, base_name)
+                if ok:
+                    total_downloaded += 1
+                    print(f"[OK] gacha {gid} -> {out_dir / (base_name + '.webp')}")
+
+            # Find next page (if any)
+            next_url = find_next_page_url(soup)
+            # Be polite to the site
+            time.sleep(1.0)
+            current = next_url
+
+    print(f"[DONE] Total banners processed: {total_downloaded}")
+
+# this we only scrape starting from 377 inclusive
+# currently this looks for up to gacha_999, which needs to be updated later.
+def sekaibest_scrape_gacha_logos():
+    start_gid = 377
+    end_gid = 999
+    root_local = Path("my-app/public/gacha")
+    total_ok = 0
+    total_skip = 0
+    total_miss = 0
+
+    for gid in range(start_gid, end_gid + 1):
+        display_name = f"gacha_{gid}"
+        local_logo_dir = root_local / display_name / "logo"
+        local_logo_path = local_logo_dir / "logo.webp"
+
+        # Skip if the logo dir already has anything inside
+        if dir_has_anything(local_logo_dir):
+            print(f"[SKIP] {display_name}: {local_logo_dir} already has files.")
+            total_skip += 1
+            continue
+
+        remote_key = f"ab_gacha_{gid}"
+        url = f"https://storage.sekai.best/sekai-jp-assets/gacha/{remote_key}/logo/logo.webp"
+        print(f"[GET] {display_name} <- {url}")
+
+        ok = download_with_retries(url, local_logo_path)
+        if ok:
+            print(f"[OK] Saved {local_logo_path}")
+            total_ok += 1
+        else:
+            print(f"[MISS] {display_name}: logo not downloaded.")
+            total_miss += 1
+
+        # Be polite (tune as needed)
+        time.sleep(0.15)
+
+    print(f"\n[DONE] Logos saved: {total_ok}, skipped: {total_skip}, missing/failed: {total_miss}")
+
+# this we only scrape starting from 377 inclusive
+# note, the texture files are only scraped if the gacha_gid path already exists
+# and doesn't already have a screen/texture path.
+# otherwise it will be skipped so this function is called after logos.
+def sekaibest_scrape_screen_texture_assets():
+    base_local = "my-app/public/gacha"
+
+    chrome_options = Options()
+    chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--disable-gpu")
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument("--disable-dev-shm-usage")
+
+    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
+
+    try:
+        for display_name in os.listdir(base_local):
+            gacha_path = os.path.join(base_local, display_name)
+            if not os.path.isdir(gacha_path):
+                continue
+
+            # Expect folders like "gacha_XXX" → extract the numeric id
+            m = re.search(r"gacha_(\d+)$", display_name)
+            if not m:
+                continue
+            gid = int(m.group(1))
+
+            # Skip anything before or equal to 376
+            if gid <= 376:
+                # Optional: print once in a while
+                # print(f"Skipping gacha {gid} (<= 376)")
+                continue
+
+            # If screen/texture already exists, skip this gacha
+            texture_dir = os.path.join(gacha_path, "screen", "texture")
+            if os.path.exists(texture_dir):
+                print(f"Already has {texture_dir}, skipping {display_name}")
+                continue
+
+            # Remote path key must be ab_gacha_XXX (with underscore before number)
+            remote_key = f"ab_gacha_{gid}"
+
+            # Visit the asset viewer page for this gacha's screen/texture
+            url = f"https://sekai.best/asset_viewer/gacha/{remote_key}/screen/texture/"
+            os.makedirs(texture_dir, exist_ok=True)
+            print(f"\n[{display_name}] → remote key: {remote_key}")
+            print(f"Created {texture_dir}")
+            print(f"Opening {url}")
+
+            driver.set_window_size(1200, 10000)
+            driver.get(url)
+            time.sleep(4)  # wait for initial render
+
+            # Scroll to bottom to trigger lazy loading (twice for good measure)
+            driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+            time.sleep(2)
+            driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+            time.sleep(1)
+
+            soup = BeautifulSoup(driver.page_source, "html.parser")
+
+            # Extract file names from the list (skip stripeanimation + only .webp)
+            spans = soup.find_all(
+                "span",
+                class_="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-vb35nm"
+            )
+            filenames = [
+                span.text.strip()
+                for span in spans
+                if span.text and span.text.strip().endswith(".webp")
+                and "stripeanimation" not in span.text.strip().lower()
+                and "tex_common" not in span.text.strip().lower()
+            ]
+
+            print(f"{display_name}: Found {len(filenames)} remote webp files")
+
+            # Download each file from storage bucket
+            for filename in filenames:
+                asset_url = f"https://storage.sekai.best/sekai-jp-assets/gacha/{remote_key}/screen/texture/{filename}"
+                save_path = os.path.join(texture_dir, filename)
+                print(f"Downloading {asset_url} -> {save_path}")
+
+                try:
+                    resp = requests.get(asset_url, timeout=20)
+                    if resp.status_code == 200:
+                        with open(save_path, "wb") as f:
+                            f.write(resp.content)
+                        print(f"Saved {save_path}")
+                    else:
+                        print(f"Failed {asset_url} (HTTP {resp.status_code})")
+                except Exception as e:
+                    print(f"Error downloading {asset_url}: {e}")
+
+            # Be polite between gachas (tune if needed)
+            time.sleep(0.5)
+
+    finally:
+        driver.quit()
+        print("Done scraping screen/texture assets.")
+
+###############################################################################
+### MANIFEST GENERATED FROM EXISTING GACHA FOLDERS (SHOULD BE CALLED LAST!) ###
+
+def generate_or_update_gacha_manifest(
+    gacha_base="my-app/public/gacha",
+    manifest_path="my-app/public/gacha/manifest.json",
+    make_backup=True,
+    min_update_id=377,   # <-- only update ids >= 377 by default
+    max_update_id=None,  # <-- set to an int to cap the range; None = no upper cap
+):
+    # Load existing manifest (preserve all prior/custom fields)
+    existing = {}
+    manifest_file = Path(manifest_path)
+    if manifest_file.exists():
+        try:
+            with open(manifest_file, "r", encoding="utf-8") as f:
+                existing = json.load(f)
+        except Exception:
+            print("[WARN] Could not read existing manifest; starting with empty.")
+
+    updated = dict(existing)  # shallow copy
+
+    # Walk local folders, but only process ids within [min_update_id, max_update_id]
+    for folder in os.listdir(gacha_base):
+        gacha_dir = os.path.join(gacha_base, folder)
+        if not (os.path.isdir(gacha_dir) and folder.startswith("gacha_")):
+            continue
+
+        gid_str = folder.replace("gacha_", "")
+        if not gid_str.isdigit():
+            continue
+        gid = int(gid_str)
+
+        # Respect update window
+        if gid < (min_update_id or -10**9):
+            # Do not touch 1–376 (keeps custom paths intact)
+            continue
+        if max_update_id is not None and gid > max_update_id:
+            continue
+
+        # Start from any existing entry to preserve custom keys/values
+        entry = updated.get(gid_str, {})
+        entry.setdefault("bg", [])
+        entry.setdefault("img", [])
+        entry.setdefault("logo", "")
+        entry.setdefault("banner", [])
+
+        # Collect assets from disk (non-destructive merge)
+        texture_dir = os.path.join(gacha_dir, "screen", "texture")
+        new_bg, new_img = [], []
+        if os.path.isdir(texture_dir):
+            for fname in os.listdir(texture_dir):
+                if fname.startswith("bg_") and fname.endswith(".webp"):
+                    new_bg.append(fname)
+                # require .webp for both prefixes (fix precedence)
+                if fname.endswith(".webp") and (fname.startswith("img_") or fname.startswith("cardname_")):
+                    new_img.append(fname)
+
+        logo_dir = os.path.join(gacha_dir, "logo")
+        new_logo = "logo/logo.webp" if (os.path.isdir(logo_dir) and "logo.webp" in os.listdir(logo_dir)) else None
+
+        banner_dir = os.path.join(gacha_dir, "banner")
+        new_banners = []
+        if os.path.isdir(banner_dir):
+            for fname in os.listdir(banner_dir):
+                if fname.lower().endswith((".webp", ".png", ".jpg", ".jpeg")):
+                    new_banners.append(fname)
+
+        # Merge additively (don’t delete pre-existing values)
+        entry["bg"] = _unique_sorted(list(entry.get("bg", [])) + new_bg)
+        entry["img"] = _unique_sorted(list(entry.get("img", [])) + new_img)
+        if new_logo:  # only set if present now; otherwise keep whatever was there
+            entry["logo"] = new_logo
+        entry["banner"] = _unique_sorted(list(entry.get("banner", [])) + new_banners)
+
+        # Only write if it has something (or already existed)
+        if entry["bg"] or entry["img"] or entry["logo"] or entry["banner"] or gid_str in updated:
+            updated[gid_str] = entry
+
+    # Sort by numeric id
+    sorted_manifest = collections.OrderedDict(
+        sorted(updated.items(), key=lambda kv: int(kv[0]) if kv[0].isdigit() else 10**9)
+    )
+
+    # Backup then write
+    if make_backup and manifest_file.exists():
+        backup = manifest_file.with_suffix(".backup.json")
+        try:
+            backup.write_text(manifest_file.read_text(encoding="utf-8"), encoding="utf-8")
+            print(f"[BACKUP] {backup}")
+        except Exception as e:
+            print(f"[WARN] Backup failed: {e}")
+
+    manifest_file.parent.mkdir(parents=True, exist_ok=True)
+    with open(manifest_file, "w", encoding="utf-8") as f:
+        json.dump(sorted_manifest, f, indent=2, ensure_ascii=False)
+
+    print(f"[OK] Manifest updated (ids ≥ {min_update_id}"
+          f"{'' if max_update_id is None else f' and ≤ {max_update_id}'}): {manifest_path}")
+
+###############################################################################
+############################ NOT IN USE ANYMORE ###############################
+############################# FOR BG BEFORE 377 ###############################
 
 ROOT = Path(__file__).resolve().parent
 APP_DIR = ROOT / "my-app"
 PUBLIC_DIR = APP_DIR / "public"
 DATA_DIR = APP_DIR / "src" / "data"
-
 MANIFEST_PATH = PUBLIC_DIR / "gacha" / "manifest.json"
 GACHA_META_PATH = DATA_DIR / "gacha_metadata.json"
 CARD_META_PATH = DATA_DIR / "card_metadata.json"
@@ -1435,6 +1677,8 @@ def _backup(p: Path) -> Path:
     bak.write_bytes(p.read_bytes())
     return bak
 
+# Inject card backgrounds into the manifest for Gachas 1-376 due to missing bg
+# Called once and not used anymore
 def inject_card_backgrounds(
     start_id: int = 1,
     end_id: int = 376,
@@ -1525,19 +1769,23 @@ def inject_card_backgrounds(
     else:
         print("No changes made (nothing to add or conditions not met).")
 
+########################### END OF MISC FUNCTIONS #############################
+###############################################################################
+
 def main():
     # scrape_gacha_assets()
     # """Main function to execute scraping"""
-    # scrape_screen_texture_assets()
-    # generate_gacha_manifest()
-    # sekaipedia_scrape_gacha_banner(start_num=1, end_num=999)
+    # sekaipedia_scrape_gacha_banners()
+    # sekaibest_scrape_gacha_logos()
+    # sekaibest_scrape_screen_texture_assets()
+    generate_or_update_gacha_manifest()
     # inject_card_backgrounds(
     #     start_id=1,
     #     end_id=376,
     #     only_when_bg_empty=False,
     #     verify_files_exist=True,
     # )
-    pass
+    # pass
 
 if __name__ == "__main__":
     main()

@@ -83,6 +83,16 @@
       "Gacha6_banner.webp"
     ]
   },
+  "7": {
+    "bg": [
+      "/cards/119/card_after_training.webp",
+      "/cards/120/card_after_training.webp",
+      "/cards/121/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
+  },
   "8": {
     "bg": [
       "/cards/119/card_after_training.webp",
@@ -110,6 +120,16 @@
       "Gacha9_banner.webp"
     ]
   },
+  "10": {
+    "bg": [
+      "/cards/124/card_after_training.webp",
+      "/cards/125/card_after_training.webp",
+      "/cards/126/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
+  },
   "11": {
     "bg": [
       "/cards/124/card_after_training.webp",
@@ -136,6 +156,16 @@
     "banner": [
       "Gacha12_banner.webp"
     ]
+  },
+  "13": {
+    "bg": [
+      "/cards/129/card_after_training.webp",
+      "/cards/130/card_after_training.webp",
+      "/cards/131/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
   },
   "14": {
     "bg": [
@@ -193,6 +223,16 @@
       "Gacha17_banner.webp"
     ]
   },
+  "18": {
+    "bg": [
+      "/cards/134/card_after_training.webp",
+      "/cards/135/card_after_training.webp",
+      "/cards/136/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
+  },
   "19": {
     "bg": [
       "/cards/134/card_after_training.webp",
@@ -220,6 +260,16 @@
       "Gacha20_banner.webp"
     ]
   },
+  "21": {
+    "bg": [
+      "/cards/139/card_after_training.webp",
+      "/cards/140/card_after_training.webp",
+      "/cards/141/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
+  },
   "22": {
     "bg": [
       "/cards/139/card_after_training.webp",
@@ -246,6 +296,16 @@
     "banner": [
       "Gacha23_banner.webp"
     ]
+  },
+  "24": {
+    "bg": [
+      "/cards/144/card_after_training.webp",
+      "/cards/145/card_after_training.webp",
+      "/cards/146/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
   },
   "25": {
     "bg": [
@@ -301,6 +361,17 @@
       "Gacha28_banner.webp"
     ]
   },
+  "29": {
+    "bg": [
+      "/cards/149/card_after_training.webp",
+      "/cards/150/card_after_training.webp",
+      "/cards/151/card_after_training.webp",
+      "/cards/152/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
+  },
   "30": {
     "bg": [
       "/cards/88/card_after_training.webp",
@@ -331,6 +402,96 @@
       "Gacha31_banner.webp"
     ]
   },
+  "32": {
+    "bg": [
+      "/cards/88/card_after_training.webp",
+      "/cards/4/card_after_training.webp",
+      "/cards/130/card_after_training.webp",
+      "/cards/135/card_after_training.webp",
+      "/cards/120/card_after_training.webp",
+      "/cards/115/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
+  },
+  "33": {
+    "bg": [
+      "/cards/88/card_after_training.webp",
+      "/cards/4/card_after_training.webp",
+      "/cards/130/card_after_training.webp",
+      "/cards/135/card_after_training.webp",
+      "/cards/120/card_after_training.webp",
+      "/cards/115/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
+  },
+  "34": {
+    "bg": [
+      "/cards/88/card_after_training.webp",
+      "/cards/4/card_after_training.webp",
+      "/cards/130/card_after_training.webp",
+      "/cards/135/card_after_training.webp",
+      "/cards/120/card_after_training.webp",
+      "/cards/115/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
+  },
+  "35": {
+    "bg": [
+      "/cards/88/card_after_training.webp",
+      "/cards/4/card_after_training.webp",
+      "/cards/130/card_after_training.webp",
+      "/cards/135/card_after_training.webp",
+      "/cards/120/card_after_training.webp",
+      "/cards/115/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
+  },
+  "36": {
+    "bg": [
+      "/cards/88/card_after_training.webp",
+      "/cards/4/card_after_training.webp",
+      "/cards/130/card_after_training.webp",
+      "/cards/135/card_after_training.webp",
+      "/cards/120/card_after_training.webp",
+      "/cards/115/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
+  },
+  "37": {
+    "bg": [
+      "/cards/88/card_after_training.webp",
+      "/cards/4/card_after_training.webp",
+      "/cards/130/card_after_training.webp",
+      "/cards/135/card_after_training.webp",
+      "/cards/120/card_after_training.webp",
+      "/cards/115/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
+  },
+  "38": {
+    "bg": [
+      "/cards/3/card_after_training.webp",
+      "/cards/19/card_after_training.webp",
+      "/cards/35/card_after_training.webp",
+      "/cards/51/card_after_training.webp",
+      "/cards/67/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
+  },
   "39": {
     "bg": [
       "bg_gacha39.webp",
@@ -343,6 +504,16 @@
     "banner": [
       "Gacha39_banner.webp"
     ]
+  },
+  "40": {
+    "bg": [
+      "/cards/155/card_after_training.webp",
+      "/cards/156/card_after_training.webp",
+      "/cards/157/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
   },
   "41": {
     "bg": [
@@ -371,6 +542,16 @@
       "Gacha42_banner.webp"
     ]
   },
+  "43": {
+    "bg": [
+      "/cards/160/card_after_training.webp",
+      "/cards/161/card_after_training.webp",
+      "/cards/162/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
+  },
   "44": {
     "bg": [
       "/cards/160/card_after_training.webp",
@@ -397,6 +578,16 @@
     "banner": [
       "Gacha45_banner.webp"
     ]
+  },
+  "46": {
+    "bg": [
+      "/cards/165/card_after_training.webp",
+      "/cards/166/card_after_training.webp",
+      "/cards/167/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
   },
   "47": {
     "bg": [
@@ -425,6 +616,16 @@
       "Gacha48_banner.webp"
     ]
   },
+  "49": {
+    "bg": [
+      "/cards/170/card_after_training.webp",
+      "/cards/171/card_after_training.webp",
+      "/cards/172/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
+  },
   "50": {
     "bg": [
       "/cards/170/card_after_training.webp",
@@ -439,6 +640,18 @@
       "Gacha50_banner.webp"
     ]
   },
+  "51": {
+    "bg": [
+      "/cards/3/card_after_training.webp",
+      "/cards/19/card_after_training.webp",
+      "/cards/35/card_after_training.webp",
+      "/cards/51/card_after_training.webp",
+      "/cards/67/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
+  },
   "52": {
     "bg": [
       "bg_gacha52.webp",
@@ -451,6 +664,16 @@
     "banner": [
       "Gacha52_banner.webp"
     ]
+  },
+  "53": {
+    "bg": [
+      "/cards/175/card_after_training.webp",
+      "/cards/176/card_after_training.webp",
+      "/cards/177/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
   },
   "54": {
     "bg": [
@@ -494,6 +717,16 @@
       "Gacha56_banner.webp"
     ]
   },
+  "57": {
+    "bg": [
+      "/cards/180/card_after_training.webp",
+      "/cards/181/card_after_training.webp",
+      "/cards/182/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
+  },
   "58": {
     "bg": [
       "/cards/180/card_after_training.webp",
@@ -508,6 +741,18 @@
       "Gacha58_banner.webp"
     ]
   },
+  "59": {
+    "bg": [
+      "/cards/3/card_after_training.webp",
+      "/cards/19/card_after_training.webp",
+      "/cards/35/card_after_training.webp",
+      "/cards/51/card_after_training.webp",
+      "/cards/67/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
+  },
   "60": {
     "bg": [
       "bg_gacha60.webp",
@@ -520,6 +765,16 @@
     "banner": [
       "Gacha60_banner.webp"
     ]
+  },
+  "61": {
+    "bg": [
+      "/cards/185/card_after_training.webp",
+      "/cards/186/card_after_training.webp",
+      "/cards/187/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
   },
   "62": {
     "bg": [
@@ -547,6 +802,16 @@
       "Gacha63_banner.webp"
     ]
   },
+  "64": {
+    "bg": [
+      "/cards/190/card_after_training.webp",
+      "/cards/191/card_after_training.webp",
+      "/cards/192/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
+  },
   "65": {
     "bg": [
       "/cards/190/card_after_training.webp",
@@ -572,6 +837,15 @@
       "Gacha66_banner.webp"
     ]
   },
+  "67": {
+    "bg": [
+      "/cards/195/card_after_training.webp",
+      "/cards/196/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
+  },
   "68": {
     "bg": [
       "bg_gacha68.webp",
@@ -584,6 +858,16 @@
     "banner": [
       "Gacha68_banner.webp"
     ]
+  },
+  "69": {
+    "bg": [
+      "/cards/197/card_after_training.webp",
+      "/cards/198/card_after_training.webp",
+      "/cards/199/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
   },
   "70": {
     "bg": [
@@ -599,6 +883,18 @@
       "Gacha70_banner.webp"
     ]
   },
+  "71": {
+    "bg": [
+      "/cards/3/card_after_training.webp",
+      "/cards/19/card_after_training.webp",
+      "/cards/35/card_after_training.webp",
+      "/cards/51/card_after_training.webp",
+      "/cards/67/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
+  },
   "72": {
     "bg": [
       "bg_gacha72.webp",
@@ -611,6 +907,16 @@
     "banner": [
       "Gacha72_banner.webp"
     ]
+  },
+  "73": {
+    "bg": [
+      "/cards/202/card_after_training.webp",
+      "/cards/203/card_after_training.webp",
+      "/cards/204/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
   },
   "74": {
     "bg": [
@@ -639,6 +945,16 @@
       "Gacha75_banner.webp"
     ]
   },
+  "76": {
+    "bg": [
+      "/cards/207/card_after_training.webp",
+      "/cards/208/card_after_training.webp",
+      "/cards/209/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
+  },
   "77": {
     "bg": [
       "/cards/207/card_after_training.webp",
@@ -666,6 +982,16 @@
       "Gacha78_banner.webp"
     ]
   },
+  "79": {
+    "bg": [
+      "/cards/212/card_after_training.webp",
+      "/cards/213/card_after_training.webp",
+      "/cards/214/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
+  },
   "80": {
     "bg": [
       "/cards/212/card_after_training.webp",
@@ -680,6 +1006,18 @@
       "Gacha80_banner.webp"
     ]
   },
+  "81": {
+    "bg": [
+      "/cards/3/card_after_training.webp",
+      "/cards/19/card_after_training.webp",
+      "/cards/35/card_after_training.webp",
+      "/cards/51/card_after_training.webp",
+      "/cards/67/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
+  },
   "82": {
     "bg": [
       "bg_gacha82.webp",
@@ -692,6 +1030,16 @@
     "banner": [
       "Gacha82_banner.webp"
     ]
+  },
+  "83": {
+    "bg": [
+      "/cards/217/card_after_training.webp",
+      "/cards/218/card_after_training.webp",
+      "/cards/219/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
   },
   "84": {
     "bg": [
@@ -719,6 +1067,16 @@
     "banner": [
       "Gacha85_banner.webp"
     ]
+  },
+  "86": {
+    "bg": [
+      "/cards/222/card_after_training.webp",
+      "/cards/223/card_after_training.webp",
+      "/cards/224/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
   },
   "87": {
     "bg": [
@@ -761,6 +1119,16 @@
       "Gacha89_banner.webp"
     ]
   },
+  "90": {
+    "bg": [
+      "/cards/227/card_after_training.webp",
+      "/cards/228/card_after_training.webp",
+      "/cards/229/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
+  },
   "91": {
     "bg": [
       "/cards/227/card_after_training.webp",
@@ -788,6 +1156,16 @@
       "Gacha92_banner.webp"
     ]
   },
+  "93": {
+    "bg": [
+      "/cards/232/card_after_training.webp",
+      "/cards/233/card_after_training.webp",
+      "/cards/234/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
+  },
   "94": {
     "bg": [
       "/cards/232/card_after_training.webp",
@@ -801,6 +1179,18 @@
     "banner": [
       "Gacha94_banner.webp"
     ]
+  },
+  "95": {
+    "bg": [
+      "/cards/3/card_after_training.webp",
+      "/cards/19/card_after_training.webp",
+      "/cards/35/card_after_training.webp",
+      "/cards/51/card_after_training.webp",
+      "/cards/67/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
   },
   "96": {
     "bg": [
@@ -866,6 +1256,18 @@
     "banner": [
       "Gacha100_banner.webp"
     ]
+  },
+  "101": {
+    "bg": [
+      "/cards/3/card_after_training.webp",
+      "/cards/19/card_after_training.webp",
+      "/cards/35/card_after_training.webp",
+      "/cards/51/card_after_training.webp",
+      "/cards/67/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
   },
   "102": {
     "bg": [
@@ -964,6 +1366,18 @@
       "Gacha108_banner.webp"
     ]
   },
+  "109": {
+    "bg": [
+      "/cards/3/card_after_training.webp",
+      "/cards/19/card_after_training.webp",
+      "/cards/35/card_after_training.webp",
+      "/cards/51/card_after_training.webp",
+      "/cards/67/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
+  },
   "110": {
     "bg": [
       "bg_gacha110.webp",
@@ -1060,6 +1474,18 @@
       "Gacha116_banner.webp"
     ]
   },
+  "117": {
+    "bg": [
+      "/cards/3/card_after_training.webp",
+      "/cards/19/card_after_training.webp",
+      "/cards/35/card_after_training.webp",
+      "/cards/51/card_after_training.webp",
+      "/cards/67/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
+  },
   "118": {
     "bg": [
       "bg_gacha118.webp",
@@ -1113,6 +1539,18 @@
     "banner": [
       "Gacha121_banner.webp"
     ]
+  },
+  "122": {
+    "bg": [
+      "/cards/3/card_after_training.webp",
+      "/cards/19/card_after_training.webp",
+      "/cards/35/card_after_training.webp",
+      "/cards/51/card_after_training.webp",
+      "/cards/67/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
   },
   "123": {
     "bg": [
@@ -1283,6 +1721,18 @@
       "Gacha134_banner.webp"
     ]
   },
+  "135": {
+    "bg": [
+      "/cards/3/card_after_training.webp",
+      "/cards/19/card_after_training.webp",
+      "/cards/35/card_after_training.webp",
+      "/cards/51/card_after_training.webp",
+      "/cards/67/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
+  },
   "136": {
     "bg": [
       "bg_gacha136.webp",
@@ -1309,6 +1759,19 @@
     "banner": [
       "Gacha137_banner.webp"
     ]
+  },
+  "138": {
+    "bg": [
+      "/cards/88/card_after_training.webp",
+      "/cards/92/card_after_training.webp",
+      "/cards/96/card_after_training.webp",
+      "/cards/109/card_after_training.webp",
+      "/cards/114/card_after_training.webp",
+      "/cards/119/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
   },
   "139": {
     "bg": [
@@ -1396,6 +1859,18 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": []
+  },
+  "146": {
+    "bg": [
+      "/cards/3/card_after_training.webp",
+      "/cards/19/card_after_training.webp",
+      "/cards/35/card_after_training.webp",
+      "/cards/51/card_after_training.webp",
+      "/cards/67/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
   },
   "147": {
     "bg": [
@@ -1512,6 +1987,18 @@
     "banner": [
       "Gacha155_banner.webp"
     ]
+  },
+  "156": {
+    "bg": [
+      "/cards/3/card_after_training.webp",
+      "/cards/19/card_after_training.webp",
+      "/cards/35/card_after_training.webp",
+      "/cards/51/card_after_training.webp",
+      "/cards/67/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
   },
   "157": {
     "bg": [
@@ -1683,6 +2170,18 @@
       "Gacha169_banner.webp"
     ]
   },
+  "170": {
+    "bg": [
+      "/cards/3/card_after_training.webp",
+      "/cards/19/card_after_training.webp",
+      "/cards/35/card_after_training.webp",
+      "/cards/51/card_after_training.webp",
+      "/cards/67/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
+  },
   "171": {
     "bg": [
       "bg_gacha171.webp",
@@ -1798,6 +2297,18 @@
     "banner": [
       "Gacha179_banner.webp"
     ]
+  },
+  "180": {
+    "bg": [
+      "/cards/3/card_after_training.webp",
+      "/cards/19/card_after_training.webp",
+      "/cards/35/card_after_training.webp",
+      "/cards/51/card_after_training.webp",
+      "/cards/67/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
   },
   "181": {
     "bg": [
@@ -1931,6 +2442,18 @@
     "banner": [
       "Gacha190_banner.webp"
     ]
+  },
+  "191": {
+    "bg": [
+      "/cards/3/card_after_training.webp",
+      "/cards/19/card_after_training.webp",
+      "/cards/35/card_after_training.webp",
+      "/cards/51/card_after_training.webp",
+      "/cards/67/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
   },
   "192": {
     "bg": [
@@ -2698,6 +3221,39 @@
       "Gacha251_banner.webp"
     ]
   },
+  "252": {
+    "bg": [
+      "/cards/416/card_after_training.webp",
+      "/cards/244/card_after_training.webp",
+      "/cards/313/card_after_training.webp",
+      "/cards/380/card_after_training.webp",
+      "/cards/392/card_after_training.webp",
+      "/cards/321/card_after_training.webp",
+      "/cards/331/card_after_training.webp",
+      "/cards/391/card_after_training.webp",
+      "/cards/373/card_after_training.webp",
+      "/cards/343/card_after_training.webp",
+      "/cards/434/card_after_training.webp",
+      "/cards/341/card_after_training.webp",
+      "/cards/410/card_after_training.webp",
+      "/cards/356/card_after_training.webp",
+      "/cards/450/card_after_training.webp",
+      "/cards/428/card_after_training.webp",
+      "/cards/361/card_after_training.webp",
+      "/cards/445/card_after_training.webp",
+      "/cards/255/card_after_training.webp",
+      "/cards/429/card_after_training.webp",
+      "/cards/393/card_after_training.webp",
+      "/cards/399/card_after_training.webp",
+      "/cards/447/card_after_training.webp",
+      "/cards/430/card_after_training.webp",
+      "/cards/358/card_after_training.webp",
+      "/cards/436/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
+  },
   "253": {
     "bg": [
       "/cards/291/card_after_training.webp",
@@ -3322,6 +3878,20 @@
     "logo": "logo/logo.webp",
     "banner": []
   },
+  "308": {
+    "bg": [
+      "/cards/383/card_after_training.webp",
+      "/cards/267/card_after_training.webp",
+      "/cards/376/card_after_training.webp",
+      "/cards/359/card_after_training.webp",
+      "/cards/364/card_after_training.webp",
+      "/cards/353/card_after_training.webp",
+      "/cards/272/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
+  },
   "309": {
     "bg": [
       "/cards/612/card_after_training.webp",
@@ -3429,6 +3999,20 @@
       "Gacha314_banner.webp"
     ]
   },
+  "315": {
+    "bg": [
+      "/cards/383/card_after_training.webp",
+      "/cards/267/card_after_training.webp",
+      "/cards/376/card_after_training.webp",
+      "/cards/359/card_after_training.webp",
+      "/cards/364/card_after_training.webp",
+      "/cards/353/card_after_training.webp",
+      "/cards/272/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
+  },
   "316": {
     "bg": [
       "/cards/619/card_after_training.webp",
@@ -3534,6 +4118,20 @@
     "banner": [
       "Gacha325_banner.webp"
     ]
+  },
+  "326": {
+    "bg": [
+      "/cards/383/card_after_training.webp",
+      "/cards/267/card_after_training.webp",
+      "/cards/376/card_after_training.webp",
+      "/cards/359/card_after_training.webp",
+      "/cards/364/card_after_training.webp",
+      "/cards/353/card_after_training.webp",
+      "/cards/272/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
   },
   "327": {
     "bg": [
@@ -3667,6 +4265,20 @@
       "Gacha338_banner.webp"
     ]
   },
+  "339": {
+    "bg": [
+      "/cards/383/card_after_training.webp",
+      "/cards/267/card_after_training.webp",
+      "/cards/376/card_after_training.webp",
+      "/cards/359/card_after_training.webp",
+      "/cards/364/card_after_training.webp",
+      "/cards/353/card_after_training.webp",
+      "/cards/272/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
+  },
   "340": {
     "bg": [
       "/cards/659/card_after_training.webp",
@@ -3734,6 +4346,20 @@
     "banner": [
       "Gacha345_banner.webp"
     ]
+  },
+  "346": {
+    "bg": [
+      "/cards/383/card_after_training.webp",
+      "/cards/267/card_after_training.webp",
+      "/cards/376/card_after_training.webp",
+      "/cards/359/card_after_training.webp",
+      "/cards/364/card_after_training.webp",
+      "/cards/353/card_after_training.webp",
+      "/cards/272/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
   },
   "347": {
     "bg": [
@@ -3847,6 +4473,20 @@
       "Gacha356_banner.webp"
     ]
   },
+  "357": {
+    "bg": [
+      "/cards/383/card_after_training.webp",
+      "/cards/267/card_after_training.webp",
+      "/cards/376/card_after_training.webp",
+      "/cards/359/card_after_training.webp",
+      "/cards/364/card_after_training.webp",
+      "/cards/353/card_after_training.webp",
+      "/cards/272/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
+  },
   "358": {
     "bg": [
       "/cards/694/card_after_training.webp",
@@ -3898,6 +4538,23 @@
     "banner": [
       "Gacha362_banner.webp"
     ]
+  },
+  "363": {
+    "bg": [
+      "/cards/279/card_after_training.webp",
+      "/cards/576/card_after_training.webp",
+      "/cards/392/card_after_training.webp",
+      "/cards/589/card_after_training.webp",
+      "/cards/464/card_after_training.webp",
+      "/cards/522/card_after_training.webp",
+      "/cards/309/card_after_training.webp",
+      "/cards/613/card_after_training.webp",
+      "/cards/553/card_after_training.webp",
+      "/cards/650/card_after_training.webp"
+    ],
+    "img": [],
+    "banner": [],
+    "logo": null
   },
   "364": {
     "bg": [
@@ -8594,6 +9251,99 @@
     "logo": "logo/logo.webp",
     "banner": []
   },
+  "789": {
+    "bg": [
+      "bg_gacha789_1.webp",
+      "bg_gacha789_2.webp",
+      "bg_gacha789_3.webp"
+    ],
+    "img": [
+      "cardname_gacha789_1.webp",
+      "cardname_gacha789_2.webp",
+      "cardname_gacha789_3.webp"
+    ],
+    "logo": "logo/logo.webp",
+    "banner": [
+      "Gacha789_banner.webp"
+    ]
+  },
+  "790": {
+    "bg": [
+      "bg_gacha790.webp"
+    ],
+    "img": [],
+    "logo": "logo/logo.webp",
+    "banner": [
+      "Gacha790_banner.webp"
+    ]
+  },
+  "791": {
+    "bg": [
+      "bg_gacha791.webp"
+    ],
+    "img": [],
+    "logo": "logo/logo.webp",
+    "banner": []
+  },
+  "792": {
+    "bg": [
+      "bg_gacha792.webp"
+    ],
+    "img": [],
+    "logo": "logo/logo.webp",
+    "banner": []
+  },
+  "793": {
+    "bg": [
+      "bg_gacha793.webp"
+    ],
+    "img": [],
+    "logo": "logo/logo.webp",
+    "banner": []
+  },
+  "794": {
+    "bg": [
+      "bg_gacha794_1.webp",
+      "bg_gacha794_2.webp"
+    ],
+    "img": [
+      "cardname_gacha794.webp"
+    ],
+    "logo": "logo/logo.webp",
+    "banner": []
+  },
+  "795": {
+    "bg": [
+      "bg_gacha795.webp"
+    ],
+    "img": [],
+    "logo": "logo/logo.webp",
+    "banner": []
+  },
+  "796": {
+    "bg": [
+      "bg_gacha796.webp"
+    ],
+    "img": [],
+    "logo": "logo/logo.webp",
+    "banner": []
+  },
+  "797": {
+    "bg": [
+      "bg_gacha797.webp"
+    ],
+    "img": [],
+    "logo": "logo/logo.webp",
+    "banner": []
+  },
+  "798": {
+    "bg": [
+      "bg_gacha798.webp"
+    ],
+    "img": [],
+    "logo": "logo/logo.webp",
+    "banner": []
+  },
   "birthday_Rin": {
     "bg": [],
     "img": [],
@@ -8785,662 +9535,5 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": []
-  },
-  "7": {
-    "bg": [
-      "/cards/119/card_after_training.webp",
-      "/cards/120/card_after_training.webp",
-      "/cards/121/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "10": {
-    "bg": [
-      "/cards/124/card_after_training.webp",
-      "/cards/125/card_after_training.webp",
-      "/cards/126/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "13": {
-    "bg": [
-      "/cards/129/card_after_training.webp",
-      "/cards/130/card_after_training.webp",
-      "/cards/131/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "18": {
-    "bg": [
-      "/cards/134/card_after_training.webp",
-      "/cards/135/card_after_training.webp",
-      "/cards/136/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "21": {
-    "bg": [
-      "/cards/139/card_after_training.webp",
-      "/cards/140/card_after_training.webp",
-      "/cards/141/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "24": {
-    "bg": [
-      "/cards/144/card_after_training.webp",
-      "/cards/145/card_after_training.webp",
-      "/cards/146/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "29": {
-    "bg": [
-      "/cards/149/card_after_training.webp",
-      "/cards/150/card_after_training.webp",
-      "/cards/151/card_after_training.webp",
-      "/cards/152/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "32": {
-    "bg": [
-      "/cards/88/card_after_training.webp",
-      "/cards/4/card_after_training.webp",
-      "/cards/130/card_after_training.webp",
-      "/cards/135/card_after_training.webp",
-      "/cards/120/card_after_training.webp",
-      "/cards/115/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "33": {
-    "bg": [
-      "/cards/88/card_after_training.webp",
-      "/cards/4/card_after_training.webp",
-      "/cards/130/card_after_training.webp",
-      "/cards/135/card_after_training.webp",
-      "/cards/120/card_after_training.webp",
-      "/cards/115/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "34": {
-    "bg": [
-      "/cards/88/card_after_training.webp",
-      "/cards/4/card_after_training.webp",
-      "/cards/130/card_after_training.webp",
-      "/cards/135/card_after_training.webp",
-      "/cards/120/card_after_training.webp",
-      "/cards/115/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "35": {
-    "bg": [
-      "/cards/88/card_after_training.webp",
-      "/cards/4/card_after_training.webp",
-      "/cards/130/card_after_training.webp",
-      "/cards/135/card_after_training.webp",
-      "/cards/120/card_after_training.webp",
-      "/cards/115/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "36": {
-    "bg": [
-      "/cards/88/card_after_training.webp",
-      "/cards/4/card_after_training.webp",
-      "/cards/130/card_after_training.webp",
-      "/cards/135/card_after_training.webp",
-      "/cards/120/card_after_training.webp",
-      "/cards/115/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "37": {
-    "bg": [
-      "/cards/88/card_after_training.webp",
-      "/cards/4/card_after_training.webp",
-      "/cards/130/card_after_training.webp",
-      "/cards/135/card_after_training.webp",
-      "/cards/120/card_after_training.webp",
-      "/cards/115/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "40": {
-    "bg": [
-      "/cards/155/card_after_training.webp",
-      "/cards/156/card_after_training.webp",
-      "/cards/157/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "43": {
-    "bg": [
-      "/cards/160/card_after_training.webp",
-      "/cards/161/card_after_training.webp",
-      "/cards/162/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "46": {
-    "bg": [
-      "/cards/165/card_after_training.webp",
-      "/cards/166/card_after_training.webp",
-      "/cards/167/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "49": {
-    "bg": [
-      "/cards/170/card_after_training.webp",
-      "/cards/171/card_after_training.webp",
-      "/cards/172/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "53": {
-    "bg": [
-      "/cards/175/card_after_training.webp",
-      "/cards/176/card_after_training.webp",
-      "/cards/177/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "57": {
-    "bg": [
-      "/cards/180/card_after_training.webp",
-      "/cards/181/card_after_training.webp",
-      "/cards/182/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "61": {
-    "bg": [
-      "/cards/185/card_after_training.webp",
-      "/cards/186/card_after_training.webp",
-      "/cards/187/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "64": {
-    "bg": [
-      "/cards/190/card_after_training.webp",
-      "/cards/191/card_after_training.webp",
-      "/cards/192/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "67": {
-    "bg": [
-      "/cards/195/card_after_training.webp",
-      "/cards/196/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "69": {
-    "bg": [
-      "/cards/197/card_after_training.webp",
-      "/cards/198/card_after_training.webp",
-      "/cards/199/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "73": {
-    "bg": [
-      "/cards/202/card_after_training.webp",
-      "/cards/203/card_after_training.webp",
-      "/cards/204/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "76": {
-    "bg": [
-      "/cards/207/card_after_training.webp",
-      "/cards/208/card_after_training.webp",
-      "/cards/209/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "79": {
-    "bg": [
-      "/cards/212/card_after_training.webp",
-      "/cards/213/card_after_training.webp",
-      "/cards/214/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "83": {
-    "bg": [
-      "/cards/217/card_after_training.webp",
-      "/cards/218/card_after_training.webp",
-      "/cards/219/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "86": {
-    "bg": [
-      "/cards/222/card_after_training.webp",
-      "/cards/223/card_after_training.webp",
-      "/cards/224/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "90": {
-    "bg": [
-      "/cards/227/card_after_training.webp",
-      "/cards/228/card_after_training.webp",
-      "/cards/229/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "93": {
-    "bg": [
-      "/cards/232/card_after_training.webp",
-      "/cards/233/card_after_training.webp",
-      "/cards/234/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "138": {
-    "bg": [
-      "/cards/88/card_after_training.webp",
-      "/cards/92/card_after_training.webp",
-      "/cards/96/card_after_training.webp",
-      "/cards/109/card_after_training.webp",
-      "/cards/114/card_after_training.webp",
-      "/cards/119/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "252": {
-    "bg": [
-      "/cards/416/card_after_training.webp",
-      "/cards/244/card_after_training.webp",
-      "/cards/313/card_after_training.webp",
-      "/cards/380/card_after_training.webp",
-      "/cards/392/card_after_training.webp",
-      "/cards/321/card_after_training.webp",
-      "/cards/331/card_after_training.webp",
-      "/cards/391/card_after_training.webp",
-      "/cards/373/card_after_training.webp",
-      "/cards/343/card_after_training.webp",
-      "/cards/434/card_after_training.webp",
-      "/cards/341/card_after_training.webp",
-      "/cards/410/card_after_training.webp",
-      "/cards/356/card_after_training.webp",
-      "/cards/450/card_after_training.webp",
-      "/cards/428/card_after_training.webp",
-      "/cards/361/card_after_training.webp",
-      "/cards/445/card_after_training.webp",
-      "/cards/255/card_after_training.webp",
-      "/cards/429/card_after_training.webp",
-      "/cards/393/card_after_training.webp",
-      "/cards/399/card_after_training.webp",
-      "/cards/447/card_after_training.webp",
-      "/cards/430/card_after_training.webp",
-      "/cards/358/card_after_training.webp",
-      "/cards/436/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "363": {
-    "bg": [
-      "/cards/279/card_after_training.webp",
-      "/cards/576/card_after_training.webp",
-      "/cards/392/card_after_training.webp",
-      "/cards/589/card_after_training.webp",
-      "/cards/464/card_after_training.webp",
-      "/cards/522/card_after_training.webp",
-      "/cards/309/card_after_training.webp",
-      "/cards/613/card_after_training.webp",
-      "/cards/553/card_after_training.webp",
-      "/cards/650/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "38": {
-    "bg": [
-      "/cards/3/card_after_training.webp",
-      "/cards/19/card_after_training.webp",
-      "/cards/35/card_after_training.webp",
-      "/cards/51/card_after_training.webp",
-      "/cards/67/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "51": {
-    "bg": [
-      "/cards/3/card_after_training.webp",
-      "/cards/19/card_after_training.webp",
-      "/cards/35/card_after_training.webp",
-      "/cards/51/card_after_training.webp",
-      "/cards/67/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "59": {
-    "bg": [
-      "/cards/3/card_after_training.webp",
-      "/cards/19/card_after_training.webp",
-      "/cards/35/card_after_training.webp",
-      "/cards/51/card_after_training.webp",
-      "/cards/67/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "71": {
-    "bg": [
-      "/cards/3/card_after_training.webp",
-      "/cards/19/card_after_training.webp",
-      "/cards/35/card_after_training.webp",
-      "/cards/51/card_after_training.webp",
-      "/cards/67/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "81": {
-    "bg": [
-      "/cards/3/card_after_training.webp",
-      "/cards/19/card_after_training.webp",
-      "/cards/35/card_after_training.webp",
-      "/cards/51/card_after_training.webp",
-      "/cards/67/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "95": {
-    "bg": [
-      "/cards/3/card_after_training.webp",
-      "/cards/19/card_after_training.webp",
-      "/cards/35/card_after_training.webp",
-      "/cards/51/card_after_training.webp",
-      "/cards/67/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "101": {
-    "bg": [
-      "/cards/3/card_after_training.webp",
-      "/cards/19/card_after_training.webp",
-      "/cards/35/card_after_training.webp",
-      "/cards/51/card_after_training.webp",
-      "/cards/67/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "109": {
-    "bg": [
-      "/cards/3/card_after_training.webp",
-      "/cards/19/card_after_training.webp",
-      "/cards/35/card_after_training.webp",
-      "/cards/51/card_after_training.webp",
-      "/cards/67/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "117": {
-    "bg": [
-      "/cards/3/card_after_training.webp",
-      "/cards/19/card_after_training.webp",
-      "/cards/35/card_after_training.webp",
-      "/cards/51/card_after_training.webp",
-      "/cards/67/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "122": {
-    "bg": [
-      "/cards/3/card_after_training.webp",
-      "/cards/19/card_after_training.webp",
-      "/cards/35/card_after_training.webp",
-      "/cards/51/card_after_training.webp",
-      "/cards/67/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "135": {
-    "bg": [
-      "/cards/3/card_after_training.webp",
-      "/cards/19/card_after_training.webp",
-      "/cards/35/card_after_training.webp",
-      "/cards/51/card_after_training.webp",
-      "/cards/67/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "146": {
-    "bg": [
-      "/cards/3/card_after_training.webp",
-      "/cards/19/card_after_training.webp",
-      "/cards/35/card_after_training.webp",
-      "/cards/51/card_after_training.webp",
-      "/cards/67/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "156": {
-    "bg": [
-      "/cards/3/card_after_training.webp",
-      "/cards/19/card_after_training.webp",
-      "/cards/35/card_after_training.webp",
-      "/cards/51/card_after_training.webp",
-      "/cards/67/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "170": {
-    "bg": [
-      "/cards/3/card_after_training.webp",
-      "/cards/19/card_after_training.webp",
-      "/cards/35/card_after_training.webp",
-      "/cards/51/card_after_training.webp",
-      "/cards/67/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "180": {
-    "bg": [
-      "/cards/3/card_after_training.webp",
-      "/cards/19/card_after_training.webp",
-      "/cards/35/card_after_training.webp",
-      "/cards/51/card_after_training.webp",
-      "/cards/67/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "191": {
-    "bg": [
-      "/cards/3/card_after_training.webp",
-      "/cards/19/card_after_training.webp",
-      "/cards/35/card_after_training.webp",
-      "/cards/51/card_after_training.webp",
-      "/cards/67/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "308": {
-    "bg": [
-      "/cards/383/card_after_training.webp",
-      "/cards/267/card_after_training.webp",
-      "/cards/376/card_after_training.webp",
-      "/cards/359/card_after_training.webp",
-      "/cards/364/card_after_training.webp",
-      "/cards/353/card_after_training.webp",
-      "/cards/272/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "315": {
-    "bg": [
-      "/cards/383/card_after_training.webp",
-      "/cards/267/card_after_training.webp",
-      "/cards/376/card_after_training.webp",
-      "/cards/359/card_after_training.webp",
-      "/cards/364/card_after_training.webp",
-      "/cards/353/card_after_training.webp",
-      "/cards/272/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "326": {
-    "bg": [
-      "/cards/383/card_after_training.webp",
-      "/cards/267/card_after_training.webp",
-      "/cards/376/card_after_training.webp",
-      "/cards/359/card_after_training.webp",
-      "/cards/364/card_after_training.webp",
-      "/cards/353/card_after_training.webp",
-      "/cards/272/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "339": {
-    "bg": [
-      "/cards/383/card_after_training.webp",
-      "/cards/267/card_after_training.webp",
-      "/cards/376/card_after_training.webp",
-      "/cards/359/card_after_training.webp",
-      "/cards/364/card_after_training.webp",
-      "/cards/353/card_after_training.webp",
-      "/cards/272/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "346": {
-    "bg": [
-      "/cards/383/card_after_training.webp",
-      "/cards/267/card_after_training.webp",
-      "/cards/376/card_after_training.webp",
-      "/cards/359/card_after_training.webp",
-      "/cards/364/card_after_training.webp",
-      "/cards/353/card_after_training.webp",
-      "/cards/272/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
-  },
-  "357": {
-    "bg": [
-      "/cards/383/card_after_training.webp",
-      "/cards/267/card_after_training.webp",
-      "/cards/376/card_after_training.webp",
-      "/cards/359/card_after_training.webp",
-      "/cards/364/card_after_training.webp",
-      "/cards/353/card_after_training.webp",
-      "/cards/272/card_after_training.webp"
-    ],
-    "img": [],
-    "banner": [],
-    "logo": null
   }
 }
