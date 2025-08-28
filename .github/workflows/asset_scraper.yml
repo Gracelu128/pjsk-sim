@@ -20,6 +20,7 @@ permissions:
 
 jobs:
     scrape_card:
+        if: ${{ github.event.inputs.start_card != '' && github.event.inputs.end_card != '' }}
         runs-on: ubuntu-latest
         steps:
             - name: Checkout repository
@@ -52,7 +53,6 @@ jobs:
                 --task "reorder card info"
 
             - name: Commit and push results
-              if: ${{ github.event.inputs.start_card != '' && github.event.inputs.end_card != '' }}
               run: |
                 git config user.name "github-actions[bot]"
                 git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -61,6 +61,7 @@ jobs:
                 git push
 
     scrape_gacha:
+        if: ${{ github.event.inputs.start_gacha != '' && github.event.inputs.end_gacha != '' }}
         runs-on: ubuntu-latest
         steps:
             - name: Checkout repository
@@ -93,7 +94,6 @@ jobs:
                 --task "reorder gacha info"
 
             - name: Commit and push results
-              if: ${{ github.event.inputs.start_gacha != '' && github.event.inputs.end_gacha != '' }}
               run: |
                 git config user.name "github-actions[bot]"
                 git config user.email "github-actions[bot]@users.noreply.github.com"
