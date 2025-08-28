@@ -1,0 +1,25 @@
+{
+  "id": 787,
+  "title (japanese)": "[復刻]あなたに届け♡Live Streamingガチャ",
+  "release_date": "8/12/2025, 3:00:00 AM",
+  "end_date": "8/21/2025, 2:59:59 AM",
+  "type": "limited",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "968",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "969",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "970",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    }
+  ]
+}
