@@ -1779,12 +1779,6 @@ def main():
     # sekaibest_scrape_gacha_logos()
     # sekaibest_scrape_screen_texture_assets()
     generate_or_update_gacha_manifest()
-    # inject_card_backgrounds(
-    #     start_id=1,
-    #     end_id=376,
-    #     only_when_bg_empty=False,
-    #     verify_files_exist=True,
-    # )
     # pass
 
 if __name__ == "__main__":
