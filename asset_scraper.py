@@ -1116,6 +1116,9 @@ def generate_or_update_gacha_manifest(
     min_update_id=377,   # <-- only update ids >= 377 by default
     max_update_id=None,  # <-- set to an int to cap the range; None = no upper cap
 ):
+    if min_update_id < 377: # set to >= 377
+        min_update_id = 377
+
     # Load existing manifest (preserve all prior/custom fields)
     existing = {}
     manifest_file = Path(manifest_path)
