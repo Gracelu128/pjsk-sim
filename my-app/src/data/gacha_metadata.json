@@ -21812,5 +21812,100 @@
         "guaranteed_rate": null
       }
     ]
+  },
+  "794": {
+    "id": 794,
+    "title (japanese)": "[マジカルミライ2025]プレミアムプレゼントガチャ",
+    "release_date": "8/29/2025, 3:00:00 AM",
+    "end_date": "9/4/2025, 2:59:59 AM",
+    "type": "normal",
+    "gacha_rate_index": 2,
+    "featured_cards": [
+      {
+        "card_id": "537",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.292
+      },
+      {
+        "card_id": "1047",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.292
+      },
+      {
+        "card_id": "298",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.292
+      },
+      {
+        "card_id": "145",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.292
+      },
+      {
+        "card_id": "326",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.292
+      }
+    ]
+  },
+  "795": {
+    "id": 795,
+    "title (japanese)": "[初音ミク]HAPPY ANNIVERSARY2025ガチャ",
+    "release_date": "8/30/2025, 3:00:00 PM",
+    "end_date": "9/6/2025, 2:59:59 PM",
+    "type": "birthday",
+    "gacha_rate_index": 4,
+    "featured_cards": [
+      {
+        "card_id": "1234",
+        "normal_rate": 3.0,
+        "guaranteed_rate": null
+      }
+    ]
+  },
+  "796": {
+    "id": 796,
+    "title (japanese)": "[復刻][初音ミク]HAPPY ANNIVERSARY2024ガチャ",
+    "release_date": "8/30/2025, 3:00:00 PM",
+    "end_date": "9/6/2025, 2:59:59 PM",
+    "type": "birthday",
+    "gacha_rate_index": 4,
+    "featured_cards": [
+      {
+        "card_id": "986",
+        "normal_rate": 3.0,
+        "guaranteed_rate": null
+      }
+    ]
+  },
+  "797": {
+    "id": 797,
+    "title (japanese)": "[復刻][初音ミク]HAPPY ANNIVERSARY2023ガチャ",
+    "release_date": "8/30/2025, 3:00:00 PM",
+    "end_date": "9/6/2025, 2:59:59 PM",
+    "type": "birthday",
+    "gacha_rate_index": 4,
+    "featured_cards": [
+      {
+        "card_id": "706",
+        "normal_rate": 3.0,
+        "guaranteed_rate": null
+      }
+    ]
+  },
+  "798": {
+    "id": 798,
+    "title (japanese)": "[復刻][初音ミク]HAPPY ANNIVERSARYガチャ",
+    "release_date": "8/30/2025, 3:00:00 PM",
+    "end_date": "9/6/2025, 2:59:59 PM",
+    "type": "birthday",
+    "gacha_rate_index": 4,
+    "featured_cards": [
+      {
+        "card_id": "492",
+        "normal_rate": 3.0,
+        "guaranteed_rate": null
+      }
+    ]
   }
 }

@@ -1,0 +1,35 @@
+{
+  "id": 794,
+  "title (japanese)": "[マジカルミライ2025]プレミアムプレゼントガチャ",
+  "release_date": "8/29/2025, 3:00:00 AM",
+  "end_date": "9/4/2025, 2:59:59 AM",
+  "type": "normal",
+  "gacha_rate_index": 2,
+  "featured_cards": [
+    {
+      "card_id": "537",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.292
+    },
+    {
+      "card_id": "1047",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.292
+    },
+    {
+      "card_id": "298",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.292
+    },
+    {
+      "card_id": "145",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.292
+    },
+    {
+      "card_id": "326",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.292
+    }
+  ]
+}
