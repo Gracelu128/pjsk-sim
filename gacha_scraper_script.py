@@ -31,7 +31,7 @@ def main():
         sekaipedia_scrape_gacha_banners(start_num=args.start_gacha, end_num=args.end_gacha)
         sekaibest_scrape_gacha_logos(start_gacha=args.start_gacha, end_gacha=args.end_gacha)
         sekaibest_scrape_screen_texture_assets(start_gacha=args.start_gacha, end_gacha=args.end_gacha)
-        generate_or_update_gacha_manifest()
+        generate_or_update_gacha_manifest(min_update_id=args.start_gacha, max_update_id=args.end_gacha)
     elif args.task == "all":
         # First scrape gacha info
         sekaibest_scrape_gacha_info(start_gacha=args.start_gacha, end_gacha=args.end_gacha)
