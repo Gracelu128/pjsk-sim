@@ -28,7 +28,10 @@ def main():
         json_reorder("my-app/src/data/gacha_metadata.json", desired_gacha_metadata_order)
         split_gacha_metadata()
     elif args.task == "scrape gacha assets":
-        pass
+        sekaipedia_scrape_gacha_banners(start_num=args.start_gacha, end_num=args.end_gacha)
+        sekaibest_scrape_gacha_logos(start_gacha=args.start_gacha, end_gacha=args.end_gacha)
+        sekaibest_scrape_screen_texture_assets(start_gacha=args.start_gacha, end_gacha=args.end_gacha)
+        generate_or_update_gacha_manifest()
     elif args.task == "all":
         # First scrape gacha info
         sekaibest_scrape_gacha_info(start_gacha=args.start_gacha, end_gacha=args.end_gacha)
@@ -36,6 +39,10 @@ def main():
         json_reorder("my-app/src/data/gacha_metadata.json", desired_gacha_metadata_order)
         split_gacha_metadata()
         # Third scrape gacha assets
+        sekaipedia_scrape_gacha_banners(start_num=args.start_gacha, end_num=args.end_gacha)
+        sekaibest_scrape_gacha_logos(start_gacha=args.start_gacha, end_gacha=args.end_gacha)
+        sekaibest_scrape_screen_texture_assets(start_gacha=args.start_gacha, end_gacha=args.end_gacha)
+        generate_or_update_gacha_manifest()
     else:
         print("Please enter a valid task as listed below:\n")
         print("     scrape gacha info, reorder gacha info, scrape gacha assets, all")
