@@ -441,6 +441,9 @@ def scrape_missing_cards():
 
     start_index = max_id + 1
 
+    if start_index >= end_index:
+        return None, None
+
     return start_index, end_index
 
 def sekaibest_scrape_card_info(start_num=start_id, end_num=end_id):
@@ -757,6 +760,9 @@ def scrape_missing_gachas():
     max_id = max(int(k) for k in keys)
 
     start_index = max_id + 1
+
+    if start_index >= end_index:
+        return None, None
 
     return start_index, end_index
 
@@ -1943,8 +1949,7 @@ def inject_card_backgrounds(
 ###############################################################################
 
 def main():
-    scrape_missing_cards()
-    scrape_missing_gachas()
+    pass
 
 if __name__ == "__main__":
     main()
