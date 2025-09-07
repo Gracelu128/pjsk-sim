@@ -6,6 +6,7 @@ import time
 import re
 import requests
 from collections import OrderedDict
+from datetime import datetime
 from pathlib import Path
 from PIL import Image
 from selenium import webdriver
@@ -28,6 +29,16 @@ end_id = 1228
 start_gacha = 1 # default start gacha id
 end_gacha = 793
 # ***END OF GLOBAL VARIABLES***
+
+# ***PATHS HERE***
+ROOT = Path(__file__).resolve().parent
+APP_DIR = ROOT / "my-app"
+PUBLIC_DIR = APP_DIR / "public"
+DATA_DIR = APP_DIR / "src" / "data"
+MANIFEST_PATH = PUBLIC_DIR / "gacha" / "manifest.json"
+GACHA_META_PATH = DATA_DIR / "gacha_metadata.json"
+CARD_META_PATH = DATA_DIR / "card_metadata.json"
+# ***END OF PATHS***
 
 ######################################################################
 ################# CARD RELATED FUNCTIONS BEGINS HERE #################
@@ -1344,6 +1355,22 @@ def generate_or_update_gacha_manifest(
         entry.setdefault("img", [])
         entry.setdefault("logo", "")
         entry.setdefault("banner", [])
+        entry.setdefault("end date", "")
+
+        # Collect end date from gacha_metadata.json
+        gacha_meta = None
+        with open(GACHA_META_PATH, "r") as f:
+            gacha_meta = json.load(f)
+
+        if gid_str in gacha_meta:
+            gacha_entry = gacha_meta[gid_str]
+            
+            if "end_date" in gacha_entry:
+                raw = gacha_entry["end_date"]
+                dt = datetime.strptime(raw, "%m/%d/%Y, %I:%M:%S %p")
+                formatted = dt.strftime("Until %b. %-d, %Y %I:%M %p")
+                # Get rid of seconds in end_date 
+                entry["end date"] = formatted
 
         # Collect assets from disk (non-destructive merge)
         texture_dir = os.path.join(gacha_dir, "screen", "texture")
@@ -1374,7 +1401,7 @@ def generate_or_update_gacha_manifest(
         entry["banner"] = _unique_sorted(list(entry.get("banner", [])) + new_banners)
 
         # Only write if it has something (or already existed)
-        if entry["bg"] or entry["img"] or entry["logo"] or entry["banner"] or gid_str in updated:
+        if entry["bg"] or entry["img"] or entry["logo"] or entry["banner"] or entry["end date"] or gid_str in updated:
             updated[gid_str] = entry
 
     # Sort by numeric id
@@ -1848,14 +1875,6 @@ def scrape_gacha_backgrounds_1_to_377():
         print("All logos 1–377 are present!")
     else:
         print("Missing logos in:", missing)
-
-ROOT = Path(__file__).resolve().parent
-APP_DIR = ROOT / "my-app"
-PUBLIC_DIR = APP_DIR / "public"
-DATA_DIR = APP_DIR / "src" / "data"
-MANIFEST_PATH = PUBLIC_DIR / "gacha" / "manifest.json"
-GACHA_META_PATH = DATA_DIR / "gacha_metadata.json"
-CARD_META_PATH = DATA_DIR / "card_metadata.json"
 
 def _read_json(p: Path) -> Dict[str, Any]:
     with p.open("r", encoding="utf-8") as f:
