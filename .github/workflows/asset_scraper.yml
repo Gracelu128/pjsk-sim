@@ -2,7 +2,7 @@ name: Asset Scraper
 
 on:
     schedule:
-      - cron: "40 5 * * *" # midnight EST, daily 05:00 UTC
+      - cron: "0 5 * * *" # midnight EST, daily 05:00 UTC
 
 permissions:
   contents: write
