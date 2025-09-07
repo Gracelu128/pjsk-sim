@@ -2,7 +2,7 @@ name: Asset Scraper
 
 on:
     schedule:
-      - cron: "0 5 * * *" # midnight EST, daily 05:00 UTC
+      - cron: "30 16 * * *" # midnight EST, daily 05:00 UTC
 
 permissions:
   contents: write
@@ -56,8 +56,6 @@ jobs:
               run: |
                 echo "Reordering card_metadata.json and generating individual card files..."
                 python card_scraper_script.py \
-                --start_card ${{ steps.discover.outputs.start_index }} \
-                --end_card ${{ steps.discover.outputs.end_index }} \
                 --task "reorder card info"
 
             - name: Commit and push results
@@ -117,8 +115,6 @@ jobs:
               run: |
                 echo "Reordering gacha_metadata.json and generating individual gacha files..."
                 python gacha_scraper_script.py \
-                --start_gacha ${{ steps.discover.outputs.start_index }} \
-                --end_gacha ${{ steps.discover.outputs.end_index }} \
                 --task "reorder gacha info"
             
             - name: Scrape gacha assets

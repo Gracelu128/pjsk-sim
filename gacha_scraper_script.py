@@ -5,10 +5,10 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--start_gacha", type=int, required=False)
     parser.add_argument("--end_gacha", type=int, required=False)
-    parser.add_argument("--task", choices=["extract missing gachas", "scrape gacha info", "reorder gacha info", "scrape gacha assets"])
+    parser.add_argument("--task", choices=["extract missing gachas", "scrape gacha info", "reorder gacha info", "scrape gacha assets", "all"])
     args = parser.parse_args()
 
-    if args.start_gacha is None or args.end_gacha is None:
+    if args.start_gacha is None or args.end_gacha is None and args.task not in ["extract missing gachas", "reorder gacha info"]:
         print("Skipping gacha scraping: start_gacha or gacha_card not provided.")
         return
     
