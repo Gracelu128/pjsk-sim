@@ -9344,6 +9344,64 @@
     "logo": "logo/logo.webp",
     "banner": []
   },
+  "799": {
+    "bg": [
+      "bg_gacha799_1.webp",
+      "bg_gacha799_2.webp",
+      "bg_gacha799_3.webp"
+    ],
+    "img": [
+      "cardname_gacha799_1.webp",
+      "cardname_gacha799_2.webp",
+      "cardname_gacha799_3.webp"
+    ],
+    "logo": "logo/logo.webp",
+    "banner": [
+      "Gacha799_banner.webp"
+    ]
+  },
+  "800": {
+    "bg": [
+      "bg_gacha800.webp"
+    ],
+    "img": [],
+    "logo": "logo/logo.webp",
+    "banner": [
+      "Gacha800_banner.webp"
+    ]
+  },
+  "801": {
+    "bg": [
+      "bg_gacha801.webp"
+    ],
+    "img": [],
+    "logo": "logo/logo.webp",
+    "banner": [
+      "Gacha801_banner.webp"
+    ]
+  },
+  "803": {
+    "bg": [
+      "bg_gacha803_1.webp",
+      "bg_gacha803_2.webp",
+      "bg_gacha803_3.webp",
+      "bg_gacha803_4.webp",
+      "bg_gacha803_5.webp",
+      "bg_gacha803_6.webp"
+    ],
+    "img": [
+      "cardname_gacha803_1.webp",
+      "cardname_gacha803_2.webp",
+      "cardname_gacha803_3.webp",
+      "cardname_gacha803_4.webp",
+      "cardname_gacha803_5.webp",
+      "cardname_gacha803_6.webp"
+    ],
+    "logo": "logo/logo.webp",
+    "banner": [
+      "Gacha803_banner.webp"
+    ]
+  },
   "birthday_Rin": {
     "bg": [],
     "img": [],
