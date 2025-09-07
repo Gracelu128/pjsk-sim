@@ -25,6 +25,10 @@ def main():
 
     if args.task == "extract missing gachas":
         start_index, end_index = scrape_missing_gachas()
+
+        start_index = '' if start_index is None else start_index
+        end_index = '' if end_index is None else end_index
+
         print(f"start_index={start_index}")
         print(f"end_index={end_index}")
     elif args.task == "scrape gacha info":
