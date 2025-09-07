@@ -9,6 +9,7 @@ from collections import OrderedDict
 from pathlib import Path
 from PIL import Image
 from selenium import webdriver
+from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
@@ -418,8 +419,21 @@ def scrape_missing_cards():
             except Exception:
                 ActionChains(driver).move_to_element_with_offset(card_root, 5, 5).click().perform()
 
-        wait.until(EC.url_contains("/card/"))
-        detail_url = driver.current_url
+        driver.set_page_load_timeout(120)
+        driver.set_script_timeout(120)
+
+        try:
+            # wait longer for the URL change
+            wait = WebDriverWait(driver, 90)  # up to 90s instead of default
+            wait.until(EC.url_contains("/card/"))
+            detail_url = driver.current_url
+        except TimeoutException:
+            # optional: fallback check / diagnostics
+            print("⚠️ Timed out waiting for /card/ in URL. Current URL:", driver.current_url)
+            driver.save_screenshot("timeout_card.png")
+            with open("timeout_card.html", "w", encoding="utf-8") as f:
+                f.write(driver.page_source)
+            raise
 
         m2 = re.search(r"/card/(\d+)", detail_url)
         if m2:
