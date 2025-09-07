@@ -8,9 +8,10 @@ def main():
     parser.add_argument("--task", choices=["extract missing gachas", "scrape gacha info", "reorder gacha info", "scrape gacha assets", "all"])
     args = parser.parse_args()
 
-    if args.start_gacha is None or args.end_gacha is None and args.task not in ["extract missing gachas", "reorder gacha info"]:
-        print("Skipping gacha scraping: start_gacha or gacha_card not provided.")
-        return
+    if args.task not in ["extract missing gachas", "reorder gacha info"]:
+        if args.start_gacha is None or args.end_gacha is None:
+            print("Skipping gacha scraping: start_gacha or gacha_card not provided.")
+            return
     
     desired_gacha_metadata_order = [
         "id",

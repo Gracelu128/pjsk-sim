@@ -8,9 +8,10 @@ def main():
     parser.add_argument("--task", choices=["extract missing cards", "scrape card info", "reorder card info", "all"])
     args = parser.parse_args()
 
-    if args.start_card is None or args.end_card is None and args.task not in ["extract missing cards", "reorder card info"]:
-        print("Skipping card scraping: start_card or end_card not provided.")
-        return
+    if args.task not in ["extract missing cards", "reorder card info"]:
+        if args.start_card is None or args.end_card is None:
+            print("Skipping card scraping: start_card or end_card not provided.")
+            return
     
     desired_card_metadata_order = [
         "id",
