@@ -1,8 +1,9 @@
 name: Asset Scraper
 
 on:
-    schedule:
-      - cron: "30 16 * * *" # midnight EST, daily 05:00 UTC
+  workflow_dispatch:
+  schedule:
+    - cron: "0 5 * * *" # midnight EST, daily 05:00 UTC
 
 permissions:
   contents: write
