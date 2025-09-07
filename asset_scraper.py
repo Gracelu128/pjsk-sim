@@ -362,6 +362,87 @@ def sekaipedia_scrape_card_info(start_num=start_id, end_num=end_id):
     with open(json_path, 'w') as f:
         json.dump(data, f, indent=2)
 
+def scrape_missing_cards():
+    start_index = None
+    end_index = None
+
+    # Set up Chrome options
+    chrome_options = Options()
+    chrome_options.add_argument("--headless")  # Run in background
+    chrome_options.add_argument("--disable-gpu")
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument("--disable-dev-shm-usage")
+    chrome_options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36")
+    
+    # Set up Chrome driver with WebDriver Manager
+    service = Service(ChromeDriverManager().install())
+    driver = webdriver.Chrome(service=service, options=chrome_options)
+
+    base = "https://sekai.best"
+    try:
+        driver.get(f"{base}/card")
+
+        wait = WebDriverWait(driver, 20)
+
+        # # Wait for the outer grid that holds the cards
+        # grid = wait.until(EC.presence_of_element_located(
+        #     (By.CSS_SELECTOR, 'div.MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-1.css-tuxzvu')
+        # ))
+        # first_item = grid.find_element(By.CSS_SELECTOR, ':scope > .MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-12')
+        grid = wait.until(EC.presence_of_element_located((
+            By.XPATH,
+            # container with spacing, and *has* a direct child grid-item that contains a card
+            "//div[contains(@class,'MuiGrid-container') and contains(@class,'MuiGrid-spacing-xs-1') "
+            " and div[contains(@class,'MuiGrid-item') and .//div[contains(@class,'MuiCard-root')]]]"
+        )))
+
+        # 2) Select the FIRST top-level card item under that grid
+        first_item = grid.find_element(
+            By.XPATH,
+            "./div[contains(@class,'MuiGrid-item') and .//div[contains(@class,'MuiCard-root')]][1]"
+        )
+        # html = first_item.get_attribute("outerHTML")
+        # print(html)
+
+        card_root = first_item.find_element(By.XPATH, ".//div[contains(@class,'MuiCard-root')]")
+        driver.execute_script("arguments[0].scrollIntoView({block:'center'});", card_root)
+        time.sleep(0.05)
+
+        # Try normal click -> JS click -> offset click
+        try:
+            wait.until(EC.element_to_be_clickable((By.XPATH, ".//div[contains(@class,'MuiCard-root')]")))
+            card_root.click()
+        except Exception:
+            try:
+                driver.execute_script("arguments[0].click();", card_root)
+            except Exception:
+                ActionChains(driver).move_to_element_with_offset(card_root, 5, 5).click().perform()
+
+        wait.until(EC.url_contains("/card/"))
+        detail_url = driver.current_url
+
+        m2 = re.search(r"/card/(\d+)", detail_url)
+        if m2:
+            card_id_from_url = int(m2.group(1))
+        end_index = card_id_from_url
+    finally:
+        driver.quit()
+
+    # Figure out start index
+    json_path = "my-app/src/data/card_metadata.json"
+
+    with open(json_path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    # Keys are strings like "1", "2", ...
+    keys = list(data.keys())
+    # Convert to ints to find max
+    max_id = max(int(k) for k in keys)
+
+    start_index = max_id + 1
+
+    return start_index, end_index
+
 def sekaibest_scrape_card_info(start_num=start_id, end_num=end_id):
     """Scrape card images using Selenium with automatic driver management"""
     # Configuration
@@ -597,6 +678,87 @@ def split_card_metadata(
 
 ######################################################################
 ################# GACHA RELATED FUNCTIONS BEGINS HERE #################
+
+def scrape_missing_gachas():
+    start_index = None
+    end_index = None
+
+    # Set up Chrome options
+    chrome_options = Options()
+    chrome_options.add_argument("--headless")  # Run in background
+    chrome_options.add_argument("--disable-gpu")
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument("--disable-dev-shm-usage")
+    chrome_options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36")
+    
+    # Set up Chrome driver with WebDriver Manager
+    service = Service(ChromeDriverManager().install())
+    driver = webdriver.Chrome(service=service, options=chrome_options)
+
+    base = "https://sekai.best"
+    try:
+        driver.get(f"{base}/gacha")
+
+        wait = WebDriverWait(driver, 20)
+
+        # # Wait for the outer grid that holds the cards
+        # grid = wait.until(EC.presence_of_element_located(
+        #     (By.CSS_SELECTOR, 'div.MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-1.css-tuxzvu')
+        # ))
+        # first_item = grid.find_element(By.CSS_SELECTOR, ':scope > .MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-12')
+        grid = wait.until(EC.presence_of_element_located((
+            By.XPATH,
+            # container with spacing, and *has* a direct child grid-item that contains a card
+            "//div[contains(@class,'MuiGrid-container') and contains(@class,'MuiGrid-spacing-xs-1') "
+            " and div[contains(@class,'MuiGrid-item') and .//div[contains(@class,'MuiCard-root')]]]"
+        )))
+
+        # 2) Select the FIRST top-level card item under that grid
+        first_item = grid.find_element(
+            By.XPATH,
+            "./div[contains(@class,'MuiGrid-item') and .//div[contains(@class,'MuiCard-root')]][1]"
+        )
+        # html = first_item.get_attribute("outerHTML")
+        # print(html)
+
+        card_root = first_item.find_element(By.XPATH, ".//div[contains(@class,'MuiCard-root')]")
+        driver.execute_script("arguments[0].scrollIntoView({block:'center'});", card_root)
+        time.sleep(0.05)
+
+        # Try normal click -> JS click -> offset click
+        try:
+            wait.until(EC.element_to_be_clickable((By.XPATH, ".//div[contains(@class,'MuiCard-root')]")))
+            card_root.click()
+        except Exception:
+            try:
+                driver.execute_script("arguments[0].click();", card_root)
+            except Exception:
+                ActionChains(driver).move_to_element_with_offset(card_root, 5, 5).click().perform()
+
+        wait.until(EC.url_contains("/gacha/"))
+        detail_url = driver.current_url
+
+        m2 = re.search(r"/gacha/(\d+)", detail_url)
+        if m2:
+            gacha_id_from_url = int(m2.group(1))
+        end_index = gacha_id_from_url
+    finally:
+        driver.quit()
+
+    # Figure out start index
+    json_path = "my-app/src/data/gacha_metadata.json"
+
+    with open(json_path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    # Keys are strings like "1", "2", ...
+    keys = list(data.keys())
+    # Convert to ints to find max
+    max_id = max(int(k) for k in keys)
+
+    start_index = max_id + 1
+
+    return start_index, end_index
 
 def sekaibest_scrape_gacha_info(start_gacha=start_gacha, end_gacha=end_gacha):
     # Configuration
@@ -1781,7 +1943,8 @@ def inject_card_backgrounds(
 ###############################################################################
 
 def main():
-    pass
+    scrape_missing_cards()
+    scrape_missing_gachas()
 
 if __name__ == "__main__":
     main()

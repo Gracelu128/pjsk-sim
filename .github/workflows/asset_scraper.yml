@@ -1,26 +1,14 @@
 name: Asset Scraper
 
 on:
-    workflow_dispatch:
-        inputs:
-            start_card:
-                description: "Start card index:"
-                required: false
-            end_card:
-                description: "End card index"
-                required: false
-            start_gacha:
-                description: "Start gacha index"
-                required: false
-            end_gacha:
-                description: "End gacha index"
-                required: false
+    schedule:
+      - cron: "40 5 * * *" # midnight EST, daily 05:00 UTC
+
 permissions:
   contents: write
 
 jobs:
     scrape_card:
-        if: ${{ github.event.inputs.start_card != '' && github.event.inputs.end_card != '' }}
         runs-on: ubuntu-latest
         steps:
             - name: Checkout repository
@@ -36,23 +24,44 @@ jobs:
                 python -m pip install --upgrade pip
                 pip install -r requirements.txt
 
+            - name: Figure out missing cards
+              id: discover
+              run : |
+                echo "Finding missing cards..."
+
+                # First figure out missing cards
+                result=$(python card_scraper_script.py \
+                  --task "extract missing cards")
+
+                # Echo results
+                echo "$result"
+
+                # Write outputs for later steps
+                start_index=$(echo "$result" | grep start_index | cut -d= -f2)
+                end_index=$(echo "$result" | grep end_index | cut -d= -f2)
+                echo "start_index=$start_index" >> $GITHUB_OUTPUT
+                echo "end_index=$end_index" >> $GITHUB_OUTPUT
+
             - name: Scrape card images and information
+              if: ${{ steps.discover.outputs.start_index != '' || steps.discover.outputs.end_index != '' }}
               run: |
                 echo "Scraping card images and collecting info from sekai.best and sekaipedia..."
                 python card_scraper_script.py \
-                --start_card ${{ github.event.inputs.start_card }} \
-                --end_card ${{ github.event.inputs.end_card }} \
+                --start_card ${{ steps.discover.outputs.start_index }} \
+                --end_card ${{ steps.discover.outputs.end_index }} \
                 --task "scrape card info"
 
             - name: Reorder card_metadata.json, generate individual card .json files
+              if: ${{ steps.discover.outputs.start_index != '' || steps.discover.outputs.end_index != '' }}
               run: |
                 echo "Reordering card_metadata.json and generating individual card files..."
                 python card_scraper_script.py \
-                --start_card ${{ github.event.inputs.start_card }} \
-                --end_card ${{ github.event.inputs.end_card }} \
+                --start_card ${{ steps.discover.outputs.start_index }} \
+                --end_card ${{ steps.discover.outputs.end_index }} \
                 --task "reorder card info"
 
             - name: Commit and push results
+              if: ${{ steps.discover.outputs.start_index != '' || steps.discover.outputs.end_index != '' }}
               run: |
                 git config user.name "github-actions[bot]"
                 git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -61,7 +70,6 @@ jobs:
                 git push
 
     scrape_gacha:
-        if: ${{ github.event.inputs.start_gacha != '' && github.event.inputs.end_gacha != '' }}
         runs-on: ubuntu-latest
         steps:
             - name: Checkout repository
@@ -77,31 +85,53 @@ jobs:
                 python -m pip install --upgrade pip
                 pip install -r requirements.txt
 
+            - name: Figure out missing gachas
+              id: discover
+              run : |
+                echo "Finding missing gachas..."
+
+                # First figure out missing gachas
+                result=$(python gacha_scraper_script.py \
+                  --task "extract missing gachas")
+
+                # Echo results
+                echo "$result"
+
+                # Write outputs for later steps
+                start_index=$(echo "$result" | grep start_index | cut -d= -f2)
+                end_index=$(echo "$result" | grep end_index | cut -d= -f2)
+                echo "start_index=$start_index" >> $GITHUB_OUTPUT
+                echo "end_index=$end_index" >> $GITHUB_OUTPUT
+
             - name: Scrape gacha information
+              if: ${{ steps.discover.outputs.start_index != '' || steps.discover.outputs.end_index != '' }}
               run: |
                 echo "Collecting gacha info from sekai.best and sekaipedia..."
                 python gacha_scraper_script.py \
-                --start_gacha ${{ github.event.inputs.start_gacha }} \
-                --end_gacha ${{ github.event.inputs.end_gacha }} \
+                --start_gacha ${{ steps.discover.outputs.start_index }} \
+                --end_gacha ${{ steps.discover.outputs.end_index }} \
                 --task "scrape gacha info"
             
             - name: Reorder gacha_metadata.json, generate individual gacha .json files
+              if: ${{ steps.discover.outputs.start_index != '' || steps.discover.outputs.end_index != '' }}
               run: |
                 echo "Reordering gacha_metadata.json and generating individual gacha files..."
                 python gacha_scraper_script.py \
-                --start_gacha ${{ github.event.inputs.start_gacha }} \
-                --end_gacha ${{ github.event.inputs.end_gacha }} \
+                --start_gacha ${{ steps.discover.outputs.start_index }} \
+                --end_gacha ${{ steps.discover.outputs.end_index }} \
                 --task "reorder gacha info"
             
             - name: Scrape gacha assets
+              if: ${{ steps.discover.outputs.start_index != '' || steps.discover.outputs.end_index != '' }}
               run: |
                 echo "Scraping gacha assets (logo, background, etc.) ..."
                 python gacha_scraper_script.py \
-                --start_gacha ${{ github.event.inputs.start_gacha }} \
-                --end_gacha ${{ github.event.inputs.end_gacha }} \
+                --start_gacha ${{ steps.discover.outputs.start_index }} \
+                --end_gacha ${{ steps.discover.outputs.end_index }} \
                 --task "scrape gacha assets"
 
             - name: Commit and push results
+              if: ${{ steps.discover.outputs.start_index != '' || steps.discover.outputs.end_index != '' }}
               run: |
                 git config user.name "github-actions[bot]"
                 git config user.email "github-actions[bot]@users.noreply.github.com"

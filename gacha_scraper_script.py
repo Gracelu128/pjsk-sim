@@ -5,7 +5,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--start_gacha", type=int, required=False)
     parser.add_argument("--end_gacha", type=int, required=False)
-    parser.add_argument("--task", choices=["scrape gacha info", "reorder gacha info", "scrape gacha assets"])
+    parser.add_argument("--task", choices=["extract missing gachas", "scrape gacha info", "reorder gacha info", "scrape gacha assets"])
     args = parser.parse_args()
 
     if args.start_gacha is None or args.end_gacha is None:
@@ -22,7 +22,11 @@ def main():
         "featured_cards"
     ]
 
-    if args.task == "scrape gacha info":
+    if args.task == "extract missing gachas":
+        start_index, end_index = scrape_missing_gachas()
+        print(f"start_index={start_index}")
+        print(f"end_index={end_index}")
+    elif args.task == "scrape gacha info":
         sekaibest_scrape_gacha_info(start_gacha=args.start_gacha, end_gacha=args.end_gacha)
     elif args.task == "reorder gacha info":
         json_reorder("my-app/src/data/gacha_metadata.json", desired_gacha_metadata_order)

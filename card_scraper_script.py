@@ -5,7 +5,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--start_card", type=int, required=False)
     parser.add_argument("--end_card", type=int, required=False)
-    parser.add_argument("--task", choices=["scrape card info", "reorder card info", "all"])
+    parser.add_argument("--task", choices=["extract missing cards", "scrape card info", "reorder card info", "all"])
     args = parser.parse_args()
 
     if args.start_card is None or args.end_card is None:
@@ -31,7 +31,11 @@ def main():
         "status"
     ]
 
-    if args.task == "scrape card info":
+    if args.task == "extract missing cards":
+        start_index, end_index = scrape_missing_cards()
+        print(f"start_index={start_index}")
+        print(f"end_index={end_index}")
+    elif args.task == "scrape card info":
         scrape_card_images(start_num=args.start_card, end_num=args.end_card)
         sekaipedia_scrape_card_info(start_num=args.start_card, end_num=args.end_card)
         sekaibest_scrape_card_info(start_num=args.start_card, end_num=args.end_card)
