@@ -27,6 +27,7 @@ function sanitizeManifest(m) {
       bg: Array.isArray(e.bg) ? e.bg.filter(f => /\.[a-z0-9]{2,5}$/i.test(f)) : [],
       img: Array.isArray(e.img) ? e.img.filter(f => /\.[a-z0-9]{2,5}$/i.test(f)) : [],
       banner: Array.isArray(e.banner) ? e.banner.filter(f => /\.[a-z0-9]{2,5}$/i.test(f)) : [],
+      "end date": typeof e["end date"] === "string" ? e["end date"] : null,
     };
   }
   return out;
