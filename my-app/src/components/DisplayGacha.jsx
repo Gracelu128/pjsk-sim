@@ -70,6 +70,7 @@ export default function DisplayGacha({ gachaId, manifest }) {
     crystalBar: uiPath(UI_FILES.crystal_bar_button),
 
     fakeDateBar: uiPath(UI_FILES.fake_date_bar),
+    realDateBar: uiPath(UI_FILES.real_date_bar),
     fakeStickerBarNormal: uiPath(UI_FILES.fake_gacha_sticker_bar_normal),
 
     charDetails: uiPath(UI_FILES.character_details_button), // (spelling as provided)
@@ -403,18 +404,54 @@ export default function DisplayGacha({ gachaId, manifest }) {
                 </div>
               )}
 
-              {/* Fake date bar */}
-              {ui.fakeDateBar && (
-                <div style={{ width: "85%", marginBottom: pxH(0.01) }}>
-                  <NextImage
-                    src={ui.fakeDateBar}
-                    alt="Date"
-                    width={pxW(0.238)} // 85% of 28% ~ 23.8%
-                    height={pxH(0.06)}
-                    sizes={`${pxW(0.238)}px`}
-                    style={{ width: "100%", height: "auto", display: "block" }}
-                  />
-                </div>
+              {/* Real date bar */}
+              {entry.end_date ? (
+                ui.realDateBar && (
+                  <div
+                    style={{
+                      width: "85%",
+                      marginBottom: pxH(0.01),
+                      position: "relative",
+                      textAlign: "center",
+                      fontFamily: "Arial, sans-serif",
+                      fontSize: "1rem",
+                      color: "#fff",
+                    }}
+                  >
+                    <NextImage
+                      src={ui.realDateBar}
+                      alt="Date"
+                      width={pxW(0.238)} // 85% of 28% ~ 23.8%
+                      height={pxH(0.06)}
+                      sizes={`${pxW(0.238)}px`}
+                      style={{ width: "100%", height: "auto", display: "block" }}
+                    />
+                    <span
+                      style={{
+                        position: "absolute",
+                        top: "50%",
+                        left: "50%",
+                        transform: "translate(-50%, -50%)",
+                        whiteSpace: "nowrap",
+                      }}
+                    >
+                      {entry.end_date}
+                    </span>
+                  </div>
+                )
+              ) : (
+                ui.fakeDateBar && (
+                  <div style={{ width: "85%", marginBottom: pxH(0.01) }}>
+                    <NextImage
+                      src={ui.fakeDateBar}
+                      alt="Date"
+                      width={pxW(0.238)} // 85% of 28% ~ 23.8%
+                      height={pxH(0.06)}
+                      sizes={`${pxW(0.238)}px`}
+                      style={{ width: "100%", height: "auto", display: "block" }}
+                    />
+                  </div>
+                )
               )}
 
               {/* Fake sticker bar (normal) */}
