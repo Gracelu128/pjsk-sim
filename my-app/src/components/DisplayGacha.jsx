@@ -21,7 +21,6 @@ import buildLogoNav from "@/utils/buildLogoNav";
 export default function DisplayGacha({ gachaId, manifest }) {
   const entry = manifest?.[gachaId] || {};
   console.log("Debug Entry:", entry);
-  console.log("Debug end_date:", entry.end_date);
 
   // Rotators
   //const bgLen = Array.isArray(entry.bg) ? entry.bg.length : 0;
@@ -407,7 +406,7 @@ export default function DisplayGacha({ gachaId, manifest }) {
               )}
 
               {/* Real date bar */}
-              {entry.end_date ? (
+              {entry["end date"] ? (
                 ui.realDateBar && (
                   <div
                     style={{
@@ -437,7 +436,7 @@ export default function DisplayGacha({ gachaId, manifest }) {
                         whiteSpace: "nowrap",
                       }}
                     >
-                      {entry.end_date}
+                      {entry["end date"]}
                     </span>
                   </div>
                 )
