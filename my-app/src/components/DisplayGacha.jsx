@@ -415,7 +415,7 @@ export default function DisplayGacha({ gachaId, manifest }) {
                       position: "relative",
                       textAlign: "center",
                       fontFamily: "Arial, sans-serif",
-                      fontSize: "1.5rem",
+                      fontSize: "1.25em",
                       color: "#fff",
                     }}
                   >
