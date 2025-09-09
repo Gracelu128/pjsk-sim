@@ -12,7 +12,7 @@
     "banner": [
       "Gacha1_banner.webp"
     ],
-    "end date": "Until Oct. 9, 2020 01:59 AM"
+    "end date": "Until Oct. 9, 2020 01:59"
   },
   "2": {
     "bg": [
@@ -28,7 +28,7 @@
     "banner": [
       "Gacha2_banner.webp"
     ],
-    "end date": "Until Jan. 10, 2021 12:59 AM"
+    "end date": "Until Jan. 10, 2021 00:59"
   },
   "3": {
     "bg": [
@@ -45,7 +45,7 @@
     "banner": [
       "Gacha3_banner.webp"
     ],
-    "end date": "Until Oct. 9, 2020 01:59 AM"
+    "end date": "Until Oct. 9, 2020 01:59"
   },
   "4": {
     "bg": [
@@ -59,7 +59,7 @@
     "banner": [
       "Gacha4_banner.webp"
     ],
-    "end date": "Until Oct. 20, 2020 01:59 AM"
+    "end date": "Until Oct. 20, 2020 01:59"
   },
   "5": {
     "bg": [
@@ -73,7 +73,7 @@
     "banner": [
       "Gacha5_banner.webp"
     ],
-    "end date": "Until Oct. 31, 2020 01:59 AM"
+    "end date": "Until Oct. 31, 2020 01:59"
   },
   "6": {
     "bg": [
@@ -87,7 +87,7 @@
     "banner": [
       "Gacha6_banner.webp"
     ],
-    "end date": "Until Nov. 9, 2020 12:59 AM"
+    "end date": "Until Nov. 9, 2020 00:59"
   },
   "7": {
     "bg": [
@@ -98,7 +98,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until Nov. 9, 2020 12:59 AM"
+    "end date": "Until Nov. 9, 2020 00:59"
   },
   "8": {
     "bg": [
@@ -113,7 +113,7 @@
     "banner": [
       "Gacha8_banner.webp"
     ],
-    "end date": "Until Nov. 7, 2020 06:59 AM"
+    "end date": "Until Nov. 7, 2020 06:59"
   },
   "9": {
     "bg": [
@@ -127,7 +127,7 @@
     "banner": [
       "Gacha9_banner.webp"
     ],
-    "end date": "Until Nov. 19, 2020 12:59 AM"
+    "end date": "Until Nov. 19, 2020 00:59"
   },
   "10": {
     "bg": [
@@ -138,7 +138,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until Nov. 19, 2020 12:59 AM"
+    "end date": "Until Nov. 19, 2020 00:59"
   },
   "11": {
     "bg": [
@@ -153,7 +153,7 @@
     "banner": [
       "Gacha11_banner.webp"
     ],
-    "end date": "Until Nov. 17, 2020 06:59 AM"
+    "end date": "Until Nov. 17, 2020 06:59"
   },
   "12": {
     "bg": [
@@ -167,7 +167,7 @@
     "banner": [
       "Gacha12_banner.webp"
     ],
-    "end date": "Until Nov. 30, 2020 12:59 AM"
+    "end date": "Until Nov. 30, 2020 00:59"
   },
   "13": {
     "bg": [
@@ -178,7 +178,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until Nov. 30, 2020 12:59 AM"
+    "end date": "Until Nov. 30, 2020 00:59"
   },
   "14": {
     "bg": [
@@ -193,7 +193,7 @@
     "banner": [
       "Gacha14_banner.webp"
     ],
-    "end date": "Until Nov. 28, 2020 06:59 AM"
+    "end date": "Until Nov. 28, 2020 06:59"
   },
   "15": {
     "bg": [
@@ -210,7 +210,7 @@
     "banner": [
       "Gacha15_banner.webp"
     ],
-    "end date": "Until Dec. 4, 2020 12:59 AM"
+    "end date": "Until Dec. 4, 2020 00:59"
   },
   "16": {
     "bg": [
@@ -224,7 +224,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Oct. 11, 2021 02:00 AM"
+    "end date": "Until Oct. 11, 2021 02:00"
   },
   "17": {
     "bg": [
@@ -238,7 +238,7 @@
     "banner": [
       "Gacha17_banner.webp"
     ],
-    "end date": "Until Dec. 10, 2020 12:59 AM"
+    "end date": "Until Dec. 10, 2020 00:59"
   },
   "18": {
     "bg": [
@@ -249,7 +249,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until Dec. 10, 2020 12:59 AM"
+    "end date": "Until Dec. 10, 2020 00:59"
   },
   "19": {
     "bg": [
@@ -264,7 +264,7 @@
     "banner": [
       "Gacha19_banner.webp"
     ],
-    "end date": "Until Dec. 8, 2020 06:59 AM"
+    "end date": "Until Dec. 8, 2020 06:59"
   },
   "20": {
     "bg": [
@@ -278,7 +278,7 @@
     "banner": [
       "Gacha20_banner.webp"
     ],
-    "end date": "Until Dec. 20, 2020 12:59 AM"
+    "end date": "Until Dec. 20, 2020 00:59"
   },
   "21": {
     "bg": [
@@ -289,7 +289,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until Dec. 20, 2020 12:59 AM"
+    "end date": "Until Dec. 20, 2020 00:59"
   },
   "22": {
     "bg": [
@@ -304,7 +304,7 @@
     "banner": [
       "Gacha22_banner.webp"
     ],
-    "end date": "Until Dec. 18, 2020 06:59 AM"
+    "end date": "Until Dec. 18, 2020 06:59"
   },
   "23": {
     "bg": [
@@ -318,7 +318,7 @@
     "banner": [
       "Gacha23_banner.webp"
     ],
-    "end date": "Until Dec. 31, 2020 12:59 AM"
+    "end date": "Until Dec. 31, 2020 00:59"
   },
   "24": {
     "bg": [
@@ -329,7 +329,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until Dec. 31, 2020 12:59 AM"
+    "end date": "Until Dec. 31, 2020 00:59"
   },
   "25": {
     "bg": [
@@ -344,7 +344,7 @@
     "banner": [
       "Gacha25_banner.webp"
     ],
-    "end date": "Until Dec. 29, 2020 06:59 AM"
+    "end date": "Until Dec. 29, 2020 06:59"
   },
   "26": {
     "bg": [
@@ -359,7 +359,7 @@
     "banner": [
       "Gacha26_banner.webp"
     ],
-    "end date": "Until Jan. 4, 2021 12:59 AM"
+    "end date": "Until Jan. 4, 2021 00:59"
   },
   "27": {
     "bg": [
@@ -372,7 +372,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Jan. 4, 2021 12:59 AM"
+    "end date": "Until Jan. 4, 2021 00:59"
   },
   "28": {
     "bg": [
@@ -387,7 +387,7 @@
     "banner": [
       "Gacha28_banner.webp"
     ],
-    "end date": "Until Jan. 10, 2021 12:59 AM"
+    "end date": "Until Jan. 10, 2021 00:59"
   },
   "29": {
     "bg": [
@@ -399,7 +399,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until Jan. 10, 2021 12:59 AM"
+    "end date": "Until Jan. 10, 2021 00:59"
   },
   "30": {
     "bg": [
@@ -415,7 +415,7 @@
     "banner": [
       "Gacha30_banner.webp"
     ],
-    "end date": "Until Jan. 1, 2021 09:59 AM"
+    "end date": "Until Jan. 1, 2021 09:59"
   },
   "31": {
     "bg": [
@@ -431,7 +431,7 @@
     "banner": [
       "Gacha31_banner.webp"
     ],
-    "end date": "Until Jan. 2, 2021 09:59 AM"
+    "end date": "Until Jan. 2, 2021 09:59"
   },
   "32": {
     "bg": [
@@ -445,7 +445,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until Jan. 3, 2021 09:59 AM"
+    "end date": "Until Jan. 3, 2021 09:59"
   },
   "33": {
     "bg": [
@@ -459,7 +459,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until Jan. 4, 2021 09:59 AM"
+    "end date": "Until Jan. 4, 2021 09:59"
   },
   "34": {
     "bg": [
@@ -473,7 +473,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until Jan. 5, 2021 09:59 AM"
+    "end date": "Until Jan. 5, 2021 09:59"
   },
   "35": {
     "bg": [
@@ -487,7 +487,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until Jan. 6, 2021 09:59 AM"
+    "end date": "Until Jan. 6, 2021 09:59"
   },
   "36": {
     "bg": [
@@ -501,7 +501,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until Jan. 7, 2021 09:59 AM"
+    "end date": "Until Jan. 7, 2021 09:59"
   },
   "37": {
     "bg": [
@@ -515,7 +515,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until Jan. 8, 2021 09:59 AM"
+    "end date": "Until Jan. 8, 2021 09:59"
   },
   "38": {
     "bg": [
@@ -528,7 +528,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until Feb. 9, 2021 12:59 AM"
+    "end date": "Until Feb. 9, 2021 00:59"
   },
   "39": {
     "bg": [
@@ -542,7 +542,7 @@
     "banner": [
       "Gacha39_banner.webp"
     ],
-    "end date": "Until Jan. 21, 2021 12:59 AM"
+    "end date": "Until Jan. 21, 2021 00:59"
   },
   "40": {
     "bg": [
@@ -553,7 +553,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until Jan. 21, 2021 12:59 AM"
+    "end date": "Until Jan. 21, 2021 00:59"
   },
   "41": {
     "bg": [
@@ -568,7 +568,7 @@
     "banner": [
       "Gacha41_banner.webp"
     ],
-    "end date": "Until Jan. 19, 2021 06:59 AM"
+    "end date": "Until Jan. 19, 2021 06:59"
   },
   "42": {
     "bg": [
@@ -582,7 +582,7 @@
     "banner": [
       "Gacha42_banner.webp"
     ],
-    "end date": "Until Jan. 31, 2021 12:59 AM"
+    "end date": "Until Jan. 31, 2021 00:59"
   },
   "43": {
     "bg": [
@@ -593,7 +593,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until Jan. 31, 2021 12:59 AM"
+    "end date": "Until Jan. 31, 2021 00:59"
   },
   "44": {
     "bg": [
@@ -608,7 +608,7 @@
     "banner": [
       "Gacha44_banner.webp"
     ],
-    "end date": "Until Jan. 29, 2021 06:59 AM"
+    "end date": "Until Jan. 29, 2021 06:59"
   },
   "45": {
     "bg": [
@@ -622,7 +622,7 @@
     "banner": [
       "Gacha45_banner.webp"
     ],
-    "end date": "Until Feb. 9, 2021 12:59 AM"
+    "end date": "Until Feb. 9, 2021 00:59"
   },
   "46": {
     "bg": [
@@ -633,7 +633,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until Feb. 9, 2021 12:59 AM"
+    "end date": "Until Feb. 9, 2021 00:59"
   },
   "47": {
     "bg": [
@@ -648,7 +648,7 @@
     "banner": [
       "Gacha47_banner.webp"
     ],
-    "end date": "Until Feb. 7, 2021 06:59 AM"
+    "end date": "Until Feb. 7, 2021 06:59"
   },
   "48": {
     "bg": [
@@ -662,7 +662,7 @@
     "banner": [
       "Gacha48_banner.webp"
     ],
-    "end date": "Until Feb. 18, 2021 12:59 AM"
+    "end date": "Until Feb. 18, 2021 00:59"
   },
   "49": {
     "bg": [
@@ -673,7 +673,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until Feb. 18, 2021 12:59 AM"
+    "end date": "Until Feb. 18, 2021 00:59"
   },
   "50": {
     "bg": [
@@ -688,7 +688,7 @@
     "banner": [
       "Gacha50_banner.webp"
     ],
-    "end date": "Until Feb. 16, 2021 06:59 AM"
+    "end date": "Until Feb. 16, 2021 06:59"
   },
   "51": {
     "bg": [
@@ -701,7 +701,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until Mar. 10, 2021 12:59 AM"
+    "end date": "Until Mar. 10, 2021 00:59"
   },
   "52": {
     "bg": [
@@ -715,7 +715,7 @@
     "banner": [
       "Gacha52_banner.webp"
     ],
-    "end date": "Until Feb. 28, 2021 12:59 AM"
+    "end date": "Until Feb. 28, 2021 00:59"
   },
   "53": {
     "bg": [
@@ -726,7 +726,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until Feb. 28, 2021 12:59 AM"
+    "end date": "Until Feb. 28, 2021 00:59"
   },
   "54": {
     "bg": [
@@ -740,7 +740,7 @@
     "banner": [
       "Gacha54_banner.webp"
     ],
-    "end date": "Until Feb. 26, 2021 06:59 AM"
+    "end date": "Until Feb. 26, 2021 06:59"
   },
   "55": {
     "bg": [
@@ -757,7 +757,7 @@
     "banner": [
       "Gacha55_banner.webp"
     ],
-    "end date": "Until Mar. 3, 2021 12:59 AM"
+    "end date": "Until Mar. 3, 2021 00:59"
   },
   "56": {
     "bg": [
@@ -771,7 +771,7 @@
     "banner": [
       "Gacha56_banner.webp"
     ],
-    "end date": "Until Mar. 10, 2021 12:59 AM"
+    "end date": "Until Mar. 10, 2021 00:59"
   },
   "57": {
     "bg": [
@@ -782,7 +782,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until Mar. 10, 2021 12:59 AM"
+    "end date": "Until Mar. 10, 2021 00:59"
   },
   "58": {
     "bg": [
@@ -797,7 +797,7 @@
     "banner": [
       "Gacha58_banner.webp"
     ],
-    "end date": "Until Mar. 8, 2021 06:59 AM"
+    "end date": "Until Mar. 8, 2021 06:59"
   },
   "59": {
     "bg": [
@@ -810,7 +810,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until Apr. 11, 2021 01:59 AM"
+    "end date": "Until Apr. 11, 2021 01:59"
   },
   "60": {
     "bg": [
@@ -824,7 +824,7 @@
     "banner": [
       "Gacha60_banner.webp"
     ],
-    "end date": "Until Mar. 22, 2021 01:59 AM"
+    "end date": "Until Mar. 22, 2021 01:59"
   },
   "61": {
     "bg": [
@@ -835,7 +835,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until Mar. 22, 2021 01:59 AM"
+    "end date": "Until Mar. 22, 2021 01:59"
   },
   "62": {
     "bg": [
@@ -849,7 +849,7 @@
     "banner": [
       "Gacha62_banner.webp"
     ],
-    "end date": "Until Mar. 20, 2021 07:59 AM"
+    "end date": "Until Mar. 20, 2021 07:59"
   },
   "63": {
     "bg": [
@@ -863,7 +863,7 @@
     "banner": [
       "Gacha63_banner.webp"
     ],
-    "end date": "Until Apr. 1, 2021 01:59 AM"
+    "end date": "Until Apr. 1, 2021 01:59"
   },
   "64": {
     "bg": [
@@ -874,7 +874,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until Apr. 1, 2021 01:59 AM"
+    "end date": "Until Apr. 1, 2021 01:59"
   },
   "65": {
     "bg": [
@@ -889,7 +889,7 @@
     "banner": [
       "Gacha65_banner.webp"
     ],
-    "end date": "Until Mar. 30, 2021 07:59 AM"
+    "end date": "Until Mar. 30, 2021 07:59"
   },
   "66": {
     "bg": [
@@ -901,7 +901,7 @@
     "banner": [
       "Gacha66_banner.webp"
     ],
-    "end date": "Until Apr. 6, 2021 01:59 AM"
+    "end date": "Until Apr. 6, 2021 01:59"
   },
   "67": {
     "bg": [
@@ -911,7 +911,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until Apr. 6, 2021 01:59 AM"
+    "end date": "Until Apr. 6, 2021 01:59"
   },
   "68": {
     "bg": [
@@ -925,7 +925,7 @@
     "banner": [
       "Gacha68_banner.webp"
     ],
-    "end date": "Until Apr. 11, 2021 01:59 AM"
+    "end date": "Until Apr. 11, 2021 01:59"
   },
   "69": {
     "bg": [
@@ -936,7 +936,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until Apr. 11, 2021 01:59 AM"
+    "end date": "Until Apr. 11, 2021 01:59"
   },
   "70": {
     "bg": [
@@ -951,7 +951,7 @@
     "banner": [
       "Gacha70_banner.webp"
     ],
-    "end date": "Until Apr. 9, 2021 07:59 AM"
+    "end date": "Until Apr. 9, 2021 07:59"
   },
   "71": {
     "bg": [
@@ -964,7 +964,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until May. 10, 2021 01:59 AM"
+    "end date": "Until May. 10, 2021 01:59"
   },
   "72": {
     "bg": [
@@ -978,7 +978,7 @@
     "banner": [
       "Gacha72_banner.webp"
     ],
-    "end date": "Until Apr. 21, 2021 01:59 AM"
+    "end date": "Until Apr. 21, 2021 01:59"
   },
   "73": {
     "bg": [
@@ -989,7 +989,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until Apr. 21, 2021 01:59 AM"
+    "end date": "Until Apr. 21, 2021 01:59"
   },
   "74": {
     "bg": [
@@ -1004,7 +1004,7 @@
     "banner": [
       "Gacha74_banner.webp"
     ],
-    "end date": "Until Apr. 19, 2021 07:59 AM"
+    "end date": "Until Apr. 19, 2021 07:59"
   },
   "75": {
     "bg": [
@@ -1018,7 +1018,7 @@
     "banner": [
       "Gacha75_banner.webp"
     ],
-    "end date": "Until Apr. 30, 2021 01:59 AM"
+    "end date": "Until Apr. 30, 2021 01:59"
   },
   "76": {
     "bg": [
@@ -1029,7 +1029,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until Apr. 30, 2021 01:59 AM"
+    "end date": "Until Apr. 30, 2021 01:59"
   },
   "77": {
     "bg": [
@@ -1044,7 +1044,7 @@
     "banner": [
       "Gacha77_banner.webp"
     ],
-    "end date": "Until Apr. 28, 2021 07:59 AM"
+    "end date": "Until Apr. 28, 2021 07:59"
   },
   "78": {
     "bg": [
@@ -1058,7 +1058,7 @@
     "banner": [
       "Gacha78_banner.webp"
     ],
-    "end date": "Until May. 10, 2021 01:59 AM"
+    "end date": "Until May. 10, 2021 01:59"
   },
   "79": {
     "bg": [
@@ -1069,7 +1069,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until May. 10, 2021 01:59 AM"
+    "end date": "Until May. 10, 2021 01:59"
   },
   "80": {
     "bg": [
@@ -1084,7 +1084,7 @@
     "banner": [
       "Gacha80_banner.webp"
     ],
-    "end date": "Until May. 8, 2021 07:59 AM"
+    "end date": "Until May. 8, 2021 07:59"
   },
   "81": {
     "bg": [
@@ -1097,7 +1097,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until Jun. 11, 2021 01:59 AM"
+    "end date": "Until Jun. 11, 2021 01:59"
   },
   "82": {
     "bg": [
@@ -1111,7 +1111,7 @@
     "banner": [
       "Gacha82_banner.webp"
     ],
-    "end date": "Until May. 21, 2021 01:59 AM"
+    "end date": "Until May. 21, 2021 01:59"
   },
   "83": {
     "bg": [
@@ -1122,7 +1122,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until May. 21, 2021 01:59 AM"
+    "end date": "Until May. 21, 2021 01:59"
   },
   "84": {
     "bg": [
@@ -1137,7 +1137,7 @@
     "banner": [
       "Gacha84_banner.webp"
     ],
-    "end date": "Until May. 19, 2021 07:59 AM"
+    "end date": "Until May. 19, 2021 07:59"
   },
   "85": {
     "bg": [
@@ -1151,7 +1151,7 @@
     "banner": [
       "Gacha85_banner.webp"
     ],
-    "end date": "Until May. 31, 2021 01:59 AM"
+    "end date": "Until May. 31, 2021 01:59"
   },
   "86": {
     "bg": [
@@ -1162,7 +1162,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until May. 31, 2021 01:59 AM"
+    "end date": "Until May. 31, 2021 01:59"
   },
   "87": {
     "bg": [
@@ -1176,7 +1176,7 @@
     "banner": [
       "Gacha87_banner.webp"
     ],
-    "end date": "Until May. 29, 2021 07:59 AM"
+    "end date": "Until May. 29, 2021 07:59"
   },
   "88": {
     "bg": [
@@ -1192,7 +1192,7 @@
     "banner": [
       "Gacha88_banner.webp"
     ],
-    "end date": "Until Jun. 3, 2021 01:59 AM"
+    "end date": "Until Jun. 3, 2021 01:59"
   },
   "89": {
     "bg": [
@@ -1206,7 +1206,7 @@
     "banner": [
       "Gacha89_banner.webp"
     ],
-    "end date": "Until Jun. 11, 2021 01:59 AM"
+    "end date": "Until Jun. 11, 2021 01:59"
   },
   "90": {
     "bg": [
@@ -1217,7 +1217,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until Jun. 11, 2021 01:59 AM"
+    "end date": "Until Jun. 11, 2021 01:59"
   },
   "91": {
     "bg": [
@@ -1232,7 +1232,7 @@
     "banner": [
       "Gacha91_banner.webp"
     ],
-    "end date": "Until Jun. 9, 2021 07:59 AM"
+    "end date": "Until Jun. 9, 2021 07:59"
   },
   "92": {
     "bg": [
@@ -1246,7 +1246,7 @@
     "banner": [
       "Gacha92_banner.webp"
     ],
-    "end date": "Until Jun. 21, 2021 01:59 AM"
+    "end date": "Until Jun. 21, 2021 01:59"
   },
   "93": {
     "bg": [
@@ -1257,7 +1257,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until Jun. 21, 2021 01:59 AM"
+    "end date": "Until Jun. 21, 2021 01:59"
   },
   "94": {
     "bg": [
@@ -1272,7 +1272,7 @@
     "banner": [
       "Gacha94_banner.webp"
     ],
-    "end date": "Until Jun. 19, 2021 07:59 AM"
+    "end date": "Until Jun. 19, 2021 07:59"
   },
   "95": {
     "bg": [
@@ -1285,7 +1285,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until Jul. 9, 2021 01:59 AM"
+    "end date": "Until Jul. 9, 2021 01:59"
   },
   "96": {
     "bg": [
@@ -1299,7 +1299,7 @@
     "banner": [
       "Gacha96_banner.webp"
     ],
-    "end date": "Until Jun. 30, 2021 01:59 AM"
+    "end date": "Until Jun. 30, 2021 01:59"
   },
   "97": {
     "bg": [
@@ -1314,7 +1314,7 @@
     "banner": [
       "Gacha97_banner.webp"
     ],
-    "end date": "Until Jun. 28, 2021 07:59 AM"
+    "end date": "Until Jun. 28, 2021 07:59"
   },
   "98": {
     "bg": [
@@ -1326,7 +1326,7 @@
     "banner": [
       "Gacha98_banner.webp"
     ],
-    "end date": "Until Jul. 5, 2021 01:59 AM"
+    "end date": "Until Jul. 5, 2021 01:59"
   },
   "99": {
     "bg": [
@@ -1340,7 +1340,7 @@
     "banner": [
       "Gacha99_banner.webp"
     ],
-    "end date": "Until Jul. 9, 2021 01:59 AM"
+    "end date": "Until Jul. 9, 2021 01:59"
   },
   "100": {
     "bg": [
@@ -1355,7 +1355,7 @@
     "banner": [
       "Gacha100_banner.webp"
     ],
-    "end date": "Until Jul. 7, 2021 07:59 AM"
+    "end date": "Until Jul. 7, 2021 07:59"
   },
   "101": {
     "bg": [
@@ -1368,7 +1368,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until Aug. 10, 2021 01:59 AM"
+    "end date": "Until Aug. 10, 2021 01:59"
   },
   "102": {
     "bg": [
@@ -1382,7 +1382,7 @@
     "banner": [
       "Gacha102_banner.webp"
     ],
-    "end date": "Until Jul. 20, 2021 01:59 AM"
+    "end date": "Until Jul. 20, 2021 01:59"
   },
   "103": {
     "bg": [
@@ -1397,7 +1397,7 @@
     "banner": [
       "Gacha103_banner.webp"
     ],
-    "end date": "Until Jul. 18, 2021 07:59 AM"
+    "end date": "Until Jul. 18, 2021 07:59"
   },
   "104": {
     "bg": [
@@ -1411,7 +1411,7 @@
     "banner": [
       "Gacha104_banner.webp"
     ],
-    "end date": "Until Jul. 31, 2021 01:59 AM"
+    "end date": "Until Jul. 31, 2021 01:59"
   },
   "105": {
     "bg": [
@@ -1426,7 +1426,7 @@
     "banner": [
       "Gacha105_banner.webp"
     ],
-    "end date": "Until Jul. 29, 2021 07:59 AM"
+    "end date": "Until Jul. 29, 2021 07:59"
   },
   "106": {
     "bg": [
@@ -1443,7 +1443,7 @@
     "banner": [
       "Gacha106_banner.webp"
     ],
-    "end date": "Until Aug. 4, 2021 01:59 AM"
+    "end date": "Until Aug. 4, 2021 01:59"
   },
   "107": {
     "bg": [
@@ -1457,7 +1457,7 @@
     "banner": [
       "Gacha107_banner.webp"
     ],
-    "end date": "Until Aug. 10, 2021 01:59 AM"
+    "end date": "Until Aug. 10, 2021 01:59"
   },
   "108": {
     "bg": [
@@ -1472,7 +1472,7 @@
     "banner": [
       "Gacha108_banner.webp"
     ],
-    "end date": "Until Aug. 8, 2021 07:59 AM"
+    "end date": "Until Aug. 8, 2021 07:59"
   },
   "109": {
     "bg": [
@@ -1485,7 +1485,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until Sep. 10, 2021 01:59 AM"
+    "end date": "Until Sep. 10, 2021 01:59"
   },
   "110": {
     "bg": [
@@ -1499,7 +1499,7 @@
     "banner": [
       "Gacha110_banner.webp"
     ],
-    "end date": "Until Aug. 20, 2021 01:59 AM"
+    "end date": "Until Aug. 20, 2021 01:59"
   },
   "111": {
     "bg": [
@@ -1514,7 +1514,7 @@
     "banner": [
       "Gacha111_banner.webp"
     ],
-    "end date": "Until Aug. 18, 2021 07:59 AM"
+    "end date": "Until Aug. 18, 2021 07:59"
   },
   "112": {
     "bg": [
@@ -1528,7 +1528,7 @@
     "banner": [
       "Gacha112_banner.webp"
     ],
-    "end date": "Until Aug. 31, 2021 01:59 AM"
+    "end date": "Until Aug. 31, 2021 01:59"
   },
   "113": {
     "bg": [
@@ -1543,7 +1543,7 @@
     "banner": [
       "Gacha113_banner.webp"
     ],
-    "end date": "Until Aug. 29, 2021 07:59 AM"
+    "end date": "Until Aug. 29, 2021 07:59"
   },
   "114": {
     "bg": [
@@ -1559,7 +1559,7 @@
     "banner": [
       "Gacha114_banner.webp"
     ],
-    "end date": "Until Sep. 4, 2021 01:59 AM"
+    "end date": "Until Sep. 4, 2021 01:59"
   },
   "115": {
     "bg": [
@@ -1573,7 +1573,7 @@
     "banner": [
       "Gacha115_banner.webp"
     ],
-    "end date": "Until Sep. 10, 2021 01:59 AM"
+    "end date": "Until Sep. 10, 2021 01:59"
   },
   "116": {
     "bg": [
@@ -1588,7 +1588,7 @@
     "banner": [
       "Gacha116_banner.webp"
     ],
-    "end date": "Until Sep. 8, 2021 07:59 AM"
+    "end date": "Until Sep. 8, 2021 07:59"
   },
   "117": {
     "bg": [
@@ -1601,7 +1601,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until Sep. 29, 2021 10:59 AM"
+    "end date": "Until Sep. 29, 2021 10:59"
   },
   "118": {
     "bg": [
@@ -1615,7 +1615,7 @@
     "banner": [
       "Gacha118_banner.webp"
     ],
-    "end date": "Until Sep. 21, 2021 01:59 AM"
+    "end date": "Until Sep. 21, 2021 01:59"
   },
   "119": {
     "bg": [
@@ -1630,7 +1630,7 @@
     "banner": [
       "Gacha119_banner.webp"
     ],
-    "end date": "Until Sep. 19, 2021 07:59 AM"
+    "end date": "Until Sep. 19, 2021 07:59"
   },
   "120": {
     "bg": [
@@ -1644,7 +1644,7 @@
     "banner": [
       "Gacha120_banner.webp"
     ],
-    "end date": "Until Oct. 1, 2021 01:59 AM"
+    "end date": "Until Oct. 1, 2021 01:59"
   },
   "121": {
     "bg": [
@@ -1659,7 +1659,7 @@
     "banner": [
       "Gacha121_banner.webp"
     ],
-    "end date": "Until Sep. 29, 2021 07:59 AM"
+    "end date": "Until Sep. 29, 2021 07:59"
   },
   "122": {
     "bg": [
@@ -1672,7 +1672,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until Oct. 11, 2021 01:59 AM"
+    "end date": "Until Oct. 11, 2021 01:59"
   },
   "123": {
     "bg": [
@@ -1688,7 +1688,7 @@
     "banner": [
       "Gacha123_banner.webp"
     ],
-    "end date": "Until Oct. 17, 2021 10:59 AM"
+    "end date": "Until Oct. 17, 2021 10:59"
   },
   "124": {
     "bg": [
@@ -1705,7 +1705,7 @@
     "banner": [
       "Gacha124_banner.webp"
     ],
-    "end date": "Until Oct. 31, 2021 01:59 AM"
+    "end date": "Until Oct. 31, 2021 01:59"
   },
   "125": {
     "bg": [
@@ -1721,7 +1721,7 @@
     "banner": [
       "Gacha125_banner.webp"
     ],
-    "end date": "Until Oct. 5, 2021 01:59 AM"
+    "end date": "Until Oct. 5, 2021 01:59"
   },
   "126": {
     "bg": [
@@ -1738,7 +1738,7 @@
     "banner": [
       "Gacha126_banner.webp"
     ],
-    "end date": "Until Oct. 2, 2021 01:59 AM"
+    "end date": "Until Oct. 2, 2021 01:59"
   },
   "127": {
     "bg": [
@@ -1753,7 +1753,7 @@
     "banner": [
       "Gacha127_banner.webp"
     ],
-    "end date": "Until Oct. 3, 2021 01:59 AM"
+    "end date": "Until Oct. 3, 2021 01:59"
   },
   "128": {
     "bg": [
@@ -1768,7 +1768,7 @@
     "banner": [
       "Gacha128_banner.webp"
     ],
-    "end date": "Until Oct. 4, 2021 01:59 AM"
+    "end date": "Until Oct. 4, 2021 01:59"
   },
   "129": {
     "bg": [
@@ -1783,7 +1783,7 @@
     "banner": [
       "Gacha129_banner.webp"
     ],
-    "end date": "Until Oct. 5, 2021 01:59 AM"
+    "end date": "Until Oct. 5, 2021 01:59"
   },
   "130": {
     "bg": [
@@ -1798,7 +1798,7 @@
     "banner": [
       "Gacha130_banner.webp"
     ],
-    "end date": "Until Oct. 6, 2021 01:59 AM"
+    "end date": "Until Oct. 6, 2021 01:59"
   },
   "131": {
     "bg": [
@@ -1813,7 +1813,7 @@
     "banner": [
       "Gacha131_banner.webp"
     ],
-    "end date": "Until Oct. 7, 2021 01:59 AM"
+    "end date": "Until Oct. 7, 2021 01:59"
   },
   "132": {
     "bg": [
@@ -1827,7 +1827,7 @@
     "banner": [
       "Gacha132_banner.webp"
     ],
-    "end date": "Until Oct. 11, 2021 01:59 AM"
+    "end date": "Until Oct. 11, 2021 01:59"
   },
   "133": {
     "bg": [
@@ -1842,7 +1842,7 @@
     "banner": [
       "Gacha133_banner.webp"
     ],
-    "end date": "Until Oct. 9, 2021 07:59 AM"
+    "end date": "Until Oct. 9, 2021 07:59"
   },
   "134": {
     "bg": [
@@ -1853,7 +1853,7 @@
     "banner": [
       "Gacha134_banner.webp"
     ],
-    "end date": "Until Oct. 11, 2021 10:59 AM"
+    "end date": "Until Oct. 11, 2021 10:59"
   },
   "135": {
     "bg": [
@@ -1866,7 +1866,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until Nov. 11, 2021 12:59 AM"
+    "end date": "Until Nov. 11, 2021 00:59"
   },
   "136": {
     "bg": [
@@ -1880,7 +1880,7 @@
     "banner": [
       "Gacha136_banner.webp"
     ],
-    "end date": "Until Oct. 21, 2021 01:59 AM"
+    "end date": "Until Oct. 21, 2021 01:59"
   },
   "137": {
     "bg": [
@@ -1895,7 +1895,7 @@
     "banner": [
       "Gacha137_banner.webp"
     ],
-    "end date": "Until Oct. 19, 2021 07:59 AM"
+    "end date": "Until Oct. 19, 2021 07:59"
   },
   "138": {
     "bg": [
@@ -1909,7 +1909,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until Apr. 30, 2022 01:59 AM"
+    "end date": "Until Apr. 30, 2022 01:59"
   },
   "139": {
     "bg": [
@@ -1923,7 +1923,7 @@
     "banner": [
       "Gacha139_banner.webp"
     ],
-    "end date": "Until Oct. 31, 2021 01:59 AM"
+    "end date": "Until Oct. 31, 2021 01:59"
   },
   "140": {
     "bg": [
@@ -1938,7 +1938,7 @@
     "banner": [
       "Gacha140_banner.webp"
     ],
-    "end date": "Until Oct. 29, 2021 07:59 AM"
+    "end date": "Until Oct. 29, 2021 07:59"
   },
   "141": {
     "bg": [
@@ -1949,7 +1949,7 @@
     "banner": [
       "Gacha141_banner.webp"
     ],
-    "end date": "Until Nov. 2, 2021 10:59 AM"
+    "end date": "Until Nov. 2, 2021 10:59"
   },
   "142": {
     "bg": [
@@ -1963,7 +1963,7 @@
     "banner": [
       "Gacha142_banner.webp"
     ],
-    "end date": "Until Nov. 11, 2021 12:59 AM"
+    "end date": "Until Nov. 11, 2021 00:59"
   },
   "143": {
     "bg": [
@@ -1978,7 +1978,7 @@
     "banner": [
       "Gacha143_banner.webp"
     ],
-    "end date": "Until Nov. 9, 2021 06:59 AM"
+    "end date": "Until Nov. 9, 2021 06:59"
   },
   "144": {
     "bg": [
@@ -1989,7 +1989,7 @@
     "banner": [
       "Gacha144_banner.webp"
     ],
-    "end date": "Until Nov. 11, 2021 09:59 AM"
+    "end date": "Until Nov. 11, 2021 09:59"
   },
   "145": {
     "bg": [
@@ -2003,7 +2003,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Oct. 30, 2022 10:59 PM"
+    "end date": "Until Oct. 30, 2022 22:59"
   },
   "146": {
     "bg": [
@@ -2016,7 +2016,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until Dec. 10, 2021 12:59 AM"
+    "end date": "Until Dec. 10, 2021 00:59"
   },
   "147": {
     "bg": [
@@ -2030,7 +2030,7 @@
     "banner": [
       "Gacha147_banner.webp"
     ],
-    "end date": "Until Nov. 20, 2021 12:59 AM"
+    "end date": "Until Nov. 20, 2021 00:59"
   },
   "148": {
     "bg": [
@@ -2044,7 +2044,7 @@
     "banner": [
       "Gacha148_banner.webp"
     ],
-    "end date": "Until Nov. 18, 2021 06:59 AM"
+    "end date": "Until Nov. 18, 2021 06:59"
   },
   "149": {
     "bg": [
@@ -2055,7 +2055,7 @@
     "banner": [
       "Gacha149_banner.webp"
     ],
-    "end date": "Until Nov. 18, 2021 09:59 AM"
+    "end date": "Until Nov. 18, 2021 09:59"
   },
   "150": {
     "bg": [
@@ -2069,7 +2069,7 @@
     "banner": [
       "Gacha150_banner.webp"
     ],
-    "end date": "Until Nov. 30, 2021 12:59 AM"
+    "end date": "Until Nov. 30, 2021 00:59"
   },
   "151": {
     "bg": [
@@ -2084,7 +2084,7 @@
     "banner": [
       "Gacha151_banner.webp"
     ],
-    "end date": "Until Nov. 28, 2021 06:59 AM"
+    "end date": "Until Nov. 28, 2021 06:59"
   },
   "152": {
     "bg": [
@@ -2101,7 +2101,7 @@
     "banner": [
       "Gacha152_banner.webp"
     ],
-    "end date": "Until Dec. 4, 2021 12:59 AM"
+    "end date": "Until Dec. 4, 2021 00:59"
   },
   "153": {
     "bg": [
@@ -2115,7 +2115,7 @@
     "banner": [
       "Gacha153_banner.webp"
     ],
-    "end date": "Until Dec. 10, 2021 12:59 AM"
+    "end date": "Until Dec. 10, 2021 00:59"
   },
   "154": {
     "bg": [
@@ -2130,7 +2130,7 @@
     "banner": [
       "Gacha154_banner.webp"
     ],
-    "end date": "Until Dec. 8, 2021 06:59 AM"
+    "end date": "Until Dec. 8, 2021 06:59"
   },
   "155": {
     "bg": [
@@ -2141,7 +2141,7 @@
     "banner": [
       "Gacha155_banner.webp"
     ],
-    "end date": "Until Dec. 12, 2021 09:59 AM"
+    "end date": "Until Dec. 12, 2021 09:59"
   },
   "156": {
     "bg": [
@@ -2154,7 +2154,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until Jan. 12, 2022 12:59 AM"
+    "end date": "Until Jan. 12, 2022 00:59"
   },
   "157": {
     "bg": [
@@ -2168,7 +2168,7 @@
     "banner": [
       "Gacha157_banner.webp"
     ],
-    "end date": "Until Dec. 20, 2021 12:59 AM"
+    "end date": "Until Dec. 20, 2021 00:59"
   },
   "158": {
     "bg": [
@@ -2182,7 +2182,7 @@
     "banner": [
       "Gacha158_banner.webp"
     ],
-    "end date": "Until Dec. 18, 2021 06:59 AM"
+    "end date": "Until Dec. 18, 2021 06:59"
   },
   "159": {
     "bg": [
@@ -2198,7 +2198,7 @@
     "banner": [
       "Gacha159_banner.webp"
     ],
-    "end date": "Until Dec. 27, 2021 12:59 AM"
+    "end date": "Until Dec. 27, 2021 00:59"
   },
   "160": {
     "bg": [
@@ -2212,7 +2212,7 @@
     "banner": [
       "Gacha160_banner.webp"
     ],
-    "end date": "Until Dec. 31, 2021 12:59 AM"
+    "end date": "Until Dec. 31, 2021 00:59"
   },
   "161": {
     "bg": [
@@ -2226,7 +2226,7 @@
     "banner": [
       "Gacha161_banner.webp"
     ],
-    "end date": "Until Dec. 29, 2021 06:59 AM"
+    "end date": "Until Dec. 29, 2021 06:59"
   },
   "162": {
     "bg": [
@@ -2237,7 +2237,7 @@
     "banner": [
       "Gacha162_banner.webp"
     ],
-    "end date": "Until Jan. 2, 2022 09:59 AM"
+    "end date": "Until Jan. 2, 2022 09:59"
   },
   "163": {
     "bg": [
@@ -2248,7 +2248,7 @@
     "banner": [
       "Gacha163_banner.webp"
     ],
-    "end date": "Until Jan. 2, 2022 09:59 AM"
+    "end date": "Until Jan. 2, 2022 09:59"
   },
   "164": {
     "bg": [
@@ -2264,7 +2264,7 @@
     "banner": [
       "Gacha164_banner.webp"
     ],
-    "end date": "Until Jan. 4, 2022 12:59 AM"
+    "end date": "Until Jan. 4, 2022 00:59"
   },
   "165": {
     "bg": [
@@ -2278,7 +2278,7 @@
     "banner": [
       "Gacha165_banner.webp"
     ],
-    "end date": "Until Jan. 12, 2022 12:59 AM"
+    "end date": "Until Jan. 12, 2022 00:59"
   },
   "166": {
     "bg": [
@@ -2293,7 +2293,7 @@
     "banner": [
       "Gacha166_banner.webp"
     ],
-    "end date": "Until Jan. 10, 2022 06:59 AM"
+    "end date": "Until Jan. 10, 2022 06:59"
   },
   "167": {
     "bg": [
@@ -2309,7 +2309,7 @@
     "banner": [
       "Gacha167_banner.webp"
     ],
-    "end date": "Until Jan. 12, 2022 12:59 AM"
+    "end date": "Until Jan. 12, 2022 00:59"
   },
   "168": {
     "bg": [
@@ -2326,7 +2326,7 @@
     "banner": [
       "Gacha168_banner.webp"
     ],
-    "end date": "Until Jan. 31, 2022 09:59 AM"
+    "end date": "Until Jan. 31, 2022 09:59"
   },
   "169": {
     "bg": [
@@ -2337,7 +2337,7 @@
     "banner": [
       "Gacha169_banner.webp"
     ],
-    "end date": "Until Jan. 14, 2022 09:59 AM"
+    "end date": "Until Jan. 14, 2022 09:59"
   },
   "170": {
     "bg": [
@@ -2350,7 +2350,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until Feb. 9, 2022 12:59 AM"
+    "end date": "Until Feb. 9, 2022 00:59"
   },
   "171": {
     "bg": [
@@ -2364,7 +2364,7 @@
     "banner": [
       "Gacha171_banner.webp"
     ],
-    "end date": "Until Jan. 21, 2022 12:59 AM"
+    "end date": "Until Jan. 21, 2022 00:59"
   },
   "172": {
     "bg": [
@@ -2379,7 +2379,7 @@
     "banner": [
       "Gacha172_banner.webp"
     ],
-    "end date": "Until Jan. 19, 2022 06:59 AM"
+    "end date": "Until Jan. 19, 2022 06:59"
   },
   "173": {
     "bg": [
@@ -2393,7 +2393,7 @@
     "banner": [
       "Gacha173_banner.webp"
     ],
-    "end date": "Until Jan. 31, 2022 12:59 AM"
+    "end date": "Until Jan. 31, 2022 00:59"
   },
   "174": {
     "bg": [
@@ -2408,7 +2408,7 @@
     "banner": [
       "Gacha174_banner.webp"
     ],
-    "end date": "Until Jan. 29, 2022 06:59 AM"
+    "end date": "Until Jan. 29, 2022 06:59"
   },
   "175": {
     "bg": [
@@ -2419,7 +2419,7 @@
     "banner": [
       "Gacha175_banner.webp"
     ],
-    "end date": "Until Feb. 2, 2022 09:59 AM"
+    "end date": "Until Feb. 2, 2022 09:59"
   },
   "176": {
     "bg": [
@@ -2430,7 +2430,7 @@
     "banner": [
       "Gacha176_banner.webp"
     ],
-    "end date": "Until Feb. 5, 2022 09:59 AM"
+    "end date": "Until Feb. 5, 2022 09:59"
   },
   "177": {
     "bg": [
@@ -2444,7 +2444,7 @@
     "banner": [
       "Gacha177_banner.webp"
     ],
-    "end date": "Until Feb. 9, 2022 12:59 AM"
+    "end date": "Until Feb. 9, 2022 00:59"
   },
   "178": {
     "bg": [
@@ -2459,7 +2459,7 @@
     "banner": [
       "Gacha178_banner.webp"
     ],
-    "end date": "Until Feb. 7, 2022 06:59 AM"
+    "end date": "Until Feb. 7, 2022 06:59"
   },
   "179": {
     "bg": [
@@ -2475,7 +2475,7 @@
     "banner": [
       "Gacha179_banner.webp"
     ],
-    "end date": "Until Feb. 12, 2022 12:59 AM"
+    "end date": "Until Feb. 12, 2022 00:59"
   },
   "180": {
     "bg": [
@@ -2488,7 +2488,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until Mar. 11, 2022 12:59 AM"
+    "end date": "Until Mar. 11, 2022 00:59"
   },
   "181": {
     "bg": [
@@ -2502,7 +2502,7 @@
     "banner": [
       "Gacha181_banner.webp"
     ],
-    "end date": "Until Feb. 18, 2022 12:59 AM"
+    "end date": "Until Feb. 18, 2022 00:59"
   },
   "182": {
     "bg": [
@@ -2517,7 +2517,7 @@
     "banner": [
       "Gacha182_banner.webp"
     ],
-    "end date": "Until Feb. 16, 2022 06:59 AM"
+    "end date": "Until Feb. 16, 2022 06:59"
   },
   "183": {
     "bg": [
@@ -2528,7 +2528,7 @@
     "banner": [
       "Gacha183_banner.webp"
     ],
-    "end date": "Until Feb. 16, 2022 09:59 AM"
+    "end date": "Until Feb. 16, 2022 09:59"
   },
   "184": {
     "bg": [
@@ -2539,7 +2539,7 @@
     "banner": [
       "Gacha184_banner.webp"
     ],
-    "end date": "Until Feb. 23, 2022 09:59 AM"
+    "end date": "Until Feb. 23, 2022 09:59"
   },
   "185": {
     "bg": [
@@ -2553,7 +2553,7 @@
     "banner": [
       "Gacha185_banner.webp"
     ],
-    "end date": "Until Feb. 28, 2022 12:59 AM"
+    "end date": "Until Feb. 28, 2022 00:59"
   },
   "186": {
     "bg": [
@@ -2568,7 +2568,7 @@
     "banner": [
       "Gacha186_banner.webp"
     ],
-    "end date": "Until Feb. 26, 2022 06:59 AM"
+    "end date": "Until Feb. 26, 2022 06:59"
   },
   "187": {
     "bg": [
@@ -2591,7 +2591,7 @@
     "banner": [
       "Gacha187_banner.webp"
     ],
-    "end date": "Until Mar. 4, 2022 12:59 AM"
+    "end date": "Until Mar. 4, 2022 00:59"
   },
   "188": {
     "bg": [
@@ -2605,7 +2605,7 @@
     "banner": [
       "Gacha188_banner.webp"
     ],
-    "end date": "Until Mar. 11, 2022 12:59 AM"
+    "end date": "Until Mar. 11, 2022 00:59"
   },
   "189": {
     "bg": [
@@ -2620,7 +2620,7 @@
     "banner": [
       "Gacha189_banner.webp"
     ],
-    "end date": "Until Mar. 9, 2022 06:59 AM"
+    "end date": "Until Mar. 9, 2022 06:59"
   },
   "190": {
     "bg": [
@@ -2631,7 +2631,7 @@
     "banner": [
       "Gacha190_banner.webp"
     ],
-    "end date": "Until Mar. 8, 2022 09:59 AM"
+    "end date": "Until Mar. 8, 2022 09:59"
   },
   "191": {
     "bg": [
@@ -2644,7 +2644,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until Apr. 30, 2022 01:59 AM"
+    "end date": "Until Apr. 30, 2022 01:59"
   },
   "192": {
     "bg": [
@@ -2658,7 +2658,7 @@
     "banner": [
       "Gacha192_banner.webp"
     ],
-    "end date": "Until Mar. 20, 2022 01:59 AM"
+    "end date": "Until Mar. 20, 2022 01:59"
   },
   "193": {
     "bg": [
@@ -2673,7 +2673,7 @@
     "banner": [
       "Gacha193_banner.webp"
     ],
-    "end date": "Until Mar. 18, 2022 07:59 AM"
+    "end date": "Until Mar. 18, 2022 07:59"
   },
   "194": {
     "bg": [
@@ -2684,7 +2684,7 @@
     "banner": [
       "Gacha194_banner.webp"
     ],
-    "end date": "Until Mar. 25, 2022 10:59 AM"
+    "end date": "Until Mar. 25, 2022 10:59"
   },
   "195": {
     "bg": [
@@ -2698,7 +2698,7 @@
     "banner": [
       "Gacha195_banner.webp"
     ],
-    "end date": "Until Mar. 30, 2022 01:59 AM"
+    "end date": "Until Mar. 30, 2022 01:59"
   },
   "196": {
     "bg": [
@@ -2713,7 +2713,7 @@
     "banner": [
       "Gacha196_banner.webp"
     ],
-    "end date": "Until Mar. 28, 2022 07:59 AM"
+    "end date": "Until Mar. 28, 2022 07:59"
   },
   "197": {
     "bg": [
@@ -2729,7 +2729,7 @@
     "banner": [
       "Gacha197_banner.webp"
     ],
-    "end date": "Until Apr. 11, 2022 01:59 AM"
+    "end date": "Until Apr. 11, 2022 01:59"
   },
   "198": {
     "bg": [
@@ -2746,7 +2746,7 @@
     "banner": [
       "Gacha198_banner.webp"
     ],
-    "end date": "Until Apr. 4, 2022 01:59 AM"
+    "end date": "Until Apr. 4, 2022 01:59"
   },
   "199": {
     "bg": [
@@ -2763,7 +2763,7 @@
     "banner": [
       "Gacha199_banner.webp"
     ],
-    "end date": "Until Apr. 30, 2022 01:59 AM"
+    "end date": "Until Apr. 30, 2022 01:59"
   },
   "200": {
     "bg": [
@@ -2777,7 +2777,7 @@
     "banner": [
       "Gacha200_banner.webp"
     ],
-    "end date": "Until Apr. 11, 2022 01:59 AM"
+    "end date": "Until Apr. 11, 2022 01:59"
   },
   "201": {
     "bg": [
@@ -2790,7 +2790,7 @@
     "banner": [
       "Gacha201_banner.webp"
     ],
-    "end date": "Until Apr. 20, 2022 10:59 PM"
+    "end date": "Until Apr. 20, 2022 22:59"
   },
   "202": {
     "bg": [
@@ -2801,7 +2801,7 @@
     "banner": [
       "Gacha202_banner.webp"
     ],
-    "end date": "Until Apr. 20, 2022 10:59 AM"
+    "end date": "Until Apr. 20, 2022 10:59"
   },
   "203": {
     "bg": [
@@ -2814,7 +2814,7 @@
     "banner": [
       "Gacha203_banner.webp"
     ],
-    "end date": "Until Apr. 29, 2022 10:59 PM"
+    "end date": "Until Apr. 29, 2022 22:59"
   },
   "204": {
     "bg": [
@@ -2825,7 +2825,7 @@
     "banner": [
       "Gacha204_banner.webp"
     ],
-    "end date": "Until May. 6, 2022 10:59 AM"
+    "end date": "Until May. 6, 2022 10:59"
   },
   "205": {
     "bg": [
@@ -2838,7 +2838,7 @@
     "banner": [
       "Gacha205_banner.webp"
     ],
-    "end date": "Until May. 9, 2022 10:59 PM"
+    "end date": "Until May. 9, 2022 22:59"
   },
   "206": {
     "bg": [
@@ -2849,7 +2849,7 @@
     "banner": [
       "Gacha206_banner.webp"
     ],
-    "end date": "Until May. 15, 2022 10:59 AM"
+    "end date": "Until May. 15, 2022 10:59"
   },
   "207": {
     "bg": [
@@ -2862,7 +2862,7 @@
     "banner": [
       "Gacha207_banner.webp"
     ],
-    "end date": "Until May. 19, 2022 10:59 PM"
+    "end date": "Until May. 19, 2022 22:59"
   },
   "208": {
     "bg": [
@@ -2875,7 +2875,7 @@
     "banner": [
       "Gacha208_banner.webp"
     ],
-    "end date": "Until May. 23, 2022 10:59 PM"
+    "end date": "Until May. 23, 2022 22:59"
   },
   "209": {
     "bg": [
@@ -2886,7 +2886,7 @@
     "banner": [
       "Gacha209_banner.webp"
     ],
-    "end date": "Until May. 23, 2022 10:59 AM"
+    "end date": "Until May. 23, 2022 10:59"
   },
   "210": {
     "bg": [
@@ -2899,7 +2899,7 @@
     "banner": [
       "Gacha210_banner.webp"
     ],
-    "end date": "Until May. 30, 2022 10:59 PM"
+    "end date": "Until May. 30, 2022 22:59"
   },
   "211": {
     "bg": [
@@ -2910,7 +2910,7 @@
     "banner": [
       "Gacha211_banner.webp"
     ],
-    "end date": "Until May. 31, 2022 10:59 AM"
+    "end date": "Until May. 31, 2022 10:59"
   },
   "212": {
     "bg": [
@@ -2933,7 +2933,7 @@
     "banner": [
       "Gacha212_banner.webp"
     ],
-    "end date": "Until Jun. 2, 2022 10:59 PM"
+    "end date": "Until Jun. 2, 2022 22:59"
   },
   "213": {
     "bg": [
@@ -2946,7 +2946,7 @@
     "banner": [
       "Gacha213_banner.webp"
     ],
-    "end date": "Until Jun. 9, 2022 10:59 PM"
+    "end date": "Until Jun. 9, 2022 22:59"
   },
   "214": {
     "bg": [
@@ -2959,7 +2959,7 @@
     "banner": [
       "Gacha214_banner.webp"
     ],
-    "end date": "Until Jun. 19, 2022 10:59 PM"
+    "end date": "Until Jun. 19, 2022 22:59"
   },
   "215": {
     "bg": [
@@ -2972,7 +2972,7 @@
     "banner": [
       "Gacha215_banner.webp"
     ],
-    "end date": "Until Jun. 23, 2022 10:59 PM"
+    "end date": "Until Jun. 23, 2022 22:59"
   },
   "216": {
     "bg": [
@@ -2985,7 +2985,7 @@
     "banner": [
       "Gacha216_banner.webp"
     ],
-    "end date": "Until Jun. 29, 2022 10:59 PM"
+    "end date": "Until Jun. 29, 2022 22:59"
   },
   "217": {
     "bg": [
@@ -2996,7 +2996,7 @@
     "banner": [
       "Gacha217_banner.webp"
     ],
-    "end date": "Until Jun. 30, 2022 10:59 AM"
+    "end date": "Until Jun. 30, 2022 10:59"
   },
   "218": {
     "bg": [
@@ -3009,7 +3009,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Jul. 3, 2022 10:59 PM"
+    "end date": "Until Jul. 3, 2022 22:59"
   },
   "219": {
     "bg": [
@@ -3022,7 +3022,7 @@
     "banner": [
       "Gacha219_banner.webp"
     ],
-    "end date": "Until Jul. 11, 2022 10:59 AM"
+    "end date": "Until Jul. 11, 2022 10:59"
   },
   "220": {
     "bg": [
@@ -3035,7 +3035,7 @@
     "banner": [
       "Gacha220_banner.webp"
     ],
-    "end date": "Until Jul. 20, 2022 10:59 PM"
+    "end date": "Until Jul. 20, 2022 22:59"
   },
   "221": {
     "bg": [
@@ -3048,7 +3048,7 @@
     "banner": [
       "Gacha221_banner.webp"
     ],
-    "end date": "Until Jul. 23, 2022 10:59 PM"
+    "end date": "Until Jul. 23, 2022 22:59"
   },
   "222": {
     "bg": [
@@ -3059,7 +3059,7 @@
     "banner": [
       "Gacha222_banner.webp"
     ],
-    "end date": "Until Jul. 26, 2022 10:59 AM"
+    "end date": "Until Jul. 26, 2022 10:59"
   },
   "223": {
     "bg": [
@@ -3072,7 +3072,7 @@
     "banner": [
       "Gacha223_banner.webp"
     ],
-    "end date": "Until Jul. 30, 2022 10:59 PM"
+    "end date": "Until Jul. 30, 2022 22:59"
   },
   "224": {
     "bg": [
@@ -3083,7 +3083,7 @@
     "banner": [
       "Gacha224_banner.webp"
     ],
-    "end date": "Until Aug. 1, 2022 10:59 AM"
+    "end date": "Until Aug. 1, 2022 10:59"
   },
   "225": {
     "bg": [
@@ -3100,7 +3100,7 @@
     "banner": [
       "Gacha225_banner.webp"
     ],
-    "end date": "Until Aug. 7, 2022 10:59 PM"
+    "end date": "Until Aug. 7, 2022 22:59"
   },
   "226": {
     "bg": [
@@ -3113,7 +3113,7 @@
     "banner": [
       "Gacha226_banner.webp"
     ],
-    "end date": "Until Aug. 9, 2022 10:59 PM"
+    "end date": "Until Aug. 9, 2022 22:59"
   },
   "227": {
     "bg": [
@@ -3124,7 +3124,7 @@
     "banner": [
       "Gacha227_banner.webp"
     ],
-    "end date": "Until Aug. 17, 2022 10:59 AM"
+    "end date": "Until Aug. 17, 2022 10:59"
   },
   "228": {
     "bg": [
@@ -3137,7 +3137,7 @@
     "banner": [
       "Gacha228_banner.webp"
     ],
-    "end date": "Until Aug. 19, 2022 10:59 PM"
+    "end date": "Until Aug. 19, 2022 22:59"
   },
   "229": {
     "bg": [
@@ -3150,7 +3150,7 @@
     "banner": [
       "Gacha229_banner.webp"
     ],
-    "end date": "Until Aug. 21, 2022 10:59 PM"
+    "end date": "Until Aug. 21, 2022 22:59"
   },
   "230": {
     "bg": [
@@ -3163,7 +3163,7 @@
     "banner": [
       "Gacha230_banner.webp"
     ],
-    "end date": "Until Aug. 30, 2022 10:59 PM"
+    "end date": "Until Aug. 30, 2022 22:59"
   },
   "231": {
     "bg": [
@@ -3185,7 +3185,7 @@
     "banner": [
       "Gacha231_banner.webp"
     ],
-    "end date": "Until Sep. 4, 2022 10:59 PM"
+    "end date": "Until Sep. 4, 2022 22:59"
   },
   "232": {
     "bg": [
@@ -3196,7 +3196,7 @@
     "banner": [
       "Gacha232_banner.webp"
     ],
-    "end date": "Until Sep. 2, 2022 10:59 AM"
+    "end date": "Until Sep. 2, 2022 10:59"
   },
   "233": {
     "bg": [
@@ -3207,7 +3207,7 @@
     "banner": [
       "Gacha233_banner.webp"
     ],
-    "end date": "Until Sep. 6, 2022 10:59 AM"
+    "end date": "Until Sep. 6, 2022 10:59"
   },
   "234": {
     "bg": [
@@ -3220,7 +3220,7 @@
     "banner": [
       "Gacha234_banner.webp"
     ],
-    "end date": "Until Sep. 8, 2022 10:59 PM"
+    "end date": "Until Sep. 8, 2022 22:59"
   },
   "235": {
     "bg": [
@@ -3231,7 +3231,7 @@
     "banner": [
       "Gacha235_banner.webp"
     ],
-    "end date": "Until Sep. 15, 2022 10:59 AM"
+    "end date": "Until Sep. 15, 2022 10:59"
   },
   "236": {
     "bg": [
@@ -3244,7 +3244,7 @@
     "banner": [
       "Gacha236_banner.webp"
     ],
-    "end date": "Until Sep. 19, 2022 10:59 PM"
+    "end date": "Until Sep. 19, 2022 22:59"
   },
   "237": {
     "bg": [
@@ -3257,7 +3257,7 @@
     "banner": [
       "Gacha237_banner.webp"
     ],
-    "end date": "Until Sep. 21, 2022 10:59 PM"
+    "end date": "Until Sep. 21, 2022 22:59"
   },
   "238": {
     "bg": [
@@ -3270,7 +3270,7 @@
     "banner": [
       "Gacha238_banner.webp"
     ],
-    "end date": "Until Sep. 29, 2022 10:59 PM"
+    "end date": "Until Sep. 29, 2022 22:59"
   },
   "239": {
     "bg": [
@@ -3307,7 +3307,7 @@
     "banner": [
       "Gacha239_banner.webp"
     ],
-    "end date": "Until Oct. 11, 2022 10:59 PM"
+    "end date": "Until Oct. 11, 2022 22:59"
   },
   "240": {
     "bg": [
@@ -3322,7 +3322,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Oct. 11, 2022 10:59 PM"
+    "end date": "Until Oct. 11, 2022 22:59"
   },
   "241": {
     "bg": [
@@ -3335,7 +3335,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Oct. 11, 2022 10:59 PM"
+    "end date": "Until Oct. 11, 2022 22:59"
   },
   "242": {
     "bg": [
@@ -3348,7 +3348,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Oct. 11, 2022 10:59 PM"
+    "end date": "Until Oct. 11, 2022 22:59"
   },
   "243": {
     "bg": [
@@ -3361,7 +3361,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Oct. 11, 2022 10:59 PM"
+    "end date": "Until Oct. 11, 2022 22:59"
   },
   "244": {
     "bg": [
@@ -3374,7 +3374,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Oct. 11, 2022 10:59 PM"
+    "end date": "Until Oct. 11, 2022 22:59"
   },
   "245": {
     "bg": [
@@ -3387,7 +3387,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Oct. 11, 2022 10:59 PM"
+    "end date": "Until Oct. 11, 2022 22:59"
   },
   "246": {
     "bg": [
@@ -3404,7 +3404,7 @@
     "banner": [
       "Gacha246_banner.webp"
     ],
-    "end date": "Until Oct. 3, 2022 10:59 PM"
+    "end date": "Until Oct. 3, 2022 22:59"
   },
   "247": {
     "bg": [
@@ -3421,7 +3421,7 @@
     "banner": [
       "Gacha247_banner.webp"
     ],
-    "end date": "Until Oct. 30, 2022 10:59 PM"
+    "end date": "Until Oct. 30, 2022 22:59"
   },
   "248": {
     "bg": [
@@ -3435,7 +3435,7 @@
     "banner": [
       "Gacha248_banner.webp"
     ],
-    "end date": "Until Oct. 11, 2022 10:59 PM"
+    "end date": "Until Oct. 11, 2022 22:59"
   },
   "249": {
     "bg": [
@@ -3446,7 +3446,7 @@
     "banner": [
       "Gacha249_banner.webp"
     ],
-    "end date": "Until Oct. 11, 2022 10:59 AM"
+    "end date": "Until Oct. 11, 2022 10:59"
   },
   "250": {
     "bg": [
@@ -3457,7 +3457,7 @@
     "banner": [
       "Gacha250_banner.webp"
     ],
-    "end date": "Until Oct. 11, 2022 10:59 AM"
+    "end date": "Until Oct. 11, 2022 10:59"
   },
   "251": {
     "bg": [
@@ -3470,7 +3470,7 @@
     "banner": [
       "Gacha251_banner.webp"
     ],
-    "end date": "Until Oct. 20, 2022 10:59 PM"
+    "end date": "Until Oct. 20, 2022 22:59"
   },
   "252": {
     "bg": [
@@ -3504,7 +3504,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until Oct. 11, 2023 10:59 PM"
+    "end date": "Until Oct. 11, 2023 22:59"
   },
   "253": {
     "bg": [
@@ -3517,7 +3517,7 @@
     "banner": [
       "Gacha253_banner.webp"
     ],
-    "end date": "Until Oct. 23, 2022 10:59 PM"
+    "end date": "Until Oct. 23, 2022 22:59"
   },
   "254": {
     "bg": [
@@ -3530,7 +3530,7 @@
     "banner": [
       "Gacha254_banner.webp"
     ],
-    "end date": "Until Oct. 30, 2022 10:59 PM"
+    "end date": "Until Oct. 30, 2022 22:59"
   },
   "255": {
     "bg": [
@@ -3547,7 +3547,7 @@
     "banner": [
       "Gacha255_banner.webp"
     ],
-    "end date": "Until Nov. 3, 2022 10:59 PM"
+    "end date": "Until Nov. 3, 2022 22:59"
   },
   "256": {
     "bg": [
@@ -3558,7 +3558,7 @@
     "banner": [
       "Gacha256_banner.webp"
     ],
-    "end date": "Until Nov. 2, 2022 10:59 AM"
+    "end date": "Until Nov. 2, 2022 10:59"
   },
   "257": {
     "bg": [
@@ -3569,7 +3569,7 @@
     "banner": [
       "Gacha257_banner.webp"
     ],
-    "end date": "Until Nov. 2, 2022 10:59 AM"
+    "end date": "Until Nov. 2, 2022 10:59"
   },
   "258": {
     "bg": [
@@ -3582,7 +3582,7 @@
     "banner": [
       "Gacha258_banner.webp"
     ],
-    "end date": "Until Nov. 10, 2022 09:59 PM"
+    "end date": "Until Nov. 10, 2022 21:59"
   },
   "259": {
     "bg": [
@@ -3593,7 +3593,7 @@
     "banner": [
       "Gacha259_banner.webp"
     ],
-    "end date": "Until Nov. 11, 2022 09:59 AM"
+    "end date": "Until Nov. 11, 2022 09:59"
   },
   "260": {
     "bg": [
@@ -3602,7 +3602,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Nov. 11, 2022 09:59 AM"
+    "end date": "Until Nov. 11, 2022 09:59"
   },
   "261": {
     "bg": [
@@ -3613,7 +3613,7 @@
     "banner": [
       "Gacha261_banner.webp"
     ],
-    "end date": "Until Nov. 18, 2022 09:59 AM"
+    "end date": "Until Nov. 18, 2022 09:59"
   },
   "262": {
     "bg": [
@@ -3622,7 +3622,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Nov. 18, 2022 09:59 AM"
+    "end date": "Until Nov. 18, 2022 09:59"
   },
   "263": {
     "bg": [
@@ -3635,7 +3635,7 @@
     "banner": [
       "Gacha263_banner.webp"
     ],
-    "end date": "Until Nov. 19, 2022 09:59 PM"
+    "end date": "Until Nov. 19, 2022 21:59"
   },
   "264": {
     "bg": [
@@ -3648,7 +3648,7 @@
     "banner": [
       "Gacha264_banner.webp"
     ],
-    "end date": "Until Nov. 22, 2022 09:59 PM"
+    "end date": "Until Nov. 22, 2022 21:59"
   },
   "265": {
     "bg": [
@@ -3659,7 +3659,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Nov. 29, 2022 09:59 PM"
+    "end date": "Until Nov. 29, 2022 21:59"
   },
   "266": {
     "bg": [
@@ -3682,7 +3682,7 @@
     "banner": [
       "Gacha266_banner.webp"
     ],
-    "end date": "Until Dec. 3, 2022 09:59 PM"
+    "end date": "Until Dec. 3, 2022 21:59"
   },
   "267": {
     "bg": [
@@ -3695,7 +3695,7 @@
     "banner": [
       "Gacha267_banner.webp"
     ],
-    "end date": "Until Dec. 10, 2022 09:59 PM"
+    "end date": "Until Dec. 10, 2022 21:59"
   },
   "268": {
     "bg": [
@@ -3706,7 +3706,7 @@
     "banner": [
       "Gacha268_banner.webp"
     ],
-    "end date": "Until Dec. 12, 2022 09:59 AM"
+    "end date": "Until Dec. 12, 2022 09:59"
   },
   "269": {
     "bg": [
@@ -3715,7 +3715,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Dec. 12, 2022 09:59 AM"
+    "end date": "Until Dec. 12, 2022 09:59"
   },
   "270": {
     "bg": [
@@ -3728,7 +3728,7 @@
     "banner": [
       "Gacha270_banner.webp"
     ],
-    "end date": "Until Dec. 20, 2022 09:59 PM"
+    "end date": "Until Dec. 20, 2022 21:59"
   },
   "271": {
     "bg": [
@@ -3741,7 +3741,7 @@
     "banner": [
       "Gacha271_banner.webp"
     ],
-    "end date": "Until Dec. 23, 2022 09:59 PM"
+    "end date": "Until Dec. 23, 2022 21:59"
   },
   "272": {
     "bg": [
@@ -3754,7 +3754,7 @@
     "banner": [
       "Gacha272_banner.webp"
     ],
-    "end date": "Until Dec. 30, 2022 09:59 PM"
+    "end date": "Until Dec. 30, 2022 21:59"
   },
   "273": {
     "bg": [
@@ -3765,7 +3765,7 @@
     "banner": [
       "Gacha273_banner.webp"
     ],
-    "end date": "Until Jan. 2, 2023 09:59 AM"
+    "end date": "Until Jan. 2, 2023 09:59"
   },
   "274": {
     "bg": [
@@ -3774,7 +3774,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Jan. 2, 2023 09:59 AM"
+    "end date": "Until Jan. 2, 2023 09:59"
   },
   "275": {
     "bg": [
@@ -3785,7 +3785,7 @@
     "banner": [
       "Gacha275_banner.webp"
     ],
-    "end date": "Until Jan. 2, 2023 09:59 AM"
+    "end date": "Until Jan. 2, 2023 09:59"
   },
   "276": {
     "bg": [
@@ -3794,7 +3794,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Jan. 2, 2023 09:59 AM"
+    "end date": "Until Jan. 2, 2023 09:59"
   },
   "277": {
     "bg": [
@@ -3809,7 +3809,7 @@
     "banner": [
       "Gacha277_banner.webp"
     ],
-    "end date": "Until Jan. 3, 2023 09:59 PM"
+    "end date": "Until Jan. 3, 2023 21:59"
   },
   "278": {
     "bg": [
@@ -3825,7 +3825,7 @@
     "banner": [
       "Gacha278_banner.webp"
     ],
-    "end date": "Until Jan. 9, 2023 09:59 PM"
+    "end date": "Until Jan. 9, 2023 21:59"
   },
   "279": {
     "bg": [
@@ -3842,7 +3842,7 @@
     "banner": [
       "Gacha279_banner.webp"
     ],
-    "end date": "Until Jan. 30, 2023 09:59 PM"
+    "end date": "Until Jan. 30, 2023 21:59"
   },
   "280": {
     "bg": [
@@ -3855,7 +3855,7 @@
     "banner": [
       "Gacha280_banner.webp"
     ],
-    "end date": "Until Jan. 9, 2023 09:59 PM"
+    "end date": "Until Jan. 9, 2023 21:59"
   },
   "281": {
     "bg": [
@@ -3866,7 +3866,7 @@
     "banner": [
       "Gacha281_banner.webp"
     ],
-    "end date": "Until Jan. 14, 2023 09:59 AM"
+    "end date": "Until Jan. 14, 2023 09:59"
   },
   "282": {
     "bg": [
@@ -3875,7 +3875,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Jan. 14, 2023 09:59 AM"
+    "end date": "Until Jan. 14, 2023 09:59"
   },
   "283": {
     "bg": [
@@ -3888,7 +3888,7 @@
     "banner": [
       "Gacha283_banner.webp"
     ],
-    "end date": "Until Jan. 20, 2023 09:59 PM"
+    "end date": "Until Jan. 20, 2023 21:59"
   },
   "284": {
     "bg": [
@@ -3901,7 +3901,7 @@
     "banner": [
       "Gacha284_banner.webp"
     ],
-    "end date": "Until Jan. 21, 2023 09:59 PM"
+    "end date": "Until Jan. 21, 2023 21:59"
   },
   "285": {
     "bg": [
@@ -3914,7 +3914,7 @@
     "banner": [
       "Gacha285_banner.webp"
     ],
-    "end date": "Until Jan. 30, 2023 09:59 PM"
+    "end date": "Until Jan. 30, 2023 21:59"
   },
   "286": {
     "bg": [
@@ -3931,7 +3931,7 @@
     "banner": [
       "Gacha286_banner.webp"
     ],
-    "end date": "Until Feb. 3, 2023 09:59 PM"
+    "end date": "Until Feb. 3, 2023 21:59"
   },
   "287": {
     "bg": [
@@ -3942,7 +3942,7 @@
     "banner": [
       "Gacha287_banner.webp"
     ],
-    "end date": "Until Feb. 2, 2023 09:59 AM"
+    "end date": "Until Feb. 2, 2023 09:59"
   },
   "288": {
     "bg": [
@@ -3951,7 +3951,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Feb. 2, 2023 09:59 AM"
+    "end date": "Until Feb. 2, 2023 09:59"
   },
   "289": {
     "bg": [
@@ -3962,7 +3962,7 @@
     "banner": [
       "Gacha289_banner.webp"
     ],
-    "end date": "Until Feb. 5, 2023 09:59 AM"
+    "end date": "Until Feb. 5, 2023 09:59"
   },
   "290": {
     "bg": [
@@ -3971,7 +3971,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Feb. 5, 2023 09:59 AM"
+    "end date": "Until Feb. 5, 2023 09:59"
   },
   "291": {
     "bg": [
@@ -3984,7 +3984,7 @@
     "banner": [
       "Gacha291_banner.webp"
     ],
-    "end date": "Until Feb. 9, 2023 09:59 PM"
+    "end date": "Until Feb. 9, 2023 21:59"
   },
   "292": {
     "bg": [
@@ -3995,7 +3995,7 @@
     "banner": [
       "Gacha292_banner.webp"
     ],
-    "end date": "Until Feb. 16, 2023 09:59 AM"
+    "end date": "Until Feb. 16, 2023 09:59"
   },
   "293": {
     "bg": [
@@ -4004,7 +4004,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Feb. 16, 2023 09:59 AM"
+    "end date": "Until Feb. 16, 2023 09:59"
   },
   "294": {
     "bg": [
@@ -4017,7 +4017,7 @@
     "banner": [
       "Gacha294_banner.webp"
     ],
-    "end date": "Until Feb. 18, 2023 09:59 PM"
+    "end date": "Until Feb. 18, 2023 21:59"
   },
   "295": {
     "bg": [
@@ -4030,7 +4030,7 @@
     "banner": [
       "Gacha295_banner.webp"
     ],
-    "end date": "Until Feb. 21, 2023 09:59 PM"
+    "end date": "Until Feb. 21, 2023 21:59"
   },
   "296": {
     "bg": [
@@ -4041,7 +4041,7 @@
     "banner": [
       "Gacha296_banner.webp"
     ],
-    "end date": "Until Feb. 23, 2023 09:59 AM"
+    "end date": "Until Feb. 23, 2023 09:59"
   },
   "297": {
     "bg": [
@@ -4050,7 +4050,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Feb. 23, 2023 09:59 AM"
+    "end date": "Until Feb. 23, 2023 09:59"
   },
   "298": {
     "bg": [
@@ -4063,7 +4063,7 @@
     "banner": [
       "Gacha298_banner.webp"
     ],
-    "end date": "Until Feb. 27, 2023 09:59 PM"
+    "end date": "Until Feb. 27, 2023 21:59"
   },
   "299": {
     "bg": [
@@ -4086,7 +4086,7 @@
     "banner": [
       "Gacha299_banner.webp"
     ],
-    "end date": "Until Mar. 3, 2023 09:59 PM"
+    "end date": "Until Mar. 3, 2023 21:59"
   },
   "300": {
     "bg": [
@@ -4104,7 +4104,7 @@
     "banner": [
       "Gacha300_banner.webp"
     ],
-    "end date": "Until Mar. 12, 2023 02:59 PM"
+    "end date": "Until Mar. 12, 2023 14:59"
   },
   "301": {
     "bg": [
@@ -4117,7 +4117,7 @@
     "banner": [
       "Gacha301_banner.webp"
     ],
-    "end date": "Until Mar. 10, 2023 09:59 PM"
+    "end date": "Until Mar. 10, 2023 21:59"
   },
   "302": {
     "bg": [
@@ -4128,7 +4128,7 @@
     "banner": [
       "Gacha302_banner.webp"
     ],
-    "end date": "Until Mar. 8, 2023 09:59 AM"
+    "end date": "Until Mar. 8, 2023 09:59"
   },
   "303": {
     "bg": [
@@ -4137,7 +4137,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Mar. 8, 2023 09:59 AM"
+    "end date": "Until Mar. 8, 2023 09:59"
   },
   "304": {
     "bg": [
@@ -4150,7 +4150,7 @@
     "banner": [
       "Gacha304_banner.webp"
     ],
-    "end date": "Until Mar. 20, 2023 10:59 PM"
+    "end date": "Until Mar. 20, 2023 22:59"
   },
   "305": {
     "bg": [
@@ -4163,7 +4163,7 @@
     "banner": [
       "Gacha305_banner.webp"
     ],
-    "end date": "Until Mar. 21, 2023 10:59 PM"
+    "end date": "Until Mar. 21, 2023 22:59"
   },
   "306": {
     "bg": [
@@ -4174,7 +4174,7 @@
     "banner": [
       "Gacha306_banner.webp"
     ],
-    "end date": "Until Mar. 25, 2023 10:59 AM"
+    "end date": "Until Mar. 25, 2023 10:59"
   },
   "307": {
     "bg": [
@@ -4183,7 +4183,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Mar. 25, 2023 10:59 AM"
+    "end date": "Until Mar. 25, 2023 10:59"
   },
   "308": {
     "bg": [
@@ -4198,7 +4198,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until Apr. 2, 2023 02:59 PM"
+    "end date": "Until Apr. 2, 2023 14:59"
   },
   "309": {
     "bg": [
@@ -4211,7 +4211,7 @@
     "banner": [
       "Gacha309_banner.webp"
     ],
-    "end date": "Until Mar. 29, 2023 10:59 PM"
+    "end date": "Until Mar. 29, 2023 22:59"
   },
   "310": {
     "bg": [
@@ -4227,7 +4227,7 @@
     "banner": [
       "Gacha310_banner.webp"
     ],
-    "end date": "Until Apr. 3, 2023 10:59 PM"
+    "end date": "Until Apr. 3, 2023 22:59"
   },
   "311": {
     "bg": [
@@ -4243,7 +4243,7 @@
     "banner": [
       "Gacha311_banner.webp"
     ],
-    "end date": "Until Apr. 10, 2023 10:59 PM"
+    "end date": "Until Apr. 10, 2023 22:59"
   },
   "312": {
     "bg": [
@@ -4260,7 +4260,7 @@
     "banner": [
       "Gacha312_banner.webp"
     ],
-    "end date": "Until Apr. 29, 2023 10:59 PM"
+    "end date": "Until Apr. 29, 2023 22:59"
   },
   "313": {
     "bg": [
@@ -4275,7 +4275,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until May. 20, 2023 10:59 AM"
+    "end date": "Until May. 20, 2023 10:59"
   },
   "314": {
     "bg": [
@@ -4311,7 +4311,7 @@
     "banner": [
       "Gacha314_banner.webp"
     ],
-    "end date": "Until Apr. 10, 2023 10:59 PM"
+    "end date": "Until Apr. 10, 2023 22:59"
   },
   "315": {
     "bg": [
@@ -4326,7 +4326,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until Apr. 30, 2023 02:59 PM"
+    "end date": "Until Apr. 30, 2023 14:59"
   },
   "316": {
     "bg": [
@@ -4340,7 +4340,7 @@
     "banner": [
       "Gacha316_banner.webp"
     ],
-    "end date": "Until Apr. 10, 2023 10:59 PM"
+    "end date": "Until Apr. 10, 2023 22:59"
   },
   "317": {
     "bg": [
@@ -4353,7 +4353,7 @@
     "banner": [
       "Gacha317_banner.webp"
     ],
-    "end date": "Until Apr. 20, 2023 10:59 PM"
+    "end date": "Until Apr. 20, 2023 22:59"
   },
   "318": {
     "bg": [
@@ -4367,7 +4367,7 @@
     "banner": [
       "Gacha318_banner.webp"
     ],
-    "end date": "Until Apr. 21, 2023 10:59 PM"
+    "end date": "Until Apr. 21, 2023 22:59"
   },
   "319": {
     "bg": [
@@ -4378,14 +4378,14 @@
     "banner": [
       "Gacha319_banner.webp"
     ],
-    "end date": "Until Apr. 20, 2023 10:59 AM"
+    "end date": "Until Apr. 20, 2023 10:59"
   },
   "320": {
     "bg": [],
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Apr. 20, 2023 10:59 AM"
+    "end date": "Until Apr. 20, 2023 10:59"
   },
   "321": {
     "bg": [
@@ -4396,7 +4396,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Apr. 29, 2023 10:59 PM"
+    "end date": "Until Apr. 29, 2023 22:59"
   },
   "322": {
     "bg": [
@@ -4413,7 +4413,7 @@
     "banner": [
       "Gacha322_banner.webp"
     ],
-    "end date": "Until May. 3, 2023 10:59 PM"
+    "end date": "Until May. 3, 2023 22:59"
   },
   "323": {
     "bg": [],
@@ -4422,14 +4422,14 @@
     "banner": [
       "Gacha323_banner.webp"
     ],
-    "end date": "Until May. 6, 2023 10:59 AM"
+    "end date": "Until May. 6, 2023 10:59"
   },
   "324": {
     "bg": [],
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until May. 6, 2023 10:59 AM"
+    "end date": "Until May. 6, 2023 10:59"
   },
   "325": {
     "bg": [
@@ -4442,7 +4442,7 @@
     "banner": [
       "Gacha325_banner.webp"
     ],
-    "end date": "Until May. 10, 2023 10:59 PM"
+    "end date": "Until May. 10, 2023 22:59"
   },
   "326": {
     "bg": [
@@ -4457,7 +4457,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until Jun. 4, 2023 02:59 PM"
+    "end date": "Until Jun. 4, 2023 14:59"
   },
   "327": {
     "bg": [
@@ -4473,7 +4473,7 @@
     "banner": [
       "Gacha327_banner.webp"
     ],
-    "end date": "Until May. 16, 2023 10:59 PM"
+    "end date": "Until May. 16, 2023 22:59"
   },
   "328": {
     "bg": [
@@ -4484,14 +4484,14 @@
     "banner": [
       "Gacha328_banner.webp"
     ],
-    "end date": "Until May. 15, 2023 10:59 AM"
+    "end date": "Until May. 15, 2023 10:59"
   },
   "329": {
     "bg": [],
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until May. 15, 2023 10:59 AM"
+    "end date": "Until May. 15, 2023 10:59"
   },
   "330": {
     "bg": [
@@ -4504,7 +4504,7 @@
     "banner": [
       "Gacha330_banner.webp"
     ],
-    "end date": "Until May. 19, 2023 10:59 PM"
+    "end date": "Until May. 19, 2023 22:59"
   },
   "331": {
     "bg": [
@@ -4517,7 +4517,7 @@
     "banner": [
       "Gacha331_banner.webp"
     ],
-    "end date": "Until May. 23, 2023 10:59 PM"
+    "end date": "Until May. 23, 2023 22:59"
   },
   "332": {
     "bg": [
@@ -4528,14 +4528,14 @@
     "banner": [
       "Gacha332_banner.webp"
     ],
-    "end date": "Until May. 23, 2023 10:59 AM"
+    "end date": "Until May. 23, 2023 10:59"
   },
   "333": {
     "bg": [],
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until May. 23, 2023 10:59 AM"
+    "end date": "Until May. 23, 2023 10:59"
   },
   "334": {
     "bg": [
@@ -4548,7 +4548,7 @@
     "banner": [
       "Gacha334_banner.webp"
     ],
-    "end date": "Until May. 30, 2023 10:59 PM"
+    "end date": "Until May. 30, 2023 22:59"
   },
   "335": {
     "bg": [
@@ -4559,7 +4559,7 @@
     "banner": [
       "Gacha335_banner.webp"
     ],
-    "end date": "Until May. 31, 2023 10:59 AM"
+    "end date": "Until May. 31, 2023 10:59"
   },
   "336": {
     "bg": [
@@ -4568,7 +4568,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until May. 31, 2023 10:59 AM"
+    "end date": "Until May. 31, 2023 10:59"
   },
   "337": {
     "bg": [
@@ -4588,7 +4588,7 @@
     "banner": [
       "Gacha337_banner.webp"
     ],
-    "end date": "Until Jun. 2, 2023 10:59 PM"
+    "end date": "Until Jun. 2, 2023 22:59"
   },
   "338": {
     "bg": [
@@ -4601,7 +4601,7 @@
     "banner": [
       "Gacha338_banner.webp"
     ],
-    "end date": "Until Jun. 9, 2023 10:59 PM"
+    "end date": "Until Jun. 9, 2023 22:59"
   },
   "339": {
     "bg": [
@@ -4616,7 +4616,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until Jul. 2, 2023 02:59 PM"
+    "end date": "Until Jul. 2, 2023 14:59"
   },
   "340": {
     "bg": [
@@ -4629,7 +4629,7 @@
     "banner": [
       "Gacha340_banner.webp"
     ],
-    "end date": "Until Jun. 19, 2023 10:59 PM"
+    "end date": "Until Jun. 19, 2023 22:59"
   },
   "341": {
     "bg": [
@@ -4642,7 +4642,7 @@
     "banner": [
       "Gacha341_banner.webp"
     ],
-    "end date": "Until Jun. 23, 2023 10:59 PM"
+    "end date": "Until Jun. 23, 2023 22:59"
   },
   "342": {
     "bg": [
@@ -4655,7 +4655,7 @@
     "banner": [
       "Gacha342_banner.webp"
     ],
-    "end date": "Until Jun. 29, 2023 10:59 PM"
+    "end date": "Until Jun. 29, 2023 22:59"
   },
   "343": {
     "bg": [
@@ -4666,7 +4666,7 @@
     "banner": [
       "Gacha343_banner.webp"
     ],
-    "end date": "Until Jun. 30, 2023 10:59 AM"
+    "end date": "Until Jun. 30, 2023 10:59"
   },
   "344": {
     "bg": [
@@ -4675,7 +4675,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Jun. 30, 2023 10:59 AM"
+    "end date": "Until Jun. 30, 2023 10:59"
   },
   "345": {
     "bg": [
@@ -4690,7 +4690,7 @@
     "banner": [
       "Gacha345_banner.webp"
     ],
-    "end date": "Until Jul. 3, 2023 10:59 PM"
+    "end date": "Until Jul. 3, 2023 22:59"
   },
   "346": {
     "bg": [
@@ -4705,7 +4705,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until Aug. 6, 2023 02:59 PM"
+    "end date": "Until Aug. 6, 2023 14:59"
   },
   "347": {
     "bg": [
@@ -4718,7 +4718,7 @@
     "banner": [
       "Gacha347_banner.webp"
     ],
-    "end date": "Until Jul. 10, 2023 10:59 PM"
+    "end date": "Until Jul. 10, 2023 22:59"
   },
   "348": {
     "bg": [
@@ -4731,7 +4731,7 @@
     "banner": [
       "Gacha348_banner.webp"
     ],
-    "end date": "Until Jul. 20, 2023 10:59 PM"
+    "end date": "Until Jul. 20, 2023 22:59"
   },
   "349": {
     "bg": [
@@ -4744,7 +4744,7 @@
     "banner": [
       "Gacha349_banner.webp"
     ],
-    "end date": "Until Jul. 22, 2023 10:59 PM"
+    "end date": "Until Jul. 22, 2023 22:59"
   },
   "350": {
     "bg": [
@@ -4755,7 +4755,7 @@
     "banner": [
       "Gacha350_banner.webp"
     ],
-    "end date": "Until Jul. 26, 2023 10:59 AM"
+    "end date": "Until Jul. 26, 2023 10:59"
   },
   "351": {
     "bg": [
@@ -4764,7 +4764,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Jul. 26, 2023 10:59 AM"
+    "end date": "Until Jul. 26, 2023 10:59"
   },
   "352": {
     "bg": [
@@ -4777,7 +4777,7 @@
     "banner": [
       "Gacha352_banner.webp"
     ],
-    "end date": "Until Jul. 30, 2023 10:59 PM"
+    "end date": "Until Jul. 30, 2023 22:59"
   },
   "353": {
     "bg": [
@@ -4788,7 +4788,7 @@
     "banner": [
       "Gacha353_banner.webp"
     ],
-    "end date": "Until Aug. 1, 2023 10:59 AM"
+    "end date": "Until Aug. 1, 2023 10:59"
   },
   "354": {
     "bg": [
@@ -4797,7 +4797,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Aug. 1, 2023 10:59 AM"
+    "end date": "Until Aug. 1, 2023 10:59"
   },
   "355": {
     "bg": [
@@ -4814,7 +4814,7 @@
     "banner": [
       "Gacha355_banner.webp"
     ],
-    "end date": "Until Aug. 3, 2023 10:59 PM"
+    "end date": "Until Aug. 3, 2023 22:59"
   },
   "356": {
     "bg": [
@@ -4827,7 +4827,7 @@
     "banner": [
       "Gacha356_banner.webp"
     ],
-    "end date": "Until Aug. 9, 2023 10:59 PM"
+    "end date": "Until Aug. 9, 2023 22:59"
   },
   "357": {
     "bg": [
@@ -4842,7 +4842,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until Sep. 3, 2023 02:59 PM"
+    "end date": "Until Sep. 3, 2023 14:59"
   },
   "358": {
     "bg": [
@@ -4855,7 +4855,7 @@
     "banner": [
       "Gacha358_banner.webp"
     ],
-    "end date": "Until Aug. 20, 2023 10:59 PM"
+    "end date": "Until Aug. 20, 2023 22:59"
   },
   "359": {
     "bg": [
@@ -4866,14 +4866,14 @@
     "banner": [
       "Gacha359_banner.webp"
     ],
-    "end date": "Until Aug. 17, 2023 10:59 AM"
+    "end date": "Until Aug. 17, 2023 10:59"
   },
   "360": {
     "bg": [],
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Aug. 17, 2023 10:59 AM"
+    "end date": "Until Aug. 17, 2023 10:59"
   },
   "361": {
     "bg": [
@@ -4886,7 +4886,7 @@
     "banner": [
       "Gacha361_banner.webp"
     ],
-    "end date": "Until Aug. 21, 2023 10:59 PM"
+    "end date": "Until Aug. 21, 2023 22:59"
   },
   "362": {
     "bg": [
@@ -4899,7 +4899,7 @@
     "banner": [
       "Gacha362_banner.webp"
     ],
-    "end date": "Until Aug. 30, 2023 10:59 PM"
+    "end date": "Until Aug. 30, 2023 22:59"
   },
   "363": {
     "bg": [
@@ -4917,7 +4917,7 @@
     "img": [],
     "banner": [],
     "logo": null,
-    "end date": "Until Sep. 4, 2023 10:59 PM"
+    "end date": "Until Sep. 4, 2023 22:59"
   },
   "364": {
     "bg": [
@@ -4928,7 +4928,7 @@
     "banner": [
       "Gacha364_banner.webp"
     ],
-    "end date": "Until Sep. 2, 2023 10:59 AM"
+    "end date": "Until Sep. 2, 2023 10:59"
   },
   "365": {
     "bg": [
@@ -4937,7 +4937,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Sep. 2, 2023 10:59 AM"
+    "end date": "Until Sep. 2, 2023 10:59"
   },
   "366": {
     "bg": [
@@ -4948,7 +4948,7 @@
     "banner": [
       "Gacha366_banner.webp"
     ],
-    "end date": "Until Sep. 6, 2023 10:59 AM"
+    "end date": "Until Sep. 6, 2023 10:59"
   },
   "367": {
     "bg": [
@@ -4957,7 +4957,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Sep. 6, 2023 10:59 AM"
+    "end date": "Until Sep. 6, 2023 10:59"
   },
   "368": {
     "bg": [
@@ -4971,7 +4971,7 @@
     "banner": [
       "Gacha368_banner.webp"
     ],
-    "end date": "Until Sep. 10, 2023 10:59 PM"
+    "end date": "Until Sep. 10, 2023 22:59"
   },
   "369": {
     "bg": [
@@ -4986,7 +4986,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Oct. 1, 2023 02:59 PM"
+    "end date": "Until Oct. 1, 2023 14:59"
   },
   "370": {
     "bg": [
@@ -4997,7 +4997,7 @@
     "banner": [
       "Gacha370_banner.webp"
     ],
-    "end date": "Until Sep. 15, 2023 10:59 AM"
+    "end date": "Until Sep. 15, 2023 10:59"
   },
   "371": {
     "bg": [
@@ -5006,7 +5006,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Sep. 15, 2023 10:59 AM"
+    "end date": "Until Sep. 15, 2023 10:59"
   },
   "372": {
     "bg": [
@@ -5019,7 +5019,7 @@
     "banner": [
       "Gacha372_banner.webp"
     ],
-    "end date": "Until Sep. 19, 2023 10:59 PM"
+    "end date": "Until Sep. 19, 2023 22:59"
   },
   "373": {
     "bg": [
@@ -5032,7 +5032,7 @@
     "banner": [
       "Gacha373_banner.webp"
     ],
-    "end date": "Until Sep. 21, 2023 10:59 PM"
+    "end date": "Until Sep. 21, 2023 22:59"
   },
   "374": {
     "bg": [
@@ -5045,7 +5045,7 @@
     "banner": [
       "Gacha374_banner.webp"
     ],
-    "end date": "Until Sep. 29, 2023 10:59 PM"
+    "end date": "Until Sep. 29, 2023 22:59"
   },
   "375": {
     "bg": [
@@ -5061,7 +5061,7 @@
     "banner": [
       "Gacha375_banner.webp"
     ],
-    "end date": "Until Oct. 27, 2023 10:59 AM"
+    "end date": "Until Oct. 27, 2023 10:59"
   },
   "376": {
     "bg": [
@@ -5075,7 +5075,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Nov. 22, 2023 09:59 AM"
+    "end date": "Until Nov. 22, 2023 09:59"
   },
   "377": {
     "bg": [
@@ -5086,7 +5086,7 @@
     "banner": [
       "Gacha377_banner.webp"
     ],
-    "end date": "Until Oct. 11, 2023 10:59 PM"
+    "end date": "Until Oct. 11, 2023 22:59"
   },
   "378": {
     "bg": [
@@ -5097,7 +5097,7 @@
     "banner": [
       "Gacha378_banner.webp"
     ],
-    "end date": "Until Oct. 11, 2023 10:59 PM"
+    "end date": "Until Oct. 11, 2023 22:59"
   },
   "379": {
     "bg": [
@@ -5109,7 +5109,7 @@
     ],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Oct. 11, 2023 10:59 PM"
+    "end date": "Until Oct. 11, 2023 22:59"
   },
   "380": {
     "bg": [
@@ -5121,7 +5121,7 @@
     ],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Oct. 11, 2023 10:59 PM"
+    "end date": "Until Oct. 11, 2023 22:59"
   },
   "381": {
     "bg": [
@@ -5133,7 +5133,7 @@
     ],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Oct. 11, 2023 10:59 PM"
+    "end date": "Until Oct. 11, 2023 22:59"
   },
   "382": {
     "bg": [
@@ -5145,7 +5145,7 @@
     ],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Oct. 11, 2023 10:59 PM"
+    "end date": "Until Oct. 11, 2023 22:59"
   },
   "383": {
     "bg": [
@@ -5157,7 +5157,7 @@
     ],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Oct. 11, 2023 10:59 PM"
+    "end date": "Until Oct. 11, 2023 22:59"
   },
   "384": {
     "bg": [
@@ -5169,7 +5169,7 @@
     ],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Oct. 11, 2023 10:59 PM"
+    "end date": "Until Oct. 11, 2023 22:59"
   },
   "385": {
     "bg": [
@@ -5180,7 +5180,7 @@
     "banner": [
       "Gacha385_banner.webp"
     ],
-    "end date": "Until Oct. 30, 2023 10:59 PM"
+    "end date": "Until Oct. 30, 2023 22:59"
   },
   "386": {
     "bg": [
@@ -5205,7 +5205,7 @@
     "banner": [
       "Gacha386_banner.webp"
     ],
-    "end date": "Until Oct. 3, 2023 10:59 PM"
+    "end date": "Until Oct. 3, 2023 22:59"
   },
   "388": {
     "bg": [
@@ -5224,7 +5224,7 @@
     "banner": [
       "Gacha388_banner.webp"
     ],
-    "end date": "Until Oct. 11, 2023 10:59 PM"
+    "end date": "Until Oct. 11, 2023 22:59"
   },
   "389": {
     "bg": [
@@ -5235,7 +5235,7 @@
     "banner": [
       "Gacha389_banner.webp"
     ],
-    "end date": "Until Oct. 11, 2023 10:59 AM"
+    "end date": "Until Oct. 11, 2023 10:59"
   },
   "390": {
     "bg": [
@@ -5244,7 +5244,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Oct. 11, 2023 10:59 AM"
+    "end date": "Until Oct. 11, 2023 10:59"
   },
   "391": {
     "bg": [
@@ -5253,7 +5253,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Oct. 11, 2023 10:59 AM"
+    "end date": "Until Oct. 11, 2023 10:59"
   },
   "392": {
     "bg": [
@@ -5262,7 +5262,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Dec. 31, 2099 09:59 AM"
+    "end date": "Until Dec. 31, 2099 09:59"
   },
   "393": {
     "bg": [
@@ -5271,7 +5271,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Oct. 30, 2024 10:59 PM"
+    "end date": "Until Oct. 30, 2024 22:59"
   },
   "394": {
     "bg": [
@@ -5288,7 +5288,7 @@
     "banner": [
       "Gacha394_banner.webp"
     ],
-    "end date": "Until Oct. 21, 2023 10:59 PM"
+    "end date": "Until Oct. 21, 2023 22:59"
   },
   "395": {
     "bg": [
@@ -5307,7 +5307,7 @@
     "banner": [
       "Gacha395_banner.webp"
     ],
-    "end date": "Until Oct. 23, 2023 10:59 PM"
+    "end date": "Until Oct. 23, 2023 22:59"
   },
   "396": {
     "bg": [
@@ -5324,7 +5324,7 @@
     "banner": [
       "Gacha396_banner.webp"
     ],
-    "end date": "Until Oct. 30, 2023 10:59 PM"
+    "end date": "Until Oct. 30, 2023 22:59"
   },
   "397": {
     "bg": [
@@ -5333,7 +5333,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Nov. 3, 2023 10:59 PM"
+    "end date": "Until Nov. 3, 2023 22:59"
   },
   "398": {
     "bg": [
@@ -5344,7 +5344,7 @@
     "banner": [
       "Gacha398_banner.webp"
     ],
-    "end date": "Until Nov. 2, 2023 10:59 AM"
+    "end date": "Until Nov. 2, 2023 10:59"
   },
   "399": {
     "bg": [
@@ -5353,7 +5353,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Nov. 2, 2023 10:59 AM"
+    "end date": "Until Nov. 2, 2023 10:59"
   },
   "400": {
     "bg": [
@@ -5364,7 +5364,7 @@
     "banner": [
       "Gacha400_banner.webp"
     ],
-    "end date": "Until Nov. 2, 2023 10:59 AM"
+    "end date": "Until Nov. 2, 2023 10:59"
   },
   "401": {
     "bg": [
@@ -5381,7 +5381,7 @@
     "banner": [
       "Gacha401_banner.webp"
     ],
-    "end date": "Until Nov. 7, 2023 09:59 PM"
+    "end date": "Until Nov. 7, 2023 21:59"
   },
   "402": {
     "bg": [
@@ -5390,7 +5390,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Nov. 11, 2023 09:59 AM"
+    "end date": "Until Nov. 11, 2023 09:59"
   },
   "403": {
     "bg": [
@@ -5399,7 +5399,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Nov. 11, 2023 09:59 AM"
+    "end date": "Until Nov. 11, 2023 09:59"
   },
   "404": {
     "bg": [
@@ -5408,7 +5408,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Nov. 11, 2023 09:59 AM"
+    "end date": "Until Nov. 11, 2023 09:59"
   },
   "405": {
     "bg": [
@@ -5419,7 +5419,7 @@
     "banner": [
       "Gacha405_banner.webp"
     ],
-    "end date": "Until Nov. 21, 2023 09:59 PM"
+    "end date": "Until Nov. 21, 2023 21:59"
   },
   "407": {
     "bg": [
@@ -5438,7 +5438,7 @@
     "banner": [
       "Gacha407_banner.webp"
     ],
-    "end date": "Until Nov. 21, 2023 09:59 PM"
+    "end date": "Until Nov. 21, 2023 21:59"
   },
   "408": {
     "bg": [
@@ -5449,7 +5449,7 @@
     "banner": [
       "Gacha408_banner.webp"
     ],
-    "end date": "Until Nov. 18, 2023 09:59 AM"
+    "end date": "Until Nov. 18, 2023 09:59"
   },
   "409": {
     "bg": [
@@ -5458,7 +5458,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Nov. 18, 2023 09:59 AM"
+    "end date": "Until Nov. 18, 2023 09:59"
   },
   "410": {
     "bg": [
@@ -5467,7 +5467,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Nov. 18, 2023 09:59 AM"
+    "end date": "Until Nov. 18, 2023 09:59"
   },
   "411": {
     "bg": [
@@ -5484,7 +5484,7 @@
     "banner": [
       "Gacha411_banner.webp"
     ],
-    "end date": "Until Nov. 20, 2023 09:59 PM"
+    "end date": "Until Nov. 20, 2023 21:59"
   },
   "412": {
     "bg": [
@@ -5501,7 +5501,7 @@
     ],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Nov. 26, 2023 09:59 PM"
+    "end date": "Until Nov. 26, 2023 21:59"
   },
   "413": {
     "bg": [
@@ -5516,7 +5516,7 @@
     ],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Nov. 26, 2023 09:59 PM"
+    "end date": "Until Nov. 26, 2023 21:59"
   },
   "414": {
     "bg": [
@@ -5533,7 +5533,7 @@
     "banner": [
       "Gacha414_banner.webp"
     ],
-    "end date": "Until Nov. 29, 2023 09:59 PM"
+    "end date": "Until Nov. 29, 2023 21:59"
   },
   "415": {
     "bg": [
@@ -5544,7 +5544,7 @@
     "banner": [
       "Gacha415_banner.webp"
     ],
-    "end date": "Until Dec. 3, 2023 09:59 PM"
+    "end date": "Until Dec. 3, 2023 21:59"
   },
   "416": {
     "bg": [
@@ -5561,7 +5561,7 @@
     "banner": [
       "Gacha416_banner.webp"
     ],
-    "end date": "Until Dec. 9, 2023 09:59 PM"
+    "end date": "Until Dec. 9, 2023 21:59"
   },
   "418": {
     "bg": [
@@ -5584,7 +5584,7 @@
     ],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Dec. 19, 2023 09:59 AM"
+    "end date": "Until Dec. 19, 2023 09:59"
   },
   "419": {
     "bg": [
@@ -5595,7 +5595,7 @@
     "banner": [
       "Gacha419_banner.webp"
     ],
-    "end date": "Until Dec. 12, 2023 09:59 AM"
+    "end date": "Until Dec. 12, 2023 09:59"
   },
   "420": {
     "bg": [
@@ -5604,7 +5604,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Dec. 12, 2023 09:59 AM"
+    "end date": "Until Dec. 12, 2023 09:59"
   },
   "421": {
     "bg": [
@@ -5613,7 +5613,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Dec. 12, 2023 09:59 AM"
+    "end date": "Until Dec. 12, 2023 09:59"
   },
   "422": {
     "bg": [
@@ -5628,7 +5628,7 @@
     ],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Dec. 19, 2023 09:59 PM"
+    "end date": "Until Dec. 19, 2023 21:59"
   },
   "423": {
     "bg": [
@@ -5645,7 +5645,7 @@
     "banner": [
       "Gacha423_banner.webp"
     ],
-    "end date": "Until Dec. 20, 2023 09:59 PM"
+    "end date": "Until Dec. 20, 2023 21:59"
   },
   "424": {
     "bg": [
@@ -5662,7 +5662,7 @@
     "banner": [
       "Gacha424_banner.webp"
     ],
-    "end date": "Until Dec. 25, 2023 09:59 PM"
+    "end date": "Until Dec. 25, 2023 21:59"
   },
   "425": {
     "bg": [
@@ -5679,7 +5679,7 @@
     "banner": [
       "Gacha425_banner.webp"
     ],
-    "end date": "Until Dec. 25, 2023 09:59 PM"
+    "end date": "Until Dec. 25, 2023 21:59"
   },
   "426": {
     "bg": [
@@ -5696,7 +5696,7 @@
     "banner": [
       "Gacha426_banner.webp"
     ],
-    "end date": "Until Dec. 30, 2023 09:59 PM"
+    "end date": "Until Dec. 30, 2023 21:59"
   },
   "427": {
     "bg": [
@@ -5707,7 +5707,7 @@
     "banner": [
       "Gacha427_banner.webp"
     ],
-    "end date": "Until Jan. 2, 2024 09:59 AM"
+    "end date": "Until Jan. 2, 2024 09:59"
   },
   "428": {
     "bg": [
@@ -5716,7 +5716,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Jan. 2, 2024 09:59 AM"
+    "end date": "Until Jan. 2, 2024 09:59"
   },
   "429": {
     "bg": [
@@ -5725,7 +5725,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Jan. 2, 2024 09:59 AM"
+    "end date": "Until Jan. 2, 2024 09:59"
   },
   "430": {
     "bg": [
@@ -5736,7 +5736,7 @@
     "banner": [
       "Gacha430_banner.webp"
     ],
-    "end date": "Until Jan. 2, 2024 09:59 AM"
+    "end date": "Until Jan. 2, 2024 09:59"
   },
   "431": {
     "bg": [
@@ -5745,7 +5745,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Jan. 2, 2024 09:59 AM"
+    "end date": "Until Jan. 2, 2024 09:59"
   },
   "432": {
     "bg": [
@@ -5754,7 +5754,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Jan. 2, 2024 09:59 AM"
+    "end date": "Until Jan. 2, 2024 09:59"
   },
   "433": {
     "bg": [
@@ -5777,7 +5777,7 @@
     "banner": [
       "Gacha433_banner.webp"
     ],
-    "end date": "Until Jan. 3, 2024 09:59 PM"
+    "end date": "Until Jan. 3, 2024 21:59"
   },
   "434": {
     "bg": [
@@ -5792,7 +5792,7 @@
     "banner": [
       "Gacha434_banner.webp"
     ],
-    "end date": "Until Jan. 8, 2024 09:59 PM"
+    "end date": "Until Jan. 8, 2024 21:59"
   },
   "435": {
     "bg": [
@@ -5803,7 +5803,7 @@
     "banner": [
       "Gacha435_banner.webp"
     ],
-    "end date": "Until Jan. 31, 2024 09:59 PM"
+    "end date": "Until Jan. 31, 2024 21:59"
   },
   "437": {
     "bg": [
@@ -5814,7 +5814,7 @@
     "banner": [
       "Gacha437_banner.webp"
     ],
-    "end date": "Until Jan. 22, 2024 09:59 PM"
+    "end date": "Until Jan. 22, 2024 21:59"
   },
   "438": {
     "bg": [
@@ -5831,7 +5831,7 @@
     "banner": [
       "Gacha438_banner.webp"
     ],
-    "end date": "Until Jan. 8, 2024 09:59 PM"
+    "end date": "Until Jan. 8, 2024 21:59"
   },
   "439": {
     "bg": [
@@ -5842,7 +5842,7 @@
     "banner": [
       "Gacha439_banner.webp"
     ],
-    "end date": "Until Jan. 14, 2024 09:59 AM"
+    "end date": "Until Jan. 14, 2024 09:59"
   },
   "440": {
     "bg": [
@@ -5851,7 +5851,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Jan. 14, 2024 09:59 AM"
+    "end date": "Until Jan. 14, 2024 09:59"
   },
   "441": {
     "bg": [
@@ -5860,7 +5860,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Jan. 14, 2024 09:59 AM"
+    "end date": "Until Jan. 14, 2024 09:59"
   },
   "442": {
     "bg": [
@@ -5879,7 +5879,7 @@
     "banner": [
       "Gacha442_banner.webp"
     ],
-    "end date": "Until Jan. 22, 2024 09:59 PM"
+    "end date": "Until Jan. 22, 2024 21:59"
   },
   "443": {
     "bg": [
@@ -5896,7 +5896,7 @@
     "banner": [
       "Gacha443_banner.webp"
     ],
-    "end date": "Until Jan. 19, 2024 09:59 PM"
+    "end date": "Until Jan. 19, 2024 21:59"
   },
   "444": {
     "bg": [
@@ -5913,7 +5913,7 @@
     "banner": [
       "Gacha444_banner.webp"
     ],
-    "end date": "Until Jan. 24, 2024 09:59 PM"
+    "end date": "Until Jan. 24, 2024 21:59"
   },
   "445": {
     "bg": [
@@ -5930,7 +5930,7 @@
     "banner": [
       "Gacha445_banner.webp"
     ],
-    "end date": "Until Jan. 24, 2024 09:59 PM"
+    "end date": "Until Jan. 24, 2024 21:59"
   },
   "446": {
     "bg": [
@@ -5947,7 +5947,7 @@
     "banner": [
       "Gacha446_banner.webp"
     ],
-    "end date": "Until Jan. 31, 2024 09:59 PM"
+    "end date": "Until Jan. 31, 2024 21:59"
   },
   "447": {
     "bg": [
@@ -5958,7 +5958,7 @@
     "banner": [
       "Gacha447_banner.webp"
     ],
-    "end date": "Until Feb. 3, 2024 09:59 PM"
+    "end date": "Until Feb. 3, 2024 21:59"
   },
   "448": {
     "bg": [
@@ -5969,7 +5969,7 @@
     "banner": [
       "Gacha448_banner.webp"
     ],
-    "end date": "Until Feb. 2, 2024 09:59 AM"
+    "end date": "Until Feb. 2, 2024 09:59"
   },
   "449": {
     "bg": [
@@ -5978,7 +5978,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Feb. 2, 2024 09:59 AM"
+    "end date": "Until Feb. 2, 2024 09:59"
   },
   "450": {
     "bg": [
@@ -5987,7 +5987,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Feb. 2, 2024 09:59 AM"
+    "end date": "Until Feb. 2, 2024 09:59"
   },
   "451": {
     "bg": [
@@ -5998,7 +5998,7 @@
     "banner": [
       "Gacha451_banner.webp"
     ],
-    "end date": "Until Feb. 5, 2024 09:59 AM"
+    "end date": "Until Feb. 5, 2024 09:59"
   },
   "452": {
     "bg": [
@@ -6007,7 +6007,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Feb. 5, 2024 09:59 AM"
+    "end date": "Until Feb. 5, 2024 09:59"
   },
   "453": {
     "bg": [
@@ -6016,7 +6016,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Feb. 5, 2024 09:59 AM"
+    "end date": "Until Feb. 5, 2024 09:59"
   },
   "454": {
     "bg": [
@@ -6033,7 +6033,7 @@
     "banner": [
       "Gacha454_banner.webp"
     ],
-    "end date": "Until Feb. 9, 2024 09:59 PM"
+    "end date": "Until Feb. 9, 2024 21:59"
   },
   "456": {
     "bg": [
@@ -6044,7 +6044,7 @@
     "banner": [
       "Gacha456_banner.webp"
     ],
-    "end date": "Until Feb. 16, 2024 09:59 AM"
+    "end date": "Until Feb. 16, 2024 09:59"
   },
   "457": {
     "bg": [
@@ -6053,7 +6053,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Feb. 16, 2024 09:59 AM"
+    "end date": "Until Feb. 16, 2024 09:59"
   },
   "458": {
     "bg": [
@@ -6062,7 +6062,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Feb. 16, 2024 09:59 AM"
+    "end date": "Until Feb. 16, 2024 09:59"
   },
   "459": {
     "bg": [
@@ -6079,7 +6079,7 @@
     "banner": [
       "Gacha459_banner.webp"
     ],
-    "end date": "Until Feb. 19, 2024 09:59 PM"
+    "end date": "Until Feb. 19, 2024 21:59"
   },
   "460": {
     "bg": [
@@ -6096,7 +6096,7 @@
     "banner": [
       "Gacha460_banner.webp"
     ],
-    "end date": "Until Feb. 20, 2024 09:59 PM"
+    "end date": "Until Feb. 20, 2024 21:59"
   },
   "461": {
     "bg": [
@@ -6107,7 +6107,7 @@
     "banner": [
       "Gacha461_banner.webp"
     ],
-    "end date": "Until Feb. 23, 2024 09:59 AM"
+    "end date": "Until Feb. 23, 2024 09:59"
   },
   "462": {
     "bg": [
@@ -6116,7 +6116,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Feb. 23, 2024 09:59 AM"
+    "end date": "Until Feb. 23, 2024 09:59"
   },
   "463": {
     "bg": [
@@ -6125,7 +6125,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Feb. 23, 2024 09:59 AM"
+    "end date": "Until Feb. 23, 2024 09:59"
   },
   "464": {
     "bg": [
@@ -6142,7 +6142,7 @@
     "banner": [
       "Gacha464_banner.webp"
     ],
-    "end date": "Until Feb. 25, 2024 09:59 PM"
+    "end date": "Until Feb. 25, 2024 21:59"
   },
   "465": {
     "bg": [
@@ -6159,7 +6159,7 @@
     "banner": [
       "Gacha465_banner.webp"
     ],
-    "end date": "Until Feb. 25, 2024 09:59 PM"
+    "end date": "Until Feb. 25, 2024 21:59"
   },
   "466": {
     "bg": [
@@ -6176,7 +6176,7 @@
     "banner": [
       "Gacha466_banner.webp"
     ],
-    "end date": "Until Feb. 28, 2024 09:59 PM"
+    "end date": "Until Feb. 28, 2024 21:59"
   },
   "467": {
     "bg": [
@@ -6187,7 +6187,7 @@
     "banner": [
       "Gacha467_banner.webp"
     ],
-    "end date": "Until Mar. 3, 2024 09:59 PM"
+    "end date": "Until Mar. 3, 2024 21:59"
   },
   "468": {
     "bg": [
@@ -6204,7 +6204,7 @@
     "banner": [
       "Gacha468_banner.webp"
     ],
-    "end date": "Until Mar. 7, 2024 09:59 PM"
+    "end date": "Until Mar. 7, 2024 21:59"
   },
   "469": {
     "bg": [
@@ -6215,7 +6215,7 @@
     "banner": [
       "Gacha469_banner.webp"
     ],
-    "end date": "Until Mar. 21, 2024 10:59 PM"
+    "end date": "Until Mar. 21, 2024 22:59"
   },
   "470": {
     "bg": [
@@ -6226,7 +6226,7 @@
     "banner": [
       "Gacha470_banner.webp"
     ],
-    "end date": "Until Mar. 8, 2024 09:59 AM"
+    "end date": "Until Mar. 8, 2024 09:59"
   },
   "471": {
     "bg": [
@@ -6235,7 +6235,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Mar. 8, 2024 09:59 AM"
+    "end date": "Until Mar. 8, 2024 09:59"
   },
   "472": {
     "bg": [
@@ -6244,7 +6244,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Mar. 8, 2024 09:59 AM"
+    "end date": "Until Mar. 8, 2024 09:59"
   },
   "474": {
     "bg": [
@@ -6261,7 +6261,7 @@
     ],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Mar. 21, 2024 10:59 PM"
+    "end date": "Until Mar. 21, 2024 22:59"
   },
   "476": {
     "bg": [
@@ -6276,7 +6276,7 @@
     ],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Mar. 19, 2024 10:59 PM"
+    "end date": "Until Mar. 19, 2024 22:59"
   },
   "477": {
     "bg": [
@@ -6291,7 +6291,7 @@
     ],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Mar. 26, 2024 10:59 PM"
+    "end date": "Until Mar. 26, 2024 22:59"
   },
   "478": {
     "bg": [
@@ -6306,7 +6306,7 @@
     ],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Mar. 26, 2024 10:59 PM"
+    "end date": "Until Mar. 26, 2024 22:59"
   },
   "479": {
     "bg": [
@@ -6317,7 +6317,7 @@
     "banner": [
       "Gacha479_banner.webp"
     ],
-    "end date": "Until Mar. 25, 2024 10:59 AM"
+    "end date": "Until Mar. 25, 2024 10:59"
   },
   "480": {
     "bg": [
@@ -6326,7 +6326,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Mar. 25, 2024 10:59 AM"
+    "end date": "Until Mar. 25, 2024 10:59"
   },
   "481": {
     "bg": [
@@ -6335,7 +6335,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Mar. 25, 2024 10:59 AM"
+    "end date": "Until Mar. 25, 2024 10:59"
   },
   "482": {
     "bg": [
@@ -6352,7 +6352,7 @@
     "banner": [
       "Gacha482_banner.webp"
     ],
-    "end date": "Until Mar. 29, 2024 10:59 PM"
+    "end date": "Until Mar. 29, 2024 22:59"
   },
   "483": {
     "bg": [
@@ -6363,7 +6363,7 @@
     "banner": [
       "Gacha483_banner.webp"
     ],
-    "end date": "Until Apr. 7, 2024 10:59 AM"
+    "end date": "Until Apr. 7, 2024 10:59"
   },
   "484": {
     "bg": [
@@ -6388,7 +6388,7 @@
     "banner": [
       "Gacha484_banner.webp"
     ],
-    "end date": "Until Apr. 3, 2024 10:59 PM"
+    "end date": "Until Apr. 3, 2024 22:59"
   },
   "485": {
     "bg": [
@@ -6402,7 +6402,7 @@
     "banner": [
       "Gacha485_banner.webp"
     ],
-    "end date": "Until Apr. 30, 2024 10:59 AM"
+    "end date": "Until Apr. 30, 2024 10:59"
   },
   "486": {
     "bg": [
@@ -6413,7 +6413,7 @@
     "banner": [
       "Gacha486_banner.webp"
     ],
-    "end date": "Until May. 31, 2024 10:59 AM"
+    "end date": "Until May. 31, 2024 10:59"
   },
   "487": {
     "bg": [
@@ -6422,7 +6422,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until May. 31, 2024 10:59 AM"
+    "end date": "Until May. 31, 2024 10:59"
   },
   "489": {
     "bg": [
@@ -6439,7 +6439,7 @@
     "banner": [
       "Gacha489_banner.webp"
     ],
-    "end date": "Until Apr. 9, 2024 10:59 PM"
+    "end date": "Until Apr. 9, 2024 22:59"
   },
   "490": {
     "bg": [
@@ -6456,7 +6456,7 @@
     "banner": [
       "Gacha490_banner.webp"
     ],
-    "end date": "Until Apr. 19, 2024 10:59 PM"
+    "end date": "Until Apr. 19, 2024 22:59"
   },
   "491": {
     "bg": [
@@ -6475,7 +6475,7 @@
     "banner": [
       "Gacha491_banner.webp"
     ],
-    "end date": "Until Apr. 20, 2024 10:59 PM"
+    "end date": "Until Apr. 20, 2024 22:59"
   },
   "492": {
     "bg": [
@@ -6490,7 +6490,7 @@
     "banner": [
       "Gacha492_banner.webp"
     ],
-    "end date": "Until Apr. 30, 2024 10:59 AM"
+    "end date": "Until Apr. 30, 2024 10:59"
   },
   "493": {
     "bg": [
@@ -6501,7 +6501,7 @@
     "banner": [
       "Gacha493_banner.webp"
     ],
-    "end date": "Until Apr. 20, 2024 10:59 AM"
+    "end date": "Until Apr. 20, 2024 10:59"
   },
   "494": {
     "bg": [
@@ -6510,7 +6510,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Apr. 20, 2024 10:59 AM"
+    "end date": "Until Apr. 20, 2024 10:59"
   },
   "495": {
     "bg": [
@@ -6519,7 +6519,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Apr. 20, 2024 10:59 AM"
+    "end date": "Until Apr. 20, 2024 10:59"
   },
   "496": {
     "bg": [
@@ -6536,7 +6536,7 @@
     "banner": [
       "Gacha496_banner.webp"
     ],
-    "end date": "Until Apr. 26, 2024 10:59 PM"
+    "end date": "Until Apr. 26, 2024 22:59"
   },
   "497": {
     "bg": [
@@ -6553,7 +6553,7 @@
     "banner": [
       "Gacha497_banner.webp"
     ],
-    "end date": "Until Apr. 26, 2024 10:59 PM"
+    "end date": "Until Apr. 26, 2024 22:59"
   },
   "498": {
     "bg": [
@@ -6570,7 +6570,7 @@
     "banner": [
       "Gacha498_banner.webp"
     ],
-    "end date": "Until Apr. 29, 2024 10:59 PM"
+    "end date": "Until Apr. 29, 2024 22:59"
   },
   "499": {
     "bg": [
@@ -6583,7 +6583,7 @@
     "banner": [
       "Gacha499_banner.webp"
     ],
-    "end date": "Until Apr. 30, 2024 10:59 AM"
+    "end date": "Until Apr. 30, 2024 10:59"
   },
   "500": {
     "bg": [
@@ -6594,7 +6594,7 @@
     "banner": [
       "Gacha500_banner.webp"
     ],
-    "end date": "Until May. 6, 2024 10:59 AM"
+    "end date": "Until May. 6, 2024 10:59"
   },
   "501": {
     "bg": [
@@ -6603,7 +6603,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until May. 6, 2024 10:59 AM"
+    "end date": "Until May. 6, 2024 10:59"
   },
   "502": {
     "bg": [
@@ -6612,7 +6612,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until May. 6, 2024 10:59 AM"
+    "end date": "Until May. 6, 2024 10:59"
   },
   "503": {
     "bg": [
@@ -6629,7 +6629,7 @@
     "banner": [
       "Gacha503_banner.webp"
     ],
-    "end date": "Until May. 8, 2024 10:59 PM"
+    "end date": "Until May. 8, 2024 22:59"
   },
   "504": {
     "bg": [
@@ -6640,7 +6640,7 @@
     "banner": [
       "Gacha504_banner.webp"
     ],
-    "end date": "Until May. 22, 2024 10:59 PM"
+    "end date": "Until May. 22, 2024 22:59"
   },
   "506": {
     "bg": [
@@ -6651,7 +6651,7 @@
     "banner": [
       "Gacha506_banner.webp"
     ],
-    "end date": "Until May. 15, 2024 10:59 AM"
+    "end date": "Until May. 15, 2024 10:59"
   },
   "507": {
     "bg": [
@@ -6660,7 +6660,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until May. 15, 2024 10:59 AM"
+    "end date": "Until May. 15, 2024 10:59"
   },
   "508": {
     "bg": [
@@ -6669,7 +6669,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until May. 15, 2024 10:59 AM"
+    "end date": "Until May. 15, 2024 10:59"
   },
   "509": {
     "bg": [
@@ -6688,7 +6688,7 @@
     "banner": [
       "Gacha509_banner.webp"
     ],
-    "end date": "Until May. 22, 2024 10:59 PM"
+    "end date": "Until May. 22, 2024 22:59"
   },
   "510": {
     "bg": [
@@ -6705,7 +6705,7 @@
     "banner": [
       "Gacha510_banner.webp"
     ],
-    "end date": "Until May. 19, 2024 10:59 PM"
+    "end date": "Until May. 19, 2024 22:59"
   },
   "511": {
     "bg": [
@@ -6722,7 +6722,7 @@
     "banner": [
       "Gacha511_banner.webp"
     ],
-    "end date": "Until May. 24, 2024 10:59 PM"
+    "end date": "Until May. 24, 2024 22:59"
   },
   "512": {
     "bg": [
@@ -6739,7 +6739,7 @@
     "banner": [
       "Gacha512_banner.webp"
     ],
-    "end date": "Until May. 24, 2024 10:59 PM"
+    "end date": "Until May. 24, 2024 22:59"
   },
   "513": {
     "bg": [
@@ -6750,7 +6750,7 @@
     "banner": [
       "Gacha513_banner.webp"
     ],
-    "end date": "Until May. 23, 2024 10:59 AM"
+    "end date": "Until May. 23, 2024 10:59"
   },
   "514": {
     "bg": [
@@ -6759,7 +6759,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until May. 23, 2024 10:59 AM"
+    "end date": "Until May. 23, 2024 10:59"
   },
   "515": {
     "bg": [
@@ -6768,7 +6768,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until May. 23, 2024 10:59 AM"
+    "end date": "Until May. 23, 2024 10:59"
   },
   "516": {
     "bg": [
@@ -6785,7 +6785,7 @@
     "banner": [
       "Gacha516_banner.webp"
     ],
-    "end date": "Until May. 30, 2024 10:59 PM"
+    "end date": "Until May. 30, 2024 22:59"
   },
   "517": {
     "bg": [
@@ -6796,7 +6796,7 @@
     "banner": [
       "Gacha517_banner.webp"
     ],
-    "end date": "Until May. 31, 2024 10:59 AM"
+    "end date": "Until May. 31, 2024 10:59"
   },
   "518": {
     "bg": [
@@ -6805,7 +6805,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until May. 31, 2024 10:59 AM"
+    "end date": "Until May. 31, 2024 10:59"
   },
   "519": {
     "bg": [
@@ -6814,7 +6814,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until May. 31, 2024 10:59 AM"
+    "end date": "Until May. 31, 2024 10:59"
   },
   "520": {
     "bg": [
@@ -6825,7 +6825,7 @@
     "banner": [
       "Gacha520_banner.webp"
     ],
-    "end date": "Until Jun. 3, 2024 10:59 PM"
+    "end date": "Until Jun. 3, 2024 22:59"
   },
   "521": {
     "bg": [
@@ -6842,7 +6842,7 @@
     "banner": [
       "Gacha521_banner.webp"
     ],
-    "end date": "Until Jun. 9, 2024 10:59 PM"
+    "end date": "Until Jun. 9, 2024 22:59"
   },
   "523": {
     "bg": [
@@ -6859,7 +6859,7 @@
     "banner": [
       "Gacha523_banner.webp"
     ],
-    "end date": "Until Jun. 19, 2024 10:59 PM"
+    "end date": "Until Jun. 19, 2024 22:59"
   },
   "524": {
     "bg": [
@@ -6874,7 +6874,7 @@
     ],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Jun. 20, 2024 10:59 PM"
+    "end date": "Until Jun. 20, 2024 22:59"
   },
   "525": {
     "bg": [
@@ -6893,7 +6893,7 @@
     "banner": [
       "Gacha525_banner.webp"
     ],
-    "end date": "Until Jun. 25, 2024 10:59 PM"
+    "end date": "Until Jun. 25, 2024 22:59"
   },
   "526": {
     "bg": [
@@ -6908,7 +6908,7 @@
     ],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Jun. 25, 2024 10:59 PM"
+    "end date": "Until Jun. 25, 2024 22:59"
   },
   "527": {
     "bg": [
@@ -6922,7 +6922,7 @@
     "banner": [
       "Gacha527_banner.webp"
     ],
-    "end date": "Until Jun. 23, 2024 10:59 PM"
+    "end date": "Until Jun. 23, 2024 22:59"
   },
   "528": {
     "bg": [
@@ -6936,7 +6936,7 @@
     "banner": [
       "Gacha528_banner.webp"
     ],
-    "end date": "Until Jun. 23, 2024 10:59 PM"
+    "end date": "Until Jun. 23, 2024 22:59"
   },
   "529": {
     "bg": [
@@ -6953,7 +6953,7 @@
     "banner": [
       "Gacha529_banner.webp"
     ],
-    "end date": "Until Jun. 29, 2024 10:59 PM"
+    "end date": "Until Jun. 29, 2024 22:59"
   },
   "530": {
     "bg": [
@@ -6964,7 +6964,7 @@
     "banner": [
       "Gacha530_banner.webp"
     ],
-    "end date": "Until Jun. 30, 2024 10:59 AM"
+    "end date": "Until Jun. 30, 2024 10:59"
   },
   "531": {
     "bg": [
@@ -6973,7 +6973,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Jun. 30, 2024 10:59 AM"
+    "end date": "Until Jun. 30, 2024 10:59"
   },
   "532": {
     "bg": [
@@ -6982,7 +6982,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Jun. 30, 2024 10:59 AM"
+    "end date": "Until Jun. 30, 2024 10:59"
   },
   "533": {
     "bg": [
@@ -7006,7 +7006,7 @@
     "banner": [
       "Gacha533_banner.webp"
     ],
-    "end date": "Until Jul. 3, 2024 10:59 PM"
+    "end date": "Until Jul. 3, 2024 22:59"
   },
   "535": {
     "bg": [
@@ -7023,7 +7023,7 @@
     "banner": [
       "Gacha535_banner.webp"
     ],
-    "end date": "Until Jul. 8, 2024 10:59 PM"
+    "end date": "Until Jul. 8, 2024 22:59"
   },
   "536": {
     "bg": [
@@ -7040,7 +7040,7 @@
     "banner": [
       "Gacha536_banner.webp"
     ],
-    "end date": "Until Jul. 16, 2024 10:59 PM"
+    "end date": "Until Jul. 16, 2024 22:59"
   },
   "537": {
     "bg": [
@@ -7051,7 +7051,7 @@
     "banner": [
       "Gacha537_banner.webp"
     ],
-    "end date": "Until Jul. 30, 2024 10:59 PM"
+    "end date": "Until Jul. 30, 2024 22:59"
   },
   "538": {
     "bg": [
@@ -7066,7 +7066,7 @@
     ],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Jul. 19, 2024 10:59 PM"
+    "end date": "Until Jul. 19, 2024 22:59"
   },
   "539": {
     "bg": [
@@ -7081,7 +7081,7 @@
     ],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Jul. 23, 2024 10:59 PM"
+    "end date": "Until Jul. 23, 2024 22:59"
   },
   "540": {
     "bg": [
@@ -7096,7 +7096,7 @@
     ],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Jul. 23, 2024 10:59 PM"
+    "end date": "Until Jul. 23, 2024 22:59"
   },
   "541": {
     "bg": [
@@ -7115,7 +7115,7 @@
     "banner": [
       "Gacha541_banner.webp"
     ],
-    "end date": "Until Jul. 30, 2024 10:59 PM"
+    "end date": "Until Jul. 30, 2024 22:59"
   },
   "542": {
     "bg": [
@@ -7126,7 +7126,7 @@
     "banner": [
       "Gacha542_banner.webp"
     ],
-    "end date": "Until Jul. 26, 2024 10:59 AM"
+    "end date": "Until Jul. 26, 2024 10:59"
   },
   "543": {
     "bg": [
@@ -7135,7 +7135,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Jul. 26, 2024 10:59 AM"
+    "end date": "Until Jul. 26, 2024 10:59"
   },
   "544": {
     "bg": [
@@ -7144,7 +7144,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Jul. 26, 2024 10:59 AM"
+    "end date": "Until Jul. 26, 2024 10:59"
   },
   "545": {
     "bg": [
@@ -7155,7 +7155,7 @@
     "banner": [
       "Gacha545_banner.webp"
     ],
-    "end date": "Until Aug. 1, 2024 10:59 AM"
+    "end date": "Until Aug. 1, 2024 10:59"
   },
   "546": {
     "bg": [
@@ -7164,7 +7164,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Aug. 1, 2024 10:59 AM"
+    "end date": "Until Aug. 1, 2024 10:59"
   },
   "547": {
     "bg": [
@@ -7173,7 +7173,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Aug. 1, 2024 10:59 AM"
+    "end date": "Until Aug. 1, 2024 10:59"
   },
   "548": {
     "bg": [
@@ -7184,7 +7184,7 @@
     "banner": [
       "Gacha548_banner.webp"
     ],
-    "end date": "Until Aug. 3, 2024 10:59 PM"
+    "end date": "Until Aug. 3, 2024 22:59"
   },
   "549": {
     "bg": [
@@ -7199,7 +7199,7 @@
     ],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Aug. 8, 2024 10:59 PM"
+    "end date": "Until Aug. 8, 2024 22:59"
   },
   "551": {
     "bg": [
@@ -7216,7 +7216,7 @@
     "banner": [
       "Gacha551_banner.webp"
     ],
-    "end date": "Until Aug. 16, 2024 10:59 PM"
+    "end date": "Until Aug. 16, 2024 22:59"
   },
   "552": {
     "bg": [
@@ -7227,7 +7227,7 @@
     "banner": [
       "Gacha552_banner.webp"
     ],
-    "end date": "Until Aug. 30, 2024 10:59 PM"
+    "end date": "Until Aug. 30, 2024 22:59"
   },
   "553": {
     "bg": [
@@ -7238,7 +7238,7 @@
     "banner": [
       "Gacha553_banner.webp"
     ],
-    "end date": "Until Aug. 17, 2024 10:59 AM"
+    "end date": "Until Aug. 17, 2024 10:59"
   },
   "554": {
     "bg": [
@@ -7247,7 +7247,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Aug. 17, 2024 10:59 AM"
+    "end date": "Until Aug. 17, 2024 10:59"
   },
   "555": {
     "bg": [
@@ -7256,7 +7256,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Aug. 17, 2024 10:59 AM"
+    "end date": "Until Aug. 17, 2024 10:59"
   },
   "556": {
     "bg": [
@@ -7271,7 +7271,7 @@
     ],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Aug. 20, 2024 10:59 PM"
+    "end date": "Until Aug. 20, 2024 22:59"
   },
   "557": {
     "bg": [
@@ -7286,7 +7286,7 @@
     ],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Aug. 24, 2024 10:59 PM"
+    "end date": "Until Aug. 24, 2024 22:59"
   },
   "558": {
     "bg": [
@@ -7301,7 +7301,7 @@
     ],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Aug. 24, 2024 10:59 PM"
+    "end date": "Until Aug. 24, 2024 22:59"
   },
   "559": {
     "bg": [
@@ -7324,7 +7324,7 @@
     "banner": [
       "Gacha559_banner.webp"
     ],
-    "end date": "Until Aug. 30, 2024 10:59 PM"
+    "end date": "Until Aug. 30, 2024 22:59"
   },
   "560": {
     "bg": [
@@ -7335,7 +7335,7 @@
     "banner": [
       "Gacha560_banner.webp"
     ],
-    "end date": "Until Sep. 2, 2024 10:59 AM"
+    "end date": "Until Sep. 2, 2024 10:59"
   },
   "561": {
     "bg": [
@@ -7344,7 +7344,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Sep. 2, 2024 10:59 AM"
+    "end date": "Until Sep. 2, 2024 10:59"
   },
   "562": {
     "bg": [
@@ -7353,7 +7353,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Sep. 2, 2024 10:59 AM"
+    "end date": "Until Sep. 2, 2024 10:59"
   },
   "563": {
     "bg": [
@@ -7364,7 +7364,7 @@
     "banner": [
       "Gacha563_banner.webp"
     ],
-    "end date": "Until Aug. 31, 2024 10:59 PM"
+    "end date": "Until Aug. 31, 2024 22:59"
   },
   "564": {
     "bg": [
@@ -7378,7 +7378,7 @@
     "banner": [
       "Gacha564_banner.webp"
     ],
-    "end date": "Until Sep. 4, 2024 10:59 PM"
+    "end date": "Until Sep. 4, 2024 22:59"
   },
   "565": {
     "bg": [
@@ -7389,7 +7389,7 @@
     "banner": [
       "Gacha565_banner.webp"
     ],
-    "end date": "Until Sep. 6, 2024 10:59 AM"
+    "end date": "Until Sep. 6, 2024 10:59"
   },
   "566": {
     "bg": [
@@ -7398,7 +7398,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Sep. 6, 2024 10:59 AM"
+    "end date": "Until Sep. 6, 2024 10:59"
   },
   "567": {
     "bg": [
@@ -7407,7 +7407,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Sep. 6, 2024 10:59 AM"
+    "end date": "Until Sep. 6, 2024 10:59"
   },
   "568": {
     "bg": [
@@ -7424,7 +7424,7 @@
     "banner": [
       "Gacha568_banner.webp"
     ],
-    "end date": "Until Sep. 9, 2024 10:59 PM"
+    "end date": "Until Sep. 9, 2024 22:59"
   },
   "570": {
     "bg": [
@@ -7435,7 +7435,7 @@
     "banner": [
       "Gacha570_banner.webp"
     ],
-    "end date": "Until Sep. 15, 2024 10:59 AM"
+    "end date": "Until Sep. 15, 2024 10:59"
   },
   "571": {
     "bg": [
@@ -7444,7 +7444,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Sep. 15, 2024 10:59 AM"
+    "end date": "Until Sep. 15, 2024 10:59"
   },
   "572": {
     "bg": [
@@ -7453,7 +7453,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Sep. 15, 2024 10:59 AM"
+    "end date": "Until Sep. 15, 2024 10:59"
   },
   "573": {
     "bg": [
@@ -7470,7 +7470,7 @@
     "banner": [
       "Gacha573_banner.webp"
     ],
-    "end date": "Until Sep. 19, 2024 10:59 PM"
+    "end date": "Until Sep. 19, 2024 22:59"
   },
   "574": {
     "bg": [
@@ -7489,7 +7489,7 @@
     "banner": [
       "Gacha574_banner.webp"
     ],
-    "end date": "Until Sep. 20, 2024 10:59 PM"
+    "end date": "Until Sep. 20, 2024 22:59"
   },
   "575": {
     "bg": [
@@ -7506,7 +7506,7 @@
     "banner": [
       "Gacha575_banner.webp"
     ],
-    "end date": "Until Sep. 24, 2024 10:59 PM"
+    "end date": "Until Sep. 24, 2024 22:59"
   },
   "576": {
     "bg": [
@@ -7521,7 +7521,7 @@
     ],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Sep. 24, 2024 10:59 PM"
+    "end date": "Until Sep. 24, 2024 22:59"
   },
   "577": {
     "bg": [
@@ -7538,7 +7538,7 @@
     "banner": [
       "Gacha577_banner.webp"
     ],
-    "end date": "Until Sep. 29, 2024 10:59 PM"
+    "end date": "Until Sep. 29, 2024 22:59"
   },
   "578": {
     "bg": [
@@ -7549,7 +7549,7 @@
     "banner": [
       "Gacha578_banner.webp"
     ],
-    "end date": "Until Sep. 29, 2024 10:59 PM"
+    "end date": "Until Sep. 29, 2024 22:59"
   },
   "579": {
     "bg": [
@@ -7558,7 +7558,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Dec. 30, 2099 01:59 PM"
+    "end date": "Until Dec. 30, 2099 13:59"
   },
   "580": {
     "bg": [
@@ -7567,7 +7567,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Nov. 30, 2024 09:59 AM"
+    "end date": "Until Nov. 30, 2024 09:59"
   },
   "581": {
     "bg": [
@@ -7593,7 +7593,7 @@
     "banner": [
       "Gacha581_banner.webp"
     ],
-    "end date": "Until Oct. 3, 2024 10:59 PM"
+    "end date": "Until Oct. 3, 2024 22:59"
   },
   "582": {
     "bg": [
@@ -7604,7 +7604,7 @@
     "banner": [
       "Gacha582_banner.webp"
     ],
-    "end date": "Until Oct. 30, 2024 10:59 PM"
+    "end date": "Until Oct. 30, 2024 22:59"
   },
   "583": {
     "bg": [
@@ -7616,7 +7616,7 @@
     ],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Oct. 30, 2024 10:59 PM"
+    "end date": "Until Oct. 30, 2024 22:59"
   },
   "584": {
     "bg": [
@@ -7628,7 +7628,7 @@
     ],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Oct. 30, 2024 10:59 PM"
+    "end date": "Until Oct. 30, 2024 22:59"
   },
   "585": {
     "bg": [
@@ -7640,7 +7640,7 @@
     ],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Oct. 30, 2024 10:59 PM"
+    "end date": "Until Oct. 30, 2024 22:59"
   },
   "586": {
     "bg": [
@@ -7652,7 +7652,7 @@
     ],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Oct. 30, 2024 10:59 PM"
+    "end date": "Until Oct. 30, 2024 22:59"
   },
   "587": {
     "bg": [
@@ -7664,7 +7664,7 @@
     ],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Oct. 30, 2024 10:59 PM"
+    "end date": "Until Oct. 30, 2024 22:59"
   },
   "588": {
     "bg": [
@@ -7675,7 +7675,7 @@
     "banner": [
       "Gacha588_banner.webp"
     ],
-    "end date": "Until Oct. 30, 2024 10:59 PM"
+    "end date": "Until Oct. 30, 2024 22:59"
   },
   "589": {
     "bg": [
@@ -7686,7 +7686,7 @@
     "banner": [
       "Gacha589_banner.webp"
     ],
-    "end date": "Until Oct. 30, 2024 10:59 PM"
+    "end date": "Until Oct. 30, 2024 22:59"
   },
   "590": {
     "bg": [
@@ -7695,7 +7695,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Nov. 29, 2024 09:59 PM"
+    "end date": "Until Nov. 29, 2024 21:59"
   },
   "591": {
     "bg": [
@@ -7714,7 +7714,7 @@
     "banner": [
       "Gacha591_banner.webp"
     ],
-    "end date": "Until Oct. 12, 2024 04:59 AM"
+    "end date": "Until Oct. 12, 2024 04:59"
   },
   "592": {
     "bg": [
@@ -7725,7 +7725,7 @@
     "banner": [
       "Gacha592_banner.webp"
     ],
-    "end date": "Until Oct. 11, 2024 10:59 AM"
+    "end date": "Until Oct. 11, 2024 10:59"
   },
   "593": {
     "bg": [
@@ -7734,7 +7734,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Dec. 30, 2099 01:59 PM"
+    "end date": "Until Dec. 30, 2099 13:59"
   },
   "595": {
     "bg": [
@@ -7743,7 +7743,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Oct. 11, 2024 10:59 AM"
+    "end date": "Until Oct. 11, 2024 10:59"
   },
   "596": {
     "bg": [
@@ -7752,7 +7752,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Oct. 11, 2024 10:59 AM"
+    "end date": "Until Oct. 11, 2024 10:59"
   },
   "597": {
     "bg": [
@@ -7761,7 +7761,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Oct. 11, 2024 10:59 AM"
+    "end date": "Until Oct. 11, 2024 10:59"
   },
   "598": {
     "bg": [
@@ -7778,7 +7778,7 @@
     "banner": [
       "Gacha598_banner.webp"
     ],
-    "end date": "Until Oct. 20, 2024 10:59 PM"
+    "end date": "Until Oct. 20, 2024 22:59"
   },
   "599": {
     "bg": [
@@ -7789,7 +7789,7 @@
     "banner": [
       "Gacha599_banner.webp"
     ],
-    "end date": "Until Oct. 30, 2024 10:59 PM"
+    "end date": "Until Oct. 30, 2024 22:59"
   },
   "600": {
     "bg": [
@@ -7808,7 +7808,7 @@
     "banner": [
       "Gacha600_banner.webp"
     ],
-    "end date": "Until Oct. 22, 2024 10:59 PM"
+    "end date": "Until Oct. 22, 2024 22:59"
   },
   "601": {
     "bg": [
@@ -7825,7 +7825,7 @@
     "banner": [
       "Gacha601_banner.webp"
     ],
-    "end date": "Until Oct. 22, 2024 10:59 PM"
+    "end date": "Until Oct. 22, 2024 22:59"
   },
   "602": {
     "bg": [
@@ -7834,7 +7834,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Dec. 31, 2099 09:59 AM"
+    "end date": "Until Dec. 31, 2099 09:59"
   },
   "603": {
     "bg": [
@@ -7851,7 +7851,7 @@
     "banner": [
       "Gacha603_banner.webp"
     ],
-    "end date": "Until Oct. 30, 2024 10:59 PM"
+    "end date": "Until Oct. 30, 2024 22:59"
   },
   "604": {
     "bg": [
@@ -7862,7 +7862,7 @@
     "banner": [
       "Gacha604_banner.webp"
     ],
-    "end date": "Until Nov. 2, 2024 10:59 AM"
+    "end date": "Until Nov. 2, 2024 10:59"
   },
   "605": {
     "bg": [
@@ -7871,7 +7871,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Nov. 2, 2024 10:59 AM"
+    "end date": "Until Nov. 2, 2024 10:59"
   },
   "606": {
     "bg": [
@@ -7880,7 +7880,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Nov. 2, 2024 10:59 AM"
+    "end date": "Until Nov. 2, 2024 10:59"
   },
   "607": {
     "bg": [
@@ -7889,7 +7889,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Nov. 2, 2024 10:59 AM"
+    "end date": "Until Nov. 2, 2024 10:59"
   },
   "608": {
     "bg": [
@@ -7900,7 +7900,7 @@
     "banner": [
       "Gacha608_banner.webp"
     ],
-    "end date": "Until Oct. 30, 2024 10:59 PM"
+    "end date": "Until Oct. 30, 2024 22:59"
   },
   "609": {
     "bg": [
@@ -7917,7 +7917,7 @@
     "banner": [
       "Gacha609_banner.webp"
     ],
-    "end date": "Until Nov. 9, 2024 09:59 PM"
+    "end date": "Until Nov. 9, 2024 21:59"
   },
   "611": {
     "bg": [
@@ -7928,7 +7928,7 @@
     "banner": [
       "Gacha611_banner.webp"
     ],
-    "end date": "Until Nov. 11, 2024 09:59 AM"
+    "end date": "Until Nov. 11, 2024 09:59"
   },
   "612": {
     "bg": [
@@ -7937,7 +7937,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Nov. 11, 2024 09:59 AM"
+    "end date": "Until Nov. 11, 2024 09:59"
   },
   "613": {
     "bg": [
@@ -7946,7 +7946,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Nov. 11, 2024 09:59 AM"
+    "end date": "Until Nov. 11, 2024 09:59"
   },
   "614": {
     "bg": [
@@ -7955,7 +7955,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Nov. 11, 2024 09:59 AM"
+    "end date": "Until Nov. 11, 2024 09:59"
   },
   "615": {
     "bg": [
@@ -7972,7 +7972,7 @@
     "banner": [
       "Gacha615_banner.webp"
     ],
-    "end date": "Until Nov. 19, 2024 09:59 PM"
+    "end date": "Until Nov. 19, 2024 21:59"
   },
   "616": {
     "bg": [
@@ -7989,7 +7989,7 @@
     "banner": [
       "Gacha616_banner.webp"
     ],
-    "end date": "Until Nov. 20, 2024 09:59 PM"
+    "end date": "Until Nov. 20, 2024 21:59"
   },
   "617": {
     "bg": [
@@ -8006,7 +8006,7 @@
     ],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Nov. 20, 2024 09:59 PM"
+    "end date": "Until Nov. 20, 2024 21:59"
   },
   "618": {
     "bg": [
@@ -8017,7 +8017,7 @@
     "banner": [
       "Gacha618_banner.webp"
     ],
-    "end date": "Until Nov. 18, 2024 09:59 AM"
+    "end date": "Until Nov. 18, 2024 09:59"
   },
   "619": {
     "bg": [
@@ -8026,7 +8026,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Nov. 18, 2024 09:59 AM"
+    "end date": "Until Nov. 18, 2024 09:59"
   },
   "620": {
     "bg": [
@@ -8035,7 +8035,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Nov. 18, 2024 09:59 AM"
+    "end date": "Until Nov. 18, 2024 09:59"
   },
   "621": {
     "bg": [
@@ -8044,7 +8044,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Nov. 18, 2024 09:59 AM"
+    "end date": "Until Nov. 18, 2024 09:59"
   },
   "622": {
     "bg": [
@@ -8061,7 +8061,7 @@
     "banner": [
       "Gacha622_banner.webp"
     ],
-    "end date": "Until Nov. 29, 2024 09:59 PM"
+    "end date": "Until Nov. 29, 2024 21:59"
   },
   "623": {
     "bg": [
@@ -8072,7 +8072,7 @@
     "banner": [
       "Gacha623_banner.webp"
     ],
-    "end date": "Until Dec. 3, 2024 09:59 PM"
+    "end date": "Until Dec. 3, 2024 21:59"
   },
   "624": {
     "bg": [
@@ -8089,7 +8089,7 @@
     "banner": [
       "Gacha624_banner.webp"
     ],
-    "end date": "Until Dec. 10, 2024 09:59 PM"
+    "end date": "Until Dec. 10, 2024 21:59"
   },
   "626": {
     "bg": [
@@ -8100,7 +8100,7 @@
     "banner": [
       "Gacha626_banner.webp"
     ],
-    "end date": "Until Dec. 12, 2024 09:59 AM"
+    "end date": "Until Dec. 12, 2024 09:59"
   },
   "627": {
     "bg": [
@@ -8109,7 +8109,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Dec. 12, 2024 09:59 AM"
+    "end date": "Until Dec. 12, 2024 09:59"
   },
   "628": {
     "bg": [
@@ -8118,7 +8118,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Dec. 12, 2024 09:59 AM"
+    "end date": "Until Dec. 12, 2024 09:59"
   },
   "629": {
     "bg": [
@@ -8127,7 +8127,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Dec. 12, 2024 09:59 AM"
+    "end date": "Until Dec. 12, 2024 09:59"
   },
   "630": {
     "bg": [
@@ -8142,7 +8142,7 @@
     "banner": [
       "Gacha630_banner.webp"
     ],
-    "end date": "Until Dec. 16, 2024 09:59 PM"
+    "end date": "Until Dec. 16, 2024 21:59"
   },
   "631": {
     "bg": [
@@ -8159,7 +8159,7 @@
     "banner": [
       "Gacha631_banner.webp"
     ],
-    "end date": "Until Dec. 20, 2024 09:59 PM"
+    "end date": "Until Dec. 20, 2024 21:59"
   },
   "632": {
     "bg": [
@@ -8176,7 +8176,7 @@
     "banner": [
       "Gacha632_banner.webp"
     ],
-    "end date": "Until Dec. 21, 2024 09:59 PM"
+    "end date": "Until Dec. 21, 2024 21:59"
   },
   "633": {
     "bg": [
@@ -8193,7 +8193,7 @@
     "banner": [
       "Gacha633_banner.webp"
     ],
-    "end date": "Until Dec. 21, 2024 09:59 PM"
+    "end date": "Until Dec. 21, 2024 21:59"
   },
   "634": {
     "bg": [
@@ -8210,7 +8210,7 @@
     "banner": [
       "Gacha634_banner.webp"
     ],
-    "end date": "Until Dec. 30, 2024 09:59 PM"
+    "end date": "Until Dec. 30, 2024 21:59"
   },
   "635": {
     "bg": [
@@ -8221,7 +8221,7 @@
     "banner": [
       "Gacha635_banner.webp"
     ],
-    "end date": "Until Jan. 2, 2025 09:59 AM"
+    "end date": "Until Jan. 2, 2025 09:59"
   },
   "636": {
     "bg": [
@@ -8230,7 +8230,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Jan. 2, 2025 09:59 AM"
+    "end date": "Until Jan. 2, 2025 09:59"
   },
   "637": {
     "bg": [
@@ -8239,7 +8239,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Jan. 2, 2025 09:59 AM"
+    "end date": "Until Jan. 2, 2025 09:59"
   },
   "638": {
     "bg": [
@@ -8248,7 +8248,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Jan. 2, 2025 09:59 AM"
+    "end date": "Until Jan. 2, 2025 09:59"
   },
   "639": {
     "bg": [
@@ -8257,7 +8257,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Jan. 2, 2025 09:59 AM"
+    "end date": "Until Jan. 2, 2025 09:59"
   },
   "640": {
     "bg": [
@@ -8266,7 +8266,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Jan. 2, 2025 09:59 AM"
+    "end date": "Until Jan. 2, 2025 09:59"
   },
   "641": {
     "bg": [
@@ -8275,7 +8275,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Jan. 2, 2025 09:59 AM"
+    "end date": "Until Jan. 2, 2025 09:59"
   },
   "642": {
     "bg": [
@@ -8284,7 +8284,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Jan. 2, 2025 09:59 AM"
+    "end date": "Until Jan. 2, 2025 09:59"
   },
   "643": {
     "bg": [
@@ -8309,7 +8309,7 @@
     "banner": [
       "Gacha643_banner.webp"
     ],
-    "end date": "Until Jan. 3, 2025 09:59 PM"
+    "end date": "Until Jan. 3, 2025 21:59"
   },
   "644": {
     "bg": [
@@ -8324,7 +8324,7 @@
     "banner": [
       "Gacha644_banner.webp"
     ],
-    "end date": "Until Jan. 10, 2025 09:59 PM"
+    "end date": "Until Jan. 10, 2025 21:59"
   },
   "645": {
     "bg": [
@@ -8335,7 +8335,7 @@
     "banner": [
       "Gacha645_banner.webp"
     ],
-    "end date": "Until Jan. 10, 2025 09:59 PM"
+    "end date": "Until Jan. 10, 2025 21:59"
   },
   "646": {
     "bg": [
@@ -8346,7 +8346,7 @@
     "banner": [
       "Gacha646_banner.webp"
     ],
-    "end date": "Until Jan. 3, 2025 09:59 AM"
+    "end date": "Until Jan. 3, 2025 09:59"
   },
   "647": {
     "bg": [
@@ -8357,7 +8357,7 @@
     "banner": [
       "Gacha647_banner.webp"
     ],
-    "end date": "Until Jan. 30, 2025 09:59 PM"
+    "end date": "Until Jan. 30, 2025 21:59"
   },
   "648": {
     "bg": [
@@ -8372,7 +8372,7 @@
     ],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Jan. 10, 2025 09:59 PM"
+    "end date": "Until Jan. 10, 2025 21:59"
   },
   "650": {
     "bg": [
@@ -8383,7 +8383,7 @@
     "banner": [
       "Gacha650_banner.webp"
     ],
-    "end date": "Until Jan. 14, 2025 09:59 AM"
+    "end date": "Until Jan. 14, 2025 09:59"
   },
   "651": {
     "bg": [
@@ -8392,7 +8392,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Jan. 14, 2025 09:59 AM"
+    "end date": "Until Jan. 14, 2025 09:59"
   },
   "652": {
     "bg": [
@@ -8401,7 +8401,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Jan. 14, 2025 09:59 AM"
+    "end date": "Until Jan. 14, 2025 09:59"
   },
   "653": {
     "bg": [
@@ -8410,7 +8410,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Jan. 14, 2025 09:59 AM"
+    "end date": "Until Jan. 14, 2025 09:59"
   },
   "654": {
     "bg": [
@@ -8427,7 +8427,7 @@
     "banner": [
       "Gacha654_banner.webp"
     ],
-    "end date": "Until Jan. 20, 2025 09:59 PM"
+    "end date": "Until Jan. 20, 2025 21:59"
   },
   "655": {
     "bg": [
@@ -8444,7 +8444,7 @@
     "banner": [
       "Gacha655_banner.webp"
     ],
-    "end date": "Until Jan. 22, 2025 09:59 PM"
+    "end date": "Until Jan. 22, 2025 21:59"
   },
   "656": {
     "bg": [
@@ -8461,7 +8461,7 @@
     "banner": [
       "Gacha656_banner.webp"
     ],
-    "end date": "Until Jan. 22, 2025 09:59 PM"
+    "end date": "Until Jan. 22, 2025 21:59"
   },
   "657": {
     "bg": [
@@ -8472,7 +8472,7 @@
     "banner": [
       "Gacha657_banner.webp"
     ],
-    "end date": "Until Jan. 21, 2025 09:59 PM"
+    "end date": "Until Jan. 21, 2025 21:59"
   },
   "658": {
     "bg": [
@@ -8483,7 +8483,7 @@
     "banner": [
       "Gacha658_banner.webp"
     ],
-    "end date": "Until Jan. 26, 2025 09:59 PM"
+    "end date": "Until Jan. 26, 2025 21:59"
   },
   "659": {
     "bg": [
@@ -8494,7 +8494,7 @@
     "banner": [
       "Gacha659_banner.webp"
     ],
-    "end date": "Until Jan. 31, 2025 09:59 PM"
+    "end date": "Until Jan. 31, 2025 21:59"
   },
   "660": {
     "bg": [
@@ -8505,7 +8505,7 @@
     "banner": [
       "Gacha660_banner.webp"
     ],
-    "end date": "Until Feb. 5, 2025 09:59 PM"
+    "end date": "Until Feb. 5, 2025 21:59"
   },
   "661": {
     "bg": [
@@ -8516,7 +8516,7 @@
     "banner": [
       "Gacha661_banner.webp"
     ],
-    "end date": "Until Feb. 10, 2025 09:59 PM"
+    "end date": "Until Feb. 10, 2025 21:59"
   },
   "662": {
     "bg": [
@@ -8531,7 +8531,7 @@
     ],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Jan. 30, 2025 09:59 PM"
+    "end date": "Until Jan. 30, 2025 21:59"
   },
   "663": {
     "bg": [
@@ -8542,7 +8542,7 @@
     "banner": [
       "Gacha663_banner.webp"
     ],
-    "end date": "Until Feb. 3, 2025 09:59 PM"
+    "end date": "Until Feb. 3, 2025 21:59"
   },
   "664": {
     "bg": [
@@ -8553,7 +8553,7 @@
     "banner": [
       "Gacha664_banner.webp"
     ],
-    "end date": "Until Feb. 2, 2025 09:59 AM"
+    "end date": "Until Feb. 2, 2025 09:59"
   },
   "665": {
     "bg": [
@@ -8562,7 +8562,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Feb. 2, 2025 09:59 AM"
+    "end date": "Until Feb. 2, 2025 09:59"
   },
   "666": {
     "bg": [
@@ -8571,7 +8571,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Feb. 2, 2025 09:59 AM"
+    "end date": "Until Feb. 2, 2025 09:59"
   },
   "667": {
     "bg": [
@@ -8580,7 +8580,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Feb. 2, 2025 09:59 AM"
+    "end date": "Until Feb. 2, 2025 09:59"
   },
   "668": {
     "bg": [
@@ -8591,7 +8591,7 @@
     "banner": [
       "Gacha668_banner.webp"
     ],
-    "end date": "Until Feb. 5, 2025 09:59 AM"
+    "end date": "Until Feb. 5, 2025 09:59"
   },
   "669": {
     "bg": [
@@ -8600,7 +8600,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Feb. 5, 2025 09:59 AM"
+    "end date": "Until Feb. 5, 2025 09:59"
   },
   "670": {
     "bg": [
@@ -8609,7 +8609,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Feb. 5, 2025 09:59 AM"
+    "end date": "Until Feb. 5, 2025 09:59"
   },
   "671": {
     "bg": [
@@ -8618,7 +8618,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Feb. 5, 2025 09:59 AM"
+    "end date": "Until Feb. 5, 2025 09:59"
   },
   "672": {
     "bg": [
@@ -8635,7 +8635,7 @@
     "banner": [
       "Gacha672_banner.webp"
     ],
-    "end date": "Until Feb. 9, 2025 09:59 PM"
+    "end date": "Until Feb. 9, 2025 21:59"
   },
   "674": {
     "bg": [
@@ -8646,7 +8646,7 @@
     "banner": [
       "Gacha674_banner.webp"
     ],
-    "end date": "Until Feb. 16, 2025 09:59 AM"
+    "end date": "Until Feb. 16, 2025 09:59"
   },
   "675": {
     "bg": [
@@ -8655,7 +8655,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Feb. 16, 2025 09:59 AM"
+    "end date": "Until Feb. 16, 2025 09:59"
   },
   "676": {
     "bg": [
@@ -8664,7 +8664,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Feb. 16, 2025 09:59 AM"
+    "end date": "Until Feb. 16, 2025 09:59"
   },
   "677": {
     "bg": [
@@ -8673,7 +8673,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Feb. 16, 2025 09:59 AM"
+    "end date": "Until Feb. 16, 2025 09:59"
   },
   "678": {
     "bg": [
@@ -8690,7 +8690,7 @@
     "banner": [
       "Gacha678_banner.webp"
     ],
-    "end date": "Until Feb. 19, 2025 09:59 PM"
+    "end date": "Until Feb. 19, 2025 21:59"
   },
   "679": {
     "bg": [
@@ -8707,7 +8707,7 @@
     "banner": [
       "Gacha679_banner.webp"
     ],
-    "end date": "Until Feb. 20, 2025 09:59 PM"
+    "end date": "Until Feb. 20, 2025 21:59"
   },
   "680": {
     "bg": [
@@ -8724,7 +8724,7 @@
     "banner": [
       "Gacha680_banner.webp"
     ],
-    "end date": "Until Feb. 20, 2025 09:59 PM"
+    "end date": "Until Feb. 20, 2025 21:59"
   },
   "681": {
     "bg": [
@@ -8735,7 +8735,7 @@
     "banner": [
       "Gacha681_banner.webp"
     ],
-    "end date": "Until Feb. 23, 2025 09:59 AM"
+    "end date": "Until Feb. 23, 2025 09:59"
   },
   "682": {
     "bg": [
@@ -8744,7 +8744,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Feb. 23, 2025 09:59 AM"
+    "end date": "Until Feb. 23, 2025 09:59"
   },
   "683": {
     "bg": [
@@ -8753,7 +8753,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Feb. 23, 2025 09:59 AM"
+    "end date": "Until Feb. 23, 2025 09:59"
   },
   "684": {
     "bg": [
@@ -8762,7 +8762,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Feb. 23, 2025 09:59 AM"
+    "end date": "Until Feb. 23, 2025 09:59"
   },
   "685": {
     "bg": [
@@ -8790,7 +8790,7 @@
     "banner": [
       "Gacha685_banner.webp"
     ],
-    "end date": "Until Mar. 2, 2025 09:59 AM"
+    "end date": "Until Mar. 2, 2025 09:59"
   },
   "686": {
     "bg": [
@@ -8803,7 +8803,7 @@
     "banner": [
       "Gacha686_banner.webp"
     ],
-    "end date": "Until Mar. 2, 2025 09:59 AM"
+    "end date": "Until Mar. 2, 2025 09:59"
   },
   "687": {
     "bg": [
@@ -8818,7 +8818,7 @@
     ],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Feb. 27, 2025 09:59 PM"
+    "end date": "Until Feb. 27, 2025 21:59"
   },
   "688": {
     "bg": [
@@ -8829,7 +8829,7 @@
     "banner": [
       "Gacha688_banner.webp"
     ],
-    "end date": "Until Mar. 3, 2025 09:59 PM"
+    "end date": "Until Mar. 3, 2025 21:59"
   },
   "689": {
     "bg": [
@@ -8846,7 +8846,7 @@
     "banner": [
       "Gacha689_banner.webp"
     ],
-    "end date": "Until Mar. 9, 2025 10:59 PM"
+    "end date": "Until Mar. 9, 2025 22:59"
   },
   "690": {
     "bg": [
@@ -8857,7 +8857,7 @@
     "banner": [
       "Gacha690_banner.webp"
     ],
-    "end date": "Until Mar. 8, 2025 09:59 AM"
+    "end date": "Until Mar. 8, 2025 09:59"
   },
   "691": {
     "bg": [
@@ -8866,7 +8866,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Mar. 8, 2025 09:59 AM"
+    "end date": "Until Mar. 8, 2025 09:59"
   },
   "692": {
     "bg": [
@@ -8875,7 +8875,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Mar. 8, 2025 09:59 AM"
+    "end date": "Until Mar. 8, 2025 09:59"
   },
   "693": {
     "bg": [
@@ -8884,7 +8884,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Mar. 8, 2025 09:59 AM"
+    "end date": "Until Mar. 8, 2025 09:59"
   },
   "695": {
     "bg": [
@@ -8899,7 +8899,7 @@
     "banner": [
       "Gacha695_banner.webp"
     ],
-    "end date": "Until Mar. 15, 2025 10:59 AM"
+    "end date": "Until Mar. 15, 2025 10:59"
   },
   "696": {
     "bg": [
@@ -8916,7 +8916,7 @@
     "banner": [
       "Gacha696_banner.webp"
     ],
-    "end date": "Until Mar. 19, 2025 10:59 PM"
+    "end date": "Until Mar. 19, 2025 22:59"
   },
   "697": {
     "bg": [
@@ -8933,7 +8933,7 @@
     "banner": [
       "Gacha697_banner.webp"
     ],
-    "end date": "Until Mar. 20, 2025 10:59 PM"
+    "end date": "Until Mar. 20, 2025 22:59"
   },
   "698": {
     "bg": [
@@ -8950,7 +8950,7 @@
     ],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Mar. 20, 2025 10:59 PM"
+    "end date": "Until Mar. 20, 2025 22:59"
   },
   "699": {
     "bg": [
@@ -8961,7 +8961,7 @@
     "banner": [
       "Gacha699_banner.webp"
     ],
-    "end date": "Until Mar. 25, 2025 10:59 AM"
+    "end date": "Until Mar. 25, 2025 10:59"
   },
   "700": {
     "bg": [
@@ -8970,7 +8970,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Mar. 25, 2025 10:59 AM"
+    "end date": "Until Mar. 25, 2025 10:59"
   },
   "701": {
     "bg": [
@@ -8979,7 +8979,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Mar. 25, 2025 10:59 AM"
+    "end date": "Until Mar. 25, 2025 10:59"
   },
   "702": {
     "bg": [
@@ -8988,7 +8988,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Mar. 25, 2025 10:59 AM"
+    "end date": "Until Mar. 25, 2025 10:59"
   },
   "703": {
     "bg": [
@@ -9005,7 +9005,7 @@
     "banner": [
       "Gacha703_banner.webp"
     ],
-    "end date": "Until Mar. 29, 2025 10:59 PM"
+    "end date": "Until Mar. 29, 2025 22:59"
   },
   "704": {
     "bg": [
@@ -9029,7 +9029,7 @@
     "banner": [
       "Gacha704_banner.webp"
     ],
-    "end date": "Until Apr. 3, 2025 10:59 PM"
+    "end date": "Until Apr. 3, 2025 22:59"
   },
   "705": {
     "bg": [
@@ -9043,7 +9043,7 @@
     "banner": [
       "Gacha705_banner.webp"
     ],
-    "end date": "Until Apr. 7, 2025 10:59 PM"
+    "end date": "Until Apr. 7, 2025 22:59"
   },
   "706": {
     "bg": [
@@ -9052,7 +9052,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until May. 22, 2025 10:59 AM"
+    "end date": "Until May. 22, 2025 10:59"
   },
   "707": {
     "bg": [
@@ -9061,7 +9061,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until May. 22, 2025 10:59 AM"
+    "end date": "Until May. 22, 2025 10:59"
   },
   "709": {
     "bg": [
@@ -9072,7 +9072,7 @@
     "banner": [
       "Gacha709_banner.webp"
     ],
-    "end date": "Until Apr. 7, 2025 10:59 PM"
+    "end date": "Until Apr. 7, 2025 22:59"
   },
   "710": {
     "bg": [
@@ -9081,7 +9081,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Apr. 7, 2025 10:59 PM"
+    "end date": "Until Apr. 7, 2025 22:59"
   },
   "711": {
     "bg": [
@@ -9098,7 +9098,7 @@
     "banner": [
       "Gacha711_banner.webp"
     ],
-    "end date": "Until Apr. 7, 2025 10:59 PM"
+    "end date": "Until Apr. 7, 2025 22:59"
   },
   "712": {
     "bg": [
@@ -9109,7 +9109,7 @@
     "banner": [
       "Gacha712_banner.webp"
     ],
-    "end date": "Until Apr. 21, 2025 10:59 PM"
+    "end date": "Until Apr. 21, 2025 22:59"
   },
   "713": {
     "bg": [
@@ -9128,7 +9128,7 @@
     "banner": [
       "Gacha713_banner.webp"
     ],
-    "end date": "Until Apr. 21, 2025 10:59 PM"
+    "end date": "Until Apr. 21, 2025 22:59"
   },
   "714": {
     "bg": [
@@ -9145,7 +9145,7 @@
     "banner": [
       "Gacha714_banner.webp"
     ],
-    "end date": "Until Apr. 19, 2025 10:59 PM"
+    "end date": "Until Apr. 19, 2025 22:59"
   },
   "715": {
     "bg": [
@@ -9162,7 +9162,7 @@
     "banner": [
       "Gacha715_banner.webp"
     ],
-    "end date": "Until Apr. 19, 2025 10:59 PM"
+    "end date": "Until Apr. 19, 2025 22:59"
   },
   "716": {
     "bg": [
@@ -9173,7 +9173,7 @@
     "banner": [
       "Gacha716_banner.webp"
     ],
-    "end date": "Until Apr. 20, 2025 10:59 AM"
+    "end date": "Until Apr. 20, 2025 10:59"
   },
   "717": {
     "bg": [
@@ -9182,7 +9182,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Apr. 20, 2025 10:59 AM"
+    "end date": "Until Apr. 20, 2025 10:59"
   },
   "718": {
     "bg": [
@@ -9191,7 +9191,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Apr. 20, 2025 10:59 AM"
+    "end date": "Until Apr. 20, 2025 10:59"
   },
   "719": {
     "bg": [
@@ -9200,7 +9200,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Apr. 20, 2025 10:59 AM"
+    "end date": "Until Apr. 20, 2025 10:59"
   },
   "720": {
     "bg": [
@@ -9217,7 +9217,7 @@
     "banner": [
       "Gacha720_banner.webp"
     ],
-    "end date": "Until Apr. 29, 2025 10:59 PM"
+    "end date": "Until Apr. 29, 2025 22:59"
   },
   "721": {
     "bg": [
@@ -9228,7 +9228,7 @@
     "banner": [
       "Gacha721_banner.webp"
     ],
-    "end date": "Until May. 6, 2025 10:59 AM"
+    "end date": "Until May. 6, 2025 10:59"
   },
   "722": {
     "bg": [
@@ -9237,7 +9237,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until May. 6, 2025 10:59 AM"
+    "end date": "Until May. 6, 2025 10:59"
   },
   "723": {
     "bg": [
@@ -9246,7 +9246,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until May. 6, 2025 10:59 AM"
+    "end date": "Until May. 6, 2025 10:59"
   },
   "724": {
     "bg": [
@@ -9255,7 +9255,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until May. 6, 2025 10:59 AM"
+    "end date": "Until May. 6, 2025 10:59"
   },
   "725": {
     "bg": [
@@ -9272,7 +9272,7 @@
     "banner": [
       "Gacha725_banner.webp"
     ],
-    "end date": "Until May. 8, 2025 10:59 PM"
+    "end date": "Until May. 8, 2025 22:59"
   },
   "726": {
     "bg": [
@@ -9283,7 +9283,7 @@
     "banner": [
       "Gacha726_banner.webp"
     ],
-    "end date": "Until May. 22, 2025 10:59 PM"
+    "end date": "Until May. 22, 2025 22:59"
   },
   "728": {
     "bg": [
@@ -9294,7 +9294,7 @@
     "banner": [
       "Gacha728_banner.webp"
     ],
-    "end date": "Until May. 15, 2025 10:59 AM"
+    "end date": "Until May. 15, 2025 10:59"
   },
   "729": {
     "bg": [
@@ -9303,7 +9303,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until May. 15, 2025 10:59 AM"
+    "end date": "Until May. 15, 2025 10:59"
   },
   "730": {
     "bg": [
@@ -9312,7 +9312,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until May. 15, 2025 10:59 AM"
+    "end date": "Until May. 15, 2025 10:59"
   },
   "731": {
     "bg": [
@@ -9321,7 +9321,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until May. 15, 2025 10:59 AM"
+    "end date": "Until May. 15, 2025 10:59"
   },
   "732": {
     "bg": [
@@ -9332,7 +9332,7 @@
     "banner": [
       "Gacha732_banner.webp"
     ],
-    "end date": "Until May. 13, 2025 10:59 AM"
+    "end date": "Until May. 13, 2025 10:59"
   },
   "733": {
     "bg": [
@@ -9349,7 +9349,7 @@
     ],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until May. 22, 2025 10:59 PM"
+    "end date": "Until May. 22, 2025 22:59"
   },
   "734": {
     "bg": [
@@ -9366,7 +9366,7 @@
     "banner": [
       "Gacha734_banner.webp"
     ],
-    "end date": "Until May. 20, 2025 10:59 PM"
+    "end date": "Until May. 20, 2025 22:59"
   },
   "735": {
     "bg": [
@@ -9385,7 +9385,7 @@
     "banner": [
       "Gacha735_banner.webp"
     ],
-    "end date": "Until May. 20, 2025 10:59 PM"
+    "end date": "Until May. 20, 2025 22:59"
   },
   "736": {
     "bg": [
@@ -9396,7 +9396,7 @@
     "banner": [
       "Gacha736_banner.webp"
     ],
-    "end date": "Until May. 23, 2025 10:59 AM"
+    "end date": "Until May. 23, 2025 10:59"
   },
   "737": {
     "bg": [
@@ -9405,7 +9405,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until May. 23, 2025 10:59 AM"
+    "end date": "Until May. 23, 2025 10:59"
   },
   "738": {
     "bg": [
@@ -9414,7 +9414,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until May. 23, 2025 10:59 AM"
+    "end date": "Until May. 23, 2025 10:59"
   },
   "739": {
     "bg": [
@@ -9423,7 +9423,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until May. 23, 2025 10:59 AM"
+    "end date": "Until May. 23, 2025 10:59"
   },
   "740": {
     "bg": [
@@ -9440,7 +9440,7 @@
     "banner": [
       "Gacha740_banner.webp"
     ],
-    "end date": "Until May. 30, 2025 10:59 PM"
+    "end date": "Until May. 30, 2025 22:59"
   },
   "741": {
     "bg": [
@@ -9449,7 +9449,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until May. 31, 2025 10:59 AM"
+    "end date": "Until May. 31, 2025 10:59"
   },
   "742": {
     "bg": [
@@ -9458,7 +9458,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until May. 31, 2025 10:59 AM"
+    "end date": "Until May. 31, 2025 10:59"
   },
   "743": {
     "bg": [
@@ -9467,7 +9467,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until May. 31, 2025 10:59 AM"
+    "end date": "Until May. 31, 2025 10:59"
   },
   "744": {
     "bg": [
@@ -9476,7 +9476,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until May. 31, 2025 10:59 AM"
+    "end date": "Until May. 31, 2025 10:59"
   },
   "745": {
     "bg": [
@@ -9487,7 +9487,7 @@
     "banner": [
       "Gacha745_banner.webp"
     ],
-    "end date": "Until Jun. 3, 2025 10:59 PM"
+    "end date": "Until Jun. 3, 2025 22:59"
   },
   "746": {
     "bg": [
@@ -9504,7 +9504,7 @@
     "banner": [
       "Gacha746_banner.webp"
     ],
-    "end date": "Until Jun. 8, 2025 10:59 PM"
+    "end date": "Until Jun. 8, 2025 22:59"
   },
   "747": {
     "bg": [
@@ -9515,7 +9515,7 @@
     "banner": [
       "Gacha747_banner.webp"
     ],
-    "end date": "Until Jun. 22, 2025 10:59 PM"
+    "end date": "Until Jun. 22, 2025 22:59"
   },
   "749": {
     "bg": [
@@ -9534,7 +9534,7 @@
     "banner": [
       "Gacha749_banner.webp"
     ],
-    "end date": "Until Jun. 22, 2025 10:59 PM"
+    "end date": "Until Jun. 22, 2025 22:59"
   },
   "750": {
     "bg": [
@@ -9551,7 +9551,7 @@
     "banner": [
       "Gacha750_banner.webp"
     ],
-    "end date": "Until Jun. 20, 2025 10:59 PM"
+    "end date": "Until Jun. 20, 2025 22:59"
   },
   "751": {
     "bg": [
@@ -9566,7 +9566,7 @@
     ],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Jun. 20, 2025 10:59 PM"
+    "end date": "Until Jun. 20, 2025 22:59"
   },
   "752": {
     "bg": [
@@ -9577,7 +9577,7 @@
     "banner": [
       "Gacha752_banner.webp"
     ],
-    "end date": "Until Jul. 6, 2025 10:59 PM"
+    "end date": "Until Jul. 6, 2025 22:59"
   },
   "753": {
     "bg": [
@@ -9588,7 +9588,7 @@
     "banner": [
       "Gacha753_banner.webp"
     ],
-    "end date": "Until Jun. 30, 2025 10:59 AM"
+    "end date": "Until Jun. 30, 2025 10:59"
   },
   "754": {
     "bg": [
@@ -9597,7 +9597,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Jun. 30, 2025 10:59 AM"
+    "end date": "Until Jun. 30, 2025 10:59"
   },
   "755": {
     "bg": [
@@ -9606,7 +9606,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Jun. 30, 2025 10:59 AM"
+    "end date": "Until Jun. 30, 2025 10:59"
   },
   "756": {
     "bg": [
@@ -9615,7 +9615,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Jun. 30, 2025 10:59 AM"
+    "end date": "Until Jun. 30, 2025 10:59"
   },
   "757": {
     "bg": [
@@ -9634,7 +9634,7 @@
     "banner": [
       "Gacha757_banner.webp"
     ],
-    "end date": "Until Jul. 6, 2025 10:59 PM"
+    "end date": "Until Jul. 6, 2025 22:59"
   },
   "758": {
     "bg": [
@@ -9645,7 +9645,7 @@
     "banner": [
       "Gacha758_banner.webp"
     ],
-    "end date": "Until Jul. 3, 2025 10:59 PM"
+    "end date": "Until Jul. 3, 2025 22:59"
   },
   "759": {
     "bg": [
@@ -9658,7 +9658,7 @@
     "banner": [
       "Gacha759_banner.webp"
     ],
-    "end date": "Until Jul. 8, 2025 10:59 PM"
+    "end date": "Until Jul. 8, 2025 22:59"
   },
   "760": {
     "bg": [
@@ -9671,7 +9671,7 @@
     "banner": [
       "Gacha760_banner.webp"
     ],
-    "end date": "Until Jul. 8, 2025 10:59 PM"
+    "end date": "Until Jul. 8, 2025 22:59"
   },
   "762": {
     "bg": [
@@ -9695,7 +9695,7 @@
     "banner": [
       "Gacha762_banner.webp"
     ],
-    "end date": "Until Jul. 10, 2025 10:59 PM"
+    "end date": "Until Jul. 10, 2025 22:59"
   },
   "763": {
     "bg": [
@@ -9712,7 +9712,7 @@
     "banner": [
       "Gacha763_banner.webp"
     ],
-    "end date": "Until Jul. 14, 2025 10:59 PM"
+    "end date": "Until Jul. 14, 2025 22:59"
   },
   "764": {
     "bg": [
@@ -9729,7 +9729,7 @@
     "banner": [
       "Gacha764_banner.webp"
     ],
-    "end date": "Until Jul. 21, 2025 10:59 PM"
+    "end date": "Until Jul. 21, 2025 22:59"
   },
   "765": {
     "bg": [
@@ -9744,7 +9744,7 @@
     ],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Jul. 21, 2025 10:59 PM"
+    "end date": "Until Jul. 21, 2025 22:59"
   },
   "766": {
     "bg": [
@@ -9761,7 +9761,7 @@
     "banner": [
       "Gacha766_banner.webp"
     ],
-    "end date": "Until Jul. 22, 2025 10:59 PM"
+    "end date": "Until Jul. 22, 2025 22:59"
   },
   "767": {
     "bg": [
@@ -9772,7 +9772,7 @@
     "banner": [
       "Gacha767_banner.webp"
     ],
-    "end date": "Until Jul. 26, 2025 10:59 AM"
+    "end date": "Until Jul. 26, 2025 10:59"
   },
   "768": {
     "bg": [
@@ -9781,7 +9781,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Jul. 26, 2025 10:59 AM"
+    "end date": "Until Jul. 26, 2025 10:59"
   },
   "769": {
     "bg": [
@@ -9790,7 +9790,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Jul. 26, 2025 10:59 AM"
+    "end date": "Until Jul. 26, 2025 10:59"
   },
   "770": {
     "bg": [
@@ -9799,7 +9799,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Jul. 26, 2025 10:59 AM"
+    "end date": "Until Jul. 26, 2025 10:59"
   },
   "771": {
     "bg": [
@@ -9816,7 +9816,7 @@
     "banner": [
       "Gacha771_banner.webp"
     ],
-    "end date": "Until Jul. 30, 2025 10:59 PM"
+    "end date": "Until Jul. 30, 2025 22:59"
   },
   "772": {
     "bg": [
@@ -9827,7 +9827,7 @@
     "banner": [
       "Gacha772_banner.webp"
     ],
-    "end date": "Until Aug. 1, 2025 10:59 AM"
+    "end date": "Until Aug. 1, 2025 10:59"
   },
   "773": {
     "bg": [
@@ -9836,7 +9836,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Aug. 1, 2025 10:59 AM"
+    "end date": "Until Aug. 1, 2025 10:59"
   },
   "774": {
     "bg": [
@@ -9845,7 +9845,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Aug. 1, 2025 10:59 AM"
+    "end date": "Until Aug. 1, 2025 10:59"
   },
   "775": {
     "bg": [
@@ -9854,7 +9854,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Aug. 1, 2025 10:59 AM"
+    "end date": "Until Aug. 1, 2025 10:59"
   },
   "776": {
     "bg": [
@@ -9868,7 +9868,7 @@
     "banner": [
       "Gacha776_banner.webp"
     ],
-    "end date": "Until Aug. 4, 2025 10:59 PM"
+    "end date": "Until Aug. 4, 2025 22:59"
   },
   "777": {
     "bg": [
@@ -9882,7 +9882,7 @@
     "banner": [
       "Gacha777_banner.webp"
     ],
-    "end date": "Until Aug. 4, 2025 10:59 PM"
+    "end date": "Until Aug. 4, 2025 22:59"
   },
   "778": {
     "bg": [
@@ -9899,7 +9899,7 @@
     "banner": [
       "Gacha778_banner.webp"
     ],
-    "end date": "Until Aug. 7, 2025 10:59 PM"
+    "end date": "Until Aug. 7, 2025 22:59"
   },
   "779": {
     "bg": [
@@ -9910,7 +9910,7 @@
     "banner": [
       "Gacha779_banner.webp"
     ],
-    "end date": "Until Aug. 21, 2025 10:59 PM"
+    "end date": "Until Aug. 21, 2025 22:59"
   },
   "781": {
     "bg": [
@@ -9924,7 +9924,7 @@
     "banner": [
       "Gacha781_banner.webp"
     ],
-    "end date": "Until Aug. 13, 2025 10:59 AM"
+    "end date": "Until Aug. 13, 2025 10:59"
   },
   "782": {
     "bg": [
@@ -9943,7 +9943,7 @@
     "banner": [
       "Gacha782_banner.webp"
     ],
-    "end date": "Until Aug. 21, 2025 10:59 PM"
+    "end date": "Until Aug. 21, 2025 22:59"
   },
   "783": {
     "bg": [
@@ -9954,7 +9954,7 @@
     "banner": [
       "Gacha783_banner.webp"
     ],
-    "end date": "Until Aug. 17, 2025 02:59 PM"
+    "end date": "Until Aug. 17, 2025 14:59"
   },
   "784": {
     "bg": [
@@ -9963,7 +9963,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Aug. 17, 2025 02:59 PM"
+    "end date": "Until Aug. 17, 2025 14:59"
   },
   "785": {
     "bg": [
@@ -9972,7 +9972,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Aug. 17, 2025 02:59 PM"
+    "end date": "Until Aug. 17, 2025 14:59"
   },
   "786": {
     "bg": [
@@ -9981,7 +9981,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Aug. 17, 2025 02:59 PM"
+    "end date": "Until Aug. 17, 2025 14:59"
   },
   "787": {
     "bg": [
@@ -9998,7 +9998,7 @@
     "banner": [
       "Gacha787_banner.webp"
     ],
-    "end date": "Until Aug. 21, 2025 02:59 AM"
+    "end date": "Until Aug. 21, 2025 02:59"
   },
   "788": {
     "bg": [
@@ -10013,7 +10013,7 @@
     ],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Aug. 21, 2025 02:59 AM"
+    "end date": "Until Aug. 21, 2025 02:59"
   },
   "789": {
     "bg": [
@@ -10030,7 +10030,7 @@
     "banner": [
       "Gacha789_banner.webp"
     ],
-    "end date": "Until Aug. 30, 2025 02:59 AM"
+    "end date": "Until Aug. 30, 2025 02:59"
   },
   "790": {
     "bg": [
@@ -10041,7 +10041,7 @@
     "banner": [
       "Gacha790_banner.webp"
     ],
-    "end date": "Until Sep. 2, 2025 02:59 PM"
+    "end date": "Until Sep. 2, 2025 14:59"
   },
   "791": {
     "bg": [
@@ -10050,7 +10050,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Sep. 2, 2025 02:59 PM"
+    "end date": "Until Sep. 2, 2025 14:59"
   },
   "792": {
     "bg": [
@@ -10059,7 +10059,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Sep. 2, 2025 02:59 PM"
+    "end date": "Until Sep. 2, 2025 14:59"
   },
   "793": {
     "bg": [
@@ -10068,7 +10068,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Sep. 2, 2025 02:59 PM"
+    "end date": "Until Sep. 2, 2025 14:59"
   },
   "794": {
     "bg": [
@@ -10080,7 +10080,7 @@
     ],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Sep. 4, 2025 02:59 AM"
+    "end date": "Until Sep. 4, 2025 02:59"
   },
   "795": {
     "bg": [
@@ -10089,7 +10089,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Sep. 6, 2025 02:59 PM"
+    "end date": "Until Sep. 6, 2025 14:59"
   },
   "796": {
     "bg": [
@@ -10098,7 +10098,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Sep. 6, 2025 02:59 PM"
+    "end date": "Until Sep. 6, 2025 14:59"
   },
   "797": {
     "bg": [
@@ -10107,7 +10107,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Sep. 6, 2025 02:59 PM"
+    "end date": "Until Sep. 6, 2025 14:59"
   },
   "798": {
     "bg": [
@@ -10116,7 +10116,7 @@
     "img": [],
     "logo": "logo/logo.webp",
     "banner": [],
-    "end date": "Until Sep. 6, 2025 02:59 PM"
+    "end date": "Until Sep. 6, 2025 14:59"
   },
   "799": {
     "bg": [
@@ -10133,7 +10133,7 @@
     "banner": [
       "Gacha799_banner.webp"
     ],
-    "end date": "Until Sep. 6, 2025 02:59 AM"
+    "end date": "Until Sep. 6, 2025 02:59"
   },
   "800": {
     "bg": [
@@ -10144,7 +10144,7 @@
     "banner": [
       "Gacha800_banner.webp"
     ],
-    "end date": "Until Sep. 20, 2025 02:59 AM"
+    "end date": "Until Sep. 20, 2025 02:59"
   },
   "801": {
     "bg": [
@@ -10155,7 +10155,7 @@
     "banner": [
       "Gacha801_banner.webp"
     ],
-    "end date": "Until Sep. 4, 2025 02:59 AM"
+    "end date": "Until Sep. 4, 2025 02:59"
   },
   "803": {
     "bg": [
@@ -10178,7 +10178,7 @@
     "banner": [
       "Gacha803_banner.webp"
     ],
-    "end date": "Until Sep. 20, 2025 02:59 AM"
+    "end date": "Until Sep. 20, 2025 02:59"
   },
   "birthday_Rin": {
     "bg": [],

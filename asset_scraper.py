@@ -1368,8 +1368,8 @@ def generate_or_update_gacha_manifest(
             if "end_date" in gacha_entry:
                 raw = gacha_entry["end_date"]
                 dt = datetime.strptime(raw, "%m/%d/%Y, %I:%M:%S %p")
-                formatted = dt.strftime("Until %b. %-d, %Y %I:%M %p")
-                # Get rid of seconds in end_date 
+                # example: "Until Mar. 3, 2024 15:00"
+                formatted = dt.strftime("Until %b. %-d, %Y %H:%M") 
                 entry["end date"] = formatted
 
         # Collect assets from disk (non-destructive merge)
