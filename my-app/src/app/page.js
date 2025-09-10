@@ -38,6 +38,7 @@ export default function Home() {
       const meta = gachaMeta?.[id];
       const titleJP = meta?.["title (japanese)"] || "";
       return (
+        id.includes(searchQuery) || // Match by ID
         titleJP.toLowerCase().includes(searchQuery.toLowerCase()) // Match by title
       );
     });
