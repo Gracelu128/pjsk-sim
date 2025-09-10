@@ -22,6 +22,7 @@ function sanitizeManifest(m) {
 export default function Home() {
   const [manifest, setManifest] = useState({});
   const [searchQuery, setSearchQuery] = useState(""); // State for search input
+  const [filteredGachaIds, setFilteredGachaIds] = useState([]); // State for filtered gacha IDs
 
   useEffect(() => {
     fetch("/gacha/manifest.json")
@@ -31,16 +32,17 @@ export default function Home() {
 
   const gachaIds = Object.keys(manifest);
 
-  // Filter gachaIds based on search query
-  const filteredGachaIds = gachaIds.filter((id) => {
-    const entry = manifest[id]; // Get the manifest entry for the gacha ID
-    const meta = gachaMeta?.[id]; // Get metadata for the gacha ID
-    const titleJP = meta?.["title (japanese)"] || "";
-    return (
-      id.includes(searchQuery) || // Match by ID
-      titleJP.toLowerCase().includes(searchQuery.toLowerCase()) // Match by title
-    );
-  });
+  useEffect(() => {
+    // Filter gachaIds whenever the searchQuery changes
+    const filtered = gachaIds.filter((id) => {
+      const meta = gachaMeta?.[id];
+      const titleJP = meta?.["title (japanese)"] || "";
+      return (
+        titleJP.toLowerCase().includes(searchQuery.toLowerCase()) // Match by title
+      );
+    });
+    setFilteredGachaIds(filtered);
+  }, [searchQuery]);
 
   return (
     <main style={{ minHeight: "100vh", padding: "24px", boxSizing: "border-box" }}>
