@@ -21,6 +21,7 @@ function sanitizeManifest(m) {
 
 export default function Home() {
   const [manifest, setManifest] = useState({});
+  const [searchQuery, setSearchQuery] = useState(""); // State for search input
 
   useEffect(() => {
     fetch("/gacha/manifest.json")
@@ -30,9 +31,36 @@ export default function Home() {
 
   const gachaIds = Object.keys(manifest);
 
+  // Filter gachaIds based on search query
+  const filteredGachaIds = gachaIds.filter((id) => {
+    const entry = manifest[id]; // Get the manifest entry for the gacha ID
+    const meta = gachaMeta?.[id]; // Get metadata for the gacha ID
+    const titleJP = meta?.["title (japanese)"] || "";
+    return (
+      id.includes(searchQuery) || // Match by ID
+      titleJP.toLowerCase().includes(searchQuery.toLowerCase()) // Match by title
+    );
+  });
+
   return (
     <main style={{ minHeight: "100vh", padding: "24px", boxSizing: "border-box" }}>
       <h1 style={{ marginBottom: 16 }}>Gacha Gallery</h1>
+
+      {/* Search Bar */}
+      <input
+        type="text"
+        placeholder="Search..."
+        value={searchQuery}
+        onChange={(e) => setSearchQuery(e.target.value)}
+        style={{
+          marginBottom: 16,
+          padding: 8,
+          borderRadius: 4,
+          border: "1px solid #e2e2e2",
+          width: "100%",
+          maxWidth: 400,
+        }}
+      />
 
       <div
         style={{
