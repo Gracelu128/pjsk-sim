@@ -46,7 +46,6 @@ export default function Home() {
     else {
       // Filter gachaIds whenever the searchQuery changes
       const filtered = gachaIds.filter((id) => {
-        const meta = gachaMeta?.[id];
         const titleJP = meta?.["title (japanese)"] || "";
         return (
           id.includes(searchQuery) || // Match by ID
