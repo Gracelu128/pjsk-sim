@@ -32,17 +32,27 @@ export default function Home() {
 
   const gachaIds = Object.keys(manifest);
 
+  // Initially set filteredGachaIds to all gachaIds
   useEffect(() => {
-    // Filter gachaIds whenever the searchQuery changes
-    const filtered = gachaIds.filter((id) => {
-      const meta = gachaMeta?.[id];
-      const titleJP = meta?.["title (japanese)"] || "";
-      return (
-        id.includes(searchQuery) || // Match by ID
-        titleJP.toLowerCase().includes(searchQuery.toLowerCase()) // Match by title
-      );
-    });
-    setFilteredGachaIds(filtered);
+    setFilteredGachaIds(gachaIds);
+  }, [gachaIds]);
+
+  useEffect(() => {
+    if (searchQuery.trim() === "") {
+      setFilteredGachaIds(gachaIds);
+    }
+    else {
+      // Filter gachaIds whenever the searchQuery changes
+      const filtered = gachaIds.filter((id) => {
+        const meta = gachaMeta?.[id];
+        const titleJP = meta?.["title (japanese)"] || "";
+        return (
+          id.includes(searchQuery) || // Match by ID
+          titleJP.toLowerCase().includes(searchQuery.toLowerCase()) // Match by title
+        );
+      });
+      setFilteredGachaIds(filtered);
+    }
   }, [searchQuery]);
 
   return (
@@ -72,7 +82,7 @@ export default function Home() {
           gap: 16,
         }}
       >
-        {gachaIds.map((id) => {
+        {filteredGachaIds.map((id) => {
           const entry = manifest[id];
           const src = logoPath(id, entry);
           if (!src) return null;
