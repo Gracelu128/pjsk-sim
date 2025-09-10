@@ -32,10 +32,12 @@ export default function Home() {
 
   const gachaIds = Object.keys(manifest);
 
-  // Initially set filteredGachaIds to all gachaIds
   useEffect(() => {
-    setFilteredGachaIds(gachaIds);
-  }, [gachaIds]);
+    // Set all gachaIds as the initial filtered list when the manifest is loaded
+    if (Object.keys(manifest).length > 0) {
+      setFilteredGachaIds(Object.keys(manifest));
+    }
+  }, [manifest]);
 
   useEffect(() => {
     if (searchQuery.trim() === "") {
