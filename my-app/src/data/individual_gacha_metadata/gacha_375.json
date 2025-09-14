@@ -1,38 +1,44 @@
 {
   "id": 375,
   "title (japanese)": "[3周年直前生放送配信記念]10連無料ガチャ",
-  "release_date": "9/26/2023, 8:00:00 AM",
+  "release_date": "9/26/2023, 11:00:00 AM",
   "end_date": "10/27/2023, 10:59:59 AM",
   "type": "normal",
   "gacha_rate_index": 0,
   "featured_cards": [
     {
       "card_id": "666",
+      "character": "Kagamine Len",
       "normal_rate": 0.013,
       "guaranteed_rate": 0.013
     },
     {
       "card_id": "578",
+      "character": "Hinomori Shiho",
       "normal_rate": 0.013,
       "guaranteed_rate": 0.013
     },
     {
       "card_id": "642",
+      "character": "Kiritani Haruka",
       "normal_rate": 0.013,
       "guaranteed_rate": 0.013
     },
     {
       "card_id": "551",
+      "character": "Shinonome Akito",
       "normal_rate": 0.013,
       "guaranteed_rate": 0.013
     },
     {
       "card_id": "571",
+      "character": "Otori Emu",
       "normal_rate": 0.013,
       "guaranteed_rate": 0.013
     },
     {
       "card_id": "614",
+      "character": "Akiyama Mizuki",
       "normal_rate": 0.013,
       "guaranteed_rate": 0.013
     }

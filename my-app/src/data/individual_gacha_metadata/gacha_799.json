@@ -1,23 +1,26 @@
 {
   "id": 799,
   "title (japanese)": "絶望の雨すら笑ってガチャ",
-  "release_date": "8/30/2025, 3:00:00 AM",
-  "end_date": "9/6/2025, 2:59:59 AM",
+  "release_date": "8/29/2025, 11:00:00 PM",
+  "end_date": "9/5/2025, 10:59:59 PM",
   "type": "limited",
   "gacha_rate_index": 0,
   "featured_cards": [
     {
       "card_id": "1229",
+      "character": "Tenma Tsukasa",
       "normal_rate": 0.4,
       "guaranteed_rate": 0.4
     },
     {
       "card_id": "1230",
+      "character": "Otori Emu",
       "normal_rate": 0.4,
       "guaranteed_rate": 0.4
     },
     {
       "card_id": "1231",
+      "character": "Kamishiro Rui",
       "normal_rate": 0.4,
       "guaranteed_rate": 0.4
     }

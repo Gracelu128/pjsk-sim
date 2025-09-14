@@ -1,38 +1,44 @@
 {
   "id": 379,
   "title (japanese)": "[3周年記念][バーチャル・シンガー]プレミアムプレゼントガチャ",
-  "release_date": "9/29/2023, 8:00:00 AM",
+  "release_date": "9/29/2023, 11:00:00 AM",
   "end_date": "10/11/2023, 10:59:59 PM",
   "type": "normal",
   "gacha_rate_index": 0,
   "featured_cards": [
     {
       "card_id": "644",
+      "character": "Hatsune Miku",
       "normal_rate": 0.056,
       "guaranteed_rate": 0.056
     },
     {
       "card_id": "661",
+      "character": "Kagamine Rin",
       "normal_rate": 0.056,
       "guaranteed_rate": 0.056
     },
     {
       "card_id": "573",
+      "character": "Kagamine Len",
       "normal_rate": 0.056,
       "guaranteed_rate": 0.056
     },
     {
       "card_id": "553",
+      "character": "Megurine Luka",
       "normal_rate": 0.056,
       "guaranteed_rate": 0.056
     },
     {
       "card_id": "483",
+      "character": "MEIKO",
       "normal_rate": 0.056,
       "guaranteed_rate": 0.056
     },
     {
       "card_id": "506",
+      "character": "KAITO",
       "normal_rate": 0.056,
       "guaranteed_rate": 0.056
     }

@@ -1,23 +1,26 @@
 {
   "id": 205,
   "title (japanese)": "君に叫ぶ青き声ガチャ",
-  "release_date": "4/29/2022, 8:00:00 PM",
+  "release_date": "4/29/2022, 11:00:00 PM",
   "end_date": "5/9/2022, 10:59:59 PM",
   "type": "limited",
   "gacha_rate_index": 0,
   "featured_cards": [
     {
       "card_id": "422",
+      "character": "Kiritani Haruka",
       "normal_rate": 0.4,
       "guaranteed_rate": 0.4
     },
     {
       "card_id": "423",
+      "character": "Hanasato Minori",
       "normal_rate": 0.4,
       "guaranteed_rate": 0.4
     },
     {
       "card_id": "424",
+      "character": "Kagamine Rin",
       "normal_rate": 0.4,
       "guaranteed_rate": 0.4
     }

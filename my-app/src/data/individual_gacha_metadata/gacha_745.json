@@ -1,38 +1,44 @@
 {
   "id": 745,
   "title (japanese)": "ハピネスパッケージガチャ",
-  "release_date": "5/25/2025, 8:00:00 PM",
+  "release_date": "5/25/2025, 11:00:00 PM",
   "end_date": "6/3/2025, 10:59:59 PM",
   "type": "gift",
   "gacha_rate_index": 2,
   "featured_cards": [
     {
       "card_id": "929",
+      "character": "Kagamine Len",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.303
     },
     {
       "card_id": "829",
+      "character": "Hinomori Shiho",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.303
     },
     {
       "card_id": "716",
+      "character": "Kiritani Haruka",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.303
     },
     {
       "card_id": "994",
+      "character": "Shinonome Akito",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.303
     },
     {
       "card_id": "855",
+      "character": "Kusanagi Nene",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.303
     },
     {
       "card_id": "1097",
+      "character": "Yoisaki Kanade",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.303
     }

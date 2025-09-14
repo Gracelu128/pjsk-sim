@@ -1,38 +1,44 @@
 {
   "id": 647,
   "title (japanese)": "[2025新春]お正月無料ガチャ",
-  "release_date": "12/30/2024, 7:00:00 PM",
+  "release_date": "12/30/2024, 10:00:00 PM",
   "end_date": "1/30/2025, 9:59:59 PM",
   "type": "normal",
   "gacha_rate_index": 0,
   "featured_cards": [
     {
       "card_id": "1000",
+      "character": "Kagamine Len",
       "normal_rate": 0.01,
       "guaranteed_rate": 0.01
     },
     {
       "card_id": "715",
+      "character": "Hinomori Shiho",
       "normal_rate": 0.01,
       "guaranteed_rate": 0.01
     },
     {
       "card_id": "873",
+      "character": "Hanasato Minori",
       "normal_rate": 0.01,
       "guaranteed_rate": 0.01
     },
     {
       "card_id": "973",
+      "character": "Aoyagi Toya",
       "normal_rate": 0.01,
       "guaranteed_rate": 0.01
     },
     {
       "card_id": "927",
+      "character": "Otori Emu",
       "normal_rate": 0.01,
       "guaranteed_rate": 0.01
     },
     {
       "card_id": "974",
+      "character": "Yoisaki Kanade",
       "normal_rate": 0.01,
       "guaranteed_rate": 0.01
     }

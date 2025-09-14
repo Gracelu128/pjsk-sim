@@ -1,38 +1,44 @@
 {
   "id": 3,
   "title (japanese)": "バーチャル・シンガー限定ガチャ",
-  "release_date": "4/30/2019, 8:00:00 PM",
+  "release_date": "4/30/2019, 11:00:00 PM",
   "end_date": "10/9/2020, 1:59:59 AM",
   "type": "normal",
   "gacha_rate_index": 0,
   "featured_cards": [
     {
       "card_id": "88",
+      "character": "Hatsune Miku",
       "normal_rate": 1.0,
       "guaranteed_rate": 1.0
     },
     {
       "card_id": "92",
+      "character": "Kagamine Rin",
       "normal_rate": 1.0,
       "guaranteed_rate": 1.0
     },
     {
       "card_id": "96",
+      "character": "Kagamine Len",
       "normal_rate": 1.0,
       "guaranteed_rate": 1.0
     },
     {
       "card_id": "99",
+      "character": "Megurine Luka",
       "normal_rate": 1.417,
       "guaranteed_rate": 16.167
     },
     {
       "card_id": "103",
+      "character": "MEIKO",
       "normal_rate": 1.417,
       "guaranteed_rate": 16.167
     },
     {
       "card_id": "107",
+      "character": "KAITO",
       "normal_rate": 1.417,
       "guaranteed_rate": 16.167
     }

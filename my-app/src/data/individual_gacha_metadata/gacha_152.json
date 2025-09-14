@@ -1,38 +1,44 @@
 {
   "id": 152,
   "title (japanese)": "セレクトリストガチャ",
-  "release_date": "11/25/2021, 10:00:00 PM",
+  "release_date": "11/26/2021, 1:00:00 AM",
   "end_date": "12/4/2021, 12:59:59 AM",
   "type": "normal",
   "gacha_rate_index": 2,
   "featured_cards": [
     {
       "card_id": "209",
+      "character": "Tenma Saki",
       "normal_rate": 0.032,
       "guaranteed_rate": 1.075
     },
     {
       "card_id": "229",
+      "character": "Kagamine Len",
       "normal_rate": 0.032,
       "guaranteed_rate": 1.075
     },
     {
       "card_id": "237",
+      "character": "Yoisaki Kanade",
       "normal_rate": 0.032,
       "guaranteed_rate": 1.075
     },
     {
       "card_id": "254",
+      "character": "Shinonome Akito",
       "normal_rate": 0.032,
       "guaranteed_rate": 1.075
     },
     {
       "card_id": "264",
+      "character": "Momoi Airi",
       "normal_rate": 0.032,
       "guaranteed_rate": 1.075
     },
     {
       "card_id": "269",
+      "character": "Kusanagi Nene",
       "normal_rate": 0.032,
       "guaranteed_rate": 1.075
     }

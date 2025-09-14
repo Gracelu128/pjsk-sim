@@ -1,58 +1,68 @@
 {
   "id": 758,
   "title (japanese)": "セレクトリストガチャ",
-  "release_date": "6/24/2025, 8:00:00 PM",
+  "release_date": "6/24/2025, 11:00:00 PM",
   "end_date": "7/3/2025, 10:59:59 PM",
   "type": "normal",
   "gacha_rate_index": 2,
   "featured_cards": [
     {
       "card_id": "1052",
+      "character": "Megurine Luka",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.298
     },
     {
       "card_id": "892",
+      "character": "MEIKO",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.298
     },
     {
       "card_id": "868",
+      "character": "Hoshino Ichika",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.298
     },
     {
       "card_id": "1098",
+      "character": "Tenma Saki",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.298
     },
     {
       "card_id": "1029",
+      "character": "Hinomori Shizuku",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.298
     },
     {
       "card_id": "1065",
+      "character": "Aoyagi Toya",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.298
     },
     {
       "card_id": "975",
+      "character": "Shiraishi An",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.298
     },
     {
       "card_id": "995",
+      "character": "Tenma Tsukasa",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.298
     },
     {
       "card_id": "927",
+      "character": "Otori Emu",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.298
     },
     {
       "card_id": "903",
+      "character": "Shinonome Ena",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.298
     }

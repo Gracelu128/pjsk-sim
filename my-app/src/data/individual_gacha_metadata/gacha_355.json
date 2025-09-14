@@ -1,38 +1,44 @@
 {
   "id": 355,
   "title (japanese)": "ハピネスパッケージガチャ",
-  "release_date": "7/25/2023, 8:00:00 PM",
+  "release_date": "7/25/2023, 11:00:00 PM",
   "end_date": "8/3/2023, 10:59:59 PM",
   "type": "gift",
   "gacha_rate_index": 2,
   "featured_cards": [
     {
       "card_id": "578",
+      "character": "Hinomori Shiho",
       "normal_rate": 0.014,
       "guaranteed_rate": 0.463
     },
     {
       "card_id": "631",
+      "character": "Kiritani Haruka",
       "normal_rate": 0.014,
       "guaranteed_rate": 0.463
     },
     {
       "card_id": "134",
+      "character": "Shiraishi An",
       "normal_rate": 0.014,
       "guaranteed_rate": 0.463
     },
     {
       "card_id": "269",
+      "character": "Kusanagi Nene",
       "normal_rate": 0.014,
       "guaranteed_rate": 0.463
     },
     {
       "card_id": "429",
+      "character": "Akiyama Mizuki",
       "normal_rate": 0.014,
       "guaranteed_rate": 0.463
     },
     {
       "card_id": "483",
+      "character": "MEIKO",
       "normal_rate": 0.014,
       "guaranteed_rate": 0.463
     }

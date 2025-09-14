@@ -1,38 +1,44 @@
 {
   "id": 385,
   "title (japanese)": "[3周年記念]10連無料ガチャ",
-  "release_date": "9/29/2023, 8:00:00 AM",
+  "release_date": "9/29/2023, 11:00:00 AM",
   "end_date": "10/30/2023, 10:59:59 PM",
   "type": "normal",
   "gacha_rate_index": 0,
   "featured_cards": [
     {
       "card_id": "644",
+      "character": "Hatsune Miku",
       "normal_rate": 0.013,
       "guaranteed_rate": 0.013
     },
     {
       "card_id": "535",
+      "character": "Hoshino Ichika",
       "normal_rate": 0.013,
       "guaranteed_rate": 0.013
     },
     {
       "card_id": "190",
+      "character": "Hanasato Minori",
       "normal_rate": 0.013,
       "guaranteed_rate": 0.013
     },
     {
       "card_id": "373",
+      "character": "Azusawa Kohane",
       "normal_rate": 0.013,
       "guaranteed_rate": 0.013
     },
     {
       "card_id": "410",
+      "character": "Tenma Tsukasa",
       "normal_rate": 0.013,
       "guaranteed_rate": 0.013
     },
     {
       "card_id": "361",
+      "character": "Yoisaki Kanade",
       "normal_rate": 0.013,
       "guaranteed_rate": 0.013
     }

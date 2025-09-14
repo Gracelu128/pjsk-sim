@@ -1,38 +1,44 @@
 {
   "id": 123,
   "title (japanese)": "[1周年記念]10連無料ガチャ",
-  "release_date": "9/29/2021, 12:00:00 PM",
+  "release_date": "9/29/2021, 3:00:00 PM",
   "end_date": "10/17/2021, 10:59:59 AM",
   "type": "normal",
   "gacha_rate_index": 0,
   "featured_cards": [
     {
       "card_id": "88",
+      "character": "Hatsune Miku",
       "normal_rate": 0.036,
       "guaranteed_rate": 0.036
     },
     {
       "card_id": "197",
+      "character": "Hoshino Ichika",
       "normal_rate": 0.036,
       "guaranteed_rate": 0.036
     },
     {
       "card_id": "190",
+      "character": "Hanasato Minori",
       "normal_rate": 0.036,
       "guaranteed_rate": 0.036
     },
     {
       "card_id": "249",
+      "character": "Azusawa Kohane",
       "normal_rate": 0.036,
       "guaranteed_rate": 0.036
     },
     {
       "card_id": "232",
+      "character": "Tenma Tsukasa",
       "normal_rate": 0.036,
       "guaranteed_rate": 0.036
     },
     {
       "card_id": "237",
+      "character": "Yoisaki Kanade",
       "normal_rate": 0.036,
       "guaranteed_rate": 0.036
     }

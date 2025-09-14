@@ -1,138 +1,164 @@
 {
   "id": 710,
   "title (japanese)": "[4.5周年記念]ハートフルギフトガチャ",
-  "release_date": "3/29/2025, 8:00:00 PM",
+  "release_date": "3/29/2025, 11:00:00 PM",
   "end_date": "4/7/2025, 10:59:59 PM",
   "type": "normal",
   "gacha_rate_index": 2,
   "featured_cards": [
     {
       "card_id": "875",
+      "character": "Hatsune Miku",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.314
     },
     {
       "card_id": "945",
+      "character": "Kagamine Rin",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.314
     },
     {
       "card_id": "1000",
+      "character": "Kagamine Len",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.314
     },
     {
       "card_id": "958",
+      "character": "Megurine Luka",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.314
     },
     {
       "card_id": "892",
+      "character": "MEIKO",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.314
     },
     {
       "card_id": "869",
+      "character": "KAITO",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.314
     },
     {
       "card_id": "868",
+      "character": "Hoshino Ichika",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.314
     },
     {
       "card_id": "909",
+      "character": "Tenma Saki",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.314
     },
     {
       "card_id": "774",
+      "character": "Mochizuki Honami",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.314
     },
     {
       "card_id": "910",
+      "character": "Hinomori Shiho",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.314
     },
     {
       "card_id": "1046",
+      "character": "Hanasato Minori",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.314
     },
     {
       "card_id": "993",
+      "character": "Kiritani Haruka",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.314
     },
     {
       "card_id": "630",
+      "character": "Momoi Airi",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.314
     },
     {
       "card_id": "1029",
+      "character": "Hinomori Shizuku",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.314
     },
     {
       "card_id": "1017",
+      "character": "Azusawa Kohane",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.314
     },
     {
       "card_id": "975",
+      "character": "Shiraishi An",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.314
     },
     {
       "card_id": "768",
+      "character": "Shinonome Akito",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.314
     },
     {
       "card_id": "890",
+      "character": "Aoyagi Toya",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.314
     },
     {
       "card_id": "956",
+      "character": "Tenma Tsukasa",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.314
     },
     {
       "card_id": "927",
+      "character": "Otori Emu",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.314
     },
     {
       "card_id": "1034",
+      "character": "Kusanagi Nene",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.314
     },
     {
       "card_id": "1050",
+      "character": "Kamishiro Rui",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.314
     },
     {
       "card_id": "974",
+      "character": "Yoisaki Kanade",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.314
     },
     {
       "card_id": "904",
+      "character": "Asahina Mafuyu",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.314
     },
     {
       "card_id": "903",
+      "character": "Shinonome Ena",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.314
     },
     {
       "card_id": "1011",
+      "character": "Akiyama Mizuki",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.314
     }

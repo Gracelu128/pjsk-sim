@@ -1,38 +1,44 @@
 {
   "id": 485,
   "title (japanese)": "3900'sプレミアムプレゼントガチャ 3.5th ANNIVERSARY EDITION",
-  "release_date": "3/29/2024, 8:00:00 PM",
+  "release_date": "3/29/2024, 11:00:00 PM",
   "end_date": "4/30/2024, 10:59:59 AM",
   "type": "normal",
   "gacha_rate_index": 2,
   "featured_cards": [
     {
       "card_id": "537",
+      "character": "Hatsune Miku",
       "normal_rate": 0.011,
       "guaranteed_rate": 0.383
     },
     {
       "card_id": "465",
+      "character": "Kagamine Rin",
       "normal_rate": 0.011,
       "guaranteed_rate": 0.383
     },
     {
       "card_id": "573",
+      "character": "Kagamine Len",
       "normal_rate": 0.011,
       "guaranteed_rate": 0.383
     },
     {
       "card_id": "553",
+      "character": "Megurine Luka",
       "normal_rate": 0.011,
       "guaranteed_rate": 0.383
     },
     {
       "card_id": "203",
+      "character": "MEIKO",
       "normal_rate": 0.011,
       "guaranteed_rate": 0.383
     },
     {
       "card_id": "685",
+      "character": "KAITO",
       "normal_rate": 0.011,
       "guaranteed_rate": 0.383
     }

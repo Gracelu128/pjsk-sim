@@ -1,33 +1,38 @@
 {
   "id": 143,
   "title (japanese)": "イベントメンバーガチャ",
-  "release_date": "11/3/2021, 11:00:00 PM",
+  "release_date": "11/4/2021, 2:00:00 AM",
   "end_date": "11/9/2021, 6:59:59 AM",
   "type": "limited",
   "gacha_rate_index": 0,
   "featured_cards": [
     {
       "card_id": "307",
+      "character": "Akiyama Mizuki",
       "normal_rate": 0.077,
       "guaranteed_rate": 0.077
     },
     {
       "card_id": "308",
+      "character": "Shinonome Ena",
       "normal_rate": 0.077,
       "guaranteed_rate": 0.077
     },
     {
       "card_id": "309",
+      "character": "Yoisaki Kanade",
       "normal_rate": 0.077,
       "guaranteed_rate": 0.077
     },
     {
       "card_id": "203",
+      "character": "MEIKO",
       "normal_rate": 0.077,
       "guaranteed_rate": 0.077
     },
     {
       "card_id": "71",
+      "character": "Asahina Mafuyu",
       "normal_rate": 0.567,
       "guaranteed_rate": 6.467
     }

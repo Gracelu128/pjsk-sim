@@ -1,33 +1,38 @@
 {
   "id": 657,
   "title (japanese)": "[劇場版プロジェクトセカイ公開記念][Leo/need]リコレクションガチャ",
-  "release_date": "1/16/2025, 7:00:00 PM",
+  "release_date": "1/16/2025, 10:00:00 PM",
   "end_date": "1/21/2025, 9:59:59 PM",
   "type": "limited",
   "gacha_rate_index": 0,
   "featured_cards": [
     {
       "card_id": "583",
+      "character": "Hoshino Ichika",
       "normal_rate": 0.045,
       "guaranteed_rate": 0.045
     },
     {
       "card_id": "369",
+      "character": "Tenma Saki",
       "normal_rate": 0.045,
       "guaranteed_rate": 0.045
     },
     {
       "card_id": "774",
+      "character": "Mochizuki Honami",
       "normal_rate": 0.045,
       "guaranteed_rate": 0.045
     },
     {
       "card_id": "829",
+      "character": "Hinomori Shiho",
       "normal_rate": 0.045,
       "guaranteed_rate": 0.045
     },
     {
       "card_id": "537",
+      "character": "Hatsune Miku",
       "normal_rate": 0.045,
       "guaranteed_rate": 0.045
     }

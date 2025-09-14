@@ -1,23 +1,26 @@
 {
   "id": 110,
   "title (japanese)": "ラブリーメッセンジャーガチャ",
-  "release_date": "8/9/2021, 11:00:00 PM",
+  "release_date": "8/10/2021, 2:00:00 AM",
   "end_date": "8/20/2021, 1:59:59 AM",
   "type": "normal",
   "gacha_rate_index": 0,
   "featured_cards": [
     {
       "card_id": "264",
+      "character": "Momoi Airi",
       "normal_rate": 0.4,
       "guaranteed_rate": 0.4
     },
     {
       "card_id": "265",
+      "character": "Kagamine Len",
       "normal_rate": 0.4,
       "guaranteed_rate": 0.4
     },
     {
       "card_id": "266",
+      "character": "Kiritani Haruka",
       "normal_rate": 0.4,
       "guaranteed_rate": 0.4
     }

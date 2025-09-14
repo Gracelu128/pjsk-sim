@@ -1,38 +1,44 @@
 {
   "id": 663,
   "title (japanese)": "ハピネスパッケージガチャ",
-  "release_date": "1/25/2025, 7:00:00 PM",
+  "release_date": "1/25/2025, 10:00:00 PM",
   "end_date": "2/3/2025, 9:59:59 PM",
   "type": "gift",
   "gacha_rate_index": 2,
   "featured_cards": [
     {
       "card_id": "892",
+      "character": "MEIKO",
       "normal_rate": 0.01,
       "guaranteed_rate": 0.327
     },
     {
       "card_id": "999",
+      "character": "Tenma Saki",
       "normal_rate": 0.01,
       "guaranteed_rate": 0.327
     },
     {
       "card_id": "938",
+      "character": "Kiritani Haruka",
       "normal_rate": 0.01,
       "guaranteed_rate": 0.327
     },
     {
       "card_id": "1018",
+      "character": "Shiraishi An",
       "normal_rate": 0.01,
       "guaranteed_rate": 0.327
     },
     {
       "card_id": "957",
+      "character": "Kamishiro Rui",
       "normal_rate": 0.01,
       "guaranteed_rate": 0.327
     },
     {
       "card_id": "943",
+      "character": "Asahina Mafuyu",
       "normal_rate": 0.01,
       "guaranteed_rate": 0.327
     }

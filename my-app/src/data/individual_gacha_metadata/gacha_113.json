@@ -1,33 +1,38 @@
 {
   "id": 113,
   "title (japanese)": "イベントメンバー出現率UPガチャ",
-  "release_date": "8/23/2021, 11:00:00 PM",
+  "release_date": "8/24/2021, 2:00:00 AM",
   "end_date": "8/29/2021, 7:59:59 AM",
   "type": "normal",
   "gacha_rate_index": 0,
   "featured_cards": [
     {
       "card_id": "269",
+      "character": "Kusanagi Nene",
       "normal_rate": 0.05,
       "guaranteed_rate": 0.05
     },
     {
       "card_id": "270",
+      "character": "Kamishiro Rui",
       "normal_rate": 0.05,
       "guaranteed_rate": 0.05
     },
     {
       "card_id": "271",
+      "character": "Megurine Luka",
       "normal_rate": 0.05,
       "guaranteed_rate": 0.05
     },
     {
       "card_id": "107",
+      "character": "KAITO",
       "normal_rate": 1.063,
       "guaranteed_rate": 12.125
     },
     {
       "card_id": "55",
+      "character": "Otori Emu",
       "normal_rate": 1.063,
       "guaranteed_rate": 12.125
     }

@@ -1,23 +1,26 @@
 {
   "id": 4,
   "title (japanese)": "星降る夜空の思い出ガチャ",
-  "release_date": "10/8/2020, 11:00:00 PM",
+  "release_date": "10/9/2020, 2:00:00 AM",
   "end_date": "10/20/2020, 1:59:59 AM",
   "type": "normal",
   "gacha_rate_index": 0,
   "featured_cards": [
     {
       "card_id": "109",
+      "character": "Tenma Saki",
       "normal_rate": 0.429,
       "guaranteed_rate": 0.429
     },
     {
       "card_id": "110",
+      "character": "Megurine Luka",
       "normal_rate": 0.429,
       "guaranteed_rate": 0.429
     },
     {
       "card_id": "111",
+      "character": "Hinomori Shiho",
       "normal_rate": 0.429,
       "guaranteed_rate": 0.429
     }

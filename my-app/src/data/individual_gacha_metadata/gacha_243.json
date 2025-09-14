@@ -1,28 +1,32 @@
 {
   "id": 243,
   "title (japanese)": "[2周年記念][Vivid BAD SQUAD]プレミアムプレゼントガチャ",
-  "release_date": "9/29/2022, 8:00:00 AM",
+  "release_date": "9/29/2022, 11:00:00 AM",
   "end_date": "10/11/2022, 10:59:59 PM",
   "type": "normal",
   "gacha_rate_index": 0,
   "featured_cards": [
     {
       "card_id": "373",
+      "character": "Azusawa Kohane",
       "normal_rate": 0.143,
       "guaranteed_rate": 0.143
     },
     {
       "card_id": "343",
+      "character": "Shiraishi An",
       "normal_rate": 0.143,
       "guaranteed_rate": 0.143
     },
     {
       "card_id": "434",
+      "character": "Shinonome Akito",
       "normal_rate": 0.143,
       "guaranteed_rate": 0.143
     },
     {
       "card_id": "341",
+      "character": "Aoyagi Toya",
       "normal_rate": 0.143,
       "guaranteed_rate": 0.143
     }

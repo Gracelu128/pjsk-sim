@@ -1,23 +1,26 @@
 {
   "id": 615,
   "title (japanese)": "落葉舞うティールームでガチャ",
-  "release_date": "11/9/2024, 7:00:00 PM",
+  "release_date": "11/9/2024, 10:00:00 PM",
   "end_date": "11/19/2024, 9:59:59 PM",
   "type": "normal",
   "gacha_rate_index": 0,
   "featured_cards": [
     {
       "card_id": "1028",
+      "character": "Hinomori Shiho",
       "normal_rate": 0.4,
       "guaranteed_rate": 0.4
     },
     {
       "card_id": "1029",
+      "character": "Hinomori Shizuku",
       "normal_rate": 0.4,
       "guaranteed_rate": 0.4
     },
     {
       "card_id": "1030",
+      "character": "Kagamine Rin",
       "normal_rate": 0.4,
       "guaranteed_rate": 0.4
     }

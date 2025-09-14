@@ -1,33 +1,38 @@
 {
   "id": 146,
   "title (japanese)": "★3以上確定チケットガチャ",
-  "release_date": "11/10/2021, 10:00:00 PM",
+  "release_date": "11/11/2021, 1:00:00 AM",
   "end_date": "12/10/2021, 12:59:59 AM",
   "type": "normal",
   "gacha_rate_index": 1,
   "featured_cards": [
     {
       "card_id": "3",
+      "character": "Hoshino Ichika",
       "normal_rate": 2.109,
       "guaranteed_rate": null
     },
     {
       "card_id": "19",
+      "character": "Hanasato Minori",
       "normal_rate": 2.109,
       "guaranteed_rate": null
     },
     {
       "card_id": "35",
+      "character": "Azusawa Kohane",
       "normal_rate": 2.109,
       "guaranteed_rate": null
     },
     {
       "card_id": "51",
+      "character": "Tenma Tsukasa",
       "normal_rate": 2.109,
       "guaranteed_rate": null
     },
     {
       "card_id": "67",
+      "character": "Yoisaki Kanade",
       "normal_rate": 2.109,
       "guaranteed_rate": null
     }

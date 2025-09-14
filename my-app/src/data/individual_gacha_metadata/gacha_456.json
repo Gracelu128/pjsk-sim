@@ -1,13 +1,14 @@
 {
   "id": 456,
   "title (japanese)": "[宵崎奏]HAPPY BIRTHDAY2024ガチャ",
-  "release_date": "2/9/2024, 7:00:00 AM",
+  "release_date": "2/9/2024, 10:00:00 AM",
   "end_date": "2/16/2024, 9:59:59 AM",
   "type": "birthday",
   "gacha_rate_index": 4,
   "featured_cards": [
     {
       "card_id": "866",
+      "character": "Yoisaki Kanade",
       "normal_rate": 3.0,
       "guaranteed_rate": null
     }

@@ -1,33 +1,38 @@
 {
   "id": 105,
   "title (japanese)": "イベントメンバー出現率UPガチャ",
-  "release_date": "7/23/2021, 11:00:00 PM",
+  "release_date": "7/24/2021, 2:00:00 AM",
   "end_date": "7/29/2021, 7:59:59 AM",
   "type": "normal",
   "gacha_rate_index": 0,
   "featured_cards": [
     {
       "card_id": "254",
+      "character": "Shinonome Akito",
       "normal_rate": 0.052,
       "guaranteed_rate": 0.052
     },
     {
       "card_id": "255",
+      "character": "Shinonome Ena",
       "normal_rate": 0.052,
       "guaranteed_rate": 0.052
     },
     {
       "card_id": "256",
+      "character": "Kagamine Len",
       "normal_rate": 0.052,
       "guaranteed_rate": 0.052
     },
     {
       "card_id": "27",
+      "character": "Momoi Airi",
       "normal_rate": 0.944,
       "guaranteed_rate": 10.778
     },
     {
       "card_id": "79",
+      "character": "Akiyama Mizuki",
       "normal_rate": 0.944,
       "guaranteed_rate": 10.778
     }

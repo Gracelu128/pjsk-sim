@@ -1,23 +1,26 @@
 {
   "id": 466,
   "title (japanese)": "空に描く虹の魔法ガチャ",
-  "release_date": "2/19/2024, 7:00:00 PM",
+  "release_date": "2/19/2024, 10:00:00 PM",
   "end_date": "2/28/2024, 9:59:59 PM",
   "type": "normal",
   "gacha_rate_index": 0,
   "featured_cards": [
     {
       "card_id": "873",
+      "character": "Hanasato Minori",
       "normal_rate": 0.4,
       "guaranteed_rate": 0.4
     },
     {
       "card_id": "874",
+      "character": "Kiritani Haruka",
       "normal_rate": 0.4,
       "guaranteed_rate": 0.4
     },
     {
       "card_id": "875",
+      "character": "Hatsune Miku",
       "normal_rate": 0.4,
       "guaranteed_rate": 0.4
     }

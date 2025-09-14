@@ -1,33 +1,38 @@
 {
   "id": 121,
   "title (japanese)": "イベントメンバー出現率UPガチャ",
-  "release_date": "9/23/2021, 11:00:00 PM",
+  "release_date": "9/24/2021, 2:00:00 AM",
   "end_date": "9/29/2021, 7:59:59 AM",
   "type": "normal",
   "gacha_rate_index": 0,
   "featured_cards": [
     {
       "card_id": "284",
+      "character": "Asahina Mafuyu",
       "normal_rate": 0.046,
       "guaranteed_rate": 0.046
     },
     {
       "card_id": "285",
+      "character": "Akiyama Mizuki",
       "normal_rate": 0.046,
       "guaranteed_rate": 0.046
     },
     {
       "card_id": "286",
+      "character": "Kagamine Rin",
       "normal_rate": 0.046,
       "guaranteed_rate": 0.046
     },
     {
       "card_id": "75",
+      "character": "Shinonome Ena",
       "normal_rate": 0.944,
       "guaranteed_rate": 10.778
     },
     {
       "card_id": "67",
+      "character": "Yoisaki Kanade",
       "normal_rate": 0.944,
       "guaranteed_rate": 10.778
     }

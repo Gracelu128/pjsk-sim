@@ -1,28 +1,32 @@
 {
   "id": 583,
   "title (japanese)": "[4周年記念][Leo/need]プレミアムプレゼントガチャ",
-  "release_date": "9/29/2024, 8:00:00 AM",
+  "release_date": "9/29/2024, 11:00:00 AM",
   "end_date": "10/30/2024, 10:59:59 PM",
   "type": "normal",
   "gacha_rate_index": 2,
   "featured_cards": [
     {
       "card_id": "868",
+      "character": "Hoshino Ichika",
       "normal_rate": 0.065,
       "guaranteed_rate": 2.174
     },
     {
       "card_id": "909",
+      "character": "Tenma Saki",
       "normal_rate": 0.065,
       "guaranteed_rate": 2.174
     },
     {
       "card_id": "867",
+      "character": "Mochizuki Honami",
       "normal_rate": 0.065,
       "guaranteed_rate": 2.174
     },
     {
       "card_id": "910",
+      "character": "Hinomori Shiho",
       "normal_rate": 0.065,
       "guaranteed_rate": 2.174
     }

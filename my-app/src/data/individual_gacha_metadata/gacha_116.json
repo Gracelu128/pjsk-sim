@@ -1,33 +1,38 @@
 {
   "id": 116,
   "title (japanese)": "イベントメンバー出現率UPガチャ",
-  "release_date": "9/3/2021, 11:00:00 PM",
+  "release_date": "9/4/2021, 2:00:00 AM",
   "end_date": "9/8/2021, 7:59:59 AM",
   "type": "limited",
   "gacha_rate_index": 0,
   "featured_cards": [
     {
       "card_id": "274",
+      "character": "Hinomori Shizuku",
       "normal_rate": 0.047,
       "guaranteed_rate": 0.047
     },
     {
       "card_id": "275",
+      "character": "Hinomori Shiho",
       "normal_rate": 0.047,
       "guaranteed_rate": 0.047
     },
     {
       "card_id": "276",
+      "character": "MEIKO",
       "normal_rate": 0.047,
       "guaranteed_rate": 0.047
     },
     {
       "card_id": "198",
+      "character": "Hatsune Miku",
       "normal_rate": 0.047,
       "guaranteed_rate": 0.047
     },
     {
       "card_id": "71",
+      "character": "Asahina Mafuyu",
       "normal_rate": 1.417,
       "guaranteed_rate": 16.167
     }

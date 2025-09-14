@@ -1,38 +1,44 @@
 {
   "id": 644,
   "title (japanese)": "[2025新春]プレミアムプレゼントガチャ",
-  "release_date": "12/30/2024, 7:00:00 PM",
+  "release_date": "12/30/2024, 10:00:00 PM",
   "end_date": "1/10/2025, 9:59:59 PM",
   "type": "normal",
   "gacha_rate_index": 2,
   "featured_cards": [
     {
       "card_id": "775",
+      "character": "Kagamine Rin",
       "normal_rate": 0.01,
       "guaranteed_rate": 0.333
     },
     {
       "card_id": "909",
+      "character": "Tenma Saki",
       "normal_rate": 0.01,
       "guaranteed_rate": 0.333
     },
     {
       "card_id": "939",
+      "character": "Hinomori Shizuku",
       "normal_rate": 0.01,
       "guaranteed_rate": 0.333
     },
     {
       "card_id": "769",
+      "character": "Azusawa Kohane",
       "normal_rate": 0.01,
       "guaranteed_rate": 0.333
     },
     {
       "card_id": "792",
+      "character": "Kamishiro Rui",
       "normal_rate": 0.01,
       "guaranteed_rate": 0.333
     },
     {
       "card_id": "944",
+      "character": "Akiyama Mizuki",
       "normal_rate": 0.01,
       "guaranteed_rate": 0.333
     }

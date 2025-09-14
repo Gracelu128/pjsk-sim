@@ -1,38 +1,44 @@
 {
   "id": 582,
   "title (japanese)": "[4周年記念][バーチャル・シンガー]プレミアムプレゼントガチャ",
-  "release_date": "9/29/2024, 8:00:00 AM",
+  "release_date": "9/29/2024, 11:00:00 AM",
   "end_date": "10/30/2024, 10:59:59 PM",
   "type": "normal",
   "gacha_rate_index": 2,
   "featured_cards": [
     {
       "card_id": "644",
+      "character": "Hatsune Miku",
       "normal_rate": 0.043,
       "guaranteed_rate": 1.429
     },
     {
       "card_id": "856",
+      "character": "Kagamine Rin",
       "normal_rate": 0.043,
       "guaranteed_rate": 1.429
     },
     {
       "card_id": "447",
+      "character": "Kagamine Len",
       "normal_rate": 0.043,
       "guaranteed_rate": 1.429
     },
     {
       "card_id": "553",
+      "character": "Megurine Luka",
       "normal_rate": 0.043,
       "guaranteed_rate": 1.429
     },
     {
       "card_id": "626",
+      "character": "MEIKO",
       "normal_rate": 0.043,
       "guaranteed_rate": 1.429
     },
     {
       "card_id": "940",
+      "character": "KAITO",
       "normal_rate": 0.043,
       "guaranteed_rate": 1.429
     }

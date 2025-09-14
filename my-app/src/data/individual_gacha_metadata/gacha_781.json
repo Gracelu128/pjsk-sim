@@ -1,38 +1,44 @@
 {
   "id": 781,
   "title (japanese)": "[ペルソナ５ ザ・ロイヤルタイアップ記念]プレミアムプレゼントガチャ",
-  "release_date": "8/3/2025, 8:00:00 PM",
+  "release_date": "8/3/2025, 11:00:00 PM",
   "end_date": "8/13/2025, 10:59:59 AM",
   "type": "normal",
   "gacha_rate_index": 2,
   "featured_cards": [
     {
       "card_id": "537",
+      "character": "Hatsune Miku",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.295
     },
     {
       "card_id": "1099",
+      "character": "Kagamine Rin",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.295
     },
     {
       "card_id": "1067",
+      "character": "Kagamine Len",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.295
     },
     {
       "card_id": "1112",
+      "character": "Megurine Luka",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.295
     },
     {
       "card_id": "1124",
+      "character": "MEIKO",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.295
     },
     {
       "card_id": "1158",
+      "character": "KAITO",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.295
     }

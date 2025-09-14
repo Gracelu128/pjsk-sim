@@ -1,13 +1,14 @@
 {
   "id": 288,
   "title (japanese)": "[復刻][朝比奈まふゆ]HAPPY BIRTHDAYガチャ",
-  "release_date": "1/26/2023, 7:00:00 AM",
+  "release_date": "1/26/2023, 10:00:00 AM",
   "end_date": "2/2/2023, 9:59:59 AM",
   "type": "birthday",
   "gacha_rate_index": 4,
   "featured_cards": [
     {
       "card_id": "366",
+      "character": "Asahina Mafuyu",
       "normal_rate": 3.0,
       "guaranteed_rate": null
     }

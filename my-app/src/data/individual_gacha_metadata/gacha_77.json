@@ -1,33 +1,38 @@
 {
   "id": 77,
   "title (japanese)": "イベントメンバー出現率UPガチャ",
-  "release_date": "4/23/2021, 11:00:00 PM",
+  "release_date": "4/24/2021, 2:00:00 AM",
   "end_date": "4/28/2021, 7:59:59 AM",
   "type": "normal",
   "gacha_rate_index": 0,
   "featured_cards": [
     {
       "card_id": "207",
+      "character": "Hinomori Shiho",
       "normal_rate": 0.07,
       "guaranteed_rate": 0.07
     },
     {
       "card_id": "208",
+      "character": "Mochizuki Honami",
       "normal_rate": 0.07,
       "guaranteed_rate": 0.07
     },
     {
       "card_id": "209",
+      "character": "Tenma Saki",
       "normal_rate": 0.07,
       "guaranteed_rate": 0.07
     },
     {
       "card_id": "156",
+      "character": "MEIKO",
       "normal_rate": 0.07,
       "guaranteed_rate": 0.07
     },
     {
       "card_id": "3",
+      "character": "Hoshino Ichika",
       "normal_rate": 1.063,
       "guaranteed_rate": 12.125
     }

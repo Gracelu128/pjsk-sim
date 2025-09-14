@@ -1,33 +1,38 @@
 {
   "id": 704,
   "title (japanese)": "[4.5周年記念]ブルームフェスティバルガチャ ドリームピック",
-  "release_date": "3/29/2025, 8:00:00 PM",
+  "release_date": "3/29/2025, 11:00:00 PM",
   "end_date": "4/3/2025, 10:59:59 PM",
   "type": "limited",
   "gacha_rate_index": 7,
   "featured_cards": [
     {
       "card_id": "1144",
+      "character": "Mochizuki Honami",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.009
     },
     {
       "card_id": "1145",
+      "character": "Megurine Luka",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.009
     },
     {
       "card_id": "1146",
+      "character": "Hinomori Shiho",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.009
     },
     {
       "card_id": "1147",
+      "character": "Hoshino Ichika",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.009
     },
     {
       "card_id": "1148",
+      "character": "Hatsune Miku",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.009
     }

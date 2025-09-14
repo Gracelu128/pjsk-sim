@@ -1,38 +1,44 @@
 {
   "id": 225,
   "title (japanese)": "ハピネスパッケージガチャ",
-  "release_date": "7/29/2022, 8:00:00 PM",
+  "release_date": "7/29/2022, 11:00:00 PM",
   "end_date": "8/7/2022, 10:59:59 PM",
   "type": "gift",
   "gacha_rate_index": 2,
   "featured_cards": [
     {
       "card_id": "398",
+      "character": "Yoisaki Kanade",
       "normal_rate": 0.021,
       "guaranteed_rate": 0.694
     },
     {
       "card_id": "374",
+      "character": "Aoyagi Toya",
       "normal_rate": 0.021,
       "guaranteed_rate": 0.694
     },
     {
       "card_id": "380",
+      "character": "Hinomori Shiho",
       "normal_rate": 0.021,
       "guaranteed_rate": 0.694
     },
     {
       "card_id": "410",
+      "character": "Tenma Tsukasa",
       "normal_rate": 0.021,
       "guaranteed_rate": 0.694
     },
     {
       "card_id": "392",
+      "character": "Hanasato Minori",
       "normal_rate": 0.021,
       "guaranteed_rate": 0.694
     },
     {
       "card_id": "320",
+      "character": "Megurine Luka",
       "normal_rate": 0.021,
       "guaranteed_rate": 0.694
     }

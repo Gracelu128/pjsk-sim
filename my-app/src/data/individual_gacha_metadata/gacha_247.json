@@ -1,38 +1,44 @@
 {
   "id": 247,
   "title (japanese)": "[2周年記念]10連無料ガチャ",
-  "release_date": "9/29/2022, 8:00:00 PM",
+  "release_date": "9/29/2022, 11:00:00 PM",
   "end_date": "10/30/2022, 10:59:59 PM",
   "type": "normal",
   "gacha_rate_index": 0,
   "featured_cards": [
     {
       "card_id": "198",
+      "character": "Hatsune Miku",
       "normal_rate": 0.019,
       "guaranteed_rate": 0.019
     },
     {
       "card_id": "381",
+      "character": "Hoshino Ichika",
       "normal_rate": 0.019,
       "guaranteed_rate": 0.019
     },
     {
       "card_id": "224",
+      "character": "Hanasato Minori",
       "normal_rate": 0.019,
       "guaranteed_rate": 0.019
     },
     {
       "card_id": "319",
+      "character": "Azusawa Kohane",
       "normal_rate": 0.019,
       "guaranteed_rate": 0.019
     },
     {
       "card_id": "451",
+      "character": "Tenma Tsukasa",
       "normal_rate": 0.019,
       "guaranteed_rate": 0.019
     },
     {
       "card_id": "115",
+      "character": "Yoisaki Kanade",
       "normal_rate": 0.019,
       "guaranteed_rate": 0.019
     }

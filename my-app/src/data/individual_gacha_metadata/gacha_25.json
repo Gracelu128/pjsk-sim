@@ -1,33 +1,38 @@
 {
   "id": 25,
   "title (japanese)": "イベントメンバー出現率UPガチャ",
-  "release_date": "12/23/2020, 10:00:00 PM",
+  "release_date": "12/24/2020, 1:00:00 AM",
   "end_date": "12/29/2020, 6:59:59 AM",
   "type": "normal",
   "gacha_rate_index": 0,
   "featured_cards": [
     {
       "card_id": "144",
+      "character": "Kusanagi Nene",
       "normal_rate": 0.154,
       "guaranteed_rate": 0.154
     },
     {
       "card_id": "145",
+      "character": "Hatsune Miku",
       "normal_rate": 0.154,
       "guaranteed_rate": 0.154
     },
     {
       "card_id": "146",
+      "character": "MEIKO",
       "normal_rate": 0.154,
       "guaranteed_rate": 0.154
     },
     {
       "card_id": "63",
+      "character": "Kamishiro Rui",
       "normal_rate": 0.515,
       "guaranteed_rate": 5.879
     },
     {
       "card_id": "55",
+      "character": "Otori Emu",
       "normal_rate": 0.515,
       "guaranteed_rate": 5.879
     }

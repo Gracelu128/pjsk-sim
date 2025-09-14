@@ -1,33 +1,38 @@
 {
   "id": 661,
   "title (japanese)": "[劇場版プロジェクトセカイ公開記念][25時、ナイトコードで。]リコレクションガチャ",
-  "release_date": "2/5/2025, 7:00:00 PM",
+  "release_date": "2/5/2025, 10:00:00 PM",
   "end_date": "2/10/2025, 9:59:59 PM",
   "type": "limited",
   "gacha_rate_index": 0,
   "featured_cards": [
     {
       "card_id": "460",
+      "character": "Shinonome Ena",
       "normal_rate": 0.051,
       "guaranteed_rate": 0.051
     },
     {
       "card_id": "511",
+      "character": "Asahina Mafuyu",
       "normal_rate": 0.051,
       "guaranteed_rate": 0.051
     },
     {
       "card_id": "721",
+      "character": "Akiyama Mizuki",
       "normal_rate": 0.051,
       "guaranteed_rate": 0.051
     },
     {
       "card_id": "833",
+      "character": "Yoisaki Kanade",
       "normal_rate": 0.051,
       "guaranteed_rate": 0.051
     },
     {
       "card_id": "326",
+      "character": "Hatsune Miku",
       "normal_rate": 0.051,
       "guaranteed_rate": 0.051
     }

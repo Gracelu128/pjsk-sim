@@ -1,13 +1,14 @@
 {
   "id": 513,
   "title (japanese)": "[天馬司]HAPPY BIRTHDAY2024ガチャ",
-  "release_date": "5/16/2024, 8:00:00 AM",
+  "release_date": "5/16/2024, 11:00:00 AM",
   "end_date": "5/23/2024, 10:59:59 AM",
   "type": "birthday",
   "gacha_rate_index": 4,
   "featured_cards": [
     {
       "card_id": "926",
+      "character": "Tenma Tsukasa",
       "normal_rate": 3.0,
       "guaranteed_rate": null
     }

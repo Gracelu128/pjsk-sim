@@ -1,38 +1,44 @@
 {
   "id": 706,
   "title (japanese)": "[4.5周年記念]★4メンバー確定ガチャ",
-  "release_date": "3/29/2025, 8:00:00 PM",
+  "release_date": "3/29/2025, 11:00:00 PM",
   "end_date": "5/22/2025, 10:59:59 AM",
   "type": "normal",
   "gacha_rate_index": 5,
   "featured_cards": [
     {
       "card_id": "1047",
+      "character": "Hatsune Miku",
       "normal_rate": 0.314,
       "guaranteed_rate": 0.314
     },
     {
       "card_id": "867",
+      "character": "Mochizuki Honami",
       "normal_rate": 0.314,
       "guaranteed_rate": 0.314
     },
     {
       "card_id": "665",
+      "character": "Momoi Airi",
       "normal_rate": 0.314,
       "guaranteed_rate": 0.314
     },
     {
       "card_id": "1051",
+      "character": "Azusawa Kohane",
       "normal_rate": 0.314,
       "guaranteed_rate": 0.314
     },
     {
       "card_id": "995",
+      "character": "Tenma Tsukasa",
       "normal_rate": 0.314,
       "guaranteed_rate": 0.314
     },
     {
       "card_id": "613",
+      "character": "Shinonome Ena",
       "normal_rate": 0.314,
       "guaranteed_rate": 0.314
     }

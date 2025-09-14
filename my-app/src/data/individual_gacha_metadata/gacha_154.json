@@ -1,33 +1,38 @@
 {
   "id": 154,
   "title (japanese)": "イベントメンバーガチャ",
-  "release_date": "12/3/2021, 10:00:00 PM",
+  "release_date": "12/4/2021, 1:00:00 AM",
   "end_date": "12/8/2021, 6:59:59 AM",
   "type": "limited",
   "gacha_rate_index": 0,
   "featured_cards": [
     {
       "card_id": "324",
+      "character": "Asahina Mafuyu",
       "normal_rate": 0.079,
       "guaranteed_rate": 0.079
     },
     {
       "card_id": "325",
+      "character": "Hoshino Ichika",
       "normal_rate": 0.079,
       "guaranteed_rate": 0.079
     },
     {
       "card_id": "326",
+      "character": "Hatsune Miku",
       "normal_rate": 0.079,
       "guaranteed_rate": 0.079
     },
     {
       "card_id": "67",
+      "character": "Yoisaki Kanade",
       "normal_rate": 0.5,
       "guaranteed_rate": 5.706
     },
     {
       "card_id": "11",
+      "character": "Mochizuki Honami",
       "normal_rate": 0.5,
       "guaranteed_rate": 5.706
     }

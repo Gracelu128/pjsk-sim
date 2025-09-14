@@ -1,28 +1,32 @@
 {
   "id": 383,
   "title (japanese)": "[3周年記念][ワンダーランズ×ショウタイム]プレミアムプレゼントガチャ",
-  "release_date": "9/29/2023, 8:00:00 AM",
+  "release_date": "9/29/2023, 11:00:00 AM",
   "end_date": "10/11/2023, 10:59:59 PM",
   "type": "normal",
   "gacha_rate_index": 0,
   "featured_cards": [
     {
       "card_id": "523",
+      "character": "Tenma Tsukasa",
       "normal_rate": 0.083,
       "guaranteed_rate": 0.083
     },
     {
       "card_id": "607",
+      "character": "Otori Emu",
       "normal_rate": 0.083,
       "guaranteed_rate": 0.083
     },
     {
       "card_id": "648",
+      "character": "Kusanagi Nene",
       "normal_rate": 0.083,
       "guaranteed_rate": 0.083
     },
     {
       "card_id": "572",
+      "character": "Kamishiro Rui",
       "normal_rate": 0.083,
       "guaranteed_rate": 0.083
     }

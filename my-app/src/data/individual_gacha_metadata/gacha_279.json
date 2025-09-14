@@ -1,38 +1,44 @@
 {
   "id": 279,
   "title (japanese)": "[2023新春]10連無料ガチャ",
-  "release_date": "12/31/2022, 7:00:00 PM",
+  "release_date": "12/31/2022, 10:00:00 PM",
   "end_date": "1/30/2023, 9:59:59 PM",
   "type": "normal",
   "gacha_rate_index": 0,
   "featured_cards": [
     {
       "card_id": "393",
+      "character": "Hatsune Miku",
       "normal_rate": 0.017,
       "guaranteed_rate": 0.017
     },
     {
       "card_id": "381",
+      "character": "Hoshino Ichika",
       "normal_rate": 0.017,
       "guaranteed_rate": 0.017
     },
     {
       "card_id": "330",
+      "character": "Hanasato Minori",
       "normal_rate": 0.017,
       "guaranteed_rate": 0.017
     },
     {
       "card_id": "505",
+      "character": "Azusawa Kohane",
       "normal_rate": 0.017,
       "guaranteed_rate": 0.017
     },
     {
       "card_id": "451",
+      "character": "Tenma Tsukasa",
       "normal_rate": 0.017,
       "guaranteed_rate": 0.017
     },
     {
       "card_id": "398",
+      "character": "Yoisaki Kanade",
       "normal_rate": 0.017,
       "guaranteed_rate": 0.017
     }

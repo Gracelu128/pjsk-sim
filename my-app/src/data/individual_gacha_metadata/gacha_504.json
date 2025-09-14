@@ -1,33 +1,38 @@
 {
   "id": 504,
   "title (japanese)": "[MORE MORE JUMP！] ワールドリンクイベントサポートガチャ",
-  "release_date": "5/1/2024, 8:00:00 PM",
+  "release_date": "5/1/2024, 11:00:00 PM",
   "end_date": "5/22/2024, 10:59:59 PM",
   "type": "normal",
   "gacha_rate_index": 0,
   "featured_cards": [
     {
       "card_id": "664",
+      "character": "Hanasato Minori",
       "normal_rate": 0.058,
       "guaranteed_rate": 0.058
     },
     {
       "card_id": "518",
+      "character": "Kiritani Haruka",
       "normal_rate": 0.058,
       "guaranteed_rate": 0.058
     },
     {
       "card_id": "630",
+      "character": "Momoi Airi",
       "normal_rate": 0.058,
       "guaranteed_rate": 0.058
     },
     {
       "card_id": "391",
+      "character": "Hinomori Shizuku",
       "normal_rate": 0.058,
       "guaranteed_rate": 0.058
     },
     {
       "card_id": "875",
+      "character": "Hatsune Miku",
       "normal_rate": 0.058,
       "guaranteed_rate": 0.058
     }

@@ -1,28 +1,32 @@
 {
   "id": 541,
   "title (japanese)": "青春アッセンブル！ガチャ",
-  "release_date": "7/16/2024, 8:00:00 PM",
+  "release_date": "7/16/2024, 11:00:00 PM",
   "end_date": "7/30/2024, 10:59:59 PM",
   "type": "limited",
   "gacha_rate_index": 0,
   "featured_cards": [
     {
       "card_id": "961",
+      "character": "Hoshino Ichika",
       "normal_rate": 0.4,
       "guaranteed_rate": 0.4
     },
     {
       "card_id": "962",
+      "character": "Tenma Saki",
       "normal_rate": 0.4,
       "guaranteed_rate": 0.4
     },
     {
       "card_id": "963",
+      "character": "Mochizuki Honami",
       "normal_rate": 0.4,
       "guaranteed_rate": 0.4
     },
     {
       "card_id": "964",
+      "character": "Hinomori Shiho",
       "normal_rate": 0.4,
       "guaranteed_rate": 0.4
     }

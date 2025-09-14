@@ -1,13 +1,14 @@
 {
   "id": 451,
   "title (japanese)": "[巡音ルカ]HAPPY ANNIVERSARY2024ガチャ",
-  "release_date": "1/29/2024, 7:00:00 AM",
+  "release_date": "1/29/2024, 10:00:00 AM",
   "end_date": "2/5/2024, 9:59:59 AM",
   "type": "birthday",
   "gacha_rate_index": 4,
   "featured_cards": [
     {
       "card_id": "860",
+      "character": "Megurine Luka",
       "normal_rate": 3.0,
       "guaranteed_rate": null
     }

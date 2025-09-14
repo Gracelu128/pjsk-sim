@@ -1,33 +1,38 @@
 {
   "id": 658,
   "title (japanese)": "[劇場版プロジェクトセカイ公開記念][MORE MORE JUMP！]リコレクションガチャ",
-  "release_date": "1/21/2025, 7:00:00 PM",
+  "release_date": "1/21/2025, 10:00:00 PM",
   "end_date": "1/26/2025, 9:59:59 PM",
   "type": "limited",
   "gacha_rate_index": 0,
   "featured_cards": [
     {
       "card_id": "512",
+      "character": "Hinomori Shizuku",
       "normal_rate": 0.048,
       "guaranteed_rate": 0.048
     },
     {
       "card_id": "530",
+      "character": "Hanasato Minori",
       "normal_rate": 0.048,
       "guaranteed_rate": 0.048
     },
     {
       "card_id": "665",
+      "character": "Momoi Airi",
       "normal_rate": 0.048,
       "guaranteed_rate": 0.048
     },
     {
       "card_id": "716",
+      "character": "Kiritani Haruka",
       "normal_rate": 0.048,
       "guaranteed_rate": 0.048
     },
     {
       "card_id": "393",
+      "character": "Hatsune Miku",
       "normal_rate": 0.048,
       "guaranteed_rate": 0.048
     }

@@ -1,33 +1,38 @@
 {
   "id": 11,
   "title (japanese)": "イベントメンバー出現率UPガチャ",
-  "release_date": "11/12/2020, 10:00:00 PM",
+  "release_date": "11/13/2020, 1:00:00 AM",
   "end_date": "11/17/2020, 6:59:59 AM",
   "type": "normal",
   "gacha_rate_index": 0,
   "featured_cards": [
     {
       "card_id": "124",
+      "character": "Otori Emu",
       "normal_rate": 0.273,
       "guaranteed_rate": 0.273
     },
     {
       "card_id": "125",
+      "character": "Kiritani Haruka",
       "normal_rate": 0.273,
       "guaranteed_rate": 0.273
     },
     {
       "card_id": "126",
+      "character": "Hatsune Miku",
       "normal_rate": 0.273,
       "guaranteed_rate": 0.273
     },
     {
       "card_id": "71",
+      "character": "Asahina Mafuyu",
       "normal_rate": 0.486,
       "guaranteed_rate": 5.543
     },
     {
       "card_id": "7",
+      "character": "Tenma Saki",
       "normal_rate": 0.486,
       "guaranteed_rate": 5.543
     }

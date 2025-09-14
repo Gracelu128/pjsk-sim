@@ -1,33 +1,38 @@
 {
   "id": 437,
   "title (japanese)": "[Vivid BAD SQUAD] ワールドリンクイベントサポートガチャ",
-  "release_date": "1/1/2024, 7:00:00 PM",
+  "release_date": "1/1/2024, 10:00:00 PM",
   "end_date": "1/22/2024, 9:59:59 PM",
   "type": "normal",
   "gacha_rate_index": 0,
   "featured_cards": [
     {
       "card_id": "694",
+      "character": "Azusawa Kohane",
       "normal_rate": 0.058,
       "guaranteed_rate": 0.058
     },
     {
       "card_id": "659",
+      "character": "Shiraishi An",
       "normal_rate": 0.058,
       "guaranteed_rate": 0.058
     },
     {
       "card_id": "768",
+      "character": "Shinonome Akito",
       "normal_rate": 0.058,
       "guaranteed_rate": 0.058
     },
     {
       "card_id": "504",
+      "character": "Aoyagi Toya",
       "normal_rate": 0.058,
       "guaranteed_rate": 0.058
     },
     {
       "card_id": "298",
+      "character": "Hatsune Miku",
       "normal_rate": 0.058,
       "guaranteed_rate": 0.058
     }

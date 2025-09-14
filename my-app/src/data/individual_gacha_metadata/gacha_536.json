@@ -1,23 +1,26 @@
 {
   "id": 536,
   "title (japanese)": "悪を討て、成敗請負人ガチャ",
-  "release_date": "7/8/2024, 8:00:00 PM",
+  "release_date": "7/8/2024, 11:00:00 PM",
   "end_date": "7/16/2024, 10:59:59 PM",
   "type": "normal",
   "gacha_rate_index": 0,
   "featured_cards": [
     {
       "card_id": "956",
+      "character": "Tenma Tsukasa",
       "normal_rate": 0.4,
       "guaranteed_rate": 0.4
     },
     {
       "card_id": "957",
+      "character": "Kamishiro Rui",
       "normal_rate": 0.4,
       "guaranteed_rate": 0.4
     },
     {
       "card_id": "958",
+      "character": "Megurine Luka",
       "normal_rate": 0.4,
       "guaranteed_rate": 0.4
     }

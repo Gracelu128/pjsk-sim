@@ -1,38 +1,44 @@
 {
   "id": 255,
   "title (japanese)": "ハピネスパッケージガチャ",
-  "release_date": "10/25/2022, 8:00:00 PM",
+  "release_date": "10/25/2022, 11:00:00 PM",
   "end_date": "11/3/2022, 10:59:59 PM",
   "type": "gift",
   "gacha_rate_index": 2,
   "featured_cards": [
     {
       "card_id": "469",
+      "character": "Tenma Saki",
       "normal_rate": 0.019,
       "guaranteed_rate": 0.617
     },
     {
       "card_id": "463",
+      "character": "Shiraishi An",
       "normal_rate": 0.019,
       "guaranteed_rate": 0.617
     },
     {
       "card_id": "445",
+      "character": "Asahina Mafuyu",
       "normal_rate": 0.019,
       "guaranteed_rate": 0.617
     },
     {
       "card_id": "450",
+      "character": "Kusanagi Nene",
       "normal_rate": 0.019,
       "guaranteed_rate": 0.617
     },
     {
       "card_id": "391",
+      "character": "Hinomori Shizuku",
       "normal_rate": 0.019,
       "guaranteed_rate": 0.617
     },
     {
       "card_id": "447",
+      "character": "Kagamine Len",
       "normal_rate": 0.019,
       "guaranteed_rate": 0.617
     }

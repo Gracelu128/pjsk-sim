@@ -1,33 +1,38 @@
 {
   "id": 659,
   "title (japanese)": "[劇場版プロジェクトセカイ公開記念][Vivid BAD SQUAD]リコレクションガチャ",
-  "release_date": "1/26/2025, 7:00:00 PM",
+  "release_date": "1/26/2025, 10:00:00 PM",
   "end_date": "1/31/2025, 9:59:59 PM",
   "type": "limited",
   "gacha_rate_index": 0,
   "featured_cards": [
     {
       "card_id": "513",
+      "character": "Shinonome Akito",
       "normal_rate": 0.045,
       "guaranteed_rate": 0.045
     },
     {
       "card_id": "566",
+      "character": "Shiraishi An",
       "normal_rate": 0.045,
       "guaranteed_rate": 0.045
     },
     {
       "card_id": "552",
+      "character": "Aoyagi Toya",
       "normal_rate": 0.045,
       "guaranteed_rate": 0.045
     },
     {
       "card_id": "769",
+      "character": "Azusawa Kohane",
       "normal_rate": 0.045,
       "guaranteed_rate": 0.045
     },
     {
       "card_id": "298",
+      "character": "Hatsune Miku",
       "normal_rate": 0.045,
       "guaranteed_rate": 0.045
     }

@@ -1,28 +1,32 @@
 {
   "id": 442,
   "title (japanese)": "Here comes challenger!ガチャ",
-  "release_date": "1/8/2024, 7:00:00 PM",
+  "release_date": "1/8/2024, 10:00:00 PM",
   "end_date": "1/22/2024, 9:59:59 PM",
   "type": "limited",
   "gacha_rate_index": 0,
   "featured_cards": [
     {
       "card_id": "848",
+      "character": "Azusawa Kohane",
       "normal_rate": 0.4,
       "guaranteed_rate": 0.4
     },
     {
       "card_id": "849",
+      "character": "Shiraishi An",
       "normal_rate": 0.4,
       "guaranteed_rate": 0.4
     },
     {
       "card_id": "850",
+      "character": "Shinonome Akito",
       "normal_rate": 0.4,
       "guaranteed_rate": 0.4
     },
     {
       "card_id": "851",
+      "character": "Aoyagi Toya",
       "normal_rate": 0.4,
       "guaranteed_rate": 0.4
     }

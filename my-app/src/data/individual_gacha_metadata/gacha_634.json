@@ -1,23 +1,26 @@
 {
   "id": 634,
   "title (japanese)": "君と見る泡雪ガチャ",
-  "release_date": "12/20/2024, 7:00:00 PM",
+  "release_date": "12/20/2024, 10:00:00 PM",
   "end_date": "12/30/2024, 9:59:59 PM",
   "type": "normal",
   "gacha_rate_index": 0,
   "featured_cards": [
     {
       "card_id": "1050",
+      "character": "Kamishiro Rui",
       "normal_rate": 0.4,
       "guaranteed_rate": 0.4
     },
     {
       "card_id": "1051",
+      "character": "Azusawa Kohane",
       "normal_rate": 0.4,
       "guaranteed_rate": 0.4
     },
     {
       "card_id": "1052",
+      "character": "Megurine Luka",
       "normal_rate": 0.4,
       "guaranteed_rate": 0.4
     }

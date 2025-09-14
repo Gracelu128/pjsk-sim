@@ -1,28 +1,32 @@
 {
   "id": 474,
   "title (japanese)": "Crown of Suitガチャ",
-  "release_date": "3/7/2024, 7:00:00 PM",
+  "release_date": "3/7/2024, 10:00:00 PM",
   "end_date": "3/21/2024, 10:59:59 PM",
   "type": "limited",
   "gacha_rate_index": 0,
   "featured_cards": [
     {
       "card_id": "884",
+      "character": "Tenma Tsukasa",
       "normal_rate": 0.4,
       "guaranteed_rate": 0.4
     },
     {
       "card_id": "885",
+      "character": "Otori Emu",
       "normal_rate": 0.4,
       "guaranteed_rate": 0.4
     },
     {
       "card_id": "886",
+      "character": "Kusanagi Nene",
       "normal_rate": 0.4,
       "guaranteed_rate": 0.4
     },
     {
       "card_id": "887",
+      "character": "Kamishiro Rui",
       "normal_rate": 0.4,
       "guaranteed_rate": 0.4
     }

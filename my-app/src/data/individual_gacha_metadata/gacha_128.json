@@ -1,28 +1,32 @@
 {
   "id": 128,
   "title (japanese)": "[MORE MORE JUMP！]プレミアムプレゼントガチャ",
-  "release_date": "10/2/2021, 11:00:00 PM",
+  "release_date": "10/3/2021, 2:00:00 AM",
   "end_date": "10/4/2021, 1:59:59 AM",
   "type": "normal",
   "gacha_rate_index": 0,
   "featured_cards": [
     {
       "card_id": "190",
+      "character": "Hanasato Minori",
       "normal_rate": 0.214,
       "guaranteed_rate": 0.214
     },
     {
       "card_id": "222",
+      "character": "Kiritani Haruka",
       "normal_rate": 0.214,
       "guaranteed_rate": 0.214
     },
     {
       "card_id": "129",
+      "character": "Momoi Airi",
       "normal_rate": 0.214,
       "guaranteed_rate": 0.214
     },
     {
       "card_id": "160",
+      "character": "Hinomori Shizuku",
       "normal_rate": 0.214,
       "guaranteed_rate": 0.214
     }

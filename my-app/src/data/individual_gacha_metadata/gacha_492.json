@@ -1,38 +1,44 @@
 {
   "id": 492,
   "title (japanese)": "3900'sプレミアムプレゼントガチャ WCS 2024 EDITION",
-  "release_date": "4/12/2024, 8:00:00 PM",
+  "release_date": "4/12/2024, 11:00:00 PM",
   "end_date": "4/30/2024, 10:59:59 AM",
   "type": "normal",
   "gacha_rate_index": 2,
   "featured_cards": [
     {
       "card_id": "537",
+      "character": "Hatsune Miku",
       "normal_rate": 0.011,
       "guaranteed_rate": 0.383
     },
     {
       "card_id": "661",
+      "character": "Kagamine Rin",
       "normal_rate": 0.011,
       "guaranteed_rate": 0.383
     },
     {
       "card_id": "447",
+      "character": "Kagamine Len",
       "normal_rate": 0.011,
       "guaranteed_rate": 0.383
     },
     {
       "card_id": "770",
+      "character": "Megurine Luka",
       "normal_rate": 0.011,
       "guaranteed_rate": 0.383
     },
     {
       "card_id": "793",
+      "character": "MEIKO",
       "normal_rate": 0.011,
       "guaranteed_rate": 0.383
     },
     {
       "card_id": "558",
+      "character": "KAITO",
       "normal_rate": 0.011,
       "guaranteed_rate": 0.383
     }

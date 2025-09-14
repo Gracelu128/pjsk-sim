@@ -1,38 +1,44 @@
 {
   "id": 760,
   "title (japanese)": "ワールドコスチュームガチャ vol.2",
-  "release_date": "6/29/2025, 8:00:00 PM",
+  "release_date": "6/29/2025, 11:00:00 PM",
   "end_date": "7/8/2025, 10:59:59 PM",
   "type": "normal",
   "gacha_rate_index": 2,
   "featured_cards": [
     {
       "card_id": "1047",
+      "character": "Hatsune Miku",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.298
     },
     {
       "card_id": "1028",
+      "character": "Hinomori Shiho",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.298
     },
     {
       "card_id": "873",
+      "character": "Hanasato Minori",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.298
     },
     {
       "card_id": "695",
+      "character": "Shinonome Akito",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.298
     },
     {
       "card_id": "1050",
+      "character": "Kamishiro Rui",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.298
     },
     {
       "card_id": "1141",
+      "character": "Shinonome Ena",
       "normal_rate": 0.009,
       "guaranteed_rate": 0.298
     }

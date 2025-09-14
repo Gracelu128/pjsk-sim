@@ -1,38 +1,44 @@
 {
   "id": 392,
   "title (japanese)": "[初心者応援]★4メンバー1人確定10連チケットガチャ",
-  "release_date": "9/29/2023, 8:00:00 AM",
+  "release_date": "9/29/2023, 11:00:00 AM",
   "end_date": "12/31/2099, 9:59:59 AM",
   "type": "normal",
   "gacha_rate_index": 2,
   "featured_cards": [
     {
       "card_id": "92",
+      "character": "Kagamine Rin",
       "normal_rate": 0.017,
       "guaranteed_rate": 0.575
     },
     {
       "card_id": "380",
+      "character": "Hinomori Shiho",
       "normal_rate": 0.017,
       "guaranteed_rate": 0.575
     },
     {
       "card_id": "391",
+      "character": "Hinomori Shizuku",
       "normal_rate": 0.017,
       "guaranteed_rate": 0.575
     },
     {
       "card_id": "463",
+      "character": "Shiraishi An",
       "normal_rate": 0.017,
       "guaranteed_rate": 0.575
     },
     {
       "card_id": "270",
+      "character": "Kamishiro Rui",
       "normal_rate": 0.017,
       "guaranteed_rate": 0.575
     },
     {
       "card_id": "255",
+      "character": "Shinonome Ena",
       "normal_rate": 0.017,
       "guaranteed_rate": 0.575
     }

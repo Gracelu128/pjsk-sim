@@ -1,23 +1,26 @@
 {
   "id": 347,
   "title (japanese)": "妖蔓延る京ガチャ",
-  "release_date": "7/3/2023, 8:00:00 PM",
+  "release_date": "7/3/2023, 11:00:00 PM",
   "end_date": "7/10/2023, 10:59:59 PM",
   "type": "limited",
   "gacha_rate_index": 0,
   "featured_cards": [
     {
       "card_id": "672",
+      "character": "Kamishiro Rui",
       "normal_rate": 0.4,
       "guaranteed_rate": 0.4
     },
     {
       "card_id": "673",
+      "character": "Hinomori Shizuku",
       "normal_rate": 0.4,
       "guaranteed_rate": 0.4
     },
     {
       "card_id": "674",
+      "character": "Tenma Tsukasa",
       "normal_rate": 0.4,
       "guaranteed_rate": 0.4
     }

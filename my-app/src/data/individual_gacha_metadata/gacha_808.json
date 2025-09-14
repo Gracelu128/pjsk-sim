@@ -1,0 +1,28 @@
+{
+  "id": 808,
+  "title (japanese)": "[復刻]とってもおばけなバケーション！ガチャ",
+  "release_date": "9/12/2025, 3:00:00 AM",
+  "end_date": "9/21/2025, 2:59:59 AM",
+  "type": "limited",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "987",
+      "character": "Otori Emu",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "988",
+      "character": "Asahina Mafuyu",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "989",
+      "character": "Mochizuki Honami",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    }
+  ]
+}

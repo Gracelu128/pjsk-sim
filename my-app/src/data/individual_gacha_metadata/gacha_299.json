@@ -1,68 +1,80 @@
 {
   "id": 299,
   "title (japanese)": "セレクトリストガチャ",
-  "release_date": "2/22/2023, 7:00:00 PM",
+  "release_date": "2/22/2023, 10:00:00 PM",
   "end_date": "3/3/2023, 9:59:59 PM",
   "type": "normal",
   "gacha_rate_index": 2,
   "featured_cards": [
     {
       "card_id": "535",
+      "character": "Hoshino Ichika",
       "normal_rate": 0.016,
       "guaranteed_rate": 0.538
     },
     {
       "card_id": "418",
+      "character": "Mochizuki Honami",
       "normal_rate": 0.016,
       "guaranteed_rate": 0.538
     },
     {
       "card_id": "517",
+      "character": "Hanasato Minori",
       "normal_rate": 0.016,
       "guaranteed_rate": 0.538
     },
     {
       "card_id": "331",
+      "character": "Momoi Airi",
       "normal_rate": 0.016,
       "guaranteed_rate": 0.538
     },
     {
       "card_id": "435",
+      "character": "Azusawa Kohane",
       "normal_rate": 0.016,
       "guaranteed_rate": 0.538
     },
     {
       "card_id": "504",
+      "character": "Aoyagi Toya",
       "normal_rate": 0.016,
       "guaranteed_rate": 0.538
     },
     {
       "card_id": "501",
+      "character": "Otori Emu",
       "normal_rate": 0.016,
       "guaranteed_rate": 0.538
     },
     {
       "card_id": "524",
+      "character": "Kusanagi Nene",
       "normal_rate": 0.016,
       "guaranteed_rate": 0.538
     },
     {
       "card_id": "540",
+      "character": "Shinonome Ena",
       "normal_rate": 0.016,
       "guaranteed_rate": 0.538
     },
     {
       "card_id": "398",
+      "character": "Yoisaki Kanade",
       "normal_rate": 0.016,
       "guaranteed_rate": 0.538
     },
     {
       "card_id": "393",
+      "character": "Hatsune Miku",
       "normal_rate": 0.016,
       "guaranteed_rate": 0.538
     },
     {
       "card_id": "447",
+      "character": "Kagamine Len",
       "normal_rate": 0.016,
       "guaranteed_rate": 0.538
     }

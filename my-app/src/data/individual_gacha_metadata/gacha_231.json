@@ -1,68 +1,80 @@
 {
   "id": 231,
   "title (japanese)": "セレクトリストガチャ",
-  "release_date": "8/24/2022, 8:00:00 PM",
+  "release_date": "8/24/2022, 11:00:00 PM",
   "end_date": "9/4/2022, 10:59:59 PM",
   "type": "normal",
   "gacha_rate_index": 2,
   "featured_cards": [
     {
       "card_id": "416",
+      "character": "Hoshino Ichika",
       "normal_rate": 0.02,
       "guaranteed_rate": 0.667
     },
     {
       "card_id": "313",
+      "character": "Mochizuki Honami",
       "normal_rate": 0.02,
       "guaranteed_rate": 0.667
     },
     {
       "card_id": "160",
+      "character": "Hinomori Shizuku",
       "normal_rate": 0.02,
       "guaranteed_rate": 0.667
     },
     {
       "card_id": "264",
+      "character": "Momoi Airi",
       "normal_rate": 0.02,
       "guaranteed_rate": 0.667
     },
     {
       "card_id": "434",
+      "character": "Shinonome Akito",
       "normal_rate": 0.02,
       "guaranteed_rate": 0.667
     },
     {
       "card_id": "373",
+      "character": "Azusawa Kohane",
       "normal_rate": 0.02,
       "guaranteed_rate": 0.667
     },
     {
       "card_id": "412",
+      "character": "Kamishiro Rui",
       "normal_rate": 0.02,
       "guaranteed_rate": 0.667
     },
     {
       "card_id": "269",
+      "character": "Kusanagi Nene",
       "normal_rate": 0.02,
       "guaranteed_rate": 0.667
     },
     {
       "card_id": "361",
+      "character": "Yoisaki Kanade",
       "normal_rate": 0.02,
       "guaranteed_rate": 0.667
     },
     {
       "card_id": "284",
+      "character": "Asahina Mafuyu",
       "normal_rate": 0.02,
       "guaranteed_rate": 0.667
     },
     {
       "card_id": "399",
+      "character": "Kagamine Rin",
       "normal_rate": 0.02,
       "guaranteed_rate": 0.667
     },
     {
       "card_id": "375",
+      "character": "Kagamine Len",
       "normal_rate": 0.02,
       "guaranteed_rate": 0.667
     }

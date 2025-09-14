@@ -1,23 +1,26 @@
 {
   "id": 216,
   "title (japanese)": "魅惑のトロピカルリゾートガチャ",
-  "release_date": "6/19/2022, 8:00:00 PM",
+  "release_date": "6/19/2022, 11:00:00 PM",
   "end_date": "6/29/2022, 10:59:59 PM",
   "type": "normal",
   "gacha_rate_index": 0,
   "featured_cards": [
     {
       "card_id": "450",
+      "character": "Kusanagi Nene",
       "normal_rate": 0.4,
       "guaranteed_rate": 0.4
     },
     {
       "card_id": "451",
+      "character": "Tenma Tsukasa",
       "normal_rate": 0.4,
       "guaranteed_rate": 0.4
     },
     {
       "card_id": "452",
+      "character": "Otori Emu",
       "normal_rate": 0.4,
       "guaranteed_rate": 0.4
     }

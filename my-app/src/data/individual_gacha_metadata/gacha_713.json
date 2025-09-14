@@ -1,28 +1,32 @@
 {
   "id": 713,
   "title (japanese)": "Glance at Same Worldガチャ",
-  "release_date": "4/7/2025, 8:00:00 PM",
+  "release_date": "4/7/2025, 11:00:00 PM",
   "end_date": "4/21/2025, 10:59:59 PM",
   "type": "limited",
   "gacha_rate_index": 0,
   "featured_cards": [
     {
       "card_id": "1151",
+      "character": "Azusawa Kohane",
       "normal_rate": 0.4,
       "guaranteed_rate": 0.4
     },
     {
       "card_id": "1152",
+      "character": "Shiraishi An",
       "normal_rate": 0.4,
       "guaranteed_rate": 0.4
     },
     {
       "card_id": "1153",
+      "character": "Shinonome Akito",
       "normal_rate": 0.4,
       "guaranteed_rate": 0.4
     },
     {
       "card_id": "1154",
+      "character": "Aoyagi Toya",
       "normal_rate": 0.4,
       "guaranteed_rate": 0.4
     }

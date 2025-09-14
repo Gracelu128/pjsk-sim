@@ -1,23 +1,26 @@
 {
   "id": 598,
   "title (japanese)": "朽ちゆく花はやがてガチャ",
-  "release_date": "10/12/2024, 2:00:00 AM",
+  "release_date": "10/12/2024, 5:00:00 AM",
   "end_date": "10/20/2024, 10:59:59 PM",
   "type": "normal",
   "gacha_rate_index": 0,
   "featured_cards": [
     {
       "card_id": "1011",
+      "character": "Akiyama Mizuki",
       "normal_rate": 0.4,
       "guaranteed_rate": 0.4
     },
     {
       "card_id": "1012",
+      "character": "Shinonome Ena",
       "normal_rate": 0.4,
       "guaranteed_rate": 0.4
     },
     {
       "card_id": "1013",
+      "character": "KAITO",
       "normal_rate": 0.4,
       "guaranteed_rate": 0.4
     }

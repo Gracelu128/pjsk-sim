@@ -1,28 +1,32 @@
 {
   "id": 384,
   "title (japanese)": "[3周年記念][25時、ナイトコードで。]プレミアムプレゼントガチャ",
-  "release_date": "9/29/2023, 8:00:00 AM",
+  "release_date": "9/29/2023, 11:00:00 AM",
   "end_date": "10/11/2023, 10:59:59 PM",
   "type": "normal",
   "gacha_rate_index": 0,
   "featured_cards": [
     {
       "card_id": "612",
+      "character": "Yoisaki Kanade",
       "normal_rate": 0.083,
       "guaranteed_rate": 0.083
     },
     {
       "card_id": "557",
+      "character": "Asahina Mafuyu",
       "normal_rate": 0.083,
       "guaranteed_rate": 0.083
     },
     {
       "card_id": "540",
+      "character": "Shinonome Ena",
       "normal_rate": 0.083,
       "guaranteed_rate": 0.083
     },
     {
       "card_id": "486",
+      "character": "Akiyama Mizuki",
       "normal_rate": 0.083,
       "guaranteed_rate": 0.083
     }

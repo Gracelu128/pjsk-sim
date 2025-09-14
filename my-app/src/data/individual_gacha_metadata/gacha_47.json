@@ -1,33 +1,38 @@
 {
   "id": 47,
   "title (japanese)": "イベントメンバー出現率UPガチャ",
-  "release_date": "2/3/2021, 10:00:00 PM",
+  "release_date": "2/4/2021, 1:00:00 AM",
   "end_date": "2/7/2021, 6:59:59 AM",
   "type": "normal",
   "gacha_rate_index": 0,
   "featured_cards": [
     {
       "card_id": "165",
+      "character": "Aoyagi Toya",
       "normal_rate": 0.111,
       "guaranteed_rate": 0.111
     },
     {
       "card_id": "166",
+      "character": "Shinonome Akito",
       "normal_rate": 0.111,
       "guaranteed_rate": 0.111
     },
     {
       "card_id": "167",
+      "character": "Shiraishi An",
       "normal_rate": 0.111,
       "guaranteed_rate": 0.111
     },
     {
       "card_id": "35",
+      "character": "Azusawa Kohane",
       "normal_rate": 0.85,
       "guaranteed_rate": 9.7
     },
     {
       "card_id": "95",
+      "character": "Kagamine Len",
       "normal_rate": 0.85,
       "guaranteed_rate": 9.7
     }

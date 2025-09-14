@@ -1,68 +1,80 @@
 {
   "id": 212,
   "title (japanese)": "セレクトリストガチャ",
-  "release_date": "5/25/2022, 8:00:00 PM",
+  "release_date": "5/25/2022, 11:00:00 PM",
   "end_date": "6/2/2022, 10:59:59 PM",
   "type": "normal",
   "gacha_rate_index": 2,
   "featured_cards": [
     {
       "card_id": "315",
+      "character": "Tenma Saki",
       "normal_rate": 0.023,
       "guaranteed_rate": 0.758
     },
     {
       "card_id": "380",
+      "character": "Hinomori Shiho",
       "normal_rate": 0.023,
       "guaranteed_rate": 0.758
     },
     {
       "card_id": "330",
+      "character": "Hanasato Minori",
       "normal_rate": 0.023,
       "guaranteed_rate": 0.758
     },
     {
       "card_id": "264",
+      "character": "Momoi Airi",
       "normal_rate": 0.023,
       "guaranteed_rate": 0.758
     },
     {
       "card_id": "373",
+      "character": "Azusawa Kohane",
       "normal_rate": 0.023,
       "guaranteed_rate": 0.758
     },
     {
       "card_id": "341",
+      "character": "Aoyagi Toya",
       "normal_rate": 0.023,
       "guaranteed_rate": 0.758
     },
     {
       "card_id": "356",
+      "character": "Otori Emu",
       "normal_rate": 0.023,
       "guaranteed_rate": 0.758
     },
     {
       "card_id": "269",
+      "character": "Kusanagi Nene",
       "normal_rate": 0.023,
       "guaranteed_rate": 0.758
     },
     {
       "card_id": "361",
+      "character": "Yoisaki Kanade",
       "normal_rate": 0.023,
       "guaranteed_rate": 0.758
     },
     {
       "card_id": "255",
+      "character": "Shinonome Ena",
       "normal_rate": 0.023,
       "guaranteed_rate": 0.758
     },
     {
       "card_id": "358",
+      "character": "MEIKO",
       "normal_rate": 0.023,
       "guaranteed_rate": 0.758
     },
     {
       "card_id": "382",
+      "character": "KAITO",
       "normal_rate": 0.023,
       "guaranteed_rate": 0.758
     }

@@ -1,13 +1,14 @@
 {
   "id": 217,
   "title (japanese)": "[神代類]HAPPY BIRTHDAYガチャ",
-  "release_date": "6/23/2022, 8:00:00 AM",
+  "release_date": "6/23/2022, 11:00:00 AM",
   "end_date": "6/30/2022, 10:59:59 AM",
   "type": "birthday",
   "gacha_rate_index": 4,
   "featured_cards": [
     {
       "card_id": "455",
+      "character": "Kamishiro Rui",
       "normal_rate": 3.0,
       "guaranteed_rate": null
     }

@@ -1,58 +1,68 @@
 {
   "id": 645,
   "title (japanese)": "[2025新春]運試し1/2セレクトリストガチャ",
-  "release_date": "12/31/2024, 7:00:00 AM",
+  "release_date": "12/31/2024, 10:00:00 AM",
   "end_date": "1/10/2025, 9:59:59 PM",
   "type": "normal",
   "gacha_rate_index": 2,
   "featured_cards": [
     {
       "card_id": "875",
+      "character": "Hatsune Miku",
       "normal_rate": 0.01,
       "guaranteed_rate": 0.333
     },
     {
       "card_id": "998",
+      "character": "Hoshino Ichika",
       "normal_rate": 0.01,
       "guaranteed_rate": 0.333
     },
     {
       "card_id": "867",
+      "character": "Mochizuki Honami",
       "normal_rate": 0.01,
       "guaranteed_rate": 0.333
     },
     {
       "card_id": "630",
+      "character": "Momoi Airi",
       "normal_rate": 0.01,
       "guaranteed_rate": 0.333
     },
     {
       "card_id": "939",
+      "character": "Hinomori Shizuku",
       "normal_rate": 0.01,
       "guaranteed_rate": 0.333
     },
     {
       "card_id": "694",
+      "character": "Azusawa Kohane",
       "normal_rate": 0.01,
       "guaranteed_rate": 0.333
     },
     {
       "card_id": "994",
+      "character": "Shinonome Akito",
       "normal_rate": 0.01,
       "guaranteed_rate": 0.333
     },
     {
       "card_id": "928",
+      "character": "Tenma Tsukasa",
       "normal_rate": 0.01,
       "guaranteed_rate": 0.333
     },
     {
       "card_id": "855",
+      "character": "Kusanagi Nene",
       "normal_rate": 0.01,
       "guaranteed_rate": 0.333
     },
     {
       "card_id": "903",
+      "character": "Shinonome Ena",
       "normal_rate": 0.01,
       "guaranteed_rate": 0.333
     }
