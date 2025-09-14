@@ -980,6 +980,11 @@ def extract_featured_cards(driver, gacha_id):
     """
     featured_cards = []
 
+    # Open card_metadata.json to get character associated with featured cards
+    card_metadata = {}
+    with open(CARD_META_PATH, 'r', encoding='utf-8') as f:
+        card_metadata = json.load(f)
+
     try:
         # Click the button to open the modal (works for singular or plural)
         gacha_cards_button = WebDriverWait(driver, 10).until(
@@ -1015,8 +1020,12 @@ def extract_featured_cards(driver, gacha_id):
                 normal_rate = float(rate_text[0].replace('%', '').strip())
                 guaranteed_rate = float(rate_text[1].replace('%', '').strip()) if len(rate_text) > 1 else None
 
+                # Get character associated with card
+                character = card_metadata.get(card_id, {}).get('character', 'N/A')
+
                 featured_cards.append({
                     "card_id": card_id,
+                    "character": character,
                     "normal_rate": normal_rate,
                     "guaranteed_rate": guaranteed_rate
                 })
