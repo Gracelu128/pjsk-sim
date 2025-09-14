@@ -16,7 +16,7 @@ pjsk-sim/
 │   │   ├── cards/                # Card images
 │   │   ├── costumes/             # Costume images
 │   │   ├── gacha/                # Gacha images & manifest
-│   │   └── icons/                # Character icons
+│   │   └── card_icons/           # Card icons
 │   │
 │   ├── src/                      # Source code (main project logic)
 │   │   ├── app/                  # Next.js app router pages

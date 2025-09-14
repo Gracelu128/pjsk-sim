@@ -137,7 +137,7 @@ def sekaipedia_scrape_card_info(start_num=start_id, end_num=end_id):
     """Scrape card images using Selenium with automatic driver management"""
     # Configuration
     json_path = "my-app/src/data/card_metadata.json"
-    icons_path = "my-app/public/icons"
+    icons_path = "my-app/public/card_icons"
     os.makedirs(icons_path, exist_ok=True)
     data = None
     if os.path.exists(json_path):
