@@ -438,10 +438,34 @@ def scrape_missing_cards():
             wait = WebDriverWait(driver, 90)  # up to 90s instead of default
             wait.until(EC.url_contains("/card/"))
             detail_url = driver.current_url
-        except TimeoutException:
-            # optional: fallback check / diagnostics
-            print("⚠️ Timed out waiting for /card/ in URL. Current URL:", driver.current_url)
-            raise
+        except Exception as e:
+            print("⚠️ Timed out waiting for /gacha/ in URL. Current URL:", driver.current_url)
+            print("Trying fallback method to determine end_index...")
+            try:
+                data = {}
+                with open(CARD_META_PATH, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                # Get the highest card id present
+                max_id = max(int(k) for k in data.keys())
+                consecutive_missing = 0
+                probe_id = max_id + 1
+                last_found = max_id
+                while consecutive_missing < 3:
+                    probe_url = f"https://sekai.best/card/{probe_id}"
+                    resp = requests.get(probe_url)
+                    if resp.status_code == 200:
+                        print(f"  Found card {probe_id}")
+                        last_found = probe_id
+                        consecutive_missing = 0
+                    else:
+                        print(f"  No card at {probe_id}")
+                        consecutive_missing += 1
+                    probe_id += 1
+                end_index = last_found
+                print(f"Fallback determined end_index: {end_index}")
+            except Exception as ex:
+                print("Fallback also failed:", str(ex))
+            raise e
 
         m2 = re.search(r"/card/(\d+)", detail_url)
         if m2:
@@ -768,10 +792,34 @@ def scrape_missing_gachas():
             wait = WebDriverWait(driver, 90)  # up to 90s instead of default
             wait.until(EC.url_contains("/gacha/"))
             detail_url = driver.current_url
-        except TimeoutException:
-            # optional: fallback check / diagnostics
+        except Exception as e:
             print("⚠️ Timed out waiting for /gacha/ in URL. Current URL:", driver.current_url)
-            raise
+            print("Trying fallback method to determine end_index...")
+            try:
+                data = {}
+                with open(GACHA_META_PATH, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                # Get the highest card id present
+                max_id = max(int(k) for k in data.keys())
+                consecutive_missing = 0
+                probe_id = max_id + 1
+                last_found = max_id
+                while consecutive_missing < 3:
+                    probe_url = f"https://sekai.best/gacha/{probe_id}"
+                    resp = requests.get(probe_url)
+                    if resp.status_code == 200:
+                        print(f"  Found gacha {probe_id}")
+                        last_found = probe_id
+                        consecutive_missing = 0
+                    else:
+                        print(f"  No gacha at {probe_id}")
+                        consecutive_missing += 1
+                    probe_id += 1
+                end_index = last_found
+                print(f"Fallback determined end_index: {end_index}")
+            except Exception as ex:
+                print("Fallback also failed:", str(ex))
+            raise e
 
         m2 = re.search(r"/gacha/(\d+)", detail_url)
         if m2:
