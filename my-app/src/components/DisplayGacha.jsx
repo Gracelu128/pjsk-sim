@@ -18,9 +18,10 @@ import {
 } from "@/utils/assetPaths";
 import buildLogoNav from "@/utils/buildLogoNav";
 
-export default function DisplayGacha({ gachaId, manifest }) {
+export default function DisplayGacha({ gachaId, manifest, gachaMeta }) {
   const entry = manifest?.[gachaId] || {};
   console.log("Debug Entry:", entry);
+  console.log("Debug Gacha Metadata:", gachaMeta);
 
   // Rotators
   //const bgLen = Array.isArray(entry.bg) ? entry.bg.length : 0;

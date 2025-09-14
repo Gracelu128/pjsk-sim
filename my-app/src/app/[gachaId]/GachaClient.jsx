@@ -5,6 +5,7 @@ import DisplayGacha from "@/components/DisplayGacha";
 
 export default function GachaClient({ id }) {
   const [manifest, setManifest] = useState(null);
+  const [gachaMeta, setGachaMeta] = useState(null);
 
   useEffect(() => {
     fetch("/gacha/manifest.json")
@@ -13,10 +14,18 @@ export default function GachaClient({ id }) {
       .catch(() => setManifest({}));
   }, []);
 
+  useEffect(() => {
+    // Dynamically import the individual gacha metadata for this id
+    import(`@/data/individual_gacha_metadata/gacha_${id}.json`)
+      .then(module => setGachaMeta(module.default))
+      .catch(() => setGachaMeta(null));
+  }, [id]);
+
   if (!manifest) return null;
   if (!manifest[id]) return <main style={{padding:24}}>Not found: {id}</main>;
+  if (!gachaMeta) return <main style={{padding:24}}>Metadata not found for: {id}</main>;
 
-  return <DisplayGacha gachaId={id} manifest={manifest} />;
+  return <DisplayGacha gachaId={id} manifest={manifest} gachaMeta={gachaMeta} />;
 }
 
 function sanitizeManifest(m) {
