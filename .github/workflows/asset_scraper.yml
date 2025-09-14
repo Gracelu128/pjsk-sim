@@ -59,15 +59,6 @@ jobs:
                 python card_scraper_script.py \
                 --task "reorder card info"
 
-            - name: Commit and push results
-              if: ${{ steps.discover.outputs.start_index != '' || steps.discover.outputs.end_index != '' }}
-              run: |
-                git config user.name "github-actions[bot]"
-                git config user.email "github-actions[bot]@users.noreply.github.com"
-                git add .
-                git commit -m "Update scraped card assets [skip ci]" || echo "No changes to commit"
-                git push
-
     scrape_gacha:
         needs: scrape_card
         runs-on: ubuntu-latest
@@ -128,7 +119,7 @@ jobs:
                 --end_gacha ${{ steps.discover.outputs.end_index }} \
                 --task "scrape gacha assets"
 
-            - name: Commit and push results
+            - name: Commit and push results for both jobs
               if: ${{ steps.discover.outputs.start_index != '' || steps.discover.outputs.end_index != '' }}
               run: |
                 git config user.name "github-actions[bot]"
