@@ -9,6 +9,7 @@ export default function GachaPage({ params }) {
   const id = gachaId.replace(/^gacha_/, ""); // strip prefix for manifest lookup if needed
 
   const [manifest, setManifest] = useState({});
+  const [gachaMeta, setGachaMeta] = useState(null);
 
   useEffect(() => {
     fetch("/gacha/manifest.json")
@@ -16,7 +17,14 @@ export default function GachaPage({ params }) {
       .then(setManifest);
   }, []);
 
+  useEffect(() => {
+    // Dynamically import the individual gacha metadata for this id
+    import(`@/data/individual_gacha_metadata/gacha_${id}.json`)
+      .then(module => setGachaMeta(module.default))
+      .catch(() => setGachaMeta(null));
+  }, [id]);
+
   if (!gachaId) return null;
 
-  return <DisplayGacha gachaId={id} manifest={manifest} />;
+  return <DisplayGacha gachaId={id} manifest={manifest} gachaMeta={gachaMeta} />;
 }
