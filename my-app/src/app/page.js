@@ -78,7 +78,7 @@ export default function Home() {
         <button
           style={{
             background: "none",
-            border: "1px solid #ccc",
+            border: "1px solid #e2e2e2",
             padding: 0,
             cursor: "pointer",
             height: 27,
