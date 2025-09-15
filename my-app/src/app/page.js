@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import NextImage from "next/image";
 import { logoPath } from "@/utils/assetPaths";
-import filterButtonImg from "@/public/UI/filter.webp"; // Filter button image
 import gachaMeta from "@/data/gacha_metadata.json";
 
 function sanitizeManifest(m) {
@@ -91,10 +90,10 @@ export default function Home() {
           title="Filter"
           onClick={() => alert("Filter button clicked!")}
         >
-          <img src={filterButtonImg} alt="Filter" style={{ height: 32, width: 32 }} />
+          <img src={"public/UI/filter.webp"} alt="Filter" style={{ height: 32, width: 32 }} />
         </button>
       </div>
-
+ 
       <div
         style={{
           display: "grid",
