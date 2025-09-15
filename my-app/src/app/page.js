@@ -81,16 +81,17 @@ export default function Home() {
             border: "1px solid #e2e2e2",
             padding: 0,
             cursor: "pointer",
-            height: 27,
-            width: 27,
+            height: 36,
+            width: 36,
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
+            borderRadius: 6,
           }}
           title="Filter"
           onClick={() => alert("Filter button clicked!")}
         >
-          <img src={"/UI/filter.webp"} alt="Filter" style={{ height: 32, width: 32 }} />
+          <img src={"/UI/filter.webp"} alt="Filter" style={{ height: 24, width: 24 }} />
         </button>
       </div>
  
