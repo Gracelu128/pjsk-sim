@@ -91,7 +91,7 @@ export default function Home() {
           title="Filter"
           onClick={() => alert("Filter button clicked!")}
         >
-          <img src={"/UI/filter.webp"} alt="Filter" style={{ height: 24, width: 24 }} />
+          <img src={"/UI/filter.webp"} alt="Filter" style={{ height: 20, width: 20 }} />
         </button>
       </div>
  
