@@ -78,11 +78,11 @@ export default function Home() {
         <button
           style={{
             background: "none",
-            border: "none",
+            border: "1px solid #ccc",
             padding: 0,
             cursor: "pointer",
-            height: 36,
-            width: 36,
+            height: 27,
+            width: 27,
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
