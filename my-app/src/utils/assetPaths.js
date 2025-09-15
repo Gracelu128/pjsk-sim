@@ -72,4 +72,5 @@ export const UI_FILES = {
   token_bar_birthday: "token_bar_birthday.webp",
   token_bar_normal: "token_bar_normal.webp",
   token_bar_limited: "token_bar_limited.webp",
+  filter_button: "filter.webp",
 };

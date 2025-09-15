@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import NextImage from "next/image";
 import { logoPath } from "@/utils/assetPaths";
+import filterButtonImg from "@/public/UI/filter.webp"; // Filter button image
 import gachaMeta from "@/data/gacha_metadata.json";
 
 function sanitizeManifest(m) {
@@ -60,21 +61,39 @@ export default function Home() {
     <main style={{ minHeight: "100vh", padding: "24px", boxSizing: "border-box" }}>
       <h1 style={{ marginBottom: 16 }}>Gacha Gallery</h1>
 
-      {/* Search Bar */}
-      <input
-        type="text"
-        placeholder="Search..."
-        value={searchQuery}
-        onChange={(e) => setSearchQuery(e.target.value)}
-        style={{
-          marginBottom: 16,
-          padding: 8,
-          borderRadius: 4,
-          border: "1px solid #e2e2e2",
-          width: "100%",
-          maxWidth: 400,
-        }}
-      />
+      {/* Search Bar and Filter Button */}
+      <div style={{ display: "flex", alignItems: "center", marginBottom: 16, gap: 8 }}>
+        <input
+          type="text"
+          placeholder="Search..."
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+          style={{
+            padding: 8,
+            borderRadius: 4,
+            border: "1px solid #e2e2e2",
+            width: "100%",
+            maxWidth: 400,
+          }}
+        />
+        <button
+          style={{
+            background: "none",
+            border: "none",
+            padding: 0,
+            cursor: "pointer",
+            height: 36,
+            width: 36,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+          title="Filter"
+          onClick={() => alert("Filter button clicked!")}
+        >
+          <img src={filterButtonImg} alt="Filter" style={{ height: 32, width: 32 }} />
+        </button>
+      </div>
 
       <div
         style={{
