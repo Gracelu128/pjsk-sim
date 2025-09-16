@@ -18,44 +18,40 @@ import {
 } from "@/utils/assetPaths";
 import buildLogoNav from "@/utils/buildLogoNav";
 
-export default function DisplayGacha({ gachaId, manifest, gachaMeta }) {
+export default function DisplayGacha({ gachaId, manifest, onNormalTenPull }) {
+  // --------------------------------------------------------------------------
+  // --------------------- setup/environment ----------------------------------
   const entry = manifest?.[gachaId] || {};
-  console.log("Debug Entry:", entry);
-  console.log("Debug Gacha Metadata:", gachaMeta);
-
   // Rotators
-  //const bgLen = Array.isArray(entry.bg) ? entry.bg.length : 0;
   const imgLen = Array.isArray(entry.img) ? entry.img.length : 0;
   const imgIndex = useCountdown(imgLen, 4000);
-  // Per-gacha assets
-  //Below: fix for gachas 1-376
-  // Build the list of bg candidates
+
+  // Backgrounds (filtering early gachas to only card images)
   const allBg = Array.isArray(entry.bg) ? entry.bg : [];
   const isEarly = Number(gachaId) >= 1 && Number(gachaId) <= 376;
-
-  // keep only card images for early gachas
   const bgFiles = isEarly
-    ? allBg.filter(p => typeof p === "string" && (p.startsWith("/cards/") || p.startsWith("cards/") || p.includes("/cards/")))
+    ? allBg.filter(
+        (p) =>
+          typeof p === "string" &&
+          (p.startsWith("/cards/") || p.startsWith("cards/") || p.includes("/cards/"))
+      )
     : allBg;
-
-  // Use the filtered list length for rotation
   const bgIndex = useCountdown(bgFiles.length || 0, 4000);
 
-  // Resolve the current bg URL
   const resolveBg = (file) => {
     if (!file) return null;
-    // mirror the logic in normalizeBgFile
-    if (file.startsWith("http://") || file.startsWith("https://") || file.startsWith("/")) return file;
+    if (file.startsWith("http://") || file.startsWith("https://") || file.startsWith("/"))
+      return file;
     if (file.startsWith("cards/") || file.includes("/cards/")) return "/" + file;
-    // texture filename
     return `/gacha/gacha_${gachaId}/screen/texture/${file}`;
   };
 
   const bgSrc = resolveBg(bgFiles[bgIndex] || null);
-  //-
+
   const overlaySrc = overlayPath(gachaId, entry, imgIndex);
   const logoSrc = logoPath(gachaId, entry);
   const bannerSrc = bannerPath(gachaId, entry, 0);
+
   // Shared UI assets (null if file missing)
   const ui = {
     singlePull: uiPath(UI_FILES.single_pull_button),
@@ -75,71 +71,52 @@ export default function DisplayGacha({ gachaId, manifest, gachaMeta }) {
     realDateBar: uiPath(UI_FILES.real_date_bar),
     fakeStickerBarNormal: uiPath(UI_FILES.fake_gacha_sticker_bar_normal),
 
-    charDetails: uiPath(UI_FILES.character_details_button), // (spelling as provided)
+    charDetails: uiPath(UI_FILES.character_details_button),
     gachaDetails: uiPath(UI_FILES.gacha_details_button),
   };
+
   const { width: vw, height: vh } = useWindowSize();
   const { w: natW, h: natH } = useNaturalSize(bgSrc || "");
-  //for resizing overlay
   const { w: ovW, h: ovH } = useNaturalSize(overlaySrc || "");
 
   // Stage size that "contains" bg
-  const { stageW, stageH, scaleFromBg } = useMemo(() => {
+  const { stageW, stageH } = useMemo(() => {
     if (bgSrc && natW && natH && vw && vh) {
-      const scale = Math.min(vw / natW, vh / natH); // bg → stage scale
+      const scale = Math.min(vw / natW, vh / natH);
       return {
         stageW: Math.floor(natW * scale),
         stageH: Math.floor(natH * scale),
-        scaleFromBg: scale,
       };
     }
-    return { stageW: Math.max(0, vw), stageH: Math.max(0, vh), scaleFromBg: 0.3 };
+    return { stageW: Math.max(0, vw), stageH: Math.max(0, vh) };
   }, [bgSrc, natW, natH, vw, vh]);
   const ready = stageW > 0 && stageH > 0;
 
-  // If literally nothing to show
-  if (
-    !bgSrc &&
-    !overlaySrc &&
-    !logoSrc &&
-    !bannerSrc &&
-    !Object.values(ui).some(Boolean)
-  ) {
+  if (!bgSrc && !overlaySrc && !logoSrc && !bannerSrc && !Object.values(ui).some(Boolean)) {
     return <div style={{ padding: 16, color: "#bbb" }}>No assets found for this gacha.</div>;
   }
 
-  // Full overlays: allow known sizes + tolerant match vs background
-  // adjust AR_TOL, MIN_SIDE, MIN_AREA if needed.
-  // examples like gacha_407 has overlays sized 2048 × 1170
-  // ones like gacha_446, on the other hand, have sprite-sized overlays
-  // gacha_609 is an example of a full overlay sized 2520 × 1440 which is the same as bg
+  // Heuristic: does overlay cover full canvas?
   const overlayIsFull = (() => {
     if (!overlaySrc || !ovW || !ovH || !natW || !natH) return false;
-    // 1) Known full-canvas sizes
     if ((ovW === 2520 && ovH === 1440) || (ovW === 2048 && ovH === 1170)) return true;
-    // 2) Tolerant heuristic vs bg
     const bgAR = natW / natH;
     const ovAR = ovW / ovH;
-    const arDiff = Math.abs(ovAR - bgAR) / bgAR;         // relative AR delta
+    const arDiff = Math.abs(ovAR - bgAR) / bgAR;
     const wRatio = ovW / natW;
     const hRatio = ovH / natH;
     const areaRatio = (ovW * ovH) / (natW * natH);
-    const AR_TOL = 0.03;     // ≤3% AR difference
-    const MIN_SIDE = 0.85;   // ≥85% of bg width & height
-    const MIN_AREA = 0.70;   // ≥70% of bg area
-    return (arDiff <= AR_TOL && wRatio >= MIN_SIDE && hRatio >= MIN_SIDE) || areaRatio >= MIN_AREA;
+    return (arDiff <= 0.03 && wRatio >= 0.85 && hRatio >= 0.85) || areaRatio >= 0.7;
   })();
 
-  // Helpers to size with stage-relative px
   const pxW = (p) => Math.round(stageW * p);
   const pxH = (p) => Math.round(stageH * p);
 
-  //logos for tab panel
+  // Navigator logos
   const navLogos = useMemo(
-    () => buildLogoNav(manifest || {}, gachaId, (id, entry) => logoPath(id, entry), 6, 2),
+    () => buildLogoNav(manifest || {}, gachaId, (id, e) => logoPath(id, e), 6, 2),
     [manifest, gachaId]
   );
-
 
   // -----------------------------------------------------------------------------------------
   // ---------------------------------------------ACTUAL UI-----------------------------------
@@ -173,32 +150,30 @@ export default function DisplayGacha({ gachaId, manifest, gachaMeta }) {
           {/* Overlay */}
           {overlaySrc && overlayIsFull && (
             <FadeImage
-             src={overlaySrc}
-             alt={`Gacha ${gachaId} Overlay`}
-             fill
-             sizes={`${stageW}px`}
-             style={{ objectFit: "contain", pointerEvents: "none" }}
-             duration={400}
-           />
+              src={overlaySrc}
+              alt={`Gacha ${gachaId} Overlay`}
+              fill
+              sizes={`${stageW}px`}
+              style={{ objectFit: "contain", pointerEvents: "none" }}
+              duration={400}
+            />
           )}
 
           {/* Sprite/strip overlays (non-full-screen) */}
           {overlaySrc && ovW > 0 && ovH > 0 && !overlayIsFull && (() => {
-            // stable box: 28% of stage height, preserve aspect from the current sprite
             const boxH = Math.round(stageH * 0.28);
-            const aspect = ovW / ovH || 2.7; // fallback if something is odd
+            const aspect = ovW / ovH || 2.7;
             const boxW = Math.round(boxH * aspect);
-
             return (
               <div
                 style={{
                   position: "absolute",
                   right: "7%",
                   top: "63%",
-                  transform: "translateY(-50%)",   // keep it vertically centered
+                  transform: "translateY(-50%)",
                   width: boxW,
                   height: boxH,
-                  pointerEvents: "none",
+                  // keep this container clickable; only the image ignores events
                 }}
               >
                 <FadeImage
@@ -206,7 +181,7 @@ export default function DisplayGacha({ gachaId, manifest, gachaMeta }) {
                   alt={`Gacha ${gachaId} Overlay (sprite)`}
                   fill
                   sizes={`${boxW}px`}
-                  style={{ objectFit: "contain", display: "block" }}
+                  style={{ objectFit: "contain", display: "block", pointerEvents: "none" }}
                   duration={400}
                 />
               </div>
@@ -227,7 +202,6 @@ export default function DisplayGacha({ gachaId, manifest, gachaMeta }) {
                 pointerEvents: "auto",
               }}
             >
-              {/* Panel art */}
               <div style={{ position: "absolute", inset: 0 }}>
                 <NextImage
                   src={ui.tabsPanel}
@@ -238,13 +212,12 @@ export default function DisplayGacha({ gachaId, manifest, gachaMeta }) {
                 />
               </div>
 
-              {/* 6 logos inside panel bounds */}
               <div
                 style={{
                   position: "absolute",
-                  inset: "2% 1% 3% 14%",                 // inner padding
+                  inset: "2% 1% 3% 14%",
                   display: "grid",
-                  gridTemplateRows: "repeat(6, 1fr)",     // six rows
+                  gridTemplateRows: "repeat(6, 1fr)",
                   gap: "1%",
                 }}
               >
@@ -263,7 +236,6 @@ export default function DisplayGacha({ gachaId, manifest, gachaMeta }) {
                         height: "100%",
                         borderRadius: 2,
                         overflow: "hidden",
-                        // border: isCurrent ? "2px solid #fff" : "none", //"1px solid rgba(255,255,255,0.35)",
                         boxShadow: isCurrent ? "0 0 0 3px rgba(255,255,255,0.25)" : "none",
                         background: isCurrent ? "rgba(33, 255, 251, 0.93)" : "none",
                       }}
@@ -282,26 +254,26 @@ export default function DisplayGacha({ gachaId, manifest, gachaMeta }) {
             </div>
           )}
 
-          {/* TOP-LEFT: Return button */} 
+          {/* TOP-LEFT: Return button */}
           {ui.returnBtn && (
-            <Link 
-              href="/" 
-              prefetch={false} 
-              aria-label="Back to home" 
-              style={{ position: "absolute", top: "4%", left: "4%", width: "5%", display: "block" }} 
-            > 
-              <NextImage 
-              src={ui.returnBtn} 
-              alt="Return" 
-              width={pxW(0.08)} 
-              height={pxH(0.08)} 
-              sizes={`${pxW(0.08)}px`} 
-              style={{ width: "90%", height: "auto", display: "block", cursor: "pointer" }} 
-              /> 
+            <Link
+              href="/"
+              prefetch={false}
+              aria-label="Back to home"
+              style={{ position: "absolute", top: "4%", left: "4%", width: "5%", display: "block" }}
+            >
+              <NextImage
+                src={ui.returnBtn}
+                alt="Return"
+                width={pxW(0.08)}
+                height={pxH(0.08)}
+                sizes={`${pxW(0.08)}px`}
+                style={{ width: "90%", height: "auto", display: "block", cursor: "pointer" }}
+              />
             </Link>
           )}
 
-          {/* TOP-RIGHT BAR: tokenBarNormal, exchange, crystal, settings (right-aligned row) */}
+          {/* TOP-RIGHT BAR */}
           {(ui.tokenBarNormal || ui.exchangeBtn || ui.crystalBar || ui.settingsBtn) && (
             <div
               style={{
@@ -311,7 +283,6 @@ export default function DisplayGacha({ gachaId, manifest, gachaMeta }) {
                 display: "flex",
                 alignItems: "center",
                 gap: pxW(0.01),
-                // let items size themselves; we cap overall width to ~60% so it doesn't collide with center
                 maxWidth: "45%",
               }}
             >
@@ -330,7 +301,7 @@ export default function DisplayGacha({ gachaId, manifest, gachaMeta }) {
               {ui.exchangeBtn && (
                 <Link
                   href={`/gacha_${gachaId}/exchange`}
-                  scroll={false} 
+                  scroll={false}
                   prefetch
                   aria-label="Open exchange"
                   style={{ width: pxW(0.10), display: "block" }}
@@ -360,7 +331,7 @@ export default function DisplayGacha({ gachaId, manifest, gachaMeta }) {
               {ui.settingsBtn && (
                 <Link
                   href={`/gacha_${gachaId}/settings`}
-                  scroll={false} 
+                  scroll={false}
                   prefetch
                   aria-label="Open settings"
                   style={{ width: pxW(0.06), display: "block", marginRight: "-4%" }}
@@ -378,12 +349,11 @@ export default function DisplayGacha({ gachaId, manifest, gachaMeta }) {
             </div>
           )}
 
-          {/* CENTER-LEFT CLUSTER: Logo + date/sticker bars + detail buttons */}
+          {/* CENTER-LEFT: Logo + date/sticker bars + detail buttons */}
           {(logoSrc || ui.fakeDateBar || ui.fakeStickerBarNormal || ui.charDetails || ui.gachaDetails) && (
             <div
               style={{
                 position: "absolute",
-                // a bit to the right of tabs panel
                 left: "16%",
                 bottom: "10%",
                 width: "23%",
@@ -392,7 +362,6 @@ export default function DisplayGacha({ gachaId, manifest, gachaMeta }) {
                 alignItems: "center",
               }}
             >
-              {/* Logo */}
               {logoSrc && (
                 <div style={{ width: "100%", marginBottom: pxH(0.015) }}>
                   <NextImage
@@ -406,7 +375,6 @@ export default function DisplayGacha({ gachaId, manifest, gachaMeta }) {
                 </div>
               )}
 
-              {/* Real date bar */}
               {entry["end date"] ? (
                 ui.realDateBar && (
                   <div
@@ -423,7 +391,7 @@ export default function DisplayGacha({ gachaId, manifest, gachaMeta }) {
                     <NextImage
                       src={ui.realDateBar}
                       alt="Date"
-                      width={pxW(0.238)} // 85% of 28% ~ 23.8%
+                      width={pxW(0.238)}
                       height={pxH(0.06)}
                       sizes={`${pxW(0.238)}px`}
                       style={{ width: "100%", height: "auto", display: "block" }}
@@ -447,7 +415,7 @@ export default function DisplayGacha({ gachaId, manifest, gachaMeta }) {
                     <NextImage
                       src={ui.fakeDateBar}
                       alt="Date"
-                      width={pxW(0.238)} // 85% of 28% ~ 23.8%
+                      width={pxW(0.238)}
                       height={pxH(0.06)}
                       sizes={`${pxW(0.238)}px`}
                       style={{ width: "100%", height: "auto", display: "block" }}
@@ -456,7 +424,6 @@ export default function DisplayGacha({ gachaId, manifest, gachaMeta }) {
                 )
               )}
 
-              {/* Fake sticker bar (normal) */}
               {ui.fakeStickerBarNormal && (
                 <div style={{ width: "85%", marginBottom: pxH(0.02) }}>
                   <NextImage
@@ -470,7 +437,6 @@ export default function DisplayGacha({ gachaId, manifest, gachaMeta }) {
                 </div>
               )}
 
-              {/* Details buttons row */}
               {(ui.charDetails || ui.gachaDetails) && (
                 <div style={{ display: "flex", gap: pxW(0.01) }}>
                   {ui.charDetails && (
@@ -502,7 +468,7 @@ export default function DisplayGacha({ gachaId, manifest, gachaMeta }) {
             </div>
           )}
 
-          {/* BOTTOM-RIGHT: Pull buttons horizontally, container ~60% stage width */}
+          {/* BOTTOM-RIGHT: Pull buttons and clickable overlays */}
           {(ui.singlePull || ui.tenPull || ui.paidSingle || ui.paidTen) && (
             <div
               style={{
@@ -516,23 +482,12 @@ export default function DisplayGacha({ gachaId, manifest, gachaMeta }) {
                 flexWrap: "wrap",
               }}
             >
+              {/* Single pull (non-clickable for now) */}
               {ui.singlePull && (
-                <div style={{ width: "22%" }}>
+                <div style={{ position: "relative", width: "22%" }}>
                   <NextImage
                     src={ui.singlePull}
                     alt="1 pull"
-                    width={pxW(0.132)} // 22% of 60% ~ 13.2% of stageW
-                    height={pxH(0.10)}
-                    sizes={`${pxW(0.132)}px`}
-                    style={{ width: "100%", height: "auto", display: "block" }}
-                  />
-                </div>
-              )}
-              {ui.tenPull && (
-                <div style={{ width: "22%" }}>
-                  <NextImage
-                    src={ui.tenPull}
-                    alt="10 pulls"
                     width={pxW(0.132)}
                     height={pxH(0.10)}
                     sizes={`${pxW(0.132)}px`}
@@ -540,8 +495,36 @@ export default function DisplayGacha({ gachaId, manifest, gachaMeta }) {
                   />
                 </div>
               )}
+
+              {/* Ten pull (CLICKABLE) */}
+              {ui.tenPull && (
+                <div style={{ position: "relative", width: "22%" }}>
+                  <NextImage
+                    src={ui.tenPull}
+                    alt="10 pulls"
+                    width={pxW(0.132)}
+                    height={pxH(0.10)}
+                    sizes={`${pxW(0.132)}px`}
+                    style={{ width: "100%", height: "auto", display: "block", pointerEvents: "none" }}
+                  />
+                  {/* Transparent button overlay to catch clicks */}
+                  <button
+                    aria-label="Normal 10 Pull"
+                    onClick={onNormalTenPull}
+                    style={{
+                      position: "absolute",
+                      inset: 0,
+                      background: "transparent",
+                      border: "none",
+                      cursor: "pointer",
+                    }}
+                  />
+                </div>
+              )}
+
+              {/* Paid single (non-clickable placeholder) */}
               {ui.paidSingle && (
-                <div style={{ width: "22%" }}>
+                <div style={{ position: "relative", width: "22%" }}>
                   <NextImage
                     src={ui.paidSingle}
                     alt="Paid 1 pull"
@@ -552,8 +535,10 @@ export default function DisplayGacha({ gachaId, manifest, gachaMeta }) {
                   />
                 </div>
               )}
+
+              {/* Paid ten (non-clickable placeholder) */}
               {ui.paidTen && (
-                <div style={{ width: "22%" }}>
+                <div style={{ position: "relative", width: "22%" }}>
                   <NextImage
                     src={ui.paidTen}
                     alt="Paid 10 pulls"
@@ -567,7 +552,7 @@ export default function DisplayGacha({ gachaId, manifest, gachaMeta }) {
             </div>
           )}
 
-          {/* (Optional) Banner if you still want it, but mindful of top-right bar
+          {/* (Optional) Banner
           {bannerSrc && (
             <div style={{ position: "absolute", top: "12%", right: "3%", width: Math.min(stageW * 0.35, 360), zIndex: 4 }}>
               <NextImage
