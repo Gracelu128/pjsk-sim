@@ -5,7 +5,7 @@ import Link from "next/link";
 import NextImage from "next/image";
 import { logoPath } from "@/utils/assetPaths";
 import gachaMeta from "@/data/gacha_metadata.json";
-import UNIT_ICONS from "@/utils/assetPaths.js ";
+import { UNIT_ICONS } from "@/utils/assetPaths.js";
 
 function sanitizeManifest(m) {
   const out = {};
