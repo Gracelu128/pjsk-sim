@@ -20,10 +20,15 @@ function sanitizeManifest(m) {
   return out;
 }
 
+function UnitCharacterFilter({ onSelect }) {
+  // TODO: implement dropdown UI
+}
+
 export default function Home() {
   const [manifest, setManifest] = useState({});
   const [searchQuery, setSearchQuery] = useState(""); // State for search input
   const [filteredGachaIds, setFilteredGachaIds] = useState([]); // State for filtered gacha IDs
+  const [filterDropdownOpen, setFilterDropdownOpen] = useState(false); // State for filter dropdown
 
   useEffect(() => {
     fetch("/gacha/manifest.json")
@@ -90,12 +95,31 @@ export default function Home() {
             borderRadius: 6,
           }}
           title="Filter"
-          onClick={() => alert("Filter button clicked!")}
+          onClick={() => setFilterDropdownOpen(!filterDropdownOpen)} // Toggle dropdown
         >
           <img src={"/UI/filter.webp"} alt="Filter" style={{ height: 20, width: 20 }} />
         </button>
       </div>
- 
+
+      {filterDropdownOpen && (
+      <div
+        style={{
+          position: "absolute",
+          top: "110%",
+          left: 0,
+          background: "#fff",
+          border: "1px solid #e2e2e2",
+          borderRadius: 8,
+          boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
+          zIndex: 10,
+          minWidth: 220,
+          padding: 12,
+        }}
+      >
+        {/* Dropdown content goes here, e.g. unit/character icons */}
+      </div>
+      )}
+    
       <div
         style={{
           display: "grid",
