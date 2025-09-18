@@ -52,6 +52,10 @@ export const uiPath = (filename) => (
   hasExt(filename) ? join("/UI", filename) : null
 );
 
+export const iconPath = (filename) => (
+  hasExt(filename) ? join("/icons", filename) : null
+);
+
 export const UI_FILES = {
   single_pull_button: "1_pull.webp",
   ten_pull_button: "10_pull.webp",
@@ -74,3 +78,50 @@ export const UI_FILES = {
   token_bar_limited: "token_bar_limited.webp",
   filter_button: "filter.webp",
 };
+
+export const UNIT_ICONS = [
+  // Virtual Singer
+  { name: "Virtual Singer", icon: iconPath("/icons/Virtual_singer.webp") },
+  { name: "Hatsune Miku", icon: iconPath("Miku-circle.webp") },
+  { name: "Kagamine Rin", icon: iconPath("Rin-circle.webp") },
+  { name: "Kagamine Len", icon: iconPath("Len-circle.webp") },
+  { name: "Megurine Luka", icon: iconPath("Luka-circle.webp") },
+  { name: "MEIKO", icon: iconPath("Meiko-circle.webp") },
+  { name: "KAITO", icon: iconPath("Kaito-circle.webp") },
+  // Leo Need
+  { name: "Leo Need", icon: iconPath("Leo_need.webp") },
+  { name: "Hoshino Ichika", icon: iconPath("Ichika-circle.webp") },
+  { name: "Tenma Saki", icon: iconPath("Saki-circle.webp") },
+  { name: "Mochizuki Honami", icon: iconPath("Honami-circle.webp") },
+  { name: "Hinomori Shiho", icon: iconPath("Shiho-circle.webp") },
+  // More More Jump
+  { name: "More More Jump", icon: iconPath("More_more_jump.webp") },
+  { name: "Hanasato Minori", icon: iconPath("Minori-circle.webp") },
+  { name: "Kiritani Haruka", icon: iconPath("Haruka-circle.webp") }, 
+  { name: "Momoi Airi", icon: iconPath("Airi-circle.webp") },
+  { name: "Hinomori Shizuku", icon: iconPath("Shizuku-circle.webp") },
+  // Vivid Bad Squad
+  { name: "Vivid Bad Squad", icon: iconPath("Vivid_bad_squad.webp") },
+  { name: "Azusawa Kohane", icon: iconPath("Kohane-circle.webp") },
+  { name: "Shiraishi An", icon: iconPath("An-circle.webp") },
+  { name: "Shinonome Akito", icon: iconPath("Akito-circle.webp") },
+  { name: "Aoyagi Toya", icon: iconPath("Toya-circle.webp") },
+  // Wonderlands x Showtime
+  { name: "Wonderlands x Showtime", icon: iconPath("Wonderlands_x_showtime.webp") },
+  { name: "Tenma Tsukasa", icon: iconPath("Tsukasa-circle.webp") },
+  { name: "Otori Emu", icon: iconPath("Emu-circle.webp") },
+  { name: "Kusanagi Nene", icon: iconPath("Nene-circle.webp") },
+  { name: "Kamishiro Rui", icon: iconPath("Rui-circle.webp") },
+  // Nightcord at 25:00
+  { name: "Nightcord at 25:00", icon: iconPath("Nightcord_at_25.webp") },
+  { name: "Yoisaki Kanade", icon: iconPath("Kanade-circle.webp") },
+  { name: "Asahina Mafuyu", icon: iconPath("Mafuyu-circle.webp") },
+  { name: "Shinonome Ena", icon: iconPath("Ena-circle.webp") },
+  { name: "Akiyama Mizuki", icon: iconPath("Mizuki-circle.webp") },
+  // Attributes (commented out for now, not used)
+  // { name: "Cool" , icon: iconPath("Cool_attribute.webp") },
+  // { name: "Cute" , icon: iconPath("Cute_attribute.webp") },
+  // { name: "Happy" , icon: iconPath("Happy_attribute.webp") },
+  // { name: "Mysterious" , icon: iconPath("Mysterious_attribute.webp") },
+  // { name: "Pure" , icon: iconPath("Pure_attribute.webp") },
+];
