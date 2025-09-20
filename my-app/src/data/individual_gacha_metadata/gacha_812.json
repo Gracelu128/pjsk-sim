@@ -1,0 +1,34 @@
+{
+  "id": 812,
+  "title (japanese)": "[フィナーレチャプター]Dream a Wonder Dreamガチャ",
+  "release_date": "9/20/2025, 3:00:00 AM",
+  "end_date": "9/21/2025, 2:59:59 AM",
+  "type": "limited",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "1169",
+      "character": "Tenma Tsukasa",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1170",
+      "character": "Otori Emu",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1171",
+      "character": "Kusanagi Nene",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1172",
+      "character": "Kamishiro Rui",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": 809,
+  "title (japanese)": "[復刻]フォトジェニック♡バレンタインガチャ",
+  "release_date": "9/12/2025, 3:00:00 AM",
+  "end_date": "9/21/2025, 2:59:59 AM",
+  "type": "limited",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "861",
+      "character": "Azusawa Kohane",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "862",
+      "character": "Kiritani Haruka",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "863",
+      "character": "Shinonome Ena",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    }
+  ]
+}
