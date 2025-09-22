@@ -1,0 +1,34 @@
+{
+  "id": 813,
+  "title (japanese)": "[フィナーレチャプター]Night's Treasureガチャ",
+  "release_date": "9/21/2025, 3:00:00 AM",
+  "end_date": "9/22/2025, 2:59:59 AM",
+  "type": "limited",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "1185",
+      "character": "Yoisaki Kanade",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1186",
+      "character": "Asahina Mafuyu",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1187",
+      "character": "Shinonome Ena",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1188",
+      "character": "Akiyama Mizuki",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    }
+  ]
+}
