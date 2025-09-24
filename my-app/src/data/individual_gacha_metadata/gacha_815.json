@@ -1,0 +1,34 @@
+{
+  "id": 815,
+  "title (japanese)": "[フィナーレチャプター]Empty Teatimeガチャ",
+  "release_date": "9/23/2025, 3:00:00 AM",
+  "end_date": "9/24/2025, 2:59:59 AM",
+  "type": "limited",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "1218",
+      "character": "Hanasato Minori",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1219",
+      "character": "Kiritani Haruka",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1220",
+      "character": "Momoi Airi",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1221",
+      "character": "Hinomori Shizuku",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    }
+  ]
+}

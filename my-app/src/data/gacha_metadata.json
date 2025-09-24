@@ -25185,5 +25185,85 @@
         "guaranteed_rate": 0.4
       }
     ]
+  },
+  "815": {
+    "id": 815,
+    "title (japanese)": "[フィナーレチャプター]Empty Teatimeガチャ",
+    "release_date": "9/23/2025, 3:00:00 AM",
+    "end_date": "9/24/2025, 2:59:59 AM",
+    "type": "limited",
+    "gacha_rate_index": 0,
+    "featured_cards": [
+      {
+        "card_id": "1218",
+        "character": "Hanasato Minori",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1219",
+        "character": "Kiritani Haruka",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1220",
+        "character": "Momoi Airi",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1221",
+        "character": "Hinomori Shizuku",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      }
+    ]
+  },
+  "816": {
+    "id": 816,
+    "title (japanese)": "[フィナーレチャプター]Velvet Afternoonガチャ",
+    "release_date": "9/24/2025, 3:00:00 AM",
+    "end_date": "9/25/2025, 2:59:59 AM",
+    "type": "limited",
+    "gacha_rate_index": 0,
+    "featured_cards": [
+      {
+        "card_id": "1235",
+        "character": "Hatsune Miku",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1236",
+        "character": "Kagamine Rin",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1237",
+        "character": "Kagamine Len",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1238",
+        "character": "Megurine Luka",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1239",
+        "character": "MEIKO",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1240",
+        "character": "KAITO",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      }
+    ]
   }
 }

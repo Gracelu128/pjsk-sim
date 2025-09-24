@@ -1,0 +1,46 @@
+{
+  "id": 816,
+  "title (japanese)": "[フィナーレチャプター]Velvet Afternoonガチャ",
+  "release_date": "9/24/2025, 3:00:00 AM",
+  "end_date": "9/25/2025, 2:59:59 AM",
+  "type": "limited",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "1235",
+      "character": "Hatsune Miku",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1236",
+      "character": "Kagamine Rin",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1237",
+      "character": "Kagamine Len",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1238",
+      "character": "Megurine Luka",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1239",
+      "character": "MEIKO",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1240",
+      "character": "KAITO",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    }
+  ]
+}
