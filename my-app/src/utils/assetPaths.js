@@ -53,13 +53,13 @@ export const uiPath = (filename) => (
 );
 
 export const cardThumbPath = (id) => {
-  // expected path: /card_icons/{id}/{id}_full.webp
+  // expected path: /cards/{id}/card_normal.webp
   // ex: /card_icons/1059/1059_full.webp
   if (id == null) return null;
   const sid = String(id).trim();
   if (!/^\d+$/.test(sid)) return null;
 
-  return join("/card_icons", sid, `${sid}_full.webp`);
+  return join("/cards", sid, `card_normal.webp`);
 };
 
 export const UI_FILES = {

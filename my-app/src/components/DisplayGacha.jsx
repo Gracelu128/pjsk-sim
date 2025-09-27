@@ -149,18 +149,204 @@ export default function DisplayGacha({ gachaId, manifest, gachaMeta }) {
     [manifest, gachaId]
   );
 
+  // ---------------------------------------------------------------------
+  // ----------------------- OH YES MORE HELPERS -------------------------
+  // ------------------------ for 10-pull logic --------------------------
+
   const doTenPull = () => {
-    // TODO: your pulling logic here (I gave you the long version earlier)
-    // For now just fake it to test the modal:
-    const pulled = [
-      { id: "1059", rarity: 4, character: "Akito", "english name": "Test Card" },
-      { id: "1060", rarity: 3, character: "Toya", "english name": "Test Card 2" },
-      // …fill 10 items total
-    ];
+    const pulled = [];
+    let pity = getPity4();
+
+    for (let i = 0; i < 10; i++) {
+      const isGuaranteedSlot = (i === 9); // slot #10 uses guaranteed table (e.g., at least 3★)
+      const force4 = pity >= 99;          // 4★ pity on the next draw
+      const slotKind = isGuaranteedSlot ? "guaranteed" : "normal";
+
+      const choices = buildChoices(slotKind, force4 ? 4 : null);
+      const pick = weightedPick(choices); // { type: "featured"|"other", rarity, id? }
+
+      let chosen = null;
+      if (pick.type === "featured") {
+        chosen = allCards[pick.id] || null;
+        // if metadata had a featured id that didn't pass gates, fallback to other pool
+        if (!chosen) chosen = pickOneFromPool(pick.rarity, featuredByRarity[pick.rarity]);
+      } else {
+        // choose from non-featured pool of that rarity
+        chosen = pickOneFromPool(pick.rarity, featuredByRarity[pick.rarity]);
+      }
+
+      // ultimate safety fallback: try any rarity high→low
+      if (!chosen) {
+        for (const rr of [4, 3, 2]) {
+          const fb = pickOneFromPool(rr);
+          if (fb) { chosen = fb; break; }
+        }
+      }
+
+      // update pity
+      if (Number(chosen?.rarity) === 4) pity = 0;
+      else pity += 1;
+
+      pulled.push(chosen);
+    }
+
+    setPity4(pity);
+    pushInventory(pulled.map(c => c?.id ?? ""));
+
     setResults(pulled);
     setShowResults(true);
   };
 
+  const bannerReleaseTS = useMemo(() => {
+    const s = gachaMeta?.release_date || gachaMeta?.["release_date"];
+    const t = s ? new Date(s).getTime() : Number.POSITIVE_INFINITY;
+    return Number.isFinite(t) ? t : Number.POSITIVE_INFINITY;
+  }, [gachaMeta]);
+
+  const bannerType = (gachaMeta?.type || "normal").toLowerCase();
+
+  const normalizeStatus = (s) => String(s || "").toLowerCase().replace(/\s+/g, " ").trim();
+  // allow/exclude card status by banner type
+  const allowStatus = (status) => {
+    const st = normalizeStatus(status);
+    if (bannerType.includes("bloom")) {
+      // Bloomfes banner → allow bloomfes limited + normal
+      return st === "bloom festival limited" || st === "bloomfes limited" || st === "normal" || st === "";
+    }
+    if (bannerType.includes("birthday")) {
+      return st === "birthday" || st === "normal" || st === "";
+    }
+    if (bannerType === "limited") {
+      // “Limited” banner (non-bloom, non-bday) → allow limited + normal
+      return st === "limited" || st === "normal" || st === "";
+    }
+    // default: normal only
+    return st === "normal" || st === "";
+  };
+
+  // build rarity pools with release-date & status gates
+  const poolByRarity = useMemo(() => {
+    const pools = { 2: [], 3: [], 4: [] };
+    for (const id in allCards) {
+      const c = allCards[id];
+      const r = Number(c?.rarity);
+      if (!(r === 2 || r === 3 || r === 4)) continue;
+
+      // release date gate (include only if card date <= banner release)
+      const cs = c?.release_date || c?.["release_date"];
+      const ct = cs ? new Date(cs).getTime() : null;
+      if (ct && ct > bannerReleaseTS) continue;
+
+      if (!allowStatus(c?.status)) continue;
+
+      pools[r].push(c);
+    }
+    return pools;
+  }, [allCards, bannerReleaseTS, bannerType]);
+
+  // featured cards (absolute % weights live in metadata)
+  const featuredList = Array.isArray(gachaMeta?.featured_cards) ? gachaMeta.featured_cards : [];
+  const featuredById = useMemo(() => {
+    const m = new Map();
+    for (const f of featuredList) {
+      if (!f?.card_id) continue;
+      m.set(String(f.card_id), {
+        normal_rate: Number(f.normal_rate) || 0,
+        guaranteed_rate: Number(f.guaranteed_rate) || 0,
+      });
+    }
+    return m;
+  }, [featuredList]);
+
+  const featuredByRarity = useMemo(() => {
+    const sets = { 2: new Set(), 3: new Set(), 4: new Set() };
+    for (const [id, _meta] of featuredById.entries()) {
+      const r = Number(allCards[id]?.rarity);
+      if (r === 2 || r === 3 || r === 4) sets[r].add(id);
+    }
+    return sets;
+  }, [featuredById, allCards]);
+
+  const featuredSums = useMemo(() => {
+    const sums = { normal: { 2: 0, 3: 0, 4: 0 }, guaranteed: { 2: 0, 3: 0, 4: 0 } };
+    for (const [id, fm] of featuredById.entries()) {
+      const r = Number(allCards[id]?.rarity);
+      if (r === 2 || r === 3 || r === 4) {
+        sums.normal[r] += fm.normal_rate || 0;
+        sums.guaranteed[r] += fm.guaranteed_rate || 0;
+      }
+    }
+    return sums;
+  }, [featuredById, allCards]);
+
+  // RNG utils
+  const rand = () => Math.random();
+  const weightedPick = (items) => {
+    // items: [{key, weight}]
+    const total = items.reduce((a, b) => a + Math.max(0, b.weight), 0);
+    if (total <= 0) return items[0]?.key;
+    let x = rand() * total;
+    for (const it of items) {
+      const w = Math.max(0, it.weight);
+      if ((x -= w) <= 0) return it.key;
+    }
+    return items[items.length - 1]?.key;
+  };
+
+  // compose choices for a slot ("normal" | "guaranteed"), respecting featured absolute rates
+  const rateIndex = gachaMeta?.gacha_rate_index ?? 0;
+  const buildChoices = (slotKind, forceRarity /*null|2|3|4*/) => {
+    const table = gachaRates?.[rateIndex]?.[slotKind] || {};
+    const rarities = forceRarity ? [String(forceRarity)] : Object.keys(table);
+    const choices = [];
+
+    for (const rKey of rarities) {
+      const r = Number(rKey);
+      if (!(r === 2 || r === 3 || r === 4)) continue;
+
+      const baseRate = forceRarity ? 100 : Number(table[rKey] || 0);
+      if (baseRate <= 0) continue;
+
+      const featSum = (slotKind === "guaranteed" ? featuredSums.guaranteed[r] : featuredSums.normal[r]) || 0;
+      const otherWeight = Math.max(0, baseRate - featSum);
+
+      // featured entries as separate keys
+      for (const fid of featuredByRarity[r]) {
+        const fm = featuredById.get(fid);
+        const w = slotKind === "guaranteed" ? (fm?.guaranteed_rate || 0) : (fm?.normal_rate || 0);
+        if (w > 0) choices.push({ key: { type: "featured", rarity: r, id: fid }, weight: w });
+      }
+
+      // “other” bucket for this rarity
+      if (otherWeight > 0) choices.push({ key: { type: "other", rarity: r }, weight: otherWeight });
+    }
+
+    // fallback (e.g., guaranteed table had no entries): pick any 3★ other
+    if (!choices.length) choices.push({ key: { type: "other", rarity: forceRarity || 3 }, weight: 100 });
+
+    return choices;
+  };
+
+  // pick a random card from a rarity pool, optionally excluding some ids (e.g., featured)
+  const pickOneFromPool = (rarity, excludeSet) => {
+    const pool = poolByRarity[rarity].filter(c => !excludeSet?.has?.(String(c.id)));
+    if (!pool.length) return null;
+    return pool[Math.floor(rand() * pool.length)];
+  };
+
+  // pity (4★ every 100)
+  const getPity4 = () => {
+    const v = Number(sessionStorage.getItem("pity4Counter") || "0");
+    return Number.isFinite(v) ? v : 0;
+  };
+  const setPity4 = (v) => sessionStorage.setItem("pity4Counter", String(v));
+
+  // inventory
+  const pushInventory = (ids) => {
+    let cur = [];
+    try { cur = JSON.parse(sessionStorage.getItem("inventory") || "[]"); } catch {}
+    sessionStorage.setItem("inventory", JSON.stringify([...cur, ...ids.map(String)]));
+  };
 
   // -----------------------------------------------------------------------------------------
   // ---------------------------------------------ACTUAL UI-----------------------------------
