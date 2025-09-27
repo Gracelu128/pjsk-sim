@@ -1,7 +1,7 @@
 // src/components/DisplayGacha.jsx
 "use client";
 
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import NextImage from "next/image";
 import FadeImage from "@/components/FadeImage";
 import Link from "next/link";
@@ -17,11 +17,14 @@ import {
   UI_FILES,
 } from "@/utils/assetPaths";
 import buildLogoNav from "@/utils/buildLogoNav";
+import ResultDisplay from "@/components/ResultDisplay";
+
 
 export default function DisplayGacha({ gachaId, manifest, gachaMeta }) {
   const entry = manifest?.[gachaId] || {};
   console.log("Debug Entry:", entry);
   console.log("Debug Gacha Metadata:", gachaMeta);
+  const [showHello, setShowHello] = useState(false);
 
   // Rotators
   //const bgLen = Array.isArray(entry.bg) ? entry.bg.length : 0;
@@ -530,16 +533,33 @@ export default function DisplayGacha({ gachaId, manifest, gachaMeta }) {
               )}
               {ui.tenPull && (
                 <div style={{ width: "22%" }}>
-                  <NextImage
-                    src={ui.tenPull}
-                    alt="10 pulls"
-                    width={pxW(0.132)}
-                    height={pxH(0.10)}
-                    sizes={`${pxW(0.132)}px`}
-                    style={{ width: "100%", height: "auto", display: "block" }}
-                  />
+                  <button
+                    onClick={() => setShowHello(true)}
+                    style={{
+                      border: "none",
+                      padding: 0,
+                      margin: 0,
+                      background: "transparent",
+                      cursor: "pointer",
+                      width: "100%",
+                    }}
+                  >
+                    <NextImage
+                      src={ui.tenPull}
+                      alt="10 pulls"
+                      width={pxW(0.132)}
+                      height={pxH(0.10)}
+                      sizes={`${pxW(0.132)}px`}
+                      style={{ width: "100%", height: "auto", display: "block" }}
+                    />
+                  </button>
                 </div>
               )}
+
+              <ResultDisplay open={showHello} onClose={() => setShowHello(false)}>
+                <div style={{ fontSize: 18, fontWeight: 600 }}>hello</div>
+              </ResultDisplay>
+
               {ui.paidSingle && (
                 <div style={{ width: "22%" }}>
                   <NextImage
