@@ -86,6 +86,9 @@ export default function DisplayGacha({ gachaId, manifest, gachaMeta }) {
 
     charDetails: uiPath(UI_FILES.character_details_button), // (spelling as provided)
     gachaDetails: uiPath(UI_FILES.gacha_details_button),
+
+    ok_button: uiPath(UI_FILES.ok_button),
+    unpaid_pull_again: uiPath(UI_FILES.unpaid_pull_again_button),
   };
   const { width: vw, height: vh } = useWindowSize();
   const { w: natW, h: natH } = useNaturalSize(bgSrc || "");
@@ -153,29 +156,63 @@ export default function DisplayGacha({ gachaId, manifest, gachaMeta }) {
   // ----------------------- OH YES MORE HELPERS -------------------------
   // ------------------------ for 10-pull logic --------------------------
 
+  // --- helpers: pick a forced 3★ using normal-table ratios (featured vs other) ---
+  const pickForcedThreeStar = () => {
+    const r3 = Number(gachaRates?.[rateIndex]?.normal?.["3"] || 0);
+    const featSum = featuredSums.normal[3] || 0;
+    const otherWeight = Math.max(0, r3 - featSum);
+
+    // choose a bucket (featured vs other) proportional to their share of the 3★ mass
+    const buckets = [];
+    for (const fid of featuredByRarity[3]) {
+      const w = (featuredById.get(fid)?.normal_rate || 0);
+      if (w > 0) buckets.push({ key: { type: "featured", id: fid }, weight: w });
+    }
+    if (otherWeight > 0) {
+      buckets.push({ key: { type: "other" }, weight: otherWeight });
+    }
+
+    if (!buckets.length) {
+      // fallback: any 3★ from pool
+      return pickOneFromPool(3) || pickOneFromPool(2) || pickOneFromPool(4);
+    }
+
+    const bucket = weightedPick(buckets);
+    if (bucket.type === "featured") {
+      return allCards[bucket.id] || pickOneFromPool(3, featuredByRarity[3]);
+    }
+    // "other" → uniform from non-featured 3★ pool
+    return pickOneFromPool(3, featuredByRarity[3]) || pickOneFromPool(3);
+  };
+
+  // --- helper: Fisher–Yates shuffle (in-place) ---
+  const shuffleInPlace = (arr) => {
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  };
+
+  // --- REPLACE your stub with this ---
   const doTenPull = () => {
     const pulled = [];
     let pity = getPity4();
 
+    // Draw 10 using NORMAL table only; 4★ pity still applies
     for (let i = 0; i < 10; i++) {
-      const isGuaranteedSlot = (i === 9); // slot #10 uses guaranteed table (e.g., at least 3★)
-      const force4 = pity >= 99;          // 4★ pity on the next draw
-      const slotKind = isGuaranteedSlot ? "guaranteed" : "normal";
-
-      const choices = buildChoices(slotKind, force4 ? 4 : null);
-      const pick = weightedPick(choices); // { type: "featured"|"other", rarity, id? }
+      const force4 = (pity === 99);     // Force 4★ on the 100th pull only
+      const choices = buildChoices("normal", force4 ? 4 : null);
+      const pick = weightedPick(choices);
 
       let chosen = null;
       if (pick.type === "featured") {
         chosen = allCards[pick.id] || null;
-        // if metadata had a featured id that didn't pass gates, fallback to other pool
         if (!chosen) chosen = pickOneFromPool(pick.rarity, featuredByRarity[pick.rarity]);
       } else {
-        // choose from non-featured pool of that rarity
         chosen = pickOneFromPool(pick.rarity, featuredByRarity[pick.rarity]);
       }
 
-      // ultimate safety fallback: try any rarity high→low
       if (!chosen) {
         for (const rr of [4, 3, 2]) {
           const fb = pickOneFromPool(rr);
@@ -183,17 +220,24 @@ export default function DisplayGacha({ gachaId, manifest, gachaMeta }) {
         }
       }
 
-      // update pity
-      if (Number(chosen?.rarity) === 4) pity = 0;
-      else pity += 1;
-
       pulled.push(chosen);
+      pity = (pity + 1) % 100;
     }
 
-    setPity4(pity);
-    pushInventory(pulled.map(c => c?.id ?? ""));
+    // Guarantee logic: ensure at least one 3★ in the batch.
+    // If none are 3★/4★, replace ONE random slot with a forced 3★ selection.
+    if (!pulled.some(c => Number(c?.rarity) >= 3)) {
+      const idx = Math.floor(Math.random() * pulled.length);
+      pulled[idx] = pickForcedThreeStar();
+      // Note: this does NOT reset pity (only 4★ should).
+    }
 
-    setResults(pulled);
+    // Shuffle so the “guarantee” isn’t tied to any slot position
+    const finalResults = shuffleInPlace(pulled.slice());
+
+    setPity4(pity);
+    pushInventory(finalResults.map(c => c?.id ?? ""));
+    setResults(finalResults);
     setShowResults(true);
   };
 
@@ -337,9 +381,12 @@ export default function DisplayGacha({ gachaId, manifest, gachaMeta }) {
   // pity (4★ every 100)
   const getPity4 = () => {
     const v = Number(sessionStorage.getItem("pity4Counter") || "0");
-    return Number.isFinite(v) ? v : 0;
+    return Number.isFinite(v) && v >= 0 ? v % 100 : 0;   // 0..99
   };
-  const setPity4 = (v) => sessionStorage.setItem("pity4Counter", String(v));
+  const setPity4 = (v) => {
+    const next = ((Number(v) || 0) % 100 + 100) % 100;
+    sessionStorage.setItem("pity4Counter", String(next));
+  };
 
   // inventory
   const pushInventory = (ids) => {
@@ -757,49 +804,118 @@ export default function DisplayGacha({ gachaId, manifest, gachaMeta }) {
                 </div>
               )}
               {/* updated display for results */}
-              <ResultDisplay open={showResults} onClose={() => setShowResults(false)}>
-                {/* Two rows x five columns */}
+              <ResultDisplay open={showResults} onClose={() => setShowResults(false)} bare>
                 <div
                   style={{
-                    display: "grid",
-                    gridTemplateColumns: "repeat(5, 1fr)",
-                    gap: 12,
-                    width: "min(720px, 90vw)",
+                    position: "relative",
+                    width: stageW,
+                    height: stageH,
+                    overflow: "hidden",
                   }}
                 >
-                  {results.map((card, idx) => {
-                    const id = String(card?.id ?? "");
-                    return (
-                      <div
-                        key={idx}
-                        style={{
-                          background: "#fafafa",
-                          border: "1px solid #e7e7e7",
-                          borderRadius: 10,
-                          padding: 8,
-                          display: "grid",
-                          placeItems: "center",
-                          aspectRatio: "1 / 1.2",
-                        }}
-                        title={`${card?.["english name"] || ""} (${card?.rarity}★)`}
-                      >
-                        <div style={{ width: "100%", maxWidth: 120 }}>
+                  {/* full-size result background */}
+                  <NextImage
+                    src="/gacha/bg/bg_gacha_result.webp"
+                    alt="Results Background"
+                    fill
+                    sizes={`${stageW}px`}
+                    style={{ objectFit: "contain" }}
+                    priority
+                  />
+
+                  {/* cards grid overlay */}
+                  <div
+                    style={{
+                      position: "absolute",
+                      top: "20%", // adjust vertical placement
+                      left: "50%",
+                      transform: "translateX(-50%)",
+                      width: "80%",
+                      display: "grid",
+                      gridTemplateColumns: "repeat(5, 1fr)",
+                      gap: "1vw",
+                    }}
+                  >
+                    {results.map((card, idx) => {
+                      const id = String(card?.id ?? "");
+                      return (
+                        <div
+                          key={idx}
+                          style={{
+                            width: "100%",
+                            aspectRatio: "1 / 1",
+                            display: "grid",
+                            placeItems: "center",
+                          }}
+                        >
                           <NextImage
                             src={cardThumbPath(id)}
-                            alt={card?.["english name"] || `Card ${id}`}
+                            alt={`Card ${id}`}
                             width={240}
-                            height={240}
+                            height={288}
                             style={{ width: "100%", height: "auto", display: "block" }}
                           />
                         </div>
-                        <div style={{ fontSize: 12, marginTop: 6, opacity: 0.9, textAlign: "center" }}>
-                          {card?.rarity}★ · {card?.character || ""}
-                        </div>
-                      </div>
-                    );
-                  })}
+                      );
+                    })}
+                  </div>
+
+                  {/* buttons row */}
+                  <div
+                    style={{
+                      position: "absolute",
+                      bottom: "8%",
+                      left: "75%",
+                      transform: "translateX(-50%)",
+                      display: "flex",
+                      gap: "2.5vw",
+                    }}
+                  >
+                    {ui.unpaid_pull_again && (
+                      <button
+                        onClick={() => doTenPull()}
+                        style={{
+                          border: "none",
+                          background: "transparent",
+                          padding: 0,
+                          cursor: "pointer",
+                        }}
+                      >
+                        <NextImage
+                          src={ui.unpaid_pull_again}
+                          alt="Pull Again"
+                          width={220}
+                          height={80}
+                          sizes="220px"
+                          style={{ width: "18vw", maxWidth: 180, height: "auto" }}
+                        />
+                      </button>
+                    )}
+
+                    {ui.ok_button && (
+                      <button
+                        onClick={() => setShowResults(false)}
+                        style={{
+                          border: "none",
+                          background: "transparent",
+                          padding: 0,
+                          cursor: "pointer",
+                        }}
+                      >
+                        <NextImage
+                          src={ui.ok_button}
+                          alt="OK"
+                          width={180}
+                          height={80}
+                          sizes="180px"
+                          style={{ width: "14vw", maxWidth: 180, height: "auto" }}
+                        />
+                      </button>
+                    )}
+                  </div>
                 </div>
               </ResultDisplay>
+
 
               {ui.paidSingle && (
                 <div style={{ width: "22%" }}>
