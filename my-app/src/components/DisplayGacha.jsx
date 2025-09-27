@@ -26,6 +26,23 @@ import ResultDisplay from "@/components/ResultDisplay";
 
 
 export default function DisplayGacha({ gachaId, manifest, gachaMeta }) {
+  const [inventoryCounts, setInventoryCounts] = useState({ 2: 0, 3: 0, 4: 0 });
+
+  const readInventoryIds = () => {
+    try { return JSON.parse(sessionStorage.getItem("inventory") || "[]").map(String); }
+    catch { return []; }
+  };
+
+  const updateInventoryCounts = () => {
+    const ids = readInventoryIds();
+    const counts = { 2: 0, 3: 0, 4: 0 };
+    for (const id of ids) {
+      const r = Number(allCards[id]?.rarity);
+      if (r === 2 || r === 3 || r === 4) counts[r] += 1;
+    }
+    setInventoryCounts(counts);
+  };
+
   const entry = manifest?.[gachaId] || {};
   console.log("Debug Entry:", entry);
   console.log("Debug Gacha Metadata:", gachaMeta);
@@ -197,13 +214,12 @@ export default function DisplayGacha({ gachaId, manifest, gachaMeta }) {
   // --- REPLACE your stub with this ---
   const doTenPull = () => {
     const pulled = [];
-    let pity = getPity4();
+    let pity = getPity4(); // 0..99
 
-    // Draw 10 using NORMAL table only; 4★ pity still applies
     for (let i = 0; i < 10; i++) {
-      const force4 = (pity === 99);     // Force 4★ on the 100th pull only
+      const force4 = (pity === 99);                // only the 100th pull is forced 4★
       const choices = buildChoices("normal", force4 ? 4 : null);
-      const pick = weightedPick(choices);
+      const pick = weightedPick(choices);          // { type, rarity, id? }
 
       let chosen = null;
       if (pick.type === "featured") {
@@ -212,34 +228,38 @@ export default function DisplayGacha({ gachaId, manifest, gachaMeta }) {
       } else {
         chosen = pickOneFromPool(pick.rarity, featuredByRarity[pick.rarity]);
       }
-
       if (!chosen) {
-        for (const rr of [4, 3, 2]) {
-          const fb = pickOneFromPool(rr);
-          if (fb) { chosen = fb; break; }
-        }
+        for (const rr of [4,3,2]) { const fb = pickOneFromPool(rr); if (fb) { chosen = fb; break; } }
       }
 
-      pulled.push(chosen);
-      pity = (pity + 1) % 100;
+      // attach dev flags (don’t mutate allCards; make a shallow copy)
+      const c = { ...chosen };
+      c._isPity4 = force4 && Number(c?.rarity) === 4;
+      c._isBanner4 = Number(c?.rarity) === 4 && featuredById.has(String(c?.id));
+      c._isGuaranteed3 = false; // default; may switch below
+
+      pulled.push(c);
+
+      pity = (pity + 1) % 100; // increment every draw, no reset on 4★
     }
 
-    // Guarantee logic: ensure at least one 3★ in the batch.
-    // If none are 3★/4★, replace ONE random slot with a forced 3★ selection.
+    // 3★ guarantee across the 10: if all are 2★, upgrade one random slot to a forced 3★
     if (!pulled.some(c => Number(c?.rarity) >= 3)) {
       const idx = Math.floor(Math.random() * pulled.length);
-      pulled[idx] = pickForcedThreeStar();
-      // Note: this does NOT reset pity (only 4★ should).
+      const forced3 = pickForcedThreeStar();
+      pulled[idx] = { ...forced3, _isGuaranteed3: true, _isPity4: false, _isBanner4: false };
     }
 
-    // Shuffle so the “guarantee” isn’t tied to any slot position
     const finalResults = shuffleInPlace(pulled.slice());
 
     setPity4(pity);
     pushInventory(finalResults.map(c => c?.id ?? ""));
+    updateInventoryCounts();
+
     setResults(finalResults);
     setShowResults(true);
   };
+
 
   const bannerReleaseTS = useMemo(() => {
     const s = gachaMeta?.release_date || gachaMeta?.["release_date"];
@@ -913,6 +933,59 @@ export default function DisplayGacha({ gachaId, manifest, gachaMeta }) {
                       </button>
                     )}
                   </div>
+                  {/* DEV: pull log (bottom-left) */}
+                  <div
+                    style={{
+                      position: "absolute",
+                      left: "2%",
+                      bottom: "2%",
+                      maxWidth: "46%",
+                      padding: "8px 10px",
+                      background: "rgba(0,0,0,0.45)",
+                      color: "#fff",
+                      fontFamily: "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
+                      fontSize: 12,
+                      lineHeight: 1.3,
+                      whiteSpace: "pre-wrap",
+                      borderRadius: 6,
+                      pointerEvents: "none",  // doesn't block clicks
+                    }}
+                  >
+                    {results.map((card, i) => {
+                      const name = card?.["english name"] || card?.["japanese name"] || `Card ${card?.id ?? "?"}`;
+                      const stars = `${card?.rarity ?? "?"}★`;
+                      const tags = [];
+                      if (card?._isGuaranteed3) tags.push("guaranteed");
+                      if (card?._isPity4)      tags.push("pity");
+                      if (card?._isBanner4)    tags.push("banner");
+                      const tagStr = tags.length ? ` [${tags.join(", ")}]` : "";
+                      return `${String(i+1).padStart(2,"0")}. ${name} (${stars})${tagStr}`;
+                    }).join("\n")}
+                  </div>
+
+                  {/* DEV: inventory summary (bottom-right) */}
+                  <div
+                    style={{
+                      position: "absolute",
+                      right: "2%",
+                      bottom: "2%",
+                      padding: "8px 10px",
+                      background: "rgba(0,0,0,0.45)",
+                      color: "#fff",
+                      fontFamily: "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
+                      fontSize: 12,
+                      lineHeight: 1.3,
+                      whiteSpace: "pre-wrap",
+                      borderRadius: 6,
+                      textAlign: "right",
+                      pointerEvents: "none",
+                    }}
+                  >
+                    {`2*: (${inventoryCounts[2] || 0})
+                  3*: (${inventoryCounts[3] || 0})
+                  4*: (${inventoryCounts[4] || 0})`}
+                  </div>
+
                 </div>
               </ResultDisplay>
 
