@@ -52,6 +52,16 @@ export const uiPath = (filename) => (
   hasExt(filename) ? join("/UI", filename) : null
 );
 
+export const cardThumbPath = (id) => {
+  // expected path: /card_icons/{id}/{id}_full.webp
+  // ex: /card_icons/1059/1059_full.webp
+  if (id == null) return null;
+  const sid = String(id).trim();
+  if (!/^\d+$/.test(sid)) return null;
+
+  return join("/card_icons", sid, `${sid}_full.webp`);
+};
+
 export const UI_FILES = {
   single_pull_button: "1_pull.webp",
   ten_pull_button: "10_pull.webp",
@@ -73,4 +83,8 @@ export const UI_FILES = {
   token_bar_normal: "token_bar_normal.webp",
   token_bar_limited: "token_bar_limited.webp",
   filter_button: "filter.webp",
+  ok_button: "OK.png",
+  paid_pull_again_button: "paid_pull_again.png",
+  unpaid_pull_again_button: "unpaid_pull_again.png",
+  sticker_gacha_results_bar: "sticker_gacha_results.png",
 };

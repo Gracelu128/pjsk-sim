@@ -15,7 +15,12 @@ import {
   bannerPath,
   uiPath,
   UI_FILES,
+  cardThumbPath
 } from "@/utils/assetPaths";
+
+import gachaRates from "@/data/gacha_rates.json";
+import allCards from "@/data/card_metadata.json"; // needs: id, rarity, status, release_date (ISO or parseable)
+
 import buildLogoNav from "@/utils/buildLogoNav";
 import ResultDisplay from "@/components/ResultDisplay";
 
@@ -24,7 +29,8 @@ export default function DisplayGacha({ gachaId, manifest, gachaMeta }) {
   const entry = manifest?.[gachaId] || {};
   console.log("Debug Entry:", entry);
   console.log("Debug Gacha Metadata:", gachaMeta);
-  const [showHello, setShowHello] = useState(false);
+  const [showResults, setShowResults] = useState(false);
+  const [results, setResults] = useState([]);
 
   // Rotators
   //const bgLen = Array.isArray(entry.bg) ? entry.bg.length : 0;
@@ -142,6 +148,18 @@ export default function DisplayGacha({ gachaId, manifest, gachaMeta }) {
     () => buildLogoNav(manifest || {}, gachaId, (id, entry) => logoPath(id, entry), 6, 2),
     [manifest, gachaId]
   );
+
+  const doTenPull = () => {
+    // TODO: your pulling logic here (I gave you the long version earlier)
+    // For now just fake it to test the modal:
+    const pulled = [
+      { id: "1059", rarity: 4, character: "Akito", "english name": "Test Card" },
+      { id: "1060", rarity: 3, character: "Toya", "english name": "Test Card 2" },
+      // …fill 10 items total
+    ];
+    setResults(pulled);
+    setShowResults(true);
+  };
 
 
   // -----------------------------------------------------------------------------------------
@@ -531,18 +549,15 @@ export default function DisplayGacha({ gachaId, manifest, gachaMeta }) {
                   />
                 </div>
               )}
-              {ui.tenPull && (
+              {ui?.tenPull && (
                 <div style={{ width: "22%" }}>
                   <button
-                    onClick={() => setShowHello(true)}
+                    onClick={doTenPull}
                     style={{
-                      border: "none",
-                      padding: 0,
-                      margin: 0,
-                      background: "transparent",
-                      cursor: "pointer",
-                      width: "100%",
+                      border: "none", background: "transparent", padding: 0, margin: 0,
+                      cursor: "pointer", width: "100%",
                     }}
+                    aria-label="Unpaid Ten Pull"
                   >
                     <NextImage
                       src={ui.tenPull}
@@ -555,9 +570,49 @@ export default function DisplayGacha({ gachaId, manifest, gachaMeta }) {
                   </button>
                 </div>
               )}
-
-              <ResultDisplay open={showHello} onClose={() => setShowHello(false)}>
-                <div style={{ fontSize: 18, fontWeight: 600 }}>hello</div>
+              {/* updated display for results */}
+              <ResultDisplay open={showResults} onClose={() => setShowResults(false)}>
+                {/* Two rows x five columns */}
+                <div
+                  style={{
+                    display: "grid",
+                    gridTemplateColumns: "repeat(5, 1fr)",
+                    gap: 12,
+                    width: "min(720px, 90vw)",
+                  }}
+                >
+                  {results.map((card, idx) => {
+                    const id = String(card?.id ?? "");
+                    return (
+                      <div
+                        key={idx}
+                        style={{
+                          background: "#fafafa",
+                          border: "1px solid #e7e7e7",
+                          borderRadius: 10,
+                          padding: 8,
+                          display: "grid",
+                          placeItems: "center",
+                          aspectRatio: "1 / 1.2",
+                        }}
+                        title={`${card?.["english name"] || ""} (${card?.rarity}★)`}
+                      >
+                        <div style={{ width: "100%", maxWidth: 120 }}>
+                          <NextImage
+                            src={cardThumbPath(id)}
+                            alt={card?.["english name"] || `Card ${id}`}
+                            width={240}
+                            height={240}
+                            style={{ width: "100%", height: "auto", display: "block" }}
+                          />
+                        </div>
+                        <div style={{ fontSize: 12, marginTop: 6, opacity: 0.9, textAlign: "center" }}>
+                          {card?.rarity}★ · {card?.character || ""}
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
               </ResultDisplay>
 
               {ui.paidSingle && (
