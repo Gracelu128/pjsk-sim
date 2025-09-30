@@ -1,0 +1,46 @@
+{
+  "id": 824,
+  "title (japanese)": "[友達招待]★4メンバー確定ガチャ",
+  "release_date": "9/29/2025, 3:00:00 AM",
+  "end_date": "11/30/2025, 2:59:59 PM",
+  "type": "normal",
+  "gacha_rate_index": 5,
+  "featured_cards": [
+    {
+      "card_id": "958",
+      "character": "Megurine Luka",
+      "normal_rate": 0.333,
+      "guaranteed_rate": 0.333
+    },
+    {
+      "card_id": "715",
+      "character": "Hinomori Shiho",
+      "normal_rate": 0.333,
+      "guaranteed_rate": 0.333
+    },
+    {
+      "card_id": "391",
+      "character": "Hinomori Shizuku",
+      "normal_rate": 0.333,
+      "guaranteed_rate": 0.333
+    },
+    {
+      "card_id": "504",
+      "character": "Aoyagi Toya",
+      "normal_rate": 0.333,
+      "guaranteed_rate": 0.333
+    },
+    {
+      "card_id": "608",
+      "character": "Kusanagi Nene",
+      "normal_rate": 0.333,
+      "guaranteed_rate": 0.333
+    },
+    {
+      "card_id": "540",
+      "character": "Shinonome Ena",
+      "normal_rate": 0.333,
+      "guaranteed_rate": 0.333
+    }
+  ]
+}

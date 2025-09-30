@@ -1,0 +1,34 @@
+{
+  "id": 822,
+  "title (japanese)": "【5周年前夜祭】[ワンダーランズ×ショウタイム]スペシャルプライズガチャ",
+  "release_date": "9/27/2025, 3:00:00 AM",
+  "end_date": "9/30/2025, 2:59:59 AM",
+  "type": "normal",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "928",
+      "character": "Tenma Tsukasa",
+      "normal_rate": 0.04,
+      "guaranteed_rate": 0.04
+    },
+    {
+      "card_id": "1156",
+      "character": "Otori Emu",
+      "normal_rate": 0.04,
+      "guaranteed_rate": 0.04
+    },
+    {
+      "card_id": "701",
+      "character": "Kusanagi Nene",
+      "normal_rate": 0.04,
+      "guaranteed_rate": 0.04
+    },
+    {
+      "card_id": "1050",
+      "character": "Kamishiro Rui",
+      "normal_rate": 0.04,
+      "guaranteed_rate": 0.04
+    }
+  ]
+}

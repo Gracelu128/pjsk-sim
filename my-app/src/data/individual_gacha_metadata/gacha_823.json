@@ -1,0 +1,34 @@
+{
+  "id": 823,
+  "title (japanese)": "【5周年前夜祭】[25時、ナイトコードで。]スペシャルプライズガチャ",
+  "release_date": "9/27/2025, 3:00:00 AM",
+  "end_date": "9/30/2025, 2:59:59 AM",
+  "type": "normal",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "833",
+      "character": "Yoisaki Kanade",
+      "normal_rate": 0.045,
+      "guaranteed_rate": 0.045
+    },
+    {
+      "card_id": "904",
+      "character": "Asahina Mafuyu",
+      "normal_rate": 0.045,
+      "guaranteed_rate": 0.045
+    },
+    {
+      "card_id": "1141",
+      "character": "Shinonome Ena",
+      "normal_rate": 0.045,
+      "guaranteed_rate": 0.045
+    },
+    {
+      "card_id": "1135",
+      "character": "Akiyama Mizuki",
+      "normal_rate": 0.045,
+      "guaranteed_rate": 0.045
+    }
+  ]
+}

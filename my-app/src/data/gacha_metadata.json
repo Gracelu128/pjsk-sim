@@ -25265,5 +25265,479 @@
         "guaranteed_rate": 0.4
       }
     ]
+  },
+  "817": {
+    "id": 817,
+    "title (japanese)": "[フィナーレチャプター]ワールドリンクイベントサポートガチャ",
+    "release_date": "9/25/2025, 3:00:00 AM",
+    "end_date": "9/30/2025, 2:59:59 AM",
+    "type": "limited",
+    "gacha_rate_index": 0,
+    "featured_cards": [
+      {
+        "card_id": "961",
+        "character": "Hoshino Ichika",
+        "normal_rate": 0.077,
+        "guaranteed_rate": 0.077
+      },
+      {
+        "card_id": "962",
+        "character": "Tenma Saki",
+        "normal_rate": 0.077,
+        "guaranteed_rate": 0.077
+      },
+      {
+        "card_id": "963",
+        "character": "Mochizuki Honami",
+        "normal_rate": 0.077,
+        "guaranteed_rate": 0.077
+      },
+      {
+        "card_id": "964",
+        "character": "Hinomori Shiho",
+        "normal_rate": 0.077,
+        "guaranteed_rate": 0.077
+      },
+      {
+        "card_id": "921",
+        "character": "Hanasato Minori",
+        "normal_rate": 0.077,
+        "guaranteed_rate": 0.077
+      },
+      {
+        "card_id": "922",
+        "character": "Kiritani Haruka",
+        "normal_rate": 0.077,
+        "guaranteed_rate": 0.077
+      },
+      {
+        "card_id": "923",
+        "character": "Momoi Airi",
+        "normal_rate": 0.077,
+        "guaranteed_rate": 0.077
+      },
+      {
+        "card_id": "924",
+        "character": "Hinomori Shizuku",
+        "normal_rate": 0.077,
+        "guaranteed_rate": 0.077
+      },
+      {
+        "card_id": "848",
+        "character": "Azusawa Kohane",
+        "normal_rate": 0.077,
+        "guaranteed_rate": 0.077
+      },
+      {
+        "card_id": "849",
+        "character": "Shiraishi An",
+        "normal_rate": 0.077,
+        "guaranteed_rate": 0.077
+      },
+      {
+        "card_id": "850",
+        "character": "Shinonome Akito",
+        "normal_rate": 0.077,
+        "guaranteed_rate": 0.077
+      },
+      {
+        "card_id": "851",
+        "character": "Aoyagi Toya",
+        "normal_rate": 0.077,
+        "guaranteed_rate": 0.077
+      },
+      {
+        "card_id": "884",
+        "character": "Tenma Tsukasa",
+        "normal_rate": 0.077,
+        "guaranteed_rate": 0.077
+      },
+      {
+        "card_id": "885",
+        "character": "Otori Emu",
+        "normal_rate": 0.077,
+        "guaranteed_rate": 0.077
+      },
+      {
+        "card_id": "886",
+        "character": "Kusanagi Nene",
+        "normal_rate": 0.077,
+        "guaranteed_rate": 0.077
+      },
+      {
+        "card_id": "887",
+        "character": "Kamishiro Rui",
+        "normal_rate": 0.077,
+        "guaranteed_rate": 0.077
+      },
+      {
+        "card_id": "785",
+        "character": "Yoisaki Kanade",
+        "normal_rate": 0.077,
+        "guaranteed_rate": 0.077
+      },
+      {
+        "card_id": "786",
+        "character": "Asahina Mafuyu",
+        "normal_rate": 0.077,
+        "guaranteed_rate": 0.077
+      },
+      {
+        "card_id": "787",
+        "character": "Shinonome Ena",
+        "normal_rate": 0.077,
+        "guaranteed_rate": 0.077
+      },
+      {
+        "card_id": "788",
+        "character": "Akiyama Mizuki",
+        "normal_rate": 0.077,
+        "guaranteed_rate": 0.077
+      },
+      {
+        "card_id": "979",
+        "character": "Hatsune Miku",
+        "normal_rate": 0.077,
+        "guaranteed_rate": 0.077
+      },
+      {
+        "card_id": "980",
+        "character": "Kagamine Rin",
+        "normal_rate": 0.077,
+        "guaranteed_rate": 0.077
+      },
+      {
+        "card_id": "981",
+        "character": "Kagamine Len",
+        "normal_rate": 0.077,
+        "guaranteed_rate": 0.077
+      },
+      {
+        "card_id": "982",
+        "character": "Megurine Luka",
+        "normal_rate": 0.077,
+        "guaranteed_rate": 0.077
+      },
+      {
+        "card_id": "983",
+        "character": "MEIKO",
+        "normal_rate": 0.077,
+        "guaranteed_rate": 0.077
+      },
+      {
+        "card_id": "984",
+        "character": "KAITO",
+        "normal_rate": 0.077,
+        "guaranteed_rate": 0.077
+      }
+    ]
+  },
+  "818": {
+    "id": 818,
+    "title (japanese)": "【5周年前夜祭】[バーチャル・シンガー]スペシャルプライズガチャ",
+    "release_date": "9/27/2025, 3:00:00 AM",
+    "end_date": "9/30/2025, 2:59:59 AM",
+    "type": "normal",
+    "gacha_rate_index": 0,
+    "featured_cards": [
+      {
+        "card_id": "1047",
+        "character": "Hatsune Miku",
+        "normal_rate": 0.036,
+        "guaranteed_rate": 0.036
+      },
+      {
+        "card_id": "1099",
+        "character": "Kagamine Rin",
+        "normal_rate": 0.036,
+        "guaranteed_rate": 0.036
+      },
+      {
+        "card_id": "666",
+        "character": "Kagamine Len",
+        "normal_rate": 0.036,
+        "guaranteed_rate": 0.036
+      },
+      {
+        "card_id": "770",
+        "character": "Megurine Luka",
+        "normal_rate": 0.036,
+        "guaranteed_rate": 0.036
+      },
+      {
+        "card_id": "626",
+        "character": "MEIKO",
+        "normal_rate": 0.036,
+        "guaranteed_rate": 0.036
+      },
+      {
+        "card_id": "1158",
+        "character": "KAITO",
+        "normal_rate": 0.036,
+        "guaranteed_rate": 0.036
+      }
+    ]
+  },
+  "819": {
+    "id": 819,
+    "title (japanese)": "【5周年前夜祭】[Leo/need]スペシャルプライズガチャ",
+    "release_date": "9/27/2025, 3:00:00 AM",
+    "end_date": "9/30/2025, 2:59:59 AM",
+    "type": "normal",
+    "gacha_rate_index": 0,
+    "featured_cards": [
+      {
+        "card_id": "643",
+        "character": "Hoshino Ichika",
+        "normal_rate": 0.044,
+        "guaranteed_rate": 0.044
+      },
+      {
+        "card_id": "1098",
+        "character": "Tenma Saki",
+        "normal_rate": 0.044,
+        "guaranteed_rate": 0.044
+      },
+      {
+        "card_id": "1122",
+        "character": "Mochizuki Honami",
+        "normal_rate": 0.044,
+        "guaranteed_rate": 0.044
+      },
+      {
+        "card_id": "715",
+        "character": "Hinomori Shiho",
+        "normal_rate": 0.044,
+        "guaranteed_rate": 0.044
+      }
+    ]
+  },
+  "820": {
+    "id": 820,
+    "title (japanese)": "【5周年前夜祭】[MORE MORE JUMP！]スペシャルプライズガチャ",
+    "release_date": "9/27/2025, 3:00:00 AM",
+    "end_date": "9/30/2025, 2:59:59 AM",
+    "type": "normal",
+    "gacha_rate_index": 0,
+    "featured_cards": [
+      {
+        "card_id": "1046",
+        "character": "Hanasato Minori",
+        "normal_rate": 0.045,
+        "guaranteed_rate": 0.045
+      },
+      {
+        "card_id": "874",
+        "character": "Kiritani Haruka",
+        "normal_rate": 0.045,
+        "guaranteed_rate": 0.045
+      },
+      {
+        "card_id": "1134",
+        "character": "Momoi Airi",
+        "normal_rate": 0.045,
+        "guaranteed_rate": 0.045
+      },
+      {
+        "card_id": "632",
+        "character": "Hinomori Shizuku",
+        "normal_rate": 0.045,
+        "guaranteed_rate": 0.045
+      }
+    ]
+  },
+  "821": {
+    "id": 821,
+    "title (japanese)": "【5周年前夜祭】[Vivid BAD SQUAD]スペシャルプライズガチャ",
+    "release_date": "9/27/2025, 3:00:00 AM",
+    "end_date": "9/30/2025, 2:59:59 AM",
+    "type": "normal",
+    "gacha_rate_index": 0,
+    "featured_cards": [
+      {
+        "card_id": "1051",
+        "character": "Azusawa Kohane",
+        "normal_rate": 0.045,
+        "guaranteed_rate": 0.045
+      },
+      {
+        "card_id": "719",
+        "character": "Shiraishi An",
+        "normal_rate": 0.045,
+        "guaranteed_rate": 0.045
+      },
+      {
+        "card_id": "994",
+        "character": "Shinonome Akito",
+        "normal_rate": 0.045,
+        "guaranteed_rate": 0.045
+      },
+      {
+        "card_id": "973",
+        "character": "Aoyagi Toya",
+        "normal_rate": 0.045,
+        "guaranteed_rate": 0.045
+      }
+    ]
+  },
+  "822": {
+    "id": 822,
+    "title (japanese)": "【5周年前夜祭】[ワンダーランズ×ショウタイム]スペシャルプライズガチャ",
+    "release_date": "9/27/2025, 3:00:00 AM",
+    "end_date": "9/30/2025, 2:59:59 AM",
+    "type": "normal",
+    "gacha_rate_index": 0,
+    "featured_cards": [
+      {
+        "card_id": "928",
+        "character": "Tenma Tsukasa",
+        "normal_rate": 0.04,
+        "guaranteed_rate": 0.04
+      },
+      {
+        "card_id": "1156",
+        "character": "Otori Emu",
+        "normal_rate": 0.04,
+        "guaranteed_rate": 0.04
+      },
+      {
+        "card_id": "701",
+        "character": "Kusanagi Nene",
+        "normal_rate": 0.04,
+        "guaranteed_rate": 0.04
+      },
+      {
+        "card_id": "1050",
+        "character": "Kamishiro Rui",
+        "normal_rate": 0.04,
+        "guaranteed_rate": 0.04
+      }
+    ]
+  },
+  "823": {
+    "id": 823,
+    "title (japanese)": "【5周年前夜祭】[25時、ナイトコードで。]スペシャルプライズガチャ",
+    "release_date": "9/27/2025, 3:00:00 AM",
+    "end_date": "9/30/2025, 2:59:59 AM",
+    "type": "normal",
+    "gacha_rate_index": 0,
+    "featured_cards": [
+      {
+        "card_id": "833",
+        "character": "Yoisaki Kanade",
+        "normal_rate": 0.045,
+        "guaranteed_rate": 0.045
+      },
+      {
+        "card_id": "904",
+        "character": "Asahina Mafuyu",
+        "normal_rate": 0.045,
+        "guaranteed_rate": 0.045
+      },
+      {
+        "card_id": "1141",
+        "character": "Shinonome Ena",
+        "normal_rate": 0.045,
+        "guaranteed_rate": 0.045
+      },
+      {
+        "card_id": "1135",
+        "character": "Akiyama Mizuki",
+        "normal_rate": 0.045,
+        "guaranteed_rate": 0.045
+      }
+    ]
+  },
+  "824": {
+    "id": 824,
+    "title (japanese)": "[友達招待]★4メンバー確定ガチャ",
+    "release_date": "9/29/2025, 3:00:00 AM",
+    "end_date": "11/30/2025, 2:59:59 PM",
+    "type": "normal",
+    "gacha_rate_index": 5,
+    "featured_cards": [
+      {
+        "card_id": "958",
+        "character": "Megurine Luka",
+        "normal_rate": 0.333,
+        "guaranteed_rate": 0.333
+      },
+      {
+        "card_id": "715",
+        "character": "Hinomori Shiho",
+        "normal_rate": 0.333,
+        "guaranteed_rate": 0.333
+      },
+      {
+        "card_id": "391",
+        "character": "Hinomori Shizuku",
+        "normal_rate": 0.333,
+        "guaranteed_rate": 0.333
+      },
+      {
+        "card_id": "504",
+        "character": "Aoyagi Toya",
+        "normal_rate": 0.333,
+        "guaranteed_rate": 0.333
+      },
+      {
+        "card_id": "608",
+        "character": "Kusanagi Nene",
+        "normal_rate": 0.333,
+        "guaranteed_rate": 0.333
+      },
+      {
+        "card_id": "540",
+        "character": "Shinonome Ena",
+        "normal_rate": 0.333,
+        "guaranteed_rate": 0.333
+      }
+    ]
+  },
+  "825": {
+    "id": 825,
+    "title (japanese)": "[5周年記念]ブルームフェスティバルガチャ ドリームピック",
+    "release_date": "9/30/2025, 3:00:00 AM",
+    "end_date": "10/4/2025, 2:59:59 AM",
+    "type": "limited",
+    "gacha_rate_index": 7,
+    "featured_cards": [
+      {
+        "card_id": "1252",
+        "character": "N/A",
+        "normal_rate": 0.008,
+        "guaranteed_rate": 0.008
+      },
+      {
+        "card_id": "1253",
+        "character": "N/A",
+        "normal_rate": 0.008,
+        "guaranteed_rate": 0.008
+      },
+      {
+        "card_id": "1254",
+        "character": "N/A",
+        "normal_rate": 0.008,
+        "guaranteed_rate": 0.008
+      },
+      {
+        "card_id": "1255",
+        "character": "N/A",
+        "normal_rate": 0.008,
+        "guaranteed_rate": 0.008
+      },
+      {
+        "card_id": "1256",
+        "character": "N/A",
+        "normal_rate": 0.008,
+        "guaranteed_rate": 0.008
+      },
+      {
+        "card_id": "1257",
+        "character": "N/A",
+        "normal_rate": 0.008,
+        "guaranteed_rate": 0.008
+      }
+    ]
   }
 }

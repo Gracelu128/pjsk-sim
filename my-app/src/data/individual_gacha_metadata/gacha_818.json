@@ -1,0 +1,46 @@
+{
+  "id": 818,
+  "title (japanese)": "【5周年前夜祭】[バーチャル・シンガー]スペシャルプライズガチャ",
+  "release_date": "9/27/2025, 3:00:00 AM",
+  "end_date": "9/30/2025, 2:59:59 AM",
+  "type": "normal",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "1047",
+      "character": "Hatsune Miku",
+      "normal_rate": 0.036,
+      "guaranteed_rate": 0.036
+    },
+    {
+      "card_id": "1099",
+      "character": "Kagamine Rin",
+      "normal_rate": 0.036,
+      "guaranteed_rate": 0.036
+    },
+    {
+      "card_id": "666",
+      "character": "Kagamine Len",
+      "normal_rate": 0.036,
+      "guaranteed_rate": 0.036
+    },
+    {
+      "card_id": "770",
+      "character": "Megurine Luka",
+      "normal_rate": 0.036,
+      "guaranteed_rate": 0.036
+    },
+    {
+      "card_id": "626",
+      "character": "MEIKO",
+      "normal_rate": 0.036,
+      "guaranteed_rate": 0.036
+    },
+    {
+      "card_id": "1158",
+      "character": "KAITO",
+      "normal_rate": 0.036,
+      "guaranteed_rate": 0.036
+    }
+  ]
+}
