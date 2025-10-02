@@ -10382,6 +10382,106 @@
     "banner": [],
     "end date": "Until Sep. 25, 2025 02:59"
   },
+  "817": {
+    "bg": [
+      "bg_gacha817.webp"
+    ],
+    "img": [],
+    "logo": "logo/logo.webp",
+    "banner": [
+      "Gacha817_banner.webp"
+    ],
+    "end date": "Until Sep. 30, 2025 02:59"
+  },
+  "818": {
+    "bg": [
+      "bg_gacha818.webp"
+    ],
+    "img": [],
+    "logo": "logo/logo.webp",
+    "banner": [],
+    "end date": "Until Sep. 30, 2025 02:59"
+  },
+  "819": {
+    "bg": [
+      "bg_gacha819.webp"
+    ],
+    "img": [],
+    "logo": "logo/logo.webp",
+    "banner": [],
+    "end date": "Until Sep. 30, 2025 02:59"
+  },
+  "820": {
+    "bg": [
+      "bg_gacha820.webp"
+    ],
+    "img": [],
+    "logo": "logo/logo.webp",
+    "banner": [],
+    "end date": "Until Sep. 30, 2025 02:59"
+  },
+  "821": {
+    "bg": [
+      "bg_gacha821.webp"
+    ],
+    "img": [],
+    "logo": "logo/logo.webp",
+    "banner": [],
+    "end date": "Until Sep. 30, 2025 02:59"
+  },
+  "822": {
+    "bg": [
+      "bg_gacha822.webp"
+    ],
+    "img": [],
+    "logo": "logo/logo.webp",
+    "banner": [],
+    "end date": "Until Sep. 30, 2025 02:59"
+  },
+  "823": {
+    "bg": [
+      "bg_gacha823.webp"
+    ],
+    "img": [],
+    "logo": "logo/logo.webp",
+    "banner": [],
+    "end date": "Until Sep. 30, 2025 02:59"
+  },
+  "824": {
+    "bg": [
+      "bg_gacha824.webp"
+    ],
+    "img": [],
+    "logo": "logo/logo.webp",
+    "banner": [],
+    "end date": "Until Nov. 30, 2025 14:59"
+  },
+  "825": {
+    "bg": [
+      "bg_gacha825.webp",
+      "bg_gacha825_1.webp",
+      "bg_gacha825_2.webp",
+      "bg_gacha825_3.webp",
+      "bg_gacha825_4.webp",
+      "bg_gacha825_5.webp",
+      "bg_gacha825_6.webp"
+    ],
+    "img": [
+      "cardname_gacha825_01.webp",
+      "cardname_gacha825_1.webp",
+      "cardname_gacha825_2.webp",
+      "cardname_gacha825_3.webp",
+      "cardname_gacha825_4.webp",
+      "cardname_gacha825_5.webp",
+      "cardname_gacha825_6.webp",
+      "img_gacha825_1.webp"
+    ],
+    "logo": "logo/logo.webp",
+    "banner": [
+      "Gacha825_banner.webp"
+    ],
+    "end date": "Until Oct. 4, 2025 02:59"
+  },
   "birthday_Rin": {
     "bg": [],
     "img": [],
