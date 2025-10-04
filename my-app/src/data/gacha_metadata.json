@@ -26305,5 +26305,73 @@
         "guaranteed_rate": null
       }
     ]
+  },
+  "837": {
+    "id": 837,
+    "title (japanese)": "[桐谷遥]HAPPY BIRTHDAYメモリーズガチャ",
+    "release_date": "9/30/2025, 3:00:00 PM",
+    "end_date": "10/7/2025, 2:59:59 PM",
+    "type": "birthday",
+    "gacha_rate_index": 4,
+    "featured_cards": [
+      {
+        "card_id": "1010",
+        "character": "Kiritani Haruka",
+        "normal_rate": 0.75,
+        "guaranteed_rate": null
+      },
+      {
+        "card_id": "767",
+        "character": "Kiritani Haruka",
+        "normal_rate": 0.75,
+        "guaranteed_rate": null
+      },
+      {
+        "card_id": "516",
+        "character": "Kiritani Haruka",
+        "normal_rate": 0.75,
+        "guaranteed_rate": null
+      },
+      {
+        "card_id": "295",
+        "character": "Kiritani Haruka",
+        "normal_rate": 0.75,
+        "guaranteed_rate": null
+      }
+    ]
+  },
+  "838": {
+    "id": 838,
+    "title (japanese)": "EYES ON MEガチャ",
+    "release_date": "10/4/2025, 3:00:00 AM",
+    "end_date": "10/11/2025, 2:59:59 AM",
+    "type": "limited",
+    "gacha_rate_index": 0,
+    "featured_cards": [
+      {
+        "card_id": "1254",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1255",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1256",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1257",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      }
+    ]
   }
 }
