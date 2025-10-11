@@ -1,0 +1,46 @@
+{
+  "id": 840,
+  "title (japanese)": "[5周年記念]ブルームフェスティバルガチャ ゴールドフィーバー",
+  "release_date": "9/30/2025, 3:00:00 AM",
+  "end_date": "10/4/2025, 2:59:59 AM",
+  "type": "limited",
+  "gacha_rate_index": 8,
+  "featured_cards": [
+    {
+      "card_id": "1252",
+      "character": "N/A",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1253",
+      "character": "N/A",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1254",
+      "character": "N/A",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1255",
+      "character": "N/A",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1256",
+      "character": "N/A",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1257",
+      "character": "N/A",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    }
+  ]
+}

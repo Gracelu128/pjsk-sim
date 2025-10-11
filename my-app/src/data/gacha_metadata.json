@@ -26373,5 +26373,131 @@
         "guaranteed_rate": 0.4
       }
     ]
+  },
+  "839": {
+    "id": 839,
+    "title (japanese)": "カラフルパスガチャ",
+    "release_date": "10/5/2025, 7:00:00 PM",
+    "end_date": "12/30/2099, 6:59:59 PM",
+    "type": "normal",
+    "gacha_rate_index": 1,
+    "featured_cards": [
+      {
+        "card_id": "383",
+        "character": "Tenma Saki",
+        "normal_rate": 0.584,
+        "guaranteed_rate": null
+      },
+      {
+        "card_id": "267",
+        "character": "Hinomori Shizuku",
+        "normal_rate": 0.584,
+        "guaranteed_rate": null
+      },
+      {
+        "card_id": "376",
+        "character": "Shiraishi An",
+        "normal_rate": 0.584,
+        "guaranteed_rate": null
+      },
+      {
+        "card_id": "359",
+        "character": "Kusanagi Nene",
+        "normal_rate": 0.584,
+        "guaranteed_rate": null
+      },
+      {
+        "card_id": "364",
+        "character": "Shinonome Ena",
+        "normal_rate": 0.584,
+        "guaranteed_rate": null
+      },
+      {
+        "card_id": "353",
+        "character": "Hatsune Miku",
+        "normal_rate": 0.584,
+        "guaranteed_rate": null
+      },
+      {
+        "card_id": "272",
+        "character": "KAITO",
+        "normal_rate": 0.584,
+        "guaranteed_rate": null
+      }
+    ]
+  },
+  "840": {
+    "id": 840,
+    "title (japanese)": "[5周年記念]ブルームフェスティバルガチャ ゴールドフィーバー",
+    "release_date": "9/30/2025, 3:00:00 AM",
+    "end_date": "10/4/2025, 2:59:59 AM",
+    "type": "limited",
+    "gacha_rate_index": 8,
+    "featured_cards": [
+      {
+        "card_id": "1252",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1253",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1254",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1255",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1256",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1257",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      }
+    ]
+  },
+  "841": {
+    "id": 841,
+    "title (japanese)": "Follow my heartガチャ",
+    "release_date": "10/11/2025, 3:00:00 AM",
+    "end_date": "10/21/2025, 2:59:59 AM",
+    "type": "normal",
+    "gacha_rate_index": 0,
+    "featured_cards": [
+      {
+        "card_id": "1261",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1262",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1263",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      }
+    ]
   }
 }
