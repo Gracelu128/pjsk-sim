@@ -26499,5 +26499,205 @@
         "guaranteed_rate": 0.4
       }
     ]
+  },
+  "842": {
+    "id": 842,
+    "title (japanese)": "初心者応援メモリアルセレクトガチャ",
+    "release_date": "10/11/2025, 3:00:00 AM",
+    "end_date": "12/31/2099, 2:59:59 PM",
+    "type": "beginner",
+    "gacha_rate_index": 0,
+    "featured_cards": [
+      {
+        "card_id": "998",
+        "character": "Hoshino Ichika",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.009
+      },
+      {
+        "card_id": "1098",
+        "character": "Tenma Saki",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.009
+      },
+      {
+        "card_id": "1122",
+        "character": "Mochizuki Honami",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.009
+      },
+      {
+        "card_id": "1028",
+        "character": "Hinomori Shiho",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.009
+      },
+      {
+        "card_id": "1175",
+        "character": "Hanasato Minori",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.009
+      },
+      {
+        "card_id": "1110",
+        "character": "Kiritani Haruka",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.009
+      },
+      {
+        "card_id": "1134",
+        "character": "Momoi Airi",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.009
+      },
+      {
+        "card_id": "1045",
+        "character": "Hinomori Shizuku",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.009
+      },
+      {
+        "card_id": "1051",
+        "character": "Azusawa Kohane",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.009
+      },
+      {
+        "card_id": "891",
+        "character": "Shiraishi An",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.009
+      },
+      {
+        "card_id": "1016",
+        "character": "Shinonome Akito",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.009
+      },
+      {
+        "card_id": "1065",
+        "character": "Aoyagi Toya",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.009
+      },
+      {
+        "card_id": "995",
+        "character": "Tenma Tsukasa",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.009
+      },
+      {
+        "card_id": "1156",
+        "character": "Otori Emu",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.009
+      },
+      {
+        "card_id": "1034",
+        "character": "Kusanagi Nene",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.009
+      },
+      {
+        "card_id": "957",
+        "character": "Kamishiro Rui",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.009
+      },
+      {
+        "card_id": "1097",
+        "character": "Yoisaki Kanade",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.009
+      },
+      {
+        "card_id": "943",
+        "character": "Asahina Mafuyu",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.009
+      },
+      {
+        "card_id": "1141",
+        "character": "Shinonome Ena",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.009
+      },
+      {
+        "card_id": "1011",
+        "character": "Akiyama Mizuki",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.009
+      },
+      {
+        "card_id": "875",
+        "character": "Hatsune Miku",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.009
+      },
+      {
+        "card_id": "1099",
+        "character": "Kagamine Rin",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.009
+      },
+      {
+        "card_id": "1000",
+        "character": "Kagamine Len",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.009
+      },
+      {
+        "card_id": "1112",
+        "character": "Megurine Luka",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.009
+      },
+      {
+        "card_id": "1124",
+        "character": "MEIKO",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.009
+      },
+      {
+        "card_id": "1158",
+        "character": "KAITO",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.009
+      }
+    ]
+  },
+  "843": {
+    "id": 843,
+    "title (japanese)": "[復刻]Talent Bloomsガチャ",
+    "release_date": "10/12/2025, 3:00:00 AM",
+    "end_date": "10/21/2025, 2:59:59 AM",
+    "type": "limited",
+    "gacha_rate_index": 0,
+    "featured_cards": [
+      {
+        "card_id": "1005",
+        "character": "Kusanagi Nene",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1006",
+        "character": "Hinomori Shiho",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1007",
+        "character": "Momoi Airi",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1008",
+        "character": "Aoyagi Toya",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      }
+    ]
   }
 }
