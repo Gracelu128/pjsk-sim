@@ -1,0 +1,28 @@
+{
+  "id": 844,
+  "title (japanese)": "[復刻]戦の果てに待つものはガチャ",
+  "release_date": "10/12/2025, 3:00:00 AM",
+  "end_date": "10/21/2025, 2:59:59 AM",
+  "type": "limited",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "878",
+      "character": "Yoisaki Kanade",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "879",
+      "character": "Hoshino Ichika",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "880",
+      "character": "Asahina Mafuyu",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    }
+  ]
+}

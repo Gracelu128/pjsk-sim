@@ -26699,5 +26699,79 @@
         "guaranteed_rate": 0.4
       }
     ]
+  },
+  "844": {
+    "id": 844,
+    "title (japanese)": "[復刻]戦の果てに待つものはガチャ",
+    "release_date": "10/12/2025, 3:00:00 AM",
+    "end_date": "10/21/2025, 2:59:59 AM",
+    "type": "limited",
+    "gacha_rate_index": 0,
+    "featured_cards": [
+      {
+        "card_id": "878",
+        "character": "Yoisaki Kanade",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "879",
+        "character": "Hoshino Ichika",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "880",
+        "character": "Asahina Mafuyu",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      }
+    ]
+  },
+  "845": {
+    "id": 845,
+    "title (japanese)": "[CS 2025 開催記念]プレミアムプレゼントガチャ",
+    "release_date": "10/18/2025, 3:00:00 AM",
+    "end_date": "10/27/2025, 2:59:59 PM",
+    "type": "normal",
+    "gacha_rate_index": 2,
+    "featured_cards": [
+      {
+        "card_id": "537",
+        "character": "Hatsune Miku",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.292
+      },
+      {
+        "card_id": "856",
+        "character": "Kagamine Rin",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.292
+      },
+      {
+        "card_id": "905",
+        "character": "Kagamine Len",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.292
+      },
+      {
+        "card_id": "1052",
+        "character": "Megurine Luka",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.292
+      },
+      {
+        "card_id": "911",
+        "character": "MEIKO",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.292
+      },
+      {
+        "card_id": "940",
+        "character": "KAITO",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.292
+      }
+    ]
   }
 }
