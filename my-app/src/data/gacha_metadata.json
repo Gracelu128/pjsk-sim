@@ -26773,5 +26773,49 @@
         "guaranteed_rate": 0.292
       }
     ]
+  },
+  "846": {
+    "id": 846,
+    "title (japanese)": "瞳に映る綴り花ガチャ",
+    "release_date": "10/21/2025, 3:00:00 AM",
+    "end_date": "10/31/2025, 2:59:59 AM",
+    "type": "normal",
+    "gacha_rate_index": 0,
+    "featured_cards": [
+      {
+        "card_id": "1266",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1267",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1268",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      }
+    ]
+  },
+  "847": {
+    "id": 847,
+    "title (japanese)": "[望月穂波]HAPPY BIRTHDAY2025ガチャ",
+    "release_date": "10/22/2025, 3:00:00 PM",
+    "end_date": "10/29/2025, 2:59:59 PM",
+    "type": "birthday",
+    "gacha_rate_index": 4,
+    "featured_cards": [
+      {
+        "card_id": "1271",
+        "character": "N/A",
+        "normal_rate": 3.0,
+        "guaranteed_rate": null
+      }
+    ]
   }
 }
