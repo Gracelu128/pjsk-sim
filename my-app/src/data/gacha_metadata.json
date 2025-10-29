@@ -26817,5 +26817,85 @@
         "guaranteed_rate": null
       }
     ]
+  },
+  "848": {
+    "id": 848,
+    "title (japanese)": "[望月穂波]HAPPY BIRTHDAYメモリーズガチャ",
+    "release_date": "10/22/2025, 3:00:00 PM",
+    "end_date": "10/29/2025, 2:59:59 PM",
+    "type": "birthday",
+    "gacha_rate_index": 4,
+    "featured_cards": [
+      {
+        "card_id": "1021",
+        "character": "Mochizuki Honami",
+        "normal_rate": 0.75,
+        "guaranteed_rate": null
+      },
+      {
+        "card_id": "778",
+        "character": "Mochizuki Honami",
+        "normal_rate": 0.75,
+        "guaranteed_rate": null
+      },
+      {
+        "card_id": "527",
+        "character": "Mochizuki Honami",
+        "normal_rate": 0.75,
+        "guaranteed_rate": null
+      },
+      {
+        "card_id": "306",
+        "character": "Mochizuki Honami",
+        "normal_rate": 0.75,
+        "guaranteed_rate": null
+      }
+    ]
+  },
+  "849": {
+    "id": 849,
+    "title (japanese)": "ハピネスパッケージガチャ",
+    "release_date": "10/27/2025, 3:00:00 AM",
+    "end_date": "11/5/2025, 2:59:59 AM",
+    "type": "gift",
+    "gacha_rate_index": 2,
+    "featured_cards": [
+      {
+        "card_id": "770",
+        "character": "Megurine Luka",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.287
+      },
+      {
+        "card_id": "1202",
+        "character": "Hoshino Ichika",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.287
+      },
+      {
+        "card_id": "1174",
+        "character": "Momoi Airi",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.287
+      },
+      {
+        "card_id": "891",
+        "character": "Shiraishi An",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.287
+      },
+      {
+        "card_id": "1035",
+        "character": "Otori Emu",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.287
+      },
+      {
+        "card_id": "974",
+        "character": "Yoisaki Kanade",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.287
+      }
+    ]
   }
 }

@@ -1,0 +1,46 @@
+{
+  "id": 849,
+  "title (japanese)": "ハピネスパッケージガチャ",
+  "release_date": "10/27/2025, 3:00:00 AM",
+  "end_date": "11/5/2025, 2:59:59 AM",
+  "type": "gift",
+  "gacha_rate_index": 2,
+  "featured_cards": [
+    {
+      "card_id": "770",
+      "character": "Megurine Luka",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.287
+    },
+    {
+      "card_id": "1202",
+      "character": "Hoshino Ichika",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.287
+    },
+    {
+      "card_id": "1174",
+      "character": "Momoi Airi",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.287
+    },
+    {
+      "card_id": "891",
+      "character": "Shiraishi An",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.287
+    },
+    {
+      "card_id": "1035",
+      "character": "Otori Emu",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.287
+    },
+    {
+      "card_id": "974",
+      "character": "Yoisaki Kanade",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.287
+    }
+  ]
+}
