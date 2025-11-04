@@ -1,0 +1,40 @@
+{
+  "id": 854,
+  "title (japanese)": "[わん！もあ！HAPPY TIME 開催記念]プレミアムプレゼントガチャ ワンダーランズ×ショウタイム EDITION",
+  "release_date": "11/2/2025, 3:00:00 AM",
+  "end_date": "11/11/2025, 2:59:59 AM",
+  "type": "normal",
+  "gacha_rate_index": 2,
+  "featured_cards": [
+    {
+      "card_id": "1133",
+      "character": "Tenma Tsukasa",
+      "normal_rate": 0.04,
+      "guaranteed_rate": 1.333
+    },
+    {
+      "card_id": "1035",
+      "character": "Otori Emu",
+      "normal_rate": 0.04,
+      "guaranteed_rate": 1.333
+    },
+    {
+      "card_id": "855",
+      "character": "Kusanagi Nene",
+      "normal_rate": 0.04,
+      "guaranteed_rate": 1.333
+    },
+    {
+      "card_id": "957",
+      "character": "Kamishiro Rui",
+      "normal_rate": 0.04,
+      "guaranteed_rate": 1.333
+    },
+    {
+      "card_id": "145",
+      "character": "Hatsune Miku",
+      "normal_rate": 0.04,
+      "guaranteed_rate": 1.333
+    }
+  ]
+}

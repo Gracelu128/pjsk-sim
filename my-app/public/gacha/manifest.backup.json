@@ -10804,6 +10804,27 @@
     "banner": [],
     "end date": "Until Nov. 7, 2025 14:59"
   },
+  "852": {
+    "bg": [
+      "bg_gacha852.webp"
+    ],
+    "img": [],
+    "logo": "logo/logo.webp",
+    "banner": [],
+    "end date": "Until Nov. 7, 2025 14:59"
+  },
+  "853": {
+    "bg": [
+      "bg_gacha853_1.webp",
+      "bg_gacha853_2.webp"
+    ],
+    "img": [
+      "img_gacha853_1.webp"
+    ],
+    "logo": "logo/logo.webp",
+    "banner": [],
+    "end date": "Until Nov. 11, 2025 02:59"
+  },
   "birthday_Rin": {
     "bg": [],
     "img": [],

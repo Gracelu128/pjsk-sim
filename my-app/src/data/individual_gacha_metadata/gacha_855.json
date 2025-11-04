@@ -1,0 +1,52 @@
+{
+  "id": 855,
+  "title (japanese)": "カラフルパスガチャ",
+  "release_date": "11/2/2025, 7:00:00 PM",
+  "end_date": "12/30/2099, 6:59:59 PM",
+  "type": "normal",
+  "gacha_rate_index": 1,
+  "featured_cards": [
+    {
+      "card_id": "383",
+      "character": "Tenma Saki",
+      "normal_rate": 0.574,
+      "guaranteed_rate": null
+    },
+    {
+      "card_id": "267",
+      "character": "Hinomori Shizuku",
+      "normal_rate": 0.574,
+      "guaranteed_rate": null
+    },
+    {
+      "card_id": "376",
+      "character": "Shiraishi An",
+      "normal_rate": 0.574,
+      "guaranteed_rate": null
+    },
+    {
+      "card_id": "359",
+      "character": "Kusanagi Nene",
+      "normal_rate": 0.574,
+      "guaranteed_rate": null
+    },
+    {
+      "card_id": "364",
+      "character": "Shinonome Ena",
+      "normal_rate": 0.574,
+      "guaranteed_rate": null
+    },
+    {
+      "card_id": "353",
+      "character": "Hatsune Miku",
+      "normal_rate": 0.574,
+      "guaranteed_rate": null
+    },
+    {
+      "card_id": "272",
+      "character": "KAITO",
+      "normal_rate": 0.574,
+      "guaranteed_rate": null
+    }
+  ]
+}
