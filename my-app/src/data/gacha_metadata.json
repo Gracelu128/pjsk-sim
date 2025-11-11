@@ -27107,5 +27107,83 @@
         "guaranteed_rate": null
       }
     ]
+  },
+  "856": {
+    "id": 856,
+    "title (japanese)": "[東雲彰人]HAPPY BIRTHDAY2025ガチャ",
+    "release_date": "11/7/2025, 3:00:00 PM",
+    "end_date": "11/14/2025, 2:59:59 PM",
+    "type": "birthday",
+    "gacha_rate_index": 4,
+    "featured_cards": [
+      {
+        "card_id": "1278",
+        "character": "N/A",
+        "normal_rate": 3.0,
+        "guaranteed_rate": null
+      }
+    ]
+  },
+  "857": {
+    "id": 857,
+    "title (japanese)": "[東雲彰人]HAPPY BIRTHDAYメモリーズガチャ",
+    "release_date": "11/7/2025, 3:00:00 PM",
+    "end_date": "11/14/2025, 2:59:59 PM",
+    "type": "birthday",
+    "gacha_rate_index": 4,
+    "featured_cards": [
+      {
+        "card_id": "1033",
+        "character": "Shinonome Akito",
+        "normal_rate": 0.75,
+        "guaranteed_rate": null
+      },
+      {
+        "card_id": "790",
+        "character": "Shinonome Akito",
+        "normal_rate": 0.75,
+        "guaranteed_rate": null
+      },
+      {
+        "card_id": "534",
+        "character": "Shinonome Akito",
+        "normal_rate": 0.75,
+        "guaranteed_rate": null
+      },
+      {
+        "card_id": "318",
+        "character": "Shinonome Akito",
+        "normal_rate": 0.75,
+        "guaranteed_rate": null
+      }
+    ]
+  },
+  "858": {
+    "id": 858,
+    "title (japanese)": "Get my bright wingsガチャ",
+    "release_date": "11/10/2025, 3:00:00 AM",
+    "end_date": "11/20/2025, 2:59:59 AM",
+    "type": "normal",
+    "gacha_rate_index": 0,
+    "featured_cards": [
+      {
+        "card_id": "1279",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1280",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1281",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      }
+    ]
   }
 }
