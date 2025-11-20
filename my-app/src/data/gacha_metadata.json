@@ -27185,5 +27185,89 @@
         "guaranteed_rate": 0.4
       }
     ]
+  },
+  "859": {
+    "id": 859,
+    "title (japanese)": "[復刻]音楽が鳴る街角でガチャ",
+    "release_date": "11/12/2025, 3:00:00 AM",
+    "end_date": "11/21/2025, 2:59:59 AM",
+    "type": "limited",
+    "gacha_rate_index": 0,
+    "featured_cards": [
+      {
+        "card_id": "1022",
+        "character": "Tenma Saki",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1023",
+        "character": "Hoshino Ichika",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1024",
+        "character": "Mochizuki Honami",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      }
+    ]
+  },
+  "860": {
+    "id": 860,
+    "title (japanese)": "[復刻]Eternal Boutガチャ",
+    "release_date": "11/12/2025, 3:00:00 AM",
+    "end_date": "11/21/2025, 2:59:59 AM",
+    "type": "limited",
+    "gacha_rate_index": 0,
+    "featured_cards": [
+      {
+        "card_id": "915",
+        "character": "Shiraishi An",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "916",
+        "character": "Azusawa Kohane",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "917",
+        "character": "Aoyagi Toya",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      }
+    ]
+  },
+  "861": {
+    "id": 861,
+    "title (japanese)": "Good to go！ガチャ",
+    "release_date": "11/20/2025, 3:00:00 AM",
+    "end_date": "11/30/2025, 2:59:59 AM",
+    "type": "normal",
+    "gacha_rate_index": 0,
+    "featured_cards": [
+      {
+        "card_id": "1284",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1285",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1286",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      }
+    ]
   }
 }

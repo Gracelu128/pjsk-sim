@@ -1,0 +1,28 @@
+{
+  "id": 860,
+  "title (japanese)": "[復刻]Eternal Boutガチャ",
+  "release_date": "11/12/2025, 3:00:00 AM",
+  "end_date": "11/21/2025, 2:59:59 AM",
+  "type": "limited",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "915",
+      "character": "Shiraishi An",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "916",
+      "character": "Azusawa Kohane",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "917",
+      "character": "Aoyagi Toya",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    }
+  ]
+}

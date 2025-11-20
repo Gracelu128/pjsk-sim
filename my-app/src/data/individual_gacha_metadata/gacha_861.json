@@ -1,0 +1,28 @@
+{
+  "id": 861,
+  "title (japanese)": "Good to go！ガチャ",
+  "release_date": "11/20/2025, 3:00:00 AM",
+  "end_date": "11/30/2025, 2:59:59 AM",
+  "type": "normal",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "1284",
+      "character": "N/A",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1285",
+      "character": "N/A",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1286",
+      "character": "N/A",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    }
+  ]
+}
