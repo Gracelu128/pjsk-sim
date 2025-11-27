@@ -1,0 +1,70 @@
+{
+  "id": 863,
+  "title (japanese)": "セレクトリストガチャ",
+  "release_date": "11/26/2025, 3:00:00 AM",
+  "end_date": "12/5/2025, 2:59:59 AM",
+  "type": "normal",
+  "gacha_rate_index": 2,
+  "featured_cards": [
+    {
+      "card_id": "945",
+      "character": "Kagamine Rin",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.285
+    },
+    {
+      "card_id": "1067",
+      "character": "Kagamine Len",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.285
+    },
+    {
+      "card_id": "1028",
+      "character": "Hinomori Shiho",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.285
+    },
+    {
+      "card_id": "1175",
+      "character": "Hanasato Minori",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.285
+    },
+    {
+      "card_id": "993",
+      "character": "Kiritani Haruka",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.285
+    },
+    {
+      "card_id": "1051",
+      "character": "Azusawa Kohane",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.285
+    },
+    {
+      "card_id": "956",
+      "character": "Tenma Tsukasa",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.285
+    },
+    {
+      "card_id": "1123",
+      "character": "Kusanagi Nene",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.285
+    },
+    {
+      "card_id": "1097",
+      "character": "Yoisaki Kanade",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.285
+    },
+    {
+      "card_id": "834",
+      "character": "Asahina Mafuyu",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.285
+    }
+  ]
+}

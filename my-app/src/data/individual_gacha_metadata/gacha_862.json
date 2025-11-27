@@ -1,0 +1,40 @@
+{
+  "id": 862,
+  "title (japanese)": "[復刻]罪の回顧録ガチャ",
+  "release_date": "11/21/2025, 3:00:00 AM",
+  "end_date": "12/5/2025, 2:59:59 PM",
+  "type": "limited",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "335",
+      "character": "Kagamine Rin",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "336",
+      "character": "Kagamine Len",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "337",
+      "character": "Megurine Luka",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "338",
+      "character": "MEIKO",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "339",
+      "character": "KAITO",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    }
+  ]
+}
