@@ -1,0 +1,28 @@
+{
+  "id": 864,
+  "title (japanese)": "想望の星追い人ガチャ",
+  "release_date": "11/30/2025, 3:00:00 AM",
+  "end_date": "12/10/2025, 2:59:59 AM",
+  "type": "limited",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "1289",
+      "character": "N/A",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1290",
+      "character": "N/A",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1291",
+      "character": "N/A",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    }
+  ]
+}
