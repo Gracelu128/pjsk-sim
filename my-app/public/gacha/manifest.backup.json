@@ -10963,6 +10963,28 @@
     ],
     "end date": "Until Dec. 5, 2025 02:59"
   },
+  "864": {
+    "bg": [
+      "bg_gacha864_1.webp",
+      "bg_gacha864_2.webp",
+      "bg_gacha864_3.webp"
+    ],
+    "img": [
+      "cardname_gacha864_1.webp",
+      "cardname_gacha864_2.webp",
+      "cardname_gacha864_3.webp"
+    ],
+    "logo": "logo/logo.webp",
+    "banner": [],
+    "end date": "Until Dec. 10, 2025 02:59"
+  },
+  "865": {
+    "bg": [],
+    "img": [],
+    "logo": "",
+    "banner": [],
+    "end date": "Until Dec. 30, 2099 18:59"
+  },
   "birthday_Rin": {
     "bg": [],
     "img": [],
