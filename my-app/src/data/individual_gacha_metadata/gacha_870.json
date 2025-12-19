@@ -1,0 +1,28 @@
+{
+  "id": 870,
+  "title (japanese)": "[復刻]Play with dogsガチャ",
+  "release_date": "12/12/2025, 3:00:00 AM",
+  "end_date": "12/21/2025, 2:59:59 AM",
+  "type": "limited",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "898",
+      "character": "Shinonome Akito",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "899",
+      "character": "Mochizuki Honami",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "900",
+      "character": "KAITO",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    }
+  ]
+}

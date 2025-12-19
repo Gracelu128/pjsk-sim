@@ -27565,5 +27565,79 @@
         "guaranteed_rate": 0.4
       }
     ]
+  },
+  "870": {
+    "id": 870,
+    "title (japanese)": "[復刻]Play with dogsガチャ",
+    "release_date": "12/12/2025, 3:00:00 AM",
+    "end_date": "12/21/2025, 2:59:59 AM",
+    "type": "limited",
+    "gacha_rate_index": 0,
+    "featured_cards": [
+      {
+        "card_id": "898",
+        "character": "Shinonome Akito",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "899",
+        "character": "Mochizuki Honami",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "900",
+        "character": "KAITO",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      }
+    ]
+  },
+  "871": {
+    "id": 871,
+    "title (japanese)": "ワールドコスチュームガチャ vol.3",
+    "release_date": "12/15/2025, 3:00:00 AM",
+    "end_date": "12/23/2025, 2:59:59 AM",
+    "type": "normal",
+    "gacha_rate_index": 2,
+    "featured_cards": [
+      {
+        "card_id": "1000",
+        "character": "Kagamine Len",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.285
+      },
+      {
+        "card_id": "829",
+        "character": "Hinomori Shiho",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.285
+      },
+      {
+        "card_id": "1046",
+        "character": "Hanasato Minori",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.285
+      },
+      {
+        "card_id": "768",
+        "character": "Shinonome Akito",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.285
+      },
+      {
+        "card_id": "927",
+        "character": "Otori Emu",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.285
+      },
+      {
+        "card_id": "1135",
+        "character": "Akiyama Mizuki",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.285
+      }
+    ]
   }
 }
