@@ -1,0 +1,28 @@
+{
+  "id": 872,
+  "title (japanese)": "The Light We Foundガチャ",
+  "release_date": "12/21/2025, 3:00:00 AM",
+  "end_date": "12/31/2025, 2:59:59 AM",
+  "type": "normal",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "1300",
+      "character": "N/A",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1301",
+      "character": "N/A",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1302",
+      "character": "N/A",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    }
+  ]
+}

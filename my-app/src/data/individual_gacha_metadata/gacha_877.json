@@ -1,0 +1,46 @@
+{
+  "id": 877,
+  "title (japanese)": "ワールドコスチュームガチャ vol.4",
+  "release_date": "12/24/2025, 3:00:00 AM",
+  "end_date": "1/1/2026, 2:59:59 AM",
+  "type": "normal",
+  "gacha_rate_index": 2,
+  "featured_cards": [
+    {
+      "card_id": "869",
+      "character": "KAITO",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.285
+    },
+    {
+      "card_id": "1202",
+      "character": "Hoshino Ichika",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.285
+    },
+    {
+      "card_id": "1134",
+      "character": "Momoi Airi",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.285
+    },
+    {
+      "card_id": "1065",
+      "character": "Aoyagi Toya",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.285
+    },
+    {
+      "card_id": "701",
+      "character": "Kusanagi Nene",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.285
+    },
+    {
+      "card_id": "678",
+      "character": "Yoisaki Kanade",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.285
+    }
+  ]
+}
