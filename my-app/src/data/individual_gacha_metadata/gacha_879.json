@@ -1,0 +1,46 @@
+{
+  "id": 879,
+  "title (japanese)": "[2026新春]お正月無料ガチャ",
+  "release_date": "12/31/2025, 3:00:00 AM",
+  "end_date": "2/7/2026, 2:59:59 AM",
+  "type": "normal",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "1030",
+      "character": "Kagamine Rin",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.009
+    },
+    {
+      "card_id": "774",
+      "character": "Mochizuki Honami",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.009
+    },
+    {
+      "card_id": "1111",
+      "character": "Hanasato Minori",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.009
+    },
+    {
+      "card_id": "890",
+      "character": "Aoyagi Toya",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.009
+    },
+    {
+      "card_id": "928",
+      "character": "Tenma Tsukasa",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.009
+    },
+    {
+      "card_id": "1224",
+      "character": "Shinonome Ena",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.009
+    }
+  ]
+}

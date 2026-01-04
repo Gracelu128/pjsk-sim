@@ -27813,5 +27813,331 @@
         "guaranteed_rate": 0.285
       }
     ]
+  },
+  "878": {
+    "id": 878,
+    "title (japanese)": "[2026新春]プレミアムプレゼントガチャ",
+    "release_date": "12/31/2025, 3:00:00 AM",
+    "end_date": "1/11/2026, 2:59:59 AM",
+    "type": "normal",
+    "gacha_rate_index": 2,
+    "featured_cards": [
+      {
+        "card_id": "1112",
+        "character": "Megurine Luka",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.285
+      },
+      {
+        "card_id": "868",
+        "character": "Hoshino Ichika",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.285
+      },
+      {
+        "card_id": "716",
+        "character": "Kiritani Haruka",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.285
+      },
+      {
+        "card_id": "1066",
+        "character": "Azusawa Kohane",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.285
+      },
+      {
+        "card_id": "1133",
+        "character": "Tenma Tsukasa",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.285
+      },
+      {
+        "card_id": "943",
+        "character": "Asahina Mafuyu",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.285
+      }
+    ]
+  },
+  "879": {
+    "id": 879,
+    "title (japanese)": "[2026新春]お正月無料ガチャ",
+    "release_date": "12/31/2025, 3:00:00 AM",
+    "end_date": "2/7/2026, 2:59:59 AM",
+    "type": "normal",
+    "gacha_rate_index": 0,
+    "featured_cards": [
+      {
+        "card_id": "1030",
+        "character": "Kagamine Rin",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.009
+      },
+      {
+        "card_id": "774",
+        "character": "Mochizuki Honami",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.009
+      },
+      {
+        "card_id": "1111",
+        "character": "Hanasato Minori",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.009
+      },
+      {
+        "card_id": "890",
+        "character": "Aoyagi Toya",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.009
+      },
+      {
+        "card_id": "928",
+        "character": "Tenma Tsukasa",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.009
+      },
+      {
+        "card_id": "1224",
+        "character": "Shinonome Ena",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.009
+      }
+    ]
+  },
+  "880": {
+    "id": 880,
+    "title (japanese)": "[2026新春]ブルームフェスティバルガチャ",
+    "release_date": "12/31/2025, 3:00:00 AM",
+    "end_date": "1/4/2026, 2:59:59 AM",
+    "type": "limited",
+    "gacha_rate_index": 3,
+    "featured_cards": [
+      {
+        "card_id": "1307",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1308",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1309",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1310",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1311",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      }
+    ]
+  },
+  "882": {
+    "id": 882,
+    "title (japanese)": "[2026新春]福袋ガチャ",
+    "release_date": "12/31/2025, 3:00:00 AM",
+    "end_date": "1/11/2026, 2:59:59 AM",
+    "type": "gift",
+    "gacha_rate_index": 0,
+    "featured_cards": [
+      {
+        "card_id": "1047",
+        "character": "Hatsune Miku",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.009
+      },
+      {
+        "card_id": "1202",
+        "character": "Hoshino Ichika",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.009
+      },
+      {
+        "card_id": "1207",
+        "character": "Hanasato Minori",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.009
+      },
+      {
+        "card_id": "769",
+        "character": "Azusawa Kohane",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.009
+      },
+      {
+        "card_id": "523",
+        "character": "Tenma Tsukasa",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.009
+      },
+      {
+        "card_id": "541",
+        "character": "Yoisaki Kanade",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.009
+      }
+    ]
+  },
+  "883": {
+    "id": 883,
+    "title (japanese)": "[2026新春]運試し1/2セレクトリストガチャ",
+    "release_date": "12/31/2025, 3:00:00 AM",
+    "end_date": "1/11/2026, 2:59:59 AM",
+    "type": "normal",
+    "gacha_rate_index": 2,
+    "featured_cards": [
+      {
+        "card_id": "1203",
+        "character": "Kagamine Rin",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.285
+      },
+      {
+        "card_id": "1158",
+        "character": "KAITO",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.285
+      },
+      {
+        "card_id": "1098",
+        "character": "Tenma Saki",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.285
+      },
+      {
+        "card_id": "1174",
+        "character": "Momoi Airi",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.285
+      },
+      {
+        "card_id": "1209",
+        "character": "Hinomori Shizuku",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.285
+      },
+      {
+        "card_id": "1018",
+        "character": "Shiraishi An",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.285
+      },
+      {
+        "card_id": "1156",
+        "character": "Otori Emu",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.285
+      },
+      {
+        "card_id": "1157",
+        "character": "Kusanagi Nene",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.285
+      },
+      {
+        "card_id": "1097",
+        "character": "Yoisaki Kanade",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.285
+      },
+      {
+        "card_id": "1223",
+        "character": "Akiyama Mizuki",
+        "normal_rate": 0.009,
+        "guaranteed_rate": 0.285
+      }
+    ]
+  },
+  "884": {
+    "id": 884,
+    "title (japanese)": "[日野森志歩]HAPPY BIRTHDAY2026ガチャ",
+    "release_date": "1/3/2026, 3:00:00 PM",
+    "end_date": "1/10/2026, 2:59:59 PM",
+    "type": "birthday",
+    "gacha_rate_index": 4,
+    "featured_cards": [
+      {
+        "card_id": "1314",
+        "character": "N/A",
+        "normal_rate": 3.0,
+        "guaranteed_rate": null
+      }
+    ]
+  },
+  "885": {
+    "id": 885,
+    "title (japanese)": "[日野森志歩]HAPPY BIRTHDAYメモリーズガチャ",
+    "release_date": "1/3/2026, 3:00:00 PM",
+    "end_date": "1/10/2026, 2:59:59 PM",
+    "type": "birthday",
+    "gacha_rate_index": 4,
+    "featured_cards": [
+      {
+        "card_id": "1064",
+        "character": "Hinomori Shiho",
+        "normal_rate": 0.75,
+        "guaranteed_rate": null
+      },
+      {
+        "card_id": "847",
+        "character": "Hinomori Shiho",
+        "normal_rate": 0.75,
+        "guaranteed_rate": null
+      },
+      {
+        "card_id": "570",
+        "character": "Hinomori Shiho",
+        "normal_rate": 0.75,
+        "guaranteed_rate": null
+      },
+      {
+        "card_id": "355",
+        "character": "Hinomori Shiho",
+        "normal_rate": 0.75,
+        "guaranteed_rate": null
+      }
+    ]
+  },
+  "886": {
+    "id": 886,
+    "title (japanese)": "まほろば流離う鬼ガチャ",
+    "release_date": "1/4/2026, 3:00:00 AM",
+    "end_date": "1/11/2026, 2:59:59 AM",
+    "type": "limited",
+    "gacha_rate_index": 0,
+    "featured_cards": [
+      {
+        "card_id": "1309",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1310",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1311",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      }
+    ]
   }
 }

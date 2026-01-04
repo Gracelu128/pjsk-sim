@@ -1,0 +1,46 @@
+{
+  "id": 878,
+  "title (japanese)": "[2026新春]プレミアムプレゼントガチャ",
+  "release_date": "12/31/2025, 3:00:00 AM",
+  "end_date": "1/11/2026, 2:59:59 AM",
+  "type": "normal",
+  "gacha_rate_index": 2,
+  "featured_cards": [
+    {
+      "card_id": "1112",
+      "character": "Megurine Luka",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.285
+    },
+    {
+      "card_id": "868",
+      "character": "Hoshino Ichika",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.285
+    },
+    {
+      "card_id": "716",
+      "character": "Kiritani Haruka",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.285
+    },
+    {
+      "card_id": "1066",
+      "character": "Azusawa Kohane",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.285
+    },
+    {
+      "card_id": "1133",
+      "character": "Tenma Tsukasa",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.285
+    },
+    {
+      "card_id": "943",
+      "character": "Asahina Mafuyu",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.285
+    }
+  ]
+}
