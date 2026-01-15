@@ -1,0 +1,28 @@
+{
+  "id": 890,
+  "title (japanese)": "福財の御札ガチャ（極）",
+  "release_date": "12/31/2025, 3:00:00 AM",
+  "end_date": "1/31/2026, 2:59:59 AM",
+  "type": "normal",
+  "gacha_rate_index": 2,
+  "featured_cards": [
+    {
+      "card_id": "256",
+      "character": "Kagamine Len",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.285
+    },
+    {
+      "card_id": "185",
+      "character": "Tenma Saki",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.285
+    },
+    {
+      "card_id": "957",
+      "character": "Kamishiro Rui",
+      "normal_rate": 0.009,
+      "guaranteed_rate": 0.285
+    }
+  ]
+}
