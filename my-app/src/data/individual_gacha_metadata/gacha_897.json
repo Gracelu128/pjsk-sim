@@ -1,0 +1,46 @@
+{
+  "id": 897,
+  "title (japanese)": "[セカライ5th 開催記念]プレミアムプレゼントガチャ",
+  "release_date": "1/23/2026, 3:00:00 AM",
+  "end_date": "2/1/2026, 2:59:59 AM",
+  "type": "normal",
+  "gacha_rate_index": 2,
+  "featured_cards": [
+    {
+      "card_id": "875",
+      "character": "Hatsune Miku",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.28
+    },
+    {
+      "card_id": "1099",
+      "character": "Kagamine Rin",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.28
+    },
+    {
+      "card_id": "929",
+      "character": "Kagamine Len",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.28
+    },
+    {
+      "card_id": "1052",
+      "character": "Megurine Luka",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.28
+    },
+    {
+      "card_id": "626",
+      "character": "MEIKO",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.28
+    },
+    {
+      "card_id": "1158",
+      "character": "KAITO",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.28
+    }
+  ]
+}

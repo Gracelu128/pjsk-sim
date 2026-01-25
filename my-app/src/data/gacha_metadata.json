@@ -28331,5 +28331,157 @@
         "guaranteed_rate": 0.4
       }
     ]
+  },
+  "893": {
+    "id": 893,
+    "title (japanese)": "[復刻]あなたに届け♡Live Streamingガチャ",
+    "release_date": "1/12/2026, 3:00:00 AM",
+    "end_date": "1/21/2026, 2:59:59 AM",
+    "type": "limited",
+    "gacha_rate_index": 0,
+    "featured_cards": [
+      {
+        "card_id": "968",
+        "character": "Momoi Airi",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "969",
+        "character": "Kiritani Haruka",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "970",
+        "character": "Hinomori Shizuku",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      }
+    ]
+  },
+  "894": {
+    "id": 894,
+    "title (japanese)": "Gathering placeガチャ",
+    "release_date": "1/21/2026, 3:00:00 AM",
+    "end_date": "1/31/2026, 2:59:59 AM",
+    "type": "normal",
+    "gacha_rate_index": 0,
+    "featured_cards": [
+      {
+        "card_id": "1320",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1321",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1322",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      }
+    ]
+  },
+  "895": {
+    "id": 895,
+    "title (japanese)": "[朝比奈まふゆ]HAPPY BIRTHDAY2026ガチャ",
+    "release_date": "1/22/2026, 3:00:00 PM",
+    "end_date": "1/29/2026, 2:59:59 PM",
+    "type": "birthday",
+    "gacha_rate_index": 4,
+    "featured_cards": [
+      {
+        "card_id": "1325",
+        "character": "N/A",
+        "normal_rate": 3.0,
+        "guaranteed_rate": null
+      }
+    ]
+  },
+  "896": {
+    "id": 896,
+    "title (japanese)": "[朝比奈まふゆ]HAPPY BIRTHDAYメモリーズガチャ",
+    "release_date": "1/22/2026, 3:00:00 PM",
+    "end_date": "1/29/2026, 2:59:59 PM",
+    "type": "birthday",
+    "gacha_rate_index": 4,
+    "featured_cards": [
+      {
+        "card_id": "1102",
+        "character": "Asahina Mafuyu",
+        "normal_rate": 0.75,
+        "guaranteed_rate": null
+      },
+      {
+        "card_id": "859",
+        "character": "Asahina Mafuyu",
+        "normal_rate": 0.75,
+        "guaranteed_rate": null
+      },
+      {
+        "card_id": "581",
+        "character": "Asahina Mafuyu",
+        "normal_rate": 0.75,
+        "guaranteed_rate": null
+      },
+      {
+        "card_id": "366",
+        "character": "Asahina Mafuyu",
+        "normal_rate": 0.75,
+        "guaranteed_rate": null
+      }
+    ]
+  },
+  "897": {
+    "id": 897,
+    "title (japanese)": "[セカライ5th 開催記念]プレミアムプレゼントガチャ",
+    "release_date": "1/23/2026, 3:00:00 AM",
+    "end_date": "2/1/2026, 2:59:59 AM",
+    "type": "normal",
+    "gacha_rate_index": 2,
+    "featured_cards": [
+      {
+        "card_id": "875",
+        "character": "Hatsune Miku",
+        "normal_rate": 0.008,
+        "guaranteed_rate": 0.28
+      },
+      {
+        "card_id": "1099",
+        "character": "Kagamine Rin",
+        "normal_rate": 0.008,
+        "guaranteed_rate": 0.28
+      },
+      {
+        "card_id": "929",
+        "character": "Kagamine Len",
+        "normal_rate": 0.008,
+        "guaranteed_rate": 0.28
+      },
+      {
+        "card_id": "1052",
+        "character": "Megurine Luka",
+        "normal_rate": 0.008,
+        "guaranteed_rate": 0.28
+      },
+      {
+        "card_id": "626",
+        "character": "MEIKO",
+        "normal_rate": 0.008,
+        "guaranteed_rate": 0.28
+      },
+      {
+        "card_id": "1158",
+        "character": "KAITO",
+        "normal_rate": 0.008,
+        "guaranteed_rate": 0.28
+      }
+    ]
   }
 }

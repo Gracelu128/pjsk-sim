@@ -1,0 +1,34 @@
+{
+  "id": 896,
+  "title (japanese)": "[朝比奈まふゆ]HAPPY BIRTHDAYメモリーズガチャ",
+  "release_date": "1/22/2026, 3:00:00 PM",
+  "end_date": "1/29/2026, 2:59:59 PM",
+  "type": "birthday",
+  "gacha_rate_index": 4,
+  "featured_cards": [
+    {
+      "card_id": "1102",
+      "character": "Asahina Mafuyu",
+      "normal_rate": 0.75,
+      "guaranteed_rate": null
+    },
+    {
+      "card_id": "859",
+      "character": "Asahina Mafuyu",
+      "normal_rate": 0.75,
+      "guaranteed_rate": null
+    },
+    {
+      "card_id": "581",
+      "character": "Asahina Mafuyu",
+      "normal_rate": 0.75,
+      "guaranteed_rate": null
+    },
+    {
+      "card_id": "366",
+      "character": "Asahina Mafuyu",
+      "normal_rate": 0.75,
+      "guaranteed_rate": null
+    }
+  ]
+}

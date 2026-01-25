@@ -1,0 +1,28 @@
+{
+  "id": 893,
+  "title (japanese)": "[復刻]あなたに届け♡Live Streamingガチャ",
+  "release_date": "1/12/2026, 3:00:00 AM",
+  "end_date": "1/21/2026, 2:59:59 AM",
+  "type": "limited",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "968",
+      "character": "Momoi Airi",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "969",
+      "character": "Kiritani Haruka",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "970",
+      "character": "Hinomori Shizuku",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    }
+  ]
+}
