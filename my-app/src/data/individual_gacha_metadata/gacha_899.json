@@ -1,0 +1,34 @@
+{
+  "id": 899,
+  "title (japanese)": "[巡音ルカ]HAPPY ANNIVERSARYメモリーズガチャ",
+  "release_date": "1/25/2026, 3:00:00 PM",
+  "end_date": "2/1/2026, 2:59:59 PM",
+  "type": "birthday",
+  "gacha_rate_index": 4,
+  "featured_cards": [
+    {
+      "card_id": "1103",
+      "character": "Megurine Luka",
+      "normal_rate": 0.75,
+      "guaranteed_rate": null
+    },
+    {
+      "card_id": "860",
+      "character": "Megurine Luka",
+      "normal_rate": 0.75,
+      "guaranteed_rate": null
+    },
+    {
+      "card_id": "582",
+      "character": "Megurine Luka",
+      "normal_rate": 0.75,
+      "guaranteed_rate": null
+    },
+    {
+      "card_id": "367",
+      "character": "Megurine Luka",
+      "normal_rate": 0.75,
+      "guaranteed_rate": null
+    }
+  ]
+}

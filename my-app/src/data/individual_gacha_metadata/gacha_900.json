@@ -1,0 +1,46 @@
+{
+  "id": 900,
+  "title (japanese)": "ハピネスパッケージガチャ",
+  "release_date": "1/26/2026, 3:00:00 AM",
+  "end_date": "2/4/2026, 2:59:59 AM",
+  "type": "gift",
+  "gacha_rate_index": 2,
+  "featured_cards": [
+    {
+      "card_id": "869",
+      "character": "KAITO",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.28
+    },
+    {
+      "card_id": "1261",
+      "character": "N/A",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.28
+    },
+    {
+      "card_id": "1045",
+      "character": "Hinomori Shizuku",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.28
+    },
+    {
+      "card_id": "973",
+      "character": "Aoyagi Toya",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.28
+    },
+    {
+      "card_id": "1157",
+      "character": "Kusanagi Nene",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.28
+    },
+    {
+      "card_id": "721",
+      "character": "Akiyama Mizuki",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.28
+    }
+  ]
+}
