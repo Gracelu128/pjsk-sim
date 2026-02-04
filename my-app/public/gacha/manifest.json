@@ -11414,6 +11414,30 @@
     "banner": [],
     "end date": "Until Feb. 4, 2026 02:59"
   },
+  "901": {
+    "bg": [
+      "bg_gacha901_1.webp",
+      "bg_gacha901_2.webp",
+      "bg_gacha901_3.webp"
+    ],
+    "img": [
+      "cardname_gacha901_1.webp",
+      "cardname_gacha901_2.webp",
+      "cardname_gacha901_3.webp"
+    ],
+    "logo": "logo/logo.webp",
+    "banner": [
+      "Gacha901_banner.webp"
+    ],
+    "end date": "Until Feb. 10, 2026 02:59"
+  },
+  "902": {
+    "bg": [],
+    "img": [],
+    "logo": "",
+    "banner": [],
+    "end date": "Until Dec. 30, 2099 18:59"
+  },
   "birthday_Rin": {
     "bg": [],
     "img": [],
