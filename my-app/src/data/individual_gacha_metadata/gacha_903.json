@@ -1,0 +1,46 @@
+{
+  "id": 903,
+  "title (japanese)": "[復刻]SEKAIでHello♡素敵な出会いガチャ",
+  "release_date": "2/5/2026, 3:00:00 AM",
+  "end_date": "2/19/2026, 2:59:59 PM",
+  "type": "limited",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "801",
+      "character": "Hatsune Miku",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "802",
+      "character": "Tenma Saki",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "803",
+      "character": "Momoi Airi",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "804",
+      "character": "Aoyagi Toya",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "805",
+      "character": "Otori Emu",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "806",
+      "character": "Shinonome Ena",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    }
+  ]
+}
