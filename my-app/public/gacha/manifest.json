@@ -11474,6 +11474,24 @@
     ],
     "end date": "Until Feb. 12, 2026 14:59"
   },
+  "905": {
+    "bg": [
+      "bg_gacha905.webp"
+    ],
+    "img": [],
+    "logo": "logo/logo.webp",
+    "banner": [],
+    "end date": "Until Feb. 12, 2026 14:59"
+  },
+  "906": {
+    "bg": [],
+    "img": [],
+    "logo": "",
+    "banner": [
+      "Gacha906_banner.webp"
+    ],
+    "end date": "Until Feb. 19, 2026 02:59"
+  },
   "birthday_Rin": {
     "bg": [],
     "img": [],
