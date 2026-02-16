@@ -1,0 +1,28 @@
+{
+  "id": 907,
+  "title (japanese)": "[復刻]Night sweet mealガチャ",
+  "release_date": "2/12/2026, 3:00:00 AM",
+  "end_date": "2/21/2026, 2:59:59 AM",
+  "type": "limited",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "1104",
+      "character": "Hinomori Shizuku",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1105",
+      "character": "Asahina Mafuyu",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1106",
+      "character": "Kagamine Len",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    }
+  ]
+}

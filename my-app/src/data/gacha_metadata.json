@@ -28783,5 +28783,77 @@
         "guaranteed_rate": 0.4
       }
     ]
+  },
+  "907": {
+    "id": 907,
+    "title (japanese)": "[復刻]Night sweet mealガチャ",
+    "release_date": "2/12/2026, 3:00:00 AM",
+    "end_date": "2/21/2026, 2:59:59 AM",
+    "type": "limited",
+    "gacha_rate_index": 0,
+    "featured_cards": [
+      {
+        "card_id": "1104",
+        "character": "Hinomori Shizuku",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1105",
+        "character": "Asahina Mafuyu",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1106",
+        "character": "Kagamine Len",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      }
+    ]
+  },
+  "908": {
+    "id": 908,
+    "title (japanese)": "[復刻]The Party Of Blast!!ガチャ",
+    "release_date": "2/12/2026, 3:00:00 AM",
+    "end_date": "2/21/2026, 2:59:59 AM",
+    "type": "limited",
+    "gacha_rate_index": 0,
+    "featured_cards": [
+      {
+        "card_id": "951",
+        "character": "Azusawa Kohane",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "952",
+        "character": "Shinonome Akito",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "953",
+        "character": "Hatsune Miku",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      }
+    ]
+  },
+  "909": {
+    "id": 909,
+    "title (japanese)": "[KAITO]HAPPY ANNIVERSARY2026ガチャ",
+    "release_date": "2/12/2026, 3:00:00 PM",
+    "end_date": "2/19/2026, 2:59:59 PM",
+    "type": "birthday",
+    "gacha_rate_index": 4,
+    "featured_cards": [
+      {
+        "card_id": "1338",
+        "character": "N/A",
+        "normal_rate": 3.0,
+        "guaranteed_rate": null
+      }
+    ]
   }
 }
