@@ -28855,5 +28855,67 @@
         "guaranteed_rate": null
       }
     ]
+  },
+  "910": {
+    "id": 910,
+    "title (japanese)": "[KAITO]HAPPY ANNIVERSARYメモリーズガチャ",
+    "release_date": "2/12/2026, 3:00:00 PM",
+    "end_date": "2/19/2026, 2:59:59 PM",
+    "type": "birthday",
+    "gacha_rate_index": 4,
+    "featured_cards": [
+      {
+        "card_id": "1121",
+        "character": "KAITO",
+        "normal_rate": 0.75,
+        "guaranteed_rate": null
+      },
+      {
+        "card_id": "872",
+        "character": "KAITO",
+        "normal_rate": 0.75,
+        "guaranteed_rate": null
+      },
+      {
+        "card_id": "594",
+        "character": "KAITO",
+        "normal_rate": 0.75,
+        "guaranteed_rate": null
+      },
+      {
+        "card_id": "379",
+        "character": "KAITO",
+        "normal_rate": 0.75,
+        "guaranteed_rate": null
+      }
+    ]
+  },
+  "911": {
+    "id": 911,
+    "title (japanese)": "Rabbit Kingdom♡ガチャ",
+    "release_date": "2/19/2026, 3:00:00 AM",
+    "end_date": "2/28/2026, 2:59:59 AM",
+    "type": "normal",
+    "gacha_rate_index": 0,
+    "featured_cards": [
+      {
+        "card_id": "1339",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1340",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1341",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      }
+    ]
   }
 }
