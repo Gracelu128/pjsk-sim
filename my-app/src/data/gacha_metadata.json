@@ -28917,5 +28917,153 @@
         "guaranteed_rate": 0.4
       }
     ]
+  },
+  "912": {
+    "id": 912,
+    "title (japanese)": "セレクトリストガチャ",
+    "release_date": "2/23/2026, 3:00:00 AM",
+    "end_date": "3/4/2026, 2:59:59 AM",
+    "type": "normal",
+    "gacha_rate_index": 2,
+    "featured_cards": [
+      {
+        "card_id": "875",
+        "character": "Hatsune Miku",
+        "normal_rate": 0.008,
+        "guaranteed_rate": 0.275
+      },
+      {
+        "card_id": "1176",
+        "character": "MEIKO",
+        "normal_rate": 0.008,
+        "guaranteed_rate": 0.275
+      },
+      {
+        "card_id": "1122",
+        "character": "Mochizuki Honami",
+        "normal_rate": 0.008,
+        "guaranteed_rate": 0.275
+      },
+      {
+        "card_id": "829",
+        "character": "Hinomori Shiho",
+        "normal_rate": 0.008,
+        "guaranteed_rate": 0.275
+      },
+      {
+        "card_id": "1208",
+        "character": "Kiritani Haruka",
+        "normal_rate": 0.008,
+        "guaranteed_rate": 0.275
+      },
+      {
+        "card_id": "939",
+        "character": "Hinomori Shizuku",
+        "normal_rate": 0.008,
+        "guaranteed_rate": 0.275
+      },
+      {
+        "card_id": "719",
+        "character": "Shiraishi An",
+        "normal_rate": 0.008,
+        "guaranteed_rate": 0.275
+      },
+      {
+        "card_id": "1016",
+        "character": "Shinonome Akito",
+        "normal_rate": 0.008,
+        "guaranteed_rate": 0.275
+      },
+      {
+        "card_id": "1050",
+        "character": "Kamishiro Rui",
+        "normal_rate": 0.008,
+        "guaranteed_rate": 0.275
+      },
+      {
+        "card_id": "903",
+        "character": "Shinonome Ena",
+        "normal_rate": 0.008,
+        "guaranteed_rate": 0.275
+      }
+    ]
+  },
+  "913": {
+    "id": 913,
+    "title (japanese)": "[小豆沢こはね]HAPPY BIRTHDAY2026ガチャ",
+    "release_date": "2/25/2026, 3:00:00 PM",
+    "end_date": "3/4/2026, 2:59:59 PM",
+    "type": "birthday",
+    "gacha_rate_index": 4,
+    "featured_cards": [
+      {
+        "card_id": "1344",
+        "character": "N/A",
+        "normal_rate": 3.0,
+        "guaranteed_rate": null
+      }
+    ]
+  },
+  "914": {
+    "id": 914,
+    "title (japanese)": "[小豆沢こはね]HAPPY BIRTHDAYメモリーズガチャ",
+    "release_date": "2/25/2026, 3:00:00 PM",
+    "end_date": "3/4/2026, 2:59:59 PM",
+    "type": "birthday",
+    "gacha_rate_index": 4,
+    "featured_cards": [
+      {
+        "card_id": "1132",
+        "character": "Azusawa Kohane",
+        "normal_rate": 0.75,
+        "guaranteed_rate": null
+      },
+      {
+        "card_id": "883",
+        "character": "Azusawa Kohane",
+        "normal_rate": 0.75,
+        "guaranteed_rate": null
+      },
+      {
+        "card_id": "605",
+        "character": "Azusawa Kohane",
+        "normal_rate": 0.75,
+        "guaranteed_rate": null
+      },
+      {
+        "card_id": "390",
+        "character": "Azusawa Kohane",
+        "normal_rate": 0.75,
+        "guaranteed_rate": null
+      }
+    ]
+  },
+  "915": {
+    "id": 915,
+    "title (japanese)": "Lunatic doll in the boxガチャ",
+    "release_date": "2/28/2026, 3:00:00 AM",
+    "end_date": "3/10/2026, 2:59:59 AM",
+    "type": "limited",
+    "gacha_rate_index": 0,
+    "featured_cards": [
+      {
+        "card_id": "1345",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1346",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1347",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      }
+    ]
   }
 }

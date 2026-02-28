@@ -1,0 +1,70 @@
+{
+  "id": 912,
+  "title (japanese)": "セレクトリストガチャ",
+  "release_date": "2/23/2026, 3:00:00 AM",
+  "end_date": "3/4/2026, 2:59:59 AM",
+  "type": "normal",
+  "gacha_rate_index": 2,
+  "featured_cards": [
+    {
+      "card_id": "875",
+      "character": "Hatsune Miku",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.275
+    },
+    {
+      "card_id": "1176",
+      "character": "MEIKO",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.275
+    },
+    {
+      "card_id": "1122",
+      "character": "Mochizuki Honami",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.275
+    },
+    {
+      "card_id": "829",
+      "character": "Hinomori Shiho",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.275
+    },
+    {
+      "card_id": "1208",
+      "character": "Kiritani Haruka",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.275
+    },
+    {
+      "card_id": "939",
+      "character": "Hinomori Shizuku",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.275
+    },
+    {
+      "card_id": "719",
+      "character": "Shiraishi An",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.275
+    },
+    {
+      "card_id": "1016",
+      "character": "Shinonome Akito",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.275
+    },
+    {
+      "card_id": "1050",
+      "character": "Kamishiro Rui",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.275
+    },
+    {
+      "card_id": "903",
+      "character": "Shinonome Ena",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.275
+    }
+  ]
+}
