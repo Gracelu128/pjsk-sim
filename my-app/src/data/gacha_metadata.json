@@ -29065,5 +29065,219 @@
         "guaranteed_rate": 0.4
       }
     ]
+  },
+  "916": {
+    "id": 916,
+    "title (japanese)": "カラフルパスガチャ",
+    "release_date": "3/1/2026, 7:00:00 PM",
+    "end_date": "12/30/2099, 6:59:59 PM",
+    "type": "normal",
+    "gacha_rate_index": 1,
+    "featured_cards": [
+      {
+        "card_id": "383",
+        "character": "Tenma Saki",
+        "normal_rate": 0.536,
+        "guaranteed_rate": null
+      },
+      {
+        "card_id": "267",
+        "character": "Hinomori Shizuku",
+        "normal_rate": 0.536,
+        "guaranteed_rate": null
+      },
+      {
+        "card_id": "376",
+        "character": "Shiraishi An",
+        "normal_rate": 0.536,
+        "guaranteed_rate": null
+      },
+      {
+        "card_id": "359",
+        "character": "Kusanagi Nene",
+        "normal_rate": 0.536,
+        "guaranteed_rate": null
+      },
+      {
+        "card_id": "364",
+        "character": "Shinonome Ena",
+        "normal_rate": 0.536,
+        "guaranteed_rate": null
+      },
+      {
+        "card_id": "353",
+        "character": "Hatsune Miku",
+        "normal_rate": 0.536,
+        "guaranteed_rate": null
+      },
+      {
+        "card_id": "272",
+        "character": "KAITO",
+        "normal_rate": 0.536,
+        "guaranteed_rate": null
+      }
+    ]
+  },
+  "917": {
+    "id": 917,
+    "title (japanese)": "バックステージの秘密ガチャ",
+    "release_date": "3/10/2026, 3:00:00 AM",
+    "end_date": "3/20/2026, 2:59:59 AM",
+    "type": "normal",
+    "gacha_rate_index": 0,
+    "featured_cards": [
+      {
+        "card_id": "1350",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1351",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1352",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      }
+    ]
+  },
+  "918": {
+    "id": 918,
+    "title (japanese)": "[復刻]果てなき護るための戦いガチャ",
+    "release_date": "3/12/2026, 3:00:00 AM",
+    "end_date": "3/21/2026, 2:59:59 AM",
+    "type": "limited",
+    "gacha_rate_index": 0,
+    "featured_cards": [
+      {
+        "card_id": "1127",
+        "character": "Tenma Saki",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1128",
+        "character": "Otori Emu",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1129",
+        "character": "Kagamine Rin",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      }
+    ]
+  },
+  "919": {
+    "id": 919,
+    "title (japanese)": "[復刻]in my fairy taleガチャ",
+    "release_date": "3/12/2026, 3:00:00 AM",
+    "end_date": "3/21/2026, 2:59:59 AM",
+    "type": "limited",
+    "gacha_rate_index": 0,
+    "featured_cards": [
+      {
+        "card_id": "933",
+        "character": "Hanasato Minori",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "934",
+        "character": "Kusanagi Nene",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "935",
+        "character": "Megurine Luka",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      }
+    ]
+  },
+  "920": {
+    "id": 920,
+    "title (japanese)": "[桃井愛莉]HAPPY BIRTHDAY2026ガチャ",
+    "release_date": "3/14/2026, 3:00:00 PM",
+    "end_date": "3/21/2026, 2:59:59 PM",
+    "type": "birthday",
+    "gacha_rate_index": 4,
+    "featured_cards": [
+      {
+        "card_id": "1355",
+        "character": "N/A",
+        "normal_rate": 3.0,
+        "guaranteed_rate": null
+      }
+    ]
+  },
+  "921": {
+    "id": 921,
+    "title (japanese)": "[桃井愛莉]HAPPY BIRTHDAYメモリーズガチャ",
+    "release_date": "3/14/2026, 3:00:00 PM",
+    "end_date": "3/21/2026, 2:59:59 PM",
+    "type": "birthday",
+    "gacha_rate_index": 4,
+    "featured_cards": [
+      {
+        "card_id": "1138",
+        "character": "Momoi Airi",
+        "normal_rate": 0.75,
+        "guaranteed_rate": null
+      },
+      {
+        "card_id": "889",
+        "character": "Momoi Airi",
+        "normal_rate": 0.75,
+        "guaranteed_rate": null
+      },
+      {
+        "card_id": "611",
+        "character": "Momoi Airi",
+        "normal_rate": 0.75,
+        "guaranteed_rate": null
+      },
+      {
+        "card_id": "396",
+        "character": "Momoi Airi",
+        "normal_rate": 0.75,
+        "guaranteed_rate": null
+      }
+    ]
+  },
+  "922": {
+    "id": 922,
+    "title (japanese)": "ボクらの夜が目覚める前にガチャ",
+    "release_date": "3/20/2026, 3:00:00 AM",
+    "end_date": "3/30/2026, 2:59:59 AM",
+    "type": "normal",
+    "gacha_rate_index": 0,
+    "featured_cards": [
+      {
+        "card_id": "1356",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1357",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1358",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      }
+    ]
   }
 }

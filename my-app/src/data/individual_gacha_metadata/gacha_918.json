@@ -1,0 +1,28 @@
+{
+  "id": 918,
+  "title (japanese)": "[復刻]果てなき護るための戦いガチャ",
+  "release_date": "3/12/2026, 3:00:00 AM",
+  "end_date": "3/21/2026, 2:59:59 AM",
+  "type": "limited",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "1127",
+      "character": "Tenma Saki",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1128",
+      "character": "Otori Emu",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1129",
+      "character": "Kagamine Rin",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    }
+  ]
+}

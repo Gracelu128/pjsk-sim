@@ -1,0 +1,28 @@
+{
+  "id": 919,
+  "title (japanese)": "[復刻]in my fairy taleガチャ",
+  "release_date": "3/12/2026, 3:00:00 AM",
+  "end_date": "3/21/2026, 2:59:59 AM",
+  "type": "limited",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "933",
+      "character": "Hanasato Minori",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "934",
+      "character": "Kusanagi Nene",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "935",
+      "character": "Megurine Luka",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    }
+  ]
+}
