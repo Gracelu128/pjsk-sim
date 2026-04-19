@@ -1,0 +1,46 @@
+{
+  "id": 927,
+  "title (japanese)": "[5.5周年記念]無料ガチャ",
+  "release_date": "3/30/2026, 3:00:00 AM",
+  "end_date": "4/30/2026, 2:59:59 AM",
+  "type": "normal",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "1268",
+      "character": "N/A",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.008
+    },
+    {
+      "card_id": "1098",
+      "character": "Tenma Saki",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.008
+    },
+    {
+      "card_id": "1029",
+      "character": "Hinomori Shizuku",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.008
+    },
+    {
+      "card_id": "769",
+      "character": "Azusawa Kohane",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.008
+    },
+    {
+      "card_id": "1156",
+      "character": "Otori Emu",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.008
+    },
+    {
+      "card_id": "974",
+      "character": "Yoisaki Kanade",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.008
+    }
+  ]
+}

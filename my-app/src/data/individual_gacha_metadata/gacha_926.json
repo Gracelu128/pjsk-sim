@@ -1,0 +1,76 @@
+{
+  "id": 926,
+  "title (japanese)": "[5.5周年記念]1/3セレクトリストガチャ LIMITED EDITION",
+  "release_date": "3/30/2026, 3:00:00 AM",
+  "end_date": "4/9/2026, 2:59:59 AM",
+  "type": "normal",
+  "gacha_rate_index": 2,
+  "featured_cards": [
+    {
+      "card_id": "708",
+      "character": "Kagamine Rin",
+      "normal_rate": 0.023,
+      "guaranteed_rate": 0.763
+    },
+    {
+      "card_id": "935",
+      "character": "Megurine Luka",
+      "normal_rate": 0.023,
+      "guaranteed_rate": 0.763
+    },
+    {
+      "card_id": "1022",
+      "character": "Tenma Saki",
+      "normal_rate": 0.023,
+      "guaranteed_rate": 0.763
+    },
+    {
+      "card_id": "1006",
+      "character": "Hinomori Shiho",
+      "normal_rate": 0.023,
+      "guaranteed_rate": 0.763
+    },
+    {
+      "card_id": "862",
+      "character": "Kiritani Haruka",
+      "normal_rate": 0.023,
+      "guaranteed_rate": 0.763
+    },
+    {
+      "card_id": "968",
+      "character": "Momoi Airi",
+      "normal_rate": 0.023,
+      "guaranteed_rate": 0.763
+    },
+    {
+      "card_id": "951",
+      "character": "Azusawa Kohane",
+      "normal_rate": 0.023,
+      "guaranteed_rate": 0.763
+    },
+    {
+      "card_id": "898",
+      "character": "Shinonome Akito",
+      "normal_rate": 0.023,
+      "guaranteed_rate": 0.763
+    },
+    {
+      "card_id": "987",
+      "character": "Otori Emu",
+      "normal_rate": 0.023,
+      "guaranteed_rate": 0.763
+    },
+    {
+      "card_id": "863",
+      "character": "Shinonome Ena",
+      "normal_rate": 0.023,
+      "guaranteed_rate": 0.763
+    },
+    {
+      "card_id": "1040",
+      "character": "Akiyama Mizuki",
+      "normal_rate": 0.023,
+      "guaranteed_rate": 0.763
+    }
+  ]
+}

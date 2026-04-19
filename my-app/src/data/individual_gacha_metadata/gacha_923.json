@@ -1,0 +1,40 @@
+{
+  "id": 923,
+  "title (japanese)": "[5.5周年記念]ブルームフェスティバルガチャ ドリームピック",
+  "release_date": "3/30/2026, 3:00:00 AM",
+  "end_date": "4/4/2026, 2:59:59 AM",
+  "type": "limited",
+  "gacha_rate_index": 7,
+  "featured_cards": [
+    {
+      "card_id": "1361",
+      "character": "N/A",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.008
+    },
+    {
+      "card_id": "1362",
+      "character": "N/A",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.008
+    },
+    {
+      "card_id": "1363",
+      "character": "N/A",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.008
+    },
+    {
+      "card_id": "1364",
+      "character": "N/A",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.008
+    },
+    {
+      "card_id": "1365",
+      "character": "N/A",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.008
+    }
+  ]
+}

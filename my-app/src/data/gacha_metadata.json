@@ -29279,5 +29279,527 @@
         "guaranteed_rate": 0.4
       }
     ]
+  },
+  "923": {
+    "id": 923,
+    "title (japanese)": "[5.5周年記念]ブルームフェスティバルガチャ ドリームピック",
+    "release_date": "3/30/2026, 3:00:00 AM",
+    "end_date": "4/4/2026, 2:59:59 AM",
+    "type": "limited",
+    "gacha_rate_index": 7,
+    "featured_cards": [
+      {
+        "card_id": "1361",
+        "character": "N/A",
+        "normal_rate": 0.008,
+        "guaranteed_rate": 0.008
+      },
+      {
+        "card_id": "1362",
+        "character": "N/A",
+        "normal_rate": 0.008,
+        "guaranteed_rate": 0.008
+      },
+      {
+        "card_id": "1363",
+        "character": "N/A",
+        "normal_rate": 0.008,
+        "guaranteed_rate": 0.008
+      },
+      {
+        "card_id": "1364",
+        "character": "N/A",
+        "normal_rate": 0.008,
+        "guaranteed_rate": 0.008
+      },
+      {
+        "card_id": "1365",
+        "character": "N/A",
+        "normal_rate": 0.008,
+        "guaranteed_rate": 0.008
+      }
+    ]
+  },
+  "924": {
+    "id": 924,
+    "title (japanese)": "[5.5周年記念]セレクトキャラクターガチャ",
+    "release_date": "3/30/2026, 3:00:00 AM",
+    "end_date": "4/9/2026, 2:59:59 AM",
+    "type": "normal",
+    "gacha_rate_index": 0,
+    "featured_cards": [
+      {
+        "card_id": "537",
+        "character": "Hatsune Miku",
+        "normal_rate": 0.008,
+        "guaranteed_rate": 0.008
+      }
+    ]
+  },
+  "925": {
+    "id": 925,
+    "title (japanese)": "[5.5周年記念]プレミアムプレゼントガチャ セレクトキャラクター",
+    "release_date": "3/30/2026, 3:00:00 AM",
+    "end_date": "4/9/2026, 2:59:59 AM",
+    "type": "normal",
+    "gacha_rate_index": 2,
+    "featured_cards": [
+      {
+        "card_id": "1047",
+        "character": "Hatsune Miku",
+        "normal_rate": 0.008,
+        "guaranteed_rate": 0.271
+      }
+    ]
+  },
+  "926": {
+    "id": 926,
+    "title (japanese)": "[5.5周年記念]1/3セレクトリストガチャ LIMITED EDITION",
+    "release_date": "3/30/2026, 3:00:00 AM",
+    "end_date": "4/9/2026, 2:59:59 AM",
+    "type": "normal",
+    "gacha_rate_index": 2,
+    "featured_cards": [
+      {
+        "card_id": "708",
+        "character": "Kagamine Rin",
+        "normal_rate": 0.023,
+        "guaranteed_rate": 0.763
+      },
+      {
+        "card_id": "935",
+        "character": "Megurine Luka",
+        "normal_rate": 0.023,
+        "guaranteed_rate": 0.763
+      },
+      {
+        "card_id": "1022",
+        "character": "Tenma Saki",
+        "normal_rate": 0.023,
+        "guaranteed_rate": 0.763
+      },
+      {
+        "card_id": "1006",
+        "character": "Hinomori Shiho",
+        "normal_rate": 0.023,
+        "guaranteed_rate": 0.763
+      },
+      {
+        "card_id": "862",
+        "character": "Kiritani Haruka",
+        "normal_rate": 0.023,
+        "guaranteed_rate": 0.763
+      },
+      {
+        "card_id": "968",
+        "character": "Momoi Airi",
+        "normal_rate": 0.023,
+        "guaranteed_rate": 0.763
+      },
+      {
+        "card_id": "951",
+        "character": "Azusawa Kohane",
+        "normal_rate": 0.023,
+        "guaranteed_rate": 0.763
+      },
+      {
+        "card_id": "898",
+        "character": "Shinonome Akito",
+        "normal_rate": 0.023,
+        "guaranteed_rate": 0.763
+      },
+      {
+        "card_id": "987",
+        "character": "Otori Emu",
+        "normal_rate": 0.023,
+        "guaranteed_rate": 0.763
+      },
+      {
+        "card_id": "863",
+        "character": "Shinonome Ena",
+        "normal_rate": 0.023,
+        "guaranteed_rate": 0.763
+      },
+      {
+        "card_id": "1040",
+        "character": "Akiyama Mizuki",
+        "normal_rate": 0.023,
+        "guaranteed_rate": 0.763
+      }
+    ]
+  },
+  "927": {
+    "id": 927,
+    "title (japanese)": "[5.5周年記念]無料ガチャ",
+    "release_date": "3/30/2026, 3:00:00 AM",
+    "end_date": "4/30/2026, 2:59:59 AM",
+    "type": "normal",
+    "gacha_rate_index": 0,
+    "featured_cards": [
+      {
+        "card_id": "1268",
+        "character": "N/A",
+        "normal_rate": 0.008,
+        "guaranteed_rate": 0.008
+      },
+      {
+        "card_id": "1098",
+        "character": "Tenma Saki",
+        "normal_rate": 0.008,
+        "guaranteed_rate": 0.008
+      },
+      {
+        "card_id": "1029",
+        "character": "Hinomori Shizuku",
+        "normal_rate": 0.008,
+        "guaranteed_rate": 0.008
+      },
+      {
+        "card_id": "769",
+        "character": "Azusawa Kohane",
+        "normal_rate": 0.008,
+        "guaranteed_rate": 0.008
+      },
+      {
+        "card_id": "1156",
+        "character": "Otori Emu",
+        "normal_rate": 0.008,
+        "guaranteed_rate": 0.008
+      },
+      {
+        "card_id": "974",
+        "character": "Yoisaki Kanade",
+        "normal_rate": 0.008,
+        "guaranteed_rate": 0.008
+      }
+    ]
+  },
+  "928": {
+    "id": 928,
+    "title (japanese)": "絡繰るは誰人の指ガチャ",
+    "release_date": "4/4/2026, 3:00:00 AM",
+    "end_date": "4/9/2026, 2:59:59 AM",
+    "type": "limited",
+    "gacha_rate_index": 0,
+    "featured_cards": [
+      {
+        "card_id": "1363",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1364",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1365",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      }
+    ]
+  },
+  "929": {
+    "id": 929,
+    "title (japanese)": "カラフルパスガチャ",
+    "release_date": "4/5/2026, 7:00:00 PM",
+    "end_date": "12/30/2099, 6:59:59 PM",
+    "type": "normal",
+    "gacha_rate_index": 1,
+    "featured_cards": [
+      {
+        "card_id": "383",
+        "character": "Tenma Saki",
+        "normal_rate": 0.53,
+        "guaranteed_rate": null
+      },
+      {
+        "card_id": "267",
+        "character": "Hinomori Shizuku",
+        "normal_rate": 0.53,
+        "guaranteed_rate": null
+      },
+      {
+        "card_id": "376",
+        "character": "Shiraishi An",
+        "normal_rate": 0.53,
+        "guaranteed_rate": null
+      },
+      {
+        "card_id": "359",
+        "character": "Kusanagi Nene",
+        "normal_rate": 0.53,
+        "guaranteed_rate": null
+      },
+      {
+        "card_id": "364",
+        "character": "Shinonome Ena",
+        "normal_rate": 0.53,
+        "guaranteed_rate": null
+      },
+      {
+        "card_id": "353",
+        "character": "Hatsune Miku",
+        "normal_rate": 0.53,
+        "guaranteed_rate": null
+      },
+      {
+        "card_id": "272",
+        "character": "KAITO",
+        "normal_rate": 0.53,
+        "guaranteed_rate": null
+      }
+    ]
+  },
+  "930": {
+    "id": 930,
+    "title (japanese)": "Proof the REDガチャ",
+    "release_date": "4/9/2026, 3:00:00 AM",
+    "end_date": "4/18/2026, 2:59:59 AM",
+    "type": "normal",
+    "gacha_rate_index": 0,
+    "featured_cards": [
+      {
+        "card_id": "1368",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1369",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1370",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      }
+    ]
+  },
+  "931": {
+    "id": 931,
+    "title (japanese)": "[花里みのり]HAPPY BIRTHDAY2026ガチャ",
+    "release_date": "4/9/2026, 3:00:00 PM",
+    "end_date": "4/16/2026, 2:59:59 PM",
+    "type": "birthday",
+    "gacha_rate_index": 4,
+    "featured_cards": [
+      {
+        "card_id": "1373",
+        "character": "N/A",
+        "normal_rate": 3.0,
+        "guaranteed_rate": null
+      }
+    ]
+  },
+  "932": {
+    "id": 932,
+    "title (japanese)": "[花里みのり]HAPPY BIRTHDAYメモリーズガチャ",
+    "release_date": "4/9/2026, 3:00:00 PM",
+    "end_date": "4/16/2026, 2:59:59 PM",
+    "type": "birthday",
+    "gacha_rate_index": 4,
+    "featured_cards": [
+      {
+        "card_id": "1155",
+        "character": "Hanasato Minori",
+        "normal_rate": 0.75,
+        "guaranteed_rate": null
+      },
+      {
+        "card_id": "908",
+        "character": "Hanasato Minori",
+        "normal_rate": 0.75,
+        "guaranteed_rate": null
+      },
+      {
+        "card_id": "629",
+        "character": "Hanasato Minori",
+        "normal_rate": 0.75,
+        "guaranteed_rate": null
+      },
+      {
+        "card_id": "415",
+        "character": "Hanasato Minori",
+        "normal_rate": 0.75,
+        "guaranteed_rate": null
+      }
+    ]
+  },
+  "933": {
+    "id": 933,
+    "title (japanese)": "ワールドリンクイベント Part1 サポートガチャ",
+    "release_date": "4/11/2026, 3:00:00 AM",
+    "end_date": "4/30/2026, 2:59:59 AM",
+    "type": "limited",
+    "gacha_rate_index": 9,
+    "featured_cards": [
+      {
+        "card_id": "1189",
+        "character": "Hoshino Ichika",
+        "normal_rate": 0.019,
+        "guaranteed_rate": 0.019
+      },
+      {
+        "card_id": "1219",
+        "character": "Kiritani Haruka",
+        "normal_rate": 0.019,
+        "guaranteed_rate": 0.019
+      },
+      {
+        "card_id": "1170",
+        "character": "Otori Emu",
+        "normal_rate": 0.019,
+        "guaranteed_rate": 0.019
+      },
+      {
+        "card_id": "1185",
+        "character": "Yoisaki Kanade",
+        "normal_rate": 0.019,
+        "guaranteed_rate": 0.019
+      },
+      {
+        "card_id": "1235",
+        "character": "Hatsune Miku",
+        "normal_rate": 0.019,
+        "guaranteed_rate": 0.019
+      }
+    ]
+  },
+  "934": {
+    "id": 934,
+    "title (japanese)": "[復刻]Living With Musicガチャ",
+    "release_date": "4/12/2026, 3:00:00 AM",
+    "end_date": "4/21/2026, 2:59:59 AM",
+    "type": "limited",
+    "gacha_rate_index": 0,
+    "featured_cards": [
+      {
+        "card_id": "1146",
+        "character": "Hinomori Shiho",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1147",
+        "character": "Hoshino Ichika",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1148",
+        "character": "Hatsune Miku",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      }
+    ]
+  },
+  "935": {
+    "id": 935,
+    "title (japanese)": "[復刻]とってもおばけなバケーション！ガチャ",
+    "release_date": "4/12/2026, 3:00:00 AM",
+    "end_date": "4/21/2026, 2:59:59 AM",
+    "type": "limited",
+    "gacha_rate_index": 0,
+    "featured_cards": [
+      {
+        "card_id": "987",
+        "character": "Otori Emu",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "988",
+        "character": "Asahina Mafuyu",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "989",
+        "character": "Mochizuki Honami",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      }
+    ]
+  },
+  "936": {
+    "id": 936,
+    "title (japanese)": "[復刻]交わるせかいのアンサンブルガチャ",
+    "release_date": "4/13/2026, 3:00:00 AM",
+    "end_date": "4/27/2026, 2:59:59 PM",
+    "type": "limited",
+    "gacha_rate_index": 0,
+    "featured_cards": [
+      {
+        "card_id": "1115",
+        "character": "Shinonome Akito",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1116",
+        "character": "Aoyagi Toya",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1117",
+        "character": "Tenma Tsukasa",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1118",
+        "character": "Kamishiro Rui",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      }
+    ]
+  },
+  "937": {
+    "id": 937,
+    "title (japanese)": "YELL of Messengersガチャ",
+    "release_date": "4/18/2026, 3:00:00 AM",
+    "end_date": "4/30/2026, 2:59:59 AM",
+    "type": "limited",
+    "gacha_rate_index": 0,
+    "featured_cards": [
+      {
+        "card_id": "1374",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1375",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1376",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1377",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1378",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      }
+    ]
   }
 }

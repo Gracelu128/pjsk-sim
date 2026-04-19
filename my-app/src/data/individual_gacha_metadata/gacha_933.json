@@ -1,0 +1,40 @@
+{
+  "id": 933,
+  "title (japanese)": "ワールドリンクイベント Part1 サポートガチャ",
+  "release_date": "4/11/2026, 3:00:00 AM",
+  "end_date": "4/30/2026, 2:59:59 AM",
+  "type": "limited",
+  "gacha_rate_index": 9,
+  "featured_cards": [
+    {
+      "card_id": "1189",
+      "character": "Hoshino Ichika",
+      "normal_rate": 0.019,
+      "guaranteed_rate": 0.019
+    },
+    {
+      "card_id": "1219",
+      "character": "Kiritani Haruka",
+      "normal_rate": 0.019,
+      "guaranteed_rate": 0.019
+    },
+    {
+      "card_id": "1170",
+      "character": "Otori Emu",
+      "normal_rate": 0.019,
+      "guaranteed_rate": 0.019
+    },
+    {
+      "card_id": "1185",
+      "character": "Yoisaki Kanade",
+      "normal_rate": 0.019,
+      "guaranteed_rate": 0.019
+    },
+    {
+      "card_id": "1235",
+      "character": "Hatsune Miku",
+      "normal_rate": 0.019,
+      "guaranteed_rate": 0.019
+    }
+  ]
+}

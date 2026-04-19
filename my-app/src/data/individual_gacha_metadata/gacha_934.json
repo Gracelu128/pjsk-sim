@@ -1,0 +1,28 @@
+{
+  "id": 934,
+  "title (japanese)": "[復刻]Living With Musicガチャ",
+  "release_date": "4/12/2026, 3:00:00 AM",
+  "end_date": "4/21/2026, 2:59:59 AM",
+  "type": "limited",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "1146",
+      "character": "Hinomori Shiho",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1147",
+      "character": "Hoshino Ichika",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1148",
+      "character": "Hatsune Miku",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    }
+  ]
+}
