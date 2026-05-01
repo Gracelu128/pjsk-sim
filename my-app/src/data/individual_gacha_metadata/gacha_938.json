@@ -1,0 +1,46 @@
+{
+  "id": 938,
+  "title (japanese)": "ハピネスパッケージガチャ",
+  "release_date": "4/25/2026, 3:00:00 AM",
+  "end_date": "5/4/2026, 2:59:59 AM",
+  "type": "gift",
+  "gacha_rate_index": 2,
+  "featured_cards": [
+    {
+      "card_id": "1052",
+      "character": "Megurine Luka",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.267
+    },
+    {
+      "card_id": "714",
+      "character": "Tenma Saki",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.267
+    },
+    {
+      "card_id": "1267",
+      "character": "N/A",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.267
+    },
+    {
+      "card_id": "891",
+      "character": "Shiraishi An",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.267
+    },
+    {
+      "card_id": "1133",
+      "character": "Tenma Tsukasa",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.267
+    },
+    {
+      "card_id": "904",
+      "character": "Asahina Mafuyu",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.267
+    }
+  ]
+}
