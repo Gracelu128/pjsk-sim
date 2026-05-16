@@ -1,0 +1,34 @@
+{
+  "id": 949,
+  "title (japanese)": "[復刻]Talent Bloomsガチャ",
+  "release_date": "5/12/2026, 3:00:00 AM",
+  "end_date": "5/21/2026, 2:59:59 AM",
+  "type": "limited",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "1005",
+      "character": "Kusanagi Nene",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1006",
+      "character": "Hinomori Shiho",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1007",
+      "character": "Momoi Airi",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1008",
+      "character": "Aoyagi Toya",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    }
+  ]
+}

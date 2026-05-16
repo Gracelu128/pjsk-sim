@@ -1,0 +1,16 @@
+{
+  "id": 950,
+  "title (japanese)": "[天馬司]HAPPY BIRTHDAY2026ガチャ",
+  "release_date": "5/12/2026, 3:00:00 PM",
+  "end_date": "5/19/2026, 2:59:59 PM",
+  "type": "birthday",
+  "gacha_rate_index": 4,
+  "featured_cards": [
+    {
+      "card_id": "1391",
+      "character": "N/A",
+      "normal_rate": 3.0,
+      "guaranteed_rate": null
+    }
+  ]
+}

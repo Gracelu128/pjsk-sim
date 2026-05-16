@@ -1,0 +1,46 @@
+{
+  "id": 946,
+  "title (japanese)": "ワールドリンクイベント Part2 サポートガチャ",
+  "release_date": "5/10/2026, 3:00:00 AM",
+  "end_date": "5/31/2026, 2:59:59 AM",
+  "type": "limited",
+  "gacha_rate_index": 9,
+  "featured_cards": [
+    {
+      "card_id": "1192",
+      "character": "Hinomori Shiho",
+      "normal_rate": 0.015,
+      "guaranteed_rate": 0.015
+    },
+    {
+      "card_id": "1218",
+      "character": "Hanasato Minori",
+      "normal_rate": 0.015,
+      "guaranteed_rate": 0.015
+    },
+    {
+      "card_id": "1152",
+      "character": "Shiraishi An",
+      "normal_rate": 0.015,
+      "guaranteed_rate": 0.015
+    },
+    {
+      "card_id": "1169",
+      "character": "Tenma Tsukasa",
+      "normal_rate": 0.015,
+      "guaranteed_rate": 0.015
+    },
+    {
+      "card_id": "1236",
+      "character": "Kagamine Rin",
+      "normal_rate": 0.015,
+      "guaranteed_rate": 0.015
+    },
+    {
+      "card_id": "1237",
+      "character": "Kagamine Len",
+      "normal_rate": 0.015,
+      "guaranteed_rate": 0.015
+    }
+  ]
+}

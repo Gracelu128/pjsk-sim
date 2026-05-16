@@ -1,0 +1,34 @@
+{
+  "id": 944,
+  "title (japanese)": "[天馬咲希]HAPPY BIRTHDAYメモリーズガチャ",
+  "release_date": "5/4/2026, 3:00:00 PM",
+  "end_date": "5/11/2026, 2:59:59 PM",
+  "type": "birthday",
+  "gacha_rate_index": 4,
+  "featured_cards": [
+    {
+      "card_id": "1168",
+      "character": "Tenma Saki",
+      "normal_rate": 0.75,
+      "guaranteed_rate": null
+    },
+    {
+      "card_id": "920",
+      "character": "Tenma Saki",
+      "normal_rate": 0.75,
+      "guaranteed_rate": null
+    },
+    {
+      "card_id": "641",
+      "character": "Tenma Saki",
+      "normal_rate": 0.75,
+      "guaranteed_rate": null
+    },
+    {
+      "card_id": "427",
+      "character": "Tenma Saki",
+      "normal_rate": 0.75,
+      "guaranteed_rate": null
+    }
+  ]
+}

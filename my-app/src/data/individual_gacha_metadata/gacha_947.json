@@ -1,0 +1,46 @@
+{
+  "id": 947,
+  "title (japanese)": "[Parallel Paaaarty!!!! 開催記念]プレミアムプレゼントガチャ",
+  "release_date": "5/10/2026, 3:00:00 AM",
+  "end_date": "5/19/2026, 2:59:59 AM",
+  "type": "normal",
+  "gacha_rate_index": 2,
+  "featured_cards": [
+    {
+      "card_id": "875",
+      "character": "Hatsune Miku",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.265
+    },
+    {
+      "card_id": "1202",
+      "character": "Hoshino Ichika",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.265
+    },
+    {
+      "card_id": "1046",
+      "character": "Hanasato Minori",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.265
+    },
+    {
+      "card_id": "1285",
+      "character": "N/A",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.265
+    },
+    {
+      "card_id": "928",
+      "character": "Tenma Tsukasa",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.265
+    },
+    {
+      "card_id": "1139",
+      "character": "Yoisaki Kanade",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.265
+    }
+  ]
+}
