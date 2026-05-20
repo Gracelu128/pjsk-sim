@@ -1,0 +1,46 @@
+{
+  "id": 952,
+  "title (japanese)": "Vie for the Titleガチャ",
+  "release_date": "5/17/2026, 3:00:00 AM",
+  "end_date": "5/31/2026, 2:59:59 AM",
+  "type": "limited",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "1392",
+      "character": "N/A",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1393",
+      "character": "N/A",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1394",
+      "character": "N/A",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1395",
+      "character": "N/A",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1396",
+      "character": "N/A",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1397",
+      "character": "N/A",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    }
+  ]
+}

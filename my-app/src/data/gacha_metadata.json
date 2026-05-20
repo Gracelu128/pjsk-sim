@@ -30225,5 +30225,85 @@
         "guaranteed_rate": null
       }
     ]
+  },
+  "951": {
+    "id": 951,
+    "title (japanese)": "[天馬司]HAPPY BIRTHDAYメモリーズガチャ",
+    "release_date": "5/12/2026, 3:00:00 PM",
+    "end_date": "5/19/2026, 2:59:59 PM",
+    "type": "birthday",
+    "gacha_rate_index": 4,
+    "featured_cards": [
+      {
+        "card_id": "1173",
+        "character": "Tenma Tsukasa",
+        "normal_rate": 0.75,
+        "guaranteed_rate": null
+      },
+      {
+        "card_id": "926",
+        "character": "Tenma Tsukasa",
+        "normal_rate": 0.75,
+        "guaranteed_rate": null
+      },
+      {
+        "card_id": "647",
+        "character": "Tenma Tsukasa",
+        "normal_rate": 0.75,
+        "guaranteed_rate": null
+      },
+      {
+        "card_id": "433",
+        "character": "Tenma Tsukasa",
+        "normal_rate": 0.75,
+        "guaranteed_rate": null
+      }
+    ]
+  },
+  "952": {
+    "id": 952,
+    "title (japanese)": "Vie for the Titleガチャ",
+    "release_date": "5/17/2026, 3:00:00 AM",
+    "end_date": "5/31/2026, 2:59:59 AM",
+    "type": "limited",
+    "gacha_rate_index": 0,
+    "featured_cards": [
+      {
+        "card_id": "1392",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1393",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1394",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1395",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1396",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1397",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      }
+    ]
   }
 }
