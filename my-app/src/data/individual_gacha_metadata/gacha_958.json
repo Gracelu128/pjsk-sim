@@ -1,0 +1,40 @@
+{
+  "id": 958,
+  "title (japanese)": "ワールドリンクイベント Part3 サポートガチャ",
+  "release_date": "6/1/2026, 3:00:00 AM",
+  "end_date": "6/20/2026, 2:59:59 AM",
+  "type": "limited",
+  "gacha_rate_index": 9,
+  "featured_cards": [
+    {
+      "card_id": "1191",
+      "character": "Mochizuki Honami",
+      "normal_rate": 0.018,
+      "guaranteed_rate": 0.018
+    },
+    {
+      "card_id": "1221",
+      "character": "Hinomori Shizuku",
+      "normal_rate": 0.018,
+      "guaranteed_rate": 0.018
+    },
+    {
+      "card_id": "1151",
+      "character": "Azusawa Kohane",
+      "normal_rate": 0.018,
+      "guaranteed_rate": 0.018
+    },
+    {
+      "card_id": "1186",
+      "character": "Asahina Mafuyu",
+      "normal_rate": 0.018,
+      "guaranteed_rate": 0.018
+    },
+    {
+      "card_id": "1238",
+      "character": "Megurine Luka",
+      "normal_rate": 0.018,
+      "guaranteed_rate": 0.018
+    }
+  ]
+}
