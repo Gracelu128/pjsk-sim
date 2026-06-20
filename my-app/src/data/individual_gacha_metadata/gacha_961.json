@@ -1,0 +1,28 @@
+{
+  "id": 961,
+  "title (japanese)": "[復刻]音楽が鳴る街角でガチャ",
+  "release_date": "6/12/2026, 3:00:00 AM",
+  "end_date": "6/21/2026, 2:59:59 AM",
+  "type": "limited",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "1022",
+      "character": "Tenma Saki",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1023",
+      "character": "Hoshino Ichika",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1024",
+      "character": "Mochizuki Honami",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    }
+  ]
+}
