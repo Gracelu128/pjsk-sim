@@ -1,0 +1,46 @@
+{
+  "id": 965,
+  "title (japanese)": "[DEEMO×Cytusシリーズ]タイアップ記念プレミアムプレゼントガチャ",
+  "release_date": "6/21/2026, 6:00:00 AM",
+  "end_date": "7/3/2026, 2:59:59 PM",
+  "type": "normal",
+  "gacha_rate_index": 2,
+  "featured_cards": [
+    {
+      "card_id": "1047",
+      "character": "Hatsune Miku",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.258
+    },
+    {
+      "card_id": "1261",
+      "character": "N/A",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.258
+    },
+    {
+      "card_id": "1207",
+      "character": "Hanasato Minori",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.258
+    },
+    {
+      "card_id": "1296",
+      "character": "N/A",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.258
+    },
+    {
+      "card_id": "1133",
+      "character": "Tenma Tsukasa",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.258
+    },
+    {
+      "card_id": "1315",
+      "character": "N/A",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.258
+    }
+  ]
+}
