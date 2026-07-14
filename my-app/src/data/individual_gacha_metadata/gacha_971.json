@@ -1,0 +1,40 @@
+{
+  "id": 971,
+  "title (japanese)": "ワールドリンクイベント Part4 サポートガチャ",
+  "release_date": "7/12/2026, 3:00:00 AM",
+  "end_date": "7/31/2026, 2:59:59 AM",
+  "type": "limited",
+  "gacha_rate_index": 9,
+  "featured_cards": [
+    {
+      "card_id": "1190",
+      "character": "Tenma Saki",
+      "normal_rate": 0.019,
+      "guaranteed_rate": 0.019
+    },
+    {
+      "card_id": "1154",
+      "character": "Aoyagi Toya",
+      "normal_rate": 0.019,
+      "guaranteed_rate": 0.019
+    },
+    {
+      "card_id": "1172",
+      "character": "Kamishiro Rui",
+      "normal_rate": 0.019,
+      "guaranteed_rate": 0.019
+    },
+    {
+      "card_id": "1188",
+      "character": "Akiyama Mizuki",
+      "normal_rate": 0.019,
+      "guaranteed_rate": 0.019
+    },
+    {
+      "card_id": "1240",
+      "character": "KAITO",
+      "normal_rate": 0.019,
+      "guaranteed_rate": 0.019
+    }
+  ]
+}
