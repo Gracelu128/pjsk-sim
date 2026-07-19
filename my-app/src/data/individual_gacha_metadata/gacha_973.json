@@ -1,0 +1,28 @@
+{
+  "id": 973,
+  "title (japanese)": "[復刻]玲瓏たる追憶ガチャ",
+  "release_date": "7/12/2026, 3:00:00 AM",
+  "end_date": "7/21/2026, 2:59:59 AM",
+  "type": "limited",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "1059",
+      "character": "Shinonome Akito",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1060",
+      "character": "Momoi Airi",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1061",
+      "character": "KAITO",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    }
+  ]
+}

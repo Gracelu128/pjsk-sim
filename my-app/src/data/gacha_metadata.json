@@ -30953,5 +30953,151 @@
         "guaranteed_rate": 0.019
       }
     ]
+  },
+  "972": {
+    "id": 972,
+    "title (japanese)": "[復刻]Strange Workshopガチャ",
+    "release_date": "7/12/2026, 3:00:00 AM",
+    "end_date": "7/21/2026, 2:59:59 AM",
+    "type": "limited",
+    "gacha_rate_index": 0,
+    "featured_cards": [
+      {
+        "card_id": "1196",
+        "character": "Kamishiro Rui",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1197",
+        "character": "Tenma Tsukasa",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1198",
+        "character": "Kusanagi Nene",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      }
+    ]
+  },
+  "973": {
+    "id": 973,
+    "title (japanese)": "[復刻]玲瓏たる追憶ガチャ",
+    "release_date": "7/12/2026, 3:00:00 AM",
+    "end_date": "7/21/2026, 2:59:59 AM",
+    "type": "limited",
+    "gacha_rate_index": 0,
+    "featured_cards": [
+      {
+        "card_id": "1059",
+        "character": "Shinonome Akito",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1060",
+        "character": "Momoi Airi",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1061",
+        "character": "KAITO",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      }
+    ]
+  },
+  "974": {
+    "id": 974,
+    "title (japanese)": "[草薙寧々]HAPPY BIRTHDAY2026ガチャ",
+    "release_date": "7/15/2026, 3:00:00 PM",
+    "end_date": "7/22/2026, 2:59:59 PM",
+    "type": "birthday",
+    "gacha_rate_index": 4,
+    "featured_cards": [
+      {
+        "card_id": "1427",
+        "character": "N/A",
+        "normal_rate": 3.0,
+        "guaranteed_rate": null
+      }
+    ]
+  },
+  "975": {
+    "id": 975,
+    "title (japanese)": "[草薙寧々]HAPPY BIRTHDAYメモリーズガチャ",
+    "release_date": "7/15/2026, 3:00:00 PM",
+    "end_date": "7/22/2026, 2:59:59 PM",
+    "type": "birthday",
+    "gacha_rate_index": 4,
+    "featured_cards": [
+      {
+        "card_id": "1206",
+        "character": "Kusanagi Nene",
+        "normal_rate": 0.75,
+        "guaranteed_rate": null
+      },
+      {
+        "card_id": "966",
+        "character": "Kusanagi Nene",
+        "normal_rate": 0.75,
+        "guaranteed_rate": null
+      },
+      {
+        "card_id": "682",
+        "character": "Kusanagi Nene",
+        "normal_rate": 0.75,
+        "guaranteed_rate": null
+      },
+      {
+        "card_id": "468",
+        "character": "Kusanagi Nene",
+        "normal_rate": 0.75,
+        "guaranteed_rate": null
+      }
+    ]
+  },
+  "976": {
+    "id": 976,
+    "title (japanese)": "around table WITH you!ガチャ",
+    "release_date": "7/19/2026, 3:00:00 AM",
+    "end_date": "7/31/2026, 2:59:59 AM",
+    "type": "limited",
+    "gacha_rate_index": 0,
+    "featured_cards": [
+      {
+        "card_id": "1428",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1429",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1430",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1431",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1432",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      }
+    ]
   }
 }

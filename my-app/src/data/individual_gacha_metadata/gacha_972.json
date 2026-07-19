@@ -1,0 +1,28 @@
+{
+  "id": 972,
+  "title (japanese)": "[復刻]Strange Workshopガチャ",
+  "release_date": "7/12/2026, 3:00:00 AM",
+  "end_date": "7/21/2026, 2:59:59 AM",
+  "type": "limited",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "1196",
+      "character": "Kamishiro Rui",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1197",
+      "character": "Tenma Tsukasa",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1198",
+      "character": "Kusanagi Nene",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    }
+  ]
+}
