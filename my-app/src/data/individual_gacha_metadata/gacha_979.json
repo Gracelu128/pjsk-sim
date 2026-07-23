@@ -1,0 +1,46 @@
+{
+  "id": 979,
+  "title (japanese)": "ワールドコスチュームガチャ vol.5",
+  "release_date": "7/22/2026, 3:00:00 AM",
+  "end_date": "7/31/2026, 2:59:59 AM",
+  "type": "normal",
+  "gacha_rate_index": 2,
+  "featured_cards": [
+    {
+      "card_id": "1036",
+      "character": "Kagamine Len",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.256
+    },
+    {
+      "card_id": "1112",
+      "character": "Megurine Luka",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.256
+    },
+    {
+      "card_id": "769",
+      "character": "Azusawa Kohane",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.256
+    },
+    {
+      "card_id": "975",
+      "character": "Shiraishi An",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.256
+    },
+    {
+      "card_id": "1284",
+      "character": "N/A",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.256
+    },
+    {
+      "card_id": "696",
+      "character": "Aoyagi Toya",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.256
+    }
+  ]
+}
