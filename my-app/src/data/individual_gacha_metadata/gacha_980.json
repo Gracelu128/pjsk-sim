@@ -1,0 +1,46 @@
+{
+  "id": 980,
+  "title (japanese)": "ハピネスパッケージガチャ",
+  "release_date": "7/26/2026, 3:00:00 AM",
+  "end_date": "8/4/2026, 2:59:59 AM",
+  "type": "gift",
+  "gacha_rate_index": 2,
+  "featured_cards": [
+    {
+      "card_id": "1099",
+      "character": "Kagamine Rin",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.256
+    },
+    {
+      "card_id": "1333",
+      "character": "N/A",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.256
+    },
+    {
+      "card_id": "1266",
+      "character": "N/A",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.256
+    },
+    {
+      "card_id": "1284",
+      "character": "N/A",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.256
+    },
+    {
+      "card_id": "1340",
+      "character": "N/A",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.256
+    },
+    {
+      "card_id": "1139",
+      "character": "Yoisaki Kanade",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.256
+    }
+  ]
+}

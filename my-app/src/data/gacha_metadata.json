@@ -31195,5 +31195,79 @@
         "guaranteed_rate": 0.256
       }
     ]
+  },
+  "980": {
+    "id": 980,
+    "title (japanese)": "ハピネスパッケージガチャ",
+    "release_date": "7/26/2026, 3:00:00 AM",
+    "end_date": "8/4/2026, 2:59:59 AM",
+    "type": "gift",
+    "gacha_rate_index": 2,
+    "featured_cards": [
+      {
+        "card_id": "1099",
+        "character": "Kagamine Rin",
+        "normal_rate": 0.008,
+        "guaranteed_rate": 0.256
+      },
+      {
+        "card_id": "1333",
+        "character": "N/A",
+        "normal_rate": 0.008,
+        "guaranteed_rate": 0.256
+      },
+      {
+        "card_id": "1266",
+        "character": "N/A",
+        "normal_rate": 0.008,
+        "guaranteed_rate": 0.256
+      },
+      {
+        "card_id": "1284",
+        "character": "N/A",
+        "normal_rate": 0.008,
+        "guaranteed_rate": 0.256
+      },
+      {
+        "card_id": "1340",
+        "character": "N/A",
+        "normal_rate": 0.008,
+        "guaranteed_rate": 0.256
+      },
+      {
+        "card_id": "1139",
+        "character": "Yoisaki Kanade",
+        "normal_rate": 0.008,
+        "guaranteed_rate": 0.256
+      }
+    ]
+  },
+  "981": {
+    "id": 981,
+    "title (japanese)": "Tucked in a boxガチャ",
+    "release_date": "7/31/2026, 3:00:00 AM",
+    "end_date": "8/9/2026, 2:59:59 AM",
+    "type": "limited",
+    "gacha_rate_index": 0,
+    "featured_cards": [
+      {
+        "card_id": "1434",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1435",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1436",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      }
+    ]
   }
 }
