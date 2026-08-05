@@ -1,0 +1,46 @@
+{
+  "id": 983,
+  "title (japanese)": "ワールドコスチュームガチャ vol.6",
+  "release_date": "8/5/2026, 3:00:00 AM",
+  "end_date": "8/14/2026, 2:59:59 AM",
+  "type": "normal",
+  "gacha_rate_index": 2,
+  "featured_cards": [
+    {
+      "card_id": "1124",
+      "character": "MEIKO",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.256
+    },
+    {
+      "card_id": "1322",
+      "character": "N/A",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.256
+    },
+    {
+      "card_id": "998",
+      "character": "Hoshino Ichika",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.256
+    },
+    {
+      "card_id": "1098",
+      "character": "Tenma Saki",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.256
+    },
+    {
+      "card_id": "1201",
+      "character": "Mochizuki Honami",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.256
+    },
+    {
+      "card_id": "1263",
+      "character": "N/A",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.256
+    }
+  ]
+}
