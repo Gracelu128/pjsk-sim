@@ -12401,6 +12401,25 @@
     ],
     "end date": "Until Aug. 9, 2026 02:59"
   },
+  "982": {
+    "bg": [],
+    "img": [],
+    "logo": "",
+    "banner": [],
+    "end date": "Until Dec. 30, 2099 18:59"
+  },
+  "983": {
+    "bg": [
+      "bg_gacha983_1.webp",
+      "bg_gacha983_2.webp"
+    ],
+    "img": [
+      "cardname_gacha983_1.webp"
+    ],
+    "logo": "logo/logo.webp",
+    "banner": [],
+    "end date": "Until Aug. 14, 2026 02:59"
+  },
   "birthday_Rin": {
     "bg": [],
     "img": [],
