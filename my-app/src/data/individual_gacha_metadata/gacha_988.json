@@ -1,0 +1,28 @@
+{
+  "id": 988,
+  "title (japanese)": "[復刻]Those who dareガチャ",
+  "release_date": "8/11/2026, 3:00:00 AM",
+  "end_date": "8/20/2026, 2:59:59 AM",
+  "type": "limited",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "1213",
+      "character": "Shiraishi An",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1214",
+      "character": "Aoyagi Toya",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1215",
+      "character": "Megurine Luka",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    }
+  ]
+}

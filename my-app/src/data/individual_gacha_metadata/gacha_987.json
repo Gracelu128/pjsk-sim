@@ -1,0 +1,40 @@
+{
+  "id": 987,
+  "title (japanese)": "ワールドリンクイベント Part5 サポートガチャ",
+  "release_date": "8/10/2026, 3:00:00 AM",
+  "end_date": "8/29/2026, 2:59:59 AM",
+  "type": "limited",
+  "gacha_rate_index": 9,
+  "featured_cards": [
+    {
+      "card_id": "1220",
+      "character": "Momoi Airi",
+      "normal_rate": 0.018,
+      "guaranteed_rate": 0.018
+    },
+    {
+      "card_id": "1153",
+      "character": "Shinonome Akito",
+      "normal_rate": 0.018,
+      "guaranteed_rate": 0.018
+    },
+    {
+      "card_id": "1171",
+      "character": "Kusanagi Nene",
+      "normal_rate": 0.018,
+      "guaranteed_rate": 0.018
+    },
+    {
+      "card_id": "1187",
+      "character": "Shinonome Ena",
+      "normal_rate": 0.018,
+      "guaranteed_rate": 0.018
+    },
+    {
+      "card_id": "1239",
+      "character": "MEIKO",
+      "normal_rate": 0.018,
+      "guaranteed_rate": 0.018
+    }
+  ]
+}
