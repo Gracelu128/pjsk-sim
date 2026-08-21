@@ -1,0 +1,40 @@
+{
+  "id": 990,
+  "title (japanese)": "Crawl out of Vibrant hellガチャ",
+  "release_date": "8/17/2026, 3:00:00 AM",
+  "end_date": "8/29/2026, 2:59:59 AM",
+  "type": "limited",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "1445",
+      "character": "N/A",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1446",
+      "character": "N/A",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1447",
+      "character": "N/A",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1448",
+      "character": "N/A",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1449",
+      "character": "N/A",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    }
+  ]
+}

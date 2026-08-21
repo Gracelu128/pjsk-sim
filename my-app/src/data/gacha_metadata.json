@@ -31513,5 +31513,73 @@
         "guaranteed_rate": 0.4
       }
     ]
+  },
+  "989": {
+    "id": 989,
+    "title (japanese)": "[復刻]That flower, once moreガチャ",
+    "release_date": "8/11/2026, 3:00:00 AM",
+    "end_date": "8/20/2026, 2:59:59 AM",
+    "type": "limited",
+    "gacha_rate_index": 0,
+    "featured_cards": [
+      {
+        "card_id": "1039",
+        "character": "Shinonome Ena",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1040",
+        "character": "Akiyama Mizuki",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1041",
+        "character": "MEIKO",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      }
+    ]
+  },
+  "990": {
+    "id": 990,
+    "title (japanese)": "Crawl out of Vibrant hellガチャ",
+    "release_date": "8/17/2026, 3:00:00 AM",
+    "end_date": "8/29/2026, 2:59:59 AM",
+    "type": "limited",
+    "gacha_rate_index": 0,
+    "featured_cards": [
+      {
+        "card_id": "1445",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1446",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1447",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1448",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      },
+      {
+        "card_id": "1449",
+        "character": "N/A",
+        "normal_rate": 0.4,
+        "guaranteed_rate": 0.4
+      }
+    ]
   }
 }
