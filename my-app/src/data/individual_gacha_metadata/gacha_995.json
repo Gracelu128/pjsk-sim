@@ -1,0 +1,40 @@
+{
+  "id": 995,
+  "title (japanese)": "[マジカルミライ2026]プレミアムプレゼントガチャ",
+  "release_date": "8/28/2026, 3:00:00 AM",
+  "end_date": "9/3/2026, 2:59:59 AM",
+  "type": "normal",
+  "gacha_rate_index": 2,
+  "featured_cards": [
+    {
+      "card_id": "537",
+      "character": "Hatsune Miku",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.254
+    },
+    {
+      "card_id": "875",
+      "character": "Hatsune Miku",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.254
+    },
+    {
+      "card_id": "149",
+      "character": "Hatsune Miku",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.254
+    },
+    {
+      "card_id": "126",
+      "character": "Hatsune Miku",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.254
+    },
+    {
+      "card_id": "326",
+      "character": "Hatsune Miku",
+      "normal_rate": 0.008,
+      "guaranteed_rate": 0.254
+    }
+  ]
+}

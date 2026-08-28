@@ -12485,6 +12485,42 @@
     ],
     "end date": "Until Aug. 20, 2026 02:59"
   },
+  "989": {
+    "bg": [
+      "bg_gacha989_1.webp",
+      "bg_gacha989_2.webp",
+      "bg_gacha989_3.webp"
+    ],
+    "img": [
+      "cardname_gacha989_1.webp",
+      "cardname_gacha989_2.webp",
+      "cardname_gacha989_3.webp"
+    ],
+    "logo": "logo/logo.webp",
+    "banner": [],
+    "end date": "Until Aug. 20, 2026 02:59"
+  },
+  "990": {
+    "bg": [
+      "bg_gacha990_1.webp",
+      "bg_gacha990_2.webp",
+      "bg_gacha990_3.webp",
+      "bg_gacha990_4.webp",
+      "bg_gacha990_5.webp"
+    ],
+    "img": [
+      "cardname_gacha990_1.webp",
+      "cardname_gacha990_2.webp",
+      "cardname_gacha990_3.webp",
+      "cardname_gacha990_4.webp",
+      "cardname_gacha990_5.webp"
+    ],
+    "logo": "logo/logo.webp",
+    "banner": [
+      "Gacha990_banner.webp"
+    ],
+    "end date": "Until Aug. 29, 2026 02:59"
+  },
   "birthday_Rin": {
     "bg": [],
     "img": [],
