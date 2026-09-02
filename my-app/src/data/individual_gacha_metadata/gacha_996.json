@@ -1,0 +1,28 @@
+{
+  "id": 996,
+  "title (japanese)": "Unspoken Codeガチャ",
+  "release_date": "8/29/2026, 3:00:00 AM",
+  "end_date": "9/6/2026, 2:59:59 AM",
+  "type": "limited",
+  "gacha_rate_index": 0,
+  "featured_cards": [
+    {
+      "card_id": "1452",
+      "character": "N/A",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1453",
+      "character": "N/A",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    },
+    {
+      "card_id": "1454",
+      "character": "N/A",
+      "normal_rate": 0.4,
+      "guaranteed_rate": 0.4
+    }
+  ]
+}
